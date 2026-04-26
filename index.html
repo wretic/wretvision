@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WretVision — Movie, TV &amp; Game Reviews</title>
+  <meta name="description" content="WretVision — Honest reviews of movies, TV shows, and games. Obscure picks, forgotten classics, cult films. If it stuck with me, it ends up here." />
+  <meta name="keywords" content="movie reviews, TV show reviews, game reviews, cult films, horror, sci-fi, action, hidden gems" />
+  <meta name="author" content="WretVision" />
+  <link rel="canonical" href="https://wretvision.com/" />
+  <meta property="og:title" content="WretVision — Movie, TV &amp; Game Reviews" />
+  <meta property="og:description" content="Honest reviews of movies, TV shows, and games. If it stuck with me, it ends up here." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wretvision.com/" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"WretVision","url":"https://wretvision.com","description":"Honest reviews of movies, TV shows, and games.","author":{"@type":"Person","name":"WretVision"}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    .category-nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border-bottom: 2px solid var(--border); }
+    .cat-card { background: var(--bg2); padding: 28px 24px; text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 10px; transition: background 0.2s; }
+    .cat-card:hover { background: var(--bg3); }
+    .cat-icon { font-family: 'VT323', monospace; font-size: 40px; line-height: 1; }
+    .cat-name { font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: 2px; }
+    .cat-count { font-family: 'VT323', monospace; font-size: 18px; color: var(--muted); letter-spacing: 1px; }
+    .cat-card.movies .cat-icon, .cat-card.movies .cat-name { color: var(--blue-light); }
+    .cat-card.tv     .cat-icon, .cat-card.tv     .cat-name { color: var(--green); }
+    .cat-card.games  .cat-icon, .cat-card.games  .cat-name { color: var(--accent); }
+    @media (max-width: 560px) { .category-nav { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="index.html" class="site-logo">WRET<span>VISION</span></a>
+      <nav class="main-nav">
+        <a href="index.html"  class="nav-link active">HOME</a>
+        <a href="movies.html" class="nav-link">▶ MOVIES</a>
+        <a href="tv.html"     class="nav-link">◈ TV SHOWS</a>
+        <a href="games.html"  class="nav-link">◆ GAMES</a>
+      </nav>
+    </div>
+    <a class="yt-link" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="avatar-wrap"><img src="wretvision.png" alt="WretVision" /></div>
+      <span class="yt-label">YOUTUBE ▶</span>
+    </a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <p class="hero-eyebrow">// movies · tv · games //</p>
+    <h1 class="hero-title">WRET<span>VISION</span></h1>
+    <div class="lightning-bar"></div>
+    <p class="hero-sub">Honest takes on films, shows, and games. Even the forgotten ones.</p>
+  </section>
+
+  <div class="category-nav">
+    <a href="movies.html" class="cat-card movies">
+      <span class="cat-icon">▶</span>
+      <span class="cat-name">MOVIES</span>
+      <span class="cat-count" id="count-movies">— reviews</span>
+    </a>
+    <a href="tv.html" class="cat-card tv">
+      <span class="cat-icon">◈</span>
+      <span class="cat-name">TV SHOWS</span>
+      <span class="cat-count" id="count-tv">— reviews</span>
+    </a>
+    <a href="games.html" class="cat-card games">
+      <span class="cat-icon">◆</span>
+      <span class="cat-name">GAMES</span>
+      <span class="cat-count" id="count-games">— reviews</span>
+    </a>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num" id="stat-total">—</span><span class="stat-label">TOTAL REVIEWS</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-genres">—</span><span class="stat-label">GENRES</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-earliest">—</span><span class="stat-label">EARLIEST</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-avg">—</span><span class="stat-label">AVG SCORE</span></div>
+  </div>
+
+  <div class="filter-bar" id="filter-bar"></div>
+
+  <div class="main-layout">
+    <main class="reviews-col">
+      <div class="col-header">latest reviews</div>
+      <div id="reviews-container"></div>
+      <div class="no-results" id="no-results"><p class="no-results-text">>> NO REVIEWS FOUND YET. CHECK BACK SOON. _</p></div>
+      <div class="pagination" id="pagination"></div>
+    </main>
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">about this site</div>
+        <p class="about-text">Movies, shows, and games I want to write about. Obscure picks, forgotten classics, guilty pleasures. If it stuck with me, it ends up here.</p>
+      </div>
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">browse by genre</div>
+        <div class="genre-tags" id="genre-tags"></div>
+      </div>
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">top rated</div>
+        <ul class="sidebar-list" id="top-rated-list"></ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    &copy; WRETVISION, JUST OPINIONS.<span class="blink"> _</span><br>
+    <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR THE LOVE OF FILM, TV &amp; GAMES</span>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <button class="modal-close" id="modal-close">[ X ]</button>
+      <div id="modal-inner"></div>
+    </div>
+  </div>
+
+  <script src="reviews.js"></script>
+  <script src="shared.js"></script>
+  <script>
+    document.getElementById('count-movies').textContent = REVIEWS.filter(r => r.category === 'movie').length + ' reviews';
+    document.getElementById('count-tv').textContent     = REVIEWS.filter(r => r.category === 'tv').length + ' reviews';
+    document.getElementById('count-games').textContent  = REVIEWS.filter(r => r.category === 'game').length + ' reviews';
+    initPage('all');
+  </script>
+</body>
+</html>

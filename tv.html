@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WretVision — TV Show Reviews</title>
+  <meta name="description" content="WretVision TV show reviews. Honest takes on drama, crime, sci-fi series and more. No fluff, just opinion." />
+  <meta name="keywords" content="TV show reviews, series reviews, best TV shows, drama reviews, crime shows, sci-fi series, binge worthy" />
+  <meta name="author" content="WretVision" />
+  <link rel="canonical" href="https://wretvision.com/tv.html" />
+  <meta property="og:title" content="WretVision — TV Show Reviews" />
+  <meta property="og:description" content="Honest TV show reviews. Drama, crime, sci-fi and more. No fluff, just opinion." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wretvision.com/tv.html" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Blog","name":"WretVision TV","url":"https://wretvision.com/tv.html","description":"Honest TV show reviews covering drama, crime, sci-fi and more.","author":{"@type":"Person","name":"WretVision"}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    .hero-title, .site-logo, .lightning-bar, .col-header, .nav-link.active { color: var(--green) !important; }
+    .lightning-bar { background: linear-gradient(90deg, transparent, #4fffb0, transparent) !important; }
+    .review-card { border-left-color: var(--green) !important; }
+    .topbar { border-bottom-color: var(--green) !important; }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="index.html" class="site-logo">WRET<span>VISION</span></a>
+      <nav class="main-nav">
+        <a href="index.html"  class="nav-link">HOME</a>
+        <a href="movies.html" class="nav-link">▶ MOVIES</a>
+        <a href="tv.html"     class="nav-link active">◈ TV SHOWS</a>
+        <a href="games.html"  class="nav-link">◆ GAMES</a>
+      </nav>
+    </div>
+    <a class="yt-link" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="avatar-wrap"><img src="wretvision.png" alt="WretVision" /></div>
+      <span class="yt-label">YOUTUBE ▶</span>
+    </a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <p class="hero-eyebrow">// tv show reviews //</p>
+    <h1 class="hero-title">WRET<span>VISION</span></h1>
+    <div class="lightning-bar"></div>
+    <p class="hero-sub">TV worth sitting through. And some that isn't.</p>
+  </section>
+
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num" id="stat-total">—</span><span class="stat-label">REVIEWS</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-genres">—</span><span class="stat-label">GENRES</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-earliest">—</span><span class="stat-label">EARLIEST</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-avg">—</span><span class="stat-label">AVG SCORE</span></div>
+  </div>
+
+  <div class="filter-bar" id="filter-bar"></div>
+
+  <div class="main-layout">
+    <main class="reviews-col">
+      <div class="col-header">tv show reviews</div>
+      <div id="reviews-container"></div>
+      <div class="no-results" id="no-results"><p class="no-results-text">>> NO TV REVIEWS IN THIS GENRE YET. CHECK BACK SOON. _</p></div>
+      <div class="pagination" id="pagination"></div>
+    </main>
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">about tv reviews</div>
+        <p class="about-text">Shows worth watching and shows that wasted my time. Honest takes, no spoilers beyond what you need to know.</p>
+      </div>
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">browse by genre</div>
+        <div class="genre-tags" id="genre-tags"></div>
+      </div>
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">top rated shows</div>
+        <ul class="sidebar-list" id="top-rated-list"></ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    &copy; WRETVISION, JUST OPINIONS.<span class="blink"> _</span><br>
+    <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR THE LOVE OF TV</span>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <button class="modal-close" id="modal-close">[ X ]</button>
+      <div id="modal-inner"></div>
+    </div>
+  </div>
+
+  <script src="reviews.js"></script>
+  <script src="shared.js"></script>
+  <script>initPage('tv');</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WretVision — Movie Reviews</title>
+  <meta name="description" content="WretVision movie reviews. Honest takes on cult films, forgotten classics, horror, sci-fi, action and more. No fluff, just opinion." />
+  <meta name="keywords" content="movie reviews, film reviews, cult films, horror movies, sci-fi films, action movies, forgotten classics, hidden gems" />
+  <meta name="author" content="WretVision" />
+  <link rel="canonical" href="https://wretvision.com/movies.html" />
+  <meta property="og:title" content="WretVision — Movie Reviews" />
+  <meta property="og:description" content="Honest movie reviews. Cult films, forgotten classics, horror, sci-fi and more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wretvision.com/movies.html" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Blog","name":"WretVision Movies","url":"https://wretvision.com/movies.html","description":"Honest movie reviews covering cult films, horror, sci-fi, action and more.","author":{"@type":"Person","name":"WretVision"}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="index.html" class="site-logo">WRET<span>VISION</span></a>
+      <nav class="main-nav">
+        <a href="index.html"  class="nav-link">HOME</a>
+        <a href="movies.html" class="nav-link active">▶ MOVIES</a>
+        <a href="tv.html"     class="nav-link">◈ TV SHOWS</a>
+        <a href="games.html"  class="nav-link">◆ GAMES</a>
+      </nav>
+    </div>
+    <a class="yt-link" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="avatar-wrap"><img src="wretvision.png" alt="WretVision" /></div>
+      <span class="yt-label">YOUTUBE ▶</span>
+    </a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <p class="hero-eyebrow">// film reviews //</p>
+    <h1 class="hero-title">WRET<span>VISION</span></h1>
+    <div class="lightning-bar"></div>
+    <p class="hero-sub">Films worth writing about. Even the forgotten ones.</p>
+  </section>
+
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num" id="stat-total">—</span><span class="stat-label">REVIEWS</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-genres">—</span><span class="stat-label">GENRES</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-earliest">—</span><span class="stat-label">EARLIEST</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-avg">—</span><span class="stat-label">AVG SCORE</span></div>
+  </div>
+
+  <div class="filter-bar" id="filter-bar"></div>
+
+  <div class="main-layout">
+    <main class="reviews-col">
+      <div class="col-header">movie reviews</div>
+      <div id="reviews-container"></div>
+      <div class="no-results" id="no-results"><p class="no-results-text">>> NO MOVIE REVIEWS IN THIS GENRE YET. CHECK BACK SOON. _</p></div>
+      <div class="pagination" id="pagination"></div>
+    </main>
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">about movies</div>
+        <p class="about-text">Films I want to write about but won't be making a video on. Obscure picks, forgotten classics, guilty pleasures. If it stuck with me, it ends up here.</p>
+      </div>
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">browse by genre</div>
+        <div class="genre-tags" id="genre-tags"></div>
+      </div>
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">top rated movies</div>
+        <ul class="sidebar-list" id="top-rated-list"></ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    &copy; WRETVISION, JUST OPINIONS.<span class="blink"> _</span><br>
+    <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR THE LOVE OF FILM</span>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <button class="modal-close" id="modal-close">[ X ]</button>
+      <div id="modal-inner"></div>
+    </div>
+  </div>
+
+  <script src="reviews.js"></script>
+  <script src="shared.js"></script>
+  <script>initPage('movie');</script>
+</body>
+</html>

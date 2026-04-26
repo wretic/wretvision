@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WretVision — Game Reviews</title>
+  <meta name="description" content="WretVision game reviews. Honest takes on RPGs, action games, indie titles and more. No fluff, just opinion." />
+  <meta name="keywords" content="game reviews, video game reviews, honest game reviews, RPG reviews, indie games, action games, best games" />
+  <meta name="author" content="WretVision" />
+  <link rel="canonical" href="https://wretvision.com/games.html" />
+  <meta property="og:title" content="WretVision — Game Reviews" />
+  <meta property="og:description" content="Honest game reviews. RPGs, action, indie and more. No fluff, just opinion." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wretvision.com/games.html" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Blog","name":"WretVision Games","url":"https://wretvision.com/games.html","description":"Honest game reviews covering RPGs, action, indie titles and more.","author":{"@type":"Person","name":"WretVision"}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    :root { --game-red: #8b1a1a; --game-red-light: #c0392b; }
+    .site-logo { color: var(--game-red) !important; text-shadow: 0 0 12px var(--game-red), 2px 2px 0 #1a0000 !important; }
+    .site-logo span { color: var(--accent) !important; }
+    .hero-title { color: var(--game-red-light) !important; text-shadow: 0 0 16px var(--game-red), 3px 3px 0 #1a0000 !important; }
+    .hero-title span { color: var(--accent) !important; }
+    .lightning-bar { background: linear-gradient(90deg, transparent, var(--game-red-light), var(--accent), var(--game-red-light), transparent) !important; }
+    .col-header { color: var(--game-red-light) !important; border-left-color: var(--accent) !important; }
+    .nav-link.active { color: var(--accent) !important; border-color: var(--accent) !important; background: rgba(255,224,102,0.08) !important; }
+    .review-card { border-left-color: var(--game-red-light) !important; }
+    .topbar { border-bottom-color: var(--game-red) !important; }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="index.html" class="site-logo">WRET<span>VISION</span></a>
+      <nav class="main-nav">
+        <a href="index.html"  class="nav-link">HOME</a>
+        <a href="movies.html" class="nav-link">▶ MOVIES</a>
+        <a href="tv.html"     class="nav-link">◈ TV SHOWS</a>
+        <a href="games.html"  class="nav-link active">◆ GAMES</a>
+      </nav>
+    </div>
+    <a class="yt-link" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="avatar-wrap"><img src="wretvision.png" alt="WretVision" /></div>
+      <span class="yt-label">YOUTUBE ▶</span>
+    </a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <p class="hero-eyebrow">// game reviews //</p>
+    <h1 class="hero-title">WRET<span>VISION</span></h1>
+    <div class="lightning-bar"></div>
+    <p class="hero-sub">Games worth playing. And some that wasted my time.</p>
+  </section>
+
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num" id="stat-total">—</span><span class="stat-label">REVIEWS</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-genres">—</span><span class="stat-label">GENRES</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-earliest">—</span><span class="stat-label">EARLIEST</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-avg">—</span><span class="stat-label">AVG SCORE</span></div>
+  </div>
+
+  <div class="filter-bar" id="filter-bar"></div>
+
+  <div class="main-layout">
+    <main class="reviews-col">
+      <div class="col-header">game reviews</div>
+      <div id="reviews-container"></div>
+      <div class="no-results" id="no-results"><p class="no-results-text">>> NO GAME REVIEWS YET. CHECK BACK SOON. _</p></div>
+      <div class="pagination" id="pagination"></div>
+    </main>
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">about game reviews</div>
+        <p class="about-text">Games that stuck with me, good or bad. Honest takes, no sponsored content, no PR copies influencing the score.</p>
+      </div>
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">browse by genre</div>
+        <div class="genre-tags" id="genre-tags"></div>
+      </div>
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">top rated games</div>
+        <ul class="sidebar-list" id="top-rated-list"></ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    &copy; WRETVISION, JUST OPINIONS.<span class="blink"> _</span><br>
+    <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR THE LOVE OF GAMES</span>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <button class="modal-close" id="modal-close">[ X ]</button>
+      <div id="modal-inner"></div>
+    </div>
+  </div>
+
+  <script src="reviews.js"></script>
+  <script src="shared.js"></script>
+  <script>initPage('game');</script>
+</body>
+</html>
