@@ -11,8 +11,8 @@
 const REVIEWS = [
   {
   id: Date.now(),
-  title: "Monarch: Legacy of Monsters",
-  year: 2023,
+  title: "Monarch: Legacy of Monsters - Season 2",
+  year: 2026,
   category: "tv",
   director: "Chris Black",
   runtime: "45 min/ep",
