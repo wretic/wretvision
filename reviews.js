@@ -10,6 +10,34 @@
 
 const REVIEWS = [
   {
+  id: Date.now(),
+  title: "Monarch: Legacy of Monsters",
+  year: 2023,
+  category: "tv",
+  director: "Chris Black",
+  runtime: "45 min/ep",
+  rating: "TV-14",
+  genres: ["sci-fi", "drama", "adventure"],
+  score: 5,
+  featured: false,
+
+  excerpt: "A MonsterVerse series that keeps promising scale but delivers mostly people talking in rooms.",
+
+  body: [
+    "If there is one thing Monarch: Legacy of Monsters Season 2 proves, it is that this show still does not understand why people showed up in the first place. When you build something inside the MonsterVerse, there is an expectation attached to it, and that expectation is not hours of characters talking in rooms while the actual kaiju barely show up. I went into this season thinking they might have learned from Season 1, which I had around a 7 out of 10, mostly carried by Lee Shaw, both Kurt Russell and Wyatt Russell, because at least those timelines felt focused and tied into the idea of Monarch as an organization. Season 2 drops that momentum almost immediately and falls right back into the same problem.",
+
+    "The conflict between Monarch and Apex should have been the backbone of the season. Apex experimenting on Titans, stealing eggs, trying to play god, that is a strong premise on paper. In execution it feels repetitive and unfocused, like the show keeps circling the same ideas without ever pushing them forward. The constant jumping between timelines and characters does not help either, because instead of building something cohesive it starts to feel like a collection of loosely connected scenes. On top of that, the focus on the younger cast, Cate, Kentaro, May, just does not land the way the show thinks it does, especially when they are written as more capable and more central than the people who have actually been dealing with this world for decades. It creates a strange imbalance where the veterans feel sidelined in their own story.",
+
+    "The pacing is where it really falls apart. Everything builds toward something that rarely arrives, which makes Episode 8, Separate Ways, stand out so much. That is finally where Godzilla properly shows up again, triggered by Lee Shaw, leading to an actual confrontation with another kaiju. And the moment that happens, the show immediately becomes more engaging. The scale is there, the cinematics are there, the CGI holds up, it reminds you exactly what this series could have been if it leaned into that side more consistently. Instead, those moments feel like brief interruptions in a show that is far more interested in character drama that never quite hits hard enough.",
+
+    "What makes it frustrating is not that the show avoids action, it is that it withholds it. There is a difference between a slow burn and constantly teasing something you refuse to deliver. Every episode follows the same pattern, long stretches of conversations, repeated ideas, then a short burst of kaiju presence before cutting away again. When it works, it works, but it simply does not happen often enough. By the time you get what you came for, it feels less like a payoff and more like a reminder of what you have been missing the entire time.",
+
+    "There are still elements here that work. The performances are solid, the concept of Monarch as a shadow organization tracking these creatures is still interesting, and the MonsterVerse itself is a strong foundation. But the execution leans too far into character drama that does not justify its screen time, and not nearly enough into the kaiju aspect that defines the franchise. At this point it feels less like a stepping stone toward something great and more like a clear indication of what the show is going to be."
+  ],
+
+  verdict: "A MonsterVerse series that forgets the monsters too often to justify the wait."
+},
+  {
     id: 5,
     category: "movie",
     title: "Lee Cronin's The Mummy",
