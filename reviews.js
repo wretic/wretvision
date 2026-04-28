@@ -9,7 +9,42 @@
 // ============================================================
 
 const REVIEWS = [
-    {
+  {
+    id: 5,
+    category: "movie",
+    title: "Lee Cronin's The Mummy",
+    year: 2026,
+    director: "Lee Cronin",
+    runtime: "134 min",
+    rating: "NR",
+    genres: ["horror"],
+    score: 5,
+    featured: false,
+    excerpt: "A beautifully shot horror film that looks the part, but forgets to be anything more.",
+    body: [
+      `There is a very specific kind of frustration that only certain films can create. Not the kind where something is outright bad, where you can point at it and laugh or tear it apart piece by piece, but the kind where everything looks like it should work and yet somehow never comes together into anything meaningful. That is exactly where Lee Cronin’s The Mummy lands. It is polished, it is controlled, it is visually confident, and it is also completely hollow in a way that becomes impossible to ignore the longer it goes on.
+
+From a purely technical standpoint, this is easily the film’s strongest asset. Cronin knows how to frame a shot, how to light a scene, how to build an atmosphere that feels oppressive without resorting to cheap tricks. There are moments where the film genuinely looks fantastic, where the textures, the shadows, the way the camera lingers on faces all suggest something far more substantial is about to unfold. It has the surface of a serious horror film, the kind that wants to crawl under your skin rather than jump out at you.
+
+The problem is that once you settle into that atmosphere, there is very little underneath it.`,
+
+      `The story itself feels strangely directionless, as if it cannot decide what kind of horror film it actually wants to be. There are clear elements of a possession narrative running through it, the kind that inevitably invites comparison to films that have already perfected that formula, but it never commits hard enough to carve out its own identity. At the same time, the whole “mummy” aspect feels more like a cosmetic layer than a defining core, something applied to give the film a recognizable hook without truly exploring what makes that concept interesting.
+
+What you are left with is a film that drifts. Scenes happen, characters react, things escalate in a very loose sense, but there is no real sense of progression or discovery. It feels less like a story unfolding and more like a sequence of moments stitched together, each one technically competent but collectively lacking any real momentum. By the time it reaches what should feel like a climax, it has already burned through most of its impact without building anything meaningful to support it.`,
+
+      `The characters do not help matters. Horror often relies on people making questionable decisions, that is part of the genre’s DNA, but there is a difference between flawed behavior that creates tension and outright stupidity that breaks immersion. Here it leans heavily toward the latter. Reactions feel off, choices feel forced, and instead of drawing you deeper into the situation, the film repeatedly pulls you out of it. You stop fearing for these people and start questioning why they are behaving the way they are at all.
+
+Strangely, the film avoids one of the genre’s most overused crutches. There is a noticeable lack of cheap jump scares, which on paper should be a strength. It suggests a confidence in atmosphere and slow-building dread. But that restraint never evolves into anything more. Instead of replacing those jumps with genuine tension, the film simply coasts on its mood, and mood alone is not enough to carry a two-hour runtime.`,
+
+      `What makes all of this more noticeable is how clearly the film understands horror on a visual level. There is talent here, no question about it. Cronin demonstrates an eye for composition and a control over tone that could anchor something far more effective if paired with a stronger script and clearer direction. But style can only carry so much weight before it starts to feel like a distraction from what is missing rather than an enhancement of what is there.
+
+Even the branding, the insistence on placing the director’s name front and center, gives off a sense of trying to elevate the film through association rather than letting it stand on its own merits. When a film has a strong identity, it does not need that kind of framing. It speaks for itself. This one never quite does.
+
+By the time it ends, the overwhelming feeling is not anger or disappointment, but indifference. It looks good. It sounds good. It simply does not stay with you. And in a genre built on impact, that might be the biggest issue of all.`
+    ],
+    verdict: "All style, no substance. Looks great, feels empty, and fades the moment it ends."
+  }
+];
       id: 4,
       category: "movie",
       title: "Undertone",
@@ -60,7 +95,7 @@ Undertone wants to have it both ways, artistic slow burn and conventional supern
       rating: "R",
       genres: ["sci-fi", "noir"],
       score: 8,
-      featured: true,
+      featured: false,
       excerpt: "Before The Matrix changed everything, there was Dark City, a neo-noir fever dream about memory, identity, and a city that reshapes itself at midnight. Nobody talks about this film enough and that is a crime against cinema.",
       body: [
         `Here is the setup: a man wakes up in a bathtub with no memory, a dead woman in the room, and no idea who he is or how he got there. Meanwhile, somewhere above the city, a group of pale bald men in long coats are reshaping the streets while everyone sleeps. Buildings grow. Alleyways vanish. Memories get swapped between people like trading cards. Dark City arrived in 1998, a full year before The Matrix, made on a fraction of the budget, and somehow pulled off something arguably more interesting. Where The Matrix asked what if reality is a simulation, Dark City asked something harder: what if everything you think you are was built by someone else, and does it even matter?
