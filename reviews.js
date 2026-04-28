@@ -44,7 +44,7 @@ By the time it ends, the overwhelming feeling is not anger or disappointment, bu
     ],
     verdict: "All style, no substance. Looks great, feels empty, and fades the moment it ends."
   },
-];
+  {
       id: 4,
       category: "movie",
       title: "Undertone",
