@@ -3129,5 +3129,13 @@ const HORROR_VAULT = [
     "status": "watched",
     "note": "",
     "id": 391
+  },
+    {
+    "title": "Lee Cronin's The Mummy",
+    "year": 2026,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 392
   }
 ];
