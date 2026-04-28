@@ -20,10 +20,74 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="shared.css" />
   <style>
-    .hero-title, .site-logo, .lightning-bar, .col-header, .nav-link.active { color: var(--green) !important; }
-    .lightning-bar { background: linear-gradient(90deg, transparent, #4fffb0, transparent) !important; }
-    .review-card { border-left-color: var(--green) !important; }
-    .topbar { border-bottom-color: var(--green) !important; }
+    /* ── TV THEME: green + blue ── */
+    :root {
+      --tv-green:      #4fffb0;
+      --tv-green-dim:  #2ecc80;
+      --tv-border:     rgba(79,255,176,0.25);
+      --tv-border-lit: rgba(79,255,176,0.6);
+    }
+
+    /* topbar */
+    .topbar { border-bottom-color: var(--tv-green-dim) !important; }
+    .site-logo { color: var(--tv-green) !important; text-shadow: 0 0 12px var(--tv-green-dim), 2px 2px 0 #001a0e !important; }
+    .site-logo span { color: var(--blue-light) !important; text-shadow: 0 0 10px rgba(59,191,255,0.5), 2px 2px 0 #021a2a !important; }
+    .yt-link { border-color: var(--tv-green-dim) !important; }
+    .nav-link.active { color: var(--tv-green) !important; border-color: var(--tv-green-dim) !important; background: rgba(79,255,176,0.08) !important; }
+
+    /* hero */
+    .hero-title { color: var(--tv-green) !important; text-shadow: 0 0 16px var(--tv-green-dim), 3px 3px 0 #001a0e !important; }
+    .hero-title span { color: var(--blue-light) !important; }
+    .lightning-bar { background: linear-gradient(90deg, transparent, var(--tv-green-dim), var(--blue-light), var(--tv-green-dim), transparent) !important; }
+    .hero-eyebrow { color: var(--tv-green-dim) !important; }
+
+    /* stats */
+    .stats-bar { background: var(--bg2); border-bottom-color: rgba(79,255,176,0.2) !important; }
+    .stat-num { color: var(--tv-green) !important; }
+    .stat-item { border-right-color: rgba(79,255,176,0.18) !important; }
+
+    /* filter bar */
+    .filter-bar { border-bottom-color: var(--tv-border) !important; }
+    .filter-btn { border-color: rgba(79,255,176,0.3) !important; }
+    .filter-btn:hover, .filter-btn.active { background: rgba(79,255,176,0.15) !important; color: var(--tv-green) !important; border-color: var(--tv-green-dim) !important; }
+
+    /* col header */
+    .col-header { color: var(--tv-green-dim) !important; border-left-color: var(--tv-green) !important; }
+
+    /* review cards */
+    .review-card { border-color: var(--tv-border) !important; border-left: 3px solid var(--tv-green-dim) !important; }
+    .review-card:hover { border-color: var(--tv-border-lit) !important; border-left-color: var(--tv-green) !important; background: var(--bg3) !important; }
+    .pixel-corner { background: var(--tv-green) !important; }
+    .read-more { color: var(--tv-green) !important; }
+    .read-more:hover { color: #fff !important; }
+
+    /* sidebar */
+    .sidebar-widget { border-color: var(--tv-border) !important; }
+    .widget-title { color: var(--tv-green) !important; border-bottom-color: rgba(79,255,176,0.3) !important; }
+    .genre-tag { border-color: var(--tv-green-dim) !important; color: var(--tv-green) !important; }
+    .genre-tag:hover, .genre-tag.active { background: rgba(79,255,176,0.15) !important; }
+    .sidebar-list li { border-bottom-color: rgba(79,255,176,0.2) !important; }
+    .sidebar-movie-title:hover { color: var(--tv-green) !important; }
+
+    /* pagination */
+    .page-btn { border-color: rgba(79,255,176,0.3) !important; }
+    .page-btn:hover { color: var(--tv-green) !important; border-color: var(--tv-green-dim) !important; background: rgba(79,255,176,0.1) !important; }
+    .page-btn.active { background: var(--tv-green-dim) !important; border-color: var(--tv-green) !important; color: var(--bg) !important; }
+    .pagination { border-top-color: rgba(79,255,176,0.25) !important; }
+
+    /* modal */
+    .modal-box { border-color: var(--tv-green-dim) !important; }
+    .modal-divider { background: linear-gradient(90deg, var(--tv-green), var(--blue-light), transparent) !important; }
+    .modal-genre { color: var(--tv-green) !important; }
+    .verdict-text { color: var(--tv-green) !important; }
+    .modal-close:hover { color: var(--tv-green) !important; border-color: var(--tv-green-dim) !important; }
+    .modal-footer { border-top-color: rgba(79,255,176,0.25) !important; }
+
+    /* main layout border */
+    .reviews-col { border-right-color: var(--tv-border) !important; }
+
+    /* footer */
+    .footer { border-top-color: var(--tv-green-dim) !important; }
   </style>
 </head>
 <body>
@@ -36,6 +100,7 @@
         <a href="movies.html" class="nav-link">▶ MOVIES</a>
         <a href="tv.html"     class="nav-link active">◈ TV SHOWS</a>
         <a href="games.html"  class="nav-link">◆ GAMES</a>
+        <a href="horror-vault.html" class="nav-link">☠ HORROR VAULT</a>
       </nav>
     </div>
     <a class="yt-link" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">

@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="shared.css" />
   <style>
-    .category-nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border-bottom: 2px solid var(--border); }
+    .category-nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border-bottom: 2px solid var(--border); }
     .cat-card { background: var(--bg2); padding: 28px 24px; text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 10px; transition: background 0.2s; }
     .cat-card:hover { background: var(--bg3); }
     .cat-icon { font-family: 'VT323', monospace; font-size: 40px; line-height: 1; }
@@ -29,6 +29,7 @@
     .cat-card.movies .cat-icon, .cat-card.movies .cat-name { color: var(--blue-light); }
     .cat-card.tv     .cat-icon, .cat-card.tv     .cat-name { color: var(--green); }
     .cat-card.games  .cat-icon, .cat-card.games  .cat-name { color: var(--accent); }
+    .cat-card.horror .cat-icon, .cat-card.horror .cat-name { color: #9edcff; text-shadow: 0 0 10px rgba(59,191,255,0.45); }
     @media (max-width: 560px) { .category-nav { grid-template-columns: 1fr; } }
   </style>
 </head>
@@ -42,6 +43,7 @@
         <a href="movies.html" class="nav-link">▶ MOVIES</a>
         <a href="tv.html"     class="nav-link">◈ TV SHOWS</a>
         <a href="games.html"  class="nav-link">◆ GAMES</a>
+        <a href="horror-vault.html" class="nav-link">☠ HORROR VAULT</a>
       </nav>
     </div>
     <a class="yt-link" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">
@@ -75,6 +77,11 @@
       <span class="cat-icon">◆</span>
       <span class="cat-name">GAMES</span>
       <span class="cat-count" id="count-games">— reviews</span>
+    </a>
+    <a href="horror-vault.html" class="cat-card horror">
+      <span class="cat-icon">☠</span>
+      <span class="cat-name">HORROR VAULT</span>
+      <span class="cat-count" id="count-horror">— titles</span>
     </a>
   </div>
 
@@ -131,11 +138,13 @@
   </div>
 
   <script src="reviews.js"></script>
+  <script src="horror-vault.js"></script>
   <script src="shared.js"></script>
   <script>
     document.getElementById('count-movies').textContent = REVIEWS.filter(r => r.category === 'movie').length + ' reviews';
     document.getElementById('count-tv').textContent     = REVIEWS.filter(r => r.category === 'tv').length + ' reviews';
     document.getElementById('count-games').textContent  = REVIEWS.filter(r => r.category === 'game').length + ' reviews';
+    document.getElementById('count-horror').textContent = HORROR_VAULT.length + ' titles';
     initPage('all');
   </script>
 </body>

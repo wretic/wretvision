@@ -20,16 +20,75 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="shared.css" />
   <style>
-    :root { --game-red: #8b1a1a; --game-red-light: #c0392b; }
-    .site-logo { color: var(--game-red) !important; text-shadow: 0 0 12px var(--game-red), 2px 2px 0 #1a0000 !important; }
-    .site-logo span { color: var(--accent) !important; }
-    .hero-title { color: var(--game-red-light) !important; text-shadow: 0 0 16px var(--game-red), 3px 3px 0 #1a0000 !important; }
-    .hero-title span { color: var(--accent) !important; }
-    .lightning-bar { background: linear-gradient(90deg, transparent, var(--game-red-light), var(--accent), var(--game-red-light), transparent) !important; }
-    .col-header { color: var(--game-red-light) !important; border-left-color: var(--accent) !important; }
-    .nav-link.active { color: var(--accent) !important; border-color: var(--accent) !important; background: rgba(255,224,102,0.08) !important; }
-    .review-card { border-left-color: var(--game-red-light) !important; }
+    /* ── GAMES THEME: dark red + yellow + blue ── */
+    :root {
+      --game-red:       #8b1a1a;
+      --game-red-light: #c0392b;
+      --game-red-glow:  #e74c3c;
+      --game-border:    rgba(139,26,26,0.4);
+      --game-border-lit:rgba(192,57,43,0.7);
+    }
+
+    /* topbar */
     .topbar { border-bottom-color: var(--game-red) !important; }
+    .site-logo { color: var(--game-red-light) !important; text-shadow: 0 0 12px var(--game-red), 2px 2px 0 #1a0000 !important; }
+    .site-logo span { color: var(--accent) !important; text-shadow: 0 0 10px rgba(255,224,102,0.5), 2px 2px 0 #332800 !important; }
+    .yt-link { border-color: var(--game-red) !important; }
+    .nav-link.active { color: var(--accent) !important; border-color: var(--game-red-light) !important; background: rgba(139,26,26,0.12) !important; }
+
+    /* hero */
+    .hero-title { color: var(--game-red-light) !important; text-shadow: 0 0 16px var(--game-red), 3px 3px 0 #1a0000 !important; }
+    .hero-title span { color: var(--accent) !important; text-shadow: 0 0 14px rgba(255,224,102,0.4), 3px 3px 0 #2a1f00 !important; }
+    .lightning-bar { background: linear-gradient(90deg, transparent, var(--game-red-light), var(--accent), var(--game-red-light), transparent) !important; }
+    .hero-eyebrow { color: var(--game-red) !important; }
+
+    /* stats */
+    .stats-bar { border-bottom-color: rgba(139,26,26,0.3) !important; }
+    .stat-num { color: var(--game-red-glow) !important; }
+    .stat-item { border-right-color: rgba(139,26,26,0.25) !important; }
+
+    /* filter bar */
+    .filter-bar { border-bottom-color: var(--game-border) !important; }
+    .filter-btn { border-color: rgba(139,26,26,0.35) !important; }
+    .filter-btn:hover, .filter-btn.active { background: rgba(139,26,26,0.18) !important; color: var(--accent) !important; border-color: var(--game-red-light) !important; }
+
+    /* col header */
+    .col-header { color: var(--game-red-light) !important; border-left-color: var(--accent) !important; }
+
+    /* review cards */
+    .review-card { border-color: var(--game-border) !important; border-left: 3px solid var(--game-red-light) !important; }
+    .review-card:hover { border-color: var(--game-border-lit) !important; border-left-color: var(--game-red-glow) !important; background: var(--bg3) !important; }
+    .pixel-corner { background: var(--game-red-light) !important; }
+    .read-more { color: var(--game-red-glow) !important; }
+    .read-more:hover { color: var(--accent) !important; }
+
+    /* sidebar */
+    .sidebar-widget { border-color: var(--game-border) !important; }
+    .widget-title { color: var(--accent) !important; border-bottom-color: rgba(139,26,26,0.3) !important; }
+    .genre-tag { border-color: var(--game-red-light) !important; color: var(--game-red-glow) !important; }
+    .genre-tag:hover, .genre-tag.active { background: rgba(139,26,26,0.2) !important; color: var(--accent) !important; }
+    .sidebar-list li { border-bottom-color: rgba(139,26,26,0.25) !important; }
+    .sidebar-movie-title:hover { color: var(--accent) !important; }
+
+    /* pagination */
+    .page-btn { border-color: rgba(139,26,26,0.35) !important; }
+    .page-btn:hover { color: var(--accent) !important; border-color: var(--game-red-light) !important; background: rgba(139,26,26,0.15) !important; }
+    .page-btn.active { background: var(--game-red-light) !important; border-color: var(--game-red-glow) !important; color: #fff !important; }
+    .pagination { border-top-color: rgba(139,26,26,0.25) !important; }
+
+    /* modal */
+    .modal-box { border-color: var(--game-red-light) !important; }
+    .modal-divider { background: linear-gradient(90deg, var(--game-red-light), var(--accent), transparent) !important; }
+    .modal-genre { color: var(--accent) !important; }
+    .verdict-text { color: var(--game-red-glow) !important; }
+    .modal-close:hover { color: var(--accent) !important; border-color: var(--game-red-light) !important; }
+    .modal-footer { border-top-color: rgba(139,26,26,0.25) !important; }
+
+    /* main layout */
+    .reviews-col { border-right-color: var(--game-border) !important; }
+
+    /* footer */
+    .footer { border-top-color: var(--game-red) !important; }
   </style>
 </head>
 <body>
@@ -42,6 +101,7 @@
         <a href="movies.html" class="nav-link">▶ MOVIES</a>
         <a href="tv.html"     class="nav-link">◈ TV SHOWS</a>
         <a href="games.html"  class="nav-link active">◆ GAMES</a>
+        <a href="horror-vault.html" class="nav-link">☠ HORROR VAULT</a>
       </nav>
     </div>
     <a class="yt-link" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">
