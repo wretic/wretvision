@@ -16,7 +16,7 @@ const REVIEWS = [
     year: 2026,
     director: "Lee Cronin",
     runtime: "134 min",
-    rating: "NR",
+    rating: "R",
     genres: ["horror"],
     score: 5,
     featured: false,
