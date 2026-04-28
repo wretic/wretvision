@@ -43,7 +43,7 @@ Even the branding, the insistence on placing the director’s name front and cen
 By the time it ends, the overwhelming feeling is not anger or disappointment, but indifference. It looks good. It sounds good. It simply does not stay with you. And in a genre built on impact, that might be the biggest issue of all.`
     ],
     verdict: "All style, no substance. Looks great, feels empty, and fades the moment it ends."
-  }
+  },
 ];
       id: 4,
       category: "movie",
