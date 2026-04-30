@@ -283,3 +283,75 @@ body::before {
 @media (max-width: 560px) {
   .main-nav { display: none; }
 }
+
+/* ── SECTION-SPECIFIC YOUTUBE BUTTON COLORS ─────────────────
+   Home keeps the default blue brand color.
+   Movies = gold, TV = green, Games = red.
+*/
+
+body.page-movies .yt-link {
+  border-color: #e6b84a !important;
+  background: rgba(184,138,27,0.08) !important;
+}
+
+body.page-movies .yt-link:hover {
+  background: rgba(184,138,27,0.18) !important;
+}
+
+body.page-movies .yt-link .avatar-wrap {
+  border-color: #ffd86b !important;
+}
+
+body.page-movies .yt-link .pixel-corner {
+  background: #e6b84a !important;
+}
+
+body.page-movies .yt-label {
+  color: #ffd86b !important;
+  text-shadow: 0 0 10px rgba(255,216,107,0.35);
+}
+
+body.page-tv .yt-link {
+  border-color: #2ecc80 !important;
+  background: rgba(79,255,176,0.08) !important;
+}
+
+body.page-tv .yt-link:hover {
+  background: rgba(79,255,176,0.16) !important;
+}
+
+body.page-tv .yt-link .avatar-wrap {
+  border-color: #4fffb0 !important;
+}
+
+body.page-tv .yt-link .pixel-corner {
+  background: #4fffb0 !important;
+}
+
+body.page-tv .yt-label {
+  color: #4fffb0 !important;
+  text-shadow: 0 0 10px rgba(79,255,176,0.35);
+}
+
+body.page-games .yt-link {
+  border-color: #8b1a1a !important;
+  background: rgba(139,26,26,0.10) !important;
+}
+
+body.page-games .yt-link:hover {
+  background: rgba(139,26,26,0.20) !important;
+}
+
+body.page-games .yt-link .avatar-wrap {
+  border-color: #e74c3c !important;
+}
+
+body.page-games .yt-link .pixel-corner {
+  background: #c0392b !important;
+}
+
+body.page-games .yt-label {
+  color: #e74c3c !important;
+  text-shadow: 0 0 10px rgba(231,76,60,0.35);
+}
+
