@@ -9,6 +9,54 @@
 // ============================================================
 
 const REVIEWS = [
+{
+  id: 1777480505797,
+  category: "game",
+  title: "Death Stranding 2: On The Beach",
+  year: 2026,
+  director: "Kojima Productions",
+  runtime: "PC, PlayStation 5",
+  rating: "Mature",
+  genres: ["action", "adventure", "horror"],
+  score: 9.5,
+  featured: true,
+  excerpt: "Death Stranding 2 is an overglorified DLC in the best possible way, a game that repeats itself with such confidence and craft that you forgive it almost everything.",
+  body: [
+    `The fairest criticism you can level at Death Stranding 2 is also somehow the least damaging one, which is that if you played the first game you already know exactly what kind of relationship you are entering into here. The delivery loop, the infrastructure building, the meditative rhythm of crossing hostile terrain one careful step at a time, none of that has been reinvented or meaningfully disrupted. What Kojima Productions has done instead is refine it, tighten it, and crucially, respect your time in ways the original occasionally forgot to. Getting vehicles early changes the entire texture of the experience, not because walking was ever the wrong choice mechanically, but because having the option immediately removes the fatigue that used to creep in around hour fifteen of the first game. The paving system still has this almost irrational pull to it, that specific satisfaction of knowing you are slowing yourself down now so that every subsequent trip pays dividends, and it is the kind of systemic thinking that most open world games gesture at without ever making feel genuinely rewarding. Chapter one drags and there is no spinning that into a positive, but once the world opens up the loop clicks back into place and stays there, repetitive in structure but surprisingly hard to walk away from.`,
+
+    `Kojima is still doing things no one else in this industry does, for better and occasionally for stranger, and Death Stranding 2 leans fully into that particular brand of controlled madness. The story gives you those cutscenes that end and leave you genuinely staring at the screen trying to process what you just witnessed, and that is not a complaint, that is the whole point, that is what you show up for. The character naming conventions, Tomorrow, Rainy, and others that read as absurd on paper, actually carry thematic weight once the story earns them, which is something Kojima has always understood that most writers never figure out, that a ridiculous idea stops being ridiculous the moment the surrounding material treats it with enough sincerity. The Metal Gear echoes hit differently though, because there is a soldier in this game channeling that unmistakable Solid Snake energy so clearly that it stops feeling like an homage and starts feeling like grief, a reminder that one of gaming's defining creative relationships was severed and that the closest Kojima can get to that world now is a shadow cast across someone else's story. The same quiet sadness lingers around the P.T. DNA embedded in the horror sequences, glimpses of something that never got to exist fully, which somehow makes Death Stranding feel more emotionally complicated than it would have on its own.`,
+
+    `The seventeen chapter structure sounds substantial until you actually move through it and realize how quickly the main path burns, two or three missions and you are already turning the page, which reinforces that DLC feeling in a structural sense even when the content itself is genuinely new. Mexico and Australia are distinct and visually interesting locations, and the story still throws real surprises even when the mechanical framework around them feels familiar, but that familiarity is the honest tradeoff you are making by coming back. The reason this still sits at a nine is not that the flaws are invisible, they are not, you feel them while playing, you clock the repetition, you notice the pacing stumbles in the early hours, and then you keep playing anyway because the core of what this game does is executed with a level of polish and intentionality that most games never approach. Death Stranding 2 is not trying to convert skeptics or reinvent its own formula, it is making a very specific experience for people who already understand what this series asks of them, and for those people it delivers almost everything it promises.`
+  ],
+  images: [
+    { src: "images/games/death-stranding-2/shot-1.webp", caption: "", afterParagraph: 1 },
+    { src: "images/games/death-stranding-2/shot-2.webp", caption: "", afterParagraph: 2 }
+  ],
+  verdict: "A glorified expansion that earns every point of its score through sheer craft and commitment, flaws fully visible and largely irrelevant."
+},
+
+    {
+  id: 1777479665736,
+  category: "movie",
+  title: "The Super Mario Galaxy Movie",
+  year: 2026,
+  director: "Michael Jelenic",
+  runtime: "98 min",
+  rating: "PG",
+  genres: ["family", "comedy", "adventure", "fantasy"],
+  score: 6,
+  featured: false,
+  excerpt: "Visually alive and perpetually exhausting, The Super Mario Galaxy Movie is the rare sequel that trades everything its predecessor got right for the illusion of more. More characters, more cameos, more spectacle, less movie.",
+  body: [
+    `What made the first film work, whatever you thought of it, was that it had a center of gravity. It knew what it was doing and when. This one feels like it was assembled from a dozen competing pitch documents and nobody had the authority to say no to any of them. Jelenic clearly has access to the full toybox here, and the film proceeds to dump that entire toybox onto the floor in real time, with scenes that don't build toward anything so much as collide with the next scene before the current one has finished existing. Pacing in a family film doesn't have to be slow, it doesn't even have to be patient in the conventional sense, but it has to let moments register before moving past them, and the Super Mario Galaxy Movie almost never does that. Something happens, something else immediately happens, and the cumulative effect is a film that feels rushed even when it's technically running two hours.`,
+
+    `The character problem is real and it compounds everything else. Bowser Jr. as a central antagonist is a genuinely interesting choice on paper, because there's actual emotional material to mine there, a kid trying to restore his father's legacy, desperate for validation, carrying the weight of a name he didn't earn. That's a story. But the film keeps abandoning that story every twenty minutes to wheel out another recognizable face from the franchise, and suddenly you're watching a cameo reel with plot obligations rather than a movie with a world that breathes. The difference between a rich ensemble and a checklist is whether the characters feel like they live in the same space or whether they feel like they were summoned specifically to make an audience recognize them. The Super Mario Galaxy Movie is almost entirely the latter, and recognition without investment is just nostalgia cosplay. Adults will clock this immediately and spend the back half of the film cataloguing appearances instead of caring about outcomes.`,
+
+    `None of this means the film is a disaster, and that's almost the more frustrating thing to reckon with. The animation is genuinely gorgeous in stretches, and there are individual sequences that show what a tighter, more disciplined version of this movie could have been. The crying Mario meme video that's been floating around the internet turns out to be weirdly accurate as a summary of the experience, not because the film is heartbreaking, but because it captures a very specific feeling of watching something with obvious potential just sort of fall apart in your hands while you stand there watching it happen. Kids will have a fine time, the energy is high enough and the colors are loud enough that it works as pure sensation, but fine time is a brutal standard for a sequel that had every reason to go further.`
+  ],
+  verdict: "A visually generous but structurally hollow sequel that mistakes momentum for storytelling, and never quite recovers from forgetting that spectacle only lands when there's something underneath it worth caring about."
+},
+
   {
   id: Date.now(),
   title: "Monarch: Legacy of Monsters - Season 2",

@@ -19,6 +19,78 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="shared.css" />
+  <style>
+    /* ── MOVIES THEME: gold / cinema light ── */
+    :root {
+      --movie-gold:        #b88a1b;
+      --movie-gold-light:  #e6b84a;
+      --movie-gold-glow:   #ffd86b;
+      --movie-border:      rgba(184,138,27,0.35);
+      --movie-border-lit:  rgba(230,184,74,0.7);
+    }
+
+    /* topbar */
+    .topbar { border-bottom-color: var(--movie-gold) !important; }
+    .site-logo { color: var(--movie-gold-light) !important; text-shadow: 0 0 12px var(--movie-gold), 2px 2px 0 #2a1f00 !important; }
+    .site-logo span { color: var(--blue-light) !important; text-shadow: 0 0 10px rgba(59,191,255,0.5), 2px 2px 0 #021a2a !important; }
+    .yt-link { border-color: var(--movie-gold) !important; }
+    .nav-link.active { color: var(--movie-gold-glow) !important; border-color: var(--movie-gold-light) !important; background: rgba(184,138,27,0.12) !important; }
+
+    /* hero */
+    .hero-title { color: var(--movie-gold-light) !important; text-shadow: 0 0 16px var(--movie-gold), 3px 3px 0 #2a1f00 !important; }
+    .hero-title span { color: var(--blue-light) !important; text-shadow: 0 0 14px rgba(59,191,255,0.4), 3px 3px 0 #021a2a !important; }
+    .lightning-bar { background: linear-gradient(90deg, transparent, var(--movie-gold-light), var(--blue-light), var(--movie-gold-light), transparent) !important; }
+    .hero-eyebrow { color: var(--movie-gold-glow) !important; }
+
+    /* stats */
+    .stats-bar { border-bottom-color: rgba(184,138,27,0.3) !important; }
+    .stat-num { color: var(--movie-gold-glow) !important; }
+    .stat-item { border-right-color: rgba(184,138,27,0.25) !important; }
+
+    /* filter bar */
+    .filter-bar { border-bottom-color: var(--movie-border) !important; }
+    .filter-btn { border-color: rgba(184,138,27,0.35) !important; }
+    .filter-btn:hover, .filter-btn.active { background: rgba(184,138,27,0.18) !important; color: var(--movie-gold-glow) !important; border-color: var(--movie-gold-light) !important; }
+
+    /* col header */
+    .col-header { color: var(--movie-gold-glow) !important; border-left-color: var(--movie-gold-light) !important; }
+
+    /* review cards */
+    .review-card { border-color: var(--movie-border) !important; border-left: 3px solid var(--movie-gold-light) !important; }
+    .review-card:hover { border-color: var(--movie-border-lit) !important; border-left-color: var(--movie-gold-glow) !important; background: var(--bg3) !important; }
+    .pixel-corner { background: var(--movie-gold-light) !important; }
+    .read-more { color: var(--movie-gold-glow) !important; }
+    .read-more:hover { color: #fff !important; }
+
+    /* sidebar */
+    .sidebar-widget { border-color: var(--movie-border) !important; }
+    .widget-title { color: var(--movie-gold-glow) !important; border-bottom-color: rgba(184,138,27,0.3) !important; }
+    .genre-tag { border-color: var(--movie-gold-light) !important; color: var(--movie-gold-glow) !important; }
+    .genre-tag:hover, .genre-tag.active { background: rgba(184,138,27,0.2) !important; color: #fff !important; }
+    .sidebar-list li { border-bottom-color: rgba(184,138,27,0.25) !important; }
+    .sidebar-movie-title:hover { color: var(--movie-gold-glow) !important; }
+
+    /* pagination */
+    .page-btn { border-color: rgba(184,138,27,0.35) !important; }
+    .page-btn:hover { color: var(--movie-gold-glow) !important; border-color: var(--movie-gold-light) !important; background: rgba(184,138,27,0.15) !important; }
+    .page-btn.active { background: var(--movie-gold-light) !important; border-color: var(--movie-gold-glow) !important; color: var(--bg) !important; }
+    .pagination { border-top-color: rgba(184,138,27,0.25) !important; }
+
+    /* modal */
+    .modal-box { border-color: var(--movie-gold-light) !important; }
+    .modal-divider { background: linear-gradient(90deg, var(--movie-gold-light), var(--blue-light), transparent) !important; }
+    .modal-genre { color: var(--movie-gold-glow) !important; }
+    .verdict-text { color: var(--movie-gold-glow) !important; }
+    .modal-close:hover { color: var(--movie-gold-glow) !important; border-color: var(--movie-gold-light) !important; }
+    .modal-footer { border-top-color: rgba(184,138,27,0.25) !important; }
+
+    /* main layout */
+    .reviews-col { border-right-color: var(--movie-border) !important; }
+
+    /* footer */
+    .footer { border-top-color: var(--movie-gold) !important; }
+  </style>
+
 </head>
 <body>
 

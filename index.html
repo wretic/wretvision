@@ -26,11 +26,40 @@
     .cat-icon { font-family: 'VT323', monospace; font-size: 40px; line-height: 1; }
     .cat-name { font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: 2px; }
     .cat-count { font-family: 'VT323', monospace; font-size: 18px; color: var(--muted); letter-spacing: 1px; }
-    .cat-card.movies .cat-icon, .cat-card.movies .cat-name { color: var(--blue-light); }
+    :root {
+      --movie-gold:        #b88a1b;
+      --movie-gold-light:  #e6b84a;
+      --movie-gold-glow:   #ffd86b;
+    }
+    .cat-card.movies .cat-icon, .cat-card.movies .cat-name { color: var(--movie-gold-light); }
+    .cat-card.movies .cat-icon { text-shadow: 0 0 10px rgba(255,216,107,0.4); }
+    .cat-card.movies:hover { box-shadow: inset 0 -2px 0 rgba(255,216,107,0.35); }
     .cat-card.tv     .cat-icon, .cat-card.tv     .cat-name { color: var(--green); }
     .cat-card.games  .cat-icon, .cat-card.games  .cat-name { color: var(--accent); }
     .cat-card.horror .cat-icon, .cat-card.horror .cat-name { color: #9edcff; text-shadow: 0 0 10px rgba(59,191,255,0.45); }
     @media (max-width: 560px) { .category-nav { grid-template-columns: 1fr; } }
+  
+    /* ── MOVIE CARD OVERRIDES (homepage) ── */
+    .review-card[data-category="movie"],
+    .review-card.movie {
+      border-color: rgba(184,138,27,0.35) !important;
+      border-left: 3px solid var(--movie-gold-light) !important;
+    }
+    .review-card[data-category="movie"]:hover,
+    .review-card.movie:hover {
+      border-left-color: var(--movie-gold-glow) !important;
+      box-shadow: 0 0 12px rgba(255,216,107,0.15);
+    }
+    .review-title:hover { color: var(--movie-gold-glow) !important; }
+    .score-value { color: var(--movie-gold-glow) !important; }
+    .read-more { color: var(--movie-gold-glow) !important; }
+    .read-more:hover { color: #fff !important; }
+    .review-type.movie {
+      border-color: var(--movie-gold-light) !important;
+      color: var(--movie-gold-glow) !important;
+      background: rgba(184,138,27,0.1);
+    }
+
   </style>
 </head>
 <body>
