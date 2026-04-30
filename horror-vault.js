@@ -3137,5 +3137,13 @@ const HORROR_VAULT = [
     "status": "watched",
     "note": "",
     "id": 392
+  },
+    {
+    "title": "The Fourth Kind",
+    "year": 2009,
+    "decade": "2000s",
+    "status": "watched",
+    "note": "",
+    "id": 393
   }
 ];
