@@ -1,3 +1,4 @@
+let currentTopCategory = 'game';
 // ============================================================
 // WRETVISION — SHARED ENGINE
 // Used by index.html, movies.html, tv.html, games.html
@@ -690,6 +691,81 @@ function closeModal() {
 }
 
 // ── INIT (called by each page) ────────────────────────────────
+
+function setupTopRatedTabs() {
+  const topTabs = document.getElementById('top-tabs');
+  if (!topTabs) return;
+
+  const tabs = topTabs.querySelectorAll('.top-tab');
+  if (!tabs.length) return;
+
+  const activeTab = topTabs.querySelector('.top-tab.active') || tabs[0];
+  tabs.forEach(t => t.classList.remove('active'));
+  activeTab.classList.add('active');
+  currentTopCategory = activeTab.dataset.cat || 'game';
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      currentTopCategory = tab.dataset.cat || 'game';
+      renderTopRated();
+    });
+  });
+}
+
+function renderTopRated() {
+  const list = document.getElementById('top-rated-list');
+  if (!list) return;
+
+  const topTabs = document.getElementById('top-tabs');
+  const activeTab = topTabs ? topTabs.querySelector('.top-tab.active') : null;
+
+  // On homepage, always use the active tab. On category pages, use the page category.
+  const categoryToShow = topTabs
+    ? (activeTab?.dataset.cat || currentTopCategory || 'game')
+    : activeCategory;
+
+  currentTopCategory = categoryToShow;
+
+  const topReviews = REVIEWS
+    .filter(r => {
+      const score = Number(r.score) || 0;
+      const categoryMatches = categoryToShow === 'all' || r.category === categoryToShow;
+      return categoryMatches && score >= 8;
+    })
+    .sort((a, b) => {
+      const scoreDiff = (Number(b.score) || 0) - (Number(a.score) || 0);
+      if (scoreDiff !== 0) return scoreDiff;
+      return (Number(b.year) || 0) - (Number(a.year) || 0);
+    })
+    .slice(0, 5);
+
+  list.innerHTML = topReviews.length
+    ? topReviews.map(r => `
+      <li data-id="${r.id}">
+        <span class="sidebar-movie-title">${r.title}</span>
+        <span class="sidebar-score">${r.score}/10</span>
+      </li>
+    `).join('')
+    : '<li><span class="sidebar-movie-title">No 8+/10 reviews yet</span></li>';
+
+  list.querySelectorAll('li[data-id]').forEach(item => {
+    item.addEventListener('click', () => {
+      const id = parseInt(item.dataset.id, 10);
+      const review = REVIEWS.find(r => r.id === id);
+      if (!review) return;
+
+      if (activeCategory === 'all') {
+        window.location.href = reviewUrl(review);
+      } else {
+        openModal(id);
+      }
+    });
+  });
+}
+
 function initPage(category) {
   activeCategory = category || 'all';
   currentFilter  = 'all';
@@ -715,4 +791,7 @@ function initPage(category) {
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
   openReviewFromHash();
+
+  setupTopRatedTabs();
+  renderTopRated();
 }

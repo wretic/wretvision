@@ -38,6 +38,48 @@
     .cat-card.games  .cat-icon, .cat-card.games  .cat-name { color: var(--accent); }
     .cat-card.horror .cat-icon, .cat-card.horror .cat-name { color: #9edcff; text-shadow: 0 0 10px rgba(59,191,255,0.45); }
     @media (max-width: 560px) { .category-nav { grid-template-columns: 1fr; } }
+
+    /* ── TOP RATED TABS (homepage) ── */
+    .top-tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .top-tab {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 6px;
+      padding: 7px 6px;
+      border: 1px solid rgba(10,143,212,0.3);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: all 0.15s;
+    }
+
+    .top-tab-game:hover,
+    .top-tab-game.active {
+      color: #e74c3c;
+      border-color: #c0392b;
+      background: rgba(139,26,26,0.16);
+    }
+
+    .top-tab-movie:hover,
+    .top-tab-movie.active {
+      color: var(--movie-gold-glow);
+      border-color: var(--movie-gold-light);
+      background: rgba(184,138,27,0.14);
+    }
+
+    .top-tab-tv:hover,
+    .top-tab-tv.active {
+      color: var(--green);
+      border-color: var(--green);
+      background: rgba(79,255,176,0.10);
+    }
+
   
     /* ── MOVIE CARD OVERRIDES (homepage) ── */
     .review-card[data-category="movie"],
@@ -147,6 +189,11 @@
         <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
         <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
         <div class="widget-title">top rated</div>
+        <div class="top-tabs" id="top-tabs">
+          <button class="top-tab active top-tab-game" data-cat="game">GAMES</button>
+          <button class="top-tab top-tab-movie" data-cat="movie">MOVIES</button>
+          <button class="top-tab top-tab-tv" data-cat="tv">TV</button>
+        </div>
         <ul class="sidebar-list" id="top-rated-list"></ul>
       </div>
     </aside>
