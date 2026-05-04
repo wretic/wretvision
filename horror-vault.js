@@ -3130,7 +3130,7 @@ const HORROR_VAULT = [
     "note": "",
     "id": 391
   },
-    {
+  {
     "title": "Lee Cronin's The Mummy",
     "year": 2026,
     "decade": "2020s",
@@ -3138,12 +3138,28 @@ const HORROR_VAULT = [
     "note": "",
     "id": 392
   },
-    {
-    "title": "The Fourth Kind",
-    "year": 2009,
-    "decade": "2000s",
-    "status": "watched",
-    "note": "",
-    "id": 393
+  {
+  "title": "The Fourth Kind",
+  "year": 2009,
+  "decade": "2000s",
+  "status": "watched",
+  "note": "",
+  "id": 393
+  },
+  {
+  "title": "The Wicker Man",
+  "year": 2006,
+  "decade": "2000s",
+  "status": "watched",
+  "note": "",
+  "id": 394
+  },
+  {
+  "title": "House of Wax",
+  "year": 2005,
+  "decade": "2000s",
+  "status": "watched",
+  "note": "",
+  "id": 395
   }
 ];
