@@ -10,6 +10,31 @@
 
 const REVIEWS = [
     {
+  id: 1777913651366,
+  category: "tv",
+  title: "Smiling Friends",
+  year: 2020,
+  director: "Michael Cusack, Zach Hadel",
+  runtime: "?? min",
+  rating: "TV-MA",
+  genres: ["anime", "comedy"],
+  score: 9,
+  featured: false,
+  excerpt: "Smiling Friends is the kind of show that could only exist because two genuinely funny people were handed a budget and told to go nuts, and the result is one of the most distinct animated comedies in years.",
+  body: [
+    `There is a version of this show that never gets made, where Zach Hadel stays a beloved corner of the internet, a voice you recognize from OneyPlays, a guy whose chaotic hand-drawn shorts circulate among people who are already in on the joke, and that's where it ends. The fact that it didn't end there, that he and Michael Cusack actually pulled off a proper Adult Swim series that feels nothing like a compromise or a watered-down pitch, is genuinely worth celebrating. Smiling Friends carries the exact DNA of what made Hadel's online work so magnetic, that sense that the humor is coming from a real place, that the bizarre character designs and the unpredictable tonal lurches aren't random weirdness for its own sake but the natural output of someone whose brain just works differently, and it translates to a longer format better than it had any right to.`,
+
+    `The visual language of the show is one of its most underappreciated qualities, because mixing 2D hand-drawn characters with low-poly 3D environments and occasionally live-action footage or grotesque photorealistic inserts is a choice that could easily feel like a gimmick, but here it functions as a kind of comedic grammar. The jarring shifts in style don't break immersion so much as they signal that the show exists outside of any normal register, that the rules of tone and visual consistency simply do not apply, and once you accept that, the pacing hits completely different. Episodes move at a pace that borders on aggressive, cramming ideas into tight runtimes in a way that rewards attention and punishes distraction, and that velocity is a feature, not a flaw. It's the same instinct that makes a great sketch cut before the joke wears out its welcome, applied to an entire series.`,
+
+    `The Robot Chicken comparison is a fair entry point if you're trying to sell someone on it, both shows share that willingness to weaponize genre-mixing and to find humor in places that polished mainstream animation would never touch, but Smiling Friends has something Robot Chicken rarely does, which is genuine character warmth underneath all the chaos. Charlie and Pim work as a duo precisely because their dynamic isn't just a straight-man and a wildcard routine, there's actual comedic chemistry in how their worldviews collide when they're dropped into increasingly unhinged situations, and that gives the show an anchor that keeps it from feeling like a pure randomness machine. It is absolutely not for everyone, the humor requires a specific tolerance for the absurd and a willingness to let a joke be weird without demanding a punchline, but if that frequency is yours, this show will feel like it was made specifically for you.`
+  ],
+  images: [
+    { src: "images/tv/smiling-friends/shot-1.webp", caption: "", afterParagraph: 3 }
+  ],
+  verdict: "Smiling Friends is a legitimate creative achievement dressed up as internet-brained nonsense, and it earns every single one of its laughs."
+},
+
+    {
   id: 1777912678188,
   category: "tv",
   title: "Common Side Effects",
