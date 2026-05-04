@@ -3161,5 +3161,45 @@ const HORROR_VAULT = [
   "status": "watched",
   "note": "",
   "id": 395
-  }
+  },
+  {
+  "title": "Thir13en Ghosts",
+  "year": 2001,
+  "decade": "2000s",
+  "status": "watched",
+  "note": "",
+  "id": 396
+  },
+  {
+  "title": "Ghost Ship",
+  "year": 2002,
+  "decade": "2000s",
+  "status": "watched",
+  "note": "",
+  "id": 397
+  },
+  {
+  "title": "The Hills Have Eyes",
+  "year": 2006,
+  "decade": "2000s",
+  "status": "watched",
+  "note": "",
+  "id": 398
+  },
+  {
+  "title": "I Spit on Your Grave",
+  "year": 2010,
+  "decade": "2010s",
+  "status": "watched",
+  "note": "",
+  "id": 399
+  },
+  {
+  "title": "High Tension",
+  "year": 2003,
+  "decade": "2000s",
+  "status": "watched",
+  "note": "",
+  "id": 400
+  },
 ];
