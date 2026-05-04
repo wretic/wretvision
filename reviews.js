@@ -10,6 +10,31 @@
 
 const REVIEWS = [
     {
+  id: 1777912678188,
+  category: "tv",
+  title: "Common Side Effects",
+  year: 2025,
+  director: "Joseph Bennett, Steve Hely",
+  runtime: "23 min/ep",
+  rating: "TV-MA",
+  genres: ["anime", "drama", "sci-fi"],
+  score: 8,
+  featured: false,
+  excerpt: "Common Side Effects is one of those rare shows that feels genuinely invented rather than assembled, a weird, confident, beautifully animated piece of work that earns every bit of its strangeness.",
+  body: [
+    `What Bennett and Hely have pulled off here is something that most animated shows, American or otherwise, don't even attempt, which is building a grounded conspiratorial thriller inside a visual language that feels completely its own. The animation style carries real compositional intelligence, with camera angles that treat the animated frame the way a serious live-action cinematographer would treat actual geography, pushing into uncomfortable close-ups, holding wide shots longer than expected, finding angles that create unease without a single note of score telling you how to feel. That kind of visual restraint and intention is rare in any medium, and in animation it almost never happens. It makes the world feel tactile and slightly off in a way that perfectly serves a story about something ancient and biological quietly undermining the entire pharmaceutical order.`,
+
+    `The script is where the show quietly impresses you the more you think about it after the fact. The conspiracy mechanics are clean enough that you're never lost, but layered enough that the stakes keep escalating without feeling manufactured, and the voice performances sell every beat of that without overplaying it. But the sequences that will genuinely stick with you are the mushroom trips, these strange, almost indescribable plains of existence that open up whenever someone ingests the thing at the center of all this chaos. The creatures, the geometry, the logic of that other place, none of it maps onto anything you've seen before, and Bennett doesn't try to explain it or domesticate it into something comfortable. It just exists in its own rules, vivid and deeply weird, and the show is wise enough to let that weirdness breathe rather than rushing back to plot.`,
+
+    `If you've seen Scavengers Reign you already know Bennett has a specific genius for building worlds that feel ecologically and visually complete, places with their own internal logic that you sense extends far beyond what the frame shows you. Common Side Effects applies that same sensibility to a story that's far more rooted in human institutions and human greed, and the tension between that grounded paranoid thriller structure and the genuinely psychedelic strangeness underneath it is where the show lives. It shouldn't work as cleanly as it does, and the fact that it does is a testament to how locked-in the creative vision is from top to bottom. Season two cannot get here fast enough.`
+  ],
+  images: [
+    { src: "images/tv/common-side-effects/shot-1.webp", caption: "", afterParagraph: 3 }
+  ],
+  verdict: "Common Side Effects is the kind of show that reminds you animation can do things no other medium can, and Bennett is one of the very few people actually pushing that boundary."
+},
+
+    {
   id: 1777902457553,
   category: "movie",
   title: "Return to Silent Hill",
