@@ -37,7 +37,7 @@ const REVIEWS = [
     {
   id: 1777912678188,
   category: "tv",
-  title: "Common Side Effects",
+  title: "Common Side Effects - Season 1",
   year: 2025,
   director: "Joseph Bennett, Steve Hely",
   runtime: "23 min/ep",
