@@ -9,6 +9,28 @@
 // ============================================================
 
 const REVIEWS = [
+    {
+  id: 1777902457553,
+  category: "movie",
+  title: "Return to Silent Hill",
+  year: 2026,
+  director: "Christophe Gans",
+  runtime: "106 min",
+  rating: "R",
+  genres: ["mystery", "drama", "horror"],
+  score: 2,
+  featured: false,
+  excerpt: "Christophe Gans had the source material, the mythology, the cultural goodwill, and still managed to produce something that feels like a fever dream adaptation of a Wikipedia summary rather than a film made by anyone who actually cared.",
+  body: [
+    `The cruelest part about Return to Silent Hill is how unnecessary every single failure is, because the game it's adapting is essentially a fully realized screenplay sitting right there on a disc from 2001. The fog, the rust, the psychological dread, the specific texture of James Sunderland's guilt, all of it is mapped out with a clarity that most original horror scripts spend years trying to achieve. Gans didn't need to reinvent anything, he needed to translate it, and instead he apparently decided that translation wasn't enough and started improvising in ways that expose a fundamental misunderstanding of why Silent Hill 2 works at all. The spider-woman creature is the most glaring example, something conjured from nothing, carrying none of the symbolic weight that makes the game's monsters feel like manifestations of James's fractured psychology rather than generic horror set dressing. It's not bold creative reimagining, it's a gap-filler from someone who either didn't finish the game or didn't understand what they were playing, and it poisons the atmosphere every time it appears.`,
+
+    `The character work is where the film really collapses into itself, because Eddie and Laura aren't minor supporting roles you can treat as background furniture, they're emotional anchors that give James's journey its full weight and moral complexity. Eddie barely registers here, shuffled in and out of scenes without the patience to let his arc breathe, which is a stunning waste given how much that character's tragedy mirrors and complicates what James is going through. Laura fares even worse, reduced to an afterthought when she should be the film's conscience, the one figure who saw Mary clearly and without guilt, the one person James cannot manipulate or project onto. Stripping that dynamic down to almost nothing doesn't simplify the story, it hollows it out. And then there's James himself, who gets additional backstory that feels less like enrichment and more like the film panicking that audiences won't connect with him, so it overexplains and overloads until the quiet devastation that makes the character iconic gets buried under scenes that feel written by committee.`,
+
+    `What makes this so genuinely frustrating rather than just disappointing is that adapting Silent Hill 2 should be, relatively speaking, one of the more manageable challenges in video game film history, because the game already understands cinematic pacing, already knows how to withhold and reveal, already has a third act that lands like a punch to the chest if you've been paying attention. You don't need to outsmart it, you need to respect it enough to get out of its way in the right places and only expand where the medium genuinely demands it. Adding depth to characters where the game's runtime had to be economical, that's a legitimate opportunity and a worthwhile one. But that's not what happens here. Instead the additions feel grafted on and performative, the visuals in stretches look cheaper than they have any right to for a production of this scale, and the overall film carries the unmistakable energy of something made by people who understood the assignment on paper and then proceeded to ignore it the moment cameras rolled.`
+  ],
+  verdict: "A waste so complete it almost requires effort, Return to Silent Hill takes one of the most emotionally and atmospherically rich games ever made and produces something that would embarrass a fan film with a quarter of the budget."
+},
+
 {
   id: 1777480505797,
   category: "game",
