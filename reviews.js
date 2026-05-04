@@ -12,8 +12,8 @@ const REVIEWS = [
     {
   id: 1777913651366,
   category: "tv",
-  title: "Smiling Friends",
-  year: 2020,
+  title: "Smiling Friends Season 1 - 3",
+  year: 2020 - 2026,
   director: "Michael Cusack, Zach Hadel",
   runtime: "?? min",
   rating: "TV-MA",
