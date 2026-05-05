@@ -441,3 +441,51 @@ body.page-games .yt-label {
   border-color: rgba(231,76,60,0.70);
 }
 
+/* ── CUSTOM WRETVISION CURSORS ─────────────────────────────
+   Files must be in: /assets/
+   - wretvision-cursor.png
+   - wretvision-pointer.png
+   Keep both PNGs at 32x32 for reliable browser support.
+*/
+html,
+body {
+  cursor: url("assets/wretvision-cursor.png") 0 0, auto !important;
+}
+
+a,
+a *,
+button,
+button *,
+.nav-link,
+.nav-link *,
+.yt-link,
+.yt-link *,
+.review-card,
+.review-card *,
+.filter-btn,
+.filter-btn *,
+.filter-tab,
+.filter-tab *,
+.category-card,
+.category-card *,
+.movie-card,
+.movie-card *,
+.genre-tag,
+.genre-tag *,
+.sidebar-list li,
+.sidebar-list li *,
+.related-link,
+.related-link *,
+.modal-close,
+.modal-close *,
+.page-btn,
+.page-btn *,
+[role="button"],
+[role="button"] * {
+  cursor: url("assets/wretvision-pointer.png") 8 0, pointer !important;
+}
+
+.page-btn:disabled,
+.page-btn:disabled * {
+  cursor: url("assets/wretvision-cursor.png") 0 0, auto !important;
+}
