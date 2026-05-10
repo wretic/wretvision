@@ -117,13 +117,14 @@ Output format — respond with a JSON object and nothing else, no markdown fence
 }}
 
 Rules:
-- 3 paragraphs, each 80-120 words
+- 3 paragraphs, each 150-200 words
 - Sound like the reviewer — specific, opinionated, no filler
 - excerpt is what shows on the card before someone clicks in
 - verdict is the final line inside the full review
 - SEO: naturally work in the title, year, genre, streaming platform, and 1-2 comparable titles
 - score MUST match the pre-logged score if one was given
 - No markdown inside the strings, no escaped newlines, clean plain text only
+- Never use hyphens or em dashes, use commas or rewrite the sentence instead
 """
 
 def call_claude(prompt):
