@@ -10,6 +10,28 @@
 
 const REVIEWS = [
     {
+      "id": 1778433782463,
+      "category": "movie",
+      "title": "It Follows",
+      "year": 2014,
+      "director": "",
+      "runtime": "?? min",
+      "rating": "",
+      "genres": [
+        "Horror"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "It Follows does what most horror films are too cowardly to try — it builds a suffocating dread and never once lets you breathe.",
+      "body": [
+        "It Follows (2014) is the kind of horror film that gets under your skin and stays there. David Robert Mitchell isn't interested in jump scares. He's interested in inevitability. That single concept — something is always walking towards you, slowly, relentlessly, wearing a human face — is one of the most purely terrifying premises in modern horror. What makes it land is the discipline. Mitchell commits. He never blinks, never winks at the camera, never lets the film become self-aware and smug about how clever it is. That restraint is rarer than it should be.",
+        "Maika Monroe is genuinely great here. There's a specific kind of exhausted terror she carries through the second and third acts that feels completely real rather than performed. The score by Disasterpeace is doing heavy lifting too — that synth work is relentless and wrong in exactly the right way, sitting just outside comfort the entire runtime. The suburban Detroit setting adds something too. Wide empty streets, faded houses, swimming pools. Somewhere familiar that keeps feeling just slightly off. Atmosphere built from location rather than production design. That's craft.",
+        "Is it perfect? Not quite. The final act loses a little of the tight control that makes the first hour so suffocating, and a couple of character decisions strain credibility in ways you notice. But these are minor complaints against a film that genuinely achieves something. If you grew up on A Nightmare on Elm Street or The Babadook and you're hunting for something streaming now that earns its reputation — It Follows deserves to be in that conversation without hesitation."
+      ],
+      "images": [],
+      "verdict": "9/10 — one of the smartest, most atmospherically confident horror films of the decade, and proof that a single great idea, executed with discipline, is worth more than a hundred lazy sequels."
+    },
+    {
   id: 1777913651366,
   category: "tv",
   title: "Smiling Friends Season 1-3",

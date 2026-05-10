@@ -4,7 +4,10 @@
     {
       "title": "Longlegs",
       "year": 2024,
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "Shudder",
       "done": false,
       "score": null,
@@ -13,7 +16,9 @@
     {
       "title": "MaXXXine",
       "year": 2024,
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "VOD",
       "done": false,
       "score": null,
@@ -22,7 +27,10 @@
     {
       "title": "Alien: Romulus",
       "year": 2024,
-      "genre": ["Sci-Fi", "Horror"],
+      "genre": [
+        "Sci-Fi",
+        "Horror"
+      ],
       "streaming": "Disney+",
       "done": false,
       "score": null,
@@ -31,7 +39,9 @@
     {
       "title": "Immaculate",
       "year": 2024,
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "Shudder",
       "done": false,
       "score": null,
@@ -40,7 +50,10 @@
     {
       "title": "The Substance",
       "year": 2024,
-      "genre": ["Horror", "Body Horror"],
+      "genre": [
+        "Horror",
+        "Body Horror"
+      ],
       "streaming": "Mubi",
       "done": false,
       "score": null,
@@ -52,7 +65,9 @@
       "title": "The Bear",
       "season": 3,
       "year": 2024,
-      "genre": ["Drama"],
+      "genre": [
+        "Drama"
+      ],
       "streaming": "Disney+",
       "done": false,
       "score": null,
@@ -62,7 +77,10 @@
       "title": "Shogun",
       "season": 1,
       "year": 2024,
-      "genre": ["Drama", "Historical"],
+      "genre": [
+        "Drama",
+        "Historical"
+      ],
       "streaming": "Disney+",
       "done": false,
       "score": null,
@@ -72,7 +90,10 @@
       "title": "House of the Dragon",
       "season": 2,
       "year": 2024,
-      "genre": ["Fantasy", "Drama"],
+      "genre": [
+        "Fantasy",
+        "Drama"
+      ],
       "streaming": "HBO Max",
       "done": false,
       "score": null,
@@ -82,7 +103,10 @@
       "title": "True Detective: Night Country",
       "season": 4,
       "year": 2024,
-      "genre": ["Crime", "Horror"],
+      "genre": [
+        "Crime",
+        "Horror"
+      ],
       "streaming": "HBO Max",
       "done": false,
       "score": null,
@@ -93,7 +117,10 @@
     {
       "title": "The Wicker Man",
       "year": 1973,
-      "genre": ["Horror", "Folk Horror"],
+      "genre": [
+        "Horror",
+        "Folk Horror"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -102,7 +129,10 @@
     {
       "title": "Suspiria",
       "year": 1977,
-      "genre": ["Horror", "Giallo"],
+      "genre": [
+        "Horror",
+        "Giallo"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -111,7 +141,9 @@
     {
       "title": "Hereditary",
       "year": 2018,
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -120,7 +152,10 @@
     {
       "title": "Midsommar",
       "year": 2019,
-      "genre": ["Horror", "Folk Horror"],
+      "genre": [
+        "Horror",
+        "Folk Horror"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -129,7 +164,10 @@
     {
       "title": "The Lighthouse",
       "year": 2019,
-      "genre": ["Horror", "Psychological"],
+      "genre": [
+        "Horror",
+        "Psychological"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -138,16 +176,21 @@
     {
       "title": "It Follows",
       "year": 2014,
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "Various",
-      "done": false,
+      "done": true,
       "score": null,
       "notes": null
     },
     {
       "title": "The Witch",
       "year": 2015,
-      "genre": ["Horror", "Folk Horror"],
+      "genre": [
+        "Horror",
+        "Folk Horror"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -156,7 +199,10 @@
     {
       "title": "The Autopsy of Jane Doe",
       "year": 2016,
-      "genre": ["Horror", "Mystery"],
+      "genre": [
+        "Horror",
+        "Mystery"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
