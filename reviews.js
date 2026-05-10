@@ -17,9 +17,7 @@ const REVIEWS = [
       "director": "David Robert Mitchell",
       "runtime": "100 min",
       "rating": "",
-      "genres": [
-        "Horror" "Mystery" "Thriller"
-      ],
+      "genres": [ "Horror" "Mystery" "Thriller"],
       "score": 9,
       "featured": false,
       "excerpt": "It Follows does what most horror films are too cowardly to try — it builds a suffocating dread and never once lets you breathe.",
