@@ -1,0 +1,11 @@
+{
+  "_instructions": "Log your gut score for anything you've seen. The AI will write the review TO your score, not make up its own. Format: 'Title (Year)': { score, notes }",
+  "Longlegs (2024)": {
+    "score": 6,
+    "notes": "Style over substance. Cage is fascinating but the mystery doesn't hold together."
+  },
+  "Alien: Romulus (2024)": {
+    "score": 6,
+    "notes": "Safe and competent but creatively empty. Gorgeous to look at. Nothing new to say."
+  }
+}

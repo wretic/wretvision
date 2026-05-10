@@ -1,0 +1,166 @@
+{
+  "_instructions": "Add titles here. Set 'done': true when reviewed. 'score' and 'notes' are optional pre-logs of your gut reaction — if set, the AI will write to that score.",
+  "movies": [
+    {
+      "title": "Longlegs",
+      "year": 2024,
+      "genre": ["Horror", "Thriller"],
+      "streaming": "Shudder",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "MaXXXine",
+      "year": 2024,
+      "genre": ["Horror"],
+      "streaming": "VOD",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Alien: Romulus",
+      "year": 2024,
+      "genre": ["Sci-Fi", "Horror"],
+      "streaming": "Disney+",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Immaculate",
+      "year": 2024,
+      "genre": ["Horror"],
+      "streaming": "Shudder",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Substance",
+      "year": 2024,
+      "genre": ["Horror", "Body Horror"],
+      "streaming": "Mubi",
+      "done": false,
+      "score": null,
+      "notes": null
+    }
+  ],
+  "tv": [
+    {
+      "title": "The Bear",
+      "season": 3,
+      "year": 2024,
+      "genre": ["Drama"],
+      "streaming": "Disney+",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Shogun",
+      "season": 1,
+      "year": 2024,
+      "genre": ["Drama", "Historical"],
+      "streaming": "Disney+",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "House of the Dragon",
+      "season": 2,
+      "year": 2024,
+      "genre": ["Fantasy", "Drama"],
+      "streaming": "HBO Max",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "True Detective: Night Country",
+      "season": 4,
+      "year": 2024,
+      "genre": ["Crime", "Horror"],
+      "streaming": "HBO Max",
+      "done": false,
+      "score": null,
+      "notes": null
+    }
+  ],
+  "horror_vault": [
+    {
+      "title": "The Wicker Man",
+      "year": 1973,
+      "genre": ["Horror", "Folk Horror"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Suspiria",
+      "year": 1977,
+      "genre": ["Horror", "Giallo"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Hereditary",
+      "year": 2018,
+      "genre": ["Horror"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Midsommar",
+      "year": 2019,
+      "genre": ["Horror", "Folk Horror"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Lighthouse",
+      "year": 2019,
+      "genre": ["Horror", "Psychological"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "It Follows",
+      "year": 2014,
+      "genre": ["Horror"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Witch",
+      "year": 2015,
+      "genre": ["Horror", "Folk Horror"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Autopsy of Jane Doe",
+      "year": 2016,
+      "genre": ["Horror", "Mystery"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    }
+  ]
+}
