@@ -14,11 +14,11 @@ const REVIEWS = [
       "category": "movie",
       "title": "It Follows",
       "year": 2014,
-      "director": "",
-      "runtime": "?? min",
+      "director": "David Robert Mitchell",
+      "runtime": "100 min",
       "rating": "",
       "genres": [
-        "Horror"
+        "Horror" "Mystery" "Thriller"
       ],
       "score": 9,
       "featured": false,
