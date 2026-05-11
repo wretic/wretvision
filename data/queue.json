@@ -279,5 +279,19 @@
       "score": null,
       "notes": null
     }
+    {
+      "title": "We Bury The Dead",
+      "year": 2024,
+      "director": "Zak Hilditch",
+      "runtime": "94 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
   ]
 }
