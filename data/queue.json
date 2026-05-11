@@ -7,7 +7,11 @@
       "director": "Osgood Perkins",
       "runtime": "101 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller", "Mystery"],
+      "genre": [
+        "Horror",
+        "Thriller",
+        "Mystery"
+      ],
       "streaming": "Shudder",
       "done": false,
       "score": null,
@@ -19,7 +23,10 @@
       "director": "Ti West",
       "runtime": "103 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "VOD",
       "done": false,
       "score": null,
@@ -31,7 +38,11 @@
       "director": "Fede Álvarez",
       "runtime": "119 min",
       "rating": "R",
-      "genre": ["Sci-Fi", "Horror", "Action"],
+      "genre": [
+        "Sci-Fi",
+        "Horror",
+        "Action"
+      ],
       "streaming": "Disney+",
       "done": false,
       "score": null,
@@ -43,7 +54,11 @@
       "director": "Michael Mohan",
       "runtime": "89 min",
       "rating": "R",
-      "genre": ["Horror", "Mystery", "Thriller"],
+      "genre": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
       "streaming": "Shudder",
       "done": false,
       "score": null,
@@ -55,7 +70,11 @@
       "director": "Coralie Fargeat",
       "runtime": "141 min",
       "rating": "R",
-      "genre": ["Horror", "Body Horror", "Sci-Fi"],
+      "genre": [
+        "Horror",
+        "Body Horror",
+        "Sci-Fi"
+      ],
       "streaming": "Mubi",
       "done": false,
       "score": null,
@@ -70,7 +89,10 @@
       "director": "Christopher Storer",
       "runtime": "30 min",
       "rating": "TV-MA",
-      "genre": ["Drama", "Comedy"],
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
       "streaming": "Disney+",
       "done": false,
       "score": null,
@@ -83,7 +105,11 @@
       "director": "Rachel Kondo, Caillin Pupool",
       "runtime": "60 min",
       "rating": "TV-MA",
-      "genre": ["Drama", "Historical", "Action"],
+      "genre": [
+        "Drama",
+        "Historical",
+        "Action"
+      ],
       "streaming": "Disney+",
       "done": false,
       "score": null,
@@ -96,9 +122,13 @@
       "director": "Ryan Condal",
       "runtime": "60 min",
       "rating": "TV-MA",
-      "genre": ["Fantasy", "Drama", "Action"],
+      "genre": [
+        "Fantasy",
+        "Drama",
+        "Action"
+      ],
       "streaming": "HBO Max",
-      "done": false,
+      "done": true,
       "score": null,
       "notes": null
     },
@@ -109,7 +139,11 @@
       "director": "Issa López",
       "runtime": "60 min",
       "rating": "TV-MA",
-      "genre": ["Crime", "Horror", "Mystery"],
+      "genre": [
+        "Crime",
+        "Horror",
+        "Mystery"
+      ],
       "streaming": "HBO Max",
       "done": false,
       "score": null,
@@ -123,7 +157,11 @@
       "director": "Robin Hardy",
       "runtime": "88 min",
       "rating": "R",
-      "genre": ["Horror", "Folk Horror", "Mystery"],
+      "genre": [
+        "Horror",
+        "Folk Horror",
+        "Mystery"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -135,7 +173,11 @@
       "director": "Dario Argento",
       "runtime": "98 min",
       "rating": "R",
-      "genre": ["Horror", "Giallo", "Mystery"],
+      "genre": [
+        "Horror",
+        "Giallo",
+        "Mystery"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -147,7 +189,11 @@
       "director": "Ari Aster",
       "runtime": "127 min",
       "rating": "R",
-      "genre": ["Horror", "Mystery", "Drama"],
+      "genre": [
+        "Horror",
+        "Mystery",
+        "Drama"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -159,7 +205,11 @@
       "director": "Ari Aster",
       "runtime": "148 min",
       "rating": "R",
-      "genre": ["Horror", "Folk Horror", "Mystery"],
+      "genre": [
+        "Horror",
+        "Folk Horror",
+        "Mystery"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -171,7 +221,11 @@
       "director": "Robert Eggers",
       "runtime": "109 min",
       "rating": "R",
-      "genre": ["Horror", "Psychological", "Drama"],
+      "genre": [
+        "Horror",
+        "Psychological",
+        "Drama"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -183,7 +237,11 @@
       "director": "David Robert Mitchell",
       "runtime": "100 min",
       "rating": "R",
-      "genre": ["Horror", "Mystery", "Thriller"],
+      "genre": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
       "streaming": "Various",
       "done": true,
       "score": null,
@@ -195,7 +253,11 @@
       "director": "Robert Eggers",
       "runtime": "92 min",
       "rating": "R",
-      "genre": ["Horror", "Folk Horror", "Mystery"],
+      "genre": [
+        "Horror",
+        "Folk Horror",
+        "Mystery"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,
@@ -207,7 +269,11 @@
       "director": "André Øvredal",
       "runtime": "86 min",
       "rating": "R",
-      "genre": ["Horror", "Mystery", "Thriller"],
+      "genre": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
       "streaming": "Various",
       "done": false,
       "score": null,

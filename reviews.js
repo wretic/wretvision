@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1778514602336,
+      "category": "tv",
+      "title": "House of the Dragon Season 2",
+      "year": 2024,
+      "director": "Ryan Condal",
+      "runtime": "60 min",
+      "rating": "TV-MA",
+      "genres": [
+        "Fantasy",
+        "Drama",
+        "Action"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "House of the Dragon Season 2 looks incredible and goes almost nowhere. The war everyone was promised barely shows up.",
+      "body": [
+        "House of the Dragon Season 2 had one job. Season one spent eight episodes building toward a Targaryen civil war that felt genuinely inevitable and brutal. So naturally, season two decides the best move is to slow everything down, split the cast across a dozen locations, and spend most of its runtime in council chambers. This is a fantasy drama on HBO Max in 2024 with dragons and it somehow manages to feel smaller than its predecessor. The production is still gorgeous, the costumes are still doing serious work, and when the show remembers it has actual fire breathing creatures at its disposal, it delivers. But those moments are rationed like they cost the writers something personal to write.",
+        "What works here is specific. The Blood and Cheese sequence in episode one is genuinely disturbing, the kind of quiet horror that lingers. Matt Smith is still the most watchable person on screen, doing more with a sideways glance than most actors do with a monologue. Emma DArcy has grown into Rhaenyra but the writing keeps undercutting her agency at the worst moments. Alicent Hightower gets more interesting this season and Olivia Cooke is clearly hungry for it. The dragon riding sequences when they finally arrive are spectacular and practical feeling in a way that Game of Thrones sometimes was not. The problem is everything surrounding those peaks feels like connective tissue that never tightens into anything.",
+        "Season two of House of the Dragon runs eight episodes and honestly could have been six. The pacing is the real villain here. There is bloat in places that should crackle with tension, and the season ends at a point that feels less like a cliffhanger and more like the show simply ran out of runway. For fans of the original Game of Thrones era this will scratch an itch but it will not blow your mind the way the best of that show did. Comparable to the slower stretches of The Rings of Power in terms of ambition outpacing execution. It is watchable, it has genuine highlights, and it frustratingly keeps you just invested enough to come back."
+      ],
+      "images": [],
+      "verdict": "House of the Dragon Season 2 is a show that keeps promising the fire and mostly giving you the smoke, 6/10."
+    },
+    {
       "id": 1778433782463,
       "category": "movie",
       "title": "It Follows",
