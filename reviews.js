@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1778519682235,
+      "category": "movie",
+      "title": "Longlegs",
+      "year": 2024,
+      "director": "Osgood Perkins",
+      "runtime": "101 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Mystery"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Longlegs has the bones of something genuinely unsettling. It just forgets to put meat on them.",
+      "body": [
+        "Osgood Perkins knows how to build a mood. That much is undeniable. Longlegs, his 2024 serial killer horror on Shudder, opens with this creeping dread that genuinely gets under your skin. The desaturated palette, the fractured editing, the way sound design does more heavy lifting than the script ever manages. Perkins is clearly swinging for something in the Silence of the Lambs neighbourhood and you respect the ambition even when the execution lets him down. Maika Monroe is working hard as FBI agent Lee Harker and there are moments where her quiet, disconnected performance is genuinely compelling. She plays strange in a way that feels earned rather than decorative.",
+        "Then there is Nicolas Cage. And look, Cage as Longlegs is simultaneously the best and worst thing about this film. Every scene he is in crackles with something genuinely weird and unnerving. The prosthetics, the voice, the physical choices he makes. It is committed, fearless work that deserves a better film around it. But here is the problem. The mystery at the centre of Longlegs does not hold together. The occult mechanics, the family connections, the rules of how any of it actually works get murkier as the film progresses rather than clicking into satisfying place. By the third act you stop trying to follow the logic and just let the vibes wash over you.",
+        "That is ultimately what Longlegs is. A vibes film. A very well dressed, occasionally striking vibes film that mistakes atmosphere for story and assumes that if things feel unsettling enough you will not notice the plot is tissue thin. Comparable to Hereditary or Prisoners in its tonal ambitions, it lands considerably below both. The horror community built this one up enormously in summer 2024 and the hype genuinely hurt it. Strip the hype away and you have a watchable, stylish thriller with one barnstorming performance at its centre and a mystery that dissolves under any real scrutiny."
+      ],
+      "images": [],
+      "verdict": "6/10, Cage is genuinely frightening and Perkins has real visual instincts, but Longlegs is style hunting for a substance it never quite catches."
+    },
+    {
       "id": 1778514602336,
       "category": "tv",
       "title": "House of the Dragon Season 2",
