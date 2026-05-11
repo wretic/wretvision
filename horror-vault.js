@@ -3204,7 +3204,7 @@ const HORROR_VAULT = [
   },
   {
   "title": "Longlegs",
-  "year": 2014,
+  "year": 2024,
   "decade": "2010s",
   "status": "watched",
   "note": "",
