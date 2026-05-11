@@ -3202,4 +3202,12 @@ const HORROR_VAULT = [
   "note": "",
   "id": 400
   },
+  {
+  "title": "Long Legs",
+  "year": 2014,
+  "decade": "2010s",
+  "status": "watched",
+  "note": "",
+  "id": 401
+  },
 ];
