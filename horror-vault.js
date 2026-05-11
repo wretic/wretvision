@@ -3203,7 +3203,7 @@ const HORROR_VAULT = [
   "id": 400
   },
   {
-  "title": "Long Legs",
+  "title": "Longlegs",
   "year": 2014,
   "decade": "2010s",
   "status": "watched",
