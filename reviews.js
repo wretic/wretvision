@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1778605554339,
+      "category": "tv",
+      "title": "Shogun Season 1",
+      "year": 2024,
+      "director": "Rachel Kondo, Caillin Pupool",
+      "runtime": "60 min",
+      "rating": "TV-MA",
+      "genres": [
+        "Drama",
+        "Historical",
+        "Action"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Shogun 2024 is the kind of historical drama that makes everything else on TV look like it's playing dress-up.",
+      "body": [
+        "There are shows that transport you and shows that drop you into a world so completely realised you forget you're watching television. Shogun Season 1 on Disney+ is firmly the second kind. FX's adaptation of James Clavell's novel had every reason to be a prestige mess, the kind of thing that looks expensive but says nothing. Instead it's patient, precise, and genuinely gripping across all ten episodes. It knows exactly what it is and never flinches from it. The feudal Japan setting isn't backdrop, it's the whole point, and the show commits to that in a way that series like Marco Polo could never manage. It's not trying to be Game of Thrones. It's trying to be something better.",
+        "Hiroyuki Sanada is the reason this works as deeply as it does. His Yoshii Toranaga is one of the best characters on television in years, a man who reveals almost nothing while constantly moving every piece on the board. Sanada also produced the show, and you feel that ownership in every frame he's in. Cosmo Jarvis as Blackthorne earns his place gradually rather than immediately, which is the right call. And Anna Sawai as Mariko is extraordinary, carrying the emotional and thematic weight of the entire series on her back without ever making it look like effort. The performances across the board are lived in rather than performed. The pacing is deliberate but never slow, there is always something shifting beneath the surface.",
+        "If I'm being honest, the early episodes ask for patience that not every viewer will give them. The political manoeuvring is dense and the show trusts you to keep up rather than holding your hand. Some will bounce off that. They're wrong to, but they will. The final two episodes are among the best television I've seen in a while, the kind of ending that feels inevitable in the best possible way, like the whole structure was always pointing exactly here. Watching Shogun Season 1 in 2024 on Disney+ feels like a genuine event in a streaming landscape full of things designed to be forgotten by Thursday."
+      ],
+      "images": [],
+      "verdict": "9/10, Shogun is the rare historical drama that earns every minute of its runtime and then some, see it before someone spoils the ending."
+    },
+    {
       "id": 1778519682235,
       "category": "movie",
       "title": "Longlegs",
