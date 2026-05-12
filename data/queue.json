@@ -278,7 +278,7 @@
       "done": false,
       "score": null,
       "notes": null
-    }
+    },
     {
       "title": "We Bury The Dead",
       "year": 2024,
@@ -293,5 +293,6 @@
       "done": false,
       "score": null,
       "notes": null
-  ],
+    }
+  ]
 }
