@@ -10,6 +10,29 @@
 
 const REVIEWS = [
     {
+      "id": 1778690123662,
+      "category": "movie",
+      "title": "MaXXXine",
+      "year": 2024,
+      "director": "Ti West",
+      "runtime": "103 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "MaXXXine has style to burn and almost nothing underneath it.",
+      "body": [
+        "Ti West has built something genuinely interesting with the X trilogy and MaXXXine (2024) is the finale nobody needed but got anyway. After the raw grimy brilliance of X and the surprisingly moving Pearl, this one plants Maxine Minx in 1980s Hollywood with a serial killer on the loose and a sleazy neon soaked atmosphere that looks incredible on screen. West clearly loves this era. The production design earns its keep. Mia Goth is committed as always and she carries herself through scenes that frankly do not deserve her. You can feel the effort. The problem is that effort without substance is just decoration and MaXXXine is almost entirely decoration.",
+        "The 80s slasher thriller genre mash is a fun concept and for the first twenty minutes or so it feels like it might actually go somewhere. Then it starts circling. Characters show up, do their bit, vanish. Kevin Bacon is having a blast but his role feels imported from a different and arguably better film. The mystery at the core is not mysterious enough to build tension and not clever enough to pay off. When the reveal lands it lands with a thud, the kind of twist that feels like the film thinks it has said something when it has really just explained itself. I kept waiting for the dread to arrive. It never did.",
+        "Here is the thing about closing out a trilogy: you owe the audience something that justifies the journey. Pearl was a character study that actually got under your skin. MaXXXine on VOD settles for being a vibe, a stylish genre exercise that fans of giallo or something like Blow Out will recognise the bones of but feel the meat is missing. Goth deserves a better ending for this character. The trilogy deserved a better ending full stop. There are moments, flashes of what this could have been, and they make the mediocrity around them hurt more."
+      ],
+      "images": [],
+      "verdict": "5/10, gorgeous to look at and hollow to its core, MaXXXine wastes a great performer and a great era on a finale that mistakes aesthetic for substance."
+    },
+    {
       "id": 1778605554339,
       "category": "tv",
       "title": "Shogun Season 1",
