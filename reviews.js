@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1778775499500,
+      "category": "movie",
+      "title": "The Substance",
+      "year": 2024,
+      "director": "Coralie Fargeat",
+      "runtime": "141 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Body Horror",
+        "Sci-Fi"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "The Substance (2024) is the most viscerally uncomfortable film I've seen in years, and I mean that as a compliment.",
+      "body": [
+        "Coralie Fargeat does not want you to be comfortable. The Substance is a body horror film that wears its influences openly, Cronenberg is in the DNA, so is Verhoeven, but Fargeat is doing something that feels genuinely her own. Demi Moore plays a fading celebrity who injects herself with a black market serum that generates a younger, more perfect version of herself, played by Margaret Qualley. The premise sounds like schlocky sci-fi. What Fargeat builds from it is a savage, unsubtle, and absolutely intentional dissection of how women are consumed and discarded by the entertainment industry. It is not trying to be subtle. It is not a film that mistakes dark for deep either, because the darkness here is always in service of something specific. You feel the point of every grotesque image.",
+        "Moore is extraordinary. I cannot stress this enough. She gives a performance that requires her to be humiliated, distorted, and stripped bare in ways that feel genuinely brave, and she commits completely without ever losing the raw human pain underneath it all. Qualley matches her. The two of them are essentially playing opposing forces in the same fractured psyche, and the film builds their dynamic with real patience before it goes completely off the rails in the third act. And it does go off the rails. Spectacularly. The practical effects work in the final thirty minutes is some of the most jaw-dropping, repulsive, and brilliantly crafted body horror since The Thing. It earns every second of its madness because the emotional groundwork was laid properly before the blood started flowing.",
+        "Where the film stumbles slightly is in its runtime and its willingness to hammer the same thematic nail a few too many times in the middle stretch. By the time you hit the hour mark you already understand exactly what Fargeat is saying, and some of the repetition in the second act tests your patience. It trusts its audience less than it should, which is a shame because the audience it deserves is smart enough to follow without being lectured. Still, The Substance (2024) is the kind of horror film that genuinely lodges in your chest. If you are watching on Mubi, clear your evening. Do not eat beforehand."
+      ],
+      "images": [],
+      "verdict": "8/10, bold, brutal, and genuinely saying something worth hearing even when it oversays it."
+    },
+    {
       "id": 1778690123662,
       "category": "movie",
       "title": "MaXXXine",
