@@ -32,6 +32,23 @@
       "score": null,
       "notes": null
     },
+        {
+      "title": "Punisher: One Last Kill",
+      "year": 2026,
+      "director": "Reinaldo Marcus Green",
+      "runtime": "51 m",
+      "rating": "R",
+      "genre": [
+        "Drama",
+        "Thriller",
+        "Action",
+        "Crime",
+      ],
+      "streaming": "Disney+",
+      "done": false,
+      "score": 6.5,
+      "notes": null
+    },
     {
       "title": "Alien: Romulus",
       "year": 2024,
