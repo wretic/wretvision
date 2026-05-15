@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1778860771477,
+      "category": "movie",
+      "title": "Alien: Romulus",
+      "year": 2024,
+      "director": "Fede Álvarez",
+      "runtime": "119 min",
+      "rating": "R",
+      "genres": [
+        "Sci-Fi",
+        "Horror",
+        "Action"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Alien: Romulus looks incredible and says absolutely nothing. Fede Alvarez knows how to build a frame. He just forgot to put anything inside it.",
+      "body": [
+        "Fede Alvarez can direct. That much is not in question. Alien: Romulus is a genuinely gorgeous film, all cold corridors and wet darkness and that iconic biomechanical design given more screen time than it has gotten in years. The practical creature work is legitimately impressive and there are moments, specifically in the mid section aboard the station, where the film earns real tension. The cast is young and game, Cailee Spaeny in particular is doing proper work here, grounded and scared in a way that feels lived in rather than performed. Alvarez clearly loves this franchise and every frame proves it. If this were a student film or a passion project made for the love of the craft alone, you would applaud it without reservation.",
+        "But here is the problem. Alien: Romulus has nothing to say. It is a greatest hits compilation dressed up as a new album. Every beat, every reveal, every moment of dread has a direct ancestor in Alien or Aliens and the film knows it, leans into it, and somehow thinks that acknowledgment is the same as originality. It is not. The script recycles so efficiently that you stop being scared and start ticking boxes. There is a sequence in the third act that exists purely to remind you of a more iconic moment from 1979 and it lands with a thud because the original earned it and this one just borrowed it. Predictable twists the film clearly thinks are clever. Character decisions that exist to service the plot rather than the people. Padding disguised as atmosphere.",
+        "Alien: Romulus sits in that frustrating middle ground where competence and emptiness share the same space. It is watchable, genuinely watchable, and for stretches it is more effective than Prometheus or Alien: Covenant managed. But watchable is not enough for a franchise with this ceiling. You leave it entertained and immediately start forgetting it. Streaming it on Disney+ feels right because this is exactly the kind of film that fills an evening without filling your head. If you want something with similar bones but actual vision behind it, go back to the 1979 original or revisit Aliens. Romulus is the franchise on maintenance mode. Safe, competent, and creatively empty."
+      ],
+      "images": [],
+      "verdict": "6/10, a beautiful shell of a film that proves you can nail the look of Alien without understanding why it scared us in the first place."
+    },
+    {
       "id": 1778775499500,
       "category": "movie",
       "title": "The Substance",
