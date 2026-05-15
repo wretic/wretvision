@@ -1,0 +1,241 @@
+{
+  "_instructions": "Add titles here. Set 'done': true when reviewed. 'score' and 'notes' are optional pre-logs of your gut reaction — if set, the AI will write to that score.",
+  "movies": [
+    {
+      "title": "Longlegs",
+      "year": 2024,
+      "director": "Osgood Perkins",
+      "runtime": "101 min",
+      "rating": "R",
+      "genre": ["Horror", "Thriller", "Mystery"],
+      "streaming": "Shudder",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "MaXXXine",
+      "year": 2024,
+      "director": "Ti West",
+      "runtime": "103 min",
+      "rating": "R",
+      "genre": ["Horror", "Thriller"],
+      "streaming": "VOD",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Punisher: One Last Kill",
+      "year": 2026,
+      "director": "Reinaldo Marcus Green",
+      "runtime": "51 min",
+      "rating": "R",
+      "genre": ["Drama", "Thriller", "Action", "Crime"],
+      "streaming": "Disney+",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Alien: Romulus",
+      "year": 2024,
+      "director": "Fede Álvarez",
+      "runtime": "119 min",
+      "rating": "R",
+      "genre": ["Sci-Fi", "Horror", "Action"],
+      "streaming": "Disney+",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Immaculate",
+      "year": 2024,
+      "director": "Michael Mohan",
+      "runtime": "89 min",
+      "rating": "R",
+      "genre": ["Horror", "Mystery", "Thriller"],
+      "streaming": "Shudder",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Substance",
+      "year": 2024,
+      "director": "Coralie Fargeat",
+      "runtime": "141 min",
+      "rating": "R",
+      "genre": ["Horror", "Body Horror", "Sci-Fi"],
+      "streaming": "Mubi",
+      "done": true,
+      "score": null,
+      "notes": null
+    }
+  ],
+  "tv": [
+    {
+      "title": "The Bear",
+      "season": 3,
+      "year": 2024,
+      "director": "Christopher Storer",
+      "runtime": "30 min",
+      "rating": "TV-MA",
+      "genre": ["Drama", "Comedy"],
+      "streaming": "Disney+",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Shogun",
+      "season": 1,
+      "year": 2024,
+      "director": "Rachel Kondo, Caillin Pupool",
+      "runtime": "60 min",
+      "rating": "TV-MA",
+      "genre": ["Drama", "Historical", "Action"],
+      "streaming": "Disney+",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "House of the Dragon",
+      "season": 2,
+      "year": 2024,
+      "director": "Ryan Condal",
+      "runtime": "60 min",
+      "rating": "TV-MA",
+      "genre": ["Fantasy", "Drama", "Action"],
+      "streaming": "HBO Max",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "True Detective: Night Country",
+      "season": 4,
+      "year": 2024,
+      "director": "Issa López",
+      "runtime": "60 min",
+      "rating": "TV-MA",
+      "genre": ["Crime", "Horror", "Mystery"],
+      "streaming": "HBO Max",
+      "done": false,
+      "score": null,
+      "notes": null
+    }
+  ],
+  "horror_vault": [
+    {
+      "title": "The Wicker Man",
+      "year": 1973,
+      "director": "Robin Hardy",
+      "runtime": "88 min",
+      "rating": "R",
+      "genre": ["Horror", "Folk Horror", "Mystery"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Suspiria",
+      "year": 1977,
+      "director": "Dario Argento",
+      "runtime": "98 min",
+      "rating": "R",
+      "genre": ["Horror", "Giallo", "Mystery"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Hereditary",
+      "year": 2018,
+      "director": "Ari Aster",
+      "runtime": "127 min",
+      "rating": "R",
+      "genre": ["Horror", "Mystery", "Drama"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Midsommar",
+      "year": 2019,
+      "director": "Ari Aster",
+      "runtime": "148 min",
+      "rating": "R",
+      "genre": ["Horror", "Folk Horror", "Mystery"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Lighthouse",
+      "year": 2019,
+      "director": "Robert Eggers",
+      "runtime": "109 min",
+      "rating": "R",
+      "genre": ["Horror", "Psychological", "Drama"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "It Follows",
+      "year": 2014,
+      "director": "David Robert Mitchell",
+      "runtime": "100 min",
+      "rating": "R",
+      "genre": ["Horror", "Mystery", "Thriller"],
+      "streaming": "Various",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Witch",
+      "year": 2015,
+      "director": "Robert Eggers",
+      "runtime": "92 min",
+      "rating": "R",
+      "genre": ["Horror", "Folk Horror", "Mystery"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Autopsy of Jane Doe",
+      "year": 2016,
+      "director": "André Øvredal",
+      "runtime": "86 min",
+      "rating": "R",
+      "genre": ["Horror", "Mystery", "Thriller"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "We Bury The Dead",
+      "year": 2024,
+      "director": "Zak Hilditch",
+      "runtime": "94 min",
+      "rating": "R",
+      "genre": ["Horror", "Thriller"],
+      "streaming": "Various",
+      "done": false,
+      "score": null,
+      "notes": null
+    }
+  ]
+}
