@@ -32,7 +32,7 @@ const REVIEWS = [
         "There is a version of this film that could have been a genuine 8 or 9. The bones are there. But Punisher: One Last Kill pulls one too many punches in the final stretch, which given the subject matter is a bit of a problem. Still, as a piece of crime thriller filmmaking on Disney+ it is doing something most Marvel adjacent projects refuse to do, which is slow down and actually ask whether any of this is worth it. That question does not get a fully satisfying answer, but the fact it is being asked at all puts this well above average for the genre in 2026."
       ],
       "images": [],
-      "verdict": "7/10, flawed and occasionally too cautious for its own premise, but Punisher: One Last Kill is one of the more genuinely serious attempts to do right by a character who deserves more than carnage for its own sake."
+      "verdict": "6.5/10, flawed and occasionally too cautious for its own premise, but Punisher: One Last Kill is one of the more genuinely serious attempts to do right by a character who deserves more than carnage for its own sake."
     },
     {
       "id": 1778860771477,
