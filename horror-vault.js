@@ -3209,5 +3209,12 @@ const HORROR_VAULT = [
   "status": "watched",
   "note": "",
   "id": 401
+  }
+    "title": "The Substance",
+  "year": 2024,
+  "decade": "2020s",
+  "status": "watched",
+  "note": "",
+  "id": 402
   },
 ];
