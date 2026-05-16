@@ -10,6 +10,31 @@
 
 const REVIEWS = [
     {
+      "id": 1778931197048,
+      "category": "movie",
+      "title": "Punisher: One Last Kill",
+      "year": 2026,
+      "director": "Reinaldo Marcus Green",
+      "runtime": "51 min",
+      "rating": "R",
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Action",
+        "Crime"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Punisher: One Last Kill is grimier and more patient than Marvel usually allows itself to be, and that restraint is mostly its strength.",
+      "body": [
+        "Frank Castle has always been a character the studios never quite knew what to do with. Too brutal for the family crowd, too one-note for prestige drama fans. Punisher: One Last Kill, streaming on Disney+ in 2026, is the most interesting attempt yet because it actually commits to the ugliness. This is not an action film dressed up as a thriller. It is genuinely trying to be a crime drama that earns its violence, which puts it closer to something like Wind River than anything in the current superhero landscape. The director keeps the palette cold and the pacing slow in a way that will frustrate people who came for the skull logo and quick kills. That is honestly their loss.",
+        "What works here is the restraint. There are long stretches where Castle barely speaks and the film trusts that silence to do the heavy lifting. A mid-film sequence set in an abandoned industrial port is the best the movie gets, tense and murky and genuinely uncomfortable in the right way. The practical work is strong throughout and the action, when it finally arrives, feels like consequence rather than spectacle. The performance at the centre is committed and physically credible without tipping into self-parody. Where it stumbles is the supporting cast, who are serviceable but never surprising, and a third act that tidies things up a little too neatly for a story that spent two hours insisting the world is irredeemably messy.",
+        "There is a version of this film that could have been a genuine 8 or 9. The bones are there. But Punisher: One Last Kill pulls one too many punches in the final stretch, which given the subject matter is a bit of a problem. Still, as a piece of crime thriller filmmaking on Disney+ it is doing something most Marvel adjacent projects refuse to do, which is slow down and actually ask whether any of this is worth it. That question does not get a fully satisfying answer, but the fact it is being asked at all puts this well above average for the genre in 2026."
+      ],
+      "images": [],
+      "verdict": "7/10, flawed and occasionally too cautious for its own premise, but Punisher: One Last Kill is one of the more genuinely serious attempts to do right by a character who deserves more than carnage for its own sake."
+    },
+    {
       "id": 1778860771477,
       "category": "movie",
       "title": "Alien: Romulus",
