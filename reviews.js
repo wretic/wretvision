@@ -10,6 +10,29 @@
 
 const REVIEWS = [
     {
+      "id": 1779018247102,
+      "category": "tv",
+      "title": "The Bear Season 3",
+      "year": 2024,
+      "director": "Christopher Storer",
+      "runtime": "30 min",
+      "rating": "TV-MA",
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "The Bear Season 3 is gorgeous, exhausting, and increasingly in love with itself in ways that start to cost it.",
+      "body": [
+        "The Bear came back for a third season in 2024 on Disney+ and the honest answer is this: it is still one of the best looking shows on television, and it is running out of things to say. Season one was controlled panic with a beating heart underneath. Season two expanded the world and mostly earned it. Season three feels like a show that has started to believe its own press. The vibe is there. The craft is undeniable. But somewhere between the slow motion plating shots and the fragmented non linear structure, the actual story got a little lost. You are waiting for the emotional gut punch and it keeps arriving late, or slightly muffled, like someone put a towel over it.",
+        "What still works is the cast doing what this cast does. Jeremy Allen White remains magnetic even when the writing underserves him. Ayo Edebiri gets more room this season and mostly uses it well, though her arc feels like it is circling without landing. The kitchen sequences still carry genuine tension and the show clearly has people behind the camera who understand how to build a scene from texture and sound alone. There are individual episodes here that are genuinely brilliant, the kind of thing you would point someone to as a standalone piece of television. The problem is consistency. The season as a whole does not build the way it should. Scenes arrive, impress you, and then evaporate without consequence.",
+        "The Bear Season 3 is the kind of drama that mistakes relentlessness for depth, and that is a real shame because the ingredients for something exceptional are all still present. Fans of the show will find enough to chew on, and anyone who loved the rawness of season one will find moments that remind them why this show matters. But compared to something like Succession, which knew how to keep narrative momentum alive inside a character study, The Bear is starting to drift. It is a 6 out of 10 season from a show that has proven it can do 9. Still watchable, still beautifully made, still worth your time on Disney+, just noticeably less urgent than it used to be."
+      ],
+      "images": [],
+      "verdict": "The Bear Season 3 is a beautiful, frustrating reminder that atmosphere alone cannot carry a story that has stopped moving forward."
+    },
+    {
       "id": 1778931197048,
       "category": "tv",
       "title": "Punisher: One Last Kill",
