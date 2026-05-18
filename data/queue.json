@@ -177,7 +177,7 @@
         "Mystery"
       ],
       "streaming": "Max",
-      "done": false,
+      "done": true,
       "score": null,
       "notes": null
     }

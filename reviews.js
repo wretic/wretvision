@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1779125706505,
+      "category": "tv",
+      "title": "True Detective: Night Country Season 4",
+      "year": 2024,
+      "director": "Issa López",
+      "runtime": "60 min",
+      "rating": "TV-MA",
+      "genres": [
+        "Crime",
+        "Horror",
+        "Mystery"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Night Country has real atmosphere and Jodie Foster doing serious work, but it loses its nerve exactly when it should double down.",
+      "body": [
+        "True Detective Season 4 had every reason to be great. Issa Lopez brought a genuinely cold and oppressive setting to the franchise, Ennis Alaska feeling like a place the sun itself has given up on. The long polar night is used well, not just as backdrop but as something that gets inside the characters. Jodie Foster as Liz Danvers is doing proper work here, gruff and cracked in ways that feel earned rather than performed. Kali Reis holds her own opposite her, and their friction in the early episodes has real tension. The central mystery, a group of scientists found frozen in the tundra with no obvious explanation, is a strong premise. For the first three episodes you feel like this might actually be the True Detective comeback the franchise needed after the mess of Season 3.",
+        "Then it starts to wobble. The supernatural elements that Lopez weaves in are interesting on paper but the show cannot commit to them cleanly. It keeps one foot in grounded procedural crime drama and one foot in something stranger and more mythological, and it never fully reconciles the two. Compare that to how True Detective Season 1 handled its occult undercurrent, threading it through without ever letting it collapse the plot logic. Night Country does not have that discipline. Some character decisions in the back half feel like plot mechanics rather than actual human behaviour, and the finale wraps things in a way that is tidy where it should have been haunting. The show also mistakes bleakness for depth in places, which is exactly the kind of thing that frustrates me.",
+        "Streaming on Max in early 2024, True Detective Night Country sits in interesting company alongside other prestige crime horror like Severance or The Terror, shows that use genre as a pressure cooker for character. It does not quite reach those heights. What it does do is give you six watchable hours with two strong lead performances and a location that feels genuinely menacing. The bones are good. The execution is inconsistent. Lopez clearly has a vision and I would watch her work again, but this season promised more than it delivered and the ending in particular left me colder than it intended."
+      ],
+      "images": [],
+      "verdict": "6/10, Night Country has atmosphere and Foster on form, but it flinches at the finish line when it should have gone somewhere genuinely dark and unforgettable."
+    },
+    {
       "id": 1779018247102,
       "category": "tv",
       "title": "The Bear Season 3",
