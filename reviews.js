@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1779212509557,
+      "category": "movie",
+      "title": "Immaculate",
+      "year": 2024,
+      "director": "Michael Mohan",
+      "runtime": "89 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Sydney Sweeney commits completely to Immaculate and the film almost earns that commitment. Almost.",
+      "body": [
+        "Immaculate (2024) has one genuinely great asset and it uses her well. Sydney Sweeney plays Cecilia, an American nun who travels to a remote Italian convent and finds herself inexplicably pregnant despite being a virgin. The premise is doing a lot of heavy lifting here, borrowing freely from Rosemary's Baby and The Nun, but director Michael Mohan at least understands atmosphere. The convent looks and feels genuinely oppressive. The stone walls, the candlelight, the slow creeping sense that the other sisters know something Cecilia does not. That first act has real dread in it, quiet and earned, the kind that settles in your chest before anything explicitly horrible happens. Sweeney is not just a pretty face carrying a horror film either. She is doing actual work, fear and faith and confusion all fighting across her face in scenes where lesser performers would have phoned it in.",
+        "Where Immaculate starts losing me is the middle stretch. The pacing goes soft right when it should be tightening. There are scenes that exist purely to restate what we already understand about Cecilia's situation, and the film mistakes religious imagery for religious tension. Crosses and stigmata and Latin chanting do not automatically equal dread. You have to build toward something. The supporting cast is mostly functional but nobody else gets enough to do, which means when the conspiracy begins to unfurl there are no real relationships to make it hurt. The mystery also tips its hand too early. By the time the film wants you to be shocked you are mostly just waiting for confirmation of what you already figured out forty minutes in.",
+        "The ending though. That ending pulls the film back up by sheer audacity. I will not spoil it but Mohan commits to a final sequence that is genuinely unhinged in the best possible way, brutal and unflinching and exactly the kind of swinging for the fences that horror needs more of. It rescues Immaculate from being forgettable and makes it something worth recommending to the right audience. If you are on Shudder looking for a mid-budget religious horror film with a fearless lead performance and one hell of a closing act, this delivers enough to justify the runtime. Just know you are signing up for a film that is better at its edges than its middle."
+      ],
+      "images": [],
+      "verdict": "Immaculate (2024) is a flawed but worthwhile Shudder horror that wastes its middle act before an ending that genuinely earns its nerve, held together entirely by Sydney Sweeney refusing to let it fail."
+    },
+    {
       "id": 1779125706505,
       "category": "tv",
       "title": "True Detective: Night Country Season 4",
