@@ -11,7 +11,7 @@
 const REVIEWS = [
   {
     "id": 1779277134292,
-    "category": "Games",
+    "category": "game",
     "title": "ROUTINE",
     "year": 2026,
     "developer": "Lunar Games",
