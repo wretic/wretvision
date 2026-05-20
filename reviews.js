@@ -9,31 +9,34 @@
 // ============================================================
 
 const REVIEWS = [
-    {
-      "id": 1779277134292,
-      "category": "movie",
-      "title": "ROUTINE",
-      "year": 2026,
-      "director": "",
-      "runtime": "?? min",
-      "rating": "",
-      "genres": [
-        "Psychological Horror",
-        "Atmospheric",
-        "Sci-Fi",
-        "Single Player"
-      ],
-      "score": 7,
-      "featured": false,
-      "excerpt": "ROUTINE crawls under your skin slowly, the way the best atmospheric sci-fi horror should, but it never quite twists the knife as hard as it could.",
-      "body": [
-        "ROUTINE (2026) is the kind of psychological horror that bets everything on mood and almost wins. The premise is tight: isolation, repetition, something deeply wrong beneath the surface of a routine that keeps repeating in ways you cannot fully explain. Directors working in this space often mistake empty corridors and ambient dread for depth, but ROUTINE earns most of its unease honestly. The sci-fi elements are integrated rather than bolted on, which matters. You are not watching a horror film with a sci-fi skin. You are watching something that uses its genre mechanics to ask a genuine question about consciousness and control. That is rarer than it should be.",
-        "Where it works, it really works. The production design is doing heavy lifting throughout, practical textures and lighting choices that create a lived-in wrongness rather than a polished nightmare. The lead performance is the kind of quiet, contained work I always respond to, someone who communicates fracture without announcing it. There are sequences in the second act where the psychological disorientation lands with real precision, comparable to what Ari Aster does in his better moments or what COHERENCE pulled off on a fraction of the budget. The sound design deserves specific mention because it is doing as much narrative work as the script.",
-        "But ROUTINE does stumble. The third act reaches for a resolution that the film has not quite earned emotionally, and you feel the gap. Some of the pacing in the middle stretch tips from deliberate into sluggish, and there are moments where the ambiguity starts to feel like a way to avoid committing rather than a genuine artistic choice. Fans of slow burn atmospheric sci-fi horror in 2026 will find a lot to respect here. I found a lot to respect here too. I just wanted it to trust itself a little more in the final stretch."
-      ],
-      "images": [],
-      "verdict": "ROUTINE is a genuinely unsettling and often impressive piece of atmospheric psychological horror that falls just short of the gut punch it is clearly capable of delivering."
-    },
+  {
+    "id": 1779277134292,
+    "category": "Games",
+    "title": "ROUTINE",
+    "year": 2026,
+    "developer": "Lunar Games",
+    "genres": [
+      "Psychological Horror",
+      "Atmospheric",
+      "Sci-Fi",
+      "Single Player"
+    ],
+    "score": 7,
+    "featured": false,
+    "excerpt": "ROUTINE is a slow, sterile, deeply atmospheric sci-fi horror game that absolutely understands tension, even if it does not always know how hard to push it.",
+    "body": [
+      "ROUTINE is the kind of sci-fi horror game that does not kick the door open covered in blood, screaming for your attention like some desperate haunted house attraction. It crawls in quietly, shuts the door behind you, turns off half the lights, and then lets the silence do most of the damage. Lunar Games clearly understands that horror in games is not just about monsters, jumpscares, or loud noises blasting your headphones into dust. It is about control, or more specifically, the slow realization that you do not have as much of it as you thought. That is where ROUTINE is at its strongest, because the cold lunar facility, the oppressive retro-futuristic design, and the constant sense that something is wrong beneath the surface all work together to create a world that feels dead, hostile, and weirdly believable.",
+      
+      "What I liked most is how much of the experience is built around atmosphere instead of cheap panic. The environments have that grimy, analogue sci-fi texture where everything feels used, abandoned, and slightly too quiet, like the station was not destroyed in one dramatic disaster but simply left to rot while the machines kept pretending everything was normal. The sound design does a lot of heavy lifting here, because every mechanical hum, distant movement, and uncomfortable pause makes you second-guess whether the game is actually threatening you or just letting your own paranoia fill in the gaps. That is proper horror design. Not the lazy kind where something screams in your face every five minutes, but the kind where you start moving slower because the game has trained you to fear the empty space in front of you.",
+      
+      "The problem is that ROUTINE sometimes becomes a little too committed to being restrained. Slow burn horror can be fantastic, but there is a thin line between tension and waiting for the game to finally do something with all that tension, and ROUTINE does occasionally drift across that line. The pacing can drag in places, especially when the exploration starts feeling less like discovery and more like wandering through another corridor while the game whispers, 'trust me, something scary might happen eventually.' The best moments prove that Lunar Games knows exactly how to make the player uncomfortable, but the weaker stretches make you wish it would twist the knife harder instead of politely holding it near your ribs.",
+      
+      "Mechanically, this is not some massive action horror game where you are mowing down enemies and upgrading a shotgun every ten minutes, and honestly, it would be worse if it tried to be. ROUTINE is clearly more interested in vulnerability, navigation, environmental storytelling, and the pressure of being alone inside a place that does not want you there. That choice works for the tone, but it also means the game lives or dies on immersion, pacing, and payoff. When those pieces click, it is genuinely unsettling. When they do not, the illusion starts to thin out, and you become a little too aware that you are moving through a carefully designed horror space instead of fully losing yourself inside it.",
+      
+      "Still, even with those issues, ROUTINE has a strong identity, and that counts for a lot in a genre that is constantly flooded with cheap mascot horror, asset-flip garbage, and games that think darkness automatically equals fear. This has taste. It has restraint. It has atmosphere. It has that dirty old sci-fi mood that makes you want to lean closer to the screen even while your brain is telling you not to. I just wish the final stretch had more impact, because the game spends so much time building dread that you naturally expect the payoff to hit harder than it does."
+    ],
+    "verdict": "ROUTINE is a stylish, tense, and genuinely atmospheric sci-fi horror game with excellent mood and sound design, but its slow-burn approach occasionally becomes too cautious for its own good."
+  },
     {
       "id": 1779212509557,
       "category": "movie",
