@@ -2,18 +2,98 @@
   "_instructions": "Add titles here. Set 'done': true when reviewed. 'score' and 'notes' are optional pre-logs of your gut reaction — if set, the AI will write to that score.",
   "movies": [
     {
-      "title": "ROUTINE",
-      "year": 2026,
-      "Developer": "Lunar Software",
+      "title": "MaXXXine",
+      "year": 2024,
+      "director": "Ti West",
+      "runtime": "103 min",
+      "rating": "R",
       "genre": [
-        "Psychological Horror",
-        "Atmospheric",
-        "Sci-Fi",
-        "Single Player"
+        "Horror",
+        "Thriller"
       ],
-      "Platform": "Steam, Microsoft",
+      "streaming": "VOD",
       "done": true,
-      "score": 7,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Punisher: One Last Kill",
+      "year": 2026,
+      "director": "Reinaldo Marcus Green",
+      "runtime": "51 min",
+      "rating": "R",
+      "genre": [
+        "Drama",
+        "Thriller",
+        "Action",
+        "Crime"
+      ],
+      "streaming": "Disney+",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Alien: Romulus",
+      "year": 2024,
+      "director": "Fede Álvarez",
+      "runtime": "119 min",
+      "rating": "R",
+      "genre": [
+        "Sci-Fi",
+        "Horror",
+        "Action"
+      ],
+      "streaming": "Disney+",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Obsession",
+      "year": 2026,
+      "director": "Curry Barker",
+      "runtime": "108 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
+      "streaming": "Peacock",
+      "done": false,
+      "score": 9,
+      "notes": null
+    },
+    {
+      "title": "Immaculate",
+      "year": 2024,
+      "director": "Michael Mohan",
+      "runtime": "89 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
+      "streaming": "Shudder",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Substance",
+      "year": 2024,
+      "director": "Coralie Fargeat",
+      "runtime": "141 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Body Horror",
+        "Sci-Fi"
+      ],
+      "streaming": "Mubi",
+      "done": true,
+      "score": null,
       "notes": null
     }
   ],
@@ -228,6 +308,23 @@
       "streaming": "Various",
       "done": false,
       "score": null,
+      "notes": null
+    }
+  ],
+  "games": [
+    {
+      "title": "ROUTINE",
+      "year": 2026,
+      "Developer": "Lunar Software",
+      "genre": [
+        "Psychological Horror",
+        "Atmospheric",
+        "Sci-Fi",
+        "Single Player"
+      ],
+      "Platform": "Steam, Microsoft",
+      "done": true,
+      "score": 7,
       "notes": null
     }
   ]
