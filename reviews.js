@@ -9,6 +9,29 @@
 // ============================================================
 
 const REVIEWS = [
+    {
+      "id": 1779300220841,
+      "category": "movie",
+      "title": "Obsession",
+      "year": 2026,
+      "director": "Curry Barker",
+      "runtime": "108 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Obsession has enough teeth to keep you watching, but not enough guts to leave a mark.",
+      "body": [
+        "Obsession, landing on Peacock in 2026, is the kind of horror thriller that knows exactly what it wants to be and gets about two thirds of the way there. The premise is tight, the setup is genuinely unsettling, and for the first act you can feel it building toward something with real weight. There is a controlled dread here that recalls the better end of psychological horror. The director has an eye for framing discomfort, those quiet moments where nothing is technically wrong but everything feels off. That is harder to pull off than it sounds and credit where it is due.",
+        "The problem is the middle act. It bloats. You can feel the film padding itself out, adding scenes that exist to delay the inevitable rather than deepen it. The performances are uneven too. Some of the supporting cast are clearly living in the role while others are visibly performing at it, and that inconsistency keeps pulling you back out of the tension the film has worked to build. The practical work is solid when it shows up but the film leans on digital tricks a few too many times and each one costs it something. It also flirts with a genuinely interesting thematic angle about control and surveillance without ever fully committing to it.",
+        "Fans of slow burn thrillers in the vein of Possessor or The Invisible Man will find things to appreciate in Obsession 2026, and it is not a waste of your time on Peacock if the genre is your thing. But the ending, while not bad exactly, feels like it settled. Like someone got scared of the darker conclusion and softened the landing at the last minute. A bolder finish and a tighter second act and this is an 8. As it stands it is a 6, a decent horror thriller with a ceiling it never quite breaks through."
+      ],
+      "images": [],
+      "verdict": "Obsession 2026 is watchable, occasionally impressive, and ultimately the most frustrating kind of film, one that shows you what it could have been."
+    },
 {
   "id": 1779277134292,
   "category": "game",
