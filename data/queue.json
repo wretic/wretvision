@@ -2,19 +2,18 @@
   "_instructions": "Add titles here. Set 'done': true when reviewed. 'score' and 'notes' are optional pre-logs of your gut reaction — if set, the AI will write to that score.",
   "movies": [
     {
-      "title": "Longlegs",
-      "year": 2024,
-      "director": "Osgood Perkins",
-      "runtime": "101 min",
-      "rating": "R",
+      "title": "ROUTINE",
+      "year": 2026,
+      "Developer": "Lunar Software",
       "genre": [
-        "Horror",
-        "Thriller",
-        "Mystery"
+        "Psychological Horror",
+        "Atmospheric",
+        "Sci-Fi",
+        "Single Player"
       ],
-      "streaming": "Shudder",
-      "done": true,
-      "score": null,
+      "Platform": "Steam", "Microsoft",
+      "done": false,
+      "score": 7,
       "notes": null
     },
     {
