@@ -9,18 +9,20 @@
 // ============================================================
 
 const REVIEWS = [
-  {
-    "id": 1779277134292,
-    "category": "game",
-    "title": "ROUTINE",
-    "year": 2026,
-    "developer": "Lunar Games",
-    "genres": [
-      "Psychological Horror",
-      "Atmospheric",
-      "Sci-Fi",
-      "Single Player"
-    ],
+{
+  "id": 1779277134292,
+  "category": "game",
+  "title": "ROUTINE",
+  "year": 2026,
+  "director": "Lunar Games",
+  "runtime": "PC, Xbox Series X/S",
+  "rating": "",
+  "genres": [
+    "Psychological Horror",
+    "Atmospheric",
+    "Sci-Fi",
+    "Single Player"
+  ],
     "score": 7,
     "featured": false,
     "excerpt": "ROUTINE is a slow, sterile, deeply atmospheric sci-fi horror game that absolutely understands tension, even if it does not always know how hard to push it.",
