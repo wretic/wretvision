@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1779384785253,
+      "category": "movie",
+      "title": "The Witch",
+      "year": 2015,
+      "director": "Robert Eggers",
+      "runtime": "92 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Folk Horror",
+        "Mystery"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "The Witch doesn't scare you with what it shows. It scares you with what it makes you feel in the silence between scenes.",
+      "body": [
+        "Robert Eggers arrived in 2015 with The Witch and immediately had no interest in playing by modern horror rules. No jump scares. No cheap releases. Just slow, suffocating dread built from period language, grey skies, and a family tearing itself apart at the seams before anything supernatural even confirms itself. The setup is deceptively simple: a Puritan family exiled from their plantation community tries to survive alone at the edge of a forest that is clearly, deeply wrong. Eggers researches his period material obsessively and you feel it in every frame. The dialogue sounds genuinely 1630s. The costumes, the farm, the theology, all of it lands with a weight that makes the horror feel earned rather than decorative.",
+        "Anya Taylor-Joy announces herself completely here as Thomasin, the eldest daughter slowly becoming the family's scapegoat for everything going wrong around them. She does so much with very little, which is exactly the kind of performance this film demands. The goat Black Phillip deserves his own mention because Eggers uses that animal with a precision that borders on genius, keeping him just present enough that you never stop thinking about him. The practical work throughout is outstanding. Nothing here looks like a visual effects budget cutting corners. The forest feels genuinely ancient and hostile in a way that no CGI woodland ever manages. There are images in this film, specifically the final scene, that have stayed lodged in my head since the first watch.",
+        "If The Witch has a flaw it is that its commitment to atmosphere over momentum will test certain viewers. This is not a film that rewards passive watching and some will bounce off the pacing entirely, which is fair. But for anyone who finds horror most effective when it operates like a slow pressure build rather than a series of jolts, this is essential viewing. Comparable to Hereditary in how it weaponises family grief and to The Wicker Man in its folk horror DNA, The Witch is available across various streaming platforms and belongs in any serious conversation about what the genre can achieve when a director actually has something to say."
+      ],
+      "images": [],
+      "verdict": "9/10 and one of the most assured debut features the horror genre has ever produced, folk horror at its most precise and most unsettling."
+    },
+    {
       "id": 1779300220841,
       "category": "movie",
       "title": "Obsession",
