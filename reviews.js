@@ -21,16 +21,17 @@ const REVIEWS = [
         "Horror",
         "Thriller"
       ],
-      "score": 6,
+      "score": 8,
       "featured": false,
-      "excerpt": "Obsession has enough teeth to keep you watching, but not enough guts to leave a mark.",
+      "excerpt": "Obsession earns your attention in the first act and spends the second quietly testing it. Barker has real craft. The film around him mostly does too.",
       "body": [
-        "Obsession, landing on Peacock in 2026, is the kind of horror thriller that knows exactly what it wants to be and gets about two thirds of the way there. The premise is tight, the setup is genuinely unsettling, and for the first act you can feel it building toward something with real weight. There is a controlled dread here that recalls the better end of psychological horror. The director has an eye for framing discomfort, those quiet moments where nothing is technically wrong but everything feels off. That is harder to pull off than it sounds and credit where it is due.",
-        "The problem is the middle act. It bloats. You can feel the film padding itself out, adding scenes that exist to delay the inevitable rather than deepen it. The performances are uneven too. Some of the supporting cast are clearly living in the role while others are visibly performing at it, and that inconsistency keeps pulling you back out of the tension the film has worked to build. The practical work is solid when it shows up but the film leans on digital tricks a few too many times and each one costs it something. It also flirts with a genuinely interesting thematic angle about control and surveillance without ever fully committing to it.",
-        "Fans of slow burn thrillers in the vein of Possessor or The Invisible Man will find things to appreciate in Obsession 2026, and it is not a waste of your time on Peacock if the genre is your thing. But the ending, while not bad exactly, feels like it settled. Like someone got scared of the darker conclusion and softened the landing at the last minute. A bolder finish and a tighter second act and this is an 8. As it stands it is a 6, a decent horror thriller with a ceiling it never quite breaks through."
+        "Obsession is the kind of horror that earns your attention in the first act and then spends the second act quietly wasting it. Curry Barker has a real eye. The framing is confident, the dread is controlled, and there are stretches early on where you can feel something genuinely suffocating being built. A music store employee, a wish, a supernatural toy. It sounds thin on paper but Barker sells the premise through atmosphere rather than exposition. That takes discipline and he has it, at least for a while.",
+        "Michael Johnston carries the weight of it well. The supporting cast is uneven. Some of them are living in the film and some of them are clearly just visiting. But Johnston stays grounded throughout in a way that keeps you invested when the script starts to drift. Inde Navarrette does something genuinely unsettling with a role that could have gone cartoonish. When the film is working it is really working, and a lot of that is down to the two of them.",
+        "The second act is the problem. It bloats. Scenes exist to delay rather than deepen, and you feel the film padding itself toward a conclusion it seems nervous about reaching. The practical effects work is strong but Barker leans on digital too often and each time he does it costs him something he had worked hard to build. There is a genuinely interesting thread running through this about control and surveillance and possession that never gets the commitment it deserves. You can see the better film underneath.",
+        "Here is the thing though. The ceiling on this film is high. Fans of Possessor or The Invisible Man will find real things to appreciate here, and the wider critical response reflects that. The flaws are real but they do not cancel out a film this confident in its best moments. A tighter middle act and a braver ending and this is a top tier horror debut without question. As it stands it is still an 8. Blumhouse at its most atmospheric, and worth every minute of your time on Peacock."
       ],
       "images": [],
-      "verdict": "Obsession 2026 is watchable, occasionally impressive, and ultimately the most frustrating kind of film, one that shows you what it could have been."
+      "verdict": "Obsession is frustrating and impressive in roughly equal measure. It pulls its punch at the moment it should have swung hardest, but what it gets right it gets genuinely right."
     },
 {
   "id": 1779277134292,
