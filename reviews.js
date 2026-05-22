@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1779467965923,
+      "category": "movie",
+      "title": "Midsommar",
+      "year": 2019,
+      "director": "Ari Aster",
+      "runtime": "148 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Folk Horror",
+        "Mystery"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "Midsommar is a breakup movie dressed in flower crowns and viscera, and Ari Aster knows exactly what he's doing.",
+      "body": [
+        "Ari Aster made Hereditary and then turned around and made something completely different with Midsommar (2019), and the nerve of that move deserves respect. This is folk horror at its most committed. You know something is deeply wrong within the first ten minutes, not because of anything supernatural, but because of grief. Real, ugly, suffocating grief. Florence Pugh is extraordinary here. She's not performing sadness, she is sadness, and when she arrives in Sweden with a boyfriend who clearly doesn't want to be there and friends who only half care, you feel the loneliness of her before a single flower crown appears on screen. Aster builds dread the way good horror should, through atmosphere and discomfort rather than cheap shocks. The Swedish village is too bright, too beautiful, too welcoming, and that wrongness creeps under your skin slowly.",
+        "What Midsommar does better than almost anything comparable, including The Wicker Man which it clearly has opinions about, is make the horror feel earned and inevitable rather than arbitrary. Each ritual escalates in a way that feels logical within the internal rules of this world. The practical effects work is genuinely stunning in places, uncomfortable in the best possible way. The communal screaming scene alone is one of the most unsettling things put on screen in recent memory. The film is long, and there are stretches in the middle where it meanders slightly, a few scenes with the thesis-writing subplot that pad things without adding much weight. That is a real issue and stops this from sitting higher. But the final act lands with such force that you forgive a lot.",
+        "The genius of Midsommar is that by the end you understand Dani completely. Her final smile is not a happy ending and not a tragedy, it is something more honest and more disturbing than either. That ambiguity is what separates this from the jump scare noise that dominates mainstream horror. Aster has a clear vision and he does not blink. If you can find Midsommar streaming and you have not seen it, go in knowing as little as possible. It rewards patience and it sticks with you. Compare it to Hereditary, compare it to The Witch, it belongs in that conversation without question."
+      ],
+      "images": [],
+      "verdict": "Midsommar (2019) is slow, deliberate, sun-drenched nightmare fuel with Florence Pugh delivering one of the best horror performances in years, and an ending that earns every disturbing second that preceded it."
+    },
+    {
       "id": 1779384785253,
       "category": "movie",
       "title": "The Witch",
