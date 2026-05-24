@@ -31,6 +31,7 @@ const REVIEWS = [
         "If it has a flaw, it's that the final act goes somewhere so mythic and surreal that some viewers will feel cut loose. I didn't, but I get it. The ambiguity is the point and Eggers earns it because he's laid the groundwork carefully. Fans of Hereditary or The Witch will find a lot to sit with here. The Lighthouse is available across various streaming platforms and it absolutely belongs in any serious horror collection. This is the kind of film that reminds you what the genre is actually capable of when someone treats it with real intention and craft."
       ],
       "images": [],
+        "media": { "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/f1tIYarTbkBdIT1aW0gzelDwknv.jpg", "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/f1tIYarTbkBdIT1aW0gzelDwknv.jpg" },
       "verdict": "9/10, one of the most suffocating and visually stunning horror films of the last decade, and proof that atmosphere done right is worth a hundred jump scares."
     },
 {
