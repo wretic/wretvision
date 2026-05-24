@@ -3218,4 +3218,12 @@ const HORROR_VAULT = [
   "note": "",
   "id": 402
   },
+  {
+    "title": "Mandy,
+  "year": 2018,
+  "decade": "2020s",
+  "status": "watched",
+  "note": "",
+  "id": 403
+  }
 ];
