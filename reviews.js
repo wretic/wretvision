@@ -9,6 +9,30 @@
 // ============================================================
 
 const REVIEWS = [
+    {
+      "id": 1779651435493,
+      "category": "movie",
+      "title": "The Lighthouse",
+      "year": 2019,
+      "director": "Robert Eggers",
+      "runtime": "109 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Psychological",
+        "Drama"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Two men. One lighthouse. A slow descent into something ancient and wrong. The Lighthouse doesn't scare you. It haunts you.",
+      "body": [
+        "Robert Eggers made The Witch and then somehow topped himself. The Lighthouse, released in 2019, is a psychological horror film shot in black and white, boxed into a nearly square aspect ratio, and it uses both of those choices like weapons. You feel trapped from the first frame. The premise is deceptively simple: two lighthouse keepers stranded on a remote New England rock, slowly losing their grip on reality. But Eggers isn't interested in simple. He's pulling from maritime mythology, from Melville, from something older and uglier than plot. This is a film with a clear and ferocious directorial vision, and every single frame has been thought about in a way that most directors don't bother with anymore.",
+        "Willem Dafoe and Robert Pattinson are both doing career best work here, and I don't say that lightly. Dafoe is monstrous and funny and tragic all at once, chewing scenery in a way that somehow never feels like a performance. Pattinson matches him beat for beat. The tension between them builds so naturally that by the time things crack open you've already been wound so tight you barely notice the snapping. The sound design deserves its own paragraph honestly. The fog horn. The grinding machinery. The wind. It all presses down on you like physical weight. There are no cheap jump scares here, none. Just sustained dread built from atmosphere and two men eating each other alive.",
+        "If it has a flaw, it's that the final act goes somewhere so mythic and surreal that some viewers will feel cut loose. I didn't, but I get it. The ambiguity is the point and Eggers earns it because he's laid the groundwork carefully. Fans of Hereditary or The Witch will find a lot to sit with here. The Lighthouse is available across various streaming platforms and it absolutely belongs in any serious horror collection. This is the kind of film that reminds you what the genre is actually capable of when someone treats it with real intention and craft."
+      ],
+      "images": [],
+      "verdict": "9/10, one of the most suffocating and visually stunning horror films of the last decade, and proof that atmosphere done right is worth a hundred jump scares."
+    },
 {
   "id": 1779467965923,
   "category": "movie",
