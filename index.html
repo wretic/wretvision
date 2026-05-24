@@ -20,25 +20,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="shared.css" />
   <style>
-    .category-nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border-bottom: 2px solid var(--border); }
-    .cat-card { background: var(--bg2); padding: 28px 24px; text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 10px; transition: background 0.2s; }
+    /* ── CATEGORY NAV ── */
+    .category-nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: rgba(10,143,212,0.15);
+      border-bottom: 2px solid rgba(10,143,212,0.3);
+    }
+    .cat-card {
+      background: var(--bg2);
+      padding: 20px 18px;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s, box-shadow 0.2s;
+      position: relative;
+      border-right: 1px solid rgba(10,143,212,0.12);
+    }
+    .cat-card:last-child { border-right: none; }
+    .cat-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: currentColor;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .cat-card:hover::before { opacity: 0.6; }
     .cat-card:hover { background: var(--bg3); }
-    .cat-icon { font-family: 'VT323', monospace; font-size: 40px; line-height: 1; }
-    .cat-name { font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: 2px; }
-    .cat-count { font-family: 'VT323', monospace; font-size: 18px; color: var(--muted); letter-spacing: 1px; }
+    .cat-icon { font-family: 'VT323', monospace; font-size: 34px; line-height: 1; }
+    .cat-name { font-family: 'Press Start 2P', monospace; font-size: 7px; letter-spacing: 2px; }
+    .cat-count { font-family: 'VT323', monospace; font-size: 17px; color: var(--muted); letter-spacing: 1px; }
+
     :root {
       --movie-gold:        #b88a1b;
       --movie-gold-light:  #e6b84a;
       --movie-gold-glow:   #ffd86b;
     }
-    .cat-card.movies .cat-icon, .cat-card.movies .cat-name { color: var(--movie-gold-light); }
+
+    .cat-card.movies { color: var(--movie-gold-light); }
     .cat-card.movies .cat-icon { text-shadow: 0 0 10px rgba(255,216,107,0.4); }
     .cat-card.movies:hover { box-shadow: inset 0 -2px 0 rgba(255,216,107,0.35); }
-    .cat-card.tv     .cat-icon, .cat-card.tv     .cat-name { color: var(--green); }
-    .cat-card.games  .cat-icon, .cat-card.games  .cat-name { color: var(--accent); }
-    .cat-card.horror .cat-icon, .cat-card.horror .cat-name { color: #9edcff; text-shadow: 0 0 10px rgba(59,191,255,0.45); }
-    @media (max-width: 560px) { .category-nav { grid-template-columns: 1fr; } }
-  
+    .cat-card.tv     { color: var(--green); }
+    .cat-card.games  { color: #e74c3c; }
+    .cat-card.horror { color: #9edcff; }
+    .cat-card.horror .cat-icon { text-shadow: 0 0 10px rgba(59,191,255,0.45); }
+
+    @media (max-width: 560px) { .category-nav { grid-template-columns: repeat(2, 1fr); } }
+
     /* ── MOVIE CARD OVERRIDES (homepage) ── */
     .review-card[data-category="movie"],
     .review-card.movie {
@@ -60,7 +94,6 @@
       background: rgba(184,138,27,0.1);
     }
 
-  
     /* ── TOP RATED TABS (homepage) ── */
     .top-tabs {
       display: grid;
@@ -79,28 +112,46 @@
       letter-spacing: 1px;
       transition: all 0.15s;
     }
-    .top-tab-game:hover,
-    .top-tab-game.active {
-      color: #e74c3c;
-      border-color: #c0392b;
-      background: rgba(139,26,26,0.16);
+    .top-tab-game:hover, .top-tab-game.active {
+      color: #e74c3c; border-color: #c0392b; background: rgba(139,26,26,0.16);
     }
-    .top-tab-movie:hover,
-    .top-tab-movie.active {
-      color: var(--movie-gold-glow);
-      border-color: var(--movie-gold-light);
-      background: rgba(184,138,27,0.14);
+    .top-tab-movie:hover, .top-tab-movie.active {
+      color: var(--movie-gold-glow); border-color: var(--movie-gold-light); background: rgba(184,138,27,0.14);
     }
-    .top-tab-tv:hover,
-    .top-tab-tv.active {
-      color: var(--green);
-      border-color: var(--green);
-      background: rgba(79,255,176,0.10);
+    .top-tab-tv:hover, .top-tab-tv.active {
+      color: var(--green); border-color: var(--green); background: rgba(79,255,176,0.10);
     }
 
+    /* ── HOME PAGE CURSOR ── */
+    body, body * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
+    a, button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
   </style>
 </head>
-<body>
+<body class="page-home">
+
+<!-- ── BOTTOM STATUS TICKER (fixed) ── -->
+<div class="status-ticker-bar">
+  <span class="ticker-left">TERMINAL: WRETVISION v2.6.6 | USER: GUEST | SESSION: <span class="ticker-session-val" id="ticker-session">00:00:00</span></span>
+  <div class="ticker-scroll-wrap">
+    <span class="ticker-scroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LATEST TRANSMISSION: "THE TRUTH IS OUT THERE... BUT SO IS MEDIOCRE CONTENT." // SIGNAL QUALITY: OPTIMAL // NEXT BROADCAST: LOADING... // ARCHIVE STATUS: NOMINAL // SCANNING FOR NEW CONTENT...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<!-- ── EMERGENCY ALERT (decorative) ── -->
+<div class="emergency-alert" id="emergency-alert">
+  <div class="ea-header">
+    <span class="ea-icon">⚠</span>
+    <span class="ea-title">EMERGENCY ALERT</span>
+    <button class="ea-close" id="ea-close" aria-label="Dismiss">✕</button>
+  </div>
+  <div class="ea-body">
+    <span class="ea-line">ARCHIVE FILE CORRUPTED</span>
+    <span class="ea-line">REBUILDING SECTOR 7...</span>
+    <span class="ea-line">PLEASE STAND BY //</span>
+  </div>
+  <div class="ea-progress-wrap"><div class="ea-bar"></div></div>
+  <div class="ea-percent">56%</div>
+</div>
 
 <header class="topbar">
   <div class="topbar-left">
@@ -114,122 +165,444 @@
     </nav>
   </div>
 
-  <script src="https://apis.google.com/js/platform.js"></script>
-  
-<a class="yt-link" 
-   href="https://www.youtube.com/channel/UCC3aFC7Gr2eYUEGc6IRga0g?sub_confirmation=1"
-   target="_blank" rel="noopener"
-   style="display:flex; align-items:center; gap:8px;">
+  <div class="topbar-right">
+    <div class="signal-indicator">
+      SIGNAL: <span class="signal-status">STABLE</span>&nbsp;<span class="signal-dot">●</span>
+    </div>
 
-  <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
-  <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-
-  <div class="avatar-wrap">
-    <img src="wretvision.png" alt="WretVision" />
+    <a class="yt-link"
+       href="https://www.youtube.com/channel/UCC3aFC7Gr2eYUEGc6IRga0g?sub_confirmation=1"
+       target="_blank" rel="noopener"
+       style="display:flex; align-items:center; gap:8px;">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="avatar-wrap">
+        <img src="wretvision.png" alt="WretVision" />
+      </div>
+      <span class="yt-label">SUBSCRIBE ▶</span>
+    </a>
   </div>
-
-  <span class="yt-label">SUBSCRIBE ▶</span>
-</a>
-
 </header>
 
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <p class="hero-eyebrow">// movies · tv · games //</p>
-    <h1 class="hero-title">WRET<span>VISION</span></h1>
-    <div class="lightning-bar"></div>
-    <p class="hero-sub">Honest takes on films, shows, and games. Even the forgotten ones.</p>
-  </section>
+<!-- ── HERO: BROADCAST LAYOUT ── -->
+<section class="hero hero-broadcast">
+  <div class="hero-backdrop"></div><!-- City.png — static, no lightning baked in -->
+  <div class="hero-bg"></div>      <!-- dark gradient overlay for readability -->
+  <div class="hero-rain"></div>    <!-- soft CSS rain overlay -->
+  <div class="hero-flash" id="hero-flash"></div>  <!-- ambient light spill, JS-controlled -->
+  <canvas class="hero-lightning-canvas" id="hero-lightning-canvas"></canvas>
 
-  <div class="category-nav">
-    <a href="movies.html" class="cat-card movies">
-      <span class="cat-icon">▶</span>
-      <span class="cat-name">MOVIES</span>
-      <span class="cat-count" id="count-movies">— reviews</span>
-    </a>
-    <a href="tv.html" class="cat-card tv">
-      <span class="cat-icon">◈</span>
-      <span class="cat-name">TV SHOWS</span>
-      <span class="cat-count" id="count-tv">— reviews</span>
-    </a>
-    <a href="games.html" class="cat-card games">
-      <span class="cat-icon">◆</span>
-      <span class="cat-name">GAMES</span>
-      <span class="cat-count" id="count-games">— reviews</span>
-    </a>
-    <a href="horror-vault.html" class="cat-card horror">
-      <span class="cat-icon">☠</span>
-      <span class="cat-name">HORROR VAULT</span>
-      <span class="cat-count" id="count-horror">— titles</span>
-    </a>
+  <div class="hero-grid">
+
+    <!-- LEFT: Broadcast Status Terminal -->
+    <div class="broadcast-panel">
+      <div class="panel-header">
+        <span>BROADCAST STATUS</span>
+        <span class="live-dot">●</span>
+      </div>
+      <div class="broadcast-log" id="broadcast-log">
+        <span class="log-line">_</span>
+      </div>
+      <div class="now-playing">
+        <div class="np-label" id="np-label">NOW TRANSMITTING</div>
+        <div class="np-title" id="np-title">—</div>
+        <div class="np-time" id="np-time">00:00:00</div>
+      </div>
+    </div>
+
+    <!-- CENTER: Main Logo -->
+    <div class="hero-center">
+      <p class="hero-eyebrow">// movies · tv · games //</p>
+      <h1 class="hero-title">WRET<span>VISION</span></h1>
+      <div class="lightning-bar"></div>
+      <p class="hero-sub">Honest takes on films, shows, and games.<br>Even the forgotten ones.</p>
+    </div>
+
+    <!-- RIGHT: System Notice -->
+    <div class="system-panel">
+      <div class="panel-header">SYSTEM NOTICE</div>
+      <p class="system-text">The archive is vast.<br>The truth is subjective.<br>You decide.</p>
+    </div>
+
   </div>
+</section>
 
+<!-- ── CATEGORY NAV ── -->
+<div class="category-nav">
+  <a href="movies.html" class="cat-card movies">
+    <span class="cat-icon">▶</span>
+    <span class="cat-name">MOVIES</span>
+    <span class="cat-count" id="count-movies">— reviews</span>
+  </a>
+  <a href="tv.html" class="cat-card tv">
+    <span class="cat-icon">◈</span>
+    <span class="cat-name">TV SHOWS</span>
+    <span class="cat-count" id="count-tv">— reviews</span>
+  </a>
+  <a href="games.html" class="cat-card games">
+    <span class="cat-icon">◆</span>
+    <span class="cat-name">GAMES</span>
+    <span class="cat-count" id="count-games">— reviews</span>
+  </a>
+  <a href="horror-vault.html" class="cat-card horror">
+    <span class="cat-icon">☠</span>
+    <span class="cat-name">HORROR VAULT</span>
+    <span class="cat-count" id="count-horror">— titles</span>
+  </a>
+</div>
+
+<!-- ── STATS BAR (with outer metadata) ── -->
+<div class="stats-outer">
+  <span class="stats-meta-left">ARCHIVE UPDATED: <span class="stats-date">05.25.2024</span></span>
   <div class="stats-bar">
     <div class="stat-item"><span class="stat-num" id="stat-total">—</span><span class="stat-label">TOTAL REVIEWS</span></div>
     <div class="stat-item"><span class="stat-num" id="stat-genres">—</span><span class="stat-label">GENRES</span></div>
     <div class="stat-item"><span class="stat-num" id="stat-earliest">—</span><span class="stat-label">EARLIEST</span></div>
     <div class="stat-item"><span class="stat-num" id="stat-avg">—</span><span class="stat-label">AVG SCORE</span></div>
   </div>
+  <span class="stats-meta-right">DATABASE: ONLINE <span class="db-live">●</span></span>
+</div>
 
-  <div class="filter-bar" id="filter-bar"></div>
+<div class="filter-bar" id="filter-bar"></div>
 
-  <div class="main-layout">
-    <main class="reviews-col">
-      <div class="col-header">latest reviews</div>
-      <div id="reviews-container"></div>
-      <div class="no-results" id="no-results"><p class="no-results-text">>> NO REVIEWS FOUND YET. CHECK BACK SOON. _</p></div>
-      <div class="pagination" id="pagination"></div>
-    </main>
-    <aside class="sidebar">
-      <div class="sidebar-widget">
-        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
-        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-        <div class="widget-title">about this site</div>
-        <p class="about-text">Movies, shows, and games I want to write about. Obscure picks, forgotten classics, guilty pleasures. If it stuck with me, it ends up here.</p>
-      </div>
-      <div class="sidebar-widget">
-        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
-        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-        <div class="widget-title">browse by genre</div>
-        <div class="genre-tags" id="genre-tags"></div>
-      </div>
-      <div class="sidebar-widget">
-        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
-        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-        <div class="widget-title">top rated</div>
-        <div class="top-tabs" id="top-tabs">
-          <button class="top-tab active top-tab-game" data-cat="game">GAMES</button>
-          <button class="top-tab top-tab-movie" data-cat="movie">MOVIES</button>
-          <button class="top-tab top-tab-tv" data-cat="tv">TV</button>
-        </div>
-        <ul class="sidebar-list" id="top-rated-list"></ul>
-      </div>
-    </aside>
-  </div>
-
-  <footer class="footer">
-    &copy; WRETVISION, JUST OPINIONS.<span class="blink"> _</span><br>
-    <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR THE LOVE OF FILM, TV &amp; GAMES</span>
-  </footer>
-
-  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
-    <div class="modal-box">
+<div class="main-layout">
+  <main class="reviews-col">
+    <div class="col-header">latest reviews</div>
+    <div id="reviews-container"></div>
+    <div class="no-results" id="no-results"><p class="no-results-text">>> NO REVIEWS FOUND YET. CHECK BACK SOON. _</p></div>
+    <div class="pagination" id="pagination"></div>
+  </main>
+  <aside class="sidebar">
+    <div class="sidebar-widget">
       <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
       <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-      <button class="modal-close" id="modal-close">[ X ]</button>
-      <div id="modal-inner"></div>
+      <div class="widget-title">about this site</div>
+      <p class="about-text">Movies, shows, and games I want to write about. Obscure picks, forgotten classics, guilty pleasures. If it stuck with me, it ends up here.</p>
     </div>
-  </div>
+    <div class="sidebar-widget">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="widget-title">browse by genre</div>
+      <div class="genre-tags" id="genre-tags"></div>
+    </div>
+    <div class="sidebar-widget">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="widget-title">top rated</div>
+      <div class="top-tabs" id="top-tabs">
+        <button class="top-tab active top-tab-game" data-cat="game">GAMES</button>
+        <button class="top-tab top-tab-movie" data-cat="movie">MOVIES</button>
+        <button class="top-tab top-tab-tv" data-cat="tv">TV</button>
+      </div>
+      <ul class="sidebar-list" id="top-rated-list"></ul>
+    </div>
 
-  <script src="reviews.js"></script>
-  <script src="horror-vault.js"></script>
-  <script src="shared.js"></script>
-  <script>
-    document.getElementById('count-movies').textContent = REVIEWS.filter(r => r.category === 'movie').length + ' reviews';
-    document.getElementById('count-tv').textContent     = REVIEWS.filter(r => r.category === 'tv').length + ' reviews';
-    document.getElementById('count-games').textContent  = REVIEWS.filter(r => r.category === 'game').length + ' reviews';
-    document.getElementById('count-horror').textContent = HORROR_VAULT.length + ' titles';
-    initPage('all');
-  </script>
+    <!-- VHS ARCHIVE TAPE MODULE -->
+    <div class="sidebar-widget vhs-widget">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="widget-title">archive tape</div>
+      <div class="vhs-tape-wrap" id="vhs-tape-wrap">
+        <img src="images/VHS%20tape/Wretvision_tape.png" alt="VHS Archive Tape" class="vhs-tape-img" />
+        <div class="vhs-flicker"></div>
+        <div class="vhs-hover-text">&#9654; CLICK TO PLAY</div>
+      </div>
+      <div class="vhs-meta">
+        <div class="vhs-meta-row">
+          <span class="vhs-meta-key">TITLE</span>
+          <span class="vhs-meta-val" id="vhs-title">—</span>
+        </div>
+        <div class="vhs-meta-row">
+          <span class="vhs-meta-key">TYPE</span>
+          <span class="vhs-meta-val" id="vhs-cat">—</span>
+        </div>
+        <div class="vhs-meta-row">
+          <span class="vhs-meta-key">YEAR</span>
+          <span class="vhs-meta-val" id="vhs-year">—</span>
+        </div>
+      </div>
+      <div class="vhs-eq-wrap">
+        <div class="vhs-eq-label">AUDIO SIGNAL</div>
+        <div class="vhs-eq" id="vhs-eq"></div>
+        <div class="vhs-controls">
+          <input type="range" class="vhs-volume" id="vhs-volume" min="0" max="1" step="0.01" value="0.7">
+          <button class="vhs-mute" id="vhs-mute">PLAY</button>
+        </div>
+        <div class="vhs-error" id="vhs-error"></div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer class="footer">
+  &copy; WRETVISION, JUST OPINIONS.<span class="blink"> _</span><br>
+  <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR THE LOVE OF FILM, TV &amp; GAMES</span>
+</footer>
+
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+    <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+    <button class="modal-close" id="modal-close">[ X ]</button>
+    <div id="modal-inner"></div>
+  </div>
+</div>
+
+<audio id="bg-audio" loop preload="auto">
+  <source src="audio/rain_and_thunder.mp3" type="audio/mpeg">
+  <source src="audio/rain_and_thunder.wav" type="audio/wav">
+</audio>
+<script src="reviews.js"></script>
+<script src="horror-vault.js"></script>
+<script src="shared.js"></script>
+<script src="hero-effects.js"></script>
+<script>
+  /* category counts */
+  document.getElementById('count-movies').textContent = REVIEWS.filter(r => r.category === 'movie').length + ' reviews';
+  document.getElementById('count-tv').textContent     = REVIEWS.filter(r => r.category === 'tv').length + ' reviews';
+  document.getElementById('count-games').textContent  = REVIEWS.filter(r => r.category === 'game').length + ' reviews';
+  document.getElementById('count-horror').textContent = HORROR_VAULT.length + ' titles';
+  initPage('all');
+
+  /* ── BOOT SEQUENCE ANIMATION ── */
+  (function() {
+    var lines = [
+      { text: 'BOOTING ARCHIVE...',            delay: 400  },
+      { text: 'CONNECTING TO MEDIA DATABASE...', delay: 1100 },
+      { text: 'SYNCING REVIEWS...',             delay: 1900 },
+      { text: REVIEWS.length + ' REVIEWS LOADED.', delay: 2700, done: true }
+    ];
+    var log = document.getElementById('broadcast-log');
+    if (!log) return;
+    log.innerHTML = '';
+
+    lines.forEach(function(line) {
+      setTimeout(function() {
+        var span = document.createElement('span');
+        span.className = 'log-line' + (line.done ? ' done' : ' active');
+        span.textContent = line.text;
+        log.appendChild(span);
+        if (log.children.length > 4) log.removeChild(log.children[0]);
+      }, line.delay);
+    });
+  })();
+
+  /* ── LOCAL CLOCK ── */
+  (function() {
+    var timeEl = document.getElementById('np-time');
+    if (!timeEl) return;
+    function tick() {
+      var now = new Date();
+      timeEl.textContent =
+        String(now.getHours()).padStart(2, '0') + ':' +
+        String(now.getMinutes()).padStart(2, '0') + ':' +
+        String(now.getSeconds()).padStart(2, '0');
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+
+  /* ── NOW TRANSMITTING: rotate latest 3 reviews every 10s ── */
+  (function() {
+    var titleEl = document.getElementById('np-title');
+    if (!titleEl || !window.REVIEWS || !REVIEWS.length) return;
+    var sorted = REVIEWS.slice().sort(function(a, b) { return b.id - a.id; });
+    var picks = sorted.slice(0, 3);
+    var idx = 0;
+    function show() {
+      var r = picks[idx];
+      titleEl.textContent = r.title + ' (' + r.year + ')';
+      idx = (idx + 1) % picks.length;
+    }
+    show();
+    setInterval(show, 10000);
+  })();
+
+  /* ── SESSION TIMER ── */
+  (function() {
+    var el = document.getElementById('ticker-session');
+    if (!el) return;
+    var sec = 0;
+    setInterval(function() {
+      sec++;
+      var h = Math.floor(sec / 3600);
+      var m = Math.floor((sec % 3600) / 60);
+      var s = sec % 60;
+      el.textContent =
+        String(h).padStart(2, '0') + ':' +
+        String(m).padStart(2, '0') + ':' +
+        String(s).padStart(2, '0');
+    }, 1000);
+  })();
+
+  /* ── EMERGENCY ALERT DISMISS ── */
+  (function() {
+    var btn = document.getElementById('ea-close');
+    var box = document.getElementById('emergency-alert');
+    if (btn && box) {
+      btn.addEventListener('click', function() { box.classList.add('dismissed'); });
+    }
+  })();
+
+  /* hero-effects.js handles rain + lightning (default blue colour) */
+
+  /* ── VHS META: populate from latest review ── */
+  (function() {
+    if (!window.REVIEWS || !REVIEWS.length) return;
+    var latest = REVIEWS.slice().sort(function(a, b) { return b.id - a.id; })[0];
+    var t = document.getElementById('vhs-title');
+    var c = document.getElementById('vhs-cat');
+    var y = document.getElementById('vhs-year');
+    if (t) t.textContent = latest.title;
+    if (c) c.textContent = latest.category ? latest.category.toUpperCase() : '—';
+    if (y) y.textContent = latest.year || '—';
+  })();
+
+  /* ── AUDIO + VHS EQUALIZER ── */
+  (function() {
+    var audio    = document.getElementById('bg-audio');
+    var tapeWrap = document.getElementById('vhs-tape-wrap');
+    var eq       = document.getElementById('vhs-eq');
+    var volEl    = document.getElementById('vhs-volume');
+    var muteEl   = document.getElementById('vhs-mute');
+    var errEl    = document.getElementById('vhs-error');
+    if (!audio || !eq) return;
+
+    /* diagnostic: log file state on load */
+    console.log('[AUDIO] element found. src:', audio.src);
+    audio.addEventListener('canplaythrough', function() {
+      console.log('[AUDIO] canplaythrough — file loaded OK');
+    });
+    audio.addEventListener('error', function() {
+      var code = audio.error ? audio.error.code : '?';
+      console.error('[AUDIO] load error, code:', code, 'src:', audio.src);
+      showError('AUDIO SOURCE OFFLINE');
+    });
+
+    /* build equalizer bars */
+    var NUM = 16, bars = [];
+    for (var i = 0; i < NUM; i++) {
+      var b = document.createElement('div');
+      b.className = 'vhs-bar';
+      eq.appendChild(b);
+      bars.push(b);
+    }
+
+    var vol = 0.7, muted = false, started = false;
+    audio.volume = vol;
+    audio.muted  = false;
+
+    /* random fallback animation before audio starts */
+    var env = [0.25,0.35,0.50,0.65,0.78,0.88,0.96,1.0,0.98,0.90,0.80,0.68,0.55,0.42,0.32,0.22];
+    function fallback() {
+      if (started) return;
+      bars.forEach(function(b, i) {
+        b.style.height = Math.max(2, Math.round((Math.random() * 0.7 + 0.15) * 20 * env[i])) + 'px';
+      });
+      setTimeout(fallback, 130);
+    }
+    fallback();
+
+    /* bars idle flat when paused/muted, random when playing */
+    function animateEQ() {
+      if (audio.paused || audio.muted) {
+        bars.forEach(function(b) { b.style.height = '2px'; });
+        setTimeout(animateEQ, 200);
+        return;
+      }
+      bars.forEach(function(b, i) {
+        b.style.height = Math.max(2, Math.round((Math.random() * 0.7 + 0.15) * 20 * env[i])) + 'px';
+      });
+      setTimeout(animateEQ, 130);
+    }
+
+    function updateTrack() {
+      if (!volEl) return;
+      var pct = (parseFloat(volEl.value) * 100).toFixed(1);
+      volEl.style.background =
+        'linear-gradient(to right,#4fffb0 0%,#4fffb0 ' + pct +
+        '%,rgba(75,255,176,0.18) ' + pct + '%,rgba(75,255,176,0.18) 100%)';
+    }
+
+    function setBtn(label, isMuted) {
+      if (!muteEl) return;
+      muteEl.textContent = label;
+      muteEl.classList.toggle('muted', isMuted);
+    }
+
+    function showError(msg) {
+      if (!errEl) return;
+      errEl.textContent = msg;
+      errEl.style.display = 'block';
+    }
+
+    function startAudio() {
+      if (started) return;
+      started = true;
+      console.log('[AUDIO] startAudio(). src:', audio.currentSrc || audio.src,
+                  '| volume:', audio.volume, '| muted:', audio.muted,
+                  '| readyState:', audio.readyState);
+
+      /* No Web Audio API — plain HTMLAudioElement only.
+         Get basic sound working first; visualiser uses random bars. */
+      audio.muted  = false;
+      audio.volume = vol;
+
+      var p = audio.play();
+      if (p !== undefined) {
+        p.then(function() {
+          console.log('[AUDIO] play() resolved ✓ currentSrc:', audio.currentSrc,
+                      '| volume:', audio.volume, '| muted:', audio.muted);
+          setBtn('MUTE', false);
+          if (errEl) errEl.style.display = 'none';
+          animateEQ();
+        }).catch(function(e) {
+          console.error('[AUDIO] play() rejected ✗ name:', e.name, '| msg:', e.message);
+          started = false;
+          setBtn('PLAY', false);
+          showError('PLAYBACK BLOCKED — ' + e.name);
+        });
+      }
+    }
+
+    /* volume slider */
+    if (volEl) {
+      updateTrack();
+      volEl.addEventListener('input', function() {
+        vol = parseFloat(this.value);
+        updateTrack();
+        if (!started) { startAudio(); return; }
+        audio.volume = vol;
+        if (vol > 0 && muted) {
+          muted = false;
+          audio.muted = false;
+          setBtn('MUTE', false);
+        }
+        console.log('[AUDIO] volume →', vol, '| muted:', audio.muted);
+      });
+    }
+
+    /* mute button */
+    if (muteEl) {
+      muteEl.addEventListener('click', function() {
+        if (!started) { startAudio(); return; }
+        muted = !muted;
+        audio.muted  = muted;
+        audio.volume = muted ? 0 : vol;
+        if (volEl) { volEl.value = muted ? 0 : vol; updateTrack(); }
+        setBtn(muted ? 'UNMUTE' : 'MUTE', muted);
+        console.log('[AUDIO] mute toggled →', muted, 'volume:', audio.volume);
+      });
+    }
+
+    /* clicking the tape image also starts playback */
+    if (tapeWrap) {
+      tapeWrap.addEventListener('click', function() {
+        if (!started) startAudio();
+      });
+    }
+  })();
+
+</script>
 </body>
 </html>

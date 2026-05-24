@@ -9,78 +9,73 @@
 // ============================================================
 
 const REVIEWS = [
-    {
-      "id": 1779467965923,
-      "category": "movie",
-      "title": "Midsommar",
-      "year": 2019,
-      "director": "Ari Aster",
-      "runtime": "148 min",
-      "rating": "R",
-      "genres": [
-        "Horror",
-        "Folk Horror",
-        "Mystery"
-      ],
-      "score": 8,
-      "featured": false,
-      "excerpt": "Midsommar is a breakup movie dressed in flower crowns and viscera, and Ari Aster knows exactly what he's doing.",
-      "body": [
-        "Ari Aster made Hereditary and then turned around and made something completely different with Midsommar (2019), and the nerve of that move deserves respect. This is folk horror at its most committed. You know something is deeply wrong within the first ten minutes, not because of anything supernatural, but because of grief. Real, ugly, suffocating grief. Florence Pugh is extraordinary here. She's not performing sadness, she is sadness, and when she arrives in Sweden with a boyfriend who clearly doesn't want to be there and friends who only half care, you feel the loneliness of her before a single flower crown appears on screen. Aster builds dread the way good horror should, through atmosphere and discomfort rather than cheap shocks. The Swedish village is too bright, too beautiful, too welcoming, and that wrongness creeps under your skin slowly.",
-        "What Midsommar does better than almost anything comparable, including The Wicker Man which it clearly has opinions about, is make the horror feel earned and inevitable rather than arbitrary. Each ritual escalates in a way that feels logical within the internal rules of this world. The practical effects work is genuinely stunning in places, uncomfortable in the best possible way. The communal screaming scene alone is one of the most unsettling things put on screen in recent memory. The film is long, and there are stretches in the middle where it meanders slightly, a few scenes with the thesis-writing subplot that pad things without adding much weight. That is a real issue and stops this from sitting higher. But the final act lands with such force that you forgive a lot.",
-        "The genius of Midsommar is that by the end you understand Dani completely. Her final smile is not a happy ending and not a tragedy, it is something more honest and more disturbing than either. That ambiguity is what separates this from the jump scare noise that dominates mainstream horror. Aster has a clear vision and he does not blink. If you can find Midsommar streaming and you have not seen it, go in knowing as little as possible. It rewards patience and it sticks with you. Compare it to Hereditary, compare it to The Witch, it belongs in that conversation without question."
-      ],
-      "images": [],
-      "verdict": "Midsommar (2019) is slow, deliberate, sun-drenched nightmare fuel with Florence Pugh delivering one of the best horror performances in years, and an ending that earns every disturbing second that preceded it."
-    },
-    {
-      "id": 1779384785253,
-      "category": "movie",
-      "title": "The Witch",
-      "year": 2015,
-      "director": "Robert Eggers",
-      "runtime": "92 min",
-      "rating": "R",
-      "genres": [
-        "Horror",
-        "Folk Horror",
-        "Mystery"
-      ],
-      "score": 9,
-      "featured": false,
-      "excerpt": "The Witch doesn't scare you with what it shows. It scares you with what it makes you feel in the silence between scenes.",
-      "body": [
-        "Robert Eggers arrived in 2015 with The Witch and immediately had no interest in playing by modern horror rules. No jump scares. No cheap releases. Just slow, suffocating dread built from period language, grey skies, and a family tearing itself apart at the seams before anything supernatural even confirms itself. The setup is deceptively simple: a Puritan family exiled from their plantation community tries to survive alone at the edge of a forest that is clearly, deeply wrong. Eggers researches his period material obsessively and you feel it in every frame. The dialogue sounds genuinely 1630s. The costumes, the farm, the theology, all of it lands with a weight that makes the horror feel earned rather than decorative.",
-        "Anya Taylor-Joy announces herself completely here as Thomasin, the eldest daughter slowly becoming the family's scapegoat for everything going wrong around them. She does so much with very little, which is exactly the kind of performance this film demands. The goat Black Phillip deserves his own mention because Eggers uses that animal with a precision that borders on genius, keeping him just present enough that you never stop thinking about him. The practical work throughout is outstanding. Nothing here looks like a visual effects budget cutting corners. The forest feels genuinely ancient and hostile in a way that no CGI woodland ever manages. There are images in this film, specifically the final scene, that have stayed lodged in my head since the first watch.",
-        "If The Witch has a flaw it is that its commitment to atmosphere over momentum will test certain viewers. This is not a film that rewards passive watching and some will bounce off the pacing entirely, which is fair. But for anyone who finds horror most effective when it operates like a slow pressure build rather than a series of jolts, this is essential viewing. Comparable to Hereditary in how it weaponises family grief and to The Wicker Man in its folk horror DNA, The Witch is available across various streaming platforms and belongs in any serious conversation about what the genre can achieve when a director actually has something to say."
-      ],
-      "images": [],
-      "verdict": "9/10 and one of the most assured debut features the horror genre has ever produced, folk horror at its most precise and most unsettling."
-    },
-    {
-      "id": 1779300220841,
-      "category": "movie",
-      "title": "Obsession",
-      "year": 2026,
-      "director": "Curry Barker",
-      "runtime": "108 min",
-      "rating": "R",
-      "genres": [
-        "Horror",
-        "Thriller"
-      ],
-      "score": 8,
-      "featured": false,
-      "excerpt": "Obsession earns your attention in the first act and spends the second quietly testing it. Barker has real craft. The film around him mostly does too.",
-      "body": [
-        "Obsession is the kind of horror that earns your attention in the first act and then spends the second act quietly wasting it. Curry Barker has a real eye. The framing is confident, the dread is controlled, and there are stretches early on where you can feel something genuinely suffocating being built. A music store employee, a wish, a supernatural toy. It sounds thin on paper but Barker sells the premise through atmosphere rather than exposition. That takes discipline and he has it, at least for a while.",
-        "Michael Johnston carries the weight of it well. The supporting cast is uneven. Some of them are living in the film and some of them are clearly just visiting. But Johnston stays grounded throughout in a way that keeps you invested when the script starts to drift. Inde Navarrette does something genuinely unsettling with a role that could have gone cartoonish. When the film is working it is really working, and a lot of that is down to the two of them.",
-        "The second act is the problem. It bloats. Scenes exist to delay rather than deepen, and you feel the film padding itself toward a conclusion it seems nervous about reaching. The practical effects work is strong but Barker leans on digital too often and each time he does it costs him something he had worked hard to build. There is a genuinely interesting thread running through this about control and surveillance and possession that never gets the commitment it deserves. You can see the better film underneath.",
-        "Here is the thing though. The ceiling on this film is high. Fans of Possessor or The Invisible Man will find real things to appreciate here, and the wider critical response reflects that. The flaws are real but they do not cancel out a film this confident in its best moments. A tighter middle act and a braver ending and this is a top tier horror debut without question. As it stands it is still an 8. Blumhouse at its most atmospheric, and worth every minute of your time on Peacock."
-      ],
-      "images": [],
-      "verdict": "Obsession is frustrating and impressive in roughly equal measure. It pulls its punch at the moment it should have swung hardest, but what it gets right it gets genuinely right."
-    },
+{
+  "id": 1779467965923,
+  "category": "movie",
+  "title": "Midsommar",
+  "year": 2019,
+  "director": "Ari Aster",
+  "runtime": "148 min",
+  "rating": "R",
+  "genres": ["Horror", "Folk Horror", "Mystery"],
+  "score": 8,
+  "featured": false,
+  "excerpt": "Midsommar is a breakup movie dressed in flower crowns and viscera, and Ari Aster knows exactly what he's doing.",
+  "body": [
+    "Ari Aster made Hereditary and then turned around and made something completely different with Midsommar (2019), and the nerve of that move deserves respect. This is folk horror at its most committed. You know something is deeply wrong within the first ten minutes, not because of anything supernatural, but because of grief. Real, ugly, suffocating grief. Florence Pugh is extraordinary here. She's not performing sadness, she is sadness, and when she arrives in Sweden with a boyfriend who clearly doesn't want to be there and friends who only half care, you feel the loneliness of her before a single flower crown appears on screen. Aster builds dread the way good horror should, through atmosphere and discomfort rather than cheap shocks. The Swedish village is too bright, too beautiful, too welcoming, and that wrongness creeps under your skin slowly.",
+    "What Midsommar does better than almost anything comparable, including The Wicker Man which it clearly has opinions about, is make the horror feel earned and inevitable rather than arbitrary. Each ritual escalates in a way that feels logical within the internal rules of this world. The practical effects work is genuinely stunning in places, uncomfortable in the best possible way. The communal screaming scene alone is one of the most unsettling things put on screen in recent memory. The film is long, and there are stretches in the middle where it meanders slightly, a few scenes with the thesis-writing subplot that pad things without adding much weight. That is a real issue and stops this from sitting higher. But the final act lands with such force that you forgive a lot.",
+    "The genius of Midsommar is that by the end you understand Dani completely. Her final smile is not a happy ending and not a tragedy, it is something more honest and more disturbing than either. That ambiguity is what separates this from the jump scare noise that dominates mainstream horror. Aster has a clear vision and he does not blink. If you can find Midsommar streaming and you have not seen it, go in knowing as little as possible. It rewards patience and it sticks with you. Compare it to Hereditary, compare it to The Witch, it belongs in that conversation without question."
+  ],
+  "images": [],
+  "media": { "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/pYgj8e2Y6RufnSyOA6OnzmxFXxZ.jpg" },
+  "verdict": "Midsommar (2019) is slow, deliberate, sun-drenched nightmare fuel with Florence Pugh delivering one of the best horror performances in years, and an ending that earns every disturbing second that preceded it."
+},
+{
+  "id": 1779384785253,
+  "category": "movie",
+  "title": "The Witch",
+  "year": 2015,
+  "director": "Robert Eggers",
+  "runtime": "92 min",
+  "rating": "R",
+  "genres": ["Horror", "Folk Horror", "Mystery"],
+  "score": 9,
+  "featured": false,
+  "excerpt": "The Witch doesn't scare you with what it shows. It scares you with what it makes you feel in the silence between scenes.",
+  "body": [
+    "Robert Eggers arrived in 2015 with The Witch and immediately had no interest in playing by modern horror rules. No jump scares. No cheap releases. Just slow, suffocating dread built from period language, grey skies, and a family tearing itself apart at the seams before anything supernatural even confirms itself. The setup is deceptively simple: a Puritan family exiled from their plantation community tries to survive alone at the edge of a forest that is clearly, deeply wrong. Eggers researches his period material obsessively and you feel it in every frame. The dialogue sounds genuinely 1630s. The costumes, the farm, the theology, all of it lands with a weight that makes the horror feel earned rather than decorative.",
+    "Anya Taylor-Joy announces herself completely here as Thomasin, the eldest daughter slowly becoming the family's scapegoat for everything going wrong around them. She does so much with very little, which is exactly the kind of performance this film demands. The goat Black Phillip deserves his own mention because Eggers uses that animal with a precision that borders on genius, keeping him just present enough that you never stop thinking about him. The practical work throughout is outstanding. Nothing here looks like a visual effects budget cutting corners. The forest feels genuinely ancient and hostile in a way that no CGI woodland ever manages. There are images in this film, specifically the final scene, that have stayed lodged in my head since the first watch.",
+    "If The Witch has a flaw it is that its commitment to atmosphere over momentum will test certain viewers. This is not a film that rewards passive watching and some will bounce off the pacing entirely, which is fair. But for anyone who finds horror most effective when it operates like a slow pressure build rather than a series of jolts, this is essential viewing. Comparable to Hereditary in how it weaponises family grief and to The Wicker Man in its folk horror DNA, The Witch is available across various streaming platforms and belongs in any serious conversation about what the genre can achieve when a director actually has something to say."
+  ],
+  "images": [],
+  "media": { "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/zi2oYYNSSv7t44iSt5YrxHX9PYs.jpg" },
+  "verdict": "9/10 and one of the most assured debut features the horror genre has ever produced, folk horror at its most precise and most unsettling."
+},
+{
+  "id": 1779300220841,
+  "category": "movie",
+  "title": "Obsession",
+  "year": 2026,
+  "director": "Curry Barker",
+  "runtime": "108 min",
+  "rating": "R",
+  "genres": [
+    "Horror",
+    "Thriller"
+  ],
+  "score": 8,
+  "featured": false,
+  "excerpt": "Obsession earns your attention in the first act and spends the second quietly testing it. Barker has real craft. The film around him mostly does too.",
+  "body": [
+    "Obsession is the kind of horror that earns your attention in the first act and then spends the second act quietly wasting it. Curry Barker has a real eye. The framing is confident, the dread is controlled, and there are stretches early on where you can feel something genuinely suffocating being built. A music store employee, a wish, a supernatural toy. It sounds thin on paper but Barker sells the premise through atmosphere rather than exposition. That takes discipline and he has it, at least for a while.",
+    "Michael Johnston carries the weight of it well. The supporting cast is uneven. Some of them are living in the film and some of them are clearly just visiting. But Johnston stays grounded throughout in a way that keeps you invested when the script starts to drift. Inde Navarrette does something genuinely unsettling with a role that could have gone cartoonish. When the film is working it is really working, and a lot of that is down to the two of them.",
+    "The second act is the problem. It bloats. Scenes exist to delay rather than deepen, and you feel the film padding itself toward a conclusion it seems nervous about reaching. The practical effects work is strong but Barker leans on digital too often and each time he does it costs him something he had worked hard to build. There is a genuinely interesting thread running through this about control and surveillance and possession that never gets the commitment it deserves. You can see the better film underneath.",
+    "Here is the thing though. The ceiling on this film is high. Fans of Possessor or The Invisible Man will find real things to appreciate here, and the wider critical response reflects that. The flaws are real but they do not cancel out a film this confident in its best moments. A tighter middle act and a braver ending and this is a top tier horror debut without question. As it stands it is still an 8. Blumhouse at its most atmospheric, and worth every minute of your time on Peacock."
+  ],
+  "images": [],
+  "media": { "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/40I66L7QKguTFDPvcLcdiTbAD7I.jpg", "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/40I66L7QKguTFDPvcLcdiTbAD7I.jpg" },
+  "verdict": "Obsession is frustrating and impressive in roughly equal measure. It pulls its punch at the moment it should have swung hardest, but what it gets right it gets genuinely right."
+},
 {
   "id": 1779277134292,
   "category": "game",
@@ -109,6 +104,7 @@ const REVIEWS = [
       
       "Still, even with those issues, ROUTINE has a strong identity, and that counts for a lot in a genre that is constantly flooded with cheap mascot horror, asset-flip garbage, and games that think darkness automatically equals fear. This has taste. It has restraint. It has atmosphere. It has that dirty old sci-fi mood that makes you want to lean closer to the screen even while your brain is telling you not to. I just wish the final stretch had more impact, because the game spends so much time building dread that you naturally expect the payoff to hit harder than it does."
     ],
+    "media": { "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big/coay6e.webp", "backdrop": "" },
     "verdict": "ROUTINE is a stylish, tense, and genuinely atmospheric sci-fi horror game with excellent mood and sound design, but its slow-burn approach occasionally becomes too cautious for its own good."
   },
     {
@@ -132,7 +128,7 @@ const REVIEWS = [
         "Where Immaculate starts losing me is the middle stretch. The pacing goes soft right when it should be tightening. There are scenes that exist purely to restate what we already understand about Cecilia's situation, and the film mistakes religious imagery for religious tension. Crosses and stigmata and Latin chanting do not automatically equal dread. You have to build toward something. The supporting cast is mostly functional but nobody else gets enough to do, which means when the conspiracy begins to unfurl there are no real relationships to make it hurt. The mystery also tips its hand too early. By the time the film wants you to be shocked you are mostly just waiting for confirmation of what you already figured out forty minutes in.",
         "The ending though. That ending pulls the film back up by sheer audacity. I will not spoil it but Mohan commits to a final sequence that is genuinely unhinged in the best possible way, brutal and unflinching and exactly the kind of swinging for the fences that horror needs more of. It rescues Immaculate from being forgettable and makes it something worth recommending to the right audience. If you are on Shudder looking for a mid-budget religious horror film with a fearless lead performance and one hell of a closing act, this delivers enough to justify the runtime. Just know you are signing up for a film that is better at its edges than its middle."
       ],
-      "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w500/zyopv7D5j7cfswG0NYiA14qAdPC.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/3zKU2EznBtOPtheyCTQwdZL4b93.jpg" },
       "verdict": "Immaculate (2024) is a flawed but worthwhile Shudder horror that wastes its middle act before an ending that genuinely earns its nerve, held together entirely by Sydney Sweeney refusing to let it fail."
     },
     {
@@ -156,7 +152,7 @@ const REVIEWS = [
         "Then it starts to wobble. The supernatural elements that Lopez weaves in are interesting on paper but the show cannot commit to them cleanly. It keeps one foot in grounded procedural crime drama and one foot in something stranger and more mythological, and it never fully reconciles the two. Compare that to how True Detective Season 1 handled its occult undercurrent, threading it through without ever letting it collapse the plot logic. Night Country does not have that discipline. Some character decisions in the back half feel like plot mechanics rather than actual human behaviour, and the finale wraps things in a way that is tidy where it should have been haunting. The show also mistakes bleakness for depth in places, which is exactly the kind of thing that frustrates me.",
         "Streaming on Max in early 2024, True Detective Night Country sits in interesting company alongside other prestige crime horror like Severance or The Terror, shows that use genre as a pressure cooker for character. It does not quite reach those heights. What it does do is give you six watchable hours with two strong lead performances and a location that feels genuinely menacing. The bones are good. The execution is inconsistent. Lopez clearly has a vision and I would watch her work again, but this season promised more than it delivered and the ending in particular left me colder than it intended."
       ],
-      "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w342/zYqVTiHK5ZajYcNzAW7qWte5NWS.jpg", "backdrop": "https://image.tmdb.org/t/p/w780/v8YFr8BbU9qsO8PYIulzTeM6Qk.jpg" },
       "verdict": "6/10, Night Country has atmosphere and Foster on form, but it flinches at the finish line when it should have gone somewhere genuinely dark and unforgettable."
     },
     {
@@ -179,7 +175,7 @@ const REVIEWS = [
         "What still works is the cast doing what this cast does. Jeremy Allen White remains magnetic even when the writing underserves him. Ayo Edebiri gets more room this season and mostly uses it well, though her arc feels like it is circling without landing. The kitchen sequences still carry genuine tension and the show clearly has people behind the camera who understand how to build a scene from texture and sound alone. There are individual episodes here that are genuinely brilliant, the kind of thing you would point someone to as a standalone piece of television. The problem is consistency. The season as a whole does not build the way it should. Scenes arrive, impress you, and then evaporate without consequence.",
         "The Bear Season 3 is the kind of drama that mistakes relentlessness for depth, and that is a real shame because the ingredients for something exceptional are all still present. Fans of the show will find enough to chew on, and anyone who loved the rawness of season one will find moments that remind them why this show matters. But compared to something like Succession, which knew how to keep narrative momentum alive inside a character study, The Bear is starting to drift. It is a 6 out of 10 season from a show that has proven it can do 9. Still watchable, still beautifully made, still worth your time on Disney+, just noticeably less urgent than it used to be."
       ],
-      "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w342/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg", "backdrop": "https://image.tmdb.org/t/p/w780/wHNwlE6ftEpgjVbdhLXOtv1hLs0.jpg" },
       "verdict": "The Bear Season 3 is a beautiful, frustrating reminder that atmosphere alone cannot carry a story that has stopped moving forward."
     },
     {
@@ -204,7 +200,7 @@ const REVIEWS = [
         "What works here is the restraint. There are long stretches where Castle barely speaks and the film trusts that silence to do the heavy lifting. A mid-film sequence set in an abandoned industrial port is the best the movie gets, tense and murky and genuinely uncomfortable in the right way. The practical work is strong throughout and the action, when it finally arrives, feels like consequence rather than spectacle. The performance at the centre is committed and physically credible without tipping into self-parody. Where it stumbles is the supporting cast, who are serviceable but never surprising, and a third act that tidies things up a little too neatly for a story that spent two hours insisting the world is irredeemably messy.",
         "There is a version of this film that could have been a genuine 8 or 9. The bones are there. But Punisher: One Last Kill pulls one too many punches in the final stretch, which given the subject matter is a bit of a problem. Still, as a piece of crime thriller filmmaking on Disney+ it is doing something most Marvel adjacent projects refuse to do, which is slow down and actually ask whether any of this is worth it. That question does not get a fully satisfying answer, but the fact it is being asked at all puts this well above average for the genre in 2026."
       ],
-      "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w342/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg", "backdrop": "https://image.tmdb.org/t/p/w780/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg" },
       "verdict": "6.5/10, flawed and occasionally too cautious for its own premise, but Punisher: One Last Kill is one of the more genuinely serious attempts to do right by a character who deserves more than carnage for its own sake."
     },
     {
@@ -228,7 +224,7 @@ const REVIEWS = [
         "But here is the problem. Alien: Romulus has nothing to say. It is a greatest hits compilation dressed up as a new album. Every beat, every reveal, every moment of dread has a direct ancestor in Alien or Aliens and the film knows it, leans into it, and somehow thinks that acknowledgment is the same as originality. It is not. The script recycles so efficiently that you stop being scared and start ticking boxes. There is a sequence in the third act that exists purely to remind you of a more iconic moment from 1979 and it lands with a thud because the original earned it and this one just borrowed it. Predictable twists the film clearly thinks are clever. Character decisions that exist to service the plot rather than the people. Padding disguised as atmosphere.",
         "Alien: Romulus sits in that frustrating middle ground where competence and emptiness share the same space. It is watchable, genuinely watchable, and for stretches it is more effective than Prometheus or Alien: Covenant managed. But watchable is not enough for a franchise with this ceiling. You leave it entertained and immediately start forgetting it. Streaming it on Disney+ feels right because this is exactly the kind of film that fills an evening without filling your head. If you want something with similar bones but actual vision behind it, go back to the 1979 original or revisit Aliens. Romulus is the franchise on maintenance mode. Safe, competent, and creatively empty."
       ],
-      "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w500/2uSWRTtCG336nuBiG8jOTEUKSy8.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/iYqSQaWDttQIQzsxg9xHyg0bttG.jpg" },
       "verdict": "6/10, a beautiful shell of a film that proves you can nail the look of Alien without understanding why it scared us in the first place."
     },
     {
@@ -252,7 +248,7 @@ const REVIEWS = [
         "Moore is extraordinary. I cannot stress this enough. She gives a performance that requires her to be humiliated, distorted, and stripped bare in ways that feel genuinely brave, and she commits completely without ever losing the raw human pain underneath it all. Qualley matches her. The two of them are essentially playing opposing forces in the same fractured psyche, and the film builds their dynamic with real patience before it goes completely off the rails in the third act. And it does go off the rails. Spectacularly. The practical effects work in the final thirty minutes is some of the most jaw-dropping, repulsive, and brilliantly crafted body horror since The Thing. It earns every second of its madness because the emotional groundwork was laid properly before the blood started flowing.",
         "Where the film stumbles slightly is in its runtime and its willingness to hammer the same thematic nail a few too many times in the middle stretch. By the time you hit the hour mark you already understand exactly what Fargeat is saying, and some of the repetition in the second act tests your patience. It trusts its audience less than it should, which is a shame because the audience it deserves is smart enough to follow without being lectured. Still, The Substance (2024) is the kind of horror film that genuinely lodges in your chest. If you are watching on Mubi, clear your evening. Do not eat beforehand."
       ],
-      "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w500/lqoMzCcZYEFK729d6qzt349fB4o.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/8ODNt5olCeIqBYTP3GgXEQYTfeX.jpg" },
       "verdict": "8/10, bold, brutal, and genuinely saying something worth hearing even when it oversays it."
     },
     {
@@ -275,7 +271,7 @@ const REVIEWS = [
         "The 80s slasher thriller genre mash is a fun concept and for the first twenty minutes or so it feels like it might actually go somewhere. Then it starts circling. Characters show up, do their bit, vanish. Kevin Bacon is having a blast but his role feels imported from a different and arguably better film. The mystery at the core is not mysterious enough to build tension and not clever enough to pay off. When the reveal lands it lands with a thud, the kind of twist that feels like the film thinks it has said something when it has really just explained itself. I kept waiting for the dread to arrive. It never did.",
         "Here is the thing about closing out a trilogy: you owe the audience something that justifies the journey. Pearl was a character study that actually got under your skin. MaXXXine on VOD settles for being a vibe, a stylish genre exercise that fans of giallo or something like Blow Out will recognise the bones of but feel the meat is missing. Goth deserves a better ending for this character. The trilogy deserved a better ending full stop. There are moments, flashes of what this could have been, and they make the mediocrity around them hurt more."
       ],
-      "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w500/ArvoFK6nlouZRxYmtIOUzKIrg90.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/viKEEaaCaZ0hZ2nGuvIEozlLooL.jpg" },
       "verdict": "5/10, gorgeous to look at and hollow to its core, MaXXXine wastes a great performer and a great era on a finale that mistakes aesthetic for substance."
     },
     {
@@ -299,7 +295,7 @@ const REVIEWS = [
         "Hiroyuki Sanada is the reason this works as deeply as it does. His Yoshii Toranaga is one of the best characters on television in years, a man who reveals almost nothing while constantly moving every piece on the board. Sanada also produced the show, and you feel that ownership in every frame he's in. Cosmo Jarvis as Blackthorne earns his place gradually rather than immediately, which is the right call. And Anna Sawai as Mariko is extraordinary, carrying the emotional and thematic weight of the entire series on her back without ever making it look like effort. The performances across the board are lived in rather than performed. The pacing is deliberate but never slow, there is always something shifting beneath the surface.",
         "If I'm being honest, the early episodes ask for patience that not every viewer will give them. The political manoeuvring is dense and the show trusts you to keep up rather than holding your hand. Some will bounce off that. They're wrong to, but they will. The final two episodes are among the best television I've seen in a while, the kind of ending that feels inevitable in the best possible way, like the whole structure was always pointing exactly here. Watching Shogun Season 1 in 2024 on Disney+ feels like a genuine event in a streaming landscape full of things designed to be forgotten by Thursday."
       ],
-      "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w342/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg", "backdrop": "https://image.tmdb.org/t/p/w780/6Tb87q9Tog30F5AAHh1gyDT2Vve.jpg" },
       "verdict": "9/10, Shogun is the rare historical drama that earns every minute of its runtime and then some, see it before someone spoils the ending."
     },
     {
@@ -323,7 +319,7 @@ const REVIEWS = [
         "Then there is Nicolas Cage. And look, Cage as Longlegs is simultaneously the best and worst thing about this film. Every scene he is in crackles with something genuinely weird and unnerving. The prosthetics, the voice, the physical choices he makes. It is committed, fearless work that deserves a better film around it. But here is the problem. The mystery at the centre of Longlegs does not hold together. The occult mechanics, the family connections, the rules of how any of it actually works get murkier as the film progresses rather than clicking into satisfying place. By the third act you stop trying to follow the logic and just let the vibes wash over you.",
         "That is ultimately what Longlegs is. A vibes film. A very well dressed, occasionally striking vibes film that mistakes atmosphere for story and assumes that if things feel unsettling enough you will not notice the plot is tissue thin. Comparable to Hereditary or Prisoners in its tonal ambitions, it lands considerably below both. The horror community built this one up enormously in summer 2024 and the hype genuinely hurt it. Strip the hype away and you have a watchable, stylish thriller with one barnstorming performance at its centre and a mystery that dissolves under any real scrutiny."
       ],
-      "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w500/1EwNyiiNFd863H4e8nWEzutnZD7.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/6ToGkmqn0KG0UGGGUAC1Ww0e5CM.jpg" },
       "verdict": "6/10, Cage is genuinely frightening and Perkins has real visual instincts, but Longlegs is style hunting for a substance it never quite catches."
     },
     {
@@ -347,7 +343,7 @@ const REVIEWS = [
         "What works here is specific. The Blood and Cheese sequence in episode one is genuinely disturbing, the kind of quiet horror that lingers. Matt Smith is still the most watchable person on screen, doing more with a sideways glance than most actors do with a monologue. Emma DArcy has grown into Rhaenyra but the writing keeps undercutting her agency at the worst moments. Alicent Hightower gets more interesting this season and Olivia Cooke is clearly hungry for it. The dragon riding sequences when they finally arrive are spectacular and practical feeling in a way that Game of Thrones sometimes was not. The problem is everything surrounding those peaks feels like connective tissue that never tightens into anything.",
         "Season two of House of the Dragon runs eight episodes and honestly could have been six. The pacing is the real villain here. There is bloat in places that should crackle with tension, and the season ends at a point that feels less like a cliffhanger and more like the show simply ran out of runway. For fans of the original Game of Thrones era this will scratch an itch but it will not blow your mind the way the best of that show did. Comparable to the slower stretches of The Rings of Power in terms of ambition outpacing execution. It is watchable, it has genuine highlights, and it frustratingly keeps you just invested enough to come back."
       ],
-      "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w342/7QMsOTMUswlwxJP0rTTZfmz2tX2.jpg", "backdrop": "https://image.tmdb.org/t/p/w780/2xGcSLyTAzConiHAByWqhfLiatT.jpg" },
       "verdict": "House of the Dragon Season 2 is a show that keeps promising the fire and mostly giving you the smoke, 6/10."
     },
     {
@@ -367,7 +363,7 @@ const REVIEWS = [
         "Maika Monroe is genuinely great here. There's a specific kind of exhausted terror she carries through the second and third acts that feels completely real rather than performed. The score by Disasterpeace is doing heavy lifting too — that synth work is relentless and wrong in exactly the right way, sitting just outside comfort the entire runtime. The suburban Detroit setting adds something too. Wide empty streets, faded houses, swimming pools. Somewhere familiar that keeps feeling just slightly off. Atmosphere built from location rather than production design. That's craft.",
         "Is it perfect? Not quite. The final act loses a little of the tight control that makes the first hour so suffocating, and a couple of character decisions strain credibility in ways you notice. But these are minor complaints against a film that genuinely achieves something. If you grew up on A Nightmare on Elm Street or The Babadook and you're hunting for something streaming now that earns its reputation — It Follows deserves to be in that conversation without hesitation."
       ],
-      "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w500/iwnQ1JH1wdWrGYkgWySptJ5284A.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/ikaRI4yMxKOje5SmOlAhOBUnicL.jpg" },
       "verdict": "9/10 — one of the smartest, most atmospherically confident horror films of the decade, and proof that a single great idea, executed with discipline, is worth more than a hundred lazy sequels."
     },
     {
@@ -392,6 +388,7 @@ const REVIEWS = [
   images: [
     { src: "images/tv/smiling-friends/shot-1.webp", caption: "", afterParagraph: 3 }
   ],
+  media: { poster: "https://image.tmdb.org/t/p/w342/l1Qdw9DsJaomE8BXeVfkF6h1qaa.jpg", backdrop: "https://image.tmdb.org/t/p/w780/qjHTkQ3QUlw6sxkIhugqNYsRJnR.jpg" },
   verdict: "Smiling Friends is a legitimate creative achievement dressed up as internet-brained nonsense, and it earns every single one of its laughs."
 },
 
@@ -417,6 +414,7 @@ const REVIEWS = [
   images: [
     { src: "images/tv/common-side-effects/shot-1.webp", caption: "", afterParagraph: 3 }
   ],
+  media: { poster: "https://image.tmdb.org/t/p/w342/a8X5XXP49DHrySTXJMUIN5HI1Wz.jpg", backdrop: "https://image.tmdb.org/t/p/w780/4drV6iluttgjZmU1Q0xDqjrBQ1.jpg" },
   verdict: "Common Side Effects is the kind of show that reminds you animation can do things no other medium can, and Bennett is one of the very few people actually pushing that boundary."
 },
 
@@ -439,6 +437,7 @@ const REVIEWS = [
 
     `What makes this so genuinely frustrating rather than just disappointing is that adapting Silent Hill 2 should be, relatively speaking, one of the more manageable challenges in video game film history, because the game already understands cinematic pacing, already knows how to withhold and reveal, already has a third act that lands like a punch to the chest if you've been paying attention. You don't need to outsmart it, you need to respect it enough to get out of its way in the right places and only expand where the medium genuinely demands it. Adding depth to characters where the game's runtime had to be economical, that's a legitimate opportunity and a worthwhile one. But that's not what happens here. Instead the additions feel grafted on and performative, the visuals in stretches look cheaper than they have any right to for a production of this scale, and the overall film carries the unmistakable energy of something made by people who understood the assignment on paper and then proceeded to ignore it the moment cameras rolled.`
   ],
+  media: { poster: "https://image.tmdb.org/t/p/w500/mdw7bSnE11WpwWf3ViXtnavuqiT.jpg", backdrop: "https://image.tmdb.org/t/p/w1280/v0NEB75SZjxY8GS3ho8WeEvjIT3.jpg" },
   verdict: "A waste so complete it almost requires effort, Return to Silent Hill takes one of the most emotionally and atmospherically rich games ever made and produces something that would embarrass a fan film with a quarter of the budget."
 },
 
@@ -465,6 +464,7 @@ const REVIEWS = [
     { src: "images/games/death-stranding-2/shot-1.webp", caption: "", afterParagraph: 1 },
     { src: "images/games/death-stranding-2/shot-2.webp", caption: "", afterParagraph: 2 }
   ],
+  media: { poster: "https://cdn.thegamesdb.net/images/original/boxart/front/135715-1.jpg", backdrop: "" },
   verdict: "A glorified expansion that earns every point of its score through sheer craft and commitment, flaws fully visible and largely irrelevant."
 },
 
@@ -487,11 +487,12 @@ const REVIEWS = [
 
     `None of this means the film is a disaster, and that's almost the more frustrating thing to reckon with. The animation is genuinely gorgeous in stretches, and there are individual sequences that show what a tighter, more disciplined version of this movie could have been. The crying Mario meme video that's been floating around the internet turns out to be weirdly accurate as a summary of the experience, not because the film is heartbreaking, but because it captures a very specific feeling of watching something with obvious potential just sort of fall apart in your hands while you stand there watching it happen. Kids will have a fine time, the energy is high enough and the colors are loud enough that it works as pure sensation, but fine time is a brutal standard for a sequel that had every reason to go further.`
   ],
+  media: { poster: "https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg", backdrop: "https://image.tmdb.org/t/p/w1280/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg" },
   verdict: "A visually generous but structurally hollow sequel that mistakes momentum for storytelling, and never quite recovers from forgetting that spectacle only lands when there's something underneath it worth caring about."
 },
 
   {
-  id: Date.now(),
+  id: 1778000000000,
   title: "Monarch: Legacy of Monsters - Season 2",
   year: 2026,
   category: "tv",
@@ -516,6 +517,7 @@ const REVIEWS = [
     "There are still elements here that work. The performances are solid, the concept of Monarch as a shadow organization tracking these creatures is still interesting, and the MonsterVerse itself is a strong foundation. But the execution leans too far into character drama that does not justify its screen time, and not nearly enough into the kaiju aspect that defines the franchise. At this point it feels less like a stepping stone toward something great and more like a clear indication of what the show is going to be."
   ],
 
+  media: { poster: "https://image.tmdb.org/t/p/w342/7LBbaEaLSbqdviBYaSS1rRPMnrs.jpg", backdrop: "https://image.tmdb.org/t/p/w780/7IY4wELVMvtUc78vPiuL8kQV2iA.jpg" },
   verdict: "A MonsterVerse series that forgets the monsters too often to justify the wait."
 },
   {
@@ -551,6 +553,7 @@ Even the branding, the insistence on placing the director’s name front and cen
 
 By the time it ends, the overwhelming feeling is not anger or disappointment, but indifference. It looks good. It sounds good. It simply does not stay with you. And in a genre built on impact, that might be the biggest issue of all.`
     ],
+    media: { poster: "https://image.tmdb.org/t/p/w500/1q308iixueCU4pFtSYugNOevtNx.jpg", backdrop: "https://image.tmdb.org/t/p/w1280/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg" },
     verdict: "All style, no substance. Looks great, feels empty, and fades the moment it ends."
   },
   {
@@ -592,6 +595,7 @@ What's really frustrating is that Undertone had all the ingredients to be someth
 
 Undertone wants to have it both ways, artistic slow burn and conventional supernatural thriller, and succeeds at neither. There's a difference between leaving viewers with questions and leaving them with nothing. This is the latter. Save your money and listen to a creepy podcast instead. At least those are free.`
       ],
+      media: { poster: "https://image.tmdb.org/t/p/w500/2PFgFMnrdCPXWiZl1PUvky7Mo9D.jpg", backdrop: "https://image.tmdb.org/t/p/w1280/qXxFWyur7jFkg2aQgENcXuyYeHF.jpg" },
       verdict: "A podcast stretched into a movie that gives you cinematic blue balls."
     },
     {
@@ -629,6 +633,7 @@ The Director's Cut removes the narration completely and restores the film to wha
 
 Dark City is the kind of film that shouldn't have been forgotten. It came out at the wrong time, got overshadowed by bigger releases, and never found the mainstream audience it deserved. The people who did find it tend to hold it close. If you haven't seen it yet, you're about to join that group. Watch it twice. The second time hits differently once you know what everything means.`
       ],
+      media: { poster: "https://image.tmdb.org/t/p/w500/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg", backdrop: "https://image.tmdb.org/t/p/w1280/sWi4SSeVPii4NU365Df9vzX1yOX.jpg" },
       verdict: "A forgotten masterpiece. Watch the Director's Cut. Watch it twice."
     },
     {
@@ -664,6 +669,7 @@ And then there's Cage himself. He is not acting here. That is not what this is. 
 
 I give it a 7. It's too wilfully strange and too narratively loose to score higher. But that bathroom scene alone earns it the right to exist permanently.`
       ],
+      media: { poster: "https://image.tmdb.org/t/p/w500/m0yf7J7HsKeK6E81SMRcX8vx6mH.jpg", backdrop: "https://image.tmdb.org/t/p/w1280/vv1l1WzwED9r6ZVUw1xTfvaSiPW.jpg" },
       verdict: "Gorgeous, bizarre, and completely unhinged. Cage at maximum Cage."
     },
     {
@@ -699,6 +705,7 @@ And then it bombed. $41 million worldwide against a $45 million budget. Reviews 
 
 Dredd is one of the best R-rated action films of the last twenty years. Not one of the best superhero films. One of the best action films, full stop. The fact that it's mentioned in the same sentence as box office disappointments is a genuine injustice. If you haven't fixed that yet, do it today.`
       ],
+      media: { poster: "https://image.tmdb.org/t/p/w500/wLx65gtGVnUFCxceHWGszcruCZj.jpg", backdrop: "https://image.tmdb.org/t/p/w1280/jUqDBi02CDjqrroC3Zl8hroBbSr.jpg" },
       verdict: "Phenomenal. The sequel we deserved and never got. Still waiting."
     }
 ];

@@ -88,9 +88,21 @@
 
     /* footer */
     .footer { border-top-color: var(--tv-green-dim) !important; }
+
+    /* ── CURSOR ── */
+    body, body * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%234fffb0" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
+    a, button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%234fffb0" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
   </style>
 </head>
 <body class="page-tv">
+
+<div class="status-ticker-bar">
+  <span class="ticker-left">TERMINAL: WRETVISION v2.6.6 | CHANNEL: TV | SESSION: <span class="ticker-session-val" id="ticker-session">00:00:00</span></span>
+  <div class="ticker-scroll-wrap">
+    <span class="ticker-scroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOADING EPISODE DATA... // "THEY SAY TV ROTS YOUR BRAIN. THEY WERE RIGHT ABOUT SOME OF IT." // SIGNAL QUALITY: OPTIMAL // BUFFERING... // SERIES ARCHIVE: ONLINE // NEXT EPISODE: UNKNOWN... // SCANNING FOR NEW CONTENT...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</div>
+
   <header class="topbar">
   <div class="topbar-left">
     <a href="index.html" class="site-logo">WRET<span>VISION</span></a>
@@ -119,10 +131,18 @@
 </header>
   <section class="hero">
     <div class="hero-bg"></div>
+    <div class="hero-rain"></div>
+    <div class="hero-flash" id="hero-flash"></div>
+    <canvas class="hero-lightning-canvas" id="hero-lightning-canvas"></canvas>
     <p class="hero-eyebrow">// tv show reviews //</p>
     <h1 class="hero-title">WRET<span>VISION</span></h1>
     <div class="lightning-bar"></div>
     <p class="hero-sub">TV worth sitting through. And some that isn't.</p>
+    <div class="hero-broadcast-mini" id="hbm">
+      <div class="hbm-header"><span class="hbm-dot" style="color:var(--tv-green)">●</span> LATEST REVIEW</div>
+      <div class="hbm-title" id="hbm-title">—</div>
+      <div class="hbm-score" id="hbm-score"></div>
+    </div>
   </section>
 
   <div class="stats-bar">
@@ -179,6 +199,39 @@
 
   <script src="reviews.js"></script>
   <script src="shared.js"></script>
-  <script>initPage('tv');</script>
+  <script>
+    window.HERO_FX = {
+      glowColor:   'rgba(79,255,176,0.28)',
+      shadowColor: 'rgba(60,220,150,1)',
+      flashColor:  'rgba(79,255,176,1)'
+    };
+  </script>
+  <script src="hero-effects.js"></script>
+  <script>
+    window.openOrRedirectReview = function (r) {
+      var review = typeof r === 'object' ? r : REVIEWS.find(function (x) { return x.id === r; });
+      if (review) window.location.href = 'review.html?id=' + review.id;
+    };
+    initPage('tv');
+    (function() {
+      var latest = (typeof REVIEWS !== 'undefined' ? REVIEWS : []).filter(function(r){ return r.category === 'tv'; })
+                    .sort(function(a,b){ return b.id - a.id; })[0];
+      if (!latest) return;
+      var t = document.getElementById('hbm-title');
+      var s = document.getElementById('hbm-score');
+      if (t) t.textContent = latest.title + ' (' + latest.year + ')';
+      if (s) s.textContent = latest.score + ' / 10';
+    })();
+    (function() {
+      var el = document.getElementById('ticker-session');
+      if (!el) return;
+      var sec = 0;
+      setInterval(function() {
+        sec++;
+        var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
+        el.textContent = String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+      }, 1000);
+    })();
+  </script>
 </body>
 </html>

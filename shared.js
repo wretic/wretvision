@@ -39,12 +39,7 @@ function categoryIcon(category) {
 }
 
 function reviewUrl(review) {
-  const pages = {
-    movie: 'movies.html',
-    tv: 'tv.html',
-    game: 'games.html'
-  };
-  return `${pages[review.category] || 'movies.html'}#${review.id}`;
+  return `review.html?id=${review.id}`;
 }
 
 function openOrRedirectReview(reviewOrId) {
@@ -492,23 +487,41 @@ function createReviewCard(r, isHome) {
     ? `<div class="category-badge category-${r.category}">${categoryIcon(r.category)} ${categoryLabel(r.category)}</div>`
     : '';
 
-  article.className = `review-card review-card-category-${r.category}${isHome ? ' home-card' : ''}`;
+  const artSrc = r.media
+    ? (r.media.poster || r.media.backdrop || null)
+    : null;
+
+  article.className = `review-card review-card-category-${r.category}${isHome ? ' home-card' : ''}${artSrc ? ' has-artwork' : ''}`;
   article.dataset.id = r.id;
+
+  const artworkHtml = artSrc ? `
+    <div class="card-artwork">
+      <img src="${artSrc.replace(/"/g, '&quot;')}"
+           alt="${(r.title + ' (' + r.year + ')').replace(/"/g, '&quot;')}"
+           loading="lazy"
+           class="card-poster"
+           onerror="this.parentElement.style.display='none'">
+      <div class="card-scanlines"></div>
+    </div>` : '';
+
   article.innerHTML = `
     ${pixelCorners()}
-    <div class="card-header">
-      <div class="card-genre">${genreDisplay}</div>
-      ${badgeHtml}
-      ${r.featured ? '<div class="featured-badge">featured</div>' : ''}
-    </div>
-    <div class="card-title">${r.title} (${r.year})</div>
-    <div class="card-director">// ${r.director} //</div>
-    <div class="card-excerpt">${r.excerpt}</div>
-    <div class="card-footer">
-      <div class="rating">${buildRatingBlocks(r.score)}</div>
-      <a href="${isHome ? targetUrl : '#'}" class="read-more" data-id="${r.id}">
-        ${isHome ? 'open in ' + categoryLabel(r.category).toLowerCase() : 'read full review'}
-      </a>
+    ${artworkHtml}
+    <div class="card-content">
+      <div class="card-header">
+        <div class="card-genre">${genreDisplay}</div>
+        ${badgeHtml}
+        ${r.featured ? '<div class="featured-badge">featured</div>' : ''}
+      </div>
+      <div class="card-title">${r.title} (${r.year})</div>
+      <div class="card-director">// ${r.director} //</div>
+      <div class="card-excerpt">${r.excerpt}</div>
+      <div class="card-footer">
+        <div class="rating">${buildRatingBlocks(r.score)}</div>
+        <a href="${isHome ? targetUrl : '#'}" class="read-more" data-id="${r.id}">
+          ${isHome ? 'open in ' + categoryLabel(r.category).toLowerCase() : 'read full review'}
+        </a>
+      </div>
     </div>
   `;
 

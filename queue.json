@@ -237,5 +237,17 @@
       "score": null,
       "notes": null
     }
+  ],
+  "games": [
+    {
+      "title": "ROUTINE",
+      "year": 2026,
+      "developer": "Lunar Games",
+      "platform": "PC, Xbox Series X/S",
+      "genre": ["Psychological Horror", "Atmospheric", "Sci-Fi"],
+      "done": true,
+      "score": 7,
+      "notes": null
+    }
   ]
 }

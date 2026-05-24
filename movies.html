@@ -89,10 +89,21 @@
 
     /* footer */
     .footer { border-top-color: var(--movie-gold) !important; }
+
+    /* ── CURSOR ── */
+    body, body * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%23e6b84a" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
+    a, button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%23e6b84a" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
   </style>
 
 </head>
 <body class="page-movies">
+
+<div class="status-ticker-bar">
+  <span class="ticker-left">TERMINAL: WRETVISION v2.6.6 | CHANNEL: FILM | SESSION: <span class="ticker-session-val" id="ticker-session">00:00:00</span></span>
+  <div class="ticker-scroll-wrap">
+    <span class="ticker-scroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SCANNING FILM ARCHIVE... // "CINEMA IS A MATTER OF WHAT'S IN THE FRAME AND WHAT'S OUT." — MARTIN SCORSESE // SIGNAL QUALITY: OPTIMAL // REELS LOADED // PROJECTION BEGINS SHORTLY... // ARCHIVE STATUS: NOMINAL // NEXT TRANSMISSION: LOADING...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</div>
 
   <header class="topbar">
     <div class="topbar-left">
@@ -123,10 +134,18 @@
 
   <section class="hero">
     <div class="hero-bg"></div>
+    <div class="hero-rain"></div>
+    <div class="hero-flash" id="hero-flash"></div>
+    <canvas class="hero-lightning-canvas" id="hero-lightning-canvas"></canvas>
     <p class="hero-eyebrow">// film reviews //</p>
     <h1 class="hero-title">WRET<span>VISION</span></h1>
     <div class="lightning-bar"></div>
     <p class="hero-sub">Films worth writing about. Even the forgotten ones.</p>
+    <div class="hero-broadcast-mini" id="hbm">
+      <div class="hbm-header"><span class="hbm-dot" style="color:var(--movie-gold-glow)">●</span> LATEST REVIEW</div>
+      <div class="hbm-title" id="hbm-title">—</div>
+      <div class="hbm-score" id="hbm-score"></div>
+    </div>
   </section>
 
   <div class="stats-bar">
@@ -183,6 +202,39 @@
 
   <script src="reviews.js"></script>
   <script src="shared.js"></script>
-  <script>initPage('movie');</script>
+  <script>
+    window.HERO_FX = {
+      glowColor:   'rgba(230,184,74,0.32)',
+      shadowColor: 'rgba(255,200,80,1)',
+      flashColor:  'rgba(230,184,74,1)'
+    };
+  </script>
+  <script src="hero-effects.js"></script>
+  <script>
+    window.openOrRedirectReview = function (r) {
+      var review = typeof r === 'object' ? r : REVIEWS.find(function (x) { return x.id === r; });
+      if (review) window.location.href = 'review.html?id=' + review.id;
+    };
+    initPage('movie');
+    (function() {
+      var latest = (typeof REVIEWS !== 'undefined' ? REVIEWS : []).filter(function(r){ return r.category === 'movie'; })
+                    .sort(function(a,b){ return b.id - a.id; })[0];
+      if (!latest) return;
+      var t = document.getElementById('hbm-title');
+      var s = document.getElementById('hbm-score');
+      if (t) t.textContent = latest.title + ' (' + latest.year + ')';
+      if (s) s.textContent = latest.score + ' / 10';
+    })();
+    (function() {
+      var el = document.getElementById('ticker-session');
+      if (!el) return;
+      var sec = 0;
+      setInterval(function() {
+        sec++;
+        var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
+        el.textContent = String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+      }, 1000);
+    })();
+  </script>
 </body>
 </html>

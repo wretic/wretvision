@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WretVision — Review</title>
+  <meta name="description" content="WretVision review" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="" />
+  <link rel="canonical" href="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+
+  <!-- Populated by JS before first paint -->
+  <style id="review-theme"></style>
+
+  <style>
+    /* ── PAGE WRAPPER ──────────────────────────────────────── */
+    .review-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 40px 52px;
+      position: relative;
+      isolation: isolate;
+    }
+
+    /* ── HERO: POSTER + INFO CENTERED ──────────────────────── */
+    .rv-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .rv-poster-wrap {
+      flex-shrink: 0;
+      width: 200px;
+    }
+
+    .rv-poster {
+      width: 100%;
+      display: block;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      border: 1px solid var(--rv-accent-border, var(--border));
+      filter: brightness(0.92) contrast(1.04);
+      box-shadow: 0 4px 28px rgba(0,0,0,0.55);
+    }
+
+    /* when no image — collapse the poster column entirely */
+    .rv-poster-wrap:empty { display: none; }
+
+    .rv-info {
+      min-width: 0;
+      padding-top: 2px;
+      position: relative;
+      text-align: center;
+    }
+
+    /* ── PLATFORM ICONS (game reviews only) ─────────────────── */
+    .rv-platform-icons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 18px;
+      opacity: 0.38;
+      color: var(--rv-accent, var(--text));
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* breadcrumb row */
+    .rv-nav-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 26px;
+    }
+    .rv-back {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 6px;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .rv-back:hover { color: var(--rv-accent, var(--blue-light)); }
+    .rv-num {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 6px;
+      letter-spacing: 1px;
+      color: var(--muted);
+      opacity: 0.45;
+    }
+
+    /* genre */
+    .rv-genre {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: var(--rv-accent, var(--accent));
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    /* title */
+    .rv-title {
+      font-family: 'VT323', monospace;
+      font-size: 72px;
+      color: #e8f4ff;
+      line-height: 1.0;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .rv-title-year {
+      color: var(--muted);
+      font-size: 52px;
+    }
+
+    /* metadata row */
+    .rv-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family: 'VT323', monospace;
+      font-size: 24px;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+    }
+    .rv-meta-item { display: flex; align-items: center; gap: 5px; }
+    .rv-meta-item + .rv-meta-item::before {
+      content: '·';
+      color: var(--muted);
+      margin: 0 12px;
+    }
+    .rv-meta-label {
+      font-size: 18px;
+      color: var(--rv-accent, var(--blue-light));
+    }
+
+    /* animated divider — reuses shared.css keyframe */
+    .rv-divider {
+      height: 2px;
+      background: linear-gradient(90deg, var(--rv-accent, var(--blue-light)), var(--blue), transparent);
+      margin: 16px 0 24px;
+      animation: pulse-divider 4s ease-in-out infinite;
+    }
+
+    /* body text */
+    .rv-body {
+      flex: 1;
+      margin-bottom: 28px;
+    }
+    .rv-body p {
+      font-size: 22px;
+      line-height: 1.85;
+      color: var(--text);
+      margin-bottom: 18px;
+    }
+    .rv-body p:last-child { margin-bottom: 0; }
+
+    /* ── VERDICT BOX ───────────────────────────────────────── */
+    .rv-verdict {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      border: 1px solid var(--rv-accent-border, var(--border));
+      background: var(--bg2);
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      position: relative;
+    }
+    .rv-verdict .pixel-corner {
+      width: 5px;
+      height: 5px;
+      background: var(--rv-accent, var(--blue-light)) !important;
+    }
+
+    .rv-score-block { flex-shrink: 0; }
+    .rv-verdict-label {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 6px;
+      letter-spacing: 2px;
+      color: var(--rv-accent, var(--muted));
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .rv-score {
+      font-family: 'VT323', monospace;
+      font-size: 58px;
+      color: var(--rv-accent-glow, var(--accent));
+      line-height: 1;
+    }
+    .rv-score-denom {
+      font-size: 28px;
+      color: var(--muted);
+    }
+
+    .rv-verdict-sep {
+      width: 1px;
+      height: 60px;
+      background: var(--rv-accent-border, var(--border));
+      flex-shrink: 0;
+    }
+
+    .rv-verdict-text {
+      flex: 1;
+      font-family: 'VT323', monospace;
+      font-size: 22px;
+      line-height: 1.65;
+      color: var(--rv-accent-glow, var(--blue-light));
+      letter-spacing: 0.5px;
+    }
+
+    .rv-verdict-icon {
+      flex-shrink: 0;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    /* ── PAGER ─────────────────────────────────────────────── */
+    .rv-pager {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1px dashed rgba(10,143,212,0.25);
+    }
+    .rv-pager-link {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px;
+      letter-spacing: 1px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .rv-pager-link:hover { color: var(--rv-accent, var(--blue-light)); }
+    .rv-pager-link.disabled {
+      opacity: 0.22;
+      pointer-events: none;
+    }
+
+    /* ── ERROR STATE ───────────────────────────────────────── */
+    .rv-error {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+    }
+    .rv-error-code {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px;
+      color: var(--muted);
+      letter-spacing: 2px;
+    }
+    .rv-error-msg {
+      font-family: 'VT323', monospace;
+      font-size: 32px;
+      color: var(--text);
+    }
+    .rv-error-link {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 6px;
+      color: var(--blue-light);
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+    .rv-error-link:hover { color: #fff; }
+
+    /* ── RESPONSIVE ────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .review-page { padding: 24px 22px 36px; }
+      .rv-poster-wrap { width: 160px; }
+      .rv-title { font-size: 44px; }
+    }
+
+    @media (max-width: 600px) {
+      .review-page { padding: 18px 16px 28px; }
+      .rv-hero { flex-direction: column; gap: 20px; }
+      .rv-poster-wrap { width: 140px; }
+      .rv-title { font-size: 36px; }
+      .rv-title-year { font-size: 28px; }
+      .rv-score { font-size: 44px; }
+      .rv-verdict { flex-wrap: wrap; }
+      .rv-verdict-sep { display: none; }
+    }
+
+    /* ═══════════════════════════════════════════════════════════
+       GAME REVIEW — TWO-PANEL LAYOUT
+       ═══════════════════════════════════════════════════════════ */
+
+    body.page-review-game .review-page { display: none; }
+    body.page-review-game .footer      { display: none; }
+
+    .grv-wrap { display: none; }
+    body.page-review-game .grv-wrap {
+      display: block;
+    }
+
+    /* ── HEADER — game page dark-red override ──────────────────── */
+    body.page-review-game .topbar {
+      background: #0e0809 !important;
+      border-bottom-color: #cc1f0f !important;
+    }
+    body.page-review-game .nav-link {
+      color: #5a3030 !important;
+    }
+    body.page-review-game .nav-link:hover {
+      color: #cc1f0f !important;
+      border-color: rgba(204,31,15,0.28) !important;
+      background: rgba(204,31,15,0.06) !important;
+    }
+    body.page-review-game .nav-link.active {
+      color: #e83d1f !important;
+      border-color: #cc1f0f !important;
+      background: rgba(139,26,26,0.14) !important;
+    }
+    body.page-review-game .yt-link {
+      border-color: #cc1f0f !important;
+      background: rgba(139,26,26,0.08) !important;
+    }
+    body.page-review-game .yt-link .avatar-wrap {
+      border-color: #e83d1f !important;
+    }
+    body.page-review-game .yt-label {
+      color: #e83d1f !important;
+    }
+    body.page-review-game .yt-link .pixel-corner {
+      background: #cc1f0f !important;
+    }
+
+    /* ── EFFECTS BACKGROUND LAYER ───────────────────────────────── */
+    .rv-effects-bg,
+    .grv-effects-bg {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      overflow: hidden;
+      animation: panel-flicker 11s step-end infinite;
+    }
+    @keyframes panel-flicker {
+      0%, 90%, 100% { filter: brightness(1);    }
+      90.4%          { filter: brightness(0.80); }
+      90.8%          { filter: brightness(1.05); }
+      91.2%          { filter: brightness(0.87); }
+      91.6%          { filter: brightness(1);    }
+      95%            { filter: brightness(0.93); }
+      95.4%          { filter: brightness(1);    }
+    }
+
+    /* image layer — image itself is set per genre theme below */
+    .gl-img {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center top;
+      background-color: #060304;
+    }
+
+    /* ═══════════════════════════════════════════════════════════
+       GENRE THEMES
+       One block per genre. Each block sets the panel image and
+       any accent-colour overrides for that genre.
+       To add a new genre:
+         1. Add a body.genre-<slug> block here with its panel img
+         2. Optional: override --grv-title-color etc. below
+         3. Add the slug mapping in the JS genreSlug() function
+       ═══════════════════════════════════════════════════════════ */
+
+    /* ── ADVENTURE ──────────────────────────────────────────── */
+    body.genre-adventure .grv-title  { color: #4a9e6b; text-shadow: 0 0 22px rgba(74,158,107,0.28); }
+    body.genre-adventure .grv-meta-label,
+    body.genre-adventure .grv-chip-label { color: #4a9e6b; }
+    body.genre-adventure .grv-chip  { border-color: #4a9e6b; }
+    body.genre-adventure .grv-divider { background: #4a9e6b; opacity: 0.35; }
+
+    /* ── RPG ────────────────────────────────────────────────── */
+    body.genre-rpg .grv-title  { color: #9b6fe0; text-shadow: 0 0 22px rgba(155,111,224,0.28); }
+    body.genre-rpg .grv-meta-label,
+    body.genre-rpg .grv-chip-label { color: #9b6fe0; }
+    body.genre-rpg .grv-chip  { border-color: #9b6fe0; }
+    body.genre-rpg .grv-divider { background: #9b6fe0; opacity: 0.35; }
+
+    /* ── ACTION ─────────────────────────────────────────────── */
+    body.genre-action .grv-title  { color: #e07b20; text-shadow: 0 0 22px rgba(224,123,32,0.28); }
+    body.genre-action .grv-meta-label,
+    body.genre-action .grv-chip-label { color: #e07b20; }
+    body.genre-action .grv-chip  { border-color: #e07b20; }
+    body.genre-action .grv-divider { background: #e07b20; opacity: 0.35; }
+
+    /* ── SHOOTER ────────────────────────────────────────────── */
+    body.genre-shooter .grv-title  { color: #b8cc2a; text-shadow: 0 0 22px rgba(184,204,42,0.28); }
+    body.genre-shooter .grv-meta-label,
+    body.genre-shooter .grv-chip-label { color: #b8cc2a; }
+    body.genre-shooter .grv-chip  { border-color: #b8cc2a; }
+    body.genre-shooter .grv-divider { background: #b8cc2a; opacity: 0.35; }
+
+    /* ── SURVIVAL ───────────────────────────────────────────── */
+    body.genre-survival .grv-title  { color: #6b8f3a; text-shadow: 0 0 22px rgba(107,143,58,0.28); }
+    body.genre-survival .grv-meta-label,
+    body.genre-survival .grv-chip-label { color: #6b8f3a; }
+    body.genre-survival .grv-chip  { border-color: #6b8f3a; }
+    body.genre-survival .grv-divider { background: #6b8f3a; opacity: 0.35; }
+
+    /* ── SCI-FI (future) ────────────────────────────────────── */
+    /* body.genre-scifi .gl-img { background-image: url('images/arcade-panel/scifi_panel.png'); } */
+    /* body.genre-scifi .grv-title  { color: #3bb8d4; text-shadow: 0 0 22px rgba(59,184,212,0.28); } */
+    /* body.genre-scifi .grv-meta-label, body.genre-scifi .grv-chip-label { color: #3bb8d4; } */
+
+    /* CRT scanlines — creep slowly downward */
+    .gl-scanlines {
+      position: absolute;
+      inset: -3px 0 0 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent 0px,
+        transparent 2px,
+        rgba(0,0,0,0.22) 2px,
+        rgba(0,0,0,0.22) 3px
+      );
+      pointer-events: none;
+      animation: scanroll 7s linear infinite;
+    }
+    @keyframes scanroll {
+      from { transform: translateY(0);   }
+      to   { transform: translateY(3px); }
+    }
+
+    /* vignette — old tube-TV dark edges */
+    .gl-vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        ellipse 84% 88% at 50% 44%,
+        transparent 32%,
+        rgba(0,0,0,0.40) 68%,
+        rgba(0,0,0,0.84) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* RGB chromatic aberration — colour bleed at edges */
+    .gl-rgb {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(to right,  rgba(200,0,0,0.11) 0%, transparent 8%),
+        linear-gradient(to left,   rgba(0,10,180,0.08) 0%, transparent 8%),
+        linear-gradient(to bottom, rgba(200,0,0,0.05) 0%, transparent 5%),
+        linear-gradient(to top,    rgba(0,10,180,0.05) 0%, transparent 5%);
+    }
+
+    /* VHS glitch lines — injected by JS */
+    .gl-vhs {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .gl-vhs-line {
+      position: absolute;
+      left: 0; right: 0;
+      opacity: 0;
+    }
+
+    /* ═══════════════════════════════════════════════════════════
+       RIGHT PANEL — GAME REVIEW CONTENT
+       ═══════════════════════════════════════════════════════════ */
+    .grv-right {
+      background: #100a0b;
+      padding: 36px 52px 44px;
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100vh - 64px);
+      position: relative;
+      isolation: isolate;
+    }
+
+    .grv-nav-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 26px;
+    }
+    .grv-back {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px;
+      letter-spacing: 1.5px;
+      color: #5a3030;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .grv-back:hover { color: #cc1f0f; }
+    .grv-num {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px;
+      letter-spacing: 1px;
+      color: #3d1e1a;
+    }
+
+    /* header row: cover above, title+meta+chips centered below */
+    .grv-header-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .grv-cover {
+      flex-shrink: 0;
+      width: 200px;
+      aspect-ratio: 2 / 3;
+      border: 2px solid #cc1f0f;
+      padding: 2px;
+      background: #0d0708;
+      overflow: hidden;
+      position: relative;
+    }
+    .grv-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.90) contrast(1.05);
+    }
+    /* placeholder — shown when no cover art is available */
+    .grv-cover-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .grv-cover-placeholder svg { opacity: 0.30; }
+
+    .grv-header-info {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .grv-title {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 24px;
+      color: #e83d1f;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      line-height: 1.5;
+      margin-bottom: 14px;
+      text-shadow: 0 0 22px rgba(232,61,31,0.28);
+    }
+    .grv-title-year {
+      color: #6e3a3a;
+      font-size: 18px;
+    }
+
+    .grv-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      color: #c8b8b0;
+      margin-bottom: 18px;
+      gap: 0;
+    }
+    .grv-meta-item { display: flex; align-items: center; gap: 5px; }
+    .grv-meta-item + .grv-meta-item::before {
+      content: '|';
+      color: #3d1e1a;
+      margin: 0 12px;
+    }
+    .grv-meta-label { color: #cc1f0f; }
+
+    .grv-chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+    .grv-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid #3d1e1a;
+      background: #0d0708;
+      padding: 7px 14px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px;
+      letter-spacing: 0.5px;
+      color: #c8b8b0;
+    }
+    .grv-chip-label { color: #cc1f0f; margin-right: 2px; }
+    .grv-chip svg { flex-shrink: 0; }
+
+    .grv-divider {
+      height: 1px;
+      background: #2a1614;
+      margin-bottom: 26px;
+    }
+
+    .grv-body { flex: 1; margin-bottom: 30px; }
+    .grv-body p {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      line-height: 1.9;
+      color: #c8b8b0;
+      margin-bottom: 18px;
+    }
+    .grv-body p:last-child { margin-bottom: 0; }
+
+    .grv-verdict {
+      border: 1px solid #2a1614;
+      background: #0d0708;
+      padding: 20px 22px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .grv-verdict .pixel-corner {
+      background: #cc1f0f !important;
+      width: 5px; height: 5px;
+    }
+    .grv-verdict-inner {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .grv-score-block { flex-shrink: 0; }
+    .grv-verdict-label {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 5.5px;
+      letter-spacing: 2px;
+      color: #cc1f0f;
+      margin-bottom: 5px;
+    }
+    .grv-score {
+      font-family: 'VT323', monospace;
+      font-size: 79px;
+      color: #e83d1f;
+      line-height: 1;
+      text-shadow: 0 0 18px rgba(232,61,31,0.4);
+    }
+    .grv-score-denom { font-size: 26px; color: #6e3a3a; }
+    .grv-verdict-sep {
+      width: 1px; height: 58px;
+      background: #2a1614;
+      flex-shrink: 0;
+    }
+    .grv-verdict-text {
+      flex: 1;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      line-height: 1.75;
+      color: #c8b8b0;
+    }
+    .grv-verdict-icon { flex-shrink: 0; opacity: 1; color: #cc1f0f; }
+
+    .grv-pager {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1px solid #2a1614;
+    }
+    .grv-pager-link {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px;
+      letter-spacing: 1px;
+      color: #5a3030;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .grv-pager-link:hover { color: #cc1f0f; }
+    .grv-pager-link.disabled { opacity: 0.22; pointer-events: none; }
+
+    @media (max-width: 860px) {
+      .grv-right { padding: 20px 16px 32px; }
+    }
+
+    /* ── THEMED CURSORS ────────────────────────────────────────── */
+    /* Arrow SVG inlined as data URI — # encoded as %23               */
+
+    body.page-review-game,
+    body.page-review-game * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%23cc1f0f" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
+    body.page-review-game a, body.page-review-game button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%23cc1f0f" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
+
+    body.page-review-movie,
+    body.page-review-movie * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%23e6b84a" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
+    body.page-review-movie a, body.page-review-movie button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%23e6b84a" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
+
+    body.page-review-tv,
+    body.page-review-tv * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%234fffb0" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
+    body.page-review-tv a, body.page-review-tv button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%234fffb0" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
+
+    /* ── MOVIE / TV REVIEW ──────────────────────────────────────── */
+    body.page-review-movie .review-page,
+    body.page-review-tv   .review-page {
+      background: #0c0d10;
+      min-height: calc(100vh - 64px);
+      max-width: none;
+      margin: 0;
+      padding: 36px 52px 44px;
+    }
+
+    .rvp-img {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center top;
+      background-color: #03080e;
+    }
+
+
+    @media (max-width: 900px) {
+      body.page-review-movie .review-page,
+      body.page-review-tv   .review-page { padding: 20px 16px 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <a href="index.html" class="site-logo">WRET<span>VISION</span></a>
+    <nav class="main-nav">
+      <a href="index.html"        class="nav-link"              data-cat="">HOME</a>
+      <a href="movies.html"       class="nav-link" data-cat="movie">▶ MOVIES</a>
+      <a href="tv.html"           class="nav-link" data-cat="tv">◈ TV SHOWS</a>
+      <a href="games.html"        class="nav-link" data-cat="game">◆ GAMES</a>
+      <a href="horror-vault.html" class="nav-link"              data-cat="">☠ HORROR VAULT</a>
+    </nav>
+  </div>
+  <a class="yt-link"
+     href="https://www.youtube.com/channel/UCC3aFC7Gr2eYUEGc6IRga0g?sub_confirmation=1"
+     target="_blank" rel="noopener"
+     style="display:flex;align-items:center;gap:8px;">
+    <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+    <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+    <div class="avatar-wrap"><img src="wretvision.png" alt="WretVision" /></div>
+    <span class="yt-label">SUBSCRIBE ▶</span>
+  </a>
+</header>
+
+<div class="rvp-wrap">
+
+<div class="review-page" id="rv-content">
+
+  <div class="rv-effects-bg">
+    <div class="gl-scanlines"></div>
+    <div class="gl-rgb"></div>
+    <div class="gl-vhs" id="rvp-vhs"></div>
+    <div class="gl-vignette"></div>
+  </div>
+
+  <div class="rv-nav-row">
+    <a href="index.html" class="rv-back" id="rv-back">← BACK</a>
+    <span class="rv-num" id="rv-num"></span>
+  </div>
+
+  <!-- HERO: poster left, title/genre/meta right -->
+  <div class="rv-hero">
+    <div class="rv-poster-wrap" id="rv-poster-wrap"></div>
+    <div class="rv-info" id="rv-info">
+      <div class="rv-genre" id="rv-genre"></div>
+      <h1  class="rv-title" id="rv-title"></h1>
+      <div class="rv-meta"  id="rv-meta"></div>
+    </div>
+  </div>
+
+  <div class="rv-divider" id="rv-divider"></div>
+  <div class="rv-body" id="rv-body"></div>
+
+  <div class="rv-verdict" id="rv-verdict">
+    <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+    <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+    <div class="rv-score-block">
+      <div class="rv-verdict-label">Wretvision Verdict</div>
+      <div class="rv-score" id="rv-score"></div>
+    </div>
+    <div class="rv-verdict-sep"></div>
+    <div class="rv-verdict-text" id="rv-verdict-text"></div>
+    <div class="rv-verdict-icon" id="rv-verdict-icon"></div>
+  </div>
+
+  <div class="rv-pager">
+    <a href="#" class="rv-pager-link disabled" id="rv-prev">← PREV REVIEW</a>
+    <a href="#" class="rv-pager-link disabled" id="rv-next">NEXT REVIEW →</a>
+  </div>
+
+</div>
+
+</div><!-- /rvp-wrap -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     GAME REVIEW LAYOUT — shown by CSS when category === game
+     ═══════════════════════════════════════════════════════════ -->
+<div class="grv-wrap" id="grv-wrap">
+
+  <div class="grv-right">
+
+    <div class="grv-effects-bg">
+      <div class="gl-scanlines"></div>
+      <div class="gl-rgb"></div>
+      <div class="gl-vhs" id="gl-vhs"></div>
+      <div class="gl-vignette"></div>
+    </div>
+
+    <div class="grv-nav-row">
+      <a href="games.html" class="grv-back" id="grv-back">← BACK TO GAMES</a>
+      <span class="grv-num" id="grv-num"></span>
+    </div>
+
+    <div class="grv-header-row">
+      <div class="grv-cover" id="grv-cover"></div>
+      <div class="grv-header-info">
+        <h1 class="grv-title" id="grv-title"></h1>
+        <div class="grv-meta" id="grv-meta"></div>
+        <div class="grv-chips" id="grv-chips"></div>
+      </div>
+    </div>
+
+    <div class="grv-divider"></div>
+
+    <div class="grv-body" id="grv-body"></div>
+
+    <div class="grv-verdict" id="grv-verdict">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="grv-verdict-inner">
+        <div class="grv-score-block">
+          <div class="grv-verdict-label">WRETVISION VERDICT</div>
+          <div class="grv-score" id="grv-score"></div>
+        </div>
+        <div class="grv-verdict-sep"></div>
+        <div class="grv-verdict-text" id="grv-verdict-text"></div>
+        <div class="grv-verdict-icon" id="grv-verdict-icon"></div>
+      </div>
+    </div>
+
+    <div class="grv-pager">
+      <a href="#" class="grv-pager-link disabled" id="grv-prev">← PREV REVIEW</a>
+      <a href="#" class="grv-pager-link disabled" id="grv-next">NEXT REVIEW →</a>
+    </div>
+
+  </div><!-- grv-right -->
+</div><!-- grv-wrap -->
+
+<footer class="footer">
+  &copy; WRETVISION, JUST OPINIONS.<span class="blink"> _</span><br>
+  <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR THE LOVE OF FILM, TV &amp; GAMES</span>
+</footer>
+
+<script src="reviews.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  // ── CATEGORY ACCENT CONFIGS ─────────────────────────────────
+  var ACCENTS = {
+    movie: {
+      color:      '#e6b84a',
+      glow:       '#ffd86b',
+      bg:         'rgba(184,138,27,0.12)',
+      border:     'rgba(184,138,27,0.35)',
+      borderLit:  'rgba(255,216,107,0.75)',
+      logoColor:  '#e6b84a',
+      logoShadow: '0 0 12px #b88a1b, 2px 2px 0 #2a1f00',
+      logoSpan:   '#e6b84a',
+      logoSpanSh: '0 0 10px rgba(230,184,74,0.55), 2px 2px 0 #2a1f00',
+    },
+    tv: {
+      color:      '#4fffb0',
+      glow:       '#4fffb0',
+      bg:         'rgba(79,255,176,0.10)',
+      border:     'rgba(79,255,176,0.28)',
+      borderLit:  'rgba(79,255,176,0.65)',
+      logoColor:  '#4fffb0',
+      logoShadow: '0 0 12px #2ecc80, 2px 2px 0 #00221a',
+      logoSpan:   '#4fffb0',
+      logoSpanSh: '0 0 10px rgba(79,255,176,0.5), 2px 2px 0 #00221a',
+    },
+    game: {
+      color:      '#e74c3c',
+      glow:       '#e74c3c',
+      bg:         'rgba(139,26,26,0.12)',
+      border:     'rgba(192,57,43,0.38)',
+      borderLit:  'rgba(231,76,60,0.70)',
+      logoColor:  '#e74c3c',
+      logoShadow: '0 0 12px #c0392b, 2px 2px 0 #2a0000',
+      logoSpan:   '#e74c3c',
+      logoSpanSh: '0 0 10px rgba(231,76,60,0.5), 2px 2px 0 #2a0000',
+    },
+  };
+
+  // ── SKULL SVG (horror reviews only) ────────────────────────
+  // Uses currentColor so it inherits the accent glow set on the container.
+  var SKULL_SVG = [
+    '<svg width="64" height="64" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">',
+      '<ellipse cx="22" cy="19" rx="13" ry="12" fill="currentColor"/>',
+      '<rect x="15" y="28" width="14" height="7" rx="1" fill="currentColor"/>',
+      '<rect x="18" y="30" width="3" height="5" rx="0.5" fill="var(--bg2)"/>',
+      '<rect x="23" y="30" width="3" height="5" rx="0.5" fill="var(--bg2)"/>',
+      '<ellipse cx="17" cy="19" rx="4" ry="4.5" fill="var(--bg2)"/>',
+      '<ellipse cx="27" cy="19" rx="4" ry="4.5" fill="var(--bg2)"/>',
+      '<line x1="22" y1="28" x2="22" y2="35" stroke="var(--bg2)" stroke-width="1.5"/>',
+    '</svg>',
+  ].join('');
+
+  // ── HELPERS ─────────────────────────────────────────────────
+  function esc(str) {
+    return String(str || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function isHorror(genres) {
+    return (genres || []).some(function (g) {
+      return g.toLowerCase().indexOf('horror') !== -1;
+    });
+  }
+
+  function el(id) { return document.getElementById(id); }
+
+  var CAT_LABEL = { movie: 'MOVIES', tv: 'TV SHOWS', game: 'GAMES' };
+  var CAT_HREF  = { movie: 'movies.html', tv: 'tv.html', game: 'games.html' };
+
+  // ── THEME ───────────────────────────────────────────────────
+  var CAT_REVIEW_LABEL = { movie: 'Movie Review', tv: 'TV Review', game: 'Game Review' };
+
+  function applyPageSEO(review) {
+    var catLabel  = CAT_REVIEW_LABEL[review.category] || 'Review';
+    var pageTitle = review.title + ' (' + review.year + ') — ' + catLabel + ' | WretVision';
+    var desc      = review.verdict || review.excerpt || (review.title + ' ' + catLabel.toLowerCase() + ' on WretVision.');
+    var pageUrl   = 'https://wretvision.com/review.html?id=' + review.id;
+
+    document.title = pageTitle;
+
+    var metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', desc);
+
+    var ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', pageTitle);
+
+    var ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', desc);
+
+    var ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute('content', pageUrl);
+
+    var canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute('href', pageUrl);
+  }
+
+  function applyTheme(review) {
+    var a = ACCENTS[review.category] || ACCENTS.movie;
+
+    el('review-theme').textContent = [
+      ':root {',
+      '  --rv-accent:            ' + a.color    + ';',
+      '  --rv-accent-glow:       ' + a.glow     + ';',
+      '  --rv-accent-bg:         ' + a.bg       + ';',
+      '  --rv-accent-border:     ' + a.border   + ';',
+      '  --rv-accent-border-lit: ' + a.borderLit + ';',
+      '}',
+      /* topbar accent line */
+      '.topbar { border-bottom-color: ' + a.color + ' !important; }',
+      /* logo */
+      '.site-logo { color: ' + a.logoColor + ' !important;' +
+        ' text-shadow: ' + a.logoShadow + ' !important; }',
+      '.site-logo span { color: ' + a.logoSpan + ' !important;' +
+        ' text-shadow: ' + a.logoSpanSh + ' !important; }',
+      /* active nav */
+      '.nav-link.active { color: ' + a.glow + ' !important;' +
+        ' border-color: ' + a.color + ' !important;' +
+        ' background: ' + a.bg + ' !important; }',
+      /* subscribe button */
+      '.yt-link { border-color: ' + a.color + ' !important;' +
+        ' background: ' + a.bg + ' !important; }',
+      '.yt-link:hover { background: ' + a.border + ' !important; }',
+      '.yt-link .avatar-wrap { border-color: ' + a.glow + ' !important; }',
+      '.yt-link .pixel-corner { background: ' + a.color + ' !important; }',
+      '.yt-label { color: ' + a.glow + ' !important; }',
+      /* footer */
+      '.footer { border-top-color: ' + a.color + ' !important; }',
+    ].join('\n');
+
+    document.body.className = 'page-review page-review-' + review.category;
+  }
+
+  // ── POSTER (top-left album art) ─────────────────────────────
+  function renderPoster(review) {
+    // portrait poster preferred for album-art style; fall back to backdrop
+    var src = review.media && (review.media.poster || review.media.backdrop);
+    if (!src) return; // wrap is :empty → display:none via CSS
+
+    var wrap = el('rv-poster-wrap');
+    var img  = document.createElement('img');
+    img.className = 'rv-poster';
+    img.alt       = esc(review.title);
+    img.src       = src;
+    img.onerror   = function () { wrap.innerHTML = ''; }; // collapse on fail
+    wrap.appendChild(img);
+  }
+
+  // ── PLATFORM ICONS (game reviews only) ─────────────────────
+  // Pixel art monitor: 4px grid (16×12 cells = 64×48)
+  // Frame outline + thick bottom bezel + stand + base — all right-angle rects only
+  var MONITOR_SVG = [
+    '<svg width="64" height="48" viewBox="0 0 64 48" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">',
+      '<rect x="0" y="0" width="64" height="4" fill="currentColor"/>',
+      '<rect x="0" y="4" width="4" height="28" fill="currentColor"/>',
+      '<rect x="60" y="4" width="4" height="28" fill="currentColor"/>',
+      '<rect x="0" y="28" width="64" height="8" fill="currentColor"/>',
+      '<rect x="26" y="36" width="12" height="6" fill="currentColor"/>',
+      '<rect x="14" y="42" width="36" height="6" fill="currentColor"/>',
+    '</svg>',
+  ].join('');
+
+  // Pixel art controller: 4px grid (18×12 cells = 72×48)
+  // Solid body fill + shoulder bumps + grips + d-pad cross + 2×2 face buttons
+  var CONTROLLER_SVG = [
+    '<svg width="72" height="48" viewBox="0 0 72 48" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">',
+      '<rect x="0" y="8" width="72" height="24" fill="currentColor"/>',
+      '<rect x="0" y="4" width="28" height="8" fill="currentColor"/>',
+      '<rect x="44" y="4" width="28" height="8" fill="currentColor"/>',
+      '<rect x="0" y="32" width="20" height="12" fill="currentColor"/>',
+      '<rect x="52" y="32" width="20" height="12" fill="currentColor"/>',
+      '<rect x="10" y="18" width="12" height="4" fill="var(--bg)"/>',
+      '<rect x="14" y="14" width="4" height="12" fill="var(--bg)"/>',
+      '<rect x="44" y="12" width="4" height="4" fill="var(--bg)"/>',
+      '<rect x="50" y="12" width="4" height="4" fill="var(--bg)"/>',
+      '<rect x="44" y="18" width="4" height="4" fill="var(--bg)"/>',
+      '<rect x="50" y="18" width="4" height="4" fill="var(--bg)"/>',
+      '<rect x="30" y="18" width="4" height="3" fill="var(--bg)"/>',
+      '<rect x="36" y="18" width="4" height="3" fill="var(--bg)"/>',
+    '</svg>',
+  ].join('');
+
+  function renderPlatformIcons(container) {
+    var wrap = document.createElement('div');
+    wrap.className = 'rv-platform-icons';
+    wrap.innerHTML = MONITOR_SVG + CONTROLLER_SVG;
+    container.appendChild(wrap);
+  }
+
+  // ── RIGHT PANEL ─────────────────────────────────────────────
+  function renderRight(review) {
+    var a = ACCENTS[review.category] || ACCENTS.movie;
+
+    // same-category list for numbering + pager
+    var catList = REVIEWS.filter(function (r) { return r.category === review.category; });
+    var catIdx  = catList.findIndex(function (r) { return r.id === review.id; });
+
+    // review number: 1 = oldest in category, N = newest
+    var reviewNum = catList.length - catIdx;
+
+    // back link
+    el('rv-back').href        = CAT_HREF[review.category] || 'index.html';
+    el('rv-back').textContent = '← BACK TO ' + (CAT_LABEL[review.category] || 'HOME');
+
+    // review number chip
+    el('rv-num').textContent = 'REVIEW #' + reviewNum;
+
+    // highlight matching nav link
+    document.querySelectorAll('.nav-link[data-cat]').forEach(function (link) {
+      link.classList.toggle('active', link.dataset.cat === review.category);
+    });
+
+    // genre row
+    el('rv-genre').textContent = (review.genres || []).join(' / ').toUpperCase();
+
+    // title — include season if present
+    var seasonStr = review.season ? ' SEASON ' + review.season : '';
+    el('rv-title').innerHTML =
+      esc(review.title.toUpperCase() + seasonStr) +
+      ' <span class="rv-title-year">(' + esc(String(review.year)) + ')</span>';
+
+    // metadata
+    var dirLabel = review.category === 'game' ? 'Developer' : 'Director';
+    var metaItems = [{ label: dirLabel, value: review.director }];
+    if (review.category === 'game') {
+      if (review.runtime) metaItems.push({ label: 'Platforms', value: review.runtime });
+    } else {
+      if (review.runtime) metaItems.push({ label: 'Runtime', value: review.runtime });
+    }
+    if (review.rating)  metaItems.push({ label: 'Rated', value: review.rating });
+
+    el('rv-meta').innerHTML = metaItems.map(function (m) {
+      return '<div class="rv-meta-item">' +
+        '<span class="rv-meta-label">' + esc(m.label) + ':</span> ' +
+        esc(m.value) +
+        '</div>';
+    }).join('');
+
+    // body paragraphs
+    el('rv-body').innerHTML = (review.body || []).map(function (p) {
+      return '<p>' + esc(p) + '</p>';
+    }).join('');
+
+    // score
+    el('rv-score').innerHTML = esc(String(review.score)) +
+      '<span class="rv-score-denom">/10</span>';
+
+    // verdict text
+    el('rv-verdict-text').textContent = review.verdict || '';
+
+    // verdict icon — skull for horror, nothing otherwise
+    if (isHorror(review.genres)) {
+      var iconEl = el('rv-verdict-icon');
+      iconEl.style.color = a.glow;
+      iconEl.innerHTML   = SKULL_SVG;
+    }
+
+    // pager — navigate within same category
+    var prev = catIdx > 0               ? catList[catIdx - 1] : null; // newer
+    var next = catIdx < catList.length - 1 ? catList[catIdx + 1] : null; // older
+
+    if (prev) {
+      el('rv-prev').href = 'review.html?id=' + prev.id;
+      el('rv-prev').classList.remove('disabled');
+    }
+    if (next) {
+      el('rv-next').href = 'review.html?id=' + next.id;
+      el('rv-next').classList.remove('disabled');
+    }
+
+    // platform icons — game reviews only
+    if (review.category === 'game') {
+      renderPlatformIcons(el('rv-info'));
+    }
+
+    // page title + meta description
+    applyPageSEO(review);
+
+    (function rvpVhs() {
+      var vhsEl = document.getElementById('rvp-vhs');
+      var imgEl = document.querySelector('.rvp-img');
+      if (!vhsEl) return;
+      function fire() {
+        var lc = 1 + Math.floor(Math.random() * 3);
+        for (var i = 0; i < lc; i++) {
+          var ln = document.createElement('div');
+          ln.className = 'gl-vhs-line';
+          ln.style.top        = Math.floor(Math.random() * 94) + '%';
+          ln.style.height     = (1 + Math.random() * 6) + 'px';
+          ln.style.transform  = 'translateX(' + (Math.random() * 6 - 3) + 'px)';
+          ln.style.opacity    = (0.18 + Math.random() * 0.40).toFixed(2);
+          ln.style.background = Math.random() > 0.55
+            ? 'rgba(255,160,140,0.18)' : 'rgba(140,160,255,0.12)';
+          vhsEl.appendChild(ln);
+        }
+        if (imgEl) imgEl.style.transform = 'translateX(' + (Math.random() * 3 - 1.5) + 'px)';
+        setTimeout(function () {
+          vhsEl.innerHTML = '';
+          if (imgEl) imgEl.style.transform = '';
+        }, 60 + Math.floor(Math.random() * 100));
+        setTimeout(fire, 3000 + Math.floor(Math.random() * 7000));
+      }
+      setTimeout(fire, 1500 + Math.floor(Math.random() * 3000));
+    }());
+  }
+
+  // ── ERROR STATE ──────────────────────────────────────────────
+  function showError(msg) {
+    el('rv-genre').textContent = '';
+    el('rv-title').innerHTML   = '';
+    el('rv-meta').innerHTML    = '';
+    el('rv-body').innerHTML    = '';
+    el('rv-verdict').style.display  = 'none';
+    el('rv-divider').style.display  = 'none';
+    el('rv-prev').style.display     = 'none';
+    el('rv-next').style.display     = 'none';
+    el('rv-num').style.display      = 'none';
+    el('rv-back').style.display     = 'none';
+
+    var panel = el('rv-content');
+    var errDiv = document.createElement('div');
+    errDiv.className = 'rv-error';
+    errDiv.innerHTML =
+      '<div class="rv-error-code">// ERROR</div>' +
+      '<div class="rv-error-msg">' + esc(msg) + '</div>' +
+      '<a href="index.html" class="rv-error-link">← RETURN TO ARCHIVE</a>';
+    panel.appendChild(errDiv);
+  }
+
+  // ── GAME LAYOUT ──────────────────────────────────────────────
+  var GAME_SKULL_SVG = [
+    '<svg width="64" height="64" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">',
+      '<ellipse cx="22" cy="19" rx="13" ry="12" fill="#cc1f0f"/>',
+      '<rect x="15" y="28" width="14" height="7" rx="1" fill="#cc1f0f"/>',
+      '<rect x="18" y="30" width="3" height="5" rx="0.5" fill="#0d0708"/>',
+      '<rect x="23" y="30" width="3" height="5" rx="0.5" fill="#0d0708"/>',
+      '<ellipse cx="17" cy="19" rx="4" ry="4.5" fill="#0d0708"/>',
+      '<ellipse cx="27" cy="19" rx="4" ry="4.5" fill="#0d0708"/>',
+      '<ellipse cx="17" cy="19" rx="2" ry="2.5" fill="#cc1f0f" opacity="0.35"/>',
+      '<ellipse cx="27" cy="19" rx="2" ry="2.5" fill="#cc1f0f" opacity="0.35"/>',
+      '<line x1="22" y1="28" x2="22" y2="35" stroke="#0d0708" stroke-width="1.5"/>',
+    '</svg>',
+  ].join('');
+
+  var CAL_ICON = '<svg width="13" height="13" viewBox="0 0 13 13" fill="#cc1f0f" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges"><rect x="0" y="2" width="13" height="11" rx="1"/><rect x="0" y="2" width="13" height="4" fill="#881010"/><rect x="3" y="0" width="2" height="4"/><rect x="8" y="0" width="2" height="4"/><rect x="2" y="8" width="2" height="2" fill="#0d0708"/><rect x="6" y="8" width="2" height="2" fill="#0d0708"/><rect x="10" y="8" width="2" height="2" fill="#0d0708"/></svg>';
+  var CTRL_ICON = '<svg width="15" height="11" viewBox="0 0 15 11" fill="#cc1f0f" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges"><rect x="0" y="2" width="15" height="7"/><rect x="0" y="1" width="6" height="3"/><rect x="9" y="1" width="6" height="3"/><rect x="3" y="4" width="2" height="1" fill="#0d0708"/><rect x="4" y="3" width="1" height="3" fill="#0d0708"/><rect x="10" y="3" width="1" height="1" fill="#0d0708"/><rect x="12" y="3" width="1" height="1" fill="#0d0708"/><rect x="10" y="5" width="1" height="1" fill="#0d0708"/><rect x="12" y="5" width="1" height="1" fill="#0d0708"/></svg>';
+  var SKULL_CHIP = '<svg width="13" height="13" viewBox="0 0 13 13" fill="#cc1f0f" xmlns="http://www.w3.org/2000/svg"><ellipse cx="6.5" cy="5.5" rx="4" ry="3.5"/><rect x="4" y="8" width="5" height="2" rx="0.5"/><ellipse cx="5" cy="5.5" rx="1.2" ry="1.4" fill="#0d0708"/><ellipse cx="8" cy="5.5" rx="1.2" ry="1.4" fill="#0d0708"/></svg>';
+
+  // ── GENRE SLUG ───────────────────────────────────────────────
+  // Maps a review's genres array to a CSS theme slug.
+  // To support a new genre: add an else-if here + a CSS block above.
+  function genreSlug(genres) {
+    var all = (genres || []).join(' ').toLowerCase();
+    if (all.indexOf('horror') !== -1)                                  return 'horror';
+    if (all.indexOf('rpg') !== -1 || all.indexOf('role') !== -1)       return 'rpg';
+    if (all.indexOf('shooter') !== -1 || all.indexOf('fps') !== -1)    return 'shooter';
+    if (all.indexOf('survival') !== -1)                                return 'survival';
+    if (all.indexOf('adventure') !== -1)                               return 'adventure';
+    if (all.indexOf('action') !== -1)                                  return 'action';
+    if (all.indexOf('sci-fi') !== -1 || all.indexOf('scifi') !== -1)   return 'scifi';
+    return 'default';
+  }
+
+  function renderGameLayout(review) {
+    var catList  = REVIEWS.filter(function (r) { return r.category === review.category; });
+    var catIdx   = catList.findIndex(function (r) { return r.id === review.id; });
+    var reviewNum = catList.length - catIdx;
+
+    // apply genre theme class to body
+    document.body.classList.add('genre-' + genreSlug(review.genres));
+
+    // highlight nav
+    document.querySelectorAll('.nav-link[data-cat]').forEach(function (link) {
+      link.classList.toggle('active', link.dataset.cat === review.category);
+    });
+
+    el('grv-back').textContent = '← BACK TO GAMES';
+    el('grv-num').textContent  = 'REVIEW #' + reviewNum;
+
+    el('grv-title').innerHTML =
+      esc(review.title.toUpperCase()) +
+      ' <span class="grv-title-year">(' + esc(String(review.year)) + ')</span>';
+
+    // cover art — image if available, styled placeholder otherwise
+    var coverEl = el('grv-cover');
+    var coverSrc = review.media && (review.media.poster || review.media.backdrop);
+    if (coverSrc) {
+      var coverImg = document.createElement('img');
+      coverImg.src = coverSrc;
+      coverImg.alt = esc(review.title);
+      coverImg.onerror = function () {
+        coverEl.innerHTML = '<div class="grv-cover-placeholder">' + GAME_SKULL_SVG + '</div>';
+      };
+      coverEl.appendChild(coverImg);
+    } else {
+      coverEl.innerHTML = '<div class="grv-cover-placeholder">' + GAME_SKULL_SVG + '</div>';
+    }
+
+    // meta row
+    var mItems = [];
+    if (review.director) mItems.push({ label: 'Developer', val: review.director });
+    if (review.runtime)  mItems.push({ label: 'Platform',  val: review.runtime });
+    if (review.rating)   mItems.push({ label: 'Rating',    val: review.rating });
+    el('grv-meta').innerHTML = mItems.map(function (m) {
+      return '<div class="grv-meta-item"><span class="grv-meta-label">' +
+        esc(m.label) + ':</span> ' + esc(m.val) + '</div>';
+    }).join('');
+
+    // chips
+    var genres = review.genres || [];
+    var chipsHTML = '';
+    chipsHTML += '<div class="grv-chip">' + CAL_ICON + '<span class="grv-chip-label">RELEASED:</span> ' + esc(String(review.year)) + '</div>';
+    if (review.runtime)  chipsHTML += '<div class="grv-chip">' + CTRL_ICON + '<span class="grv-chip-label">PLAYED ON:</span> ' + esc(review.runtime) + '</div>';
+    if (genres.length)   chipsHTML += '<div class="grv-chip">' + SKULL_CHIP + '<span class="grv-chip-label">GENRE:</span> ' + esc(genres[0].toUpperCase()) + '</div>';
+    el('grv-chips').innerHTML = chipsHTML;
+
+    // body
+    el('grv-body').innerHTML = (review.body || []).map(function (p) {
+      return '<p>' + esc(p) + '</p>';
+    }).join('');
+
+    // score + verdict
+    el('grv-score').innerHTML = esc(String(review.score)) + '<span class="grv-score-denom">/10</span>';
+    el('grv-verdict-text').textContent = review.verdict || '';
+    el('grv-verdict-icon').innerHTML = GAME_SKULL_SVG;
+
+    // pager
+    var prev = catIdx > 0                   ? catList[catIdx - 1] : null;
+    var next = catIdx < catList.length - 1  ? catList[catIdx + 1] : null;
+    if (prev) { el('grv-prev').href = 'review.html?id=' + prev.id; el('grv-prev').classList.remove('disabled'); }
+    if (next) { el('grv-next').href = 'review.html?id=' + next.id; el('grv-next').classList.remove('disabled'); }
+
+    // page title
+    applyPageSEO(review);
+
+    // VHS tracking glitch
+    (function vhsLoop() {
+      var vhsEl = document.getElementById('gl-vhs');
+      var imgEl = document.querySelector('.gl-img');
+      if (!vhsEl) return;
+      function fire() {
+        var lc = 1 + Math.floor(Math.random() * 4);
+        for (var i = 0; i < lc; i++) {
+          var ln = document.createElement('div');
+          ln.className = 'gl-vhs-line';
+          ln.style.top       = Math.floor(Math.random() * 94) + '%';
+          ln.style.height    = (1 + Math.random() * 7) + 'px';
+          ln.style.transform = 'translateX(' + (Math.random() * 8 - 4) + 'px)';
+          ln.style.opacity   = (0.22 + Math.random() * 0.48).toFixed(2);
+          ln.style.background = (Math.random() > 0.55)
+            ? 'rgba(255,160,140,0.20)'
+            : 'rgba(140,160,255,0.14)';
+          vhsEl.appendChild(ln);
+        }
+        if (imgEl) imgEl.style.transform = 'translateX(' + (Math.random() * 4 - 2) + 'px)';
+        var dur = 55 + Math.floor(Math.random() * 110);
+        setTimeout(function () {
+          vhsEl.innerHTML = '';
+          if (imgEl) imgEl.style.transform = '';
+        }, dur);
+        setTimeout(fire, 2800 + Math.floor(Math.random() * 7200));
+      }
+      setTimeout(fire, 1200 + Math.floor(Math.random() * 3000));
+    })();
+  }
+
+  // ── INIT ─────────────────────────────────────────────────────
+  var params = new URLSearchParams(window.location.search);
+  var id     = parseInt(params.get('id'), 10);
+
+  if (!id || isNaN(id)) {
+    showError('No review ID provided.');
+    return;
+  }
+
+  var review = (typeof REVIEWS !== 'undefined' ? REVIEWS : []).find(function (r) { return r.id === id; });
+  if (!review) {
+    showError('Review #' + id + ' not found in the archive.');
+    return;
+  }
+
+  applyTheme(review);
+  if (review.category === 'game') {
+    renderGameLayout(review);
+  } else {
+    renderPoster(review);
+    renderRight(review);
+  }
+
+}());
+</script>
+</body>
+</html>
