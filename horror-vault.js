@@ -3219,11 +3219,11 @@ const HORROR_VAULT = [
   "id": 402
   },
   {
-    "title": "Mandy,
+  "title": "Mandy",
   "year": 2018,
-  "decade": "2020s",
+  "decade": "2010s",
   "status": "watched",
   "note": "",
   "id": 403
-  }
+}
 ];
