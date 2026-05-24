@@ -185,7 +185,7 @@
       "rating": "R",
       "genre": ["Horror", "Psychological", "Drama"],
       "streaming": "Various",
-      "done": false,
+      "done": true,
       "score": 9,
       "notes": null
     },
@@ -209,7 +209,7 @@
       "rating": "R",
       "genre": ["Horror", "Folk Horror", "Mystery"],
       "streaming": "Various",
-      "done": false,
+      "done": true,
       "score": null,
       "notes": null
     },
