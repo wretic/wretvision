@@ -138,7 +138,7 @@
       "genre": ["Horror", "Folk Horror", "Mystery"],
       "streaming": "Various",
       "done": false,
-      "score": null,
+      "score": 6,
       "notes": null
     },
     {
@@ -150,7 +150,7 @@
       "genre": ["Horror", "Giallo", "Mystery"],
       "streaming": "Various",
       "done": false,
-      "score": null,
+      "score": 6,
       "notes": null
     },
     {
@@ -162,7 +162,7 @@
       "genre": ["Horror", "Mystery", "Drama"],
       "streaming": "Various",
       "done": false,
-      "score": null,
+      "score": 8,
       "notes": null
     },
     {
@@ -186,7 +186,7 @@
       "genre": ["Horror", "Psychological", "Drama"],
       "streaming": "Various",
       "done": false,
-      "score": null,
+      "score": 9,
       "notes": null
     },
     {
@@ -222,7 +222,7 @@
       "genre": ["Horror", "Mystery", "Thriller"],
       "streaming": "Various",
       "done": false,
-      "score": null,
+      "score": 8,
       "notes": null
     },
     {
@@ -234,7 +234,7 @@
       "genre": ["Horror", "Thriller"],
       "streaming": "Various",
       "done": false,
-      "score": null,
+      "score": 6,
       "notes": null
     }
   ],
