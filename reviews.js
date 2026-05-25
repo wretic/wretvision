@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1779726923630,
+      "category": "movie",
+      "title": "Suspiria",
+      "year": 1977,
+      "director": "Dario Argento",
+      "runtime": "98 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Giallo",
+        "Mystery"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Suspiria doesn't scare you the normal way. It gets under your skin and stays there.",
+      "body": [
+        "Some films age. Suspiria (1977) just gets stranger and more beautiful. Dario Argento's giallo masterpiece isn't interested in logic or coherent plot structure and honestly that's the point. You're not meant to understand the Tanzakademie, you're meant to feel it. The second Suzy Bannion steps off that plane and into that howling, rain-soaked night, the film has you by the throat. Argento treats the camera like a weapon and the colour palette like a fever dream. Reds and blues that have no business being that saturated. Architecture that feels alive and wrong. This is a director with a vision so specific and so committed that you either surrender to it or you don't.",
+        "What makes it exceptional is the atmosphere. Not the kills, not the mystery, the atmosphere. Goblin's score is doing as much work as anything on screen, this pulsing, chanting, relentless thing that never lets you settle. Jessica Harper is perfectly cast as someone perpetually two steps behind the horror surrounding her. The practical effects hold up, particularly the wire death in the opening sequence which remains genuinely shocking almost fifty years on. There are moments where the plot frays and the logic completely dissolves but that almost doesn't matter. Argento is operating in a different register entirely. He's making a nightmare, not a thriller.",
+        "If you've only seen the 2018 remake directed by Luca Guadagnino, go back to the source immediately. They are doing entirely different things. The original Suspiria (1977) isn't available on one clean streaming home right now, it floats around various platforms, but it is worth hunting down in the best possible version you can find. Compare it to something like Deep Red or even early Cronenberg if you want context, but honestly it sits in its own category. It's flawed in the way all bold films are flawed. The ending arrives fast and a little scrappy. But the ending lands. And you'll be thinking about those colours for days."
+      ],
+      "images": [],
+      "verdict": "Suspiria is one of the few horror films that genuinely earns the word visionary, a 9/10 that reminds you what the genre looks like when someone swings for something no one else would attempt."
+    },
+    {
       "id": 1779651435493,
       "category": "movie",
       "title": "The Lighthouse",
