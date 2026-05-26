@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1779819061172,
+      "category": "movie",
+      "title": "The Autopsy of Jane Doe",
+      "year": 2016,
+      "director": "André Øvredal",
+      "runtime": "86 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "Two men, one body, a basement morgue. André Øvredal builds more dread in a single room than most horror directors manage in an entire film.",
+      "body": [
+        "The Autopsy of Jane Doe from 2016 is one of those films that reminds you how much horror depends on restraint. Director André Øvredal, working from a tight script by Ian Goldberg and Richard Naing, essentially traps you in a morgue for 90 minutes with Brian Cox and Emile Hirsch and dares you to look away. The premise is almost offensively simple: a father and son coroner team receive an unidentified body with no obvious cause of death, and the examination slowly reveals something they were never supposed to find. That's it. No sprawling mythology, no franchise setup, no sequel bait. Just two men, fluorescent lights, and a corpse that keeps not making sense. The setup alone earns serious points because the film understands that the most unsettling horror lives in things that should have an explanation but don't.",
+        "Brian Cox is the reason this film works as well as it does. He plays Tommy Tilden with this quiet, lived-in competence that feels completely real. He's not performing grief or performing expertise, he just is those things. Hirsch holds his own but Cox anchors every scene they share. The practical work on Jane Doe herself deserves its own mention because it's exceptional. The incremental discoveries during the autopsy, each one more wrong than the last, are staged with genuine craft. Øvredal knows exactly when to show you something and when to let your imagination do the work. The atmosphere is suffocating in the best possible way. There's a radio playing old songs throughout and it should feel cheap but it doesn't, it just makes everything feel more wrong. This is the kind of sustained dread that jump scare merchants can't buy their way into.",
+        "The third act is where The Autopsy of Jane Doe loses a little ground. Once the film tips fully into its supernatural explanation it becomes slightly more conventional, and a few of the horror beats in the final stretch feel like they belong in a lesser film. The ending splits people and I understand why, though I think it earns its conclusion more than its critics give it credit for. Comparable to something like Bone Tomahawk in the way it uses a genre framework to deliver something genuinely uncomfortable, it also shares DNA with early David Fincher in its clinical visual style. If you're watching on streaming and you've skipped this one, correct that immediately. The Autopsy of Jane Doe is a masterclass in location horror and proof that one room, two performances, and a clear directorial vision will beat a $100 million CGI budget every single time."
+      ],
+      "images": [],
+      "verdict": "8/10, one of the most efficiently terrifying horror films of the last decade and it doesn't waste a single minute of your time."
+    },
+    {
       "id": 1779726923630,
       "category": "movie",
       "title": "Suspiria",
