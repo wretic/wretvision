@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1779882088176,
+      "category": "movie",
+      "title": "Hereditary",
+      "year": 2018,
+      "director": "Ari Aster",
+      "runtime": "127 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Drama"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Hereditary doesn't scare you. It dismantles you. Ari Aster announced himself like a sledgehammer through a wall.",
+      "body": [
+        "Some horror films go for the throat. Hereditary goes for something worse, it goes for the chest, the slow hollow feeling that builds before you even know something is wrong. Ari Aster's 2018 debut is the kind of film that gets under your skin in the first ten minutes and never fully leaves. The Graham family is fractured before the story even starts, carrying grief and resentment and something older and darker that none of them have names for yet. The setup is patient. Deliberately, almost frustratingly patient. And it earns every second of that patience when the film finally shows its hand. This is not jump scare horror. This is grief as possession, family as trap, and the creeping certainty that something has been watching these people for a very long time. Aster understands atmosphere the way very few directors under fifty currently do, and he uses every frame of this film to make you feel like the walls are slowly closing in.",
+        "Toni Collette gives one of the best horror performances ever committed to film and I will not be taking questions on that. The dinner table scene alone should have had awards campaigners working overtime. She is not performing grief, she is drowning in it, and you believe every second. Gabriel Byrne grounds the film in something recognisably human while everything around him gets progressively less so. Alex Wolff takes a role that could have been a footnote and turns it into something genuinely haunting. The practical work and the miniature motif running through the whole film are brilliant touches, Aster using Annie's dollhouse obsession to frame the family as subjects rather than agents, watched and manipulated from the very beginning. The sound design deserves its own paragraph. That clicking. If you know, you know. If you don't, you will.",
+        "The third act is where some people tap out and I understand why. It shifts register sharply and commits fully to something that not every viewer will follow. But here is the thing, the film earns that shift. Everything in the final act is already present in the first, you just didn't see it. That is the mark of a director who knows exactly what he is doing. Hereditary sits comfortably alongside Rosemary's Baby and The Witch as slow burn folk horror that actually says something, here about the way trauma and expectation get passed down through families like inheritance nobody asked for. It is available across various streaming platforms and it is worth hunting down on the biggest screen you can manage. This is not a comfortable watch. It is not supposed to be. If you came looking for something genuinely unsettling that you will think about for days afterward, this is it."
+      ],
+      "images": [],
+      "verdict": "Hereditary is a near masterpiece of modern horror and one of the most assured debut films in the genre's history, 9/10."
+    },
+    {
       "id": 1779819061172,
       "category": "movie",
       "title": "The Autopsy of Jane Doe",
