@@ -31,7 +31,7 @@ const REVIEWS = [
         "The ending. You know about the ending if you've heard anything about The Wicker Man, and it still lands like a punch. It feels inevitable in the best way possible, the whole film pointing toward it without you realising until the moment arrives. This is folk horror done at a level that Midsommar (2019) clearly studied and still couldn't quite match for sheer nerve. If you're streaming through any of the various platforms currently carrying it, watch the longer cut where possible. A near flawless piece of filmmaking."
       ],
       "images": [],
-      "media": { "poster": "https://image.tmdb.org/t/p/w500/6ZxKNE2tR8udsihkDaHIaM7VhDY.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/9v4jvUZp0wz0A3Qx7D3QJ0YikYu.jpg" },
+      "media": { "poster": "https://m.media-amazon.com/images/M/MV5BMWU5NmUxMmYtM2QwYS00ODc1LTkxOGItMWY3ZmEzNzJkNGU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", "backdrop": "https://m.media-amazon.com/images/M/MV5BMWU5NmUxMmYtM2QwYS00ODc1LTkxOGItMWY3ZmEzNzJkNGU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
       "verdict": "9/10, one of the most genuinely unsettling horror films ever made, and it achieves that without a single frame of gore."
     },
     {
