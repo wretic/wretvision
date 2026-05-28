@@ -31,7 +31,7 @@ const REVIEWS = [
         "The ending. You know about the ending if you've heard anything about The Wicker Man, and it still lands like a punch. It feels inevitable in the best way possible, the whole film pointing toward it without you realising until the moment arrives. This is folk horror done at a level that Midsommar (2019) clearly studied and still couldn't quite match for sheer nerve. If you're streaming through any of the various platforms currently carrying it, watch the longer cut where possible. A near flawless piece of filmmaking."
       ],
       "images": [],
-      "media": { "poster": "https://m.media-amazon.com/images/M/MV5BMWU5NmUxMmYtM2QwYS00ODc1LTkxOGItMWY3ZmEzNzJkNGU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", "backdrop": "https://m.media-amazon.com/images/M/MV5BMWU5NmUxMmYtM2QwYS00ODc1LTkxOGItMWY3ZmEzNzJkNGU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+      "media": { "poster": "https://image.tmdb.org/t/p/w500/wwtrXRL8SiOWxhwLEvw7iBgYh0g.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/kXpej2jwz7mUk5IcMkxdAfwoo3D.jpg" },
       "verdict": "9/10, one of the most genuinely unsettling horror films ever made, and it achieves that without a single frame of gore."
     },
     {
@@ -56,7 +56,7 @@ const REVIEWS = [
         "The third act is where some people tap out and I understand why. It shifts register sharply and commits fully to something that not every viewer will follow. But here is the thing, the film earns that shift. Everything in the final act is already present in the first, you just didn't see it. That is the mark of a director who knows exactly what he is doing. Hereditary sits comfortably alongside Rosemary's Baby and The Witch as slow burn folk horror that actually says something, here about the way trauma and expectation get passed down through families like inheritance nobody asked for. It is available across various streaming platforms and it is worth hunting down on the biggest screen you can manage. This is not a comfortable watch. It is not supposed to be. If you came looking for something genuinely unsettling that you will think about for days afterward, this is it."
       ],
       "images": [],
-      "media": { "poster": "https://image.tmdb.org/t/p/w500/p9fmuz2Oj3HatGnXjQV6wRL5M3.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/yVWiOMpzf7gullGvug83r7gMdha.jpg" },
+      "media": { "poster": "https://image.tmdb.org/t/p/w500/cjUZT8ZsMR3xCh5xBeTLJ56eLTt.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/gJbTXKNTL6O7r7PzF6ZRkJGBlPp.jpg" },
       "verdict": "Hereditary is a near masterpiece of modern horror and one of the most assured debut films in the genre's history, 9/10."
     },
     {
@@ -81,7 +81,7 @@ const REVIEWS = [
         "The third act is where The Autopsy of Jane Doe loses a little ground. Once the film tips fully into its supernatural explanation it becomes slightly more conventional, and a few of the horror beats in the final stretch feel like they belong in a lesser film. The ending splits people and I understand why, though I think it earns its conclusion more than its critics give it credit for. Comparable to something like Bone Tomahawk in the way it uses a genre framework to deliver something genuinely uncomfortable, it also shares DNA with early David Fincher in its clinical visual style. If you're watching on streaming and you've skipped this one, correct that immediately. The Autopsy of Jane Doe is a masterclass in location horror and proof that one room, two performances, and a clear directorial vision will beat a $100 million CGI budget every single time."
       ],
       "images": [],
-      "media": { "poster": "https://image.tmdb.org/t/p/w500/yJ6tpWygCm3x9eqTBJQao4d7RhM.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/oQWWth5AOtbWG9o8SCAviGcADed.jpg" },
+      "media": { "poster": "https://image.tmdb.org/t/p/w500/hvQgtEMXzQZDCZkkLFPK6cO1FIy.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/m4LtS8NoVvbl57mej9KBg9QT4fg.jpg" },
       "verdict": "8/10, one of the most efficiently terrifying horror films of the last decade and it doesn't waste a single minute of your time."
     },
     {
@@ -106,7 +106,7 @@ const REVIEWS = [
         "If you've only seen the 2018 remake directed by Luca Guadagnino, go back to the source immediately. They are doing entirely different things. The original Suspiria (1977) isn't available on one clean streaming home right now, it floats around various platforms, but it is worth hunting down in the best possible version you can find. Compare it to something like Deep Red or even early Cronenberg if you want context, but honestly it sits in its own category. It's flawed in the way all bold films are flawed. The ending arrives fast and a little scrappy. But the ending lands. And you'll be thinking about those colours for days."
       ],
       "images": [],
-      "media": { "poster": "hhttps://image.tmdb.org/t/p/w600_and_h900_face/wq7RxV5gMvgO0EKeWpNhegnpJBh.jpg", "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/wq7RxV5gMvgO0EKeWpNhegnpJBh.jpg" },
+      "media": { "poster": "https://image.tmdb.org/t/p/w500/5ya8jTbNZTrCFUx9OwpNBjCivXY.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/j7rl2LphIbC88FppTfwJ5Gxj9kX.jpg" },
       "verdict": "Suspiria is one of the few horror films that genuinely earns the word visionary, a 9/10 that reminds you what the genre looks like when someone swings for something no one else would attempt."
     },
     {
