@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1779968496772,
+      "category": "movie",
+      "title": "The Wicker Man",
+      "year": 1973,
+      "director": "Robin Hardy",
+      "runtime": "88 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Folk Horror",
+        "Mystery"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "The Wicker Man (1973) doesn't scare you with monsters. It scares you with people who are absolutely certain they're right.",
+      "body": [
+        "There are horror films that make you jump and horror films that make you feel genuinely uneasy for days after. The Wicker Man (1973) is the second kind, and it does it without a single cheap trick. Robin Hardy drops Sergeant Howie, a devout Christian copper played with rigid conviction by Edward Woodward, onto a Scottish island that has its own gods, its own rituals, and absolutely no interest in his discomfort. The folk horror atmosphere here isn't built with fog machines or stingers on the soundtrack. It's built with song, flowers, and smiling faces that never quite reassure you. That tension between Howie's tight moral certainty and the island's loose, sensual paganism is where the real horror lives, and the film never lets you forget it.",
+        "Christopher Lee as Lord Summerisle is one of the great screen performances that doesn't get talked about enough. He's charming, educated, and completely committed to something Howie finds monstrous. That collision of worldviews is what elevates this above a straightforward mystery. The film is asking something genuine about faith, community, and sacrifice, and it earns the right to ask it because it never picks an easy side. The musical numbers could derail a lesser film. Here they add to the wrongness, this sense that you've wandered into a world running on different rules. The investigation plot holds together tightly and the pacing never drags, which is rare for something this atmospheric.",
+        "The ending. You know about the ending if you've heard anything about The Wicker Man, and it still lands like a punch. It feels inevitable in the best way possible, the whole film pointing toward it without you realising until the moment arrives. This is folk horror done at a level that Midsommar (2019) clearly studied and still couldn't quite match for sheer nerve. If you're streaming through any of the various platforms currently carrying it, watch the longer cut where possible. A near flawless piece of filmmaking."
+      ],
+      "images": [],
+      "verdict": "9/10, one of the most genuinely unsettling horror films ever made, and it achieves that without a single frame of gore."
+    },
+    {
       "id": 1779882088176,
       "category": "movie",
       "title": "Hereditary",
