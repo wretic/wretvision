@@ -81,7 +81,7 @@ const REVIEWS = [
         "The third act is where The Autopsy of Jane Doe loses a little ground. Once the film tips fully into its supernatural explanation it becomes slightly more conventional, and a few of the horror beats in the final stretch feel like they belong in a lesser film. The ending splits people and I understand why, though I think it earns its conclusion more than its critics give it credit for. Comparable to something like Bone Tomahawk in the way it uses a genre framework to deliver something genuinely uncomfortable, it also shares DNA with early David Fincher in its clinical visual style. If you're watching on streaming and you've skipped this one, correct that immediately. The Autopsy of Jane Doe is a masterclass in location horror and proof that one room, two performances, and a clear directorial vision will beat a $100 million CGI budget every single time."
       ],
       "images": [],
-      "media": { "poster": "https://image.tmdb.org/t/p/w500/hvQgtEMXzQZDCZkkLFPK6cO1FIy.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/m4LtS8NoVvbl57mej9KBg9QT4fg.jpg" },
+      "media": { "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/6K0wjP8kPCiPYy9PtXBGuypyt5I.jpg", "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/6K0wjP8kPCiPYy9PtXBGuypyt5I.jpg" },
       "verdict": "8/10, one of the most efficiently terrifying horror films of the last decade and it doesn't waste a single minute of your time."
     },
     {
