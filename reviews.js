@@ -106,7 +106,7 @@ const REVIEWS = [
         "If you've only seen the 2018 remake directed by Luca Guadagnino, go back to the source immediately. They are doing entirely different things. The original Suspiria (1977) isn't available on one clean streaming home right now, it floats around various platforms, but it is worth hunting down in the best possible version you can find. Compare it to something like Deep Red or even early Cronenberg if you want context, but honestly it sits in its own category. It's flawed in the way all bold films are flawed. The ending arrives fast and a little scrappy. But the ending lands. And you'll be thinking about those colours for days."
       ],
       "images": [],
-      "media": { "poster": "https://image.tmdb.org/t/p/w500/dL43wy4aaO7P9elJxoI1Q2xNHKg.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/A6bRxPXrJrWnJwO7rJ4t69vm4Tc.jpg" },
+      "media": { "poster": "hhttps://image.tmdb.org/t/p/w600_and_h900_face/wq7RxV5gMvgO0EKeWpNhegnpJBh.jpg", "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/wq7RxV5gMvgO0EKeWpNhegnpJBh.jpg" },
       "verdict": "Suspiria is one of the few horror films that genuinely earns the word visionary, a 9/10 that reminds you what the genre looks like when someone swings for something no one else would attempt."
     },
     {
