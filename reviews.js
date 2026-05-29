@@ -30,6 +30,7 @@ const REVIEWS = [
         "We Bury The Dead is streaming across various platforms right now and it sits firmly in the watchable but frustrating category of 2024 horror releases. Fans of slow-burn survival horror in the vein of It Comes At Night will find things to appreciate here, particularly in the first half. But this is a film that had real potential to say something about grief and loss under the genre surface, and it mostly leaves that potential sitting in the corner. The ending arrives and resolves things in a way that feels neat when messy would have been more honest. Not a waste of your evening but not something you will be thinking about the next morning either."
       ],
       "images": [],
+        "media": { "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/xZqo0yPARmyF8TACVNyaOACkYWG.jpg", "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/xZqo0yPARmyF8TACVNyaOACkYWG.jpg" },
       "verdict": "6/10, We Bury The Dead has the bones of something genuinely affecting but buries them under a script that keeps choosing the easier road."
     },
     {
