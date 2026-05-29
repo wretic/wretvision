@@ -3229,7 +3229,7 @@ const HORROR_VAULT = [
 {
   "title": "The Wicker Man",
   "year": 1973,
-  "decade": "2000s",
+  "decade": "1970",
   "status": "watched",
   "note": "",
   "id": 404
@@ -3237,9 +3237,17 @@ const HORROR_VAULT = [
   {
   "title": "Suspiria",
   "year": 1977,
-  "decade": "2000s",
+  "decade": "1970s",
   "status": "watched",
   "note": "",
   "id": 405
+  },
+  {
+  "title": "Obsession",
+  "year": 2026,
+  "decade": "2020s",
+  "status": "watched",
+  "note": "",
+  "id": 406
   },
 ];
