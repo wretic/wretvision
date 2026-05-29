@@ -3108,7 +3108,7 @@ const HORROR_VAULT = [
   },
   {
     "title": "We Bury the Dead",
-    "year": 2025,
+    "year": 2024,
     "decade": "2020s",
     "status": "watched",
     "note": "",
