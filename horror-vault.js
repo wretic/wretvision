@@ -3234,4 +3234,12 @@ const HORROR_VAULT = [
   "note": "",
   "id": 404
   },
+  {
+  "title": "Suspiria",
+  "year": 1977,
+  "decade": "2000s",
+  "status": "watched",
+  "note": "",
+  "id": 405
+  },
 ];
