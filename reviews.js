@@ -10,6 +10,29 @@
 
 const REVIEWS = [
     {
+      "id": 1780054377747,
+      "category": "movie",
+      "title": "We Bury The Dead",
+      "year": 2024,
+      "director": "Zak Hilditch",
+      "runtime": "94 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "We Bury The Dead has enough grim atmosphere to keep you watching, but it keeps tripping over its own ambitions before it can stick the landing.",
+      "body": [
+        "We Bury The Dead (2024) is the kind of post-apocalyptic horror thriller that arrives with a decent premise and then spends most of its runtime not quite committing to it. The setup is solid enough. The dead are coming back, there are people trying to find loved ones in the chaos, and there is genuine tension in the early stretches. The director clearly has an eye for bleak, washed-out imagery and a few sequences land with real weight. You can feel the influence of films like The Road filtered through a more genre-forward sensibility. When it works, it works on atmosphere alone, which is honestly more than a lot of these films manage to do. The practical effects in the first act are rough around the edges but grounded, and that groundedness is what keeps you in it early on.",
+        "The problems creep in around the midpoint. Characters start making decisions that feel driven by plot necessity rather than any internal logic you have built up for them. There is a stretch in the second act that drags considerably, and you start clock-watching in a way you really should not be during a horror film. The script also has a habit of gesturing at emotional depth without actually doing the work to earn it. A central relationship that should be the beating heart of the whole thing feels underdeveloped, and when the film leans on it for its bigger moments, the ground is not solid enough to hold the weight. Acting is uneven across the board, with a couple of performers doing genuinely good quiet work while others are clearly struggling with underwritten roles.",
+        "We Bury The Dead is streaming across various platforms right now and it sits firmly in the watchable but frustrating category of 2024 horror releases. Fans of slow-burn survival horror in the vein of It Comes At Night will find things to appreciate here, particularly in the first half. But this is a film that had real potential to say something about grief and loss under the genre surface, and it mostly leaves that potential sitting in the corner. The ending arrives and resolves things in a way that feels neat when messy would have been more honest. Not a waste of your evening but not something you will be thinking about the next morning either."
+      ],
+      "images": [],
+      "verdict": "6/10, We Bury The Dead has the bones of something genuinely affecting but buries them under a script that keeps choosing the easier road."
+    },
+    {
       "id": 1779968496772,
       "category": "movie",
       "title": "The Wicker Man",
