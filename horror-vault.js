@@ -3225,5 +3225,13 @@ const HORROR_VAULT = [
   "status": "watched",
   "note": "",
   "id": 403
-}
+},
+{
+  "title": "The Wicker Man",
+  "year": 1973,
+  "decade": "2000s",
+  "status": "watched",
+  "note": "",
+  "id": 404
+  },
 ];
