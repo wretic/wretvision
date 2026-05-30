@@ -3256,6 +3256,6 @@ const HORROR_VAULT = [
   "decade": "2020s",
   "status": "watched",
   "note": "",
-  "id": 405
-  }
+  "id": 407
+  },
 ];
