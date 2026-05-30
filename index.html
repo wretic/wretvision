@@ -131,6 +131,13 @@
       color: var(--green); border-color: var(--green); background: rgba(79,255,176,0.10);
     }
 
+    /* ── GENRE TOGGLE ── */
+    .genre-widget-title { cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .genre-toggle-arrow { font-size: 9px; display: inline-block; transition: transform 0.25s ease; line-height: 1; }
+    .genre-widget-title[aria-expanded="true"] .genre-toggle-arrow { transform: rotate(180deg); }
+    .genre-tags-wrap { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .genre-tags-wrap.open { max-height: 600px; }
+
     /* ── HOME PAGE CURSOR ── */
     body, body * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
     a, button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
@@ -272,8 +279,6 @@
   <span class="stats-meta-right">DATABASE: ONLINE <span class="db-live">●</span></span>
 </div>
 
-<div class="filter-bar" id="filter-bar"></div>
-
 <div class="main-layout">
   <main class="reviews-col">
     <div class="col-header">latest reviews</div>
@@ -291,8 +296,12 @@
     <div class="sidebar-widget">
       <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
       <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-      <div class="widget-title">browse by genre</div>
-      <div class="genre-tags" id="genre-tags"></div>
+      <div class="widget-title genre-widget-title" id="genre-toggle" role="button" tabindex="0" aria-expanded="false">
+        browse by genre <span class="genre-toggle-arrow">▼</span>
+      </div>
+      <div class="genre-tags-wrap" id="genre-tags-wrap">
+        <div class="genre-tags" id="genre-tags"></div>
+      </div>
     </div>
     <div class="sidebar-widget">
       <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
@@ -451,6 +460,21 @@
     if (btn && box) {
       btn.addEventListener('click', function() { box.classList.add('dismissed'); });
     }
+  })();
+
+  /* ── GENRE TOGGLE ── */
+  (function() {
+    var toggle = document.getElementById('genre-toggle');
+    var wrap   = document.getElementById('genre-tags-wrap');
+    if (!toggle || !wrap) return;
+    function handleToggle() {
+      var isOpen = wrap.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    }
+    toggle.addEventListener('click', handleToggle);
+    toggle.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleToggle(); }
+    });
   })();
 
   /* hero-effects.js handles rain + lightning (default blue colour) */

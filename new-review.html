@@ -656,7 +656,9 @@
 
       const rawGenres    = (detail.genres || []).map(g => TMDB_GENRE_MAP[g.id]).filter(Boolean);
       const uniqueGenres = [...new Set(rawGenres)];
-      selectedItem = { id: Date.now(), title, year, director, runtime, rating, category: currentCategory, genres: uniqueGenres, overview: detail.overview || '' };
+      const posterUrl   = detail.poster_path   ? `https://image.tmdb.org/t/p/w500${detail.poster_path}`   : '';
+      const backdropUrl = detail.backdrop_path  ? `https://image.tmdb.org/t/p/w1280${detail.backdrop_path}` : '';
+      selectedItem = { id: Date.now(), title, year, director, runtime, rating, category: currentCategory, genres: uniqueGenres, overview: detail.overview || '', media: { poster: posterUrl, backdrop: backdropUrl } };
       selectedGenres = [...uniqueGenres];
       showStep2();
     } catch(e) { setStatus(document.getElementById('search-status'), '>> error fetching details.', 'error'); }
@@ -673,10 +675,12 @@
       const year = detail.released ? parseInt(detail.released.slice(0, 4)) : 0;
       const platforms = (detail.platforms || []).map(p => p.platform.name).slice(0, 3).join(', ') || 'Various';
 
+      const posterUrl = detail.background_image || '';
       selectedItem = {
         id: Date.now(), title: detail.name, year, director: devs,
         runtime: platforms, rating: detail.esrb_rating?.name || 'NR',
-        category: 'game', genres: uniqueGenres, overview: detail.description_raw?.slice(0, 400) || ''
+        category: 'game', genres: uniqueGenres, overview: detail.description_raw?.slice(0, 400) || '',
+        media: { poster: posterUrl, backdrop: '' }
       };
       selectedGenres = [...uniqueGenres];
       showStep2();
@@ -861,6 +865,10 @@ Build on my notes, expand them, give them depth. Do NOT just restate them.`;
 
       const esc = s => String(s).replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
 
+      const mediaField = selectedItem.media
+        ? `\n  media: { poster: "${esc(selectedItem.media.poster || '')}", backdrop: "${esc(selectedItem.media.backdrop || '')}" },`
+        : '';
+
       const output = `{
   id: ${selectedItem.id},
   category: "${selectedItem.category}",
@@ -878,7 +886,7 @@ ${paragraphsFormatted}
   ],${reviewImages.length ? `
   images: [
 ${reviewImages.map(img => `    { src: "${esc(img.src)}", caption: "${esc(img.caption)}", afterParagraph: ${img.afterParagraph} }`).join(',\n')}
-  ],` : ''}
+  ],` : ''}${mediaField}
   verdict: "${esc(parsed.verdict)}"
 },`;
 

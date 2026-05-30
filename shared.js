@@ -395,21 +395,45 @@ function applyFilter(genre) {
     b.classList.toggle('active', b.dataset.filter === genre));
   document.querySelectorAll('.genre-tag').forEach(b =>
     b.classList.toggle('active', b.dataset.filter === genre));
+  const toggleLabel = document.querySelector('.filter-toggle .toggle-current');
+  if (toggleLabel) toggleLabel.textContent = genre === 'all' ? 'ALL' : genre.toUpperCase();
 }
 
 // ── BUILD FILTER BAR ─────────────────────────────────────────
 function buildFilterBar() {
   const bar    = document.getElementById('filter-bar');
+  if (!bar) return;
   const genres = getAllGenres();
   bar.innerHTML = '<span class="filter-label">FILTER:</span>';
+
+  const toggle = document.createElement('button');
+  toggle.className = 'filter-toggle';
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.innerHTML = '<span class="toggle-current">ALL</span><span class="toggle-arrow">▼</span>';
+  bar.appendChild(toggle);
+
+  const panel = document.createElement('div');
+  panel.className = 'filter-genres-panel';
+
   genres.forEach(g => {
     const btn = document.createElement('button');
     btn.className = 'filter-btn' + (g === 'all' ? ' active' : '');
     btn.dataset.filter = g;
     btn.textContent = g.toUpperCase();
-    btn.addEventListener('click', () => applyFilter(g));
-    bar.appendChild(btn);
+    btn.addEventListener('click', () => {
+      applyFilter(g);
+      panel.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+    panel.appendChild(btn);
   });
+
+  toggle.addEventListener('click', () => {
+    const isOpen = panel.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  bar.appendChild(panel);
 }
 
 const DEFAULT_GENRES = {
