@@ -3257,5 +3257,5 @@ const HORROR_VAULT = [
   "status": "watched",
   "note": "",
   "id": 407
-  },
+  }
 ];
