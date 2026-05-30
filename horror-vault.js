@@ -3250,4 +3250,12 @@ const HORROR_VAULT = [
   "note": "",
   "id": 406
   },
+  {
+  "title": "Death of a Unicorn",
+  "year": 2025,
+  "decade": "2020s",
+  "status": "watched",
+  "note": "",
+  "id": 405
+  },
 ];
