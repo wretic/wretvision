@@ -97,7 +97,7 @@ const REVIEWS = [
         "Drama"
       ],
       "score": 9,
-      "featured": false,
+      "featured": true,
       "excerpt": "Hereditary doesn't scare you. It dismantles you. Ari Aster announced himself like a sledgehammer through a wall.",
       "body": [
         "Some horror films go for the throat. Hereditary goes for something worse, it goes for the chest, the slow hollow feeling that builds before you even know something is wrong. Ari Aster's 2018 debut is the kind of film that gets under your skin in the first ten minutes and never fully leaves. The Graham family is fractured before the story even starts, carrying grief and resentment and something older and darker that none of them have names for yet. The setup is patient. Deliberately, almost frustratingly patient. And it earns every second of that patience when the film finally shows its hand. This is not jump scare horror. This is grief as possession, family as trap, and the creeping certainty that something has been watching these people for a very long time. Aster understands atmosphere the way very few directors under fifty currently do, and he uses every frame of this film to make you feel like the walls are slowly closing in.",
