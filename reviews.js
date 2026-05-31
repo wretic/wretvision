@@ -367,7 +367,7 @@ const REVIEWS = [
         "Crime"
       ],
       "score": 6.5,
-      "featured": true,
+      "featured": false,
       "excerpt": "Punisher: One Last Kill is grimier and more patient than Marvel usually allows itself to be, and that restraint is mostly its strength.",
       "body": [
         "Frank Castle has always been a character the studios never quite knew what to do with. Too brutal for the family crowd, too one-note for prestige drama fans. Punisher: One Last Kill, streaming on Disney+ in 2026, is the most interesting attempt yet because it actually commits to the ugliness. This is not an action film dressed up as a thriller. It is genuinely trying to be a crime drama that earns its violence, which puts it closer to something like Wind River than anything in the current superhero landscape. The director keeps the palette cold and the pacing slow in a way that will frustrate people who came for the skull logo and quick kills. That is honestly their loss.",
