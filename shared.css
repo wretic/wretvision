@@ -234,6 +234,13 @@ body::before {
 .genre-tags { display: flex; flex-wrap: wrap; gap: 5px; }
 .genre-tag { font-family: 'VT323', monospace; font-size: 18px; padding: 3px 10px; border: 1px solid var(--blue); color: var(--blue-light); background: transparent; cursor: pointer; letter-spacing: 1px; transition: background 0.15s; }
 .genre-tag:hover, .genre-tag.active { background: rgba(10,143,212,0.18); }
+
+/* ── GENRE WIDGET COLLAPSIBLE ── */
+.genre-widget-title { cursor: pointer; display: flex !important; justify-content: space-between; align-items: center; user-select: none; margin-bottom: 0 !important; }
+.genre-toggle-arrow { font-size: 9px; display: inline-block; transition: transform 0.25s ease; line-height: 1; flex-shrink: 0; }
+.genre-widget-title[aria-expanded="true"] .genre-toggle-arrow { transform: rotate(180deg); }
+.genre-tags-wrap { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+.genre-tags-wrap.open { max-height: 600px; padding-top: 14px; }
 .sidebar-list { list-style: none; }
 .sidebar-list li { padding: 8px 0; border-bottom: 1px dotted rgba(10,143,212,0.2); display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
 .sidebar-list li:last-child { border-bottom: none; }

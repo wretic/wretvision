@@ -524,8 +524,9 @@
       setTimeout(flicker, 5000 + Math.random() * 5000);
     })();
 
-    // Blood drip — canvas-based, GPU-composited, no layout thrash on mobile
+    // Blood drip — canvas-based, GPU-composited, desktop only
     (function () {
+      if (window.matchMedia('(max-width: 768px)').matches) return;
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
       const container = document.getElementById('blood-drips');

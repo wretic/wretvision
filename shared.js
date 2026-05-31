@@ -831,4 +831,14 @@ function initPage(category) {
 
   setupTopRatedTabs();
   renderTopRated();
+
+  // Genre widget collapse toggle
+  var genreToggle = document.getElementById('genre-widget-toggle');
+  var genreWrap   = document.getElementById('genre-tags-wrap');
+  if (genreToggle && genreWrap) {
+    genreToggle.addEventListener('click', function() {
+      var isOpen = genreWrap.classList.toggle('open');
+      genreToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
 }
