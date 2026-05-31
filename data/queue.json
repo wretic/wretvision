@@ -1,5 +1,5 @@
 {
-  "horror_vault": [
+  "movies": [
     {
       "title": "The Thing",
       "year": 1982,
@@ -14,8 +14,7 @@
       "streaming": "Various",
       "done": false,
       "score": 9,
-      "notes": null,
-      "media_type": "movies"
+      "notes": null
     },
     {
       "title": "Jacob's Ladder",
@@ -31,8 +30,7 @@
       "streaming": "Various",
       "done": false,
       "score": 8,
-      "notes": null,
-      "media_type": "movies"
+      "notes": null
     },
     {
       "title": "Possession",
@@ -48,8 +46,7 @@
       "streaming": "Various",
       "done": false,
       "score": 7,
-      "notes": null,
-      "media_type": "movies"
+      "notes": null
     },
     {
       "title": "Session 9",
@@ -65,8 +62,7 @@
       "streaming": "Various",
       "done": false,
       "score": 7,
-      "notes": null,
-      "media_type": "movies"
+      "notes": null
     },
     {
       "title": "The Descent",
@@ -82,8 +78,7 @@
       "streaming": "Various",
       "done": false,
       "score": 8,
-      "notes": null,
-      "media_type": "movies"
+      "notes": null
     },
     {
       "title": "Pulse",
@@ -99,8 +94,7 @@
       "streaming": "Various",
       "done": false,
       "score": 8,
-      "notes": null,
-      "media_type": "movies"
+      "notes": null
     },
     {
       "title": "The Night House",
@@ -116,8 +110,7 @@
       "streaming": "Various",
       "done": false,
       "score": 6,
-      "notes": null,
-      "media_type": "movies"
+      "notes": null
     },
     {
       "title": "The Empty Man",
@@ -133,8 +126,7 @@
       "streaming": "Various",
       "done": false,
       "score": 6,
-      "notes": null,
-      "media_type": "movies"
+      "notes": null
     },
     {
       "title": "Late Night with the Devil",
@@ -150,8 +142,7 @@
       "streaming": "Various",
       "done": false,
       "score": 9,
-      "notes": null,
-      "media_type": "movies"
+      "notes": null
     },
     {
       "title": "Oddity",
@@ -167,8 +158,7 @@
       "streaming": "Various",
       "done": false,
       "score": 6,
-      "notes": null,
-      "media_type": "movies"
+      "notes": null
     },
     {
       "title": "Gonjiam: Haunted Asylum",
@@ -184,9 +174,10 @@
       "streaming": "Various",
       "done": false,
       "score": 8,
-      "notes": null,
-      "media_type": "movies"
-    },
+      "notes": null
+    }
+  ],
+  "games": [
     {
       "title": "Silent Hill 2",
       "year": 2001,
@@ -199,8 +190,7 @@
       "platform": "PlayStation 2, Xbox, PC",
       "done": false,
       "score": 9,
-      "notes": "Original classic",
-      "media_type": "games"
+      "notes": "Original classic"
     },
     {
       "title": "SOMA",
@@ -214,8 +204,7 @@
       "platform": "PC, PlayStation 4, Xbox One",
       "done": false,
       "score": 9,
-      "notes": null,
-      "media_type": "games"
+      "notes": null
     },
     {
       "title": "Alien: Isolation",
@@ -230,8 +219,7 @@
       "platform": "PC, PlayStation, Xbox",
       "done": false,
       "score": 9,
-      "notes": null,
-      "media_type": "games"
+      "notes": null
     },
     {
       "title": "Amnesia: The Dark Descent",
@@ -245,7 +233,7 @@
       "platform": "PC, PlayStation, Xbox",
       "done": false,
       "score": 9,
-      "notes": null,
-      "media_type": "games"
+      "notes": null
     }
   ]
+}
