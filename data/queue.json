@@ -15,7 +15,7 @@
       "done": false,
       "score": 9,
       "notes": null,
-      "media_type": "movie"
+      "media_type": "movies"
     },
     {
       "title": "Jacob's Ladder",
@@ -32,7 +32,7 @@
       "done": false,
       "score": 8,
       "notes": null,
-      "media_type": "movie"
+      "media_type": "movies"
     },
     {
       "title": "Possession",
@@ -49,7 +49,7 @@
       "done": false,
       "score": 7,
       "notes": null,
-      "media_type": "movie"
+      "media_type": "movies"
     },
     {
       "title": "Session 9",
@@ -66,7 +66,7 @@
       "done": false,
       "score": 7,
       "notes": null,
-      "media_type": "movie"
+      "media_type": "movies"
     },
     {
       "title": "The Descent",
@@ -83,7 +83,7 @@
       "done": false,
       "score": 8,
       "notes": null,
-      "media_type": "movie"
+      "media_type": "movies"
     },
     {
       "title": "Pulse",
@@ -100,7 +100,7 @@
       "done": false,
       "score": 8,
       "notes": null,
-      "media_type": "movie"
+      "media_type": "movies"
     },
     {
       "title": "The Night House",
@@ -117,7 +117,7 @@
       "done": false,
       "score": 6,
       "notes": null,
-      "media_type": "movie"
+      "media_type": "movies"
     },
     {
       "title": "The Empty Man",
@@ -134,7 +134,7 @@
       "done": false,
       "score": 6,
       "notes": null,
-      "media_type": "movie"
+      "media_type": "movies"
     },
     {
       "title": "Late Night with the Devil",
@@ -151,7 +151,7 @@
       "done": false,
       "score": 9,
       "notes": null,
-      "media_type": "movie"
+      "media_type": "movies"
     },
     {
       "title": "Oddity",
@@ -168,7 +168,7 @@
       "done": false,
       "score": 6,
       "notes": null,
-      "media_type": "movie"
+      "media_type": "movies"
     },
     {
       "title": "Gonjiam: Haunted Asylum",
@@ -185,7 +185,7 @@
       "done": false,
       "score": 8,
       "notes": null,
-      "media_type": "movie"
+      "media_type": "movies"
     },
     {
       "title": "Silent Hill 2",
@@ -200,7 +200,7 @@
       "done": false,
       "score": 9,
       "notes": "Original classic",
-      "media_type": "game"
+      "media_type": "games"
     },
     {
       "title": "SOMA",
@@ -215,7 +215,7 @@
       "done": false,
       "score": 9,
       "notes": null,
-      "media_type": "game"
+      "media_type": "games"
     },
     {
       "title": "Alien: Isolation",
@@ -231,7 +231,7 @@
       "done": false,
       "score": 9,
       "notes": null,
-      "media_type": "game"
+      "media_type": "games"
     },
     {
       "title": "Amnesia: The Dark Descent",
@@ -246,7 +246,6 @@
       "done": false,
       "score": 9,
       "notes": null,
-      "media_type": "game"
+      "media_type": "games"
     }
   ]
-}
