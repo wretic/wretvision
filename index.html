@@ -141,6 +141,111 @@
     /* ── HOME PAGE CURSOR ── */
     body, body * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
     a, button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
+
+    /* ── LIVE STREAMS SIDE PANEL ── */
+    .streams-panel {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      z-index: 500;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      pointer-events: none;
+    }
+    .streams-drawer {
+      width: 0;
+      overflow: hidden;
+      transition: width 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: all;
+    }
+    .streams-drawer.open { width: 360px; }
+    .streams-drawer-inner {
+      width: 360px;
+      background: rgba(4, 10, 22, 0.97);
+      border-top: 1px solid rgba(10,143,212,0.40);
+      border-right: 1px solid rgba(10,143,212,0.40);
+      border-left: 3px solid var(--blue);
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      box-sizing: border-box;
+      box-shadow: 6px 0 32px rgba(0,0,0,0.65);
+      overflow: hidden;
+    }
+    .streams-panel-header {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 6px;
+      color: var(--blue-light);
+      letter-spacing: 2px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid rgba(10,143,212,0.18);
+    }
+    .streams-tab {
+      width: 24px;
+      background: rgba(4, 10, 22, 0.97);
+      border: 1px solid rgba(10,143,212,0.40);
+      border-bottom: none;
+      border-left: none;
+      padding: 18px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      pointer-events: all;
+      flex-shrink: 0;
+      box-shadow: 3px 0 14px rgba(0,0,0,0.5);
+      transition: background 0.2s;
+    }
+    .streams-tab:hover { background: rgba(10,30,60,0.97); }
+    .streams-tab-arrow {
+      font-family: 'VT323', monospace;
+      font-size: 15px;
+      color: var(--blue-light);
+      line-height: 1;
+    }
+    .streams-tab-label {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 5px;
+      color: var(--blue);
+      letter-spacing: 1px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+    .stream-block { display: flex; flex-direction: column; gap: 7px; }
+    .stream-label {
+      display: flex; align-items: center; gap: 7px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 5px; color: var(--blue-light); letter-spacing: 1px;
+    }
+    .stream-dot {
+      width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+      animation: sdot-pulse 2.2s ease-in-out infinite;
+    }
+    .yt-dot     { background: #ff4040; box-shadow: 0 0 5px rgba(255,64,64,0.7); }
+    .twitch-dot { background: #9147ff; box-shadow: 0 0 5px rgba(145,71,255,0.7); }
+    @keyframes sdot-pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+    .stream-frame-wrap {
+      position: relative; width: 100%; height: 150px;
+      background: #000;
+      border: 1px solid rgba(10,143,212,0.25);
+      border-left: 2px solid var(--blue);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .stream-frame-wrap iframe { position:absolute;inset:0;width:100%;height:100%;border:none;scrolling:no; }
+    .stream-fallback {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Press Start 2P', monospace; font-size: 6px;
+      color: var(--blue-light); text-decoration: none;
+      text-align: center; line-height: 2.2; letter-spacing: 1px;
+    }
+    .stream-divider { height: 1px; background: rgba(10,143,212,0.15); }
+    @media (max-width: 560px) { .streams-panel { display: none; } }
   </style>
 </head>
 <body class="page-home">
@@ -153,21 +258,6 @@
   </div>
 </div>
 
-<!-- ── EMERGENCY ALERT (decorative) ── -->
-<div class="emergency-alert" id="emergency-alert">
-  <div class="ea-header">
-    <span class="ea-icon">⚠</span>
-    <span class="ea-title">EMERGENCY ALERT</span>
-    <button class="ea-close" id="ea-close" aria-label="Dismiss">✕</button>
-  </div>
-  <div class="ea-body">
-    <span class="ea-line">ARCHIVE FILE CORRUPTED</span>
-    <span class="ea-line">REBUILDING SECTOR 7...</span>
-    <span class="ea-line">PLEASE STAND BY //</span>
-  </div>
-  <div class="ea-progress-wrap"><div class="ea-bar"></div></div>
-  <div class="ea-percent">56%</div>
-</div>
 
 <header class="topbar">
   <div class="topbar-left">
@@ -352,6 +442,28 @@
   </aside>
 </div>
 
+<!-- ── LIVE STREAMS SIDE PANEL ── -->
+<div class="streams-panel" id="streams-panel">
+  <div class="streams-drawer" id="streams-drawer">
+    <div class="streams-drawer-inner">
+      <div class="streams-panel-header">◈ ON AIR</div>
+      <div class="stream-block">
+        <div class="stream-label"><span class="stream-dot yt-dot"></span>YOUTUBE // @WRETVISION</div>
+        <div class="stream-frame-wrap" id="yt-frame-wrap"></div>
+      </div>
+      <div class="stream-divider"></div>
+      <div class="stream-block">
+        <div class="stream-label"><span class="stream-dot twitch-dot"></span>TWITCH // WRETIC</div>
+        <div class="stream-frame-wrap" id="twitch-frame-wrap"></div>
+      </div>
+    </div>
+  </div>
+  <button class="streams-tab" id="streams-tab" aria-expanded="false" aria-label="Toggle live streams">
+    <span class="streams-tab-arrow" id="streams-tab-arrow">▶</span>
+    <span class="streams-tab-label">ON AIR</span>
+  </button>
+</div>
+
 <footer class="footer">
   &copy; WRETVISION, JUST OPINIONS.<span class="blink"> _</span><br>
   <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR THE LOVE OF FILM, TV &amp; GAMES</span>
@@ -451,15 +563,6 @@
         String(m).padStart(2, '0') + ':' +
         String(s).padStart(2, '0');
     }, 1000);
-  })();
-
-  /* ── EMERGENCY ALERT DISMISS ── */
-  (function() {
-    var btn = document.getElementById('ea-close');
-    var box = document.getElementById('emergency-alert');
-    if (btn && box) {
-      btn.addEventListener('click', function() { box.classList.add('dismissed'); });
-    }
   })();
 
   /* ── GENRE TOGGLE ── */
@@ -634,6 +737,113 @@
         if (!started) startAudio();
       });
     }
+  })();
+
+  /* ── LIVE STREAMS SIDE PANEL ── */
+  (function() {
+    var panel  = document.getElementById('streams-panel');
+    var drawer = document.getElementById('streams-drawer');
+    var tab    = document.getElementById('streams-tab');
+    var arrow  = document.getElementById('streams-tab-arrow');
+    if (!panel || !drawer || !tab) return;
+
+    var loaded = false;
+    var CHANNEL_ID = 'UCC3aFC7Gr2eYUEGc6IRga0g';
+    // Fallback queue of known long-form videos (tried in order, skips any with embedding disabled)
+    var FALLBACK_IDS = ['zudhgMHtjTI','0DXg1YMJGeA','D5N-PVVk6Bs','_w37Ej022hI','JPekxZy6R8k','O51Q3txABbY','BtaHDl93HIk'];
+
+    /* ── YouTube via IFrame API — auto-skips Error 101/150/100 ── */
+    function injectYouTube(queue) {
+      var ytWrap = document.getElementById('yt-frame-wrap');
+      if (!ytWrap || !queue.length) { showYTFallback(ytWrap); return; }
+
+      var playerEl = document.createElement('div');
+      playerEl.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;';
+      ytWrap.appendChild(playerEl);
+      var ytPlayer;
+
+      function tryNext() {
+        if (!queue.length) { showYTFallback(ytWrap); return; }
+        var vid = queue.shift();
+        if (ytPlayer) {
+          ytPlayer.loadVideoById(vid);
+        } else {
+          ytPlayer = new YT.Player(playerEl, {
+            videoId: vid,
+            playerVars: { autoplay: 0, mute: 1, rel: 0 },
+            events: {
+              onError: function(e) {
+                // 100 = not found, 101/150 = embedding not allowed
+                if (e.data === 100 || e.data === 101 || e.data === 150) tryNext();
+              }
+            }
+          });
+        }
+      }
+
+      if (window.YT && window.YT.Player) {
+        tryNext();
+      } else {
+        var prev = window.onYouTubeIframeAPIReady;
+        window.onYouTubeIframeAPIReady = function() { if (prev) prev(); tryNext(); };
+        var s = document.createElement('script');
+        s.src = 'https://www.youtube.com/iframe_api';
+        document.head.appendChild(s);
+      }
+    }
+
+    function showYTFallback(wrap) {
+      if (!wrap) return;
+      wrap.innerHTML = '<a class="stream-fallback" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">▶ VISIT<br>YOUTUBE</a>';
+    }
+
+    function startYouTube() {
+      fetch('https://www.youtube.com/feeds/videos.xml?channel_id=' + CHANNEL_ID)
+        .then(function(r) { return r.text(); })
+        .then(function(xml) {
+          var ids    = xml.match(/<yt:videoId>([^<]+)<\/yt:videoId>/g) || [];
+          var titles = xml.match(/<title>([^<]+)<\/title>/g) || [];
+          var queue  = [];
+          for (var i = 0; i < ids.length; i++) {
+            if (!/#short/i.test(titles[i + 1] || '')) {
+              queue.push(ids[i].replace(/<\/?yt:videoId>/g, ''));
+            }
+          }
+          injectYouTube(queue.length ? queue : FALLBACK_IDS.slice());
+        })
+        .catch(function() { injectYouTube(FALLBACK_IDS.slice()); });
+    }
+
+    /* ── Twitch ── */
+    function injectTwitch() {
+      var wrap = document.getElementById('twitch-frame-wrap');
+      if (!wrap) return;
+      var host = window.location.hostname || 'wretvision.com';
+      // include both production and localhost as parents
+      var parents = host === 'localhost' || host === '127.0.0.1'
+        ? 'parent=localhost&parent=wretvision.com'
+        : 'parent=' + encodeURIComponent(host) + '&parent=localhost';
+      var tw = document.createElement('iframe');
+      tw.src = 'https://player.twitch.tv/?channel=wretic&' + parents + '&muted=true&autoplay=false';
+      tw.setAttribute('allow', 'autoplay; encrypted-media; fullscreen');
+      tw.setAttribute('scrolling', 'no');
+      tw.allowFullscreen = true;
+      wrap.appendChild(tw);
+    }
+
+    function injectIframes() {
+      if (loaded) return;
+      loaded = true;
+      startYouTube();
+      injectTwitch();
+    }
+
+    tab.addEventListener('click', function() {
+      var isOpen = drawer.classList.toggle('open');
+      tab.setAttribute('aria-expanded', String(isOpen));
+      arrow.textContent = isOpen ? '◀' : '▶';
+      if (isOpen) injectIframes();
+    });
   })();
 
 </script>
