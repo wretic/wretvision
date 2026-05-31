@@ -866,8 +866,8 @@ Build on my notes, expand them, give them depth. Do NOT just restate them.`;
       const esc = s => String(s).replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
 
       const mediaField = selectedItem.media
-        ? `\n  media: { poster: "${esc(selectedItem.media.poster || '')}", backdrop: "${esc(selectedItem.media.backdrop || '')}" },`
-        : '';
+      ? `\n  poster: "${esc(selectedItem.media.poster || '')}",\n  backdrop: "${esc(selectedItem.media.backdrop || '')}",\n  media: { poster: "${esc(selectedItem.media.poster || '')}", backdrop: "${esc(selectedItem.media.backdrop || '')}" },`
+      : '';
 
       const output = `{
   id: ${selectedItem.id},
