@@ -56,10 +56,6 @@
     .stat-num { color: var(--game-red-glow) !important; }
     .stat-item { border-right-color: rgba(139,26,26,0.25) !important; }
 
-    /* filter bar */
-    .filter-bar { border-bottom-color: var(--game-border) !important; }
-    .filter-btn { border-color: rgba(139,26,26,0.35) !important; }
-    .filter-btn:hover, .filter-btn.active { background: rgba(139,26,26,0.18) !important; color: var(--accent) !important; border-color: var(--game-red-light) !important; }
 
     /* col header */
     .col-header { color: var(--game-red-light) !important; border-left-color: var(--accent) !important; }
@@ -447,8 +443,6 @@
     <div class="stat-item"><span class="stat-num" id="stat-avg">—</span><span class="stat-label">AVG SCORE</span></div>
   </div>
 
-  <div class="filter-bar" id="filter-bar"></div>
-
   <div class="main-layout">
     <main class="reviews-col">
       <div class="col-header">game reviews</div>
@@ -466,8 +460,8 @@
       <div class="sidebar-widget">
         <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
         <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-        <div class="widget-title">browse by genre</div>
-        <div class="genre-tags" id="genre-tags"></div>
+        <div class="widget-title genre-widget-title" id="genre-widget-toggle" aria-expanded="false">browse by genre <span class="genre-toggle-arrow">▼</span></div>
+        <div class="genre-tags-wrap" id="genre-tags-wrap"><div class="genre-tags" id="genre-tags"></div></div>
       </div>
       <div class="sidebar-widget">
         <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tl"></div>

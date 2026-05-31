@@ -55,10 +55,6 @@
     .stat-num { color: var(--tv-green) !important; }
     .stat-item { border-right-color: rgba(79,255,176,0.18) !important; }
 
-    /* filter bar */
-    .filter-bar { border-bottom-color: var(--tv-border) !important; }
-    .filter-btn { border-color: rgba(79,255,176,0.3) !important; }
-    .filter-btn:hover, .filter-btn.active { background: rgba(79,255,176,0.15) !important; color: var(--tv-green) !important; border-color: var(--tv-green-dim) !important; }
 
     /* col header */
     .col-header { color: var(--tv-green-dim) !important; border-left-color: var(--tv-green) !important; }
@@ -161,8 +157,6 @@
     <div class="stat-item"><span class="stat-num" id="stat-avg">—</span><span class="stat-label">AVG SCORE</span></div>
   </div>
 
-  <div class="filter-bar" id="filter-bar"></div>
-
   <div class="main-layout">
     <main class="reviews-col">
       <div class="col-header">tv show reviews</div>
@@ -180,8 +174,8 @@
       <div class="sidebar-widget">
         <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
         <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-        <div class="widget-title">browse by genre</div>
-        <div class="genre-tags" id="genre-tags"></div>
+        <div class="widget-title genre-widget-title" id="genre-widget-toggle" aria-expanded="false">browse by genre <span class="genre-toggle-arrow">▼</span></div>
+        <div class="genre-tags-wrap" id="genre-tags-wrap"><div class="genre-tags" id="genre-tags"></div></div>
       </div>
       <div class="sidebar-widget">
         <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
