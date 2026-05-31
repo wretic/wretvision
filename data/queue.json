@@ -1,181 +1,252 @@
 {
-  "_instructions": "Horror Vault only. These are review candidates Wretic has already seen or knows well enough to review. Keep done=false until reviewed. Must Watch / Must Play will become separate site pages later, not part of this queue.",
-  "horror_vault": {
-    "movies": [
-      {
-        "title": "The Thing",
-        "year": 1982,
-        "director": "John Carpenter",
-        "runtime": "109 min",
-        "rating": "R",
-        "genre": ["Horror", "Sci-Fi", "Body Horror"],
-        "streaming": "Various",
-        "done": false,
-        "score": 9,
-        "notes": null
-      },
-      {
-        "title": "Jacob's Ladder",
-        "year": 1990,
-        "director": "Adrian Lyne",
-        "runtime": "113 min",
-        "rating": "R",
-        "genre": ["Horror", "Psychological", "Mystery"],
-        "streaming": "Various",
-        "done": false,
-        "score": 8,
-        "notes": null
-      },
-      {
-        "title": "Possession",
-        "year": 1981,
-        "director": "Andrzej Żuławski",
-        "runtime": "124 min",
-        "rating": "R",
-        "genre": ["Horror", "Psychological", "Drama"],
-        "streaming": "Various",
-        "done": false,
-        "score": 7,
-        "notes": null
-      },
-      {
-        "title": "Session 9",
-        "year": 2001,
-        "director": "Brad Anderson",
-        "runtime": "100 min",
-        "rating": "R",
-        "genre": ["Horror", "Psychological", "Mystery"],
-        "streaming": "Various",
-        "done": false,
-        "score": 7,
-        "notes": null
-      },
-      {
-        "title": "The Descent",
-        "year": 2005,
-        "director": "Neil Marshall",
-        "runtime": "99 min",
-        "rating": "R",
-        "genre": ["Horror", "Survival", "Thriller"],
-        "streaming": "Various",
-        "done": false,
-        "score": 8,
-        "notes": null
-      },
-      {
-        "title": "Pulse",
-        "year": 2001,
-        "director": "Kiyoshi Kurosawa",
-        "runtime": "119 min",
-        "rating": "R",
-        "genre": ["Horror", "Psychological", "J-Horror"],
-        "streaming": "Various",
-        "done": false,
-        "score": 8,
-        "notes": null
-      },
-      {
-        "title": "The Night House",
-        "year": 2020,
-        "director": "David Bruckner",
-        "runtime": "107 min",
-        "rating": "R",
-        "genre": ["Horror", "Psychological", "Mystery"],
-        "streaming": "Various",
-        "done": false,
-        "score": 6,
-        "notes": null
-      },
-      {
-        "title": "The Empty Man",
-        "year": 2020,
-        "director": "David Prior",
-        "runtime": "137 min",
-        "rating": "R",
-        "genre": ["Horror", "Mystery", "Cosmic Horror"],
-        "streaming": "Various",
-        "done": false,
-        "score": 6,
-        "notes": null
-      },
-      {
-        "title": "Late Night with the Devil",
-        "year": 2023,
-        "director": "Cameron Cairnes, Colin Cairnes",
-        "runtime": "93 min",
-        "rating": "R",
-        "genre": ["Horror", "Found Footage", "Supernatural"],
-        "streaming": "Various",
-        "done": false,
-        "score": 9,
-        "notes": null
-      },
-      {
-        "title": "Oddity",
-        "year": 2024,
-        "director": "Damian McCarthy",
-        "runtime": "98 min",
-        "rating": "R",
-        "genre": ["Horror", "Mystery", "Supernatural"],
-        "streaming": "Various",
-        "done": false,
-        "score": 6,
-        "notes": null
-      },
-      {
-        "title": "Gonjiam: Haunted Asylum",
-        "year": 2018,
-        "director": "Jung Bum-shik",
-        "runtime": "95 min",
-        "rating": "NR",
-        "genre": ["Horror", "Found Footage", "K-Horror"],
-        "streaming": "Various",
-        "done": false,
-        "score": 8,
-        "notes": null
-      }
-    ],
-    "games": [
-      {
-        "title": "Silent Hill 2",
-        "year": 2001,
-        "developer": "Team Silent",
-        "genre": ["Psychological Horror", "Survival Horror", "Single Player"],
-        "platform": "PlayStation 2, Xbox, PC",
-        "done": false,
-        "score": 9,
-        "notes": "Original classic"
-      },
-      {
-        "title": "SOMA",
-        "year": 2015,
-        "developer": "Frictional Games",
-        "genre": ["Psychological Horror", "Sci-Fi Horror", "Single Player"],
-        "platform": "PC, PlayStation 4, Xbox One",
-        "done": false,
-        "score": 9,
-        "notes": null
-      },
-      {
-        "title": "Alien: Isolation",
-        "year": 2014,
-        "developer": "Creative Assembly",
-        "genre": ["Survival Horror", "Sci-Fi Horror", "Stealth", "Single Player"],
-        "platform": "PC, PlayStation, Xbox",
-        "done": false,
-        "score": 9,
-        "notes": null
-      },
-      {
-        "title": "Amnesia: The Dark Descent",
-        "year": 2010,
-        "developer": "Frictional Games",
-        "genre": ["Psychological Horror", "Survival Horror", "Single Player"],
-        "platform": "PC, PlayStation, Xbox",
-        "done": false,
-        "score": 9,
-        "notes": null
-      }
-    ]
-  }
+  "horror_vault": [
+    {
+      "title": "The Thing",
+      "year": 1982,
+      "director": "John Carpenter",
+      "runtime": "109 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Sci-Fi",
+        "Body Horror"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": 9,
+      "notes": null,
+      "media_type": "movie"
+    },
+    {
+      "title": "Jacob's Ladder",
+      "year": 1990,
+      "director": "Adrian Lyne",
+      "runtime": "113 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Psychological",
+        "Mystery"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": 8,
+      "notes": null,
+      "media_type": "movie"
+    },
+    {
+      "title": "Possession",
+      "year": 1981,
+      "director": "Andrzej Żuławski",
+      "runtime": "124 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Psychological",
+        "Drama"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": 7,
+      "notes": null,
+      "media_type": "movie"
+    },
+    {
+      "title": "Session 9",
+      "year": 2001,
+      "director": "Brad Anderson",
+      "runtime": "100 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Psychological",
+        "Mystery"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": 7,
+      "notes": null,
+      "media_type": "movie"
+    },
+    {
+      "title": "The Descent",
+      "year": 2005,
+      "director": "Neil Marshall",
+      "runtime": "99 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Survival",
+        "Thriller"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": 8,
+      "notes": null,
+      "media_type": "movie"
+    },
+    {
+      "title": "Pulse",
+      "year": 2001,
+      "director": "Kiyoshi Kurosawa",
+      "runtime": "119 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Psychological",
+        "J-Horror"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": 8,
+      "notes": null,
+      "media_type": "movie"
+    },
+    {
+      "title": "The Night House",
+      "year": 2020,
+      "director": "David Bruckner",
+      "runtime": "107 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Psychological",
+        "Mystery"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": 6,
+      "notes": null,
+      "media_type": "movie"
+    },
+    {
+      "title": "The Empty Man",
+      "year": 2020,
+      "director": "David Prior",
+      "runtime": "137 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Mystery",
+        "Cosmic Horror"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": 6,
+      "notes": null,
+      "media_type": "movie"
+    },
+    {
+      "title": "Late Night with the Devil",
+      "year": 2023,
+      "director": "Cameron Cairnes, Colin Cairnes",
+      "runtime": "93 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Found Footage",
+        "Supernatural"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": 9,
+      "notes": null,
+      "media_type": "movie"
+    },
+    {
+      "title": "Oddity",
+      "year": 2024,
+      "director": "Damian McCarthy",
+      "runtime": "98 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Mystery",
+        "Supernatural"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": 6,
+      "notes": null,
+      "media_type": "movie"
+    },
+    {
+      "title": "Gonjiam: Haunted Asylum",
+      "year": 2018,
+      "director": "Jung Bum-shik",
+      "runtime": "95 min",
+      "rating": "NR",
+      "genre": [
+        "Horror",
+        "Found Footage",
+        "K-Horror"
+      ],
+      "streaming": "Various",
+      "done": false,
+      "score": 8,
+      "notes": null,
+      "media_type": "movie"
+    },
+    {
+      "title": "Silent Hill 2",
+      "year": 2001,
+      "developer": "Team Silent",
+      "genre": [
+        "Psychological Horror",
+        "Survival Horror",
+        "Single Player"
+      ],
+      "platform": "PlayStation 2, Xbox, PC",
+      "done": false,
+      "score": 9,
+      "notes": "Original classic",
+      "media_type": "game"
+    },
+    {
+      "title": "SOMA",
+      "year": 2015,
+      "developer": "Frictional Games",
+      "genre": [
+        "Psychological Horror",
+        "Sci-Fi Horror",
+        "Single Player"
+      ],
+      "platform": "PC, PlayStation 4, Xbox One",
+      "done": false,
+      "score": 9,
+      "notes": null,
+      "media_type": "game"
+    },
+    {
+      "title": "Alien: Isolation",
+      "year": 2014,
+      "developer": "Creative Assembly",
+      "genre": [
+        "Survival Horror",
+        "Sci-Fi Horror",
+        "Stealth",
+        "Single Player"
+      ],
+      "platform": "PC, PlayStation, Xbox",
+      "done": false,
+      "score": 9,
+      "notes": null,
+      "media_type": "game"
+    },
+    {
+      "title": "Amnesia: The Dark Descent",
+      "year": 2010,
+      "developer": "Frictional Games",
+      "genre": [
+        "Psychological Horror",
+        "Survival Horror",
+        "Single Player"
+      ],
+      "platform": "PC, PlayStation, Xbox",
+      "done": false,
+      "score": 9,
+      "notes": null,
+      "media_type": "game"
+    }
+  ]
 }
