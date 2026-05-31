@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1780232272863,
+      "category": "movie",
+      "title": "Late Night with the Devil",
+      "year": 2023,
+      "director": "Cameron Cairnes, Colin Cairnes",
+      "runtime": "93 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Found Footage",
+        "Supernatural"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Late Night with the Devil nails the setup so well you almost forgive it for stumbling at the finish line.",
+      "body": [
+        "Late Night with the Devil (2023) is one of the most genuinely clever horror premises in years and it mostly delivers on it. Directors Colin and Cameron Cairnes have built something that understands atmosphere in a way a lot of found footage films simply do not. The conceit is tight: a struggling late night talk show host, Jack Delroy, films a Halloween special in 1977 that goes catastrophically wrong, and we are watching the recovered broadcast footage decades later. That framing device does real work. The period detail is immaculate, the talk show format feels authentic enough to be unsettling rather than costumey, and David Dastmalchian is carrying the whole thing on his back with a performance that walks the line between charming and deeply wrong in exactly the right way. He is performing, yes, but so is Jack Delroy, and the film knows the difference.",
+        "What the Cairnes brothers get right is the slow burn. The first two thirds of this film are genuinely tense in a way that relies on discomfort rather than shock. A suspicious psychic, a parapsychologist with a traumatised girl in tow, a mentalist who might actually be dangerous. The talk show format lets the horror build through awkward pauses and wrong smiles rather than loud stingers. When things do start to break down the film earns it. The practical work in the later sequences is strong and there are images here that will stick with you. The AI generated interstitial cards caused real controversy and honestly, fair enough, it is a weird choice that chips away at the craft elsewhere on display. It does not ruin the film but it sits wrong.",
+        "The third act is where Late Night with the Devil loses some of its grip. The finale swings hard and lands unevenly, trading the slow dread of the first half for something messier and more conventional. Fans of films like Ghostwatch or The Wailing will recognise the bones here and might feel the ending does not quite match the promise of what came before. It is still a good horror film, one of the more interesting supernatural found footage entries in recent memory, and Dastmalchian deserves to be talked about in awards conversations he will never get credit for. Worth finding on streaming regardless of where it ends up."
+      ],
+      "images": [],
+      "verdict": "Late Night with the Devil (2023) is a sharp, atmospheric horror film that almost sticks the landing, elevated by a career best performance and a premise that earns every minute of its runtime, 7/10."
+    },
+    {
       "id": 1780054377747,
       "category": "movie",
       "title": "We Bury The Dead",
