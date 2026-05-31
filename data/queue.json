@@ -1,5 +1,8 @@
 {
-  "movies": [
+  "_instructions": "Add titles here. Set 'done': true when reviewed. 'score' and 'notes' are optional pre-logs of your gut reaction — if set, the AI will write to that score. This batch was selected to avoid titles already present in the existing queue and horror-vault.js.",
+  "movies": [],
+  "tv": [],
+  "horror_vault": [
     {
       "title": "The Thing",
       "year": 1982,
