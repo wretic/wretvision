@@ -56,7 +56,7 @@ const REVIEWS = [
         "The third act is where Late Night with the Devil loses some of its grip. The finale swings hard and lands unevenly, trading the slow dread of the first half for something messier and more conventional. Fans of films like Ghostwatch or The Wailing will recognise the bones here and might feel the ending does not quite match the promise of what came before. It is still a good horror film, one of the more interesting supernatural found footage entries in recent memory, and Dastmalchian deserves to be talked about in awards conversations he will never get credit for. Worth finding on streaming regardless of where it ends up."
       ],
       "images": [],
-        "media": { "poster": "https://m.media-amazon.com/images/M/MV5BOWI1Yjk5ZWEtZjcyNS00NmZkLWFkNzUtMDA5YmNhODA1ZDVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", "backdrop": "https://m.media-amazon.com/images/M/MV5BOWI1Yjk5ZWEtZjcyNS00NmZkLWFkNzUtMDA5YmNhODA1ZDVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+        "media": { "poster": "https://m.media-amazon.com/images/M/MV5BOWI1Yjk5ZWEtZjcyNS00NmZkLWFkNzUtMDA5YmNhODA1ZDVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", "backdrop": "" },
       "verdict": "Late Night with the Devil (2023) is a sharp, atmospheric horror film that almost sticks the landing, elevated by a career best performance and a premise that earns every minute of its runtime, 7/10."
     },
     {
