@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1780321287910,
+      "category": "movie",
+      "title": "Gonjiam: Haunted Asylum",
+      "year": 2018,
+      "director": "Jung Bum-shik",
+      "runtime": "95 min",
+      "rating": "NR",
+      "genres": [
+        "Horror",
+        "Found Footage",
+        "K-Horror"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "Gonjiam: Haunted Asylum is the found footage film that actually got under my skin, and I don't say that lightly.",
+      "body": [
+        "Found footage is a genre that's mostly eating itself alive at this point. You've seen the shaky cam, the night vision screaming, the obligatory 'why are you still filming' moment. So when Gonjiam: Haunted Asylum from 2018 genuinely unsettled me, I paid attention. Director Jung Bum-shik builds this thing the right way. The setup is a horror livestream crew heading into the real Gonjiam Psychiatric Hospital, one of South Korea's most notorious abandoned buildings, and the film uses that premise to layer in dread before a single supernatural thing happens. The social media angle feels organic rather than forced. These characters have a reason to keep filming. That alone puts it ahead of half the found footage catalogue.",
+        "What Gonjiam does better than almost anything in this subgenre is atmosphere. The hospital is genuinely oppressive. There's a sequence in the sealed Room 402 that escalates so slowly and so deliberately that by the time it pays off your shoulders are up around your ears. The film earns its scares through geography and sound design rather than cheap jolts. K-Horror has always understood that dread is more effective than shock, and this is a textbook example of that principle working at full force. The cast is naturalistic in a way that matters for found footage. Nobody feels like they're performing. When the fear kicks in it reads as real panic, not scripted screaming. That naturalism is doing a lot of heavy lifting and it holds.",
+        "If there's a knock on Gonjiam: Haunted Asylum it's that the final act leans harder into chaos than the careful first two thirds warranted. It sacrifices some of that controlled dread for volume and velocity, which is a shame because the slow burn was where this film was genuinely special. Fans of REC and Host will find a lot to appreciate here. It's streaming across various platforms and it's absolutely worth tracking down, especially if you've written off found footage as a dead format. Gonjiam proves there's still life in it when someone actually knows what they're doing with a camera and a creepy building."
+      ],
+      "images": [],
+      "verdict": "8/10, one of the best found footage horror films of the last decade and proof that K-Horror understands atmosphere better than almost anyone else working in the genre right now."
+    },
+    {
       "id": 1780232272863,
       "category": "movie",
       "title": "Late Night with the Devil",
