@@ -72,20 +72,6 @@
     .hero-title span { color: var(--vault-red-light) !important; }
     .lightning-bar { background: linear-gradient(90deg, transparent, #1a0000, var(--vault-red-light), #1a0000, transparent) !important; animation-duration: 5s !important; }
 
-    /* ── BLOOD DRIPS ── */
-    .hero-title { position: relative; z-index: 1; }
-    .blood-drips {
-      position: relative;
-      z-index: 0;
-      height: 90px;
-      width: 100%;
-      max-width: 540px;
-      margin: -30px auto 0;
-      pointer-events: none;
-      overflow: visible;
-    }
-    /* blood drips rendered on canvas — see JS below */
-
     .stats-bar { background: #060001 !important; border-bottom-color: var(--vault-border) !important; }
     .stat-num { color: var(--vault-red-light) !important; }
     .stat-item { border-right-color: rgba(140,20,20,0.18) !important; }
@@ -213,7 +199,6 @@
     <div class="hero-bg"></div>
     <p class="hero-eyebrow">// watched horror archive //</p>
     <h1 class="hero-title">HORROR<span>VAULT</span></h1>
-    <div class="blood-drips" id="blood-drips"></div>
     <div class="lightning-bar"></div>
     <p class="hero-sub">A personal list, not a streaming guide. Classics, weird ones, and everything in between.</p>
   </section>
@@ -524,141 +509,6 @@
       setTimeout(flicker, 5000 + Math.random() * 5000);
     })();
 
-    // Blood drip — canvas-based, GPU-composited, desktop only
-    (function () {
-      if (window.matchMedia('(max-width: 768px)').matches) return;
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-      const container = document.getElementById('blood-drips');
-      if (!container) return;
-
-      const canvas = document.createElement('canvas');
-      canvas.style.cssText = 'position:absolute;top:0;left:0;pointer-events:none;';
-      container.appendChild(canvas);
-
-      const ctx = canvas.getContext('2d');
-      let W = 0, H = 0;
-      const OVERFLOW = 20; // extra px so teardrop tip isn't clipped
-
-      function resize() {
-        W = container.offsetWidth  || 540;
-        H = container.offsetHeight || 90;
-        canvas.width  = W;
-        canvas.height = H + OVERFLOW;
-        canvas.style.width  = W + 'px';
-        canvas.style.height = (H + OVERFLOW) + 'px';
-      }
-      resize();
-      window.addEventListener('resize', resize);
-
-      // Same 3 drip positions / timings as the original
-      const CFG = [
-        { leftPct: 31, totalMs: 6500, delayMs: 0    },
-        { leftPct: 44, totalMs: 9200, delayMs: 4800 },
-        { leftPct: 57, totalMs: 7800, delayMs: 1700 },
-      ];
-
-      const drips = CFG.map(d => ({
-        leftPct:  d.leftPct,
-        totalMs:  d.totalMs,
-        startAt:  performance.now() + d.delayMs,
-        h: 0, alpha: 0
-      }));
-
-      function drawDrip(x, h, alpha) {
-        if (alpha < 0.01 || h < 0.5) return;
-
-        ctx.save();
-        ctx.globalAlpha = alpha;
-
-        const tW = 1.8; // half-width at top of streak
-        const bW = 0.7; // half-width at tip of streak
-
-        // Tapered streak — filled bezier path
-        const sg = ctx.createLinearGradient(x, 0, x, h);
-        sg.addColorStop(0,    'rgba(148, 0, 0, 1)');
-        sg.addColorStop(0.30, 'rgba(128, 4, 4, 1)');
-        sg.addColorStop(0.80, 'rgba(88,  0, 0, 1)');
-        sg.addColorStop(1,    'rgba(55,  0, 0, 1)');
-
-        ctx.beginPath();
-        ctx.moveTo(x - tW, 0);
-        ctx.quadraticCurveTo(x - tW * 0.72, h * 0.52, x - bW, h);
-        ctx.lineTo(x + bW, h);
-        ctx.quadraticCurveTo(x + tW * 0.72, h * 0.52, x + tW, 0);
-        ctx.closePath();
-        ctx.fillStyle = sg;
-        ctx.fill();
-
-        // Wet sheen — thin highlight on left edge
-        ctx.beginPath();
-        ctx.moveTo(x - tW + 0.55, 1);
-        ctx.quadraticCurveTo(x - tW * 0.52, h * 0.40, x - bW + 0.18, h * 0.87);
-        ctx.lineWidth   = 0.55;
-        ctx.strokeStyle = 'rgba(200, 60, 60, 0.28)';
-        ctx.stroke();
-
-        ctx.restore();
-      }
-
-      function tick(now) {
-        ctx.clearRect(0, 0, W, H + OVERFLOW);
-
-        drips.forEach(d => {
-          const elapsed  = now - d.startAt;
-          if (elapsed < 0) return;
-
-          // Cycle: grow → hold → fade → silent gap → repeat
-          const gap      = 2000;
-          const cycle    = d.totalMs + gap;
-          const phase    = elapsed % cycle;
-          const growEnd  = d.totalMs * 0.65;
-          const holdEnd  = d.totalMs * 0.83;
-          const fadeEnd  = d.totalMs;
-
-          if (phase < growEnd) {
-            const t  = phase / growEnd;
-            d.h      = t * H;
-            d.alpha  = Math.min(1, t * 12);
-          } else if (phase < holdEnd) {
-            d.h      = H;
-            d.alpha  = 1;
-          } else if (phase < fadeEnd) {
-            const ft = (phase - holdEnd) / (fadeEnd - holdEnd);
-            d.h      = H;
-            d.alpha  = 1 - ft;
-          } else {
-            d.h = 0; d.alpha = 0;
-          }
-
-          drawDrip((d.leftPct / 100) * W, d.h, d.alpha);
-        });
-
-        rafId = requestAnimationFrame(tick);
-      }
-
-      let rafId = null;
-      let active = false;
-
-      function start() {
-        if (active) return;
-        active = true;
-        rafId = requestAnimationFrame(tick);
-      }
-      function stop() {
-        active = false;
-        if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
-      }
-
-      // Pause when scrolled off-screen — saves battery on mobile
-      if ('IntersectionObserver' in window) {
-        new IntersectionObserver(entries => {
-          entries[0].isIntersecting ? start() : stop();
-        }, { threshold: 0 }).observe(container);
-      } else {
-        start();
-      }
-    })();
   </script>
 </body>
 </html>
