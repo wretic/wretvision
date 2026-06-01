@@ -31,7 +31,7 @@ const REVIEWS = [
         "If there's a knock on Gonjiam: Haunted Asylum it's that the final act leans harder into chaos than the careful first two thirds warranted. It sacrifices some of that controlled dread for volume and velocity, which is a shame because the slow burn was where this film was genuinely special. Fans of REC and Host will find a lot to appreciate here. It's streaming across various platforms and it's absolutely worth tracking down, especially if you've written off found footage as a dead format. Gonjiam proves there's still life in it when someone actually knows what they're doing with a camera and a creepy building."
       ],
       "images": [],
-        "media": { "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/fNqlsmu2tiI1bXcpU31yjHPkiJz.jpg", "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/fNqlsmu2tiI1bXcpU31yjHPkiJz.jpg" },
+        "media": { "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/fNqlsmu2tiI1bXcpU31yjHPkiJz.jpg", "backdrop": "hhttps://www.ghostlygoods.co.uk/cdn/shop/articles/Gonjiam_Poster.webp?v=1715782905" },
       "verdict": "8/10, one of the best found footage horror films of the last decade and proof that K-Horror understands atmosphere better than almost anyone else working in the genre right now."
     },
     {
