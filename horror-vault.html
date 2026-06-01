@@ -106,7 +106,7 @@
     .vault-reviewed { display:inline-block; margin-top:8px; font-family:'Press Start 2P',monospace; font-size:5px; color:var(--vault-red-light); border:1px solid rgba(200,50,50,0.45); padding:3px 6px; }
     .vault-empty { display:none; font-family:'VT323',monospace; font-size:24px; color:var(--muted); padding:30px; border:1px dashed var(--vault-border); }
     .vault-draw-wrap { display:flex; justify-content:center; padding:14px 28px; background:#060001; border-bottom:1px solid var(--vault-border); }
-    .vault-draw-btn { font-family:'Press Start 2P',monospace; font-size:7px; color:#fff; background:rgba(120,0,0,0.55); border:1px solid var(--vault-red-light); padding:12px 24px; cursor:pointer; letter-spacing:1px; transition:all 0.2s; white-space:nowrap; box-shadow:0 0 14px rgba(255,40,40,0.30), inset 0 0 12px rgba(180,0,0,0.25); animation:btn-breathe 2.4s ease-in-out infinite; }
+    .vault-draw-btn { font-family:'Press Start 2P',monospace; font-size:7px; color:#fff; background:rgba(120,0,0,0.55); border:1px solid var(--vault-red-light); padding:12px 24px; cursor:pointer; letter-spacing:1px; transition:all 0.2s; white-space:nowrap; box-shadow:0 0 14px rgba(255,40,40,0.22), inset 0 0 8px rgba(180,0,0,0.18); }
     .vault-draw-btn:hover { background:rgba(180,0,0,0.80); box-shadow:0 0 36px rgba(255,40,40,0.70), inset 0 0 18px rgba(200,0,0,0.40); transform:scale(1.04); }
     @keyframes btn-breathe {
       0%,100% { box-shadow:0 0 8px rgba(255,40,40,0.20), inset 0 0 8px rgba(180,0,0,0.18); transform:scale(1); }
@@ -170,9 +170,38 @@
     .vault-scroll-counter.show { opacity: 1; }
     .vault-counter-num { color: #fff; }
 
-    /* ── CURSOR ── */
-    body, body * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%23cc0000" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
-    a, button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%23cc0000" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
+
+
+    /* ── MOBILE PERFORMANCE MODE ── */
+    @media (max-width: 820px), (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+      body::after {
+        display: none !important;
+      }
+      .hero-bg {
+        display: none !important;
+      }
+      .lightning-bar {
+        display: none !important;
+      }
+      .vault-scroll-counter {
+        display: none !important;
+      }
+      .vault-item,
+      .vault-item.has-review,
+      .vault-item.has-review:hover,
+      .vault-item.vault-drawn,
+      .modal-box,
+      .topbar,
+      .vault-draw-btn {
+        box-shadow: none !important;
+        transform: none !important;
+        filter: none !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -495,19 +524,8 @@
       attachObserver();
     })();
 
-    // Random card flicker
-    (function() {
-      function flicker() {
-        const cards = Array.from(document.querySelectorAll('.vault-item:not(.vault-drawn):not(.vault-glitch)'));
-        if (cards.length) {
-          const card = cards[Math.floor(Math.random() * cards.length)];
-          card.classList.add('vault-glitch');
-          card.addEventListener('animationend', () => card.classList.remove('vault-glitch'), { once: true });
-        }
-        setTimeout(flicker, 8000 + Math.random() * 9000);
-      }
-      setTimeout(flicker, 5000 + Math.random() * 5000);
-    })();
+    // Random card flicker removed for mobile performance.
+
 
   </script>
 </body>
