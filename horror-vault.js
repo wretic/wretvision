@@ -3250,4 +3250,12 @@ const HORROR_VAULT = [
   "note": "",
   "id": 406
   },
+    {
+  "title": "Gonjiam: Haunted Asylum ", 
+  "year": 2018,
+  "decade": "2010s",
+  "status": "watched",
+  "note": "",
+  "id": 407
+  }
 ];
