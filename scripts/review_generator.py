@@ -14,6 +14,9 @@ from datetime import datetime
 from pathlib import Path
 
 import anthropic
+import urllib.request
+import urllib.parse
+import urllib.error
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 ROOT        = Path(__file__).parent.parent
@@ -127,6 +130,77 @@ Rules:
 - Never use hyphens or em dashes, use commas or rewrite the sentence instead
 """
 
+def fetch_tmdb_poster(title, year, category):
+    """
+    Returns {"poster": url} or {"poster": url, "backdrop": url} from TMDB,
+    or None if the key is missing or the lookup fails.
+    """
+    api_key = os.environ.get("TMDB_API_KEY", "").strip()
+    if not api_key:
+        print("TMDB_API_KEY not set — skipping poster lookup")
+        return None
+
+    TMDB_IMG = "https://image.tmdb.org/t/p/w500"
+    TMDB_BACK = "https://image.tmdb.org/t/p/w1280"
+
+    search_type = "tv" if category == "tv" else "movie"
+    params = urllib.parse.urlencode({
+        "api_key": api_key,
+        "query": title,
+        "year": year or "",
+        "include_adult": "false",
+        "language": "en-US",
+        "page": 1,
+    })
+    url = f"https://api.themoviedb.org/3/search/{search_type}?{params}"
+
+    try:
+        with urllib.request.urlopen(url, timeout=10) as resp:
+            data = json.loads(resp.read().decode())
+    except Exception as e:
+        print(f"TMDB request failed: {e}")
+        return None
+
+    results = data.get("results", [])
+    if not results:
+        # Try again without year (helps with some titles)
+        params_no_year = urllib.parse.urlencode({
+            "api_key": api_key,
+            "query": title,
+            "include_adult": "false",
+            "language": "en-US",
+            "page": 1,
+        })
+        url2 = f"https://api.themoviedb.org/3/search/{search_type}?{params_no_year}"
+        try:
+            with urllib.request.urlopen(url2, timeout=10) as resp:
+                data = json.loads(resp.read().decode())
+            results = data.get("results", [])
+        except Exception:
+            pass
+
+    if not results:
+        print(f"TMDB: no results found for '{title}' ({year})")
+        return None
+
+    hit = results[0]
+    poster_path   = hit.get("poster_path")
+    backdrop_path = hit.get("backdrop_path")
+
+    if not poster_path and not backdrop_path:
+        print(f"TMDB: found '{hit.get('title') or hit.get('name')}' but no images")
+        return None
+
+    media = {}
+    if poster_path:
+        media["poster"] = TMDB_IMG + poster_path
+    if backdrop_path:
+        media["backdrop"] = TMDB_BACK + backdrop_path
+
+    print(f"TMDB: poster found for '{hit.get('title') or hit.get('name')}'")
+    return media
+
+
 def call_claude(prompt):
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
     msg = client.messages.create(
@@ -155,7 +229,10 @@ def build_review_entry(category, item, parsed):
 
     uid = int(datetime.now().timestamp() * 1000)
 
-    return {
+    # Poster lookup — writes to `media` which is what review.html reads
+    tmdb_media = fetch_tmdb_poster(title, year, CATEGORY_MAP.get(category, "movie"))
+
+    entry = {
         "id":       uid,
         "category": CATEGORY_MAP.get(category, "movie"),
         "title":    f"{title}{season_str}",
@@ -171,6 +248,11 @@ def build_review_entry(category, item, parsed):
         "images":   [],
         "verdict":  parsed["verdict"],
     }
+
+    if tmdb_media:
+        entry["media"] = tmdb_media
+
+    return entry
 
 def inject_into_reviews_js(entry):
     """
