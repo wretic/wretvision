@@ -10,6 +10,30 @@
 
 const REVIEWS = [
     {
+      "id": 1780402079727,
+      "category": "movie",
+      "title": "The Descent",
+      "year": 2005,
+      "director": "Neil Marshall",
+      "runtime": "99 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Survival",
+        "Thriller"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "The Descent doesn't need monsters to terrify you. The cave does that before anything starts crawling.",
+      "body": [
+        "Neil Marshall made The Descent in 2005 and it remains one of the finest horror films Britain has ever produced. Full stop. The setup is lean and efficient: six women descend into an unmapped cave system, and things go catastrophically wrong before a single creature shows up. Marshall spends a full act just using the cave itself as the antagonist. Tight passages, crumbling rock, a group of people running low on oxygen and trust. That's your horror right there. The fact that he then introduces the crawlers on top of all that is almost generous. The creature design is practical and genuinely unsettling, pale blind humanoids that move like something that was never supposed to see daylight. They feel earned rather than inserted for a cheap shock. This is a film built on dread, not jump scares, and it knows the difference.",
+        "The cast is what elevates it beyond standard survival horror. Shauna Macdonald as Sarah anchors the whole thing with grief and fury in equal measure. The backstory established in the opening doesn't feel like setup, it feels like weight she carries into every dark corner. The friendship dynamics in the group crack under pressure in ways that feel real and brutal, not just convenient for the plot. Juno's arc in particular is quietly devastating once you understand what's actually happening between these women. The film is doing something the genre rarely bothers with: it's actually about something. Loss, guilt, betrayal, the way trauma isolates you even when you're surrounded by people. The cave is a metaphor that works because Marshall never makes you feel like he's making a metaphor. It just functions as both simultaneously.",
+        "The ending, specifically the UK theatrical cut, is a gut punch that most horror films would be too scared to commit to. It earns its darkness because the whole film has been building to that emotional destination, not just a survival outcome. If you've only seen the US cut with the extra beat tacked on, find the original version. The difference matters. The Descent sits comfortably alongside films like The Thing and Alien as horror that uses a confined space to explore something genuinely human. It's available across various streaming platforms and it holds up completely. Some films age out of their scares. This one just gets more suffocating every time."
+      ],
+      "images": [],
+      "verdict": "9/10, one of the best horror films of the 2000s and it's not particularly close."
+    },
+    {
       "id": 1780321287910,
       "category": "movie",
       "title": "Gonjiam: Haunted Asylum",
