@@ -363,11 +363,13 @@
     function bindReviewedItems(){
       document.querySelectorAll('.vault-item.has-review').forEach(card => {
         const id = Number(card.dataset.reviewId);
-        card.addEventListener('click', () => openModal(id));
+        card.addEventListener('click', () => {
+          window.location.href = 'review.html?id=' + id;
+        });
         card.addEventListener('keydown', e => {
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
-            openModal(id);
+            window.location.href = 'review.html?id=' + id;
           }
         });
       });
