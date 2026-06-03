@@ -146,11 +146,12 @@
     .streams-panel {
       position: fixed;
       left: 0;
-      bottom: 0;
+      top: 50%;
+      transform: translateY(-50%);
       z-index: 500;
       display: flex;
       flex-direction: row;
-      align-items: flex-end;
+      align-items: center;
       pointer-events: none;
     }
     .streams-drawer {
@@ -182,11 +183,20 @@
       padding-bottom: 9px;
       border-bottom: 1px solid rgba(10,143,212,0.18);
     }
+    @keyframes tab-pulse {
+      0%, 100% {
+        box-shadow: 3px 0 14px rgba(0,0,0,0.5);
+        border-color: rgba(10,143,212,0.40);
+      }
+      50% {
+        box-shadow: 3px 0 22px rgba(59,191,255,0.65), 0 0 18px rgba(59,191,255,0.35);
+        border-color: rgba(59,191,255,0.85);
+      }
+    }
     .streams-tab {
       width: 24px;
       background: rgba(4, 10, 22, 0.97);
       border: 1px solid rgba(10,143,212,0.40);
-      border-bottom: none;
       border-left: none;
       padding: 18px 0;
       display: flex;
@@ -197,10 +207,15 @@
       cursor: pointer;
       pointer-events: all;
       flex-shrink: 0;
-      box-shadow: 3px 0 14px rgba(0,0,0,0.5);
-      transition: background 0.2s;
+      animation: tab-pulse 2s ease-in-out infinite;
+      transition: background 0.2s, box-shadow 0.6s ease, border-color 0.6s ease;
     }
     .streams-tab:hover { background: rgba(10,30,60,0.97); }
+    .streams-tab.pulse-off {
+      animation: none;
+      box-shadow: 3px 0 14px rgba(0,0,0,0.5);
+      border-color: rgba(10,143,212,0.40);
+    }
     .streams-tab-arrow {
       font-family: 'VT323', monospace;
       font-size: 15px;
@@ -842,7 +857,10 @@
       var isOpen = drawer.classList.toggle('open');
       tab.setAttribute('aria-expanded', String(isOpen));
       arrow.textContent = isOpen ? '◀' : '▶';
-      if (isOpen) injectIframes();
+      if (isOpen) {
+        tab.classList.add('pulse-off');
+        injectIframes();
+      }
     });
   })();
 
