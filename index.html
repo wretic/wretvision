@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCX90839K8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PCX90839K8');
+  </script>
+  <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WretVision — Movie, TV &amp; Game Reviews</title>
+  <meta name="description" content="WretVision — Honest reviews of movies, TV shows, and games. Obscure picks, forgotten classics, cult films. If it stuck with me, it ends up here." />
+  <meta name="keywords" content="movie reviews, TV show reviews, game reviews, cult films, horror, sci-fi, action, hidden gems" />
+  <meta name="author" content="WretVision" />
+  <link rel="canonical" href="https://wretvision.com/" />
+  <meta property="og:title" content="WretVision — Movie, TV &amp; Game Reviews" />
+  <meta property="og:description" content="Honest reviews of movies, TV shows, and games. If it stuck with me, it ends up here." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wretvision.com/" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"WretVision","url":"https://wretvision.com","description":"Honest reviews of movies, TV shows, and games.","author":{"@type":"Person","name":"WretVision"}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    /* ── CATEGORY NAV ── */
+    .category-nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: rgba(10,143,212,0.15);
+      border-bottom: 2px solid rgba(10,143,212,0.3);
+    }
+    .cat-card {
+      background: var(--bg2);
+      padding: 20px 18px;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s, box-shadow 0.2s;
+      position: relative;
+      border-right: 1px solid rgba(10,143,212,0.12);
+    }
+    .cat-card:last-child { border-right: none; }
+    .cat-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: currentColor;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .cat-card:hover::before { opacity: 0.6; }
+    .cat-card:hover { background: var(--bg3); }
+    .cat-icon { font-family: 'VT323', monospace; font-size: 34px; line-height: 1; }
+    .cat-name { font-family: 'Press Start 2P', monospace; font-size: 7px; letter-spacing: 2px; }
+    .cat-count { font-family: 'VT323', monospace; font-size: 17px; color: var(--muted); letter-spacing: 1px; }
+
+    :root {
+      --movie-gold:        #b88a1b;
+      --movie-gold-light:  #e6b84a;
+      --movie-gold-glow:   #ffd86b;
+    }
+
+    .cat-card.movies { color: var(--movie-gold-light); }
+    .cat-card.movies .cat-icon { text-shadow: 0 0 10px rgba(255,216,107,0.4); }
+    .cat-card.movies:hover { box-shadow: inset 0 -2px 0 rgba(255,216,107,0.35); }
+    .cat-card.tv     { color: var(--green); }
+    .cat-card.games  { color: #e74c3c; }
+    .cat-card.horror { color: #9edcff; }
+    .cat-card.horror .cat-icon { text-shadow: 0 0 10px rgba(59,191,255,0.45); }
+
+    @media (max-width: 560px) { .category-nav { grid-template-columns: repeat(2, 1fr); } }
+
+    /* ── MOVIE CARD OVERRIDES (homepage) ── */
+    .review-card[data-category="movie"],
+    .review-card.movie {
+      border-color: rgba(184,138,27,0.35) !important;
+      border-left: 3px solid var(--movie-gold-light) !important;
+    }
+    .review-card[data-category="movie"]:hover,
+    .review-card.movie:hover {
+      border-left-color: var(--movie-gold-glow) !important;
+      box-shadow: 0 0 12px rgba(255,216,107,0.15);
+    }
+    .review-title:hover { color: var(--movie-gold-glow) !important; }
+    .score-value { color: var(--movie-gold-glow) !important; }
+    .read-more { color: var(--movie-gold-glow) !important; }
+    .read-more:hover { color: #fff !important; }
+    .review-type.movie {
+      border-color: var(--movie-gold-light) !important;
+      color: var(--movie-gold-glow) !important;
+      background: rgba(184,138,27,0.1);
+    }
+
+    /* ── TOP RATED TABS (homepage) ── */
+    .top-tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .top-tab {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 6px;
+      padding: 7px 6px;
+      border: 1px solid rgba(10,143,212,0.3);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: all 0.15s;
+    }
+    .top-tab-game:hover, .top-tab-game.active {
+      color: #e74c3c; border-color: #c0392b; background: rgba(139,26,26,0.16);
+    }
+    .top-tab-movie:hover, .top-tab-movie.active {
+      color: var(--movie-gold-glow); border-color: var(--movie-gold-light); background: rgba(184,138,27,0.14);
+    }
+    .top-tab-tv:hover, .top-tab-tv.active {
+      color: var(--green); border-color: var(--green); background: rgba(79,255,176,0.10);
+    }
+
+    /* ── GENRE TOGGLE ── */
+    .genre-widget-title { cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .genre-toggle-arrow { font-size: 9px; display: inline-block; transition: transform 0.25s ease; line-height: 1; }
+    .genre-widget-title[aria-expanded="true"] .genre-toggle-arrow { transform: rotate(180deg); }
+    .genre-tags-wrap { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .genre-tags-wrap.open { max-height: 600px; }
+
+    /* ── HOME PAGE CURSOR ── */
+    body, body * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
+    a, button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
+
+    /* ── LIVE STREAMS SIDE PANEL ── */
+    .streams-panel {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      z-index: 500;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      pointer-events: none;
+    }
+    .streams-drawer {
+      width: 0;
+      overflow: hidden;
+      transition: width 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: all;
+    }
+    .streams-drawer.open { width: 360px; }
+    .streams-drawer-inner {
+      width: 360px;
+      background: rgba(4, 10, 22, 0.97);
+      border-top: 1px solid rgba(10,143,212,0.40);
+      border-right: 1px solid rgba(10,143,212,0.40);
+      border-left: 3px solid var(--blue);
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      box-sizing: border-box;
+      box-shadow: 6px 0 32px rgba(0,0,0,0.65);
+      overflow: hidden;
+    }
+    .streams-panel-header {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 6px;
+      color: var(--blue-light);
+      letter-spacing: 2px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid rgba(10,143,212,0.18);
+    }
+    .streams-tab {
+      width: 24px;
+      background: rgba(4, 10, 22, 0.97);
+      border: 1px solid rgba(10,143,212,0.40);
+      border-bottom: none;
+      border-left: none;
+      padding: 18px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      pointer-events: all;
+      flex-shrink: 0;
+      box-shadow: 3px 0 14px rgba(0,0,0,0.5);
+      transition: background 0.2s;
+    }
+    .streams-tab:hover { background: rgba(10,30,60,0.97); }
+    .streams-tab-arrow {
+      font-family: 'VT323', monospace;
+      font-size: 15px;
+      color: var(--blue-light);
+      line-height: 1;
+    }
+    .streams-tab-label {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 5px;
+      color: var(--blue);
+      letter-spacing: 1px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+    .stream-block { display: flex; flex-direction: column; gap: 7px; }
+    .stream-label {
+      display: flex; align-items: center; gap: 7px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 5px; color: var(--blue-light); letter-spacing: 1px;
+    }
+    .stream-dot {
+      width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+      animation: sdot-pulse 2.2s ease-in-out infinite;
+    }
+    .yt-dot     { background: #ff4040; box-shadow: 0 0 5px rgba(255,64,64,0.7); }
+    .twitch-dot { background: #9147ff; box-shadow: 0 0 5px rgba(145,71,255,0.7); }
+    @keyframes sdot-pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+    .stream-frame-wrap {
+      position: relative; width: 100%; height: 150px;
+      background: #000;
+      border: 1px solid rgba(10,143,212,0.25);
+      border-left: 2px solid var(--blue);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .stream-frame-wrap iframe { position:absolute;inset:0;width:100%;height:100%;border:none;scrolling:no; }
+    .stream-fallback {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Press Start 2P', monospace; font-size: 6px;
+      color: var(--blue-light); text-decoration: none;
+      text-align: center; line-height: 2.2; letter-spacing: 1px;
+    }
+    .stream-divider { height: 1px; background: rgba(10,143,212,0.15); }
+    @media (max-width: 560px) { .streams-panel { display: none; } }
+  </style>
+</head>
+<body class="page-home">
+
+<!-- ── BOTTOM STATUS TICKER (fixed) ── -->
+<div class="status-ticker-bar">
+  <span class="ticker-left">TERMINAL: WRETVISION v2.6.6 | USER: GUEST | SESSION: <span class="ticker-session-val" id="ticker-session">00:00:00</span></span>
+  <div class="ticker-scroll-wrap">
+    <span class="ticker-scroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LATEST TRANSMISSION: "THE TRUTH IS OUT THERE... BUT SO IS MEDIOCRE CONTENT." // SIGNAL QUALITY: OPTIMAL // NEXT BROADCAST: LOADING... // ARCHIVE STATUS: NOMINAL // SCANNING FOR NEW CONTENT...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+
+<header class="topbar">
+  <div class="topbar-left">
+    <a href="index.html" class="site-logo">WRET<span>VISION</span></a>
+    <nav class="main-nav">
+      <a href="index.html"  class="nav-link active">HOME</a>
+      <a href="movies.html" class="nav-link">▶ MOVIES</a>
+      <a href="tv.html"     class="nav-link">◈ TV SHOWS</a>
+      <a href="games.html"  class="nav-link">◆ GAMES</a>
+      <a href="horror-vault.html" class="nav-link">☠ HORROR VAULT</a>
+    </nav>
+  </div>
+
+  <div class="topbar-right">
+    <div class="signal-indicator">
+      SIGNAL: <span class="signal-status">STABLE</span>&nbsp;<span class="signal-dot">●</span>
+    </div>
+
+    <a class="yt-link"
+       href="https://www.youtube.com/channel/UCC3aFC7Gr2eYUEGc6IRga0g?sub_confirmation=1"
+       target="_blank" rel="noopener"
+       style="display:flex; align-items:center; gap:8px;">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="avatar-wrap">
+        <img src="wretvision.png" alt="WretVision" />
+      </div>
+      <span class="yt-label">SUBSCRIBE ▶</span>
+    </a>
+  </div>
+</header>
+
+<!-- ── HERO: BROADCAST LAYOUT ── -->
+<section class="hero hero-broadcast">
+  <div class="hero-backdrop"></div><!-- City.png — static, no lightning baked in -->
+  <div class="hero-bg"></div>      <!-- dark gradient overlay for readability -->
+  <div class="hero-rain"></div>    <!-- soft CSS rain overlay -->
+  <div class="hero-flash" id="hero-flash"></div>  <!-- ambient light spill, JS-controlled -->
+  <canvas class="hero-lightning-canvas" id="hero-lightning-canvas"></canvas>
+
+  <div class="hero-grid">
+
+    <!-- LEFT: Broadcast Status Terminal -->
+    <div class="broadcast-panel">
+      <div class="panel-header">
+        <span>BROADCAST STATUS</span>
+        <span class="live-dot">●</span>
+      </div>
+      <div class="broadcast-log" id="broadcast-log">
+        <span class="log-line">_</span>
+      </div>
+      <div class="now-playing">
+        <div class="np-label" id="np-label">NOW TRANSMITTING</div>
+        <div class="np-title" id="np-title">—</div>
+        <div class="np-time" id="np-time">00:00:00</div>
+      </div>
+    </div>
+
+    <!-- CENTER: Main Logo -->
+    <div class="hero-center">
+      <p class="hero-eyebrow">// movies · tv · games //</p>
+      <h1 class="hero-title">WRET<span>VISION</span></h1>
+      <div class="lightning-bar"></div>
+      <p class="hero-sub">Honest takes on films, shows, and games.<br>Even the forgotten ones.</p>
+    </div>
+
+    <!-- RIGHT: System Notice -->
+    <div class="system-panel">
+      <div class="panel-header">SYSTEM NOTICE</div>
+      <p class="system-text">The archive is vast.<br>The truth is subjective.<br>You decide.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CATEGORY NAV ── -->
+<div class="category-nav">
+  <a href="movies.html" class="cat-card movies">
+    <span class="cat-icon">▶</span>
+    <span class="cat-name">MOVIES</span>
+    <span class="cat-count" id="count-movies">— reviews</span>
+  </a>
+  <a href="tv.html" class="cat-card tv">
+    <span class="cat-icon">◈</span>
+    <span class="cat-name">TV SHOWS</span>
+    <span class="cat-count" id="count-tv">— reviews</span>
+  </a>
+  <a href="games.html" class="cat-card games">
+    <span class="cat-icon">◆</span>
+    <span class="cat-name">GAMES</span>
+    <span class="cat-count" id="count-games">— reviews</span>
+  </a>
+  <a href="horror-vault.html" class="cat-card horror">
+    <span class="cat-icon">☠</span>
+    <span class="cat-name">HORROR VAULT</span>
+    <span class="cat-count" id="count-horror">— titles</span>
+  </a>
+</div>
+
+<!-- ── STATS BAR (with outer metadata) ── -->
+<div class="stats-outer">
+  <span class="stats-meta-left">ARCHIVE UPDATED: <span class="stats-date">05.25.2024</span></span>
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num" id="stat-total">—</span><span class="stat-label">TOTAL REVIEWS</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-genres">—</span><span class="stat-label">GENRES</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-earliest">—</span><span class="stat-label">EARLIEST</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-avg">—</span><span class="stat-label">AVG SCORE</span></div>
+  </div>
+  <span class="stats-meta-right">DATABASE: ONLINE <span class="db-live">●</span></span>
+</div>
+
+<div class="main-layout">
+  <main class="reviews-col">
+    <div class="col-header">latest reviews</div>
+    <div id="reviews-container"></div>
+    <div class="no-results" id="no-results"><p class="no-results-text">>> NO REVIEWS FOUND YET. CHECK BACK SOON. _</p></div>
+    <div class="pagination" id="pagination"></div>
+  </main>
+  <aside class="sidebar">
+    <div class="sidebar-widget">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="widget-title">about this site</div>
+      <p class="about-text">Movies, shows, and games I want to write about. Obscure picks, forgotten classics, guilty pleasures. If it stuck with me, it ends up here.</p>
+    </div>
+    <div class="sidebar-widget">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="widget-title genre-widget-title" id="genre-toggle" role="button" tabindex="0" aria-expanded="false">
+        browse by genre <span class="genre-toggle-arrow">▼</span>
+      </div>
+      <div class="genre-tags-wrap" id="genre-tags-wrap">
+        <div class="genre-tags" id="genre-tags"></div>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="widget-title">top rated</div>
+      <div class="top-tabs" id="top-tabs">
+        <button class="top-tab active top-tab-game" data-cat="game">GAMES</button>
+        <button class="top-tab top-tab-movie" data-cat="movie">MOVIES</button>
+        <button class="top-tab top-tab-tv" data-cat="tv">TV</button>
+      </div>
+      <ul class="sidebar-list" id="top-rated-list"></ul>
+    </div>
+
+    <!-- VHS ARCHIVE TAPE MODULE -->
+    <div class="sidebar-widget vhs-widget">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="widget-title">archive tape</div>
+      <div class="vhs-tape-wrap" id="vhs-tape-wrap">
+        <img src="images/VHS%20tape/Wretvision_tape.png" alt="VHS Archive Tape" class="vhs-tape-img" />
+        <div class="vhs-flicker"></div>
+        <div class="vhs-hover-text">&#9654; CLICK TO PLAY</div>
+      </div>
+      <div class="vhs-meta">
+        <div class="vhs-meta-row">
+          <span class="vhs-meta-key">TITLE</span>
+          <span class="vhs-meta-val" id="vhs-title">—</span>
+        </div>
+        <div class="vhs-meta-row">
+          <span class="vhs-meta-key">TYPE</span>
+          <span class="vhs-meta-val" id="vhs-cat">—</span>
+        </div>
+        <div class="vhs-meta-row">
+          <span class="vhs-meta-key">YEAR</span>
+          <span class="vhs-meta-val" id="vhs-year">—</span>
+        </div>
+      </div>
+      <div class="vhs-eq-wrap">
+        <div class="vhs-eq-label">AUDIO SIGNAL</div>
+        <div class="vhs-eq" id="vhs-eq"></div>
+        <div class="vhs-controls">
+          <input type="range" class="vhs-volume" id="vhs-volume" min="0" max="1" step="0.01" value="0.7">
+          <button class="vhs-mute" id="vhs-mute">PLAY</button>
+        </div>
+        <div class="vhs-error" id="vhs-error"></div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- ── LIVE STREAMS SIDE PANEL ── -->
+<div class="streams-panel" id="streams-panel">
+  <div class="streams-drawer" id="streams-drawer">
+    <div class="streams-drawer-inner">
+      <div class="streams-panel-header">◈ ON AIR</div>
+      <div class="stream-block">
+        <div class="stream-label"><span class="stream-dot yt-dot"></span>YOUTUBE // @WRETVISION</div>
+        <div class="stream-frame-wrap" id="yt-frame-wrap"></div>
+      </div>
+      <div class="stream-divider"></div>
+      <div class="stream-block">
+        <div class="stream-label"><span class="stream-dot twitch-dot"></span>TWITCH // WRETIC</div>
+        <div class="stream-frame-wrap" id="twitch-frame-wrap"></div>
+      </div>
+    </div>
+  </div>
+  <button class="streams-tab" id="streams-tab" aria-expanded="false" aria-label="Toggle live streams">
+    <span class="streams-tab-arrow" id="streams-tab-arrow">▶</span>
+    <span class="streams-tab-label"></span>
+  </button>
+</div>
+
+<footer class="footer">
+  &copy; WRETVISION, JUST OPINIONS.<span class="blink"> _</span><br>
+  <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR THE LOVE OF FILM, TV &amp; GAMES</span>
+</footer>
+
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+    <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+    <button class="modal-close" id="modal-close">[ X ]</button>
+    <div id="modal-inner"></div>
+  </div>
+</div>
+
+<audio id="bg-audio" loop preload="auto">
+  <source src="audio/rain_and_thunder.mp3" type="audio/mpeg">
+  <source src="audio/rain_and_thunder.wav" type="audio/wav">
+</audio>
+<script src="reviews.js"></script>
+<script src="horror-vault.js"></script>
+<script src="shared.js"></script>
+<script src="hero-effects.js"></script>
+<script>
+  /* category counts */
+  document.getElementById('count-movies').textContent = REVIEWS.filter(r => r.category === 'movie').length + ' reviews';
+  document.getElementById('count-tv').textContent     = REVIEWS.filter(r => r.category === 'tv').length + ' reviews';
+  document.getElementById('count-games').textContent  = REVIEWS.filter(r => r.category === 'game').length + ' reviews';
+  document.getElementById('count-horror').textContent = HORROR_VAULT.length + ' titles';
+  initPage('all');
+
+  /* ── BOOT SEQUENCE ANIMATION ── */
+  (function() {
+    var lines = [
+      { text: 'BOOTING ARCHIVE...',            delay: 400  },
+      { text: 'CONNECTING TO MEDIA DATABASE...', delay: 1100 },
+      { text: 'SYNCING REVIEWS...',             delay: 1900 },
+      { text: REVIEWS.length + ' REVIEWS LOADED.', delay: 2700, done: true }
+    ];
+    var log = document.getElementById('broadcast-log');
+    if (!log) return;
+    log.innerHTML = '';
+
+    lines.forEach(function(line) {
+      setTimeout(function() {
+        var span = document.createElement('span');
+        span.className = 'log-line' + (line.done ? ' done' : ' active');
+        span.textContent = line.text;
+        log.appendChild(span);
+        if (log.children.length > 4) log.removeChild(log.children[0]);
+      }, line.delay);
+    });
+  })();
+
+  /* ── LOCAL CLOCK ── */
+  (function() {
+    var timeEl = document.getElementById('np-time');
+    if (!timeEl) return;
+    function tick() {
+      var now = new Date();
+      timeEl.textContent =
+        String(now.getHours()).padStart(2, '0') + ':' +
+        String(now.getMinutes()).padStart(2, '0') + ':' +
+        String(now.getSeconds()).padStart(2, '0');
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+
+  /* ── NOW TRANSMITTING: rotate latest 3 reviews every 10s ── */
+  (function() {
+    var titleEl = document.getElementById('np-title');
+    if (!titleEl || !window.REVIEWS || !REVIEWS.length) return;
+    var sorted = REVIEWS.slice().sort(function(a, b) { return b.id - a.id; });
+    var picks = sorted.slice(0, 3);
+    var idx = 0;
+    function show() {
+      var r = picks[idx];
+      titleEl.textContent = r.title + ' (' + r.year + ')';
+      idx = (idx + 1) % picks.length;
+    }
+    show();
+    setInterval(show, 10000);
+  })();
+
+  /* ── SESSION TIMER ── */
+  (function() {
+    var el = document.getElementById('ticker-session');
+    if (!el) return;
+    var sec = 0;
+    setInterval(function() {
+      sec++;
+      var h = Math.floor(sec / 3600);
+      var m = Math.floor((sec % 3600) / 60);
+      var s = sec % 60;
+      el.textContent =
+        String(h).padStart(2, '0') + ':' +
+        String(m).padStart(2, '0') + ':' +
+        String(s).padStart(2, '0');
+    }, 1000);
+  })();
+
+  /* ── GENRE TOGGLE ── */
+  (function() {
+    var toggle = document.getElementById('genre-toggle');
+    var wrap   = document.getElementById('genre-tags-wrap');
+    if (!toggle || !wrap) return;
+    function handleToggle() {
+      var isOpen = wrap.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    }
+    toggle.addEventListener('click', handleToggle);
+    toggle.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleToggle(); }
+    });
+  })();
+
+  /* hero-effects.js handles rain + lightning (default blue colour) */
+
+  /* ── VHS META: populate from latest review ── */
+  (function() {
+    if (!window.REVIEWS || !REVIEWS.length) return;
+    var latest = REVIEWS.slice().sort(function(a, b) { return b.id - a.id; })[0];
+    var t = document.getElementById('vhs-title');
+    var c = document.getElementById('vhs-cat');
+    var y = document.getElementById('vhs-year');
+    if (t) t.textContent = latest.title;
+    if (c) c.textContent = latest.category ? latest.category.toUpperCase() : '—';
+    if (y) y.textContent = latest.year || '—';
+  })();
+
+  /* ── AUDIO + VHS EQUALIZER ── */
+  (function() {
+    var audio    = document.getElementById('bg-audio');
+    var tapeWrap = document.getElementById('vhs-tape-wrap');
+    var eq       = document.getElementById('vhs-eq');
+    var volEl    = document.getElementById('vhs-volume');
+    var muteEl   = document.getElementById('vhs-mute');
+    var errEl    = document.getElementById('vhs-error');
+    if (!audio || !eq) return;
+
+    /* diagnostic: log file state on load */
+    console.log('[AUDIO] element found. src:', audio.src);
+    audio.addEventListener('canplaythrough', function() {
+      console.log('[AUDIO] canplaythrough — file loaded OK');
+    });
+    audio.addEventListener('error', function() {
+      var code = audio.error ? audio.error.code : '?';
+      console.error('[AUDIO] load error, code:', code, 'src:', audio.src);
+      showError('AUDIO SOURCE OFFLINE');
+    });
+
+    /* build equalizer bars */
+    var NUM = 16, bars = [];
+    for (var i = 0; i < NUM; i++) {
+      var b = document.createElement('div');
+      b.className = 'vhs-bar';
+      eq.appendChild(b);
+      bars.push(b);
+    }
+
+    var vol = 0.7, muted = false, started = false;
+    audio.volume = vol;
+    audio.muted  = false;
+
+    /* random fallback animation before audio starts */
+    var env = [0.25,0.35,0.50,0.65,0.78,0.88,0.96,1.0,0.98,0.90,0.80,0.68,0.55,0.42,0.32,0.22];
+    function fallback() {
+      if (started) return;
+      bars.forEach(function(b, i) {
+        b.style.height = Math.max(2, Math.round((Math.random() * 0.7 + 0.15) * 20 * env[i])) + 'px';
+      });
+      setTimeout(fallback, 130);
+    }
+    fallback();
+
+    /* bars idle flat when paused/muted, random when playing */
+    function animateEQ() {
+      if (audio.paused || audio.muted) {
+        bars.forEach(function(b) { b.style.height = '2px'; });
+        setTimeout(animateEQ, 200);
+        return;
+      }
+      bars.forEach(function(b, i) {
+        b.style.height = Math.max(2, Math.round((Math.random() * 0.7 + 0.15) * 20 * env[i])) + 'px';
+      });
+      setTimeout(animateEQ, 130);
+    }
+
+    function updateTrack() {
+      if (!volEl) return;
+      var pct = (parseFloat(volEl.value) * 100).toFixed(1);
+      volEl.style.background =
+        'linear-gradient(to right,#4fffb0 0%,#4fffb0 ' + pct +
+        '%,rgba(75,255,176,0.18) ' + pct + '%,rgba(75,255,176,0.18) 100%)';
+    }
+
+    function setBtn(label, isMuted) {
+      if (!muteEl) return;
+      muteEl.textContent = label;
+      muteEl.classList.toggle('muted', isMuted);
+    }
+
+    function showError(msg) {
+      if (!errEl) return;
+      errEl.textContent = msg;
+      errEl.style.display = 'block';
+    }
+
+    function startAudio() {
+      if (started) return;
+      started = true;
+      console.log('[AUDIO] startAudio(). src:', audio.currentSrc || audio.src,
+                  '| volume:', audio.volume, '| muted:', audio.muted,
+                  '| readyState:', audio.readyState);
+
+      /* No Web Audio API — plain HTMLAudioElement only.
+         Get basic sound working first; visualiser uses random bars. */
+      audio.muted  = false;
+      audio.volume = vol;
+
+      var p = audio.play();
+      if (p !== undefined) {
+        p.then(function() {
+          console.log('[AUDIO] play() resolved ✓ currentSrc:', audio.currentSrc,
+                      '| volume:', audio.volume, '| muted:', audio.muted);
+          setBtn('MUTE', false);
+          if (errEl) errEl.style.display = 'none';
+          animateEQ();
+        }).catch(function(e) {
+          console.error('[AUDIO] play() rejected ✗ name:', e.name, '| msg:', e.message);
+          started = false;
+          setBtn('PLAY', false);
+          showError('PLAYBACK BLOCKED — ' + e.name);
+        });
+      }
+    }
+
+    /* volume slider */
+    if (volEl) {
+      updateTrack();
+      volEl.addEventListener('input', function() {
+        vol = parseFloat(this.value);
+        updateTrack();
+        if (!started) { startAudio(); return; }
+        audio.volume = vol;
+        if (vol > 0 && muted) {
+          muted = false;
+          audio.muted = false;
+          setBtn('MUTE', false);
+        }
+        console.log('[AUDIO] volume →', vol, '| muted:', audio.muted);
+      });
+    }
+
+    /* mute button */
+    if (muteEl) {
+      muteEl.addEventListener('click', function() {
+        if (!started) { startAudio(); return; }
+        muted = !muted;
+        audio.muted  = muted;
+        audio.volume = muted ? 0 : vol;
+        if (volEl) { volEl.value = muted ? 0 : vol; updateTrack(); }
+        setBtn(muted ? 'UNMUTE' : 'MUTE', muted);
+        console.log('[AUDIO] mute toggled →', muted, 'volume:', audio.volume);
+      });
+    }
+
+    /* clicking the tape image also starts playback */
+    if (tapeWrap) {
+      tapeWrap.addEventListener('click', function() {
+        if (!started) startAudio();
+      });
+    }
+  })();
+
+  /* ── LIVE STREAMS SIDE PANEL ── */
+  (function() {
+    var panel  = document.getElementById('streams-panel');
+    var drawer = document.getElementById('streams-drawer');
+    var tab    = document.getElementById('streams-tab');
+    var arrow  = document.getElementById('streams-tab-arrow');
+    if (!panel || !drawer || !tab) return;
+
+    var loaded = false;
+    var CHANNEL_ID = 'UCC3aFC7Gr2eYUEGc6IRga0g';
+    // Fallback queue of known long-form videos (tried in order, skips any with embedding disabled)
+    var FALLBACK_IDS = ['zudhgMHtjTI','0DXg1YMJGeA','D5N-PVVk6Bs','_w37Ej022hI','JPekxZy6R8k','O51Q3txABbY','BtaHDl93HIk'];
+
+    /* ── YouTube via IFrame API — auto-skips Error 101/150/100 ── */
+    function injectYouTube(queue) {
+      var ytWrap = document.getElementById('yt-frame-wrap');
+      if (!ytWrap || !queue.length) { showYTFallback(ytWrap); return; }
+
+      var playerEl = document.createElement('div');
+      playerEl.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;';
+      ytWrap.appendChild(playerEl);
+      var ytPlayer;
+
+      function tryNext() {
+        if (!queue.length) { showYTFallback(ytWrap); return; }
+        var vid = queue.shift();
+        if (ytPlayer) {
+          ytPlayer.loadVideoById(vid);
+        } else {
+          ytPlayer = new YT.Player(playerEl, {
+            videoId: vid,
+            playerVars: { autoplay: 0, mute: 1, rel: 0 },
+            events: {
+              onError: function(e) {
+                // 100 = not found, 101/150 = embedding not allowed
+                if (e.data === 100 || e.data === 101 || e.data === 150) tryNext();
+              }
+            }
+          });
+        }
+      }
+
+      if (window.YT && window.YT.Player) {
+        tryNext();
+      } else {
+        var prev = window.onYouTubeIframeAPIReady;
+        window.onYouTubeIframeAPIReady = function() { if (prev) prev(); tryNext(); };
+        var s = document.createElement('script');
+        s.src = 'https://www.youtube.com/iframe_api';
+        document.head.appendChild(s);
+      }
+    }
+
+    function showYTFallback(wrap) {
+      if (!wrap) return;
+      wrap.innerHTML = '<a class="stream-fallback" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">▶ VISIT<br>YOUTUBE</a>';
+    }
+
+    function startYouTube() {
+      fetch('https://www.youtube.com/feeds/videos.xml?channel_id=' + CHANNEL_ID)
+        .then(function(r) { return r.text(); })
+        .then(function(xml) {
+          var ids    = xml.match(/<yt:videoId>([^<]+)<\/yt:videoId>/g) || [];
+          var titles = xml.match(/<title>([^<]+)<\/title>/g) || [];
+          var queue  = [];
+          for (var i = 0; i < ids.length; i++) {
+            if (!/#short/i.test(titles[i + 1] || '')) {
+              queue.push(ids[i].replace(/<\/?yt:videoId>/g, ''));
+            }
+          }
+          injectYouTube(queue.length ? queue : FALLBACK_IDS.slice());
+        })
+        .catch(function() { injectYouTube(FALLBACK_IDS.slice()); });
+    }
+
+    /* ── Twitch ── */
+    function injectTwitch() {
+      var wrap = document.getElementById('twitch-frame-wrap');
+      if (!wrap) return;
+      var host = window.location.hostname || 'wretvision.com';
+      // include both production and localhost as parents
+      var parents = host === 'localhost' || host === '127.0.0.1'
+        ? 'parent=localhost&parent=wretvision.com'
+        : 'parent=' + encodeURIComponent(host) + '&parent=localhost';
+      var tw = document.createElement('iframe');
+      tw.src = 'https://player.twitch.tv/?channel=wretic&' + parents + '&muted=true&autoplay=false';
+      tw.setAttribute('allow', 'autoplay; encrypted-media; fullscreen');
+      tw.setAttribute('scrolling', 'no');
+      tw.allowFullscreen = true;
+      wrap.appendChild(tw);
+    }
+
+    function injectIframes() {
+      if (loaded) return;
+      loaded = true;
+      startYouTube();
+      injectTwitch();
+    }
+
+    tab.addEventListener('click', function() {
+      var isOpen = drawer.classList.toggle('open');
+      tab.setAttribute('aria-expanded', String(isOpen));
+      arrow.textContent = isOpen ? '◀' : '▶';
+      if (isOpen) injectIframes();
+    });
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WretVision — Review Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #0a8fd4; --blue-light: #3bbfff; --bg: #050e18; --bg2: #091520;
+      --bg3: #0c1e2e; --text: #c8e8ff; --muted: #3d6a88; --accent: #ffe066;
+      --border: rgba(10,143,212,0.25); --green: #4fffb0;
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'Rajdhani', sans-serif; font-size: 16px; min-height: 100vh; padding: 40px 20px; }
+    body::before { content: ''; position: fixed; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.06) 3px, rgba(0,0,0,0.06) 4px); pointer-events: none; z-index: 9999; }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 { font-family: 'Press Start 2P', monospace; font-size: 13px; color: var(--blue-light); text-shadow: 0 0 12px var(--blue); margin-bottom: 6px; }
+    h1 span { color: var(--accent); }
+    .subtitle { font-family: 'VT323', monospace; font-size: 22px; color: var(--muted); margin-bottom: 32px; letter-spacing: 1px; }
+    .section { background: var(--bg2); border: 1px solid var(--border); border-left: 3px solid var(--blue); padding: 24px; margin-bottom: 20px; }
+    .section-title { font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--blue-light); letter-spacing: 2px; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 1px dashed rgba(10,143,212,0.3); }
+    .row { display: flex; gap: 10px; }
+    input[type="text"], input[type="number"], select, textarea { background: var(--bg3); border: 1px solid var(--blue); color: var(--text); font-family: 'Rajdhani', sans-serif; font-size: 17px; padding: 10px 14px; flex: 1; outline: none; transition: border-color 0.2s; }
+    input[type="text"]:focus, input[type="number"]:focus, select:focus, textarea:focus { border-color: var(--blue-light); }
+    textarea { width: 100%; resize: vertical; min-height: 130px; line-height: 1.6; }
+    select { cursor: pointer; flex: none; }
+    select option { background: var(--bg2); }
+    .btn { font-family: 'Press Start 2P', monospace; font-size: 8px; background: var(--blue); color: #fff; border: none; padding: 12px 18px; cursor: pointer; letter-spacing: 1px; transition: background 0.2s; white-space: nowrap; }
+    .btn:hover { background: var(--blue-light); color: var(--bg); }
+    .btn:disabled { opacity: 0.4; cursor: default; pointer-events: none; }
+    .btn-ghost { background: transparent; border: 1px solid var(--blue); color: var(--blue-light); }
+    .btn-ghost:hover { background: rgba(10,143,212,0.15); color: #fff; }
+    .btn-green { background: var(--green); color: var(--bg); }
+    .btn-green:hover { background: #7fffcc; }
+    .btn-accent { background: var(--accent); color: var(--bg); }
+    .btn-accent:hover { background: #fff3a0; }
+    .results-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 16px; }
+    .result-card { background: var(--bg3); border: 1px solid var(--border); padding: 12px; cursor: pointer; transition: border-color 0.15s, background 0.15s; display: flex; flex-direction: column; gap: 6px; }
+    .result-card:hover { border-color: var(--blue); background: rgba(10,143,212,0.08); }
+    .result-card.selected { border-color: var(--green); background: rgba(79,255,176,0.06); }
+    .result-title { font-family: 'VT323', monospace; font-size: 20px; color: #e8f4ff; line-height: 1.1; }
+    .result-meta { font-family: 'VT323', monospace; font-size: 16px; color: var(--muted); }
+    .result-genres { font-family: 'Press Start 2P', monospace; font-size: 5px; color: var(--accent); letter-spacing: 1px; }
+    .output-box { background: var(--bg); border: 1px solid var(--blue); padding: 20px; font-family: 'Courier New', monospace; font-size: 13px; color: var(--green); white-space: pre-wrap; word-break: break-word; line-height: 1.6; max-height: 600px; overflow-y: auto; margin-bottom: 12px; }
+    .action-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .copy-confirm { font-family: 'VT323', monospace; font-size: 20px; color: var(--green); opacity: 0; transition: opacity 0.3s; }
+    .copy-confirm.show { opacity: 1; }
+    .status { font-family: 'VT323', monospace; font-size: 18px; color: var(--muted); margin-top: 12px; min-height: 24px; letter-spacing: 1px; }
+    .status.error { color: #ff6b6b; }
+    .status.success { color: var(--green); }
+    .genre-pill { font-family: 'VT323', monospace; font-size: 17px; padding: 2px 10px; border: 1px solid var(--blue); color: var(--blue-light); background: transparent; cursor: pointer; transition: all 0.15s; user-select: none; display: inline-block; margin: 3px; }
+    .genre-pill.active { background: rgba(10,143,212,0.25); border-color: var(--blue-light); color: #fff; }
+    .field-label { font-family: 'Press Start 2P', monospace; font-size: 6px; color: var(--muted); letter-spacing: 2px; margin-bottom: 8px; display: block; }
+    .field-group { margin-bottom: 18px; }
+    .hint { font-family: 'VT323', monospace; font-size: 16px; color: var(--muted); margin-top: 6px; }
+    hr { border: none; border-top: 1px dashed rgba(10,143,212,0.25); margin: 20px 0; }
+    .selected-info { background: rgba(79,255,176,0.05); border: 1px solid rgba(79,255,176,0.2); padding: 14px 18px; margin-bottom: 18px; }
+    .selected-info-title { font-family: 'VT323', monospace; font-size: 26px; color: var(--green); }
+    .selected-info-meta { font-family: 'VT323', monospace; font-size: 18px; color: var(--muted); }
+    .score-row { display: flex; gap: 10px; align-items: center; }
+    .score-badge { font-family: 'Press Start 2P', monospace; font-size: 10px; padding: 8px 14px; background: var(--bg3); border: 1px solid var(--border); color: var(--accent); min-width: 70px; text-align: center; }
+    .generating-indicator { font-family: 'VT323', monospace; font-size: 24px; color: var(--accent); letter-spacing: 2px; text-align: center; padding: 30px; display: none; background: var(--bg2); border: 1px solid var(--border); border-left: 3px solid var(--accent); margin-bottom: 20px; }
+    .generating-indicator.show { display: block; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    .blink { animation: blink 1s step-end infinite; }
+    .cat-selector { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-bottom: 20px; }
+    .cat-btn { font-family: 'Press Start 2P', monospace; font-size: 7px; padding: 14px 8px; background: var(--bg3); border: 1px solid var(--border); color: var(--muted); cursor: pointer; letter-spacing: 1px; text-align: center; transition: all 0.15s; }
+    .cat-btn:hover { border-color: var(--blue); color: var(--blue-light); }
+    .cat-btn.active-movie { border-color: var(--blue-light); background: rgba(10,143,212,0.15); color: var(--blue-light); }
+    .cat-btn.active-tv    { border-color: var(--green);      background: rgba(79,255,176,0.1); color: var(--green); }
+    .cat-btn.active-game  { border-color: var(--accent);     background: rgba(255,224,102,0.1); color: var(--accent); }
+
+    .image-slots {
+      display: grid;
+      gap: 12px;
+    }
+
+    .image-slot {
+      background: rgba(5,14,24,0.35);
+      border: 1px solid rgba(10,143,212,0.25);
+      padding: 14px;
+    }
+
+    .image-slot-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .image-slot-title {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 6px;
+      color: var(--accent);
+      letter-spacing: 2px;
+    }
+
+    .image-preview {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border: 1px solid rgba(10,143,212,0.25);
+      margin-top: 10px;
+      display: none;
+    }
+
+    .image-meta {
+      font-family: 'VT323', monospace;
+      font-size: 16px;
+      color: var(--muted);
+      margin-top: 8px;
+      min-height: 20px;
+    }
+
+    .small-row {
+      display: grid;
+      grid-template-columns: 1fr 140px;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .path-preview {
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      color: var(--green);
+      background: var(--bg);
+      border: 1px solid rgba(79,255,176,0.25);
+      padding: 8px;
+      margin-top: 8px;
+      word-break: break-all;
+    }
+
+    @media (max-width: 560px) {
+      .small-row { grid-template-columns: 1fr; }
+    }
+
+    #step2, #step3 { display: none; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>WRET<span>VISION</span></h1>
+  <p class="subtitle">// review generator //</p>
+
+  <div class="section" id="step1">
+    <div class="section-title">step 01 — what are you reviewing?</div>
+    <div class="field-group">
+      <span class="field-label">category</span>
+      <div class="cat-selector">
+        <button class="cat-btn active-movie" id="cat-movie" onclick="setCategory('movie')">▶ MOVIE</button>
+        <button class="cat-btn" id="cat-tv" onclick="setCategory('tv')">◈ TV SHOW</button>
+        <button class="cat-btn" id="cat-game" onclick="setCategory('game')">◆ GAME</button>
+      </div>
+    </div>
+    <div class="field-group">
+      <span class="field-label">search title</span>
+      <div class="row">
+        <input type="text" id="search-input" placeholder="e.g. Breaking Bad, Elden Ring, Dredd..." />
+        <button class="btn" onclick="doSearch()">SEARCH</button>
+      </div>
+    </div>
+    <div class="status" id="search-status"></div>
+    <div class="results-grid" id="results-grid"></div>
+  </div>
+
+  <div class="section" id="step2">
+    <div class="section-title">step 02 — configure &amp; write your thoughts</div>
+    <div class="selected-info" id="selected-info"></div>
+    <div class="field-group">
+      <span class="field-label">genres (click to toggle)</span>
+      <div id="genre-map"></div>
+    </div>
+    <hr />
+    <div class="field-group">
+      <span class="field-label">your score (1–10)</span>
+      <div class="score-row">
+        <input type="number" id="score-input" min="1" max="10" placeholder="e.g. 9" style="max-width:100px;flex:none;" oninput="updateScoreBadge()" />
+        <div class="score-badge" id="score-badge">?/10</div>
+      </div>
+    </div>
+    <div class="field-group">
+      <span class="field-label">featured?</span>
+      <select id="featured-input" style="max-width:160px;">
+        <option value="false">No</option>
+        <option value="true">Yes</option>
+      </select>
+    </div>
+    <hr />
+    <div class="field-group">
+      <span class="field-label">your raw thoughts — dump whatever is in your head</span>
+      <textarea id="user-notes" placeholder="Short or long, keywords or full sentences. E.g: Walter White best written character ever, the slow transformation to villain is insane. Cranston deserved every award. Best finale I've ever seen."></textarea>
+      <p class="hint">Claude reads your score + notes and writes the full review in your voice. The more you give it, the better it gets.</p>
+    </div>
+
+    <hr />
+
+    <div class="field-group">
+      <span class="field-label">optional images (max 2)</span>
+      <p class="hint">Pick screenshots if you want visuals in the review. The tool resizes to 1200px wide, converts to WebP, and adds the paths to the review object. Save the generated files into your site folder using the shown paths.</p>
+
+      <div class="small-row">
+        <input type="text" id="image-folder-slug" placeholder="folder slug, e.g. death-stranding-2" />
+        <button class="btn btn-ghost" type="button" onclick="autoFillImageSlug()">AUTO SLUG</button>
+      </div>
+      <p class="hint">Folder output: images/[category]/[slug]/shot-1.webp</p>
+
+      <div class="image-slots">
+        <div class="image-slot" id="image-slot-1">
+          <div class="image-slot-header">
+            <div class="image-slot-title">image 01</div>
+            <button class="btn btn-ghost" type="button" onclick="clearImageSlot(1)">CLEAR</button>
+          </div>
+          <input type="file" id="image-file-1" accept="image/*" onchange="handleImageFile(1)" />
+          <div class="small-row">
+            <input type="text" id="image-caption-1" placeholder="optional caption" />
+            <select id="image-place-1">
+              <option value="1">After paragraph 1</option>
+              <option value="2">After paragraph 2</option>
+              <option value="3">After paragraph 3</option>
+            </select>
+          </div>
+          <img class="image-preview" id="image-preview-1" alt="">
+          <div class="image-meta" id="image-meta-1"></div>
+          <div class="path-preview" id="image-path-1">no image selected</div>
+        </div>
+
+        <div class="image-slot" id="image-slot-2">
+          <div class="image-slot-header">
+            <div class="image-slot-title">image 02</div>
+            <button class="btn btn-ghost" type="button" onclick="clearImageSlot(2)">CLEAR</button>
+          </div>
+          <input type="file" id="image-file-2" accept="image/*" onchange="handleImageFile(2)" />
+          <div class="small-row">
+            <input type="text" id="image-caption-2" placeholder="optional caption" />
+            <select id="image-place-2">
+              <option value="2">After paragraph 2</option>
+              <option value="1">After paragraph 1</option>
+              <option value="3">After paragraph 3</option>
+            </select>
+          </div>
+          <img class="image-preview" id="image-preview-2" alt="">
+          <div class="image-meta" id="image-meta-2"></div>
+          <div class="path-preview" id="image-path-2">no image selected</div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn" onclick="generateReview()">WRITE REVIEW</button>
+  </div>
+
+  <div class="generating-indicator" id="generating">
+    >> writing your review<span class="blink">_</span>
+  </div>
+
+  <div class="section" id="step3">
+    <div class="section-title">step 03 — your generated review</div>
+    <div class="output-box" id="output-box"></div>
+    <div class="action-row">
+      <button class="btn btn-green" onclick="injectIntoSite()" id="inject-btn">ADD TO SITE</button>
+      <button class="btn btn-accent" onclick="copyOutput()">COPY</button>
+      <button class="btn btn-ghost" onclick="savePreparedImages()">SAVE IMAGES</button>
+      <button class="btn btn-ghost" onclick="generateReview()">REGENERATE</button>
+      <button class="btn btn-ghost" onclick="resetTool()">START OVER</button>
+      <span class="copy-confirm" id="copy-confirm">>> COPIED!</span>
+    </div>
+    <div class="status" id="inject-status"></div>
+    <p class="hint" style="margin-top:10px;">
+      <strong style="color:var(--blue-light);">ADD TO SITE</strong> — Chrome only. Opens your reviews.js, injects the review, saves it automatically.<br>
+      Then push to GitHub and you're live.
+    </p>
+  </div>
+</div>
+
+<script>
+  const TMDB_KEY      = '901e304e38b7fb43f193ee28baf95720';
+  const TMDB_BASE     = 'https://api.themoviedb.org/3';
+  const RAWG_KEY      = 'ac287eab94f74402a30882be7aa15e48';
+  const RAWG_BASE     = 'https://api.rawg.io/api';
+
+  // Paste your real Claude / Anthropic API key here.
+  const ANTHROPIC_KEY = 'PASTE_YOUR_CLAUDE_API_KEY_HERE';
+  const ANTHROPIC_MODEL = 'claude-sonnet-4-6';
+
+  const TMDB_GENRE_MAP = {
+    28:'action', 12:'adventure', 16:'anime', 35:'comedy', 80:'crime',
+    99:'documentary', 18:'drama', 10751:'family', 14:'fantasy', 36:'history',
+    27:'horror', 9648:'mystery', 878:'sci-fi', 53:'thriller', 10752:'war',
+    37:'western', 10759:'action', 10765:'sci-fi', 10768:'war', 10766:'drama'
+  };
+
+  const RAWG_GENRE_MAP = {
+    'action':'action', 'indie':'indie', 'adventure':'adventure',
+    'role-playing-games-rpg':'rpg', 'strategy':'strategy', 'shooter':'shooter',
+    'casual':'casual', 'simulation':'simulation', 'puzzle':'puzzle',
+    'arcade':'arcade', 'platformer':'platformer', 'racing':'racing',
+    'sports':'sports', 'massively-multiplayer':'mmo', 'family':'family',
+    'fighting':'fighting', 'board-games':'board', 'educational':'educational',
+    'card':'card'
+  };
+
+  const ALL_SITE_GENRES = {
+    movie: ['action','adventure','anime','comedy','crime','cult','documentary','drama','fantasy','history','horror','mystery','noir','sci-fi','thriller','war','western'],
+    tv:    ['action','adventure','anime','comedy','crime','documentary','drama','fantasy','history','horror','mystery','sci-fi','thriller','war'],
+    game:  ['action','adventure','arcade','fighting','horror','indie','mmo','platformer','puzzle','racing','rpg','shooter','simulation','sports','strategy']
+  };
+
+  let currentCategory = 'movie';
+  let selectedItem    = null;
+  let selectedGenres  = [];
+  let siteFileHandle  = null;
+  let imageSlots = { 1: null, 2: null };
+
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function repairClaudeJson(raw) {
+    let cleaned = String(raw || '').trim();
+
+    cleaned = cleaned
+      .replace(/^```json\s*/i, '')
+      .replace(/^```\s*/i, '')
+      .replace(/```$/i, '')
+      .trim();
+
+    const firstBrace = cleaned.indexOf('{');
+    const lastBrace = cleaned.lastIndexOf('}');
+    if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
+      cleaned = cleaned.slice(firstBrace, lastBrace + 1);
+    }
+
+    const attempts = [];
+
+    attempts.push(cleaned);
+
+    // Fix the common malformed structure Claude produced:
+    // {"excerpt":"...","paragraphs":["p1","p2","p3"},"verdict":"..."}
+    // should be:
+    // {"excerpt":"...","paragraphs":["p1","p2","p3"],"verdict":"..."}
+    attempts.push(cleaned.replace(/"\s*\}\s*,\s*"verdict"\s*:/, '"],"verdict":'));
+
+    // Fix if it accidentally closes the paragraphs array as an object before verdict.
+    attempts.push(cleaned.replace(/\}\s*,\s*"verdict"\s*:/, '],"verdict":'));
+
+    // Fix trailing commas before object/array close.
+    attempts.push(cleaned.replace(/,\s*([}\]])/g, '$1'));
+
+    // Combine the common paragraph fix with trailing comma cleanup.
+    attempts.push(cleaned
+      .replace(/"\s*\}\s*,\s*"verdict"\s*:/, '"],"verdict":')
+      .replace(/,\s*([}\]])/g, '$1')
+    );
+
+    for (const attempt of attempts) {
+      try {
+        return JSON.parse(attempt);
+      } catch (e) {}
+    }
+
+    console.error('RAW CLAUDE RESPONSE:', raw);
+    console.error('CLEANED CLAUDE RESPONSE:', cleaned);
+    throw new Error('Claude returned broken JSON. Regenerate once.');
+  }
+
+
+  function slugify(value) {
+    return String(value || '')
+      .toLowerCase()
+      .trim()
+      .replace(/['"]/g, '')
+      .replace(/&/g, 'and')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function categoryImageFolder() {
+    if (currentCategory === 'movie') return 'movies';
+    if (currentCategory === 'tv') return 'tv';
+    return 'games';
+  }
+
+  function autoFillImageSlug() {
+    const title = selectedItem?.title || document.getElementById('search-input').value || '';
+    document.getElementById('image-folder-slug').value = slugify(title);
+    refreshImagePaths();
+  }
+
+  function getImageSlug() {
+    const input = document.getElementById('image-folder-slug');
+    let slug = slugify(input.value || selectedItem?.title || 'review-image');
+    input.value = slug;
+    return slug;
+  }
+
+  function imagePathForSlot(slot) {
+    const slug = getImageSlug();
+    return `images/${categoryImageFolder()}/${slug}/shot-${slot}.webp`;
+  }
+
+  function refreshImagePaths() {
+    [1, 2].forEach(slot => {
+      const pathEl = document.getElementById(`image-path-${slot}`);
+      if (!pathEl) return;
+      pathEl.textContent = imageSlots[slot] ? imagePathForSlot(slot) : 'no image selected';
+      if (imageSlots[slot]) imageSlots[slot].src = imagePathForSlot(slot);
+    });
+  }
+
+  async function handleImageFile(slot) {
+    const input = document.getElementById(`image-file-${slot}`);
+    const file = input.files?.[0];
+    if (!file) return;
+
+    try {
+      const processed = await resizeToWebP(file, 1200, 0.84);
+      const url = URL.createObjectURL(processed.blob);
+      const src = imagePathForSlot(slot);
+
+      imageSlots[slot] = {
+        src,
+        fileName: `shot-${slot}.webp`,
+        blob: processed.blob,
+        caption: '',
+        afterParagraph: slot === 1 ? 1 : 2,
+        width: processed.width,
+        height: processed.height,
+        originalName: file.name
+      };
+
+      const preview = document.getElementById(`image-preview-${slot}`);
+      preview.src = url;
+      preview.style.display = 'block';
+
+      document.getElementById(`image-meta-${slot}`).textContent =
+        `>> converted ${file.name} → shot-${slot}.webp · ${processed.width}×${processed.height} · ${Math.round(processed.blob.size / 1024)} KB`;
+
+      document.getElementById(`image-path-${slot}`).textContent = src;
+    } catch (e) {
+      alert('Image conversion failed: ' + e.message);
+      console.error(e);
+      clearImageSlot(slot);
+    }
+  }
+
+  function clearImageSlot(slot) {
+    imageSlots[slot] = null;
+    const file = document.getElementById(`image-file-${slot}`);
+    const preview = document.getElementById(`image-preview-${slot}`);
+    const meta = document.getElementById(`image-meta-${slot}`);
+    const path = document.getElementById(`image-path-${slot}`);
+    const caption = document.getElementById(`image-caption-${slot}`);
+
+    if (file) file.value = '';
+    if (preview) { preview.removeAttribute('src'); preview.style.display = 'none'; }
+    if (meta) meta.textContent = '';
+    if (path) path.textContent = 'no image selected';
+    if (caption) caption.value = '';
+  }
+
+  function resizeToWebP(file, maxWidth = 1200, quality = 0.84) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      const objectUrl = URL.createObjectURL(file);
+
+      img.onload = () => {
+        const scale = Math.min(1, maxWidth / img.width);
+        const width = Math.round(img.width * scale);
+        const height = Math.round(img.height * scale);
+
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, width, height);
+
+        canvas.toBlob(blob => {
+          URL.revokeObjectURL(objectUrl);
+          if (!blob) {
+            reject(new Error('Browser could not export WebP'));
+            return;
+          }
+          resolve({ blob, width, height });
+        }, 'image/webp', quality);
+      };
+
+      img.onerror = () => {
+        URL.revokeObjectURL(objectUrl);
+        reject(new Error('Could not load image'));
+      };
+
+      img.src = objectUrl;
+    });
+  }
+
+  async function savePreparedImages() {
+    const selected = [1, 2].filter(slot => imageSlots[slot]);
+    if (!selected.length) return;
+
+    if (!window.showDirectoryPicker) {
+      alert('Your browser cannot save image files automatically. Use Chrome or Edge, or manually save the generated WebP files later.');
+      return;
+    }
+
+    const rootHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
+    const imagesDir = await rootHandle.getDirectoryHandle('images', { create: true });
+    const categoryDir = await imagesDir.getDirectoryHandle(categoryImageFolder(), { create: true });
+    const slugDir = await categoryDir.getDirectoryHandle(getImageSlug(), { create: true });
+
+    for (const slot of selected) {
+      const data = imageSlots[slot];
+      const fileHandle = await slugDir.getFileHandle(`shot-${slot}.webp`, { create: true });
+      const writable = await fileHandle.createWritable();
+      await writable.write(data.blob);
+      await writable.close();
+    }
+
+    alert('Image file(s) saved into your images folder.');
+  }
+
+  function getReviewImagesForOutput() {
+    refreshImagePaths();
+
+    return [1, 2]
+      .filter(slot => imageSlots[slot])
+      .map(slot => {
+        const caption = document.getElementById(`image-caption-${slot}`).value.trim();
+        const afterParagraph = parseInt(document.getElementById(`image-place-${slot}`).value, 10) || slot;
+        return {
+          src: imagePathForSlot(slot),
+          caption,
+          afterParagraph: Math.min(3, Math.max(1, afterParagraph))
+        };
+      });
+  }
+
+
+  function setCategory(cat) {
+    currentCategory = cat;
+    ['movie','tv','game'].forEach(c => {
+      const btn = document.getElementById('cat-' + c);
+      btn.className = 'cat-btn' + (c === cat ? ' active-' + c : '');
+    });
+    const ph = { movie: 'e.g. Dredd, Dark City, Mandy...', tv: 'e.g. Breaking Bad, The Bear, Severance...', game: 'e.g. Elden Ring, Disco Elysium, Hades...' };
+    document.getElementById('search-input').placeholder = ph[cat];
+    resetResults();
+  }
+
+  function resetResults() {
+    document.getElementById('results-grid').innerHTML = '';
+    document.getElementById('search-status').textContent = '';
+    document.getElementById('step2').style.display = 'none';
+    document.getElementById('step3').style.display = 'none';
+    document.getElementById('generating').classList.remove('show');
+    selectedItem = null; selectedGenres = [];
+  }
+
+  async function doSearch() {
+    if (currentCategory === 'game') await searchRAWG();
+    else await searchTMDB();
+  }
+
+  async function searchTMDB() {
+    const query  = document.getElementById('search-input').value.trim();
+    const type   = currentCategory === 'tv' ? 'tv' : 'movie';
+    const status = document.getElementById('search-status');
+    if (!query) { setStatus(status, '>> enter a title first', 'error'); return; }
+    setStatus(status, '>> searching tmdb...', '');
+    document.getElementById('results-grid').innerHTML = '';
+    document.getElementById('step2').style.display = 'none';
+
+    try {
+      const res  = await fetch(`${TMDB_BASE}/search/${type}?api_key=${TMDB_KEY}&query=${encodeURIComponent(query)}&language=en-US`);
+      const data = await res.json();
+      if (!data.results?.length) { setStatus(status, '>> no results. try a different spelling?', 'error'); return; }
+      setStatus(status, `>> found ${data.results.length} results, pick the right one`, 'success');
+      data.results.slice(0, 9).forEach(item => {
+        const title  = item.title || item.name;
+        const date   = item.release_date || item.first_air_date || '';
+        const year   = date ? date.slice(0, 4) : '????';
+        const genres = (item.genre_ids || []).map(id => TMDB_GENRE_MAP[id]).filter(Boolean).slice(0, 3);
+        addResultCard(title, year, genres.join(' / ') || 'unknown', () => selectTMDB(item, type));
+      });
+    } catch(e) { setStatus(status, '>> connection error: ' + e.message, 'error'); }
+  }
+
+  async function searchRAWG() {
+    const query  = document.getElementById('search-input').value.trim();
+    const status = document.getElementById('search-status');
+    if (!query) { setStatus(status, '>> enter a title first', 'error'); return; }
+    setStatus(status, '>> searching rawg...', '');
+    document.getElementById('results-grid').innerHTML = '';
+
+    try {
+      const key = RAWG_KEY ? `&key=${RAWG_KEY}` : '';
+      const res  = await fetch(`${RAWG_BASE}/games?search=${encodeURIComponent(query)}&page_size=9${key}`);
+      const data = await res.json();
+      if (!data.results?.length) { setStatus(status, '>> no results. try a different spelling?', 'error'); return; }
+      setStatus(status, `>> found ${data.results.length} results, pick the right one`, 'success');
+      data.results.forEach(item => {
+        const genres = (item.genres || []).map(g => RAWG_GENRE_MAP[g.slug]).filter(Boolean).slice(0, 3);
+        const year   = item.released ? item.released.slice(0, 4) : '????';
+        addResultCard(item.name, year, genres.join(' / ') || 'unknown', () => selectRAWG(item));
+      });
+    } catch(e) { setStatus(status, '>> rawg error: ' + e.message + '. get a free key at rawg.io/apidocs', 'error'); }
+  }
+
+  function addResultCard(title, year, genreStr, onClick) {
+    const card = document.createElement('div');
+    card.className = 'result-card';
+    card.innerHTML = `
+      <div class="result-title">${escapeHtml(title)}</div>
+      <div class="result-meta">${escapeHtml(year)} · ${currentCategory === 'game' ? 'Game' : currentCategory === 'tv' ? 'TV' : 'Film'}</div>
+      <div class="result-genres">${escapeHtml(genreStr)}</div>
+    `;
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.result-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      onClick();
+    });
+    document.getElementById('results-grid').appendChild(card);
+  }
+
+  async function selectTMDB(item, type) {
+    try {
+      const res    = await fetch(`${TMDB_BASE}/${type}/${item.id}?api_key=${TMDB_KEY}&language=en-US&append_to_response=credits,release_dates,content_ratings`);
+      const detail = await res.json();
+      const title  = detail.title || detail.name;
+      const date   = detail.release_date || detail.first_air_date || '';
+      const year   = date ? parseInt(date.slice(0, 4)) : 0;
+
+      let runtime = '?? min';
+      if (type === 'movie' && detail.runtime) runtime = `${detail.runtime} min`;
+      else if (type === 'tv' && detail.episode_run_time?.[0]) runtime = `${detail.episode_run_time[0]} min/ep`;
+
+      let director = 'Unknown';
+      if (type === 'movie') { const d = detail.credits?.crew?.find(c => c.job === 'Director'); if (d) director = d.name; }
+      else director = detail.created_by?.map(c => c.name).join(', ') || 'Unknown';
+
+      let rating = 'NR';
+      if (type === 'movie') {
+        const us = detail.release_dates?.results?.find(r => r.iso_3166_1 === 'US');
+        const cert = us?.release_dates?.find(r => r.certification);
+        if (cert) rating = cert.certification;
+      } else {
+        const us = detail.content_ratings?.results?.find(r => r.iso_3166_1 === 'US');
+        if (us) rating = us.rating;
+      }
+
+      const rawGenres    = (detail.genres || []).map(g => TMDB_GENRE_MAP[g.id]).filter(Boolean);
+      const uniqueGenres = [...new Set(rawGenres)];
+      const posterUrl   = detail.poster_path   ? `https://image.tmdb.org/t/p/w500${detail.poster_path}`   : '';
+      const backdropUrl = detail.backdrop_path  ? `https://image.tmdb.org/t/p/w1280${detail.backdrop_path}` : '';
+      selectedItem = { id: Date.now(), title, year, director, runtime, rating, category: currentCategory, genres: uniqueGenres, overview: detail.overview || '', media: { poster: posterUrl, backdrop: backdropUrl } };
+      selectedGenres = [...uniqueGenres];
+      showStep2();
+    } catch(e) { setStatus(document.getElementById('search-status'), '>> error fetching details.', 'error'); }
+  }
+
+  async function selectRAWG(item) {
+    try {
+      const key = RAWG_KEY ? `?key=${RAWG_KEY}` : '';
+      const res    = await fetch(`${RAWG_BASE}/games/${item.id}${key}`);
+      const detail = await res.json();
+      const genres = (detail.genres || []).map(g => RAWG_GENRE_MAP[g.slug]).filter(Boolean);
+      const uniqueGenres = [...new Set(genres)];
+      const devs = (detail.developers || []).map(d => d.name).join(', ') || 'Unknown';
+      const year = detail.released ? parseInt(detail.released.slice(0, 4)) : 0;
+      const platforms = (detail.platforms || []).map(p => p.platform.name).slice(0, 3).join(', ') || 'Various';
+
+      const posterUrl = detail.background_image || '';
+      selectedItem = {
+        id: Date.now(), title: detail.name, year, director: devs,
+        runtime: platforms, rating: detail.esrb_rating?.name || 'NR',
+        category: 'game', genres: uniqueGenres, overview: detail.description_raw?.slice(0, 400) || '',
+        media: { poster: posterUrl, backdrop: '' }
+      };
+      selectedGenres = [...uniqueGenres];
+      showStep2();
+    } catch(e) { setStatus(document.getElementById('search-status'), '>> error fetching game details.', 'error'); }
+  }
+
+  function showStep2() {
+    const metaLabel = `// ${selectedItem.director} · ${selectedItem.runtime} · ${selectedItem.rating} //`;
+
+    document.getElementById('step2').style.display = 'block';
+    if (document.getElementById('image-folder-slug') && !document.getElementById('image-folder-slug').value) {
+      document.getElementById('image-folder-slug').value = slugify(selectedItem.title);
+      refreshImagePaths();
+    }
+    document.getElementById('selected-info').innerHTML = `
+      <div class="selected-info-title">${escapeHtml(selectedItem.title)} (${escapeHtml(selectedItem.year)})</div>
+      <div class="selected-info-meta">${escapeHtml(metaLabel)}</div>
+    `;
+
+    const allSlugs = [...new Set([...selectedGenres, ...(ALL_SITE_GENRES[currentCategory] || [])])].sort();
+    const gMap = document.getElementById('genre-map');
+    gMap.innerHTML = '';
+    allSlugs.forEach(slug => {
+      const pill = document.createElement('span');
+      pill.className = 'genre-pill' + (selectedGenres.includes(slug) ? ' active' : '');
+      pill.textContent = slug;
+      pill.addEventListener('click', () => {
+        if (selectedGenres.includes(slug)) { selectedGenres = selectedGenres.filter(g => g !== slug); pill.classList.remove('active'); }
+        else { selectedGenres.push(slug); pill.classList.add('active'); }
+      });
+      gMap.appendChild(pill);
+    });
+
+    document.getElementById('step2').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function updateScoreBadge() {
+    const v = document.getElementById('score-input').value;
+    document.getElementById('score-badge').textContent = v ? `${v}/10` : '?/10';
+  }
+
+  async function generateReview() {
+    const score    = parseInt(document.getElementById('score-input').value);
+    const notes    = document.getElementById('user-notes').value.trim();
+    const featured = document.getElementById('featured-input').value;
+
+    if (!selectedItem)                            { alert('Select a result first.'); return; }
+    if (isNaN(score) || score < 1 || score > 10) { alert('Enter a score between 1 and 10.'); return; }
+    if (!notes)                                   { alert('Add some notes first.'); return; }
+    if (selectedGenres.length === 0)              { alert('Select at least one genre.'); return; }
+    if (!ANTHROPIC_KEY || ANTHROPIC_KEY.includes('PASTE_YOUR') || ANTHROPIC_KEY.length < 20) {
+      alert('Paste your Claude / Anthropic API key into ANTHROPIC_KEY first.');
+      return;
+    }
+
+    document.getElementById('step3').style.display = 'none';
+    document.getElementById('generating').classList.add('show');
+    document.getElementById('generating').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    const scoreTone =
+      score === 10 ? 'an absolute masterpiece, one of the greatest ever made, unconditional love' :
+      score === 9  ? 'exceptional, one of the best, enthusiastic, maybe one tiny caveat' :
+      score === 8  ? 'really good, strong recommendation, genuine praise with one honest flaw' :
+      score === 7  ? 'good but imperfect, enjoyable, honest about its weaknesses, worth it' :
+      score === 6  ? 'above average, decent, some good stuff but real problems, mild recommendation' :
+      score === 5  ? 'genuinely mixed, equally good and bad, divided opinion' :
+      score === 4  ? 'mostly bad, some redeeming moments but not enough, hard to recommend' :
+      score === 3  ? 'bad, significant failures, only for the very curious' :
+                     'awful, a waste of time, actively bad, almost nothing works';
+
+    const catLabel = currentCategory === 'game' ? 'game' : currentCategory === 'tv' ? 'TV show' : 'film';
+
+    const systemPrompt = `You are ghostwriting reviews for WretVision, covering movies, TV shows, and games.
+
+STYLE:
+- Direct, confident, opinionated, and specific
+- Long flowing sentences are preferred, not short choppy lines
+- Human and personal, not academic, corporate, or overly polished
+- Occasional profanity is fine when the opinion earns it, never force it
+- No bullet points
+- No em dashes, use commas instead
+- Never sound like marketing copy
+- Never sound like AI-generated filler
+
+APPROACH:
+- Do not summarize the plot, premise, or basic setup unless the user's notes specifically make that relevant
+- Assume the reader already has a rough idea what the title is
+- Use the user's notes as the backbone of the review
+- Expand the user's thoughts into proper arguments instead of simply rephrasing them
+- Add perspective, not filler
+- Be honest and decisive, no fence-sitting
+
+WHAT TO FOCUS ON:
+- For movies: writing, pacing, performances, direction, atmosphere, cinematography, score, editing, tone, and payoff
+- For TV shows: season structure, episode pacing, character work, performances, long-form storytelling, filler, momentum, and payoff
+- For games: gameplay feel, mechanics, progression, level design, combat, controls, atmosphere, art direction, music, performance, pacing, and whether playing it actually stays engaging
+
+STRUCTURE:
+- 1 short excerpt for the review card, 1 to 2 punchy sentences
+- 3 substantial dense paragraphs
+- 1 sharp verdict line
+
+TONE MATCH:
+- Score tone: ${scoreTone}
+- The review should feel like a cleaned-up, sharper version of the user's raw thoughts, not a detached critic pretending to be objective
+
+OUTPUT:
+Respond ONLY with valid JSON.
+No markdown.
+No backticks.
+No explanation.
+No extra text before or after the JSON.
+The paragraphs field MUST be an array of exactly 3 strings.
+The final JSON object MUST have exactly these keys: excerpt, paragraphs, verdict.
+Do not close the paragraphs array with a curly brace.
+
+Format exactly like this:
+{
+  "excerpt": "...",
+  "paragraphs": ["paragraph one", "paragraph two", "paragraph three"],
+  "verdict": "..."
+}`;
+
+    const userPrompt = `Write a review for:
+Title: ${selectedItem.title} (${selectedItem.year})
+Type: ${catLabel}
+${currentCategory === 'game' ? 'Developer' : 'Director/Creator'}: ${selectedItem.director}
+Overview: ${(selectedItem.overview || '').slice(0, 220)}
+Score: ${score}/10
+Selected genres: ${selectedGenres.join(', ')}
+
+My raw thoughts:
+${notes}
+
+Build on my notes, expand them, give them depth. Do NOT just restate them.`;
+
+    try {
+      const res = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': ANTHROPIC_KEY,
+          'anthropic-version': '2023-06-01',
+          'anthropic-dangerous-direct-browser-access': 'true'
+        },
+        body: JSON.stringify({
+          model: ANTHROPIC_MODEL,
+          max_tokens: 1800,
+          system: systemPrompt,
+          messages: [{ role: 'user', content: userPrompt }]
+        })
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error?.message || 'API error');
+
+      const raw = (data.content || []).map(b => b.type === 'text' ? b.text : '').join('').trim();
+
+      if (!raw) {
+        console.error('Empty Claude response:', data);
+        throw new Error('Claude returned an empty response');
+      }
+
+      let parsed;
+      try {
+        parsed = repairClaudeJson(raw);
+      } catch (err) {
+        console.error('INVALID JSON FROM CLAUDE:', raw);
+        throw err;
+      }
+
+      if (!parsed.excerpt || !Array.isArray(parsed.paragraphs) || parsed.paragraphs.length !== 3 || !parsed.verdict) {
+        console.error('Claude JSON missing expected fields:', parsed);
+        throw new Error('Claude JSON was missing excerpt, 3 paragraphs, or verdict.');
+      }
+
+      const reviewImages = getReviewImagesForOutput();
+
+      const paragraphsFormatted = parsed.paragraphs
+        .map(p => '    `' + p.replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$\{/g, '\\${') + '`')
+        .join(',\n\n');
+
+      const esc = s => String(s).replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
+
+      const mediaField = selectedItem.media
+      ? `\n  poster: "${esc(selectedItem.media.poster || '')}",\n  backdrop: "${esc(selectedItem.media.backdrop || '')}",\n  media: { poster: "${esc(selectedItem.media.poster || '')}", backdrop: "${esc(selectedItem.media.backdrop || '')}" },`
+      : '';
+
+      const output = `{
+  id: ${selectedItem.id},
+  category: "${selectedItem.category}",
+  title: "${esc(selectedItem.title)}",
+  year: ${selectedItem.year},
+  director: "${esc(selectedItem.director)}",
+  runtime: "${esc(selectedItem.runtime)}",
+  rating: "${esc(selectedItem.rating)}",
+  genres: [${selectedGenres.map(g => `"${esc(g)}"`).join(', ')}],
+  score: ${score},
+  featured: ${featured},
+  excerpt: "${esc(parsed.excerpt)}",
+  body: [
+${paragraphsFormatted}
+  ],${reviewImages.length ? `
+  images: [
+${reviewImages.map(img => `    { src: "${esc(img.src)}", caption: "${esc(img.caption)}", afterParagraph: ${img.afterParagraph} }`).join(',\n')}
+  ],` : ''}${mediaField}
+  verdict: "${esc(parsed.verdict)}"
+},`;
+
+      document.getElementById('generating').classList.remove('show');
+      document.getElementById('output-box').textContent = output;
+      document.getElementById('step3').style.display = 'block';
+      document.getElementById('step3').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    } catch(e) {
+      document.getElementById('generating').classList.remove('show');
+      alert('Something went wrong: ' + e.message);
+      console.error(e);
+    }
+  }
+
+  async function injectIntoSite() {
+    const injectStatus = document.getElementById('inject-status');
+    const reviewCode   = document.getElementById('output-box').textContent;
+    if (!reviewCode) { setStatus(injectStatus, '>> no review generated yet.', 'error'); return; }
+    if (!window.showOpenFilePicker) { setStatus(injectStatus, '>> file access not supported. open this tool in Chrome or Edge.', 'error'); return; }
+
+    try {
+      if (!siteFileHandle) {
+        [siteFileHandle] = await window.showOpenFilePicker({
+          types: [{ description: 'JavaScript file', accept: { 'text/javascript': ['.js'] } }],
+          multiple: false
+        });
+      }
+
+      const perm = await siteFileHandle.queryPermission({ mode: 'readwrite' });
+      if (perm !== 'granted') {
+        const req = await siteFileHandle.requestPermission({ mode: 'readwrite' });
+        if (req !== 'granted') { setStatus(injectStatus, '>> write permission denied.', 'error'); return; }
+      }
+
+      const file    = await siteFileHandle.getFile();
+      const content = await file.text();
+      const anchor  = 'const REVIEWS = [';
+      const idx     = content.indexOf(anchor);
+
+      if (idx === -1) {
+        setStatus(injectStatus, '>> could not find REVIEWS array in reviews.js. make sure the file contains: const REVIEWS = [', 'error');
+        siteFileHandle = null;
+        return;
+      }
+
+      const insertAt   = idx + anchor.length;
+      const newContent = content.slice(0, insertAt) + '\n    ' + reviewCode + '\n' + content.slice(insertAt);
+
+      const writable = await siteFileHandle.createWritable();
+      await writable.write(newContent);
+      await writable.close();
+
+      setStatus(injectStatus, '>> injected into reviews.js! push to github and you\'re live.', 'success');
+
+      const btn = document.getElementById('inject-btn');
+      const orig = btn.textContent;
+      btn.textContent = 'INJECTED!';
+      btn.style.background = 'var(--green)';
+      btn.style.color = 'var(--bg)';
+      setTimeout(() => { btn.textContent = orig; btn.style.background = ''; btn.style.color = ''; }, 3000);
+
+    } catch(e) {
+      if (e.name === 'AbortError') return;
+      setStatus(injectStatus, '>> error: ' + e.message, 'error');
+      siteFileHandle = null;
+      console.error(e);
+    }
+  }
+
+  function copyOutput() {
+    navigator.clipboard.writeText(document.getElementById('output-box').textContent).then(() => {
+      const c = document.getElementById('copy-confirm');
+      c.classList.add('show');
+      setTimeout(() => c.classList.remove('show'), 2000);
+    }).catch(e => {
+      alert('Copy failed: ' + e.message);
+      console.error(e);
+    });
+  }
+
+  function resetTool() {
+    selectedItem = null; selectedGenres = [];
+    document.getElementById('search-input').value  = '';
+    document.getElementById('score-input').value   = '';
+    document.getElementById('user-notes').value    = '';
+    if (document.getElementById('image-folder-slug')) document.getElementById('image-folder-slug').value = '';
+    clearImageSlot(1); clearImageSlot(2);
+    document.getElementById('results-grid').innerHTML = '';
+    document.getElementById('search-status').textContent = '';
+    document.getElementById('score-badge').textContent = '?/10';
+    document.getElementById('step2').style.display = 'none';
+    document.getElementById('step3').style.display = 'none';
+    document.getElementById('generating').classList.remove('show');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function setStatus(el, msg, type) {
+    el.textContent = msg;
+    el.className   = 'status' + (type ? ` ${type}` : '');
+  }
+
+  document.getElementById('search-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') doSearch();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WRETVISION — Test Layout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #0b0607;
+      --bg-panel:   #100a0b;
+      --bg-nav:     #0e0809;
+      --red:        #cc1f0f;
+      --red-dim:    #8a1608;
+      --red-bright: #e83d1f;
+      --text:       #c8b8b0;
+      --text-dim:   #6e5a56;
+      --text-faint: #3a2a28;
+      --border:     #2a1614;
+      --border-med: #3d1e1a;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    /* ── TOP NAV ──────────────────────────────────────────────── */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 28px;
+      height: 72px;
+      background: var(--bg-nav);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo-block {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+      text-decoration: none;
+    }
+    .logo-block .logo {
+      font-family: 'Rubik Glitch', 'Courier New', monospace;
+      font-size: 23px;
+      font-weight: normal;
+      letter-spacing: 3px;
+      color: var(--red-bright);
+      text-transform: uppercase;
+    }
+    .logo-block .tagline {
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    nav {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+    nav a {
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    nav a:hover { color: var(--text); }
+    nav a.active {
+      color: var(--text);
+      border-bottom-color: var(--red);
+    }
+
+    .on-air-widget {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--border-med);
+      padding: 8px 14px;
+      background: #110909;
+    }
+    .on-air-dot-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+    }
+    .on-air-label {
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: var(--red);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .on-air-label::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--red);
+      animation: blink 1.2s step-start infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+    .on-air-text {
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: var(--text-dim);
+      line-height: 1.3;
+    }
+    .on-air-text strong { display: block; color: var(--text); }
+
+    /* antenna SVG icon */
+    .antenna-icon { opacity: 0.5; flex-shrink: 0; }
+
+    /* ── PAGE BODY ────────────────────────────────────────────── */
+    .page {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      min-height: calc(100vh - 72px);
+    }
+
+    /* ── LEFT PANEL — placeholder ─────────────────────────────── */
+    .left-panel {
+      background: linear-gradient(180deg, #0f0507 0%, #080305 60%, #0a0608 100%);
+      border-right: 1px solid var(--border);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .left-panel::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 3px,
+          rgba(200,60,20,0.015) 3px,
+          rgba(200,60,20,0.015) 4px
+        );
+      pointer-events: none;
+    }
+    .placeholder-label {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: var(--text-faint);
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 2.5;
+    }
+    .placeholder-label span {
+      display: block;
+      font-size: 32px;
+      opacity: 0.08;
+      letter-spacing: 6px;
+    }
+
+    /* ── RIGHT PANEL — review ─────────────────────────────────── */
+    .right-panel {
+      background: var(--bg-panel);
+      display: flex;
+      flex-direction: column;
+      padding: 32px 52px 36px;
+      min-height: calc(100vh - 72px);
+      border-left: 1px solid var(--border);
+    }
+
+    /* breadcrumb row */
+    .nav-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+    .back-link {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: var(--red); }
+    .review-num {
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: var(--text-faint);
+    }
+
+    /* title */
+    .review-title {
+      font-size: 36px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--red-bright);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+    .review-title .year {
+      color: var(--text-dim);
+      font-size: 26px;
+    }
+
+    /* metadata row */
+    .meta-row {
+      display: flex;
+      gap: 0;
+      flex-wrap: wrap;
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: var(--text);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--border);
+    }
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .meta-item + .meta-item::before {
+      content: '|';
+      color: var(--border-med);
+      margin: 0 14px;
+    }
+    .meta-label { color: var(--red); }
+
+    /* body text */
+    .review-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+    .review-body p {
+      font-size: 13px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+
+    /* verdict box */
+    .verdict-box {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      border: 1px solid var(--border-med);
+      background: #0e0809;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+    .score-block {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .verdict-label {
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 4px;
+    }
+    .score-num {
+      font-size: 42px;
+      font-weight: bold;
+      color: var(--red-bright);
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    .score-num .denom {
+      font-size: 20px;
+      color: var(--text-dim);
+      font-weight: normal;
+    }
+    .verdict-divider {
+      width: 1px;
+      height: 60px;
+      background: var(--border-med);
+      flex-shrink: 0;
+    }
+    .verdict-text {
+      flex: 1;
+      font-size: 12px;
+      line-height: 1.75;
+      color: var(--text);
+    }
+    .skull-icon {
+      flex-shrink: 0;
+      opacity: 0.55;
+    }
+
+    /* prev / next */
+    .pager {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+    .pager a {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .pager a:hover { color: var(--red); }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ──────────────────────────────────────────────────── -->
+<header>
+  <a class="logo-block" href="#">
+    <span class="logo">Wretvision</span>
+    <span class="tagline">Your World. Distorted.</span>
+  </a>
+
+  <nav>
+    <a href="#">Movies</a>
+    <a href="#">TV</a>
+    <a href="#" class="active">Games</a>
+    <a href="#">Horror Vault</a>
+    <a href="#">Latest</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="on-air-widget">
+    <div>
+      <div class="on-air-label">On Air</div>
+      <div class="on-air-text">
+        <strong>Broadcasting Nightmares</strong>
+        24/7
+      </div>
+    </div>
+    <!-- broadcast tower icon (MIT, Denali Design via svgviewer.dev) -->
+    <svg class="antenna-icon" width="34" height="34" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#cc1f0f">
+      <rect width="48" height="48" fill="none"/>
+      <path d="M25.8,25.6A4.9,4.9,0,0,0,29,21a5,5,0,0,0-10,0,4.9,4.9,0,0,0,3.2,4.6L15.1,42.7c-.3.7,0,1.3.5,1.3H32.4c.5,0,.8-.6.5-1.3ZM20.6,40,24,31.7,27.4,40Z"/>
+      <path d="M17.5,31.4a2.2,2.2,0,0,0-.1-2.9,10,10,0,0,1,0-15,2.2,2.2,0,0,0,.1-2.9,2.2,2.2,0,0,0-2.9-.1A14.5,14.5,0,0,0,10,21a14.5,14.5,0,0,0,4.6,10.5A2.2,2.2,0,0,0,17.5,31.4Z"/>
+      <path d="M33.4,10.5a2.1,2.1,0,0,0-2.9.1,2.2,2.2,0,0,0,.1,2.9,10,10,0,0,1,0,15,2.1,2.1,0,0,0,2.8,3,14.3,14.3,0,0,0,0-21Z"/>
+      <path d="M39.4,5.6a2,2,0,0,0-2.8,2.8,17.4,17.4,0,0,1,0,25.2,2,2,0,0,0,2.8,2.8,21.3,21.3,0,0,0,0-30.8Z"/>
+      <path d="M6,21A17.5,17.5,0,0,1,11.4,8.4,2,2,0,0,0,8.6,5.6a21.3,21.3,0,0,0,0,30.8,2,2,0,0,0,2.8-2.8A17.5,17.5,0,0,1,6,21Z"/>
+    </svg>
+  </div>
+</header>
+
+<!-- ── PAGE ────────────────────────────────────────────────────── -->
+<div class="page">
+
+  <!-- LEFT: artwork placeholder -->
+  <div class="left-panel">
+    <div class="placeholder-label">
+      <span>&#9632;</span>
+      Artwork<br>Placeholder
+    </div>
+  </div>
+
+  <!-- RIGHT: review panel -->
+  <div class="right-panel">
+
+    <!-- breadcrumb / review number -->
+    <div class="nav-row">
+      <a class="back-link" href="#">&#8592; Back to Games</a>
+      <span class="review-num">Review #27</span>
+    </div>
+
+    <!-- title -->
+    <h1 class="review-title">
+      Silent Hill 2 <span class="year">(2024)</span>
+    </h1>
+
+    <!-- metadata -->
+    <div class="meta-row">
+      <div class="meta-item">
+        <span class="meta-label">Developer:</span>
+        <span>Bloober Team</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Publisher:</span>
+        <span>Konami</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Platform:</span>
+        <span>PS5</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Genre:</span>
+        <span>Survival Horror</span>
+      </div>
+    </div>
+
+    <!-- body -->
+    <div class="review-body">
+      <p>Bloober Team stepping into Silent Hill 2 was either going to be a masterstroke or a disaster, and somehow, they pulled off one of the most faithful, and at times, even transcendent remakes in recent memory.</p>
+      <p>They didn't just rebuild the game, they respected the silence. The pacing, the dread, the way the town breathes around you, it's all here. The visuals are gorgeous in a way that feels rotten, not polished. Every hallway, every sound cue, every piece of static feels like a scalpel to the brain.</p>
+      <p>Combat is heavier now, more desperate. James feels less like a man walking through guilt and more like a man being pulled apart by it. The updated voice acting is phenomenal, subtle, tragic, and raw.<br><br>This isn't just a remake. It's remembrance.<br>Silent Hill didn't come back.<br>It never left.</p>
+    </div>
+
+    <!-- verdict -->
+    <div class="verdict-box">
+      <div class="score-block">
+        <div class="verdict-label">Wretvision Verdict</div>
+        <div class="score-num">9.5<span class="denom"> /10</span></div>
+      </div>
+      <div class="verdict-divider"></div>
+      <div class="verdict-text">
+        A near perfect resurrection of psychological horror.<br>
+        Bloober didn't just honor the original, they understood it.<br>
+        A must-play. In the fog, we're all just searching.
+      </div>
+      <!-- skull icon -->
+      <svg class="skull-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="22" cy="19" rx="13" ry="12" fill="#cc1f0f"/>
+        <rect x="15" y="28" width="14" height="7" rx="1" fill="#cc1f0f"/>
+        <rect x="18" y="30" width="3" height="5" rx="0.5" fill="#0e0809"/>
+        <rect x="23" y="30" width="3" height="5" rx="0.5" fill="#0e0809"/>
+        <ellipse cx="17" cy="19" rx="4" ry="4.5" fill="#0e0809"/>
+        <ellipse cx="27" cy="19" rx="4" ry="4.5" fill="#0e0809"/>
+        <ellipse cx="17" cy="19" rx="2" ry="2.5" fill="#cc1f0f" opacity="0.4"/>
+        <ellipse cx="27" cy="19" rx="2" ry="2.5" fill="#cc1f0f" opacity="0.4"/>
+        <line x1="22" y1="28" x2="22" y2="35" stroke="#0e0809" stroke-width="1.5"/>
+      </svg>
+    </div>
+
+    <!-- pager -->
+    <div class="pager">
+      <a href="#">&#8592; Prev Review</a>
+      <a href="#">Next Review &#8594;</a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:developer.chrome.com)",
+      "Bash(ffmpeg -version)",
+      "Bash(where ffmpeg *)",
+      "Read(//c/Program Files/VideoLAN/VLC/**)",
+      "WebFetch(domain:fonts.google.com)",
+      "WebFetch(domain:www.svgviewer.dev)",
+      "Bash(python -m http.server 8080)",
+      "Bash(Start-Sleep -Seconds 2)",
+      "Bash(Invoke-WebRequest -Uri \"http://localhost:8080\" -UseBasicParsing)",
+      "Bash(Select-Object -ExpandProperty StatusCode)",
+      "PowerShell(Invoke-WebRequest -Uri \"http://localhost:8080\" -UseBasicParsing)",
+      "Bash(python -c ' *)",
+      "Skill(pixel-plugin:pixel-setup)",
+      "Skill(pixel-plugin:pixel-setup:*)",
+      "PowerShell($configDir = \"$env:APPDATA\\\\pixel-mcp\"; New-Item -ItemType Directory -Force $configDir | Out-Null; $config = @{ aseprite_path = \"D:\\\\downloads\\\\Aseprite.v1.3.7\\\\Aseprite.exe\"; temp_dir = \"\"; timeout = 30; log_level = \"info\"; log_file = \"\"; enable_timing = $false } | ConvertTo-Json; Set-Content -Path \"$configDir\\\\config.json\" -Value $config -Encoding utf8; Write-Host \"Config written to: $configDir\\\\config.json\"; Get-Content \"$configDir\\\\config.json\")",
+      "Read(//d/downloads/Aseprite.v1.3.7/**)",
+      "Read(//d/downloads/**)",
+      "Read(//d//**)",
+      "PowerShell(Write-Host \"test\"; [System.IO.DriveInfo]::GetDrives\\(\\) | ForEach-Object { Write-Host $_.Name })"
+    ]
+  }
+}

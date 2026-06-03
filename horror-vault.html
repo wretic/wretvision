@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCX90839K8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PCX90839K8');
+  </script>
+  <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WretVision — Horror Vault</title>
+  <meta name="description" content="WretVision Horror Vault. A personal archive of horror movies watched across decades, from classics to obscure weird picks." />
+  <meta name="keywords" content="horror movie list, horror archive, watched horror movies, horror films, cult horror, obscure horror, WretVision" />
+  <meta name="author" content="WretVision" />
+  <link rel="canonical" href="https://wretvision.com/horror-vault.html" />
+  <meta property="og:title" content="WretVision — Horror Vault" />
+  <meta property="og:description" content="A personal archive of horror movies watched across decades. Classics, obscure picks, weird ones, and everything in between." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wretvision.com/horror-vault.html" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"CollectionPage","name":"WretVision Horror Vault","url":"https://wretvision.com/horror-vault.html","description":"A personal archive of horror movies watched by WretVision.","author":{"@type":"Person","name":"WretVision"}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    /* ── HORROR VAULT THEME: blood red ── */
+    :root {
+      --vault-black:      #050000;
+      --vault-black-2:    #090001;
+      --vault-black-3:    #0e0203;
+      --vault-ash:        #150406;
+      --vault-red:        #8b0000;
+      --vault-red-bright: #c01818;
+      --vault-red-light:  #ff3a3a;
+      --vault-border:     rgba(160,20,20,0.28);
+      --vault-border-lit: rgba(210,45,45,0.70);
+    }
+    body {
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(100,0,0,0.18), transparent 38%),
+        var(--vault-black);
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 96'><rect x='26' y='8' width='28' height='4' fill='%23aa0000'/><rect x='18' y='12' width='44' height='4' fill='%23aa0000'/><rect x='10' y='16' width='60' height='26' fill='%23aa0000'/><rect x='14' y='42' width='52' height='4' fill='%23aa0000'/><rect x='12' y='46' width='56' height='18' fill='%23aa0000'/><rect x='14' y='20' width='15' height='12' fill='%23050000'/><rect x='51' y='20' width='15' height='12' fill='%23050000'/><rect x='33' y='28' width='14' height='10' fill='%23050000'/><rect x='16' y='56' width='12' height='8' fill='%23050000'/><rect x='34' y='56' width='12' height='8' fill='%23050000'/><rect x='52' y='56' width='12' height='8' fill='%23050000'/></svg>");
+      background-size: 100px 120px;
+      opacity: 0.10;
+      pointer-events: none;
+      z-index: -1;
+    }
+    .topbar { background: #060001 !important; border-bottom-color: #000 !important; box-shadow: 0 0 0 1px rgba(160,20,20,0.20), 0 8px 35px rgba(0,0,0,0.75); }
+    .site-logo { color: #ffe0e0 !important; text-shadow: 0 0 14px var(--vault-red), 2px 2px 0 #000 !important; }
+    .site-logo span { color: var(--vault-red-light) !important; text-shadow: 0 0 12px rgba(255,60,60,0.75), 2px 2px 0 #1c0000 !important; }
+    .nav-link.active { color: var(--vault-red-light) !important; border-color: var(--vault-red-light) !important; background: rgba(160,20,20,0.12) !important; }
+    .yt-link { border-color: var(--vault-red-light) !important; background: rgba(0,0,0,0.3) !important; }
+    .yt-link:hover { background: rgba(160,20,20,0.18) !important; }
+    .yt-link .avatar-wrap { border-color: var(--vault-red-light) !important; }
+    .yt-link .pixel-corner { background: var(--vault-red-light) !important; }
+    .yt-label { color: var(--vault-red-light) !important; text-shadow: 0 0 10px rgba(200,30,30,0.45) !important; }
+    .hero { background: linear-gradient(180deg, rgba(0,0,0,0.72), rgba(8,1,1,0.48)); border-bottom-color: rgba(140,20,20,0.22) !important; }
+    .hero-bg { background: radial-gradient(ellipse 70% 90% at 50% 120%, rgba(90,0,0,0.55) 0%, rgba(50,0,0,0.22) 45%, transparent 75%) !important; }
+    .hero-eyebrow { color: var(--vault-red-light) !important; opacity: 0.75; }
+    .hero-title { color: #fff0f0 !important; text-shadow: 0 0 22px #000, 0 0 38px var(--vault-red), 0 0 70px rgba(160,0,0,0.32), 3px 3px 0 #000 !important; }
+    .hero-title span { color: var(--vault-red-light) !important; }
+    .lightning-bar { background: linear-gradient(90deg, transparent, #1a0000, var(--vault-red-light), #1a0000, transparent) !important; animation-duration: 5s !important; }
+
+    .stats-bar { background: #060001 !important; border-bottom-color: var(--vault-border) !important; }
+    .stat-num { color: var(--vault-red-light) !important; }
+    .stat-item { border-right-color: rgba(140,20,20,0.18) !important; }
+    .vault-tools { display:flex; align-items:center; padding:14px max(28px, calc(50% - 572px)); background:#060001; border-bottom:1px solid var(--vault-border); box-sizing:border-box; }
+    .vault-search { flex:0 0 184px; width:184px; background:var(--vault-black-3); border:1px solid var(--vault-border-lit); color:var(--text); font-family:'Rajdhani',sans-serif; font-size:18px; padding:9px 13px; outline:none; }
+    .vault-search:focus { border-color:var(--vault-red-light); box-shadow:0 0 18px rgba(160,30,30,0.20); }
+    .vault-decade-wrap { position:relative; margin-left:auto; }
+    .vault-decade-toggle { font-family:'VT323',monospace; font-size:20px; color:var(--vault-red-light); background:transparent; border:1px solid var(--vault-red-light); padding:4px 14px; cursor:pointer; letter-spacing:1px; display:flex; align-items:center; gap:8px; white-space:nowrap; transition:background 0.15s; }
+    .vault-decade-toggle:hover { background:rgba(160,20,20,0.12); }
+    .vault-decade-arrow { font-size:11px; display:inline-block; transition:transform 0.2s; line-height:1; }
+    .vault-decade-toggle[aria-expanded="true"] .vault-decade-arrow { transform:rotate(180deg); }
+    .vault-decade-panel { display:none; position:absolute; top:calc(100% + 6px); right:0; background:#060001; border:1px solid var(--vault-border-lit); z-index:200; min-width:120px; flex-direction:column; padding:4px; gap:2px; box-shadow:0 8px 24px rgba(0,0,0,0.65); }
+    .vault-decade-panel.open { display:flex; }
+    .vault-filter { font-family:'VT323',monospace; font-size:18px; background:transparent; color:var(--text-dim); border:1px solid transparent; padding:5px 14px; cursor:pointer; text-align:left; width:100%; letter-spacing:1px; transition:all 0.12s; }
+    .vault-filter:hover, .vault-filter.active { color:var(--vault-red-light); border-color:var(--vault-red-light); background:rgba(160,20,20,0.12); }
+    .vault-wrap { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:1fr 280px; }
+    .vault-main { padding:28px; border-right:2px solid var(--vault-border); }
+    .vault-intro { background:#060001; border:1px solid var(--vault-border); border-left:3px solid var(--vault-red); padding:20px; margin-bottom:24px; position:relative; }
+    .vault-intro p { color:var(--text); opacity:.9; font-size:17px; line-height:1.65; margin-bottom:10px; }
+    .vault-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:12px; }
+    .vault-item { background:linear-gradient(180deg, rgba(10,1,1,0.97), rgba(4,0,0,0.97)); border:1px solid var(--vault-border); border-left:3px solid #1a0000; padding:14px 15px; position:relative; min-height:92px; transition:border-color .15s, transform .15s, background .15s; }
+    .vault-item:hover { border-color:var(--vault-border-lit); transform:translateY(-1px); background:var(--vault-black-3); }
+    .vault-item.has-review { cursor:pointer; border-left-color:var(--vault-red-light); box-shadow:0 0 0 1px rgba(160,20,20,0.07), inset 0 0 18px rgba(100,0,0,0.07); }
+    .vault-item.has-review:hover { border-color:var(--vault-red-light); box-shadow:0 0 22px rgba(190,30,30,0.26), inset 0 0 22px rgba(100,0,0,0.10); }
+    .vault-item.has-review .vault-title { color:#ffffff; text-shadow:0 0 10px rgba(255,60,60,0.35); }
+    .vault-item.has-review::after { content:'OPEN REVIEW >>'; position:absolute; right:12px; bottom:12px; font-family:'Press Start 2P',monospace; font-size:5px; color:var(--vault-red-light); opacity:0; transition:opacity .15s; }
+    .vault-item.has-review:hover::after { opacity:1; }
+    .vault-title { font-family:'VT323',monospace; color:#ffe8e8; font-size:25px; line-height:1.05; margin-bottom:5px; }
+    .vault-year { font-family:'Press Start 2P',monospace; font-size:7px; color:var(--vault-red-light); letter-spacing:1px; }
+    .vault-status { margin-top:9px; font-family:'Press Start 2P',monospace; font-size:5px; letter-spacing:1px; color:var(--muted); text-transform:uppercase; }
+    .vault-status.excluded { color:#ff6b6b; }
+    .vault-reviewed { display:inline-block; margin-top:8px; font-family:'Press Start 2P',monospace; font-size:5px; color:var(--vault-red-light); border:1px solid rgba(200,50,50,0.45); padding:3px 6px; }
+    .vault-empty { display:none; font-family:'VT323',monospace; font-size:24px; color:var(--muted); padding:30px; border:1px dashed var(--vault-border); }
+    .vault-draw-wrap { display:flex; justify-content:center; padding:14px 28px; background:#060001; border-bottom:1px solid var(--vault-border); }
+    .vault-draw-btn { font-family:'Press Start 2P',monospace; font-size:7px; color:#fff; background:rgba(120,0,0,0.55); border:1px solid var(--vault-red-light); padding:12px 24px; cursor:pointer; letter-spacing:1px; transition:all 0.2s; white-space:nowrap; box-shadow:0 0 14px rgba(255,40,40,0.22), inset 0 0 8px rgba(180,0,0,0.18); }
+    .vault-draw-btn:hover { background:rgba(180,0,0,0.80); box-shadow:0 0 36px rgba(255,40,40,0.70), inset 0 0 18px rgba(200,0,0,0.40); transform:scale(1.04); }
+    @keyframes btn-breathe {
+      0%,100% { box-shadow:0 0 8px rgba(255,40,40,0.20), inset 0 0 8px rgba(180,0,0,0.18); transform:scale(1); }
+      50%      { box-shadow:0 0 30px rgba(255,40,40,0.65), inset 0 0 18px rgba(200,0,0,0.32); transform:scale(1.05); }
+    }
+    .vault-item.vault-drawn { border-color:var(--vault-red-light) !important; border-left-color:var(--vault-red-light) !important; box-shadow:0 0 0 1px var(--vault-red-light), 0 0 28px rgba(255,58,58,0.5), inset 0 0 18px rgba(180,0,0,0.14) !important; position:relative; z-index:1; animation:vault-draw-pulse 1.8s ease-in-out infinite; }
+    @keyframes vault-draw-pulse {
+      0%,100% { box-shadow:0 0 0 1px var(--vault-red-light), 0 0 20px rgba(255,58,58,0.4), inset 0 0 14px rgba(180,0,0,0.10); }
+      50%      { box-shadow:0 0 0 1px var(--vault-red-light), 0 0 50px rgba(255,58,58,0.75), inset 0 0 26px rgba(180,0,0,0.20); }
+    }
+    .vault-sidebar { padding:28px 20px; background:rgba(0,0,0,0.25); }
+    .sidebar-widget { border-color:var(--vault-border) !important; background:#060001 !important; }
+    .widget-title { color:var(--vault-red-light) !important; border-bottom-color:var(--vault-border) !important; }
+    .pixel-corner { background:var(--vault-red-light) !important; }
+    .modal-box { border-color:var(--vault-red-bright) !important; background:#060001 !important; box-shadow:0 0 45px rgba(0,0,0,.88), 0 0 28px rgba(160,20,20,.14); }
+    .modal-divider { background:linear-gradient(90deg, #000, var(--vault-red-light), transparent) !important; }
+    .modal-genre, .verdict-text { color:var(--vault-red-light) !important; }
+    .modal-close:hover { color:var(--vault-red-light) !important; border-color:var(--vault-red-light) !important; }
+    .modal-footer { border-top-color:var(--vault-border) !important; }
+    .footer { border-top: 2px solid var(--vault-border) !important; background: var(--vault-black) !important; color: rgba(200,80,80,0.45) !important; }
+    @media(max-width:820px){ .vault-wrap{grid-template-columns:1fr;} .vault-main{border-right:none;} .vault-sidebar{border-top:1px solid var(--vault-border);} }
+
+    /* ── CARD FLICKER ── */
+    @keyframes vault-glitch {
+      0%   { transform:translateX(0);    opacity:1;   filter:brightness(1); }
+      18%  { transform:translateX(-4px); opacity:0.7; filter:brightness(1.6) saturate(2); }
+      34%  { transform:translateX(3px);  opacity:1;   filter:brightness(0.5); }
+      50%  { transform:translateX(-2px); opacity:0.85;filter:brightness(1.3); }
+      68%  { transform:translateX(1px);  opacity:1;   filter:brightness(0.8); }
+      84%  { transform:translateX(-1px); opacity:0.95;filter:brightness(1.1); }
+      100% { transform:translateX(0);    opacity:1;   filter:brightness(1); }
+    }
+    .vault-item.vault-glitch { animation:vault-glitch 0.32s ease-in-out forwards; }
+
+    /* ── DECADE BAR CHART ── */
+    .decade-bar-row { display:flex; align-items:center; gap:8px; margin-bottom:7px; }
+    .decade-bar-row:last-child { margin-bottom:0; }
+    .decade-bar-label { font-family:'Press Start 2P',monospace; font-size:5px; color:var(--muted); letter-spacing:1px; min-width:36px; flex-shrink:0; }
+    .decade-bar-track { flex:1; height:6px; background:rgba(160,20,20,0.15); }
+    .decade-bar-fill { height:100%; background:var(--vault-red-bright); box-shadow:0 0 4px rgba(200,30,30,0.4); transition:width 0.7s ease; }
+    .decade-bar-count { font-family:'VT323',monospace; font-size:17px; color:var(--vault-red-light); min-width:26px; text-align:right; flex-shrink:0; line-height:1; }
+    .decade-reviewed-badge { font-family:'Press Start 2P',monospace; font-size:4px; color:var(--accent); opacity:0.7; min-width:22px; text-align:right; flex-shrink:0; letter-spacing:0.5px; }
+
+    /* ── SCROLL COUNTER ── */
+    .vault-scroll-counter {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px;
+      color: var(--vault-red-light);
+      background: rgba(6,0,1,0.90);
+      border: 1px solid var(--vault-border);
+      padding: 9px 13px;
+      letter-spacing: 1px;
+      z-index: 500;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .vault-scroll-counter.show { opacity: 1; }
+    .vault-counter-num { color: #fff; }
+
+
+
+    /* ── MOBILE PERFORMANCE MODE ── */
+    @media (max-width: 820px), (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+      body::after {
+        display: none !important;
+      }
+      .hero-bg {
+        display: none !important;
+      }
+      .lightning-bar {
+        display: none !important;
+      }
+      .vault-scroll-counter {
+        display: none !important;
+      }
+      .vault-item,
+      .vault-item.has-review,
+      .vault-item.has-review:hover,
+      .vault-item.vault-drawn,
+      .modal-box,
+      .topbar,
+      .vault-draw-btn {
+        box-shadow: none !important;
+        transform: none !important;
+        filter: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="index.html" class="site-logo">WRET<span>VISION</span></a>
+      <nav class="main-nav">
+        <a href="index.html"  class="nav-link">HOME</a>
+        <a href="movies.html" class="nav-link">▶ MOVIES</a>
+        <a href="tv.html"     class="nav-link">◈ TV SHOWS</a>
+        <a href="games.html"  class="nav-link">◆ GAMES</a>
+        <a href="horror-vault.html" class="nav-link active">☠ HORROR VAULT</a>
+      </nav>
+    </div>
+    <a class="yt-link" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <div class="avatar-wrap"><img src="wretvision.png" alt="WretVision" /></div>
+      <span class="yt-label">SUBSCRIBE ▶</span>
+    </a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <p class="hero-eyebrow">// watched horror archive //</p>
+    <h1 class="hero-title">HORROR<span>VAULT</span></h1>
+    <div class="lightning-bar"></div>
+    <p class="hero-sub">A personal list, not a streaming guide. Classics, weird ones, and everything in between.</p>
+  </section>
+
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num" id="vault-total">—</span><span class="stat-label">TITLES</span></div>
+    <div class="stat-item"><span class="stat-num" id="vault-decades">—</span><span class="stat-label">DECADES</span></div>
+    <div class="stat-item"><span class="stat-num" id="vault-earliest">—</span><span class="stat-label">EARLIEST</span></div>
+    <div class="stat-item"><span class="stat-num" id="vault-latest">—</span><span class="stat-label">LATEST</span></div>
+  </div>
+
+  <div class="vault-tools">
+    <input class="vault-search" id="vault-search" placeholder="Search the vault..." />
+    <div class="vault-decade-wrap">
+      <button class="vault-decade-toggle" id="vault-decade-toggle" aria-expanded="false">
+        <span id="vault-decade-label">ALL</span><span class="vault-decade-arrow">▼</span>
+      </button>
+      <div class="vault-decade-panel" id="vault-decade-panel">
+        <button class="vault-filter active" data-decade="all">ALL</button>
+        <button class="vault-filter" data-decade="2020s">2020s</button>
+        <button class="vault-filter" data-decade="2010s">2010s</button>
+        <button class="vault-filter" data-decade="2000s">2000s</button>
+        <button class="vault-filter" data-decade="1990s">1990s</button>
+        <button class="vault-filter" data-decade="1980s">1980s</button>
+        <button class="vault-filter" data-decade="1970s">1970s</button>
+        <button class="vault-filter" data-decade="classic">CLASSICS</button>
+      </div>
+    </div>
+  </div>
+  <div class="vault-draw-wrap">
+    <button class="vault-draw-btn" onclick="drawFromVault()">☠ DRAW FROM VAULT</button>
+  </div>
+
+  <div class="vault-wrap">
+    <main class="vault-main">
+      <div class="vault-intro">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <p>Hi, welcome to my horror movie list. This is the rebuilt version after losing older lists a few times, so now it lives here as a proper archive.</p>
+        <p>It includes animated films, US and UK horror, Asian horror, famous classics, recent releases, and the obscure weird stuff that tends to stick in your head for no normal reason.</p>
+        <p>Just to be clear, this is a watched list, not a guide on where to find or watch them. That part is up to you.</p>
+      </div>
+      <div class="col-header">horror vault</div>
+      <div class="vault-list" id="vault-list"></div>
+      <div class="vault-empty" id="vault-empty">>> NOTHING FOUND IN THE VAULT. TRY ANOTHER SEARCH. _</div>
+    </main>
+
+    <aside class="vault-sidebar">
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">about the vault</div>
+        <p class="about-text">This is the watched archive. Full reviews stay on the movie page. The vault is proof of damage.</p>
+      </div>
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">vault notes</div>
+        <p class="about-text"><span id="vault-reviewed-count">—</span> titles already have a full WretVision review attached. More will get upgraded later.</p>
+      </div>
+      <div class="sidebar-widget">
+        <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+        <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+        <div class="widget-title">by decade</div>
+        <div id="decade-chart"></div>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    &copy; WRETVISION, HORROR ARCHIVE.<span class="blink"> _</span><br>
+    <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR DARK ROOMS AND BAD DECISIONS</span>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <button class="modal-close" id="modal-close">CLOSE</button>
+      <div id="modal-inner"></div>
+    </div>
+  </div>
+
+  <div class="vault-scroll-counter" id="vault-counter">
+    <span class="vault-counter-num" id="vault-counter-num">0</span> / <span id="vault-counter-total">—</span>
+  </div>
+
+  <script src="reviews.js"></script>
+  <script src="shared.js"></script>
+  <script src="horror-vault.js"></script>
+  <script>
+    let activeDecade = 'all';
+    const searchInput = document.getElementById('vault-search');
+    const list = document.getElementById('vault-list');
+    const empty = document.getElementById('vault-empty');
+
+    function normalizeTitle(str){
+      return String(str || '').toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim().replace(/\s+/g, ' ');
+    }
+
+    function reviewedKey(item){ return `${normalizeTitle(item.title)}|${item.year}`; }
+
+    const movieReviews = (typeof REVIEWS !== 'undefined' ? REVIEWS : []).filter(r => r.category === 'movie');
+    const reviewedMap = new Map(movieReviews.map(r => [`${normalizeTitle(r.title)}|${r.year}`, r]));
+    const reviewedMovies = new Set(reviewedMap.keys());
+
+    function passesDecade(item){
+      if(activeDecade === 'all') return true;
+      if(activeDecade === 'classic') return item.year && item.year < 1970;
+      return item.decade === activeDecade;
+    }
+
+    function renderVault(){
+      const q = searchInput.value.trim().toLowerCase();
+      const filtered = HORROR_VAULT.filter(item => passesDecade(item) && (!q || item.title.toLowerCase().includes(q) || String(item.year).includes(q)));
+      list.innerHTML = filtered.map(item => {
+        const review = reviewedMap.get(reviewedKey(item));
+        const reviewed = Boolean(review);
+        const actionAttrs = reviewed ? ` data-review-id="${review.id}" role="button" tabindex="0" aria-label="Open full review for ${escapeHTML(item.title)}"` : '';
+        return `<article class="vault-item${reviewed ? ' has-review' : ''}" data-vault-id="${item.id}"${actionAttrs}>
+          <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+          <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+          <div class="vault-title">${escapeHTML(item.title)}</div>
+          <div class="vault-year">${item.year || '????'} · ${escapeHTML(item.decade || 'unknown')}</div>
+          <div class="vault-status ${item.status === 'excluded' ? 'excluded' : ''}">${item.status === 'excluded' ? 'excluded / flagged' : 'watched'}</div>
+          ${reviewed ? '<span class="vault-reviewed">REVIEWED, CLICK TO READ</span>' : ''}
+        </article>`;
+      }).join('');
+      empty.style.display = filtered.length ? 'none' : 'block';
+      bindReviewedItems();
+    }
+
+    function bindReviewedItems(){
+      document.querySelectorAll('.vault-item.has-review').forEach(card => {
+        const id = Number(card.dataset.reviewId);
+        card.addEventListener('click', () => openModal(id));
+        card.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openModal(id);
+          }
+        });
+      });
+    }
+
+    function escapeHTML(str){
+      return String(str).replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+    }
+
+    function drawFromVault() {
+      const q = searchInput.value.trim().toLowerCase();
+      const pool = HORROR_VAULT.filter(item =>
+        passesDecade(item) &&
+        (!q || item.title.toLowerCase().includes(q) || String(item.year).includes(q))
+      );
+      if (!pool.length) return;
+
+      const pick = pool[Math.floor(Math.random() * pool.length)];
+
+      document.querySelectorAll('.vault-drawn').forEach(el => el.classList.remove('vault-drawn'));
+
+      const card = document.querySelector(`.vault-item[data-vault-id="${pick.id}"]`);
+      if (!card) return;
+
+      card.classList.add('vault-drawn');
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      setTimeout(() => card.classList.remove('vault-drawn'), 7000);
+    }
+
+    function initVault(){
+      const years = HORROR_VAULT.map(v => v.year).filter(Boolean);
+      const decades = new Set(HORROR_VAULT.map(v => v.decade).filter(Boolean));
+      document.getElementById('vault-total').textContent = HORROR_VAULT.length;
+      document.getElementById('vault-decades').textContent = decades.size;
+      document.getElementById('vault-earliest').textContent = Math.min(...years);
+      document.getElementById('vault-latest').textContent = Math.max(...years);
+      document.getElementById('vault-reviewed-count').textContent = HORROR_VAULT.filter(v => reviewedMovies.has(reviewedKey(v))).length;
+      const decadeToggle = document.getElementById('vault-decade-toggle');
+      const decadePanel  = document.getElementById('vault-decade-panel');
+      const decadeLabel  = document.getElementById('vault-decade-label');
+
+      decadeToggle.addEventListener('click', e => {
+        e.stopPropagation();
+        const isOpen = decadePanel.classList.toggle('open');
+        decadeToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      document.addEventListener('click', () => {
+        decadePanel.classList.remove('open');
+        decadeToggle.setAttribute('aria-expanded', 'false');
+      });
+
+      document.querySelectorAll('.vault-filter').forEach(btn => {
+        btn.addEventListener('click', () => {
+          activeDecade = btn.dataset.decade;
+          document.querySelectorAll('.vault-filter').forEach(b => b.classList.toggle('active', b === btn));
+          decadeLabel.textContent = btn.textContent;
+          decadePanel.classList.remove('open');
+          decadeToggle.setAttribute('aria-expanded', 'false');
+          renderVault();
+        });
+      });
+      searchInput.addEventListener('input', renderVault);
+      document.getElementById('modal-close').addEventListener('click', closeModal);
+      document.getElementById('modal-overlay').addEventListener('click', e => {
+        if (e.target === document.getElementById('modal-overlay')) closeModal();
+      });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+      renderVault();
+    }
+    initVault();
+
+    // Decade breakdown chart
+    (function() {
+      const decades = ['1920s','1930s','1940s','1950s','1960s','1970s','1980s','1990s','2000s','2010s','2020s'];
+      const counts  = {};
+      decades.forEach(d => counts[d] = 0);
+
+      HORROR_VAULT.forEach(item => {
+        if (item.decade && counts[item.decade] !== undefined) counts[item.decade]++;
+        else if (item.year && item.year < 1920) counts['1920s']++;
+      });
+
+      const max       = Math.max(...Object.values(counts), 1);
+      const container = document.getElementById('decade-chart');
+
+      decades.forEach(decade => {
+        const count    = counts[decade];
+        if (!count) return;
+        const reviewed = HORROR_VAULT.filter(item =>
+          item.decade === decade && reviewedMovies.has(reviewedKey(item))
+        ).length;
+        const pct = Math.round((count / max) * 100);
+        const row = document.createElement('div');
+        row.className = 'decade-bar-row';
+        row.innerHTML = `
+          <span class="decade-bar-label">${decade}</span>
+          <div class="decade-bar-track">
+            <div class="decade-bar-fill" style="width:0%"></div>
+          </div>
+          <span class="decade-bar-count">${count}</span>
+          ${reviewed ? `<span class="decade-reviewed-badge">★${reviewed}</span>` : '<span class="decade-reviewed-badge"></span>'}
+        `;
+        container.appendChild(row);
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            row.querySelector('.decade-bar-fill').style.width = pct + '%';
+          });
+        });
+      });
+    })();
+
+    // Scroll counter
+    (function() {
+      const counter    = document.getElementById('vault-counter');
+      const numEl      = document.getElementById('vault-counter-num');
+      const totalEl    = document.getElementById('vault-counter-total');
+      const listEl     = document.getElementById('vault-list');
+      let highestSeen  = 0;
+      let observer     = null;
+
+      function updateDisplay() {
+        const total = listEl.querySelectorAll('.vault-item').length;
+        numEl.textContent   = highestSeen;
+        totalEl.textContent = total;
+        if (highestSeen > 0) counter.classList.add('show');
+      }
+
+      function attachObserver() {
+        if (observer) observer.disconnect();
+        highestSeen = 0;
+        counter.classList.remove('show');
+        const cards = Array.from(listEl.querySelectorAll('.vault-item'));
+        totalEl.textContent = cards.length;
+        numEl.textContent   = '0';
+
+        observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const idx = cards.indexOf(entry.target) + 1;
+              if (idx > highestSeen) {
+                highestSeen = idx;
+                updateDisplay();
+              }
+            }
+          });
+        }, { threshold: 0.1 });
+
+        cards.forEach(card => observer.observe(card));
+      }
+
+      new MutationObserver(attachObserver).observe(listEl, { childList: true });
+      attachObserver();
+    })();
+
+    // Random card flicker removed for mobile performance.
+
+
+  </script>
+</body>
+</html>

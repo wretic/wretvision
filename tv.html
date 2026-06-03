@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCX90839K8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PCX90839K8');
+  </script>
+  <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WretVision — TV Show Reviews</title>
+  <meta name="description" content="WretVision TV show reviews. Honest takes on drama, crime, sci-fi series and more. No fluff, just opinion." />
+  <meta name="keywords" content="TV show reviews, series reviews, best TV shows, drama reviews, crime shows, sci-fi series, binge worthy" />
+  <meta name="author" content="WretVision" />
+  <link rel="canonical" href="https://wretvision.com/tv.html" />
+  <meta property="og:title" content="WretVision — TV Show Reviews" />
+  <meta property="og:description" content="Honest TV show reviews. Drama, crime, sci-fi and more. No fluff, just opinion." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wretvision.com/tv.html" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Blog","name":"WretVision TV","url":"https://wretvision.com/tv.html","description":"Honest TV show reviews covering drama, crime, sci-fi and more.","author":{"@type":"Person","name":"WretVision"}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    /* ── TV THEME: green + blue ── */
+    :root {
+      --tv-green:      #4fffb0;
+      --tv-green-dim:  #2ecc80;
+      --tv-border:     rgba(79,255,176,0.25);
+      --tv-border-lit: rgba(79,255,176,0.6);
+    }
+
+    /* topbar */
+    .topbar { border-bottom-color: var(--tv-green-dim) !important; }
+    .site-logo { color: var(--tv-green) !important; text-shadow: 0 0 12px var(--tv-green-dim), 2px 2px 0 #001a0e !important; }
+    .site-logo span { color: var(--blue-light) !important; text-shadow: 0 0 10px rgba(59,191,255,0.5), 2px 2px 0 #021a2a !important; }
+    .yt-link { border-color: var(--tv-green-dim) !important; }
+    .nav-link.active { color: var(--tv-green) !important; border-color: var(--tv-green-dim) !important; background: rgba(79,255,176,0.08) !important; }
+
+    /* hero */
+    .hero-title { color: var(--tv-green) !important; text-shadow: 0 0 16px var(--tv-green-dim), 3px 3px 0 #001a0e !important; }
+    .hero-title span { color: var(--blue-light) !important; }
+    .lightning-bar { background: linear-gradient(90deg, transparent, var(--tv-green-dim), var(--blue-light), var(--tv-green-dim), transparent) !important; }
+    .hero-eyebrow { color: var(--tv-green-dim) !important; }
+
+    /* stats */
+    .stats-bar { background: var(--bg2); border-bottom-color: rgba(79,255,176,0.2) !important; }
+    .stat-num { color: var(--tv-green) !important; }
+    .stat-item { border-right-color: rgba(79,255,176,0.18) !important; }
+
+
+    /* col header */
+    .col-header { color: var(--tv-green-dim) !important; border-left-color: var(--tv-green) !important; }
+
+    /* review cards */
+    .review-card { border-color: var(--tv-border) !important; border-left: 3px solid var(--tv-green-dim) !important; }
+    .review-card:hover { border-color: var(--tv-border-lit) !important; border-left-color: var(--tv-green) !important; background: var(--bg3) !important; }
+    .pixel-corner { background: var(--tv-green) !important; }
+    .read-more { color: var(--tv-green) !important; }
+    .read-more:hover { color: #fff !important; }
+
+    /* sidebar */
+    .sidebar-widget { border-color: var(--tv-border) !important; }
+    .widget-title { color: var(--tv-green) !important; border-bottom-color: rgba(79,255,176,0.3) !important; }
+    .genre-tag { border-color: var(--tv-green-dim) !important; color: var(--tv-green) !important; }
+    .genre-tag:hover, .genre-tag.active { background: rgba(79,255,176,0.15) !important; }
+    .sidebar-list li { border-bottom-color: rgba(79,255,176,0.2) !important; }
+    .sidebar-movie-title:hover { color: var(--tv-green) !important; }
+
+    /* pagination */
+    .page-btn { border-color: rgba(79,255,176,0.3) !important; }
+    .page-btn:hover { color: var(--tv-green) !important; border-color: var(--tv-green-dim) !important; background: rgba(79,255,176,0.1) !important; }
+    .page-btn.active { background: var(--tv-green-dim) !important; border-color: var(--tv-green) !important; color: var(--bg) !important; }
+    .pagination { border-top-color: rgba(79,255,176,0.25) !important; }
+
+    /* modal */
+    .modal-box { border-color: var(--tv-green-dim) !important; }
+    .modal-divider { background: linear-gradient(90deg, var(--tv-green), var(--blue-light), transparent) !important; }
+    .modal-genre { color: var(--tv-green) !important; }
+    .verdict-text { color: var(--tv-green) !important; }
+    .modal-close:hover { color: var(--tv-green) !important; border-color: var(--tv-green-dim) !important; }
+    .modal-footer { border-top-color: rgba(79,255,176,0.25) !important; }
+
+    /* main layout border */
+    .reviews-col { border-right-color: var(--tv-border) !important; }
+
+    /* footer */
+    .footer { border-top-color: var(--tv-green-dim) !important; }
+
+    /* ── CURSOR ── */
+    body, body * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%234fffb0" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
+    a, button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%234fffb0" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
+  </style>
+</head>
+<body class="page-tv">
+
+<div class="status-ticker-bar">
+  <span class="ticker-left">TERMINAL: WRETVISION v2.6.6 | CHANNEL: TV | SESSION: <span class="ticker-session-val" id="ticker-session">00:00:00</span></span>
+  <div class="ticker-scroll-wrap">
+    <span class="ticker-scroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOADING EPISODE DATA... // "THEY SAY TV ROTS YOUR BRAIN. THEY WERE RIGHT ABOUT SOME OF IT." // SIGNAL QUALITY: OPTIMAL // BUFFERING... // SERIES ARCHIVE: ONLINE // NEXT EPISODE: UNKNOWN... // SCANNING FOR NEW CONTENT...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+  <header class="topbar">
+  <div class="topbar-left">
+    <a href="index.html" class="site-logo">WRET<span>VISION</span></a>
+    <nav class="main-nav">
+      <a href="index.html"  class="nav-link">HOME</a>
+      <a href="movies.html" class="nav-link">▶ MOVIES</a>
+      <a href="tv.html"     class="nav-link active">◈ TV SHOWS</a>
+      <a href="games.html"  class="nav-link">◆ GAMES</a>
+      <a href="horror-vault.html" class="nav-link">☠ HORROR VAULT</a>
+    </nav>
+  </div>
+  <a class="yt-link" 
+     href="https://www.youtube.com/channel/UCC3aFC7Gr2eYUEGc6IRga0g?sub_confirmation=1"
+     target="_blank" rel="noopener"
+     style="display:flex; align-items:center; gap:8px;">
+
+    <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+    <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+
+    <div class="avatar-wrap">
+      <img src="wretvision.png" alt="WretVision" />
+    </div>
+
+    <span class="yt-label">SUBSCRIBE ▶</span>
+  </a>
+</header>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-rain"></div>
+    <div class="hero-flash" id="hero-flash"></div>
+    <canvas class="hero-lightning-canvas" id="hero-lightning-canvas"></canvas>
+    <p class="hero-eyebrow">// tv show reviews //</p>
+    <h1 class="hero-title">WRET<span>VISION</span></h1>
+    <div class="lightning-bar"></div>
+    <p class="hero-sub">TV worth sitting through. And some that isn't.</p>
+    <div class="hero-broadcast-mini" id="hbm">
+      <div class="hbm-header"><span class="hbm-dot" style="color:var(--tv-green)">●</span> LATEST REVIEW</div>
+      <div class="hbm-title" id="hbm-title">—</div>
+      <div class="hbm-score" id="hbm-score"></div>
+    </div>
+  </section>
+
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num" id="stat-total">—</span><span class="stat-label">REVIEWS</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-genres">—</span><span class="stat-label">GENRES</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-earliest">—</span><span class="stat-label">EARLIEST</span></div>
+    <div class="stat-item"><span class="stat-num" id="stat-avg">—</span><span class="stat-label">AVG SCORE</span></div>
+  </div>
+
+  <div class="main-layout">
+    <main class="reviews-col">
+      <div class="col-header">tv show reviews</div>
+      <div id="reviews-container"></div>
+      <div class="no-results" id="no-results"><p class="no-results-text">>> NO TV REVIEWS IN THIS GENRE YET. CHECK BACK SOON. _</p></div>
+      <div class="pagination" id="pagination"></div>
+    </main>
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+          <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+          <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+          <div class="widget-title">about tv reviews</div>
+          <p class="about-text">Shows worth watching and shows that wasted my time. Honest takes, no spoilers beyond what you need to know.</p>
+        </div>
+        <div class="sidebar-widget">
+          <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+          <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+          <div class="widget-title genre-widget-title" id="genre-widget-toggle" aria-expanded="false">browse by genre <span class="genre-toggle-arrow">▼</span></div>
+          <div class="genre-tags-wrap" id="genre-tags-wrap"><div class="genre-tags" id="genre-tags"></div></div>
+        </div>
+        <div class="sidebar-widget">
+          <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+          <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+          <div class="widget-title">top rated shows</div>
+          <ul class="sidebar-list" id="top-rated-list"></ul>
+        </div>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    &copy; WRETVISION, JUST OPINIONS.<span class="blink"> _</span><br>
+    <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR THE LOVE OF TV</span>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
+      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
+      <button class="modal-close" id="modal-close">[ X ]</button>
+      <div id="modal-inner"></div>
+    </div>
+  </div>
+
+  <script src="reviews.js"></script>
+  <script src="shared.js"></script>
+  <script>
+    window.HERO_FX = {
+      glowColor:   'rgba(79,255,176,0.28)',
+      shadowColor: 'rgba(60,220,150,1)',
+      flashColor:  'rgba(79,255,176,1)'
+    };
+  </script>
+  <script src="hero-effects.js"></script>
+  <script>
+    window.openOrRedirectReview = function (r) {
+      var review = typeof r === 'object' ? r : REVIEWS.find(function (x) { return x.id === r; });
+      if (review) window.location.href = 'review.html?id=' + review.id;
+    };
+    initPage('tv');
+    (function() {
+      var latest = (typeof REVIEWS !== 'undefined' ? REVIEWS : []).filter(function(r){ return r.category === 'tv'; })
+                    .sort(function(a,b){ return b.id - a.id; })[0];
+      if (!latest) return;
+      var t = document.getElementById('hbm-title');
+      var s = document.getElementById('hbm-score');
+      if (t) t.textContent = latest.title + ' (' + latest.year + ')';
+      if (s) s.textContent = latest.score + ' / 10';
+    })();
+    (function() {
+      var el = document.getElementById('ticker-session');
+      if (!el) return;
+      var sec = 0;
+      setInterval(function() {
+        sec++;
+        var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
+        el.textContent = String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+      }, 1000);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+name: Daily Review Publisher
+
+on:
+  schedule:
+    # Runs at 10:00 AM Amsterdam time (UTC+2 summer / UTC+1 winter)
+    # Adjust if needed: https://crontab.guru
+    - cron: "0 8 * * *"
+  workflow_dispatch: # lets you trigger manually from GitHub UI
+
+jobs:
+  publish-review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Generate and publish review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+        run: python scripts/review_generator.py
+
+      - name: Commit new review
+        run: |
+          git config --global user.name "ReviewBot"
+          git config --global user.email "bot@noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Auto-review: $(cat /tmp/review_title.txt 2>/dev/null || echo 'Daily review')"
+          git push
