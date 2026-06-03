@@ -24,9 +24,8 @@ PERSONALITY = DATA / "personality.md"
 
 # ── This is the only path you need to set ─────────────────────────────────────
 # Point it at your reviews.js file inside your repo.
-REVIEWS_JS  = ROOT / "reviews.js"          # ← adjust if yours lives elsewhere
-#              e.g. ROOT / "js" / "reviews.js"
-#              e.g. ROOT / "data" / "reviews.js"
+REVIEWS_JS      = ROOT / "reviews.js"
+HORROR_VAULT_JS = ROOT / "horror-vault.js"
 
 # ── Category weights per day type ─────────────────────────────────────────────
 WEEKDAY_WEIGHTS = {"movies": 0.50, "tv": 0.40, "horror_vault": 0.10}
@@ -172,6 +171,57 @@ def build_review_entry(category, item, parsed):
         "verdict":  parsed["verdict"],
     }
 
+def is_horror(category, item):
+    """Return True if this title belongs in the horror vault."""
+    if category == "horror_vault":
+        return True
+    return any("horror" in g.lower() for g in item.get("genre", []))
+
+def get_decade(year):
+    try:
+        return f"{(int(year) // 10) * 10}s"
+    except (TypeError, ValueError):
+        return "Unknown"
+
+def add_to_horror_vault(title, year):
+    """Inject title into horror-vault.js if not already present."""
+    source = HORROR_VAULT_JS.read_text(encoding="utf-8")
+
+    existing_titles = re.findall(r'"title"\s*:\s*"([^"]+)"', source)
+    if any(t.lower().strip() == title.lower().strip() for t in existing_titles):
+        print(f"'{title}' already in horror vault — skipping.")
+        return
+
+    id_matches = re.findall(r'"id"\s*:\s*(\d+)', source)
+    next_id = max(int(i) for i in id_matches) + 1 if id_matches else 1
+
+    new_entry = {
+        "title": title,
+        "year":  year,
+        "decade": get_decade(year),
+        "status": "watched",
+        "note":  "",
+        "id":    next_id,
+    }
+
+    raw_json = json.dumps(new_entry, indent=2, ensure_ascii=False)
+    indented  = "\n".join("  " + line for line in raw_json.splitlines())
+    new_block = indented + ",\n"
+
+    marker = "const HORROR_VAULT = ["
+    pos    = source.find(marker)
+    if pos == -1:
+        print("Warning: could not find HORROR_VAULT array — skipping vault update.")
+        return
+
+    insert_at = pos + len(marker)
+    if source[insert_at] == "\n":
+        insert_at += 1
+
+    updated = source[:insert_at] + new_block + source[insert_at:]
+    HORROR_VAULT_JS.write_text(updated, encoding="utf-8")
+    print(f"Added '{title}' ({year}) to horror vault.")
+
 def inject_into_reviews_js(entry):
     """
     Reads reviews.js, injects the new entry at the very top of the REVIEWS array,
@@ -229,6 +279,9 @@ def main():
 
     entry = build_review_entry(category, item, parsed)
     inject_into_reviews_js(entry)
+
+    if is_horror(category, item):
+        add_to_horror_vault(item["title"], item.get("year", ""))
 
     for q_item in queue.get(category, []):
         if q_item["title"] == item["title"] and q_item.get("year") == item.get("year"):
