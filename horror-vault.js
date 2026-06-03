@@ -3257,5 +3257,13 @@ const HORROR_VAULT = [
   "status": "watched",
   "note": "",
   "id": 407
+  },
+  {
+    "title": "The Night House",
+    "year": 2020,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 408
   }
 ];
