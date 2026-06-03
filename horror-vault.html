@@ -481,25 +481,18 @@
       });
     })();
 
-    // Scroll counter
+    // Scroll counter — tracks currently visible cards, goes up and down with scroll
     (function() {
-      const counter    = document.getElementById('vault-counter');
-      const numEl      = document.getElementById('vault-counter-num');
-      const totalEl    = document.getElementById('vault-counter-total');
-      const listEl     = document.getElementById('vault-list');
-      let highestSeen  = 0;
-      let observer     = null;
-
-      function updateDisplay() {
-        const total = listEl.querySelectorAll('.vault-item').length;
-        numEl.textContent   = highestSeen;
-        totalEl.textContent = total;
-        if (highestSeen > 0) counter.classList.add('show');
-      }
+      const counter  = document.getElementById('vault-counter');
+      const numEl    = document.getElementById('vault-counter-num');
+      const totalEl  = document.getElementById('vault-counter-total');
+      const listEl   = document.getElementById('vault-list');
+      let observer   = null;
+      let visible    = new Set();
 
       function attachObserver() {
         if (observer) observer.disconnect();
-        highestSeen = 0;
+        visible.clear();
         counter.classList.remove('show');
         const cards = Array.from(listEl.querySelectorAll('.vault-item'));
         totalEl.textContent = cards.length;
@@ -507,14 +500,12 @@
 
         observer = new IntersectionObserver(entries => {
           entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const idx = cards.indexOf(entry.target) + 1;
-              if (idx > highestSeen) {
-                highestSeen = idx;
-                updateDisplay();
-              }
-            }
+            const idx = cards.indexOf(entry.target) + 1;
+            entry.isIntersecting ? visible.add(idx) : visible.delete(idx);
           });
+          const current = visible.size > 0 ? Math.max(...visible) : 0;
+          numEl.textContent = current;
+          current > 0 ? counter.classList.add('show') : counter.classList.remove('show');
         }, { threshold: 0.1 });
 
         cards.forEach(card => observer.observe(card));
