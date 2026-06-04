@@ -10,6 +10,8 @@ import os
 import random
 import re
 import sys
+import urllib.request
+import urllib.parse
 from datetime import datetime
 from pathlib import Path
 
@@ -154,7 +156,7 @@ def build_review_entry(category, item, parsed):
 
     uid = int(datetime.now().timestamp() * 1000)
 
-    return {
+    entry = {
         "id":       uid,
         "category": CATEGORY_MAP.get(category, "movie"),
         "title":    f"{title}{season_str}",
@@ -170,6 +172,10 @@ def build_review_entry(category, item, parsed):
         "images":   [],
         "verdict":  parsed["verdict"],
     }
+    media = fetch_tmdb_media(title, year)
+    if media:
+        entry["media"] = media
+    return entry
 
 def is_horror(category, item):
     """Return True if this title belongs in the horror vault."""
@@ -221,6 +227,33 @@ def add_to_horror_vault(title, year):
     updated = source[:insert_at] + new_block + source[insert_at:]
     HORROR_VAULT_JS.write_text(updated, encoding="utf-8")
     print(f"Added '{title}' ({year}) to horror vault.")
+
+def fetch_tmdb_media(title, year):
+    """Fetch poster + backdrop from TMDB. Returns media dict or None."""
+    api_key = "901e304e38b7fb43f193ee28baf95720"
+    try:
+        query = urllib.parse.quote(str(title))
+        url   = f"https://api.themoviedb.org/3/search/movie?api_key={api_key}&query={query}&year={year}&language=en-US"
+        with urllib.request.urlopen(url, timeout=10) as r:
+            data = json.loads(r.read().decode())
+        results = data.get("results", [])
+        if not results:
+            print(f"TMDB: no results for '{title}' ({year})")
+            return None
+        movie    = results[0]
+        poster   = movie.get("poster_path")
+        backdrop = movie.get("backdrop_path")
+        if not poster and not backdrop:
+            return None
+        media = {
+            "poster":   f"https://image.tmdb.org/t/p/w500{poster}"    if poster   else "",
+            "backdrop": f"https://image.tmdb.org/t/p/w1280{backdrop}" if backdrop else "",
+        }
+        print(f"TMDB: found poster for '{title}'")
+        return media
+    except Exception as e:
+        print(f"TMDB fetch failed: {e}")
+        return None
 
 def inject_into_reviews_js(entry):
     """

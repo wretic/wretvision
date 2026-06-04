@@ -31,6 +31,7 @@ const REVIEWS = [
         "The ending divides people and I understand why. It commits hard to its psychological reading and doesn't soften the landing. For me that's exactly right. A film this focused on dread and dissociation earns a conclusion that feels inevitable rather than tidy. Session 9 sits comfortably alongside The Shining and Hereditary as horror that uses mental collapse as genuine subject matter rather than decoration. It is streaming across various platforms and if you haven't seen it you've missed one of the most quietly terrifying films of its decade. No sequel. No franchise. Just one very good, very specific horror film doing its job without apology."
       ],
       "images": [],
+      "media": { "poster": "https://image.tmdb.org/t/p/w500/A3Au37c3KJX29BDvldzGiYtaU5B.jpg", "backdrop": "https://image.tmdb.org/t/p/w1280/q00YpCIaO4ke4qstYnds9PtAz3t.jpg" },
       "verdict": "Session 9 is the kind of film that makes you question what you saw after the credits roll, and that is exactly where the best horror lives."
     },
    {
