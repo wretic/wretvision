@@ -9,6 +9,30 @@
 // ============================================================
 
 const REVIEWS = [
+    {
+      "id": 1780571940348,
+      "category": "movie",
+      "title": "Session 9",
+      "year": 2001,
+      "director": "Brad Anderson",
+      "runtime": "100 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Psychological",
+        "Mystery"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Session 9 is the kind of horror film that gets under your skin before you even realise it's moved in.",
+      "body": [
+        "Brad Anderson made something genuinely rare with Session 9 in 2001. A horror film that uses its location the way a great director uses an actor. The Danvers State Mental Hospital isn't just a backdrop. It breathes. It watches. Anderson shoots the place with such quiet patience that you start to feel the weight of everything that happened inside those walls before a single scary thing occurs. The film follows an asbestos removal crew hired to clean the building on a tight schedule, and that premise alone, ordinary working men under financial pressure in an abandoned asylum, is more unsettling than most horror films manage with twice the budget. It trusts atmosphere over mechanics. That is rare. That is worth paying attention to.",
+        "What works here is the creeping psychological unravelling rather than any single shock moment. David Caruso and Peter Mullan anchor the ensemble with the kind of low key naturalism you don't get when actors are performing for an audience. Mullan in particular is doing something subtle and devastating throughout. The titular sessions, audio recordings of a former patient uncovered by one of the crew, are some of the most genuinely unsettling material in 2000s horror. No jump scares attached. Just a voice, a cassette player, and the slow realisation that something is deeply wrong. The pacing is deliberate and some viewers will bounce off it, but if you let it work on you it really works. The practical location photography does more than any CGI haunted house ever could.",
+        "The ending divides people and I understand why. It commits hard to its psychological reading and doesn't soften the landing. For me that's exactly right. A film this focused on dread and dissociation earns a conclusion that feels inevitable rather than tidy. Session 9 sits comfortably alongside The Shining and Hereditary as horror that uses mental collapse as genuine subject matter rather than decoration. It is streaming across various platforms and if you haven't seen it you've missed one of the most quietly terrifying films of its decade. No sequel. No franchise. Just one very good, very specific horror film doing its job without apology."
+      ],
+      "images": [],
+      "verdict": "Session 9 is the kind of film that makes you question what you saw after the credits roll, and that is exactly where the best horror lives."
+    },
    {
   "id": 1780490676422,
   "category": "movie",
