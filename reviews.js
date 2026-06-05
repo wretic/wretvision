@@ -10,6 +10,34 @@
 
 const REVIEWS = [
     {
+      "id": 1780659095316,
+      "category": "movie",
+      "title": "Possession",
+      "year": 1981,
+      "director": "Andrzej Żuławski",
+      "runtime": "124 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Psychological",
+        "Drama"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Possession (1981) is the kind of film that burrows into your skull and refuses to leave. Andrzej Zulawski made something genuinely unclassifiable here.",
+      "body": [
+        "There is no comfortable way to watch Possession. Andrzej Zulawski's 1981 film drops you into a disintegrating marriage between Mark and Anna in Cold War Berlin, and it never once offers you solid ground to stand on. This is not horror in any conventional sense. It is closer to a psychological breakdown rendered as cinema, a film that uses the genre as a vessel for something rawer and more unsettling than any monster movie could manage. It sits comfortably alongside something like Repulsion or Hereditary in what it does to your nervous system, except it is angrier than both. The city itself feels like a wound. Zulawski frames West Berlin with this grey, suffocating weight that makes every scene feel like the walls are closing in. The direction is restless and aggressive in a way that feels completely intentional rather than chaotic, and that distinction matters enormously.",
+        "Isabelle Adjani gives one of the most committed performances I have ever seen on screen. The subway sequence alone should be studied in film schools. What she does there is not acting in any recognisable sense, it is total dissolution, and it is genuinely difficult to watch without feeling physically uncomfortable. That is a compliment of the highest order. Sam Neill matches her at almost every turn, playing a man unravelling in real time with a kind of controlled desperation that keeps you tethered when everything else is spinning. The practical effects work in the second half is extraordinary for 1981, visceral and strange and shot with enough conviction that it never tips into absurdity. Zulawski trusted his material and his cast completely, and you feel that trust in every frame. This is what a director with an actual vision looks like.",
+        "The film is not for everyone and I want to be honest about that. The pacing in the first act demands patience. The symbolism is dense and Zulawski is not interested in explaining himself to you. Some of the tonal lurches are deliberate but they can still knock you sideways in ways that feel disorienting rather than controlled. But here is the thing: Possession earns those lurches. By the time the ending arrives it feels not just inevitable but necessary, like the only logical conclusion to everything that came before. Films that stick with you for days after watching are rare. This one stuck with me for weeks. If you can find it on streaming in any of its various available cuts, watch the uncut version and give it your full attention. It rewards that completely."
+      ],
+      "images": [],
+      "verdict": "Possession (1981) is one of the most genuinely disturbing and artistically uncompromising horror films ever made, and a 9/10 feels almost too tidy a score for something this feral.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/A9bnRn05riOKWftvQlLKa2gl51n.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/zfw3fcF7d4KcWYEvps4zUfl303b.jpg"
+      }
+    },
+    {
       "id": 1780571940348,
       "category": "movie",
       "title": "Session 9",
