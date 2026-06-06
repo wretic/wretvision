@@ -10,6 +10,34 @@
 
 const REVIEWS = [
     {
+      "id": 1780740479252,
+      "category": "movie",
+      "title": "The Thing",
+      "year": 1982,
+      "director": "John Carpenter",
+      "runtime": "109 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Sci-Fi",
+        "Body Horror"
+      ],
+      "score": 10,
+      "featured": false,
+      "excerpt": "John Carpenter's The Thing is the gold standard of paranoia horror and nearly fifty years later nothing has touched it.",
+      "body": [
+        "Some films age. The Thing (1982) does not. John Carpenter made something so precise and so unnerving that it still sits at the top of the body horror genre without breaking a sweat. The premise is simple on paper: a research team in Antarctica encounters an alien organism that can perfectly imitate any living thing. But what Carpenter does with that premise is anything but simple. He turns it into a masterclass in sustained dread. You never feel safe. The men on screen don't feel safe. And because you can't trust anyone, you can't look away for a second. That tension is built slowly, methodically, and it never cheats. No cheap jump scares doing the heavy lifting here. Just a creeping, suffocating paranoia that gets under your skin and stays there.",
+        "The practical effects are the stuff of legend and they deserve every word written about them. Rob Bottin's creature work is genuinely extraordinary. Chest cavities splitting open, heads detaching and growing legs, bodies folding and stretching in directions that biology absolutely refuses. It is grotesque and it is brilliant and it holds up completely because it is real. You are watching something physically exist on screen. No CGI could replicate the visceral wrongness of these scenes and the 2011 prequel proved that painfully. Kurt Russell is perfectly cast, world weary and commanding without being a hero in the traditional sense. The ensemble around him is equally strong. Wilford Brimley going quietly unhinged is one of the great underrated performances in sci fi horror.",
+        "The ending is one of cinema's finest. No resolution, no rescue, no comfort. Just two men sitting in the cold wondering which one of them is still human. Carpenter had the courage to let that image be the final word and it is devastating because of everything the film built to get there. If you have somehow not seen The Thing and you are looking for it on streaming right now, stop reading and just go watch it. If Alien is the benchmark for sci fi horror in space, The Thing is its equal on the ground. This is what the genre looks like when every element, director, cast, score, effects, script, fires at the same time."
+      ],
+      "images": [],
+      "verdict": "The Thing (1982) is a perfect film, one of the rare cases where every choice was the right one, and it remains the ceiling that body horror has been trying to reach ever since.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/r9leYNa8nTRCceZrZhP1DXkgKVb.jpg"
+      }
+    },
+    {
       "id": 1780659095316,
       "category": "movie",
       "title": "Possession",
