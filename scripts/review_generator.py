@@ -143,6 +143,37 @@ def parse_response(raw):
     cleaned = re.sub(r"\s*```$", "", cleaned.strip())
     return json.loads(cleaned)
 
+def make_slug(title, year=""):
+    """Generate a URL slug from a review title."""
+    import unicodedata
+    slug = title.lower()
+    # normalise unicode then strip non-ASCII
+    slug = unicodedata.normalize("NFKD", slug).encode("ascii", "ignore").decode()
+    slug = re.sub(r"[^a-z0-9\s-]", "", slug)
+    slug = slug.strip()
+    slug = re.sub(r"[\s-]+", "-", slug)
+    slug = slug.strip("-")
+    if not slug.endswith("-review"):
+        slug += "-review"
+    return slug
+
+def unique_slug(base_slug, existing_slugs):
+    """Ensure slug is unique, appending a counter if needed."""
+    if base_slug not in existing_slugs:
+        return base_slug
+    counter = 2
+    while f"{base_slug}-{counter}" in existing_slugs:
+        counter += 1
+    return f"{base_slug}-{counter}"
+
+def get_existing_slugs():
+    """Read all slugs already in reviews.js."""
+    try:
+        source = REVIEWS_JS.read_text(encoding="utf-8")
+        return set(re.findall(r'"slug"\s*:\s*"([^"]+)"', source))
+    except Exception:
+        return set()
+
 def build_review_entry(category, item, parsed):
     """Build a dict that matches your reviews.js object structure exactly."""
     title    = item["title"]
@@ -153,13 +184,19 @@ def build_review_entry(category, item, parsed):
     runtime  = item.get("runtime", "")
     rating   = item.get("rating", "")
     season_str = f" Season {season}" if season else ""
+    full_title = f"{title}{season_str}"
 
     uid = int(datetime.now().timestamp() * 1000)
 
+    base_slug = make_slug(full_title)
+    existing  = get_existing_slugs()
+    slug      = unique_slug(base_slug, existing)
+
     entry = {
         "id":       uid,
+        "slug":     slug,
         "category": CATEGORY_MAP.get(category, "movie"),
-        "title":    f"{title}{season_str}",
+        "title":    full_title,
         "year":     year,
         "director": director,
         "runtime":  runtime if runtime else "?? min",

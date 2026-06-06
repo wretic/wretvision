@@ -20,6 +20,27 @@ if (!Array.isArray(reviews)) {
   process.exit(1);
 }
 
+// ── Validation ───────────────────────────────────────────────────────────────
+
+const missingSlugs = reviews.filter(r => !r.slug);
+if (missingSlugs.length > 0) {
+  console.warn('WARNING: ' + missingSlugs.length + ' review(s) missing a slug field:');
+  missingSlugs.forEach(r => console.warn('  - ' + r.title + ' (id=' + r.id + ')'));
+}
+
+const slugCount = {};
+reviews.forEach(r => {
+  if (r.slug) slugCount[r.slug] = (slugCount[r.slug] || 0) + 1;
+});
+const duplicateSlugs = Object.entries(slugCount).filter(([, n]) => n > 1);
+if (duplicateSlugs.length > 0) {
+  console.error('ERROR: Duplicate slugs detected — fix before deploying:');
+  duplicateSlugs.forEach(([slug, n]) => console.error('  - "' + slug + '" used by ' + n + ' reviews'));
+  process.exit(1);
+}
+
+// ── Build sitemap ─────────────────────────────────────────────────────────────
+
 const BASE = 'https://wretvision.com';
 
 const staticPages = [
@@ -31,9 +52,9 @@ const staticPages = [
   { url: BASE + '/horror-vault.html',  priority: '0.8', changefreq: 'weekly'  },
 ];
 
-// ?id= uses a numeric id — no special XML escaping needed for digits
+// Slug URLs in sitemap; fall back to id URL only if slug is missing
 const reviewPages = reviews.map(r => ({
-  url:        BASE + '/review.html?id=' + r.id,
+  url: BASE + '/review.html?' + (r.slug ? 'slug=' + r.slug : 'id=' + r.id),
   priority:   '0.7',
   changefreq: 'monthly',
 }));

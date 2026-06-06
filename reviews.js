@@ -11,6 +11,7 @@
 const REVIEWS = [
   {
     "id": 1780740479253,
+    "slug": "spider-noir-review",
     "category": "tv",
     "title": "Spider-Noir",
     "year": 2026,
@@ -43,6 +44,7 @@ const REVIEWS = [
   },
   {
     "id": 1780740479252,
+    "slug": "the-thing-review",
     "category": "movie",
     "title": "The Thing",
     "year": 1982,
@@ -71,6 +73,7 @@ const REVIEWS = [
   },
   {
     "id": 1780659095316,
+    "slug": "possession-review",
     "category": "movie",
     "title": "Possession",
     "year": 1981,
@@ -99,6 +102,7 @@ const REVIEWS = [
   },
   {
     "id": 1780571940348,
+    "slug": "session-9-review",
     "category": "movie",
     "title": "Session 9",
     "year": 2001,
@@ -127,6 +131,7 @@ const REVIEWS = [
   },
   {
     "id": 1780490676422,
+    "slug": "the-night-house-review",
     "category": "movie",
     "title": "The Night House",
     "year": 2020,
@@ -155,6 +160,7 @@ const REVIEWS = [
   },
   {
     "id": 1780419554998,
+    "slug": "the-thing-1982-review",
     "category": "movie",
     "title": "The Thing",
     "year": 1982,
@@ -183,6 +189,7 @@ const REVIEWS = [
   },
   {
     "id": 1780402079727,
+    "slug": "the-descent-review",
     "category": "movie",
     "title": "The Descent",
     "year": 2005,
@@ -211,6 +218,7 @@ const REVIEWS = [
   },
   {
     "id": 1780321287910,
+    "slug": "gonjiam-haunted-asylum-review",
     "category": "movie",
     "title": "Gonjiam: Haunted Asylum",
     "year": 2018,
@@ -239,6 +247,7 @@ const REVIEWS = [
   },
   {
     "id": 1780232272863,
+    "slug": "late-night-with-the-devil-review",
     "category": "movie",
     "title": "Late Night with the Devil",
     "year": 2023,
@@ -267,6 +276,7 @@ const REVIEWS = [
   },
   {
     "id": 1780054377747,
+    "slug": "we-bury-the-dead-review",
     "category": "movie",
     "title": "We Bury The Dead",
     "year": 2024,
@@ -294,6 +304,7 @@ const REVIEWS = [
   },
   {
     "id": 1779968496772,
+    "slug": "the-wicker-man-review",
     "category": "movie",
     "title": "The Wicker Man",
     "year": 1973,
@@ -322,6 +333,7 @@ const REVIEWS = [
   },
   {
     "id": 1779882088176,
+    "slug": "hereditary-review",
     "category": "movie",
     "title": "Hereditary",
     "year": 2018,
@@ -350,6 +362,7 @@ const REVIEWS = [
   },
   {
     "id": 1779819061172,
+    "slug": "the-autopsy-of-jane-doe-review",
     "category": "movie",
     "title": "The Autopsy of Jane Doe",
     "year": 2016,
@@ -378,6 +391,7 @@ const REVIEWS = [
   },
   {
     "id": 1779726923630,
+    "slug": "suspiria-review",
     "category": "movie",
     "title": "Suspiria",
     "year": 1977,
@@ -406,6 +420,7 @@ const REVIEWS = [
   },
   {
     "id": 1779651435493,
+    "slug": "the-lighthouse-review",
     "category": "movie",
     "title": "The Lighthouse",
     "year": 2019,
@@ -434,6 +449,7 @@ const REVIEWS = [
   },
   {
     "id": 1779467965923,
+    "slug": "midsommar-review",
     "category": "movie",
     "title": "Midsommar",
     "year": 2019,
@@ -462,6 +478,7 @@ const REVIEWS = [
   },
   {
     "id": 1779384785253,
+    "slug": "the-witch-review",
     "category": "movie",
     "title": "The Witch",
     "year": 2015,
@@ -490,6 +507,7 @@ const REVIEWS = [
   },
   {
     "id": 1779300220841,
+    "slug": "obsession-review",
     "category": "movie",
     "title": "Obsession",
     "year": 2026,
@@ -518,6 +536,7 @@ const REVIEWS = [
   },
   {
     "id": 1779277134292,
+    "slug": "routine-review",
     "category": "game",
     "title": "ROUTINE",
     "year": 2026,
@@ -548,6 +567,7 @@ const REVIEWS = [
   },
   {
     "id": 1779212509557,
+    "slug": "immaculate-review",
     "category": "movie",
     "title": "Immaculate",
     "year": 2024,
@@ -575,6 +595,7 @@ const REVIEWS = [
   },
   {
     "id": 1779125706505,
+    "slug": "true-detective-night-country-season-4-review",
     "category": "tv",
     "title": "True Detective: Night Country Season 4",
     "year": 2024,
@@ -602,6 +623,7 @@ const REVIEWS = [
   },
   {
     "id": 1779018247102,
+    "slug": "the-bear-season-3-review",
     "category": "tv",
     "title": "The Bear Season 3",
     "year": 2024,
@@ -628,6 +650,7 @@ const REVIEWS = [
   },
   {
     "id": 1778931197048,
+    "slug": "punisher-one-last-kill-review",
     "category": "tv",
     "title": "Punisher: One Last Kill",
     "year": 2026,
@@ -656,6 +679,7 @@ const REVIEWS = [
   },
   {
     "id": 1778860771477,
+    "slug": "alien-romulus-review",
     "category": "movie",
     "title": "Alien: Romulus",
     "year": 2024,
@@ -683,6 +707,7 @@ const REVIEWS = [
   },
   {
     "id": 1778775499500,
+    "slug": "the-substance-review",
     "category": "movie",
     "title": "The Substance",
     "year": 2024,
@@ -710,6 +735,7 @@ const REVIEWS = [
   },
   {
     "id": 1778690123662,
+    "slug": "maxxxine-review",
     "category": "movie",
     "title": "MaXXXine",
     "year": 2024,
@@ -736,6 +762,7 @@ const REVIEWS = [
   },
   {
     "id": 1778605554339,
+    "slug": "shogun-season-1-review",
     "category": "tv",
     "title": "Shogun Season 1",
     "year": 2024,
@@ -763,6 +790,7 @@ const REVIEWS = [
   },
   {
     "id": 1778519682235,
+    "slug": "longlegs-review",
     "category": "movie",
     "title": "Longlegs",
     "year": 2024,
@@ -790,6 +818,7 @@ const REVIEWS = [
   },
   {
     "id": 1778514602336,
+    "slug": "house-of-the-dragon-season-2-review",
     "category": "tv",
     "title": "House of the Dragon Season 2",
     "year": 2024,
@@ -817,6 +846,7 @@ const REVIEWS = [
   },
   {
     "id": 1778433782463,
+    "slug": "it-follows-review",
     "category": "movie",
     "title": "It Follows",
     "year": 2014,
@@ -844,6 +874,7 @@ const REVIEWS = [
   },
   {
     "id": 1777913651366,
+    "slug": "smiling-friends-season-1-3-review",
     "category": "tv",
     "title": "Smiling Friends Season 1-3",
     "year": 2020,
@@ -877,6 +908,7 @@ const REVIEWS = [
   },
   {
     "id": 1777912678188,
+    "slug": "common-side-effects-season-1-review",
     "category": "tv",
     "title": "Common Side Effects - Season 1",
     "year": 2025,
@@ -911,6 +943,7 @@ const REVIEWS = [
   },
   {
     "id": 1777902457553,
+    "slug": "return-to-silent-hill-review",
     "category": "movie",
     "title": "Return to Silent Hill",
     "year": 2026,
@@ -938,6 +971,7 @@ const REVIEWS = [
   },
   {
     "id": 1777480505797,
+    "slug": "death-stranding-2-on-the-beach-review",
     "category": "game",
     "title": "Death Stranding 2: On The Beach",
     "year": 2026,
@@ -977,6 +1011,7 @@ const REVIEWS = [
   },
   {
     "id": 1777479665736,
+    "slug": "the-super-mario-galaxy-movie-review",
     "category": "movie",
     "title": "The Super Mario Galaxy Movie",
     "year": 2026,
@@ -1005,6 +1040,7 @@ const REVIEWS = [
   },
   {
     "id": 1778000000000,
+    "slug": "monarch-legacy-of-monsters-season-2-review",
     "title": "Monarch: Legacy of Monsters - Season 2",
     "year": 2026,
     "category": "tv",
@@ -1034,6 +1070,7 @@ const REVIEWS = [
   },
   {
     "id": 5,
+    "slug": "lee-cronins-the-mummy-review",
     "category": "movie",
     "title": "Lee Cronin's The Mummy",
     "year": 2026,
@@ -1060,6 +1097,7 @@ const REVIEWS = [
   },
   {
     "id": 4,
+    "slug": "undertone-review",
     "category": "movie",
     "title": "Undertone",
     "year": 2025,
@@ -1086,6 +1124,7 @@ const REVIEWS = [
   },
   {
     "id": 1,
+    "slug": "dark-city-review",
     "category": "movie",
     "title": "Dark City",
     "year": 1998,
@@ -1112,6 +1151,7 @@ const REVIEWS = [
   },
   {
     "id": 2,
+    "slug": "mandy-review",
     "category": "movie",
     "title": "Mandy",
     "year": 2018,
@@ -1138,6 +1178,7 @@ const REVIEWS = [
   },
   {
     "id": 3,
+    "slug": "dredd-review",
     "category": "movie",
     "title": "Dredd",
     "year": 2012,

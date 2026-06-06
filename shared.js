@@ -39,7 +39,9 @@ function categoryIcon(category) {
 }
 
 function reviewUrl(review) {
-  return `review.html?id=${review.id}`;
+  return review.slug
+    ? 'review.html?slug=' + review.slug
+    : 'review.html?id=' + review.id;
 }
 
 function openOrRedirectReview(reviewOrId) {

@@ -975,6 +975,10 @@
 
   function el(id) { return document.getElementById(id); }
 
+  function reviewUrl(r) {
+    return r.slug ? 'review.html?slug=' + r.slug : 'review.html?id=' + r.id;
+  }
+
   var CAT_LABEL = { movie: 'MOVIES', tv: 'TV SHOWS', game: 'GAMES' };
   var CAT_HREF  = { movie: 'movies.html', tv: 'tv.html', game: 'games.html' };
 
@@ -982,10 +986,13 @@
   var CAT_REVIEW_LABEL = { movie: 'Movie Review', tv: 'TV Review', game: 'Game Review' };
 
   function applyPageSEO(review) {
-    var catLabel  = CAT_REVIEW_LABEL[review.category] || 'Review';
-    var pageTitle = review.title + ' (' + review.year + ') — ' + catLabel + ' | WretVision';
-    var desc      = review.verdict || review.excerpt || (review.title + ' ' + catLabel.toLowerCase() + ' on WretVision.');
-    var pageUrl   = 'https://wretvision.com/review.html?id=' + review.id;
+    var catLabel   = CAT_REVIEW_LABEL[review.category] || 'Review';
+    var pageTitle  = review.title + ' (' + review.year + ') — ' + catLabel + ' | WretVision';
+    var desc       = review.verdict || review.excerpt || (review.title + ' ' + catLabel.toLowerCase() + ' on WretVision.');
+    // Canonical always uses the slug URL — prevents duplicate-content issues
+    // when a review is accessed via the legacy ?id= parameter.
+    var canonicalUrl = 'https://wretvision.com/' + reviewUrl(review);
+    var pageUrl      = canonicalUrl;
 
     document.title = pageTitle;
 
@@ -1002,7 +1009,7 @@
     if (ogUrl) ogUrl.setAttribute('content', pageUrl);
 
     var canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical) canonical.setAttribute('href', pageUrl);
+    if (canonical) canonical.setAttribute('href', canonicalUrl);
   }
 
   function applyTheme(review) {
@@ -1191,11 +1198,11 @@
     var next = catIdx < catList.length - 1 ? catList[catIdx + 1] : null; // older
 
     if (prev) {
-      el('rv-prev').href = 'review.html?id=' + prev.id;
+      el('rv-prev').href = reviewUrl(prev);
       el('rv-prev').classList.remove('disabled');
     }
     if (next) {
-      el('rv-next').href = 'review.html?id=' + next.id;
+      el('rv-next').href = reviewUrl(next);
       el('rv-next').classList.remove('disabled');
     }
 
@@ -1361,8 +1368,8 @@
     // pager
     var prev = catIdx > 0                   ? catList[catIdx - 1] : null;
     var next = catIdx < catList.length - 1  ? catList[catIdx + 1] : null;
-    if (prev) { el('grv-prev').href = 'review.html?id=' + prev.id; el('grv-prev').classList.remove('disabled'); }
-    if (next) { el('grv-next').href = 'review.html?id=' + next.id; el('grv-next').classList.remove('disabled'); }
+    if (prev) { el('grv-prev').href = reviewUrl(prev); el('grv-prev').classList.remove('disabled'); }
+    if (next) { el('grv-next').href = reviewUrl(next); el('grv-next').classList.remove('disabled'); }
 
     // YouTube embed (if present)
     renderVideoEmbed(review, 'grv-video');
@@ -1402,17 +1409,26 @@
   }
 
   // ── INIT ─────────────────────────────────────────────────────
-  var params = new URLSearchParams(window.location.search);
-  var id     = parseInt(params.get('id'), 10);
+  var params    = new URLSearchParams(window.location.search);
+  var slugParam = params.get('slug');
+  var idParam   = parseInt(params.get('id'), 10);
+  var allReviews = (typeof REVIEWS !== 'undefined' ? REVIEWS : []);
 
-  if (!id || isNaN(id)) {
-    showError('No review ID provided.');
-    return;
-  }
-
-  var review = (typeof REVIEWS !== 'undefined' ? REVIEWS : []).find(function (r) { return r.id === id; });
-  if (!review) {
-    showError('Review #' + id + ' not found in the archive.');
+  var review;
+  if (slugParam) {
+    review = allReviews.find(function (r) { return r.slug === slugParam; });
+    if (!review) {
+      showError('Review "' + slugParam + '" not found in the archive.');
+      return;
+    }
+  } else if (!isNaN(idParam) && idParam) {
+    review = allReviews.find(function (r) { return r.id === idParam; });
+    if (!review) {
+      showError('Review #' + idParam + ' not found in the archive.');
+      return;
+    }
+  } else {
+    showError('No review ID or slug provided.');
     return;
   }
 
