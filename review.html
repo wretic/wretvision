@@ -1444,6 +1444,9 @@
       showError('Review #' + idParam + ' not found in the archive.');
       return;
     }
+    if (review.slug) {
+      window.history.replaceState({}, '', 'review.html?slug=' + encodeURIComponent(review.slug));
+    }
   } else {
     showError('No review ID or slug provided.');
     return;
