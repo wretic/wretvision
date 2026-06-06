@@ -739,6 +739,30 @@
       body.page-review-movie .review-page,
       body.page-review-tv   .review-page { padding: 20px 16px 32px; }
     }
+
+    /* ── YOUTUBE EMBED ─────────────────────────────────────────── */
+    .review-video {
+      margin-top: 2rem;
+    }
+    .review-video h2 {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: var(--rv-accent, var(--muted));
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    .video-embed {
+      width: 100%;
+      max-width: 900px;
+      margin: 1rem auto;
+      aspect-ratio: 16 / 9;
+    }
+    .video-embed iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
   </style>
 </head>
 <body>
@@ -806,6 +830,8 @@
     <div class="rv-verdict-icon" id="rv-verdict-icon"></div>
   </div>
 
+  <div id="rv-video"></div>
+
   <div class="rv-pager">
     <a href="#" class="rv-pager-link disabled" id="rv-prev">← PREV REVIEW</a>
     <a href="#" class="rv-pager-link disabled" id="rv-next">NEXT REVIEW →</a>
@@ -860,6 +886,8 @@
         <div class="grv-verdict-icon" id="grv-verdict-icon"></div>
       </div>
     </div>
+
+    <div id="grv-video"></div>
 
     <div class="grv-pager">
       <a href="#" class="grv-pager-link disabled" id="grv-prev">← PREV REVIEW</a>
@@ -1069,6 +1097,27 @@
     container.appendChild(wrap);
   }
 
+  // ── YOUTUBE EMBED ────────────────────────────────────────────
+  function renderVideoEmbed(review, containerId) {
+    var ytUrl = review.youtube || (review.media && review.media.youtube);
+    if (!ytUrl) return;
+    var container = el(containerId);
+    if (!container) return;
+    container.innerHTML =
+      '<section class="review-video">' +
+        '<h2>Watch the Full Review</h2>' +
+        '<div class="video-embed">' +
+          '<iframe' +
+          ' src="' + esc(ytUrl) + '"' +
+          ' title="' + esc(review.title) + ' Review"' +
+          ' frameborder="0"' +
+          ' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"' +
+          ' allowfullscreen>' +
+          '</iframe>' +
+        '</div>' +
+      '</section>';
+  }
+
   // ── RIGHT PANEL ─────────────────────────────────────────────
   function renderRight(review) {
     var a = ACCENTS[review.category] || ACCENTS.movie;
@@ -1154,6 +1203,9 @@
     if (review.category === 'game') {
       renderPlatformIcons(el('rv-info'));
     }
+
+    // YouTube embed (if present)
+    renderVideoEmbed(review, 'rv-video');
 
     // page title + meta description
     applyPageSEO(review);
@@ -1311,6 +1363,9 @@
     var next = catIdx < catList.length - 1  ? catList[catIdx + 1] : null;
     if (prev) { el('grv-prev').href = 'review.html?id=' + prev.id; el('grv-prev').classList.remove('disabled'); }
     if (next) { el('grv-next').href = 'review.html?id=' + next.id; el('grv-next').classList.remove('disabled'); }
+
+    // YouTube embed (if present)
+    renderVideoEmbed(review, 'grv-video');
 
     // page title
     applyPageSEO(review);

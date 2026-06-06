@@ -35,10 +35,10 @@ const REVIEWS = [
       "For my complete spoiler-filled breakdown of every episode, including the ending, character arcs, and finale discussion, watch the full review below."
     ],
     "verdict": "Spider-Noir is a bold and surprisingly effective reinvention of Spider-Man. Strong atmosphere, excellent character work, and a committed noir identity make it easy to recommend despite a few pacing issues.",
+    "youtube": "https://www.youtube.com/embed/FeOw8cCpqQg",
     "media": {
       "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/oD8WSVqz84ZRfelkr7JPeJwR9Iv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/oD8WSVqz84ZRfelkr7JPeJwR9Iv.jpg",
-      "youtube": "https://www.youtube.com/embed/FeOw8cCpqQg"
+      "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/oD8WSVqz84ZRfelkr7JPeJwR9Iv.jpg"
     }
   },
   {
