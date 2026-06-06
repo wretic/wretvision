@@ -242,9 +242,10 @@ body::before {
 .genre-tags-wrap { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
 .genre-tags-wrap.open { max-height: 600px; padding-top: 14px; }
 .sidebar-list { list-style: none; }
-.sidebar-list li { padding: 8px 0; border-bottom: 1px dotted rgba(10,143,212,0.2); display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+.sidebar-list li { padding: 8px 0; border-bottom: 1px dotted rgba(10,143,212,0.2); cursor: pointer; }
 .sidebar-list li:last-child { border-bottom: none; }
 .sidebar-list li:hover .sidebar-movie-title { color: var(--blue-light); }
+.top-rated-link { display: flex; justify-content: space-between; align-items: center; width: 100%; text-decoration: none; color: inherit; }
 .sidebar-movie-title { font-family: 'VT323', monospace; font-size: 18px; color: var(--text); transition: color 0.15s; }
 .sidebar-score { font-family: 'Press Start 2P', monospace; font-size: 7px; color: var(--accent); flex-shrink: 0; margin-left: 8px; }
 

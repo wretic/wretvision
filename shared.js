@@ -474,12 +474,21 @@ function buildTopRated() {
   list.innerHTML = '';
   sorted.forEach(r => {
     const li = document.createElement('li');
-    li.dataset.id = r.id;
-    li.innerHTML = `
+    const a = document.createElement('a');
+    a.href = reviewUrl(r);
+    a.className = 'top-rated-link';
+    a.dataset.id = r.id;
+    a.innerHTML = `
       <span class="sidebar-movie-title">${r.title} (${r.year})</span>
       <span class="sidebar-score">${r.score}/10</span>
     `;
-    li.addEventListener('click', () => openOrRedirectReview(r));
+    a.addEventListener('click', e => {
+      if (activeCategory !== 'all') {
+        e.preventDefault();
+        openOrRedirectReview(r);
+      }
+    });
+    li.appendChild(a);
     list.appendChild(li);
   });
 }
@@ -542,7 +551,7 @@ function createReviewCard(r, isHome) {
       <div class="card-excerpt">${r.excerpt}</div>
       <div class="card-footer">
         <div class="rating">${buildRatingBlocks(r.score)}</div>
-        <a href="${isHome ? targetUrl : '#'}" class="read-more" data-id="${r.id}">
+        <a href="${targetUrl}" class="read-more" data-id="${r.id}">
           ${isHome ? 'open in ' + categoryLabel(r.category).toLowerCase() : 'read full review'}
         </a>
       </div>
@@ -781,23 +790,20 @@ function renderTopRated() {
 
   list.innerHTML = topReviews.length
     ? topReviews.map(r => `
-      <li data-id="${r.id}">
-        <span class="sidebar-movie-title">${r.title}</span>
-        <span class="sidebar-score">${r.score}/10</span>
+      <li>
+        <a href="${reviewUrl(r)}" class="top-rated-link" data-id="${r.id}">
+          <span class="sidebar-movie-title">${r.title}</span>
+          <span class="sidebar-score">${r.score}/10</span>
+        </a>
       </li>
     `).join('')
     : '<li><span class="sidebar-movie-title">No 8+/10 reviews yet</span></li>';
 
-  list.querySelectorAll('li[data-id]').forEach(item => {
-    item.addEventListener('click', () => {
-      const id = parseInt(item.dataset.id, 10);
-      const review = REVIEWS.find(r => r.id === id);
-      if (!review) return;
-
-      if (activeCategory === 'all') {
-        window.location.href = reviewUrl(review);
-      } else {
-        openModal(id);
+  list.querySelectorAll('.top-rated-link').forEach(link => {
+    link.addEventListener('click', e => {
+      if (activeCategory !== 'all') {
+        e.preventDefault();
+        openModal(parseInt(link.dataset.id, 10));
       }
     });
   });
