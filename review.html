@@ -986,13 +986,30 @@
   var CAT_REVIEW_LABEL = { movie: 'Movie Review', tv: 'TV Review', game: 'Game Review' };
 
   function applyPageSEO(review) {
-    var catLabel   = CAT_REVIEW_LABEL[review.category] || 'Review';
-    var pageTitle  = review.title + ' (' + review.year + ') — ' + catLabel + ' | WretVision';
-    var desc       = review.verdict || review.excerpt || (review.title + ' ' + catLabel.toLowerCase() + ' on WretVision.');
+    // Title: explicit field wins; otherwise auto-generate
+    var pageTitle;
+    if (review.seoTitle) {
+      pageTitle = review.seoTitle;
+    } else {
+      var yearSuffix = review.year ? ' (' + review.year + ')' : '';
+      pageTitle = review.title + ' Review' + yearSuffix + ' | WretVision';
+    }
+
+    // Description: explicit field wins; otherwise excerpt → verdict, capped at 160 chars
+    var desc;
+    if (review.seoDescription) {
+      desc = review.seoDescription;
+    } else {
+      var rawDesc = review.excerpt || review.verdict || (review.title + ' review on WretVision.');
+      desc = rawDesc.length > 160 ? rawDesc.slice(0, 157) + '...' : rawDesc;
+    }
+    if (desc.length > 160) {
+      console.warn('SEO: description exceeds 160 chars for "' + review.title + '" (' + desc.length + ' chars)');
+    }
+
     // Canonical always uses the slug URL — prevents duplicate-content issues
     // when a review is accessed via the legacy ?id= parameter.
     var canonicalUrl = 'https://wretvision.com/' + reviewUrl(review);
-    var pageUrl      = canonicalUrl;
 
     document.title = pageTitle;
 
@@ -1006,7 +1023,7 @@
     if (ogDesc) ogDesc.setAttribute('content', desc);
 
     var ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) ogUrl.setAttribute('content', pageUrl);
+    if (ogUrl) ogUrl.setAttribute('content', canonicalUrl);
 
     var canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) canonical.setAttribute('href', canonicalUrl);

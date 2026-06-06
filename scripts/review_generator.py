@@ -192,22 +192,31 @@ def build_review_entry(category, item, parsed):
     existing  = get_existing_slugs()
     slug      = unique_slug(base_slug, existing)
 
+    year_suffix  = f" ({year})" if year else ""
+    seo_title    = f"{full_title} Review{year_suffix} | WretVision"
+    raw_desc     = parsed.get("excerpt") or parsed.get("verdict") or f"{full_title} review on WretVision."
+    seo_description = raw_desc[:157] + "..." if len(raw_desc) > 160 else raw_desc
+    if len(seo_description) > 160:
+        print(f"WARNING: SEO description exceeds 160 chars for '{full_title}' ({len(seo_description)} chars)")
+
     entry = {
-        "id":       uid,
-        "slug":     slug,
-        "category": CATEGORY_MAP.get(category, "movie"),
-        "title":    full_title,
-        "year":     year,
-        "director": director,
-        "runtime":  runtime if runtime else "?? min",
-        "rating":   rating,
-        "genres":   genres,
-        "score":    parsed["score"],
-        "featured": False,
-        "excerpt":  parsed["excerpt"],
-        "body":     parsed["paragraphs"],
-        "images":   [],
-        "verdict":  parsed["verdict"],
+        "id":             uid,
+        "slug":           slug,
+        "seoTitle":       seo_title,
+        "seoDescription": seo_description,
+        "category":       CATEGORY_MAP.get(category, "movie"),
+        "title":          full_title,
+        "year":           year,
+        "director":       director,
+        "runtime":        runtime if runtime else "?? min",
+        "rating":         rating,
+        "genres":         genres,
+        "score":          parsed["score"],
+        "featured":       False,
+        "excerpt":        parsed["excerpt"],
+        "body":           parsed["paragraphs"],
+        "images":         [],
+        "verdict":        parsed["verdict"],
     }
     media = fetch_tmdb_media(title, year)
     if media:
