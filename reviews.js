@@ -10,6 +10,38 @@
 
 const REVIEWS = [
     {
+    "id": 1780740479253,
+    "category": "tv",
+    "title": "Spider-Noir",
+    "year": 2026,
+    "director": "Harry Bradbeer",
+    "runtime": "8 Episodes",
+    "rating": "TV-MA",
+    "genres": [
+    "Crime",
+    "Drama",
+    "Noir",
+    "Superhero"
+    ],
+    "score": 8.5,
+    "featured": true,
+    "excerpt": "Spider-Noir takes a premise that shouldn't work on paper and turns it into one of the most refreshing Spider-Man stories in years.",
+    "body": [
+    "Before I started Spider-Noir, I was skeptical. A noir-inspired Spider-Man series set in the 1930s starring Nicolas Cage sounds like the kind of idea that shouldn't work. Somehow, it does. The show immediately separates itself from other Spider-Man adaptations through its darker tone, detective-focused atmosphere, and a unique take on Ben Reilly that feels unlike anything we've seen before.",
+    "The atmosphere is easily one of the show's greatest strengths. Rain-soaked streets, trench coats, private investigations, and a commitment to classic noir aesthetics give the series a distinct identity. The optional black-and-white presentation only strengthens that vision and helps the show stand out from the crowded superhero landscape.",
+    "Nicolas Cage delivers a surprisingly strong performance as an older, worn-down Ben Reilly. Rather than another origin story, Spider-Noir focuses on a man carrying decades of regret and trying to find purpose again. The supporting cast is equally strong, with much of the season's success coming from its character work rather than its action sequences.",
+    "The series is not without flaws. The first episode is slow and may test some viewers' patience. The detective mystery that drives the early episodes gradually fades in favor of a more traditional action-focused finale, and some character developments feel rushed. Despite those issues, the emotional investment in Ben, Cat, Flint, and Silvermane keeps the story engaging through to the end.",
+    "Spider-Noir succeeds because it fully commits to its premise. The noir setting works, Nicolas Cage works, and the darker interpretation of the Spider-Man mythos works. It may stumble occasionally, but it remains one of the freshest superhero adaptations released in recent years.",
+    "For my complete spoiler-filled breakdown of every episode, including the ending, character arcs, and finale discussion, watch the full review below."
+    ],
+    "verdict": "Spider-Noir is a bold and surprisingly effective reinvention of Spider-Man. Strong atmosphere, excellent character work, and a committed noir identity make it easy to recommend despite a few pacing issues.",
+    "media": {
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/oD8WSVqz84ZRfelkr7JPeJwR9Iv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/oD8WSVqz84ZRfelkr7JPeJwR9Iv.jpg",
+    "youtube": "https://www.youtube.com/embed/FeOw8cCpqQg"
+    }
+    },
+    {
       "id": 1780740479252,
       "category": "movie",
       "title": "The Thing",
