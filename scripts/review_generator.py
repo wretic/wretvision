@@ -305,8 +305,25 @@ def inject_into_reviews_js(entry):
     """
     Reads reviews.js, injects the new entry at the very top of the REVIEWS array,
     and writes the file back. Matches your existing formatting style.
+    Aborts on ID collision, slug collision, or count mismatch — never overwrites.
     """
     source = REVIEWS_JS.read_text(encoding="utf-8")
+
+    existing_ids   = set(re.findall(r'"id"\s*:\s*(\d+)', source))
+    existing_slugs = set(re.findall(r'"slug"\s*:\s*"([^"]+)"', source))
+    count_before   = len(existing_ids)
+
+    new_id   = str(entry["id"])
+    new_slug = entry.get("slug", "")
+
+    if new_id in existing_ids:
+        raise RuntimeError(
+            f"ABORT: ID {new_id} already exists in reviews.js — duplicate entry prevented."
+        )
+    if new_slug and new_slug in existing_slugs:
+        raise RuntimeError(
+            f"ABORT: Slug '{new_slug}' already exists in reviews.js — duplicate entry prevented."
+        )
 
     raw_json = json.dumps(entry, indent=2, ensure_ascii=False)
     indented = "\n".join("    " + line for line in raw_json.splitlines())
@@ -322,8 +339,20 @@ def inject_into_reviews_js(entry):
         insert_at += 1
 
     updated = source[:insert_at] + new_block + source[insert_at:]
+
+    count_after = len(set(re.findall(r'"id"\s*:\s*(\d+)', updated)))
+    if count_after != count_before + 1:
+        raise RuntimeError(
+            f"ABORT: Count check failed — before: {count_before}, after: {count_after} "
+            f"(expected {count_before + 1}). reviews.js was NOT written."
+        )
+
     REVIEWS_JS.write_text(updated, encoding="utf-8")
-    print(f"Injected '{entry['title']}' at top of reviews.js")
+
+    print(f"Reviews before : {count_before}")
+    print(f"New review     : '{entry['title']}' | slug: {new_slug or 'none'}")
+    print(f"Reviews after  : {count_after}")
+    print(f"Count check    : OK (+1)")
 
 def main():
     print(f"WRETVISION review bot — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
