@@ -192,64 +192,6 @@ const REVIEWS = [
     "verdict": "Session 9 is the kind of film that makes you question what you saw after the credits roll, and that is exactly where the best horror lives."
   },
   {
-    "id": 1780490676422,
-    "slug": "the-night-house-review",
-    "category": "movie",
-    "title": "The Night House",
-    "year": 2020,
-    "director": "David Bruckner",
-    "runtime": "107 min",
-    "rating": "R",
-    "genres": [
-      "Horror",
-      "Psychological",
-      "Mystery"
-    ],
-    "score": 6,
-    "featured": false,
-    "excerpt": "The Night House has Rebecca Hall working harder than the film deserves. One great performance holding up a third act that doesn't know what it wants to be.",
-    "body": [
-      "The Night House has one thing going for it absolutely: Rebecca Hall. She plays Beth, a widow left alone in the lakeside home her husband built for her and then shot himself in, and she gives you grief that feels lived-in rather than performed. Messy, dark-humoured at the wrong moments, raw when you expect her to be holding it together. David Bruckner builds the first hour around her and the house itself and a creeping dread that genuinely works. The architecture does real work here — clean angles, dark water, reflections that don't quite behave. For about sixty minutes this is unsettling in ways that feel earned.",
-      "Then the third act shows up and the film starts explaining itself. That's where it loses me. The ambiguity that makes the first half suffocating gets traded in for something more concrete and a lot less interesting. The mystery resolves in ways that feel like plot mechanics rather than horror logic. There's a version of this film that stays in the dread and commits to not fully answering what's happening — that version is something special. What we got feels like a film that blinked. The ending ties things up in a way that actively works against everything Bruckner had been carefully building, and you feel it.",
-      "Worth watching once, for Hall alone if nothing else. She is exceptional in a film that doesn't deserve her. Streaming across various platforms if you want to see psychological horror doing the slow atmospheric work right — just go in knowing the third act won't deliver what the first two promise. The bones are good. The finish isn't. Films that mistake resolution for payoff are a specific kind of frustrating, because you can see exactly what they should have been."
-    ],
-    "images": [],
-    "verdict": "6/10, Rebecca Hall carries this harder than she should have to. Great first hour, weak finish, and a mystery that explains itself into mediocrity.",
-    "media": {
-      "poster": "https://image.tmdb.org/t/p/w500/rqs2CXpc4d5FzeP1EZCYItAVo81.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w1280/qbQ219gsHpdx33WSfdCgG9I2Xg5.jpg"
-    }
-  },
-  {
-    "id": 1780419554998,
-    "slug": "the-thing-1982-review",
-    "category": "movie",
-    "title": "The Thing",
-    "year": 1982,
-    "director": "John Carpenter",
-    "runtime": "109 min",
-    "rating": "R",
-    "genres": [
-      "Horror",
-      "Sci-Fi",
-      "Body Horror"
-    ],
-    "score": 10,
-    "featured": false,
-    "excerpt": "John Carpenter's The Thing is the benchmark. Everything that came after is just catching up.",
-    "body": [
-      "Some films age. The Thing (1982) does the opposite. It gets more impressive every time you revisit it, and not because of nostalgia. Because John Carpenter made something that still has no ceiling. The premise is clean and brutal: a research team in Antarctica picks up an alien organism that can perfectly imitate any living creature. What follows is one of the most sustained exercises in paranoia that horror or science fiction has ever produced. You cannot trust anyone on screen, and Carpenter makes sure you feel that in your gut from the moment the dog trots into camp. The isolation is total. The dread is architectural. This is a film built from the ground up on atmosphere and it never once reaches for a cheap scare to bail itself out.",
-      "Rob Bottin's practical effects work is simply the best ever committed to a horror film. Full stop. The chest defibrillator sequence, the spider head, the transformation scenes, every single one of them lands with a physicality that no CGI could replicate because they are real objects doing real horrible things in front of a real camera. There is weight to the horror here. Kurt Russell is magnetic as MacReady, doing exactly what a great genre performance requires, which is making you believe completely without ever overplaying a single moment. The rest of the ensemble, Wilford Brimley, Keith David, Richard Masur, all feel like actual men in an actual place. Nobody is performing. They are surviving. Or trying to.",
-      "The ending is one of cinema's great gut punches. No resolution, no comfort, just two men in the freezing dark wondering which one of them is still human. It is an ending that earns everything the film built toward and it stays with you long after the screen goes dark. Ennio Morricone's minimalist score pulses underneath the whole thing like a heartbeat that knows something is wrong. If you have only ever seen modern body horror like The Fly or Annihilation and not traced the bloodline back to its source, The Thing (1982) is streaming across various platforms right now and there is no excuse. This is not a horror film from 1982. It is the horror film."
-    ],
-    "images": [],
-    "verdict": "10/10, the one that set the bar for practical effects, paranoia, and what body horror can actually do when it is in the right hands.",
-    "media": {
-      "poster": "https://image.tmdb.org/t/p/w500/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w1280/r9leYNa8nTRCceZrZhP1DXkgKVb.jpg"
-    }
-  },
-  {
     "id": 1780402079727,
     "slug": "the-descent-review",
     "category": "movie",
