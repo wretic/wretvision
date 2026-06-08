@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1780922225761,
+      "slug": "jacobs-ladder-review",
+      "seoTitle": "Jacob's Ladder Review (1990) | WretVision",
+      "seoDescription": "Jacob's Ladder doesn't haunt you while you watch it. It haunts you three days later when you're trying to sleep.",
+      "category": "movie",
+      "title": "Jacob's Ladder",
+      "year": 1990,
+      "director": "Adrian Lyne",
+      "runtime": "113 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Psychological",
+        "Mystery"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Jacob's Ladder doesn't haunt you while you watch it. It haunts you three days later when you're trying to sleep.",
+      "body": [
+        "Adrian Lyne made Jacob's Ladder in 1990 and nobody fully knew what to do with it at the time. That's usually a good sign. Tim Robbins plays Jacob Singer, a Vietnam vet trying to hold his life together while reality keeps peeling away at the edges. Demons on the subway. Faces that don't quite look right. The feeling that something is very wrong and has been for a long time. Lyne shoots it like a fever dream but never loses control of the atmosphere. This is not a film that relies on jump scares or gore to unsettle you. It gets under your skin through texture and dread, through the specific wrongness of ordinary things, a hospital corridor, a party, a kitchen, all slightly off in ways you can't immediately name.",
+        "What makes it land is Robbins. He doesn't perform the breakdown, he inhabits it. You believe his confusion because he never seems to be acting confused, he just seems like a man drowning quietly. The supporting cast holds up too, Danny Aiello gets a small role that somehow becomes one of the most memorable in the film. The practical effects work is genuinely disturbing in the best possible way, shaking heads and warped bodies that feel wrong in a way that CGI simply cannot replicate. Lyne understands that horror lives in the uncanny, in the thing your brain almost recognises. Comparisons to later films like Silent Hill are not accidental, this film seeded an entire visual language for psychological horror that directors are still borrowing from.",
+        "The ending is the kind that recontextualises everything before it without cheapening any of it. That is incredibly hard to pull off and Jacob's Ladder does it. Some people find the final reveal manipulative. I find it devastating. There is genuine emotional weight here that most horror films never reach for, let alone land. If you come to this through streaming in 2024 expecting a conventional horror experience you will be confused at first. Stay with it. The pacing demands patience but it earns every second. This belongs in the same conversation as Altered States and In My Sleep as psychological horror that actually has something to say about grief, guilt and what we carry home from war."
+      ],
+      "images": [],
+      "verdict": "Jacob's Ladder is a near masterpiece of psychological horror that still hasn't been bettered at its own game, 9/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/ufLcHIi1aXjjH8MediAMvnwDsVI.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/oubk1SEFtg3Q8eOncFvGQVa6OoP.jpg"
+      }
+    },
+    {
       "id": 1780828293298,
       "slug": "the-night-house-review-2",
       "seoTitle": "The Night House Review (2020) | WretVision",
