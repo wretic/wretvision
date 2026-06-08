@@ -26,7 +26,7 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="shared.css" />
   <style>
     /* ── CATEGORY NAV ── */
@@ -261,6 +261,46 @@
     }
     .stream-divider { height: 1px; background: rgba(10,143,212,0.15); }
     @media (max-width: 560px) { .streams-panel { display: none; } }
+
+    /* ── RE TEASER BUTTON ── */
+    .re-teaser-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 18px;
+      gap: 8px;
+    }
+    .re-teaser-btn {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 22px;
+      width: 400px;
+      height: 80px;
+      background-image: url('images/re-teaser-btn.png');
+      background-size: cover;
+      background-position: center;
+      box-shadow: none;
+      text-decoration: none;
+      transition: box-shadow 0.3s;
+    }
+    .re-teaser-btn span {
+      font-family: 'Special Elite', serif;
+      font-size: 9px;
+      letter-spacing: 0.3em;
+      color: #e8d5b0;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    .re-teaser-btn:hover span { color: #fff5e0; }
+    .re-teaser-sub {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: rgba(232,213,176,0.35);
+      text-align: center;
+      margin: 0;
+    }
   </style>
 </head>
 <body class="page-home">
@@ -337,6 +377,9 @@
       <h1 class="hero-title">WRET<span>VISION</span></h1>
       <div class="lightning-bar"></div>
       <p class="hero-sub">Honest takes on films, shows, and games.<br>Even the forgotten ones.</p>
+      <div class="re-teaser-wrap">
+        <a href="coming-soon.html" class="re-teaser-btn"><span>THE ARCHIVE IS OPENING</span></a>
+      </div>
     </div>
 
     <!-- RIGHT: System Notice -->

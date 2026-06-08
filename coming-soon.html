@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Access Restricted | WretVision</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --parchment: #e8d5b0;
+      --red:       #8b1a1a;
+      --green:     #4caf72;
+      --bg:        #000000;
+    }
+
+    html, body {
+      width: 100%; height: 100%;
+      background: var(--bg);
+      color: var(--parchment);
+      font-family: 'Special Elite', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .grain {
+      position: fixed;
+      inset: 0;
+      background: url('images/film-grain.webp') repeat;
+      opacity: 0.5;
+      mix-blend-mode: screen;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      text-align: center;
+      padding: 24px 16px;
+    }
+
+    .classified-label {
+      font-family: 'Special Elite', serif;
+      font-size: 10px;
+      font-variant: small-caps;
+      letter-spacing: 0.4em;
+      color: var(--red);
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 280px;
+      height: 1px;
+      background: var(--red);
+      margin-bottom: 28px;
+      opacity: 0.7;
+    }
+
+    .heading-wrap {
+      margin-bottom: 28px;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .heading {
+      font-family: 'Special Elite', serif;
+      font-size: 32px;
+      color: var(--parchment);
+      letter-spacing: 0.08em;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 2px;
+      height: 1.1em;
+      background: var(--parchment);
+      margin-left: 4px;
+      vertical-align: middle;
+      animation: blink 0.9s step-start infinite;
+    }
+    .cursor.hidden { display: none; }
+
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+    .terminal {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 13px;
+      color: var(--green);
+      text-align: left;
+      width: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+
+    .terminal-line {
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .terminal-line.visible { opacity: 1; }
+
+    .divider-bottom {
+      width: 280px;
+      height: 1px;
+      background: var(--red);
+      opacity: 0;
+      margin-bottom: 18px;
+      transition: opacity 0.6s ease;
+    }
+    .divider-bottom.visible { opacity: 0.7; }
+
+    .flavor {
+      font-family: 'Special Elite', serif;
+      font-style: italic;
+      font-size: 14px;
+      color: var(--parchment);
+      opacity: 0;
+      max-width: 320px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+      transition: opacity 0.6s ease;
+    }
+    .flavor.visible { opacity: 0.6; }
+
+    .back-btn {
+      font-family: 'Special Elite', serif;
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      color: var(--parchment);
+      background: #0d0d0d;
+      border: 1px solid var(--red);
+      padding: 10px 20px;
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.6s ease, background 0.2s, color 0.2s;
+    }
+    .back-btn.visible { opacity: 1; }
+    .back-btn:hover { background: var(--red); color: #fff; }
+  </style>
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="container">
+  <p class="classified-label">Wretvision Classified</p>
+  <div class="divider"></div>
+
+  <div class="heading-wrap">
+    <span class="heading" id="heading"></span><span class="cursor" id="cursor"></span>
+  </div>
+
+  <div class="terminal" id="terminal">
+    <span class="terminal-line">&gt; SCANNING ARCHIVE...</span>
+    <span class="terminal-line">&gt; 19 CASE FILES DETECTED</span>
+    <span class="terminal-line">&gt; CROSS REFERENCING DATA...</span>
+    <span class="terminal-line">&gt; COMPILING REVIEWS...</span>
+    <span class="terminal-line">&gt; RANKING PROTOCOLS ACTIVE...</span>
+    <span class="terminal-line">&gt; ESTIMATED COMPLETION: SOON</span>
+  </div>
+
+  <div class="divider-bottom" id="divider-bottom"></div>
+  <p class="flavor" id="flavor">This investigation cannot be rushed. Check back soon.</p>
+  <a href="index.html" class="back-btn" id="back-btn">← Back to WRETVISION</a>
+</div>
+
+<script>
+  (function () {
+    var TEXT        = 'ACCESS RESTRICTED';
+    var CHAR_DELAY  = 80;
+    var LINE_DELAY  = 600;
+    var POST_DELAY  = 400;
+
+    var headingEl   = document.getElementById('heading');
+    var cursorEl    = document.getElementById('cursor');
+    var lines       = document.querySelectorAll('.terminal-line');
+    var dividerBot  = document.getElementById('divider-bottom');
+    var flavorEl    = document.getElementById('flavor');
+    var backBtn     = document.getElementById('back-btn');
+
+    var i = 0;
+    function typeNext() {
+      if (i < TEXT.length) {
+        headingEl.textContent += TEXT[i++];
+        setTimeout(typeNext, CHAR_DELAY);
+      } else {
+        setTimeout(showLines, POST_DELAY);
+      }
+    }
+
+    var lineIndex = 0;
+    function showLines() {
+      if (lineIndex < lines.length) {
+        lines[lineIndex].classList.add('visible');
+        lineIndex++;
+        setTimeout(showLines, LINE_DELAY);
+      } else {
+        setTimeout(showEnd, 500);
+      }
+    }
+
+    function showEnd() {
+      cursorEl.classList.add('hidden');
+      dividerBot.classList.add('visible');
+      setTimeout(function () { flavorEl.classList.add('visible'); }, 400);
+      setTimeout(function () { backBtn.classList.add('visible'); }, 800);
+    }
+
+    setTimeout(typeNext, 600);
+  })();
+</script>
+</body>
+</html>
