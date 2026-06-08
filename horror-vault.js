@@ -427,8 +427,6 @@ const HORROR_VAULT = [
     "id": 53
   },
   {
-
-  {
     "title": "Only Lovers Left Alive",
     "year": 2013,
     "decade": "2010s",
@@ -700,8 +698,6 @@ const HORROR_VAULT = [
     "note": "",
     "id": 88
   },
-  {
-
   {
     "title": "Kill List",
     "year": 2011,
@@ -1342,8 +1338,6 @@ const HORROR_VAULT = [
     "note": "",
     "id": 169
   },
-  {
-
   {
     "title": "Bird Box",
     "year": 2018,
@@ -2905,8 +2899,6 @@ const HORROR_VAULT = [
     "id": 365
   },
   {
-
-  {
     "title": "Pan's Labyrinth",
     "year": 2006,
     "decade": "2000s",
@@ -3171,11 +3163,9 @@ const HORROR_VAULT = [
   "id": 399
   },
   {
-
-  {
   "title": "Longlegs",
   "year": 2024,
-  "decade": "2010s",
+  "decade": "2020s",
   "status": "watched",
   "note": "",
   "id": 401
@@ -3199,7 +3189,7 @@ const HORROR_VAULT = [
 {
   "title": "The Wicker Man",
   "year": 1973,
-  "decade": "1970",
+  "decade": "1970s",
   "status": "watched",
   "note": "",
   "id": 404
