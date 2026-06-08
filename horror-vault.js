@@ -427,13 +427,7 @@ const HORROR_VAULT = [
     "id": 53
   },
   {
-    "title": "Cronos",
-    "year": 1992,
-    "decade": "1990s",
-    "status": "watched",
-    "note": "",
-    "id": 54
-  },
+
   {
     "title": "Only Lovers Left Alive",
     "year": 2013,
@@ -707,13 +701,7 @@ const HORROR_VAULT = [
     "id": 88
   },
   {
-    "title": "Raw",
-    "year": 2016,
-    "decade": "2010s",
-    "status": "watched",
-    "note": "",
-    "id": 89
-  },
+
   {
     "title": "Kill List",
     "year": 2011,
@@ -1355,13 +1343,7 @@ const HORROR_VAULT = [
     "id": 169
   },
   {
-    "title": "The Ritual",
-    "year": 2018,
-    "decade": "2010s",
-    "status": "watched",
-    "note": "",
-    "id": 170
-  },
+
   {
     "title": "Bird Box",
     "year": 2018,
@@ -2619,7 +2601,7 @@ const HORROR_VAULT = [
     "id": 327
   },
   {
-    "title": "Resident Evil: Dead Island",
+    "title": "Resident Evil: Death Island",
     "year": 2023,
     "decade": "2020s",
     "status": "watched",
@@ -2923,13 +2905,7 @@ const HORROR_VAULT = [
     "id": 365
   },
   {
-    "title": "The Descent",
-    "year": 2005,
-    "decade": "2000s",
-    "status": "watched",
-    "note": "",
-    "id": 366
-  },
+
   {
     "title": "Pan's Labyrinth",
     "year": 2006,
@@ -3195,13 +3171,7 @@ const HORROR_VAULT = [
   "id": 399
   },
   {
-  "title": "High Tension",
-  "year": 2003,
-  "decade": "2000s",
-  "status": "watched",
-  "note": "",
-  "id": 400
-  },
+
   {
   "title": "Longlegs",
   "year": 2024,
@@ -3313,5 +3283,101 @@ const HORROR_VAULT = [
     "status": "watched",
     "note": "",
     "id": 414
+  },
+  {
+    "title": "The Purge: Election Year",
+    "year": 2016,
+    "decade": "2010s",
+    "status": "watched",
+    "note": "",
+    "id": 415
+  },
+  {
+    "title": "The First Purge",
+    "year": 2018,
+    "decade": "2010s",
+    "status": "watched",
+    "note": "",
+    "id": 416
+  },
+  {
+    "title": "The Forever Purge",
+    "year": 2021,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 417
+  },
+  {
+    "title": "Scream 3",
+    "year": 2000,
+    "decade": "2000s",
+    "status": "watched",
+    "note": "",
+    "id": 418
+  },
+  {
+    "title": "Scream 4",
+    "year": 2011,
+    "decade": "2010s",
+    "status": "watched",
+    "note": "",
+    "id": 419
+  },
+  {
+    "title": "Final Destination 4",
+    "year": 2009,
+    "decade": "2000s",
+    "status": "watched",
+    "note": "",
+    "id": 420
+  },
+  {
+    "title": "Final Destination 5",
+    "year": 2011,
+    "decade": "2010s",
+    "status": "watched",
+    "note": "",
+    "id": 421
+  },
+  {
+    "title": "Terrifier 2",
+    "year": 2022,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 422
+  },
+  {
+    "title": "Hostel: Part II",
+    "year": 2007,
+    "decade": "2000s",
+    "status": "watched",
+    "note": "",
+    "id": 423
+  },
+  {
+    "title": "Hostel: Part III",
+    "year": 2011,
+    "decade": "2010s",
+    "status": "watched",
+    "note": "",
+    "id": 424
+  },
+  {
+    "title": "Paranormal Activity: Next of Kin",
+    "year": 2021,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 425
+  },
+  {
+    "title": "Resident Evil: Infinite Darkness",
+    "year": 2021,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 426
   }
 ];
