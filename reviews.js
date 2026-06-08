@@ -40,37 +40,37 @@ const REVIEWS = [
         "backdrop": "https://image.tmdb.org/t/p/w1280/oubk1SEFtg3Q8eOncFvGQVa6OoP.jpg"
       }
     },
-    {
-      "id": 1780828293298,
-      "slug": "the-night-house-review-2",
-      "seoTitle": "The Night House Review (2020) | WretVision",
-      "seoDescription": "The Night House is the rare horror film that earns its dread by making grief feel genuinely terrifying.",
-      "category": "movie",
-      "title": "The Night House",
-      "year": 2020,
-      "director": "David Bruckner",
-      "runtime": "107 min",
-      "rating": "R",
-      "genres": [
-        "Horror",
-        "Psychological",
-        "Mystery"
-      ],
-      "score": 8,
-      "featured": false,
-      "excerpt": "The Night House is the rare horror film that earns its dread by making grief feel genuinely terrifying.",
-      "body": [
-        "The Night House from 2020 does something most psychological horror films are too impatient to do. It lets the emptiness breathe. Beth has just lost her husband to an apparent suicide. She is alone in the house he built for her, on the edge of a lake, surrounded by silence that starts to feel wrong. Director David Bruckner understands negative space in a way very few working horror directors do right now. The lake, the trees, the open doorways, all of it feels like the film is hiding something just outside your eyeline. It is unsettling in the best possible way, the kind of film where you find yourself scanning the background of every single frame.",
-        "Rebecca Hall is the reason this film works as well as it does. She is grieving and furious and funny and falling apart all at once, and she never once feels like she is performing any of it. That is rare. The film leans into her completely and she holds it without breaking a sweat. The mystery at the centre of the story, the mirror house, the photographs, the occult scrawlings, is genuinely interesting and the film doles it out carefully. Where some psychological horror films mistake confusion for depth, The Night House mostly keeps its threads connected to something emotionally true. The practical-leaning visual effects work is also quietly impressive, there is one shot involving furniture and negative space that is genuinely one of the more unsettling images in recent horror.",
-        "Where it stumbles slightly is in the final act. The explanation, when it fully arrives, cannot quite match the atmosphere that has been built around it. This is a familiar problem in psychological horror and The Night House is not immune. Think of something like Hereditary or Midsommar in terms of the level of craft and ambition on display, though The Night House is a quieter and more contained film than either. It is currently available across various streaming platforms and absolutely worth tracking down if you want horror that is actually about something, in this case grief, loss, and the stories we tell ourselves about the people we loved. The wobble at the end costs it a point but not much more than that."
-      ],
-      "images": [],
-      "verdict": "8/10, The Night House is smart, atmospheric psychological horror anchored by one of the best lead performances the genre has seen in years.",
-      "media": {
-        "poster": "https://image.tmdb.org/t/p/w500/rqs2CXpc4d5FzeP1EZCYItAVo81.jpg",
-        "backdrop": "https://image.tmdb.org/t/p/w1280/qbQ219gsHpdx33WSfdCgG9I2Xg5.jpg"
-      }
-    },
+{
+  "id": 1780828293298,
+  "slug": "the-night-house-review-2",
+  "seoTitle": "The Night House Review (2020) | WretVision",
+  "seoDescription": "The Night House has the bones of a great horror film and the ending of a much worse one.",
+  "category": "movie",
+  "title": "The Night House",
+  "year": 2020,
+  "director": "David Bruckner",
+  "runtime": "107 min",
+  "rating": "R",
+  "genres": [
+    "Horror",
+    "Psychological",
+    "Mystery"
+  ],
+  "score": 5,
+  "featured": false,
+  "excerpt": "The Night House has the bones of a great horror film and the ending of a much worse one.",
+  "body": [
+    "The Night House from 2020 starts well. Beth has just lost her husband to an apparent suicide. She is alone in the house he built for her, on the edge of a lake, and the silence around her feels genuinely wrong in a way the film earns early on. Director David Bruckner has a real eye for negative space. The lake, the open doorways, the trees at the edge of the frame, there is craft here. For the first hour this film is doing something interesting, building dread out of grief and absence rather than cheap jolts, and Rebecca Hall is doing everything right in the middle of it. She plays grieving and funny and barely holding it together all at once and she never tips over into performance. She is the best thing in the film by a distance and the film knows it.",
+    "The problem is everything the mystery is pointing toward. The mirror house, the photographs, the occult angle, it is all dressed up as something with layers and the film spends a lot of time suggesting it is going somewhere meaningful. It is not. The final act collapses the atmosphere it spent an hour building and replaces it with an explanation that is not interesting enough to justify the wait. This is not a small issue. In psychological horror the payoff is the entire argument. If the ending does not work then the dread that came before it starts to feel borrowed rather than earned. The Night House does not stick the landing and the gap between what the first hour promises and what the final twenty minutes deliver is wide enough to sink it.",
+    "Rebecca Hall deserves better than this script gave her in the back half. There is one genuinely unsettling visual involving furniture and negative space that is worth seeing, and the craft on a technical level is real. But a well-shot first act and a strong lead performance are not enough to carry a film whose central idea turns out to be hollow. Worth watching once if you are curious about what could have been. Do not go in expecting it to pull through."
+  ],
+  "images": [],
+  "verdict": "5/10, The Night House is well-made and well-acted for an hour, then runs out of anything to say.",
+  "media": {
+    "poster": "https://image.tmdb.org/t/p/w500/rqs2CXpc4d5FzeP1EZCYItAVo81.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/qbQ219gsHpdx33WSfdCgG9I2Xg5.jpg"
+  }
+},
   {
     "id": 1780740479253,
     "slug": "spider-noir-review",
