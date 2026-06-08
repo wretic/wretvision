@@ -3265,5 +3265,53 @@ const HORROR_VAULT = [
     "status": "watched",
     "note": "",
     "id": 408
+  },
+  {
+    "title": "Resident Evil",
+    "year": 2002,
+    "decade": "2000s",
+    "status": "watched",
+    "note": "",
+    "id": 409
+  },
+  {
+    "title": "Resident Evil: Apocalypse",
+    "year": 2004,
+    "decade": "2000s",
+    "status": "watched",
+    "note": "",
+    "id": 410
+  },
+  {
+    "title": "Resident Evil: Extinction",
+    "year": 2007,
+    "decade": "2000s",
+    "status": "watched",
+    "note": "",
+    "id": 411
+  },
+  {
+    "title": "Resident Evil: Afterlife",
+    "year": 2010,
+    "decade": "2010s",
+    "status": "watched",
+    "note": "",
+    "id": 412
+  },
+  {
+    "title": "Resident Evil: Retribution",
+    "year": 2012,
+    "decade": "2010s",
+    "status": "watched",
+    "note": "",
+    "id": 413
+  },
+  {
+    "title": "Resident Evil: The Final Chapter",
+    "year": 2016,
+    "decade": "2010s",
+    "status": "watched",
+    "note": "",
+    "id": 414
   }
 ];
