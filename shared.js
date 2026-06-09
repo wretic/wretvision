@@ -587,7 +587,7 @@ function render() {
   const container = document.getElementById('reviews-container');
   container.innerHTML = '';
 
-  if (featured) {
+  if (featured && currentPage === 1) {
     const featuredBlock = document.createElement('div');
     featuredBlock.className = 'featured-home-block';
     featuredBlock.innerHTML = '<div class="featured-home-label">featured review</div>';
