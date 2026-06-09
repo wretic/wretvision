@@ -13,7 +13,7 @@ const REVIEWS = [
       "id": 1781003987788,
       "slug": "oddity-review",
       "seoTitle": "Oddity Review (2024) | WretVision",
-      "seoDescription": "Oddity (2024) is the kind of slow burn Irish horror that gets under your skin before you even realise it's there.",
+      "seoDescription": "Oddity has all the ingredients for something genuinely unsettling. It just does not quite cook them right.",
       "category": "movie",
       "title": "Oddity",
       "year": 2024,
@@ -25,16 +25,16 @@ const REVIEWS = [
         "Mystery",
         "Supernatural"
       ],
-      "score": 8,
+      "score": 6,
       "featured": false,
-      "excerpt": "Oddity (2024) is the kind of slow burn Irish horror that gets under your skin before you even realise it's there.",
+      "excerpt": "Oddity has all the ingredients for something genuinely unsettling. It just does not quite cook them right.",
       "body": [
-        "Damian Mc Carthy made noise with Caveat back in 2020 and Oddity (2024) confirms he is not a one trick director. This is a filmmaker who understands that dread is architectural. You build it room by room. The setup is deceptively simple: a wooden mannequin, a remote house in rural Ireland, a woman who seems to know things she should not. Mc Carthy lets the strangeness accumulate quietly. There are no cheap jumps here, no blaring score telling you how to feel. Just a creeping wrongness that settles into the furniture of the film and refuses to leave. The Irish countryside does a lot of work too. It feels genuinely isolated in a way that matters, not just as a backdrop but as a condition the characters cannot escape.",
-        "Carolyn Bracken is doing something special in the dual role at the centre of this. She plays two very different women and never lets either feel like a performance. There is a particular scene involving the mannequin and low light that is one of the most effectively unsettling things I have seen in recent horror, no CGI, no tricks, just composition and patience. The practical craft throughout is confident and deliberate. Where Oddity stumbles slightly is in its pacing during the second act. A few scenes linger a beat or two past where they need to and you feel it. Nothing catastrophic but it costs the film some of the tension it worked hard to build. The mystery mechanics are solid though and the reveals feel earned rather than convenient.",
-        "If you liked The Killing of a Sacred Deer or early Ti West work, the kind of horror that treats atmosphere as the actual point rather than a warm up for a gore gag, Oddity (2024) belongs in the same conversation. It is available across various streaming platforms and absolutely worth hunting down. Mc Carthy is quietly building one of the more interesting careers in contemporary horror and this is his best film so far. It is not perfect. That second act drag is real. But the overall effect lingers in a way that most horror films from 2024 simply do not. It stays with you the way a good nightmare does, not because of one big moment but because of the texture of the whole thing."
+        "Damian McCarthy built some real goodwill with Caveat and Oddity (2024) shows he has a genuine eye for atmosphere. The setup is solid enough: rural Ireland, a remote house, a wooden mannequin with bad energy, and a woman who seems to know things she should not. McCarthy understands that dread needs space and he gives it plenty here. Carolyn Bracken is doing interesting work in a dual role that could have felt gimmicky but mostly holds together. There is one specific scene involving the mannequin in low light that is properly unsettling in the way only practical filmmaking can achieve. No tricks, no CGI, just patience and composition. The bones of a good horror film are absolutely here. The problem is everything built on top of them.",
+        "The second act is where Oddity loses me. What starts as controlled, deliberate pacing tips over into genuine drag. Scenes run past the point where they stop contributing anything and the tension McCarthy carefully builds keeps leaking out in those extended beats. By the time the mystery mechanics click into place you have done a lot of waiting to get there. The reveals feel functional rather than earned, which is a real problem when slow burn horror is asking for your patience for ninety minutes. There is also something slightly predictable at the core of it once you clock the film's rhythms about thirty minutes in. A good horror film should stay one step ahead of you. Oddity stays roughly level.",
+        "If you are coming to this off the back of something like The Witch or The Killing of a Sacred Deer, films that earn their atmosphere through genuine precision, Oddity will feel a little underdone. It is not bad. McCarthy is clearly a talent and Bracken holds the thing together when the script cannot. It is on Shudder and worth one watch if slow Irish supernatural horror is your thing. But the hype around this one runs ahead of what it actually delivers. For every scene that genuinely lands there are two that test your patience without payoff. Decent, watchable, and mostly forgettable an hour after the credits roll."
       ],
       "images": [],
-      "verdict": "Oddity (2024) is patient, specific, and genuinely atmospheric horror from a director who earns every scare he takes, 8/10.",
+      "verdict": "Oddity has atmosphere and one or two sequences that genuinely unsettle, but the second act drag and predictable reveal mechanics keep it firmly in decent rather than great territory. 6/10.",
       "media": {
         "poster": "https://image.tmdb.org/t/p/w500/3Z9c1tbUhP0QruRjczPHnbx3U2D.jpg",
         "backdrop": "https://image.tmdb.org/t/p/w1280/6GhU4BJnqLSaAuz0yQBq3RfdzsF.jpg"

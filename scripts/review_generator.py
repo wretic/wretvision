@@ -72,7 +72,11 @@ def pick_title(queue):
 
 def get_pre_logged_score(item, seen_scores):
     key = f"{item['title']} ({item.get('year', '')})"
-    return seen_scores.get(key)
+    if key in seen_scores:
+        return seen_scores[key]
+    if item.get("score") is not None:
+        return {"score": item["score"], "notes": item.get("notes")}
+    return None
 
 def build_prompt(category, item, personality, pre_score):
     title     = item["title"]
