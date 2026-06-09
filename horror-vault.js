@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "Oddity",
+    "year": 2024,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 427
+  },
+  {
     "title": "Psycho",
     "year": 1960,
     "decade": "1960s",
