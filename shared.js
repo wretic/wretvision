@@ -577,7 +577,8 @@ function render() {
   const filtered   = getFilteredReviews();
   const isHome     = activeCategory === 'all';
   const featured   = getFeaturedReview(filtered);
-  const listForPagination = featured ? filtered.filter(r => r.id !== featured.id) : filtered;
+  const featuredItem = (activeCategory === 'all' && currentFilter === 'all') ? filtered.find(r => r.featured) || null : null;
+  const listForPagination = featuredItem ? filtered.filter(r => r.id !== featuredItem.id) : filtered;
   const totalPages = Math.max(1, Math.ceil(listForPagination.length / REVIEWS_PER_PAGE));
   if (currentPage > totalPages) currentPage = totalPages;
 
