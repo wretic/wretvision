@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1781091671850,
+      "slug": "pulse-review",
+      "seoTitle": "Pulse Review (2001) | WretVision",
+      "seoDescription": "Pulse (2001) is the kind of J-Horror that gets under your skin and quietly refuses to leave.",
+      "category": "movie",
+      "title": "Pulse",
+      "year": 2001,
+      "director": "Kiyoshi Kurosawa",
+      "runtime": "119 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Psychological",
+        "J-Horror"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "Pulse (2001) is the kind of J-Horror that gets under your skin and quietly refuses to leave.",
+      "body": [
+        "Kiyoshi Kurosawa made something genuinely unsettling with Pulse, and it is not doing what you expect. This is not Ringu. It is not a ghost story with a neat set of rules. It is something slower, sadder, and far more existentially bleak. Released in 2001 and currently floating around on various streaming platforms, Pulse asks what happens when the dead start bleeding through the internet into the living world, and then it uses that premise not for scares exactly, but for a meditation on loneliness and disconnection that feels more relevant now than it probably did at the time. That is the mark of a filmmaker with something real to say rather than just a bag of tricks.",
+        "What works here is almost everything Kurosawa does with atmosphere. The film is visually grimy and cold in a way that feels intentional at every frame. The ghost imagery, figures barely visible in grainy video feeds, shapes half-seen through dark doorways, is deeply uncomfortable precisely because it is so restrained. There are scenes in this film I genuinely could not shake. The red-taped rooms. The figure moving wrong in the corner of a monitor. He understands that dread built slowly is worth ten jump scares. The performances are naturalistic and quiet, which is exactly right for a film this muted in tone. Nobody is overplaying anything.",
+        "Where it stumbles is pacing in the second act. There is a stretch where the film loses some of its grip, spreading across too many characters before the threads pull tight again. It also demands patience that not every viewer will bring to it. If you came here from Ringu or Ju-On expecting that kind of propulsive horror machinery, Pulse will feel like it is withholding something. It is. That is the point. The ending is genuinely haunting and earns everything the film asked you to sit through. Pulse (2001) is quieter and stranger than most J-Horror recommendations and that is exactly why it deserves to be higher on your watchlist."
+      ],
+      "images": [],
+      "verdict": "8/10, a film that mistakes nothing for nothing and uses that emptiness to hollow you out completely.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/c3zEimDraIyMSasPMGDaNOrhnzn.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/7Zkp2AL7Nc4IWfZefgyvbEeSI7m.jpg"
+      }
+    },
+    {
       "id": 1781003987788,
       "slug": "oddity-review",
       "seoTitle": "Oddity Review (2024) | WretVision",
