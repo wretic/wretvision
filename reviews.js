@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1781179956871,
+      "slug": "the-empty-man-review",
+      "seoTitle": "The Empty Man Review (2020) | WretVision",
+      "seoDescription": "The Empty Man (2020) has a genuinely unsettling first twenty minutes and then spends two hours slowly talking itself into a corner.",
+      "category": "movie",
+      "title": "The Empty Man",
+      "year": 2020,
+      "director": "David Prior",
+      "runtime": "137 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Cosmic Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "The Empty Man (2020) has a genuinely unsettling first twenty minutes and then spends two hours slowly talking itself into a corner.",
+      "body": [
+        "The Empty Man opens with a prologue set in Bhutan that is honestly one of the more effective pieces of cosmic horror put to screen in recent memory. Cold, bleak, deeply wrong in a way that gets under your skin. If the whole film moved like that, we'd be talking about a modern classic. It doesn't. Director David Prior is clearly swinging for something in the vein of True Detective or Annihilation, a slow burn mystery with existential rot at its centre, and there are stretches where you can genuinely feel that ambition working. James Badge Dale carries the procedural weight well, underplaying it, letting the strangeness seep in around the edges rather than announcing itself.",
+        "But The Empty Man has a serious pacing problem and it just about sinks the middle act. The investigation structure that follows that stunning prologue feels padded and repetitive in ways that start to test your patience around the ninety minute mark. The cult mechanics are interesting in theory but the film keeps explaining itself when it should be letting the dread build silently. There are also moments where characters make decisions that exist purely to keep the plot moving rather than because they make any human sense, which is one of my guaranteed score killers. The atmosphere is there. The logic holding it together is shakier than the film seems to realise.",
+        "The Empty Man (2020) is streaming on various platforms right now and it deserves to be seen more than its botched theatrical release allowed. Compared to something like Hereditary or Midsommar it does not land with the same precision, but fans of slow cosmic horror will find enough here to reward the patience it demands. The finale has ideas in it that genuinely linger. The problem is the journey there asks a lot and does not always justify the ask. Solid practical atmosphere, one great prologue, and a film that knows what it wants to be but cannot quite get all the way there."
+      ],
+      "images": [],
+      "verdict": "6/10, a frustrating watch because the bones of something genuinely great are visible throughout, buried under too much runtime and not enough restraint.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/8apzu9JFTUMtOpYkHk6LNPOs3pY.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/hwpbTeZEaKKUfiUjc2FJZpv7uAI.jpg"
+      }
+    },
+    {
       "id": 1781091671850,
       "slug": "pulse-review",
       "seoTitle": "Pulse Review (2001) | WretVision",

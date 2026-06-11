@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "The Empty Man",
+    "year": 2020,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 428
+  },
+  {
     "title": "Oddity",
     "year": 2024,
     "decade": "2020s",
