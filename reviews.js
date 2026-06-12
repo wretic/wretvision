@@ -47,8 +47,8 @@ const REVIEWS = [
   "images": [],
   "verdict": "Harold Halibut is one of the most visually distinctive indie games in recent memory, but its beautiful world can't save it from repetitive fetch quests, weak pacing, and an experience that becomes increasingly tedious the longer it goes on. 5.5/10.",
   "media": {
-    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6m8p.webp",
-    "backdrop": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6m8p.webp"
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDEyOTFlOWItNTU4NS00MTM5LTllODQtMDFiODVjNTM4ZWFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMDEyOTFlOWItNTU4NS00MTM5LTllODQtMDFiODVjNTM4ZWFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
   }
 },
     {
