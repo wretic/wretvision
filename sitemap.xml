@@ -31,6 +31,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wretvision.com/review.html?slug=amnesia-the-dark-descent-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wretvision.com/review.html?slug=harold-halibut-review</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
