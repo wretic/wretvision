@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "SOMA",
+    "year": 2015,
+    "decade": "2010s",
+    "status": "watched",
+    "note": "",
+    "id": 430
+  },
+  {
     "title": "Amnesia: The Dark Descent",
     "year": 2010,
     "decade": "2010s",

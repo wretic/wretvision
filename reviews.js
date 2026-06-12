@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1781264780251,
+      "slug": "soma-review",
+      "seoTitle": "SOMA Review (2015) | WretVision",
+      "seoDescription": "SOMA asks what it means to be human and then makes you feel genuinely terrible about the answer.",
+      "category": "game",
+      "title": "SOMA",
+      "year": 2015,
+      "director": "Frictional Games",
+      "runtime": "~8 hours",
+      "rating": "",
+      "genres": [
+        "Psychological Horror",
+        "Sci-Fi Horror",
+        "Single Player"
+      ],
+      "score": 9.5,
+      "featured": false,
+      "excerpt": "SOMA asks what it means to be human and then makes you feel genuinely terrible about the answer.",
+      "body": [
+        "Frictional Games could have made a straightforward underwater horror game and called it a day. Instead SOMA, released in 2015, is one of the most quietly devastating pieces of psychological horror I have ever experienced in any medium. The setting does a lot of heavy lifting early on. PATHOS II is cold and dark and you feel the pressure of the ocean in every corridor. The sound design is extraordinary. Distant mechanical groaning, the hum of dying systems, something moving in rooms you have not reached yet. There are no cheap jump scares propping this up. The dread is structural. It is baked into the world itself and into the increasingly uncomfortable questions the game keeps asking you.",
+        "What makes SOMA exceptional is that the horror is philosophical and it genuinely earns that. The game is not using big ideas as decoration. Consciousness, identity, what survives when you copy a mind, these are not background lore. They are the mechanism by which the game hurts you. There are moments in the back half where the game forces a choice or shows you a consequence and you just sit with it. I sat with it for days. The creature encounters are tense but honestly they are the least interesting part. Frictional knew this too, which is why the Safe Mode exists now. The monsters are a delivery system for atmosphere, not the point. The writing and the voice performances carry enormous weight and they do not drop it.",
+        "Comparable to Amnesia The Dark Descent in pedigree but honestly more ambitious in what it is reaching for, SOMA 2015 is the kind of game that makes you reassess the whole medium. A few of the environmental puzzles drag slightly and there is a stretch in the mid section where momentum dips just enough to notice. That is genuinely the only thing keeping this from a perfect score. The ending is one of the most affecting and thematically complete conclusions I can remember. It does not flinch. It commits fully to its own logic and it lands exactly as hard as it should. If you have any tolerance for slow burn psychological horror and science fiction that actually means something, this is required."
+      ],
+      "images": [],
+      "verdict": "9.5/10, SOMA is the rare horror experience that changes how you think about something, and that something happens to be existence itself.",
+      "media": {
+        "poster": "https://cdn.akamai.steamstatic.com/steam/apps/282140/library_600x900_2x.jpg",
+        "backdrop": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/282140/page_bg_raw.jpg?t=1779202021"
+      }
+    },
+    {
       "id": 1781260795628,
       "slug": "amnesia-the-dark-descent-review",
       "seoTitle": "Amnesia: The Dark Descent Review (2010) | WretVision",
