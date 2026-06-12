@@ -1,4 +1,3 @@
-```json
 {
   "_instructions": "Add titles here. Set 'done': true when reviewed. 'score' and 'notes' are optional pre-logs of your gut reaction — if set, the AI will write to that score.",
   "movies": [
@@ -265,4 +264,3 @@
     }
   ]
 }
-```
