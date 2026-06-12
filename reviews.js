@@ -35,7 +35,7 @@ const REVIEWS = [
       ],
       "images": [],
       "media": {
-        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/57300/header.jpg",
+        "poster": "https://cdn.akamai.steamstatic.com/steam/apps/57300/library_600x900_2x.jpg",
         "backdrop": "https://store.akamai.steamstatic.com/images/storepagebackground/app/57300"
       },
       "verdict": "Amnesia: The Dark Descent is a near perfect piece of horror craft that still sets the standard fourteen years later, and I genuinely think about it the way you think about the best films you have ever seen."

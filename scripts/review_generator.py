@@ -298,15 +298,13 @@ def fetch_steam_media(steam_id):
         if not app_data:
             print(f"Steam: no data for app ID {steam_id}")
             return None
-        header   = app_data.get("header_image", "")
+        poster   = f"https://cdn.akamai.steamstatic.com/steam/apps/{steam_id}/library_600x900_2x.jpg"
         backdrop = (app_data.get("background_raw", "") or
                     app_data.get("background", "") or
                     (app_data.get("screenshots") or [{}])[0].get("path_full", ""))
-        if not header:
-            return None
         media = {
-            "poster":   header,
-            "backdrop": backdrop or header,
+            "poster":   poster,
+            "backdrop": backdrop or poster,
         }
         print(f"Steam: found images for app ID {steam_id}")
         return media
