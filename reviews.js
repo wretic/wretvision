@@ -10,6 +10,48 @@
 
 const REVIEWS = [
     {
+  "id": 1781185000000,
+  "slug": "harold-halibut-review",
+  "seoTitle": "Harold Halibut Review (2024) | WretVision",
+  "seoDescription": "Harold Halibut is one of the most visually unique games in years, but endless errands and painful pacing drag it down.",
+  "category": "game",
+  "title": "Harold Halibut",
+  "year": 2024,
+  "director": "Slow Bros.",
+  "runtime": "15-20 Hours",
+  "rating": "",
+  "genres": [
+    "Adventure",
+    "Narrative",
+    "Sci-Fi",
+    "Indie"
+  ],
+  "score": 5.5,
+  "featured": false,
+  "excerpt": "Harold Halibut is a beautiful handcrafted world trapped inside a repetitive gameplay loop that mistakes constant busywork for meaningful interaction.",
+  "body": [
+    "There are very few games that look like Harold Halibut. From the moment it begins, it's obvious an enormous amount of care went into building this strange underwater world. The handcrafted visual style immediately sets it apart from almost everything else on the market. Every character, hallway, workshop, and living space feels tangible in a way most games never achieve. The atmosphere is strong, the setting is genuinely unique, and for the first few hours that novelty carries the experience surprisingly far.",
+    
+    "Harold himself is one of the game's strongest elements. He's a well-meaning, misunderstood guy trying to do his best while much of the cast seems determined to dismiss him, interrupt him, or talk down to him. Professor Mareaux in particular became a constant source of frustration. Sometimes she's supportive, but more often she treats Harold with an unnecessary level of irritation that quickly became exhausting. Instead of creating compelling character drama, many of these interactions simply made me feel bad for Harold and annoyed at the people around him.",
+    
+    "The story deserves credit for originality. In an industry increasingly dominated by sequels and familiar formulas, Harold Halibut is at least trying something different. The problem is that the gameplay rarely evolves enough to support the narrative. Much of your time is spent running from one side of the ship to the other, delivering messages, finding people, and repeating the same cycle over and over again. What initially feels like world-building eventually turns into an endless string of fetch quests.",
+    
+    "That pacing issue ultimately becomes the game's biggest problem. Around five hours in, I found myself growing increasingly bored, and unfortunately the experience only became more repetitive from there. The introduction of the alien storyline feels like it should dramatically change the direction of the game, but it never really does. Instead of opening up new possibilities, the game largely continues with the same routine it had been following for hours. By the final stretch, I wasn't excited to see how things would end. I was simply forcing myself through the remaining objectives so I could finally reach the credits.",
+    
+    "Exploration and conversations should be the heart of a narrative adventure like this, but neither worked for me. Walking around the ship became tedious rather than immersive, and aside from Harold himself, most of the cast failed to leave much of an impression. One particular they/them character also felt unnecessary and added nothing meaningful to either the story or the overall experience.",
+    
+    "Technically, the game is mostly solid. I encountered occasional stuttering in certain sections, but nothing severe enough to ruin the experience. Visually, however, the game remains impressive throughout. The handcrafted presentation is without question Harold Halibut's greatest achievement and deserves recognition regardless of how you feel about the gameplay itself.",
+    
+    "Harold Halibut feels like a fascinating art project that forgot to make the journey enjoyable. The world is unique, the visual craftsmanship is remarkable, and Harold is an easy protagonist to sympathize with. Unfortunately, none of those strengths are enough to overcome the repetitive structure, sluggish pacing, and lack of meaningful gameplay evolution. I admire what the developers created. I just didn't enjoy playing it."
+  ],
+  "images": [],
+  "verdict": "Harold Halibut is one of the most visually distinctive indie games in recent memory, but its beautiful world can't save it from repetitive fetch quests, weak pacing, and an experience that becomes increasingly tedious the longer it goes on. 5.5/10.",
+  "media": {
+    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6m8p.webp",
+    "backdrop": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6m8p.webp"
+  }
+},
+    {
       "id": 1781179956871,
       "slug": "the-empty-man-review",
       "seoTitle": "The Empty Man Review (2020) | WretVision",
