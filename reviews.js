@@ -10,6 +10,33 @@
 
 const REVIEWS = [
     {
+      "id": 1781260795628,
+      "slug": "amnesia-the-dark-descent-review",
+      "seoTitle": "Amnesia: The Dark Descent Review (2010) | WretVision",
+      "seoDescription": "Amnesia: The Dark Descent didn't just scare me. It made me feel genuinely helpless, and that's something almost nothing else has ever pulled off.",
+      "category": "movie",
+      "title": "Amnesia: The Dark Descent",
+      "year": 2010,
+      "director": "",
+      "runtime": "?? min",
+      "rating": "",
+      "genres": [
+        "Psychological Horror",
+        "Survival Horror",
+        "Single Player"
+      ],
+      "score": 10,
+      "featured": false,
+      "excerpt": "Amnesia: The Dark Descent didn't just scare me. It made me feel genuinely helpless, and that's something almost nothing else has ever pulled off.",
+      "body": [
+        "Some games scare you with monsters. Amnesia: The Dark Descent from Frictional Games scares you with yourself. Released in 2010, this is a first person psychological horror game where you play as Daniel, waking up in a crumbling Prussian castle with no memory and a note from your past self telling you to kill someone. No weapons. No fighting back. Just you, a lantern, and the slow creeping certainty that something is in the dark with you. Frictional had been building toward this with their Penumbra series but nothing prepared the genre for what this delivered. The sanity mechanic is the masterstroke. Look at a monster too long, stand in the dark too long, witness something horrific, and Daniel starts to unravel. The screen warps. He mumbles. You feel his mind going. It is not a gimmick. It is the entire emotional core of the experience and it works on a level that still feels unmatched.",
+        "What makes Amnesia: The Dark Descent so exceptional is that it understands dread in a way most horror games never bother to. The Grunt, the game's primary pursuer, is terrifying not because of how it looks but because of what you do when it arrives. You hide. You close a cupboard door. You hold your breath in the dark and listen. There is no combat loop to fall back on. No rhythm to master. Just raw panic and the desperate hope that it passes you by. The castle itself does half the work too. Brennenburg is a spectacular piece of environmental design, each wing dripping with atmosphere, the architecture feeling genuinely wrong in a way that good horror spaces always do. Compare it to something like SOMA, also from Frictional, and you see a studio that knows exactly how to build a world that feels like it wants you gone. The sound design here deserves its own conversation. It is doing more heavy lifting than most horror films manage with a full score.",
+        "If there is a flaw it is that the back half of the game leans slightly harder on the lore delivery than the atmosphere that defines the opening hours. The story is compelling and Daniel's past is genuinely dark and well constructed, but a few of the later environments trade tension for exposition in ways that slightly ease the pressure. Slightly. Because even at its most narrative focused, Amnesia: The Dark Descent never fully lets you breathe. This is the game that defined a generation of horror game design, inspired countless imitators, none of which came close, and reminded players that helplessness is the most powerful tool in the genre. It is not just one of the best horror games ever made. It is one of the most effective horror experiences in any medium."
+      ],
+      "images": [],
+      "verdict": "Amnesia: The Dark Descent is a near perfect piece of horror craft that still sets the standard fourteen years later, and I genuinely think about it the way you think about the best films you have ever seen."
+    },
+    {
   "id": 1781185000000,
   "slug": "harold-halibut-review",
   "seoTitle": "Harold Halibut Review (2024) | WretVision",

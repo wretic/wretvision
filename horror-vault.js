@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "Amnesia: The Dark Descent",
+    "year": 2010,
+    "decade": "2010s",
+    "status": "watched",
+    "note": "",
+    "id": 429
+  },
+  {
     "title": "The Empty Man",
     "year": 2020,
     "decade": "2020s",

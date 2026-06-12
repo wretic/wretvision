@@ -7,7 +7,11 @@
       "director": "Ridley Scott",
       "runtime": "117 min",
       "rating": "R",
-      "genre": ["Sci-Fi", "Horror", "Thriller"],
+      "genre": [
+        "Sci-Fi",
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "Disney+",
       "done": false,
       "score": 9,
@@ -19,7 +23,11 @@
       "director": "James Cameron",
       "runtime": "137 min",
       "rating": "R",
-      "genre": ["Sci-Fi", "Action", "Horror"],
+      "genre": [
+        "Sci-Fi",
+        "Action",
+        "Horror"
+      ],
       "streaming": "Disney+",
       "done": false,
       "score": 9.8,
@@ -261,7 +269,7 @@
         "Single Player"
       ],
       "platform": "PC, PlayStation, Xbox",
-      "done": false,
+      "done": true,
       "score": 9.6,
       "notes": null
     }
