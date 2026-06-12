@@ -31,6 +31,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wretvision.com/review.html?slug=harold-halibut-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=the-empty-man-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=pulse-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wretvision.com/review.html?slug=oddity-review</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
