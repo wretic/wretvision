@@ -30,8 +30,8 @@ REVIEWS_JS      = ROOT / "reviews.js"
 HORROR_VAULT_JS = ROOT / "horror-vault.js"
 
 # ── Category weights per day type ─────────────────────────────────────────────
-WEEKDAY_WEIGHTS = {"movies": 0.50, "tv": 0.40, "horror_vault": 0.10}
-WEEKEND_WEIGHTS = {"movies": 0.30, "tv": 0.30, "horror_vault": 0.40}
+WEEKDAY_WEIGHTS = {"movies": 0.40, "tv": 0.30, "horror_vault": 0.10, "games": 0.20}
+WEEKEND_WEIGHTS = {"movies": 0.20, "tv": 0.20, "horror_vault": 0.30, "games": 0.30}
 
 # Map your queue category names → reviews.js category values
 CATEGORY_MAP = {
@@ -57,7 +57,7 @@ def pick_title(queue):
 
     pool, pool_weights = [], []
     for category, weight in weights.items():
-        items = [i for i in queue.get(category, []) if not i.get("done")]
+        items = [i for i in queue.get(category, []) if not i.get("done") and not i.get("skip")]
         if not items:
             continue
         for item in items:

@@ -1,6 +1,31 @@
 {
   "_instructions": "Add titles here. Set 'done': true when reviewed. 'score' and 'notes' are optional pre-logs of your gut reaction — if set, the AI will write to that score. This batch was selected to avoid titles already present in the existing queue and horror-vault.js.",
-  "movies": [],
+  "movies": [
+    {
+      "title": "Alien",
+      "year": 1979,
+      "director": "Ridley Scott",
+      "runtime": "117 min",
+      "rating": "R",
+      "genre": ["Sci-Fi", "Horror", "Thriller"],
+      "streaming": "Disney+",
+      "done": false,
+      "score": 9,
+      "notes": null
+    },
+    {
+      "title": "Aliens",
+      "year": 1986,
+      "director": "James Cameron",
+      "runtime": "137 min",
+      "rating": "R",
+      "genre": ["Sci-Fi", "Action", "Horror"],
+      "streaming": "Disney+",
+      "done": false,
+      "score": 9.8,
+      "notes": null
+    }
+  ],
   "tv": [],
   "horror_vault": [
     {
@@ -192,6 +217,7 @@
       ],
       "platform": "PlayStation 2, Xbox, PC",
       "done": false,
+      "skip": true,
       "score": 9,
       "notes": "Original classic"
     },
@@ -221,6 +247,7 @@
       ],
       "platform": "PC, PlayStation, Xbox",
       "done": false,
+      "skip": true,
       "score": 10,
       "notes": null
     },
@@ -235,6 +262,7 @@
       ],
       "platform": "PC, PlayStation, Xbox",
       "done": false,
+      "skip": true,
       "score": 9.6,
       "notes": null
     }
