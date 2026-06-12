@@ -33,7 +33,7 @@
       "rating": "R",
       "genre": ["Drama", "Thriller", "Action", "Crime"],
       "streaming": "Disney+",
-      "done": false,
+      "done": true,
       "score": null,
       "notes": null
     },
@@ -57,7 +57,7 @@
       "rating": "R",
       "genre": ["Horror", "Mystery", "Thriller"],
       "streaming": "Shudder",
-      "done": false,
+      "done": true,
       "score": null,
       "notes": null
     },
@@ -84,7 +84,7 @@
       "rating": "TV-MA",
       "genre": ["Drama", "Comedy"],
       "streaming": "Disney+",
-      "done": false,
+      "done": true,
       "score": null,
       "notes": null
     },
@@ -150,7 +150,7 @@
       "rating": "R",
       "genre": ["Horror", "Folk Horror", "Mystery"],
       "streaming": "Various",
-      "done": false,
+      "done": true,
       "score": 6,
       "notes": null
     },
@@ -174,7 +174,7 @@
       "rating": "R",
       "genre": ["Horror", "Mystery", "Drama"],
       "streaming": "Various",
-      "done": false,
+      "done": true,
       "score": 8,
       "notes": null
     },
@@ -186,7 +186,7 @@
       "rating": "R",
       "genre": ["Horror", "Folk Horror", "Mystery"],
       "streaming": "Various",
-      "done": false,
+      "done": true,
       "score": null,
       "notes": null
     },
@@ -234,7 +234,7 @@
       "rating": "R",
       "genre": ["Horror", "Mystery", "Thriller"],
       "streaming": "Various",
-      "done": false,
+      "done": true,
       "score": 8,
       "notes": null
     },
@@ -246,7 +246,7 @@
       "rating": "R",
       "genre": ["Horror", "Thriller"],
       "streaming": "Various",
-      "done": false,
+      "done": true,
       "score": 6,
       "notes": null
     }
