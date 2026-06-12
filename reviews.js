@@ -34,6 +34,10 @@ const REVIEWS = [
         "If there is a flaw it is that the back half of the game leans slightly harder on the lore delivery than the atmosphere that defines the opening hours. The story is compelling and Daniel's past is genuinely dark and well constructed, but a few of the later environments trade tension for exposition in ways that slightly ease the pressure. Slightly. Because even at its most narrative focused, Amnesia: The Dark Descent never fully lets you breathe. This is the game that defined a generation of horror game design, inspired countless imitators, none of which came close, and reminded players that helplessness is the most powerful tool in the genre. It is not just one of the best horror games ever made. It is one of the most effective horror experiences in any medium."
       ],
       "images": [],
+      "media": {
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/57300/header.jpg",
+        "backdrop": "https://store.akamai.steamstatic.com/images/storepagebackground/app/57300"
+      },
       "verdict": "Amnesia: The Dark Descent is a near perfect piece of horror craft that still sets the standard fourteen years later, and I genuinely think about it the way you think about the best films you have ever seen."
     },
     {

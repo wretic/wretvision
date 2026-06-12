@@ -225,6 +225,7 @@
       ],
       "platform": "PlayStation 2, Xbox, PC",
       "playtime": "8 hours",
+      "steam_id": 2124490,
       "done": false,
       "skip": true,
       "score": 9,
@@ -241,6 +242,7 @@
       ],
       "platform": "PC, PlayStation 4, Xbox One",
       "playtime": "8 hours",
+      "steam_id": 282140,
       "done": false,
       "score": 9.5,
       "notes": null
@@ -257,6 +259,7 @@
       ],
       "platform": "PC, PlayStation, Xbox",
       "playtime": "15 hours",
+      "steam_id": 214490,
       "done": false,
       "skip": true,
       "score": 10,
@@ -273,6 +276,7 @@
       ],
       "platform": "PC, PlayStation, Xbox",
       "playtime": "8 hours",
+      "steam_id": 57300,
       "done": true,
       "score": 9.6,
       "notes": null
