@@ -17,8 +17,8 @@ const REVIEWS = [
       "category": "game",
       "title": "Amnesia: The Dark Descent",
       "year": 2010,
-      "director": "",
-      "runtime": "?? min",
+      "director": "Frictional Games",
+      "runtime": "~8 hours",
       "rating": "",
       "genres": [
         "Psychological Horror",

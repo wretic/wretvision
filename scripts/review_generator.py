@@ -185,8 +185,10 @@ def build_review_entry(category, item, parsed):
     year     = item.get("year", "")
     season   = item.get("season", "")
     genres   = item.get("genre", [])
-    director = item.get("director", "")
-    runtime  = item.get("runtime", "")
+    is_game  = category == "games"
+    director = item.get("developer", "") if is_game else item.get("director", "")
+    playtime = item.get("playtime", "")
+    runtime  = (f"~{playtime}" if playtime else "?? hours") if is_game else item.get("runtime", "")
     rating   = item.get("rating", "")
     season_str = f" Season {season}" if season else ""
     full_title = f"{title}{season_str}"
@@ -223,9 +225,10 @@ def build_review_entry(category, item, parsed):
         "images":         [],
         "verdict":        parsed["verdict"],
     }
-    media = fetch_tmdb_media(title, year)
-    if media:
-        entry["media"] = media
+    if not is_game:
+        media = fetch_tmdb_media(title, year)
+        if media:
+            entry["media"] = media
     return entry
 
 def is_horror(category, item):

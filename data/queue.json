@@ -224,6 +224,7 @@
         "Single Player"
       ],
       "platform": "PlayStation 2, Xbox, PC",
+      "playtime": "8 hours",
       "done": false,
       "skip": true,
       "score": 9,
@@ -239,6 +240,7 @@
         "Single Player"
       ],
       "platform": "PC, PlayStation 4, Xbox One",
+      "playtime": "8 hours",
       "done": false,
       "score": 9.5,
       "notes": null
@@ -254,6 +256,7 @@
         "Single Player"
       ],
       "platform": "PC, PlayStation, Xbox",
+      "playtime": "15 hours",
       "done": false,
       "skip": true,
       "score": 10,
@@ -269,6 +272,7 @@
         "Single Player"
       ],
       "platform": "PC, PlayStation, Xbox",
+      "playtime": "8 hours",
       "done": true,
       "score": 9.6,
       "notes": null
