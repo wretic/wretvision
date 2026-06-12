@@ -14,7 +14,7 @@ const REVIEWS = [
       "slug": "amnesia-the-dark-descent-review",
       "seoTitle": "Amnesia: The Dark Descent Review (2010) | WretVision",
       "seoDescription": "Amnesia: The Dark Descent didn't just scare me. It made me feel genuinely helpless, and that's something almost nothing else has ever pulled off.",
-      "category": "movie",
+      "category": "game",
       "title": "Amnesia: The Dark Descent",
       "year": 2010,
       "director": "",
@@ -25,7 +25,7 @@ const REVIEWS = [
         "Survival Horror",
         "Single Player"
       ],
-      "score": 10,
+      "score": 9.6,
       "featured": false,
       "excerpt": "Amnesia: The Dark Descent didn't just scare me. It made me feel genuinely helpless, and that's something almost nothing else has ever pulled off.",
       "body": [

@@ -38,6 +38,7 @@ CATEGORY_MAP = {
     "movies":       "movie",
     "tv":           "tv",
     "horror_vault": "movie",   # horror vault entries go in as movies
+    "games":        "game",
 }
 
 
@@ -111,7 +112,7 @@ Streaming: {streaming}
 
 Output format — respond with a JSON object and nothing else, no markdown fences:
 {{
-  "score": <integer 1-10>,
+  "score": <number 1-10, one decimal place allowed>,
   "excerpt": "<one sentence hook, under 200 characters, punchy>",
   "paragraphs": [
     "<paragraph 1>",
