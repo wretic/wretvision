@@ -763,6 +763,46 @@
       height: 100%;
       border: 0;
     }
+
+    /* ── HAROLD HALIBUT — GREEN ACCENT OVERRIDE ─────────────────────────────
+       Scoped entirely to this slug. Does not affect any other game review.
+       Overrides only the accent-coloured elements; layout/fonts unchanged.
+       ─────────────────────────────────────────────────────────────────────── */
+    body.review-slug-harold-halibut-review .grv-title {
+      color: #66d98a;
+      text-shadow: 0 0 22px rgba(102,217,138,0.28);
+    }
+    body.review-slug-harold-halibut-review .grv-title-year { color: #2e6e45; }
+
+    body.review-slug-harold-halibut-review .grv-cover { border-color: #66d98a; }
+
+    body.review-slug-harold-halibut-review .grv-meta-label { color: #66d98a; }
+
+    body.review-slug-harold-halibut-review .grv-chip { border-color: rgba(102,217,138,0.35); }
+    body.review-slug-harold-halibut-review .grv-chip-label { color: #66d98a; }
+
+    body.review-slug-harold-halibut-review .grv-divider { background: #66d98a; }
+
+    body.review-slug-harold-halibut-review .grv-verdict { border-color: rgba(102,217,138,0.22); }
+    body.review-slug-harold-halibut-review .grv-verdict .pixel-corner { background: #66d98a !important; }
+    body.review-slug-harold-halibut-review .grv-verdict-label { color: #66d98a; }
+    body.review-slug-harold-halibut-review .grv-verdict-sep { background: rgba(102,217,138,0.2); }
+
+    body.review-slug-harold-halibut-review .grv-score {
+      color: #66d98a;
+      text-shadow: 0 0 18px rgba(102,217,138,0.4);
+    }
+    body.review-slug-harold-halibut-review .grv-score-denom { color: #2e6e45; }
+
+    body.review-slug-harold-halibut-review .grv-verdict-icon { color: #66d98a; }
+
+    body.review-slug-harold-halibut-review .grv-back:hover      { color: #66d98a; }
+    body.review-slug-harold-halibut-review .grv-pager-link:hover { color: #66d98a; }
+
+    /* Chip icon SVG fills — overrides hardcoded #cc1f0f and #881010 in the inline SVGs */
+    body.review-slug-harold-halibut-review .grv-chip svg [fill="#cc1f0f"],
+    body.review-slug-harold-halibut-review .grv-chip svg [fill="#881010"],
+    body.review-slug-harold-halibut-review .grv-verdict-icon svg [fill="#cc1f0f"] { fill: #66d98a; }
   </style>
 </head>
 <body>
@@ -1326,6 +1366,8 @@
 
     // apply genre theme class to body
     document.body.classList.add('genre-' + genreSlug(review.genres));
+    // per-review slug class — used for one-off accent overrides (e.g. harold-halibut-review)
+    if (review.slug) document.body.classList.add('review-slug-' + review.slug);
 
     // highlight nav
     document.querySelectorAll('.nav-link[data-cat]').forEach(function (link) {
