@@ -297,9 +297,13 @@
       .rv-poster-wrap { width: 140px; }
       .rv-title { font-size: 36px; }
       .rv-title-year { font-size: 28px; }
-      .rv-score { font-size: 44px; }
-      .rv-verdict { flex-wrap: wrap; }
+      .rv-verdict { flex-wrap: wrap; padding: 12px 14px; gap: 12px; margin-bottom: 18px; }
       .rv-verdict-sep { display: none; }
+      .rv-verdict-label { font-size: 5px; margin-bottom: 4px; }
+      .rv-score { font-size: 38px; }
+      .rv-score-denom { font-size: 18px; }
+      .rv-verdict-text { font-size: 17px; line-height: 1.5; }
+      .rv-verdict-icon { display: none; }
     }
 
     /* ═══════════════════════════════════════════════════════════
@@ -699,6 +703,17 @@
 
     @media (max-width: 860px) {
       .grv-right { padding: 20px 16px 32px; }
+    }
+
+    @media (max-width: 600px) {
+      .grv-verdict { padding: 12px 14px; margin-bottom: 18px; }
+      .grv-verdict-inner { gap: 12px; }
+      .grv-verdict-label { font-size: 4.5px; margin-bottom: 4px; }
+      .grv-score { font-size: 50px; }
+      .grv-score-denom { font-size: 20px; }
+      .grv-verdict-sep { display: none; }
+      .grv-verdict-text { font-size: 13px; line-height: 1.6; }
+      .grv-verdict-icon { display: none; }
     }
 
     /* ── THEMED CURSORS ────────────────────────────────────────── */
