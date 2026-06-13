@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1781346771519,
+      "slug": "aliens-review",
+      "seoTitle": "Aliens Review (1986) | WretVision",
+      "seoDescription": "Aliens doesn't just follow one of the greatest sci-fi horror films ever made, it does something almost impossible: it justifies its own existence completely.",
+      "category": "movie",
+      "title": "Aliens",
+      "year": 1986,
+      "director": "James Cameron",
+      "runtime": "137 min",
+      "rating": "R",
+      "genres": [
+        "Sci-Fi",
+        "Action",
+        "Horror"
+      ],
+      "score": 9.8,
+      "featured": false,
+      "excerpt": "Aliens doesn't just follow one of the greatest sci-fi horror films ever made, it does something almost impossible: it justifies its own existence completely.",
+      "body": [
+        "James Cameron took Ridley Scott's slow burn nightmare and turned it into something louder, faster, and somehow just as good. That should not work. It almost never works. But Aliens (1986) is one of those rare sequels that understands exactly what made the original terrifying and then asks a different question with the same monster. Where Alien was about isolation and helplessness, this one is about helplessness with guns. Turns out that doesn't make it less scary. It just makes it more exhausting in the best possible way. Cameron builds the tension so carefully in the first act that when everything finally goes wrong on LV-426, you feel it in your chest. The Colonial Marines feel real, they feel lived in, they feel doomed, and you care about most of them anyway.",
+        "Sigourney Weaver as Ripley is the whole film. I know people talk about the action sequences and the practical creature work and the loader suit finale, and all of that deserves every word written about it. But Weaver is doing something quietly extraordinary here. Ripley is not a hero because she wants to be. She is a hero because no one else is stepping up and she cannot look away. The relationship with Newt is earned rather than forced, which is almost a miracle given how badly that kind of dynamic usually plays out. Michael Biehn brings real warmth to Hicks without overdoing it. Bill Paxton is doing exactly what the film needs with Hudson. Every performance lands. The practical xenomorph work holds up better than CGI from films made thirty years later. The Queen is still one of the greatest creature designs in cinema.",
+        "If I have a single reservation it is that the theatrical cut loses some of the colony setup that makes the second act hit harder, and if you have not watched the special edition you are genuinely missing context that sharpens the whole story. The pacing in the first forty minutes of the theatrical version is the one thing that keeps this from being a clean ten. That and the fact that I have a rule about tens. Aliens is available on Disney+ and if you have somehow not seen it, or if you have not seen it since you were young and remember it only as a big dumb action film, go back. It is not dumb. It is one of the most precisely constructed genre films ever made, sitting comfortably alongside The Terminator and Predator as action science fiction that actually has something underneath the firepower."
+      ],
+      "images": [],
+      "verdict": "Aliens (1986) is as close to a perfect sequel as cinema has ever produced, and 9.8 is the most honest number I can give something this good.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/4kix6fAblJIH6eMs0Ku2loyZJXK.jpg"
+      }
+    },
+    {
       "id": 1781264780251,
       "slug": "soma-review",
       "seoTitle": "SOMA Review (2015) | WretVision",
