@@ -4453,18 +4453,22 @@
   .review-hero-info .verdict-score,
   .review-hero-info .review-verdict-quote { margin-left: auto; margin-right: auto; }
 
-  /* ── WANTED FILE MOBILE CARDS: dark theme text + hide images ── */
+  /* ── WANTED FILE MOBILE CARDS: dark theme, full-viewport gradient ── */
   /* hide the cork-board banner image above each card */
   [class$="-mobile-banner"],
   [class*="-mobile-banner"] { display: none !important; }
 
-  /* push card below fixed topnav and leave room for fixed bottom buttons */
+  /* card fills the full 100vh: 73px top offset clears the fixed header,
+     gradient extends all the way to the bottom past the fixed buttons */
   [class$="-mobile-card"],
   [class*="-mobile-card"] {
-    margin-top: min(14vh, 110px) !important;
-    padding-bottom: min(14vh, 110px) !important;
+    display: block !important;
+    margin-top: 73px !important;
+    padding: 24px 20px min(14vh, 110px) !important;
+    min-height: calc(100vh - 73px) !important;
     overflow-y: auto !important;
-    max-height: calc(100vh - min(14vh, 110px) - min(14vh, 110px)) !important;
+    box-sizing: border-box !important;
+    background: linear-gradient(to bottom, #0a0a08 0%, #0e0806 40%, #1a0808 70%, #240a0a 100%) !important;
   }
 
   [class$="-mobile-card"] img,
