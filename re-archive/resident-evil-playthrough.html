@@ -667,11 +667,22 @@
   #cs-cursor { display:inline-block; width:2px; background:#a52a2a; margin-left:3px; vertical-align:middle; animation: cs-blink 0.75s step-end infinite; }
   @keyframes cs-blink { 0%,100%{opacity:1} 50%{opacity:0} }
 
+  /* lock scroll — nothing to scroll on this page */
+  body { overflow: hidden !important; }
+
   @media (max-width: 600px) {
     #pt-coming-soon { padding: 16px; align-items: center; }
     #pt-coming-soon > div:nth-child(3) { padding: 36px 24px !important; }
     #cs-title { font-size: 30px !important; min-height: 2em !important; }
-    #pt-coming-soon .cs-tagline { font-size: 7px !important; }
+    /* shrink glow orbs and keep them behind the box */
+    #pt-coming-soon > div:nth-child(1) {
+      width: 55vw !important; height: 55vw !important;
+      top: 15% !important; left: 10% !important;
+    }
+    #pt-coming-soon > div:nth-child(2) {
+      width: 40vw !important; height: 40vw !important;
+      bottom: 15% !important; right: 10% !important;
+    }
   }
 </style>
 <div id="pt-coming-soon" style="position:fixed;inset:0;z-index:9500;background:rgba(5,4,3,0.97);display:flex;align-items:center;justify-content:center;font-family:'Special Elite',serif;padding:24px;">
