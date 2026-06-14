@@ -428,22 +428,36 @@ body {
   .film-inner {
     flex-direction: column;
     align-items: center;
-    gap: 36px;
-    padding: 48px 24px;
+    gap: 0;
+    padding: 72px 24px 48px;
   }
 
   .poster-col {
     align-self: center;
     transform: none;
+    /* reserve space for the frame's downward bleed so it doesn't cover the review text */
+    margin-bottom: min(52vw, 210px);
   }
 
   .poster-wrap {
-    width: min(78vw, 320px);
+    /* ~12% smaller than before */
+    width: min(66vw, 280px);
   }
 
+  /* Stars below score on mobile */
   .content-col {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
+  .film-title  { order: 1; }
+  .film-meta   { order: 2; }
+  .score-wrap  { order: 3; margin-bottom: 10px; }
+  .stars-row   { order: 4; margin-bottom: 18px; }
+  .review-text { order: 5; }
+  .jill-callout { order: 6; }
+  .film-verdict-bar { order: 7; }
+  .predicted-note   { order: 8; }
 }
 
 /* === SITE HEADER NAV === */
