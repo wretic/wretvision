@@ -668,7 +668,7 @@
   @keyframes cs-blink { 0%,100%{opacity:1} 50%{opacity:0} }
 
   /* lock scroll — nothing to scroll on this page */
-  body { overflow: hidden !important; }
+  html, body { overflow: hidden !important; position: fixed !important; width: 100% !important; height: 100% !important; }
 
   @media (max-width: 600px) {
     #pt-coming-soon { padding: 16px; align-items: center; }
@@ -736,6 +736,13 @@
 
   setTimeout(tick, 600);
 })();
+
+// Prevent all scrolling — page is a locked overlay
+document.addEventListener('touchmove', function(e){ e.preventDefault(); }, { passive: false });
+document.addEventListener('wheel',     function(e){ e.preventDefault(); }, { passive: false });
+document.addEventListener('keydown',   function(e){
+  if ([32,33,34,35,36,37,38,39,40].indexOf(e.keyCode) > -1) e.preventDefault();
+});
 </script>
 <!-- ═══════════════════════════════════════════════════════ -->
 
