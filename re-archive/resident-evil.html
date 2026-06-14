@@ -4269,89 +4269,161 @@
    ============================================================ */
 @media (max-width: 768px) {
 
-  /* --- Header nav: hide overflow links, keep logo visible --- */
-  .site-header {
-    padding: 16px 20px 14px;
+  /* ── HEADER: wrap nav below logo row ── */
+  header {
     flex-wrap: wrap;
-    gap: 10px;
+    padding: 14px 18px 0;
+    gap: 0;
   }
-  .header-nav {
-    display: none;
-  }
-  .header-right { margin-left: auto; }
+  .site-brand { flex: 1; }
+  .header-right { flex-shrink: 0; }
   .music-btn { font-size: 9px; padding: 6px 10px; }
+  .status-indicator { display: none; }
 
-  /* --- Review modal: stack body + sidebar vertically --- */
+  /* Nav becomes a full-width scrollable row below logo */
+  .header-nav {
+    display: flex !important;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0;
+    padding: 10px 0 12px;
+    border-top: 1px solid rgba(139,26,26,0.15);
+    margin-top: 10px;
+  }
+  .header-nav::-webkit-scrollbar { display: none; }
+  .header-nav a {
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    padding: 4px 14px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    border-right: 1px solid rgba(139,26,26,0.18);
+  }
+  .header-nav a:last-child { border-right: none; }
+
+  /* ── HERO stats: stack vertically ── */
+  .hero-stats {
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+  }
+  .hero-stats span { padding: 4px 0; border-left: none !important; }
+  .hero-stats span + span { border-left: none; }
+
+  /* Archive breakdown: wrap + smaller */
+  .archive-breakdown {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+  }
+  .archive-breakdown-item {
+    white-space: nowrap;
+    padding: 0 10px;
+    font-size: 9px;
+  }
+
+  /* ── INVENTORY: horizontal scroll slider ── */
+  .inventory-grid {
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 16px !important;
+    padding: 8px 20px 20px;
+  }
+  .inventory-grid::-webkit-scrollbar { display: none; }
+
+  .game-card {
+    flex: 0 0 72vw;
+    max-width: 280px;
+    scroll-snap-align: start;
+    margin-bottom: 0;
+    transform: none !important;
+    transition: none !important;
+  }
+  .game-card:hover { transform: none !important; }
+
+  /* Reduce frame + wallpaper size */
+  .card-frame-wrap { padding: 10% !important; }
+  .card-cover { border-radius: 0; }
+
+  /* ── WANTED FILES: plain text mobile layout ── */
+  .wanted-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    padding: 0 4px;
+  }
+
+  .wanted-card {
+    background-image: none !important;
+    background-color: #0d0907 !important;
+    border: 1px solid rgba(139,26,26,0.4) !important;
+    box-shadow: 0 0 18px rgba(139,26,26,0.12), inset 0 0 30px rgba(0,0,0,0.5) !important;
+    transform: none !important;
+    transition: none !important;
+    min-height: auto !important;
+    padding: 18px 18px 16px !important;
+  }
+  .wanted-card::before {
+    background: none !important;
+  }
+  .wanted-card::after { display: none !important; }
+  .wanted-card:hover {
+    transform: none !important;
+    box-shadow: 0 0 22px rgba(139,26,26,0.22) !important;
+  }
+  .wanted-stamp {
+    transform: none !important;
+    font-size: 16px !important;
+    border-color: rgba(139,26,26,0.55) !important;
+    filter: none !important;
+    text-shadow: 0 0 12px rgba(139,26,26,0.3) !important;
+  }
+
+  /* ── WANTED FILE PAGES (cv001, re5002 etc): hide desktop layout, show plain text ── */
+  .cv001-bg, .cv001-stage,
+  .re5002-bg, .re5002-stage,
+  .ob003-bg, .ob003-stage,
+  .re1004-bg, .re1004-stage,
+  .re0005-bg, .re0005-stage,
+  .re6006-bg, .re6006-stage {
+    display: none !important;
+  }
+
+  /* ── REVIEW MODAL: stack body + sidebar ── */
   .review-main {
     flex-direction: column;
-    padding: 28px 20px 48px;
-    gap: 32px;
+    padding: 24px 18px 40px;
+    gap: 28px;
   }
   .review-sidebar {
     width: 100%;
     position: static;
   }
-  .review-body-text {
-    font-size: 16px;
-  }
+  .review-body-text { font-size: 16px; }
   .review-verdict-box {
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
-    padding: 20px;
+    gap: 12px;
+    padding: 18px;
   }
   .verdict-divider { width: 48px; height: 1px; }
 
-  /* --- Modal overlay padding --- */
   .modal-box {
-    padding: 0;
-    border-radius: 0;
     max-width: 100vw;
-    max-height: 100vh;
-    border: none;
+    border-left: none;
+    border-right: none;
   }
-  .modal-hero-title { font-size: clamp(24px, 6vw, 42px); }
-  .modal-close {
-    top: 12px;
-    right: 14px;
-    font-size: 22px;
-  }
+  .modal-hero-title { font-size: clamp(22px, 6vw, 38px); }
+  .modal-close { top: 12px; right: 14px; font-size: 22px; }
 
-  /* --- Stats bar wrap --- */
-  .hub-stats-bar {
-    flex-wrap: wrap;
-    gap: 0;
-    padding: 14px 16px;
-  }
-  .hub-stat { flex: 1 1 50%; border-right: none; border-bottom: 1px solid rgba(139,26,26,0.15); padding: 12px 10px; }
-
-  /* --- Coverage bar wrap --- */
-  .coverage-bar {
-    flex-wrap: wrap;
-    padding: 10px 16px;
-    font-size: 10px;
-    gap: 6px;
-  }
-
-  /* --- Review cards grid: single column --- */
-  .inventory-grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* --- Wanted files grid --- */
-  .wanted-grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* --- Footer columns stack --- */
+  /* ── FOOTER ── */
   .footer-columns {
     grid-template-columns: 1fr !important;
     gap: 24px;
-  }
-
-  /* --- Hero title size --- */
-  .hub-hero-title {
-    font-size: clamp(28px, 8vw, 52px);
   }
 }
 </style>
