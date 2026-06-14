@@ -435,13 +435,19 @@ body {
   .poster-col {
     align-self: center;
     transform: none;
-    /* reserve space for the frame's downward bleed so it doesn't cover the review text */
-    margin-bottom: min(52vw, 210px);
+    margin-bottom: min(22vw, 90px);
   }
 
   .poster-wrap {
-    /* ~12% smaller than before */
     width: min(66vw, 280px);
+  }
+
+  /* Tighten the frame bleed on mobile so it doesn't overlap sections above/below */
+  .poster-frame {
+    top: -18%;
+    left: -16%;
+    width: 132%;
+    height: 136%;
   }
 
   /* Stars below score on mobile */

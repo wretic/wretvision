@@ -2628,7 +2628,7 @@
   }
   .re5002-mobile-card {
     display: block;
-    background: #f5f0e8;
+    background: linear-gradient(160deg, #0d0907 0%, #1a0505 70%, #2a0808 100%);
     padding: 24px 20px;
   }
   .re5002-mobile-card .re5002-title {
@@ -3004,7 +3004,7 @@
   }
   .ob003-mobile-card {
     display: block;
-    background: #f5f0e8;
+    background: linear-gradient(160deg, #0d0907 0%, #1a0505 70%, #2a0808 100%);
     padding: 24px 20px;
   }
   .ob003-mobile-card .ob003-title {
@@ -3380,7 +3380,7 @@
   }
   .re1004-mobile-card {
     display: block;
-    background: #f5f0e8;
+    background: linear-gradient(160deg, #0d0907 0%, #1a0505 70%, #2a0808 100%);
     padding: 24px 20px;
   }
   .re1004-mobile-card .re1004-title {
@@ -3756,7 +3756,7 @@
   }
   .re0005-mobile-card {
     display: block;
-    background: #f5f0e8;
+    background: linear-gradient(160deg, #0d0907 0%, #1a0505 70%, #2a0808 100%);
     padding: 24px 20px;
   }
   .re0005-mobile-card .re0005-title {
@@ -4166,7 +4166,7 @@
   }
   .re6006-mobile-card {
     display: block;
-    background: #f5f0e8;
+    background: linear-gradient(160deg, #0d0907 0%, #1a0505 70%, #2a0808 100%);
     padding: 24px 20px;
   }
   .re6006-mobile-card .re6006-title { font-size: 20px; margin-bottom: 4px; }
@@ -4457,6 +4457,15 @@
   /* hide the cork-board banner image above each card */
   [class$="-mobile-banner"],
   [class*="-mobile-banner"] { display: none !important; }
+
+  /* push card below fixed topnav and leave room for fixed bottom buttons */
+  [class$="-mobile-card"],
+  [class*="-mobile-card"] {
+    margin-top: min(14vh, 110px) !important;
+    padding-bottom: min(14vh, 110px) !important;
+    overflow-y: auto !important;
+    max-height: calc(100vh - min(14vh, 110px) - min(14vh, 110px)) !important;
+  }
 
   [class$="-mobile-card"] img,
   [class*="-mobile-card"] img { display: none !important; }
