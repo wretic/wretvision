@@ -624,6 +624,30 @@
     color: rgba(232,213,176,0.2);
     text-transform: uppercase;
   }
+
+  @media (max-width: 900px) {
+    .site-header { position: relative; flex-direction: column; align-items: center; padding: 14px 16px 0; gap: 0; }
+    .site-brand { text-align: center; width: 100%; margin-bottom: 4px; }
+    .site-name { font-size: 15px !important; letter-spacing: 0.2em !important; }
+    .site-tagline { display: none; }
+    .header-right { position: absolute; top: 14px; right: 16px; }
+    .music-btn { font-size: 9px; padding: 6px 10px; }
+    .header-nav {
+      display: flex !important;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding: 10px 0 12px;
+      border-top: 1px solid rgba(139,26,26,0.15);
+      margin-top: 10px;
+      gap: 0;
+      justify-content: flex-start;
+    }
+    .header-nav::-webkit-scrollbar { display: none; }
+    .header-nav a { font-size: 10px; letter-spacing: 0.14em; padding: 4px 14px; white-space: nowrap; flex-shrink: 0; border-right: 1px solid rgba(139,26,26,0.18); }
+    .header-nav a:last-child { border-right: none; }
+  }
 </style>
 </head>
 <body>
