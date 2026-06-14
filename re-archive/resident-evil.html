@@ -5671,6 +5671,27 @@
   window.navigateTo = function(slot) {
     if (_transitioning) return;
     _transitioning = true;
+
+    // Mobile: skip door video, use simple fade in/out instead
+    if (window.innerWidth <= 900) {
+      var overlay = document.getElementById('fade-overlay');
+      overlay.style.pointerEvents = 'all';
+      overlay.style.opacity = '1';
+      setTimeout(function() {
+        _performSwap(slot);
+        requestAnimationFrame(function() {
+          requestAnimationFrame(function() {
+            overlay.style.opacity = '0';
+            setTimeout(function() {
+              overlay.style.pointerEvents = 'none';
+              _transitioning = false;
+            }, 620);
+          });
+        });
+      }, 620);
+      return;
+    }
+
     _swapDone = false;
     _pendingSlot = slot;
     var video = document.getElementById('door-video');
