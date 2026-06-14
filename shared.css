@@ -281,9 +281,11 @@ body::before {
 
 /* ── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 900px) {
-  .main-layout { grid-template-columns: 1fr; }
-  .reviews-col { border-right: none; border-bottom: 2px solid var(--border); padding: 20px 16px 28px; }
-  .sidebar { padding: 20px 16px 32px; }
+  .main-layout { display: flex; flex-direction: column; }
+  .reviews-col { order: 1; border-right: none; border-bottom: 2px solid var(--border); padding: 20px 16px 28px; }
+  .sidebar { display: contents; }
+  .sidebar > .sidebar-widget:first-child { order: 0; margin: 16px 16px 0; }
+  .sidebar > .sidebar-widget:not(:first-child) { order: 2; margin: 0 16px; }
   .hero-title { font-size: 14px; }
   .topbar { padding: 10px 16px; flex-wrap: wrap; }
   .topbar-left { gap: 16px; }
@@ -296,7 +298,18 @@ body::before {
 }
 
 @media (max-width: 560px) {
-  .main-nav { display: none; }
+  .topbar-left { flex-wrap: wrap; flex: 1; }
+  .main-nav {
+    display: flex;
+    flex-basis: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-top: 4px;
+    gap: 0;
+  }
+  .main-nav::-webkit-scrollbar { display: none; }
+  .nav-link { font-size: 5.5px; padding: 5px 7px; flex-shrink: 0; }
 }
 
 /* ── SECTION-SPECIFIC YOUTUBE BUTTON COLORS ─────────────────
