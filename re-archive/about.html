@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WRETVISION — Personal Case File</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { padding: 0; margin: 0; box-sizing: border-box; }
+
+  :root {
+    --text:       #e8d5b0;
+    --text-dim:   rgba(232,213,176,0.55);
+    --text-muted: rgba(232,213,176,0.32);
+    --red:        #8b1a1a;
+    --red-light:  #a52a2a;
+    --dark:       #0a0a08;
+    --card-bg:    rgba(14,12,10,0.92);
+    --border:     rgba(139,26,26,0.28);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Special Elite', serif;
+    color: var(--text);
+    background-color: #0a0a0a;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* === FILM GRAIN === */
+  .bg-grain {
+    position: fixed;
+    inset: 0;
+    background-image: url('assets/film-grain.webp');
+    background-repeat: repeat;
+    opacity: 0.08;
+    mix-blend-mode: overlay;
+    z-index: 999;
+    pointer-events: none;
+  }
+
+  /* === FADE OVERLAY === */
+  #fade-overlay {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 9998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+  }
+
+  /* === SITE HEADER === */
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 28px 40px 20px;
+    border-bottom: 1px solid rgba(139,26,26,0.3);
+    position: relative;
+    z-index: 2;
+  }
+
+  .site-brand { display: flex; flex-direction: column; }
+
+  .site-name {
+    font-family: 'Special Elite', serif;
+    font-size: 18px;
+    font-variant: small-caps;
+    letter-spacing: 0.25em;
+    color: var(--red-light);
+    text-transform: uppercase;
+    animation: logo-pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes logo-pulse {
+    0%, 100% { text-shadow: none; }
+    50% { text-shadow: 0 0 10px rgba(139,26,26,0.6), 0 0 22px rgba(139,26,26,0.3); }
+  }
+
+  .site-tagline {
+    font-size: 10px;
+    color: rgba(232,213,176,0.45);
+    letter-spacing: 0.15em;
+    margin-top: 3px;
+    text-transform: uppercase;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+
+  .header-nav a {
+    font-family: 'Special Elite', serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: rgba(232,213,176,0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    cursor: pointer;
+  }
+
+  .header-nav a:hover { color: var(--text); }
+  .header-nav a.active { color: var(--red-light); }
+
+  .header-right { display: flex; align-items: center; gap: 12px; }
+
+  .music-btn {
+    font-family: 'Special Elite', serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: rgba(232,213,176,0.55);
+    text-transform: uppercase;
+    border: 1px solid rgba(232,213,176,0.13);
+    padding: 8px 14px;
+    background: rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+
+  .music-btn:hover { color: var(--text); border-color: rgba(232,213,176,0.28); }
+  .music-btn.muted { color: rgba(232,213,176,0.28); border-color: rgba(232,213,176,0.07); }
+
+  /* === HERO === */
+  .about-hero {
+    position: relative;
+    background-image: url('assets/bg-zombie.webp');
+    background-size: cover;
+    background-position: center 20%;
+    min-height: 280px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .about-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(5,3,2,0.72);
+    z-index: 0;
+  }
+
+  .about-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 160px;
+    background: linear-gradient(to bottom, transparent, #0a0a0a);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .about-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 64px 56px;
+    width: 100%;
+  }
+
+  .file-stamp {
+    font-size: 9px;
+    letter-spacing: 0.55em;
+    color: rgba(139,26,26,0.7);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .about-hero-title {
+    font-size: clamp(28px, 4vw, 52px);
+    color: var(--text);
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+    text-shadow: 0 0 40px rgba(139,26,26,0.4), 0 2px 6px rgba(0,0,0,0.9);
+  }
+
+  .about-hero-sub {
+    margin-top: 12px;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--text-muted);
+    letter-spacing: 0.12em;
+  }
+
+  /* === MAIN CONTENT === */
+  .about-main {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 64px 40px 100px;
+  }
+
+  /* === SECTION === */
+  .case-section {
+    margin-bottom: 56px;
+    position: relative;
+  }
+
+  .case-section-label {
+    font-size: 8px;
+    letter-spacing: 0.6em;
+    color: rgba(139,26,26,0.65);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .case-section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(139,26,26,0.2);
+  }
+
+  .case-section-title {
+    font-size: 26px;
+    color: var(--red-light);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    line-height: 1.2;
+  }
+
+  .case-body p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--text-dim);
+    margin-bottom: 20px;
+  }
+
+  .case-body p:last-child { margin-bottom: 0; }
+
+  /* highlighted inline emphasis */
+  .case-body strong {
+    color: var(--text);
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  /* === PULL QUOTE === */
+  .pull-quote {
+    border-left: 2px solid rgba(139,26,26,0.55);
+    padding: 18px 28px;
+    margin: 32px 0;
+    background: rgba(139,26,26,0.05);
+  }
+
+  .pull-quote p {
+    font-size: 20px !important;
+    font-style: italic;
+    color: var(--text) !important;
+    line-height: 1.7 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* === VERDICT LINE === */
+  .verdict-line {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 0;
+    border-top: 1px solid rgba(139,26,26,0.18);
+    border-bottom: 1px solid rgba(139,26,26,0.18);
+    margin: 28px 0;
+  }
+
+  .verdict-label {
+    font-size: 8px;
+    letter-spacing: 0.4em;
+    color: rgba(139,26,26,0.6);
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .verdict-value {
+    font-size: 16px;
+    color: var(--text-dim);
+    font-style: italic;
+  }
+
+  /* === CLOSING BLOCK === */
+  .safe-room-block {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 40px 48px;
+    position: relative;
+    margin-top: 64px;
+  }
+
+  .safe-room-block::before,
+  .safe-room-block::after {
+    content: '';
+    position: absolute;
+    width: 14px; height: 14px;
+  }
+
+  .safe-room-block::before { top: -1px; left: -1px; border-top: 2px solid #8b1a1a; border-left: 2px solid #8b1a1a; }
+  .safe-room-block::after  { bottom: -1px; right: -1px; border-bottom: 2px solid #8b1a1a; border-right: 2px solid #8b1a1a; }
+
+  .safe-room-block .sr-corner-tr { position:absolute; top:-1px; right:-1px; width:14px; height:14px; border-top:2px solid #8b1a1a; border-right:2px solid #8b1a1a; }
+  .safe-room-block .sr-corner-bl { position:absolute; bottom:-1px; left:-1px; width:14px; height:14px; border-bottom:2px solid #8b1a1a; border-left:2px solid #8b1a1a; }
+
+  .safe-room-label {
+    font-size: 8px;
+    letter-spacing: 0.55em;
+    color: rgba(139,26,26,0.55);
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+
+  .safe-room-block p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--text-dim);
+    margin-bottom: 18px;
+  }
+
+  .safe-room-block p:last-child { margin-bottom: 0; }
+
+  /* === FOOTER === */
+  .about-footer {
+    border-top: 1px solid rgba(139,26,26,0.2);
+    padding: 28px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-brand {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    color: rgba(232,213,176,0.22);
+    text-transform: uppercase;
+  }
+
+  .footer-note {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: rgba(232,213,176,0.18);
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 700px) {
+    .site-header { padding: 20px 20px 16px; flex-wrap: wrap; gap: 16px; }
+    .header-nav { gap: 14px; flex-wrap: wrap; }
+    .header-nav a { font-size: 9px; }
+    .about-hero-content { padding: 0 24px 48px; }
+    .about-main { padding: 40px 24px 80px; }
+    .safe-room-block { padding: 28px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Film grain -->
+<div class="bg-grain"></div>
+
+<!-- Fade overlay -->
+<div id="fade-overlay"></div>
+
+<!-- Audio -->
+<audio id="bg-music" loop preload="none"></audio>
+
+<!-- === HERO === -->
+<section class="about-hero">
+  <header class="site-header" style="position:absolute;top:0;left:0;right:0;">
+    <div class="site-brand">
+      <a class="site-name" href="../index.html" style="text-decoration:none;display:block;">WRETVISION</a>
+      <div class="site-tagline">Survival Horror Database</div>
+    </div>
+    <nav class="header-nav">
+      <a href="#" onclick="goToPage('resident-evil.html');return false;">Hub</a>
+      <a href="#" onclick="goToPage('resident-evil.html');return false;">Reviews</a>
+      <a href="#" onclick="goToPage('ranking.html');return false;">Rankings</a>
+      <a href="#" onclick="goToPage('re-movies.html');return false;">Films</a>
+      <a href="#" onclick="goToPage('resident-evil.html#wanted');return false;">Wanted Files</a>
+      <a href="#" onclick="goToPage('resident-evil-playthrough.html');return false;">Playthrough</a>
+      <a href="about.html" class="active">About</a>
+    </nav>
+    <div class="header-right">
+      <button id="music-toggle" class="music-btn" onclick="toggleMusic()">&#9834; BGM ON</button>
+    </div>
+  </header>
+
+  <div class="about-hero-content">
+    <div class="file-stamp">WRETVISION // PERSONAL CASE FILE // DESIGNATION: RE-ORIGIN</div>
+    <div class="about-hero-title">Why Resident Evil</div>
+    <div class="about-hero-sub">A personal record. From fear to obsession.</div>
+  </div>
+</section>
+
+<!-- === MAIN CONTENT === -->
+<div class="about-main">
+
+  <!-- SECTION 1 -->
+  <div class="case-section">
+    <div class="case-section-label">FILE 01</div>
+    <div class="case-section-title">The Fear</div>
+    <div class="case-body">
+      <p>Resident Evil has always had a strange place in my life. When I was a kid, I was absolutely terrified of it. The original Resident Evil was one of those games that stuck with me long after I stopped playing. I still remember that first zombie encounter in the Spencer Mansion — the cinematic of the zombie slowly turning its head toward the camera. <strong>Nightmare fuel.</strong> The pale grey skin, the vacant expression, those unsettling eyes. One of the most memorable horror moments I have ever experienced in gaming, and honestly, it still holds up today.</p>
+      <p>For years, Resident Evil was a franchise I respected from a distance. I loved horror, but there was something about it that genuinely got under my skin.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="case-section">
+    <div class="case-section-label">FILE 02</div>
+    <div class="case-section-title">The Turning Point</div>
+    <div class="case-body">
+      <p>As I got older, that fear slowly transformed into admiration. When the Resident Evil remake was released, I decided to revisit the series — and it completely changed my perspective. What I found was more than just a horror game. Beneath the cheesy dialogue and over-the-top moments was <strong>one of the greatest survival horror experiences ever created.</strong></p>
+      <p>Survival horror has always been one of my favorite genres. Games like Amnesia and SOMA reinforced that love over the years. But Resident Evil was one of the franchises that helped define what survival horror could be. The atmosphere, resource management, exploration, puzzles, memorable locations, and constant tension created an experience that few games have ever matched.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="case-section">
+    <div class="case-section-label">FILE 03</div>
+    <div class="case-section-title">Into the Archive</div>
+    <div class="case-body">
+      <p>From there, I explored the rest of the series. Resident Evil 2 and Resident Evil 3 — I fell in love with both immediately. Mr. X and Nemesis remain two of the most iconic pursuers in gaming history. And the cast of protagonists helped establish Resident Evil as more than just a horror series.</p>
+      <p>Leon Kennedy, Claire Redfield, Jill Valentine, Chris Redfield. Characters I genuinely cared about.</p>
+
+      <div class="pull-quote">
+        <p>Out of all of them, Leon has always been my personal favorite. Whether it was his growth throughout the series, his personality, or simply the fact that he is one of gaming's most recognizable heroes — Leon has always stood out as one of the franchise's strongest characters.</p>
+      </div>
+
+      <p>When Resident Evil 4 arrived, the series shifted toward action. I still appreciated what it accomplished — it helped redefine third-person action games and influenced countless titles that followed. Resident Evil 5 continued along that path. Enjoyable, even if it moved further from the horror roots that drew me in.</p>
+      <p>Resident Evil 6 remains one of my least favorite entries. Too many campaigns, too many protagonists, not enough focus. The action had gone so far it stopped feeling like Resident Evil altogether. Ironically, <strong>Leon's campaign was the one part that retained at least some connection to the survival horror atmosphere I loved.</strong></p>
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="case-section">
+    <div class="case-section-label">FILE 04</div>
+    <div class="case-section-title">The Modern Era</div>
+    <div class="case-body">
+      <p>Thankfully, the series found its footing again. Resident Evil 7 and Village introduced a new perspective, a new protagonist, and a fresh direction. At first, Ethan Winters felt disconnected from the larger universe — almost like a side story. Over time, Capcom successfully tied those events back into the wider narrative. I genuinely enjoyed both games and appreciated the risks the series was willing to take.</p>
+      <p>The remakes have also played a major role in keeping the franchise alive. Resident Evil 2 Remake was phenomenal. Resident Evil 4 Remake exceeded my expectations. Resident Evil 3 Remake left me disappointed due to the content that was removed — but overall the remake era has been a massive success.</p>
+      <p>With Resident Evil Requiem on the horizon and a long-rumored Code Veronica remake finally becoming reality, <strong>there has never been a more exciting time to be a Resident Evil fan.</strong></p>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="case-section">
+    <div class="case-section-label">FILE 05</div>
+    <div class="case-section-title">Beyond the Games</div>
+    <div class="case-body">
+      <p>The animated films have had mixed results. Vendetta remains my favorite — a solid 7/10 — while some of the others felt forgettable despite featuring beloved characters. The live-action movies are a different story entirely, but even those are part of the strange and fascinating history of the franchise.</p>
+
+      <div class="verdict-line">
+        <span class="verdict-label">Field Note</span>
+        <span class="verdict-value">When it comes to villains, few characters can compete with Albert Wesker. Arrogant, powerful, manipulative, and completely unforgettable. One of gaming's greatest antagonists.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <div class="case-section">
+    <div class="case-section-label">FILE 06</div>
+    <div class="case-section-title">Why This Section Exists</div>
+    <div class="case-body">
+      <p>Because Resident Evil is more than just another gaming franchise to me. <strong>It represents a journey from fear to admiration.</strong> I went from being a kid who was afraid to watch the game to becoming someone who eagerly revisits the series, analyzes its stories, reviews its entries, and celebrates everything that makes it special.</p>
+      <p>This section was created as a tribute to that passion. Here you will find my thoughts on the mainline games, remakes, spin-offs, animated films, characters, villains, lore, and everything else connected to the Resident Evil universe. Some opinions may be controversial. Some reviews may differ from the community consensus. But every article, review, and feature comes from a genuine appreciation for a franchise that has entertained me for decades.</p>
+    </div>
+  </div>
+
+  <!-- CLOSING: THE SAFE ROOM -->
+  <div class="safe-room-block">
+    <div class="sr-corner-tr"></div>
+    <div class="sr-corner-bl"></div>
+    <div class="safe-room-label">Personal Note // The Safe Room</div>
+    <p>If you are wondering why the Safe Room theme plays throughout this section, the answer is simple.</p>
+    <p>For me, it perfectly captures the soul of Resident Evil. After surviving another encounter, solving another puzzle, or escaping another monster, the Safe Room was always a brief moment of peace. The tension disappeared, if only for a few minutes. The music was calming, mysterious, and comforting all at once. It reminded you that you were safe — for now — even if danger was waiting right outside the door.</p>
+    <p>That feeling has stayed with me for years. And in many ways, that is exactly what this section is meant to be. <strong>A place to celebrate one of the greatest horror franchises ever created.</strong></p>
+  </div>
+
+</div>
+
+<!-- === FOOTER === -->
+<footer>
+  <div class="about-footer">
+    <div class="footer-brand">WRETVISION &mdash; Survival Horror Database</div>
+    <div class="footer-note">Personal Case File &mdash; RE-ORIGIN</div>
+  </div>
+</footer>
+
+<script>
+(function() {
+
+  // ── Navigation with fade-to-black ──────────────────────────
+  var _transitioning = false;
+
+  window.goToPage = function(href) {
+    if (_transitioning) return;
+    _transitioning = true;
+    var overlay = document.getElementById('fade-overlay');
+    overlay.style.pointerEvents = 'all';
+    overlay.style.opacity = '1';
+    setTimeout(function() {
+      saveMusicState();
+      window.location.href = href;
+    }, 650);
+  };
+
+  // ── Music persistence ──────────────────────────────────────
+  window._musicMuted = false;
+
+  (function() {
+    var audio   = document.getElementById('bg-music');
+    var started = false;
+    var musicSrc = 'https://archive.org/download/01.-the-beginning-of-story/Resident%20Evil%202%20Original%20Soundtrack/11.%20Secure%20Place.mp3';
+
+    window.saveMusicState = function() {
+      if (!audio) return;
+      sessionStorage.setItem('rpd_music', JSON.stringify({
+        playing: !audio.paused && !audio.muted,
+        muted: window._musicMuted,
+        currentTime: audio.currentTime || 0,
+        src: audio.currentSrc || audio.src || musicSrc
+      }));
+    };
+
+    window.addEventListener('pagehide', window.saveMusicState);
+
+    window._startMusic = function() {
+      if (started) return;
+      started = true;
+      audio.volume = 0.15;
+      audio.loop   = true;
+      audio.src    = musicSrc;
+      audio.play().catch(function() {});
+    };
+
+    window.toggleMusic = function() {
+      window._musicMuted = !window._musicMuted;
+      if (!window._musicMuted) {
+        window._startMusic();
+        audio.muted = false;
+      } else {
+        audio.muted = true;
+      }
+      document.querySelectorAll('.music-btn').forEach(function(b) {
+        b.innerHTML = window._musicMuted ? '&#9834; BGM OFF' : '&#9834; BGM ON';
+        b.classList.toggle('muted', window._musicMuted);
+      });
+    };
+
+    var saved = sessionStorage.getItem('rpd_music');
+    if (saved) {
+      try {
+        var s = JSON.parse(saved);
+        sessionStorage.removeItem('rpd_music');
+        window._musicMuted = !!s.muted;
+        document.querySelectorAll('.music-btn').forEach(function(b) {
+          b.innerHTML = window._musicMuted ? '&#9834; BGM OFF' : '&#9834; BGM ON';
+          b.classList.toggle('muted', window._musicMuted);
+        });
+        if (s.playing) {
+          audio.volume = 0.15;
+          audio.loop   = true;
+          audio.src    = s.src || musicSrc;
+          started      = true;
+          var resumeAt = Number(s.currentTime) || 0;
+          var resume   = function() {
+            if (resumeAt > 0 && isFinite(resumeAt)) { try { audio.currentTime = resumeAt; } catch(e) {} }
+            audio.play().catch(function() { started = false; });
+          };
+          if (audio.readyState >= 1) { resume(); }
+          else { audio.addEventListener('loadedmetadata', resume, { once: true }); audio.load(); }
+        }
+      } catch(e) {}
+    }
+  })();
+
+  // ── Page-in fade ──────────────────────────────────────────
+  (function() {
+    var overlay = document.getElementById('fade-overlay');
+    overlay.style.opacity = '1';
+    overlay.style.pointerEvents = 'all';
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+        overlay.style.transition = 'opacity 0.55s ease';
+        overlay.style.opacity = '0';
+        setTimeout(function() { overlay.style.pointerEvents = 'none'; }, 560);
+      });
+    });
+  })();
+
+})();
+</script>
+
+</body>
+</html>
