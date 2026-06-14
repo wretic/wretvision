@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1781434241947,
+      "slug": "alien-review",
+      "seoTitle": "Alien Review (1979) | WretVision",
+      "seoDescription": "Ridley Scott made a haunted house film set in space and somehow nobody has topped it in 45 years.",
+      "category": "movie",
+      "title": "Alien",
+      "year": 1979,
+      "director": "Ridley Scott",
+      "runtime": "117 min",
+      "rating": "R",
+      "genres": [
+        "Sci-Fi",
+        "Horror",
+        "Thriller"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Ridley Scott made a haunted house film set in space and somehow nobody has topped it in 45 years.",
+      "body": [
+        "Alien (1979) is one of those films where you can feel the craft in every single frame. Ridley Scott was not interested in making a monster movie. He was interested in dread, in isolation, in the creeping certainty that something is wrong before you can even name what it is. The Nostromo feels lived in and industrial and real in a way that most sci-fi never manages. The crew bicker and eat and complain about their wages. They feel like people with lives outside the plot. That groundedness is exactly what makes the horror land so hard when it finally arrives. You care. And when you care, the fear has somewhere to go.",
+        "H.R. Giger's creature design is still untouchable. The xenomorph works because it feels genuinely alien, not a guy in a rubber suit, not a CGI construct but something that looks like it evolved in a nightmare. The practical effects throughout are extraordinary. The chestburster scene remains one of the most viscerally effective moments in horror history, partly because the cast reaction is famously real shock. Sigourney Weaver as Ripley builds quietly and earns every moment of her final act without ever tipping into action hero posturing. She is scared. She is smart. That combination is rarer than it sounds.",
+        "Where it falls just short of a perfect score for me is the pacing in the second act. There is a stretch in the middle where the tension plateaus a little, and you can feel the film finding its footing before the finale kicks in. It is a minor complaint against a film that does almost everything right. If you have somehow never watched this on Disney Plus then fix that immediately. Comparable films like The Thing and Event Horizon owe it an enormous debt, and neither one fully catches it. Alien (1979) is the blueprint for sci-fi horror and it still outperforms everything built from it."
+      ],
+      "images": [],
+      "verdict": "9/10, a near perfect film that understood atmosphere as a weapon before most directors even knew they were allowed to use it that way.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/AmR3JG1VQVxU8TfAvljUhfSFUOx.jpg"
+      }
+    },
+    {
       "id": 1781346771519,
       "slug": "aliens-review",
       "seoTitle": "Aliens Review (1986) | WretVision",
