@@ -4263,6 +4263,97 @@
   content: none !important;
 }
 
+
+/* ============================================================
+   GLOBAL MOBILE STYLES — resident-evil.html
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* --- Header nav: hide overflow links, keep logo visible --- */
+  .site-header {
+    padding: 16px 20px 14px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-right { margin-left: auto; }
+  .music-btn { font-size: 9px; padding: 6px 10px; }
+
+  /* --- Review modal: stack body + sidebar vertically --- */
+  .review-main {
+    flex-direction: column;
+    padding: 28px 20px 48px;
+    gap: 32px;
+  }
+  .review-sidebar {
+    width: 100%;
+    position: static;
+  }
+  .review-body-text {
+    font-size: 16px;
+  }
+  .review-verdict-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px;
+  }
+  .verdict-divider { width: 48px; height: 1px; }
+
+  /* --- Modal overlay padding --- */
+  .modal-box {
+    padding: 0;
+    border-radius: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    border: none;
+  }
+  .modal-hero-title { font-size: clamp(24px, 6vw, 42px); }
+  .modal-close {
+    top: 12px;
+    right: 14px;
+    font-size: 22px;
+  }
+
+  /* --- Stats bar wrap --- */
+  .hub-stats-bar {
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 14px 16px;
+  }
+  .hub-stat { flex: 1 1 50%; border-right: none; border-bottom: 1px solid rgba(139,26,26,0.15); padding: 12px 10px; }
+
+  /* --- Coverage bar wrap --- */
+  .coverage-bar {
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    font-size: 10px;
+    gap: 6px;
+  }
+
+  /* --- Review cards grid: single column --- */
+  .inventory-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* --- Wanted files grid --- */
+  .wanted-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* --- Footer columns stack --- */
+  .footer-columns {
+    grid-template-columns: 1fr !important;
+    gap: 24px;
+  }
+
+  /* --- Hero title size --- */
+  .hub-hero-title {
+    font-size: clamp(28px, 8vw, 52px);
+  }
+}
 </style>
 </head>
 <body>
