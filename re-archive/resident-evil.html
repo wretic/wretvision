@@ -4532,6 +4532,11 @@
   .ob003-mobile-card p                          { font-size: 16px !important; }
   .re1004-mobile-card p                         { font-size: 16px !important; }
 
+  /* Code Veronica — high-specificity overrides to beat existing rules */
+  .cv001-mobile-card .cv001-body p              { font-size: 16px !important; }
+  .cv001-mobile-card .cv001-evidence-head       { font-size: 17px !important; }
+  .cv001-mobile-card .cv001-evidence-list li    { font-size: clamp(13px, 0.74vw, 13px) !important; }
+
   /* Red glow on the bottom edge of wanted mobile cards */
   [class$="-mobile-card"]::after,
   [class*="-mobile-card"]::after {
