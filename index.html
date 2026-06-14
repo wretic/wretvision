@@ -29,58 +29,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="shared.css" />
   <style>
-    /* ── CATEGORY NAV ── */
-    .category-nav {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      background: rgba(10,143,212,0.15);
-      border-bottom: 2px solid rgba(10,143,212,0.3);
-    }
-    .cat-card {
-      background: var(--bg2);
-      padding: 20px 18px;
-      text-align: center;
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      transition: background 0.2s, box-shadow 0.2s;
-      position: relative;
-      border-right: 1px solid rgba(10,143,212,0.12);
-    }
-    .cat-card:last-child { border-right: none; }
-    .cat-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: currentColor;
-      opacity: 0;
-      transition: opacity 0.2s;
-    }
-    .cat-card:hover::before { opacity: 0.6; }
-    .cat-card:hover { background: var(--bg3); }
-    .cat-icon { font-family: 'VT323', monospace; font-size: 34px; line-height: 1; }
-    .cat-name { font-family: 'Press Start 2P', monospace; font-size: 7px; letter-spacing: 2px; }
-    .cat-count { font-family: 'VT323', monospace; font-size: 17px; color: var(--muted); letter-spacing: 1px; }
-
     :root {
       --movie-gold:        #b88a1b;
       --movie-gold-light:  #e6b84a;
       --movie-gold-glow:   #ffd86b;
     }
 
-    .cat-card.movies { color: var(--movie-gold-light); }
-    .cat-card.movies .cat-icon { text-shadow: 0 0 10px rgba(255,216,107,0.4); }
-    .cat-card.movies:hover { box-shadow: inset 0 -2px 0 rgba(255,216,107,0.35); }
-    .cat-card.tv     { color: var(--green); }
-    .cat-card.games  { color: #e74c3c; }
-    .cat-card.horror { color: #9edcff; }
-    .cat-card.horror .cat-icon { text-shadow: 0 0 10px rgba(59,191,255,0.45); }
-
-    @media (max-width: 560px) { .category-nav { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 768px) { .re-teaser-wrap { display: none; } }
 
     /* ── MOVIE CARD OVERRIDES (homepage) ── */
     .review-card[data-category="movie"],
