@@ -4503,28 +4503,29 @@
   [class$="-mobile-card"] img,
   [class*="-mobile-card"] img { display: none !important; }
 
-  /* Title, subtitle, body, evidence: +5px on all 5 cards (RE6 overridden below) */
+  /* Title, subtitle, body, evidence: all 5 cards (RE6 overridden below) */
   [class$="-mobile-card"] [class$="-title"],
   [class*="-mobile-card"] [class*="-title"] { color: #e8d5b0 !important; font-size: 25px !important; }
 
   [class$="-mobile-card"] [class$="-subtitle"],
   [class*="-mobile-card"] [class*="-subtitle"] { color: rgba(232,213,176,0.55) !important; border-color: rgba(139,26,26,0.35) !important; font-size: 18px !important; }
 
+  /* Review body: -2px from last round for better balance */
   [class$="-mobile-card"] p,
-  [class*="-mobile-card"] p { color: rgba(232,213,176,0.82) !important; font-size: 20px !important; }
+  [class*="-mobile-card"] p { color: rgba(232,213,176,0.82) !important; font-size: 18px !important; }
 
-  /* Evidence notes: readable on dark background, +5px */
+  /* Evidence notes: slightly larger than body for visual emphasis */
   [class$="-mobile-card"] li,
-  [class*="-mobile-card"] li { color: rgba(232,213,176,0.78) !important; font-size: 19px !important; }
+  [class*="-mobile-card"] li { color: rgba(232,213,176,0.78) !important; font-size: 20px !important; }
 
   [class$="-mobile-card"] [class$="-evidence-head"],
   [class*="-mobile-card"] [class*="-evidence-head"] { color: rgba(232,213,176,0.5) !important; font-size: 18px !important; }
 
-  /* RE6 Reimagined: keep original font sizes (content is longer) */
-  .re6006-mobile-card [class*="-title"]        { font-size: 20px !important; }
-  .re6006-mobile-card [class*="-subtitle"]     { font-size: 13px !important; }
-  .re6006-mobile-card p                        { font-size: 15px !important; }
-  .re6006-mobile-card li                       { font-size: 14px !important; }
+  /* RE6 Reimagined: keep original font sizes (already balanced) */
+  .re6006-mobile-card [class*="-title"]         { font-size: 20px !important; }
+  .re6006-mobile-card [class*="-subtitle"]      { font-size: 13px !important; }
+  .re6006-mobile-card p                         { font-size: 15px !important; }
+  .re6006-mobile-card li                        { font-size: 14px !important; }
   .re6006-mobile-card [class*="-evidence-head"] { font-size: 13px !important; }
 
   /* Red glow on the bottom edge of wanted mobile cards */
