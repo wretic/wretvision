@@ -1,0 +1,1251 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WRETVISION â€” The Resident Evil Films</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --text: #e8d5b0;
+  --red: #8b1a1a;
+  --red-light: #a52a2a;
+  --dark: #0a0a08;
+  --gold: #c9a84c;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Special Elite', serif;
+  color: var(--text);
+  background: #080706;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* === FILM GRAIN === */
+.film-grain {
+  position: fixed;
+  inset: 0;
+  background-image: url('assets/film-grain.webp');
+  background-repeat: repeat;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  z-index: 9990;
+  pointer-events: none;
+}
+
+/* === FADE OVERLAY === */
+#fade-overlay {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 9995;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+/* === TOP NAV === */
+.topnav {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 36px;
+  background: rgba(6,5,4,0.96);
+  border-bottom: 1px solid rgba(139,26,26,0.25);
+}
+
+.back-btn {
+  font-family: 'Special Elite', serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: rgba(232,213,176,0.65);
+  background: none;
+  border: 1px solid rgba(139,26,26,0.35);
+  padding: 8px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.back-btn:hover {
+  color: var(--text);
+  border-color: rgba(139,26,26,0.7);
+}
+
+.music-btn {
+  font-family: 'Special Elite', serif;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: rgba(232,213,176,0.55);
+  text-transform: uppercase;
+  border: 1px solid rgba(232,213,176,0.13);
+  padding: 8px 14px;
+  background: rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.music-btn:hover { color: var(--text); border-color: rgba(232,213,176,0.28); }
+.music-btn.muted { color: rgba(232,213,176,0.28); border-color: rgba(232,213,176,0.07); }
+
+/* === PAGE HEADER === */
+.page-header {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background-image: url('assets/ranking-header.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.page-title {
+  font-family: 'Special Elite', serif;
+  font-size: clamp(32px, 4.5vw, 60px);
+  color: var(--text);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-shadow: 0 0 40px rgba(139,26,26,0.55), 0 2px 6px rgba(0,0,0,0.95);
+  min-height: 1.3em;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background: var(--text);
+  margin-left: 2px;
+  animation: blink 0.85s step-end infinite;
+  vertical-align: text-bottom;
+  height: 0.82em;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.page-subtitle {
+  font-family: 'Special Elite', serif;
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(232,213,176,0.62);
+  letter-spacing: 0.08em;
+  margin-top: 18px;
+}
+
+/* === QUICK NAV === */
+.quick-nav {
+  width: 100%;
+  background: rgba(6,5,4,0.97);
+  border-bottom: 1px solid rgba(139,26,26,0.3);
+  padding: 14px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.quick-nav-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quick-nav-inner a {
+  font-family: 'Special Elite', serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: rgba(232,213,176,0.52);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 4px 18px;
+  transition: color 0.2s;
+}
+
+.quick-nav-inner a:hover { color: var(--text); }
+
+.quick-nav-sep {
+  color: rgba(139,26,26,0.5);
+  font-size: 11px;
+  user-select: none;
+}
+
+/* === FILM SECTIONS === */
+.film-section {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+  border-bottom: 1px solid rgba(139,26,26,0.6);
+}
+
+.film-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.72);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.film-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(96px, 10vw, 160px);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 48px;
+}
+
+/* === POSTER === */
+.poster-col {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  transform: translateX(-18%);
+}
+
+.poster-wrap {
+  position: relative;
+  width: 320px;
+  aspect-ratio: 2/3;
+  box-shadow: 4px 6px 28px rgba(0,0,0,0.82), 0 0 0 1px rgba(139,26,26,0.18);
+}
+
+.film-poster {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: brightness(0.93) contrast(1.04);
+}
+
+.poster-frame {
+  position: absolute;
+  top: -40%;
+  left: -30%;
+  width: 160%;
+  height: 180%;
+  object-fit: fill;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* === CONTENT COL === */
+.content-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.film-title {
+  font-family: 'Special Elite', serif;
+  font-size: clamp(22px, 2.6vw, 36px);
+  color: var(--text);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.8);
+}
+
+.film-meta {
+  font-family: 'Special Elite', serif;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: rgba(232,213,176,0.42);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+/* === STARS === */
+.stars-row {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 14px;
+}
+
+.star {
+  font-size: 22px;
+  color: var(--red-light);
+  line-height: 1;
+}
+
+.star.empty {
+  color: rgba(139,26,26,0.3);
+}
+
+.star.half {
+  position: relative;
+  display: inline-block;
+  color: rgba(139,26,26,0.3);
+}
+
+.star.half::before {
+  content: '\2605';
+  position: absolute;
+  left: 0;
+  top: 0;
+  clip-path: inset(0 50% 0 0);
+  color: var(--red-light);
+}
+
+/* === SCORE STAMP === */
+.score-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.score-stamp {
+  font-family: 'Special Elite', serif;
+  font-size: 46px;
+  color: var(--red-light);
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: 0 0 24px rgba(139,26,26,0.4), 2px 2px 0 rgba(0,0,0,0.9);
+  transform: rotate(-3deg);
+  display: inline-block;
+  border: 2px solid rgba(139,26,26,0.45);
+  padding: 6px 14px;
+  flex-shrink: 0;
+}
+
+.score-label {
+  font-size: 9px;
+  letter-spacing: 0.36em;
+  color: rgba(232,213,176,0.3);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+/* === PREDICTED SCORE (2026) === */
+.predicted-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.predicted-label {
+  font-family: 'Special Elite', serif;
+  font-size: 9px;
+  letter-spacing: 0.4em;
+  color: rgba(232,213,176,0.35);
+  text-transform: uppercase;
+}
+
+.tbd-stamp {
+  font-family: 'Special Elite', serif;
+  font-size: 32px;
+  color: rgba(165,42,42,0.82);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: 2px solid rgba(139,26,26,0.5);
+  padding: 6px 18px;
+  display: inline-block;
+  transform: rotate(-3deg);
+  text-shadow: 0 0 18px rgba(139,26,26,0.35), 1px 1px 0 rgba(0,0,0,0.8);
+  filter: blur(0.3px);
+  align-self: flex-start;
+}
+
+.predicted-note {
+  font-family: 'Special Elite', serif;
+  font-size: 12px;
+  font-style: italic;
+  color: rgba(232,213,176,0.48);
+  letter-spacing: 0.04em;
+}
+
+/* === REVIEW TEXT === */
+.review-text {
+  font-family: 'Special Elite', serif;
+  font-size: 16px;
+  line-height: 1.9;
+  color: rgba(232,213,176,0.88);
+}
+
+.review-text p {
+  margin-bottom: 18px;
+}
+
+.review-text p:last-child { margin-bottom: 0; }
+
+/* === JILL CALLOUT === */
+.jill-callout {
+  font-family: 'Special Elite', serif;
+  font-size: 17px;
+  color: var(--gold);
+  line-height: 1.75;
+  border-left: 2px solid rgba(201,168,76,0.4);
+  padding: 14px 20px;
+  margin: 22px 0;
+  background: rgba(201,168,76,0.04);
+}
+
+/* === RESPONSIVE LAYOUT === */
+@media (max-width: 900px) {
+  .film-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    padding: 48px 24px;
+  }
+
+  .poster-col {
+    align-self: center;
+    transform: none;
+  }
+
+  .poster-wrap {
+    width: min(78vw, 320px);
+  }
+
+  .content-col {
+    width: 100%;
+  }
+}
+
+/* === SITE HEADER NAV === */
+.site-header {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 22px 40px 18px;
+  border-bottom: 1px solid rgba(139, 26, 26, 0.3);
+  background: rgba(6, 5, 4, 0.98);
+}
+
+.site-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-name {
+  font-family: 'Special Elite', serif;
+  font-size: 18px;
+  font-variant: small-caps;
+  letter-spacing: 0.25em;
+  color: var(--red-light);
+  text-transform: uppercase;
+  animation: logo-pulse 3s ease-in-out infinite;
+}
+
+@keyframes logo-pulse {
+  0%, 100% { text-shadow: none; }
+  50% { text-shadow: 0 0 10px rgba(139, 26, 26, 0.6), 0 0 22px rgba(139, 26, 26, 0.3); }
+}
+
+.site-tagline {
+  font-size: 10px;
+  color: rgba(232, 213, 176, 0.45);
+  letter-spacing: 0.15em;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+.header-nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.header-nav a {
+  font-family: 'Special Elite', serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: rgba(232, 213, 176, 0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.header-nav a:hover { color: var(--text); }
+.header-nav a.active { color: var(--red-light); }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* === FOOTER === */
+.page-footer {
+  background: rgba(6,5,4,0.99);
+  border-top: 1px solid rgba(139,26,26,0.28);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-copy {
+  font-family: 'Special Elite', serif;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: rgba(232,213,176,0.3);
+  text-transform: uppercase;
+  line-height: 1.9;
+}
+
+.footer-copy a {
+  color: rgba(232,213,176,0.45);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-copy a:hover { color: rgba(232,213,176,0.72); }
+
+/* === ANIMATED CANON BANNER === */
+.animated-canon-banner {
+  width: 100%;
+  background: #060504;
+  padding: 72px 20px;
+  text-align: center;
+}
+
+.canon-banner-rule {
+  width: 60%;
+  max-width: 700px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(139,26,26,0.85), transparent);
+  margin: 20px auto;
+}
+
+.canon-banner-title {
+  font-family: 'Special Elite', serif;
+  font-size: clamp(26px, 3.8vw, 46px);
+  color: #e8d5b0;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 30px rgba(139,26,26,0.35), 0 2px 8px rgba(0,0,0,0.9);
+}
+
+.canon-banner-subtitle {
+  font-family: 'Special Elite', serif;
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(232,213,176,0.48);
+  letter-spacing: 0.07em;
+  margin-top: 14px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="film-grain"></div>
+<div id="fade-overlay"></div>
+<audio id="bg-music" preload="none"></audio>
+
+<!-- Site Header -->
+<header class="site-header">
+  <div class="site-brand">
+    <div class="site-name">WRETVISION</div>
+    <div class="site-tagline">Survival Horror Database</div>
+  </div>
+  <nav class="header-nav">
+    <a href="resident-evil.html" onclick="goBack(); return false;">Hub</a>
+    <a href="resident-evil.html" onclick="goBack(); return false;">Reviews</a>
+    <a href="ranking.html">Rankings</a>
+    <a href="re-movies.html" class="active">Films</a>
+    <a href="resident-evil.html#wanted">Wanted Files</a>
+    <a href="resident-evil-playthrough.html">Playthrough</a>
+  </nav>
+  <div class="header-right">
+    <button id="music-toggle" class="music-btn">&#9834; BGM ON</button>
+  </div>
+</header>
+
+<!-- Page Header -->
+<header class="page-header">
+  <div class="header-content">
+    <h1 class="page-title" id="page-title"><span id="title-cursor" class="cursor"></span></h1>
+    <p class="page-subtitle">Every film. Ranked. Reviewed. No mercy.</p>
+  </div>
+</header>
+
+<!-- Quick Jump Nav -->
+<nav class="quick-nav">
+  <div class="quick-nav-inner">
+    <a href="#f2002">2002</a><span class="quick-nav-sep">|</span>
+    <a href="#f2004">2004</a><span class="quick-nav-sep">|</span>
+    <a href="#f2007">2007</a><span class="quick-nav-sep">|</span>
+    <a href="#f2010">2010</a><span class="quick-nav-sep">|</span>
+    <a href="#f2012">2012</a><span class="quick-nav-sep">|</span>
+    <a href="#f2016">2016</a><span class="quick-nav-sep">|</span>
+    <a href="#f2021">2021</a><span class="quick-nav-sep">|</span>
+    <a href="#f2026">2026</a><span class="quick-nav-sep">|</span>
+    <a href="#f2008">2008</a><span class="quick-nav-sep">|</span>
+    <a href="#f2012b">2012 (Damnation)</a><span class="quick-nav-sep">|</span>
+    <a href="#f2017">2017</a><span class="quick-nav-sep">|</span>
+    <a href="#f2021b">2021 (Darkness)</a><span class="quick-nav-sep">|</span>
+    <a href="#f2023">2023</a>
+  </div>
+</nav>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL 2002 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2002" style="background-image: url('assets/movies/wallpaper-v1.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2002.jpg" alt="Resident Evil 2002" class="film-poster">
+        <img src="assets/movies/movie-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil</h2>
+      <p class="film-meta">Paul W.S. Anderson &nbsp;Â·&nbsp; 2002 &nbsp;Â·&nbsp; 100 min</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star half">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">6.8</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>When Resident Evil came out I was not sure what to expect. The decision to introduce Alice as a completely original protagonist rather than adapting Leon, Claire or Jill was a bold one. At the time I was willing to go along with it because I assumed that if the films performed well, the game characters would eventually appear in later entries.</p>
+        <p>I came to this film properly in the 2010s after becoming heavily invested in horror as a genre and in the Resident Evil franchise specifically. Watching it with that context made certain things clearer. The film works reasonably well as a standalone zombie movie that happens to exist in the Resident Evil universe. The Hive is a genuinely effective setting. The Red Queen is memorable. The laser corridor sequence is the kind of inventive practical horror setpiece that studios rarely commit to anymore. The zombie dogs remain genuinely unsettling.</p>
+        <p>My biggest frustration was always the complete disconnection from the games. If these events are happening alongside the incidents in Resident Evil 1, 2 and 3, why is there never any acknowledgment of that? The mansion is right there. Raccoon City is collapsing. Leon and Claire are fighting for their lives in the RPD. None of it connects. The film exists in its own sealed bubble, which made it feel like a missed opportunity every time I thought about it.</p>
+        <p>That said, stripped of the brand expectations, this is a competent and occasionally effective horror action film. If it had been released under a completely different name with no Resident Evil connection I would probably have enjoyed it just as much. As an adaptation it falls short. As a zombie movie it holds up better than most people give it credit for.</p>
+        <p>Out of all the Milla Jovovich films this is easily the strongest entry and the one most worth revisiting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL APOCALYPSE 2004 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2004" style="background-image: url('assets/movies/wallpaper-v2.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2004.jpg" alt="Resident Evil Apocalypse 2004" class="film-poster">
+        <img src="assets/movies/movie-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil Apocalypse</h2>
+      <p class="film-meta">Alexander Witt &nbsp;Â·&nbsp; 2004 &nbsp;Â·&nbsp; 94 min</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">6.0</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>Apocalypse immediately gave the series more credibility by introducing Nemesis and Jill Valentine. Sienna Guillory as Jill was genuinely impressive. She looked the part, captured the attitude and confidence of the classic Resident Evil 3 version of the character, and delivered one of the most faithful game character adaptations across the entire film franchise. Her performance understood what made Jill work in the games. She felt capable, battle hardened and real in a way that most of the other casting in these films never managed.</p>
+        <div class="jill-callout">Sienna Guillory deserved her own Jill Valentine spinoff film. A movie focused entirely on Resident Evil 3, Nemesis hunting her through Raccoon City, Carlos by her side. That film could have been something genuinely special. Instead the franchise kept chasing Alice.</div>
+        <p>The problem is that everything around Jill falls apart quickly. The film becomes increasingly over the top as it progresses and the handling of Nemesis is where it loses me completely. In the games Nemesis is a Tyrant bioweapon specifically engineered and deployed to hunt and eliminate S.T.A.R.S. members. He is relentless, terrifying and represents Umbrella at its most dangerous. In this film he spends most of his screen time pursuing Alice instead, and the revelation that he was created using a character from the first film undermines everything that makes the character frightening. The moment where he suddenly recognizes Alice and begins fighting alongside her is one of the most bizarre creative decisions in the entire franchise. It fundamentally misunderstands what Nemesis is and what he represents.</p>
+        <p>Apocalypse has enjoyable moments and Jill elevates every scene she appears in. But the film cannot hold itself together and the further it strays from its strongest element the more it falls apart. A generous 6 out of 10 and that generosity is almost entirely for Sienna Guillory.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL EXTINCTION 2007 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2007" style="background-image: url('assets/movies/wallpaper-v3.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2007.jpg" alt="Resident Evil Extinction 2007" class="film-poster">
+        <img src="assets/movies/movie-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil Extinction</h2>
+      <p class="film-meta">Russell Mulcahy &nbsp;Â·&nbsp; 2007 &nbsp;Â·&nbsp; 94 min</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star half">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">5.0</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>Extinction made the most interesting creative decision of the entire franchise by moving the series into a post apocalyptic desert setting. Zombies in a wasteland, the world already lost, survivors scraping together whatever resources remain. That visual identity at least gave the film something different to offer compared to the urban and underground settings of the previous two entries.</p>
+        <p>Unfortunately the film never figures out what to do with that concept beyond using it as a backdrop. The desert setting is striking in the opening act and then largely wasted as the story defaults to familiar action sequences and increasingly unconvincing CGI. The giant mutant crow attack is exactly the kind of moment that should feel genuinely threatening and instead plays as unintentional comedy.</p>
+        <p>The acting throughout is competent but forgettable. No performance stands out. No character development sticks. The story moves from one set piece to the next without building any real momentum or emotional investment in what happens to anyone on screen.</p>
+        <p>Extinction is not offensively bad. It is just completely forgettable in a way that is almost more frustrating than being genuinely terrible. A bad film at least gives you something to react to. Extinction gives you very little to react to at all. 5 out of 10.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL AFTERLIFE 2010 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2010" style="background-image: url('assets/movies/wallpaper-v4.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2010.jpg" alt="Resident Evil Afterlife 2010" class="film-poster">
+        <img src="assets/movies/movie-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil Afterlife</h2>
+      <p class="film-meta">Paul W.S. Anderson &nbsp;Â·&nbsp; 2010 &nbsp;Â·&nbsp; 97 min</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star half">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">5.0</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>Afterlife introduced Chris Redfield to the film franchise, though the casting never quite convinced me. The actor had the physicality but not the presence and the film gave him so little to work with that the character barely registered beyond being a familiar name attached to an unfamiliar face.</p>
+        <p>The prison setting is the strongest element Afterlife has to offer. Confined spaces, limited resources, survivors who do not trust each other, the sense that there is nowhere safe to retreat to. For a brief stretch the film generates something approaching genuine tension and it is no coincidence that this happens when the setting forces the characters together and removes their options.</p>
+        <p>The giant executioner creature is a memorable design and the boss fight concept showed some imagination. The armored vehicle escape sequence gave the film a brief pulse of Dawn of the Dead energy that the rest of the runtime never quite matches. These are isolated moments of something working in a film that otherwise coasts on spectacle without substance.</p>
+        <p>The 3D presentation the film was designed around has not aged well at all. What was presumably impressive in cinemas in 2010 plays as gimmicky and distracting watched today. Too many shots exist purely to justify the format rather than to serve the story.</p>
+        <p>Afterlife sits comfortably alongside Extinction as a film that is not quite bad enough to be memorable for the wrong reasons and not nearly good enough to be memorable for the right ones. 5 out of 10.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL RETRIBUTION 2012 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2012" style="background-image: url('assets/movies/wallpaper-v5.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2012.jpg" alt="Resident Evil Retribution 2012" class="film-poster">
+        <img src="assets/movies/movie-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil Retribution</h2>
+      <p class="film-meta">Paul W.S. Anderson &nbsp;Â·&nbsp; 2012 &nbsp;Â·&nbsp; 96 min</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">4.0</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>Retribution is where the series completely lost me and I suspect where it lost most people who were still holding on. The film leans fully into the science fiction action direction the franchise had been drifting toward since Extinction and abandons any pretense of being a horror series entirely.</p>
+        <p>Leon Kennedy and Ada Wong both appear and both look reasonably close to their game counterparts. Leon in particular is one of the better visual representations the franchise managed. But visual resemblance is where the faithfulness ends. Neither character has anything interesting to do and the film buries them under an avalanche of clones, simulations, alternate realities and increasingly convoluted mythology that serves no purpose beyond extending a story that had already run out of ideas.</p>
+        <p>The action sequences are technically competent but emotionally empty. When everything is a simulation and every character might be a clone it becomes impossible to care about the outcome of any confrontation. Stakes require consequences and Retribution strips away any sense that consequences exist.</p>
+        <p>By this point the Resident Evil film franchise felt more like a sci fi action property that had borrowed the name than anything connected to what made the games work. Retribution did not kill the series but it made very clear that the series had nothing meaningful left to say. 4 out of 10.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL THE FINAL CHAPTER 2016 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2016" style="background-image: url('assets/movies/wallpaper-v6.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2016.jpg" alt="Resident Evil The Final Chapter 2016" class="film-poster">
+        <img src="assets/movies/movie-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil The Final Chapter</h2>
+      <p class="film-meta">Paul W.S. Anderson &nbsp;Â·&nbsp; 2016 &nbsp;Â·&nbsp; 107 min</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star half">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">3.0</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>The Final Chapter is the worst film in the franchise and the manner in which it fails is almost impressive in its consistency. Every element that could go wrong does go wrong and several things go wrong that you would not have thought possible.</p>
+        <p>The story attempts to tie together six films worth of increasingly tangled mythology and instead introduces new contradictions, retcons established facts and delivers a finale that somehow makes the overall narrative more confusing rather than less. The revelation that Alice is a clone built from the memories of the real Alicia Marcus is the kind of twist that might have landed with weight if the films had been building toward it. Instead it lands as a desperate attempt to give a character who never had a compelling origin story a retroactive one.</p>
+        <p>One genuine positive deserves acknowledgment. The actor who played Wesker in this film was genuinely impressive. He looked exactly right, carried himself with the cold arrogance the character demands and delivered his lines with a conviction that the surrounding film did not deserve. In a better franchise, with better material, that Wesker could have been something special. Here he is one bright spot in a very dark room.</p>
+        <p>The editing is some of the worst I have ever seen in a major studio release. Action sequences cut every one to two seconds making it literally impossible to follow what is happening spatially. Characters appear to teleport between positions. Fights that should build tension instead generate confusion and mild nausea. It is the kind of editing that suggests the film was not working and the solution chosen was to cut fast enough that nobody could notice.</p>
+        <p>The ending resolves the zombie apocalypse in a way that feels rushed, arbitrary and profoundly unsatisfying. When the credits rolled I felt primarily relieved that it was over. That is not how a finale should feel. 3 out of 10 and the Wesker performance is the only reason it is not lower.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL WELCOME TO RACCOON CITY 2021 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2021" style="background-image: url('assets/movies/wallpaper-v7.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2021.jpg" alt="Resident Evil Welcome to Raccoon City 2021" class="film-poster">
+        <img src="assets/movies/movie-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil Welcome to Raccoon City</h2>
+      <p class="film-meta">Johannes Roberts &nbsp;Â·&nbsp; 2021 &nbsp;Â·&nbsp; 107 min</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">4.0</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>When Welcome to Raccoon City was announced I was genuinely optimistic for the first time in years. The Milla Jovovich era was finally over. The trailers suggested something much closer to the source material. A film that actually wanted to be Resident Evil rather than a film that happened to share the name.</p>
+        <p>The optimism did not survive contact with the actual film.</p>
+        <p>The casting is the most immediate problem. Leon did not work. Wesker did not work. Jill did not work. The performances are not necessarily bad in isolation but none of them feel like the characters they are supposed to represent. The one genuine exception is Robbie Amell as Chris Redfield. He looked the part, carried himself convincingly and felt believable as Chris in a way that previous film versions of the character never quite managed. I would happily see him return in future adaptations if the franchise gets another chance.</p>
+        <p>The fundamental structural mistake is the decision to combine Resident Evil 1 and Resident Evil 2 into a single film. These are two distinct stories that work precisely because of their separation. The Spencer Mansion and the RPD are two completely different horror environments that generate completely different kinds of tension. Chris, Jill and Wesker belong in the mansion. Leon and Claire belong in the police station. Merging them into one narrative strips away the isolation and claustrophobia that make both stories work.</p>
+        <p>The filmmakers had the exact blueprint they needed sitting right in front of them and still could not figure out how to use it. After finally escaping the Milla Jovovich films the franchise somehow managed to produce another disappointing adaptation. 4 out of 10.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL 2026 â€” ZACH CREGGER -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2026" style="background-image: url('assets/movies/wallpaper-v8.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2026.jpg" alt="Resident Evil 2026" class="film-poster">
+        <img src="assets/movies/movie-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil</h2>
+      <p class="film-meta">Zach Cregger &nbsp;Â·&nbsp; 2026 &nbsp;Â·&nbsp; TBD</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="predicted-wrap">
+        <div class="predicted-label">Predicted Score</div>
+        <div class="tbd-stamp">TBD</div>
+        <p class="predicted-note">Review pending release. Prediction based on available footage.</p>
+      </div>
+      <div class="review-text">
+        <p>This film is not out yet so this is not a review. It is a prediction based on everything shown so far and everything Zach Cregger has said about his approach to the material.</p>
+        <p>The trailer alone gave me more confidence in this film than anything the franchise has produced in over two decades. The atmosphere is immediately correct. The tension is palpable. The resource scarcity that defines the best Resident Evil games is right there on screen in the way characters move, the way they check their ammunition, the way every encounter feels genuinely dangerous rather than choreographed.</p>
+        <p>Cregger has talked openly about playing through the games himself before beginning production. That matters more than it sounds. Every previous filmmaker approached Resident Evil as an IP to exploit. Cregger is approaching it as a fan who understands what the games actually feel like to play. The difference in the footage is immediately visible.</p>
+        <p>The decision to follow a new protagonist rather than immediately reaching for Leon, Claire or Chris is exactly the right call. It creates the same Outbreak energy that made that game concept so compelling. An ordinary person, an extraordinary situation, not enough resources and nowhere safe to go. The green herbs visible in the background of certain shots, the RE4 easter eggs that have been spotted by fans, the general attention to detail throughout the promotional material all suggest a filmmaker who did his homework.</p>
+        <p>If this film delivers on the promise of its trailer it has the potential to completely surpass every Resident Evil film that came before it. I am going in with genuine excitement for the first time since the franchise began.</p>
+        <p>Predicted score: 8 out of 10. Update pending release.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- ANIMATED CANON SEPARATOR -->
+<!-- ======================================================= -->
+<div class="animated-canon-banner">
+  <div class="canon-banner-rule"></div>
+  <div class="canon-banner-title">&#9654; THE ANIMATED CANON</div>
+  <p class="canon-banner-subtitle">Canon. Darker. Closer to the games. Still the same structure.</p>
+  <div class="canon-banner-rule"></div>
+</div>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL DEGENERATION 2008 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2008" style="background-image: url('assets/movies/wallpaper-v9.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2008.webp" alt="Resident Evil Degeneration 2008" class="film-poster">
+        <img src="assets/movies/animated-movies-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil Degeneration</h2>
+      <p class="film-meta">Makoto Kamiya &nbsp;&middot;&nbsp; 2008 &nbsp;&middot;&nbsp; 97 min</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star half">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">6.5</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>Degeneration is the first attempt at a fully animated canonical Resident Evil film and for what it is, it works reasonably well. Leon and Claire reuniting at Harvardville Airport during an outbreak is exactly the kind of setup the franchise should have been exploring in live action years earlier. Two characters with genuine history, a familiar threat, a contained environment. The bones are solid.</p>
+        <p>The animation looks dated now and looked only adequate at the time of release. The character models are stiff in ways that become distracting during emotional scenes and the facial expressions rarely match the weight of what the dialogue is asking them to convey. The action sequences fare better because movement hides what stillness exposes.</p>
+        <p>The antagonist and the threat behind the outbreak follow a structure that will become deeply familiar across all five of these films. Someone has a virus. Someone is using it for personal reasons. The heroes fight through waves of infected, confront something monstrous at the end, and resolve the situation with a combination of gunfire and exposition. Degeneration does this first which gives it some credit but establishes the template that the subsequent films never break free from.</p>
+        <p>Seeing Leon and Claire together again was genuinely exciting in 2008 and remains the film's strongest asset. Their dynamic works. Their history gives the interactions weight that original characters in these films never achieve. Cool to see them in an animated film. Beyond that it does not leave much of an impression. 6.5 out of 10.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL DAMNATION 2012 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2012b" style="background-image: url('assets/movies/wallpaper-v10.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2012b.webp" alt="Resident Evil Damnation 2012" class="film-poster">
+        <img src="assets/movies/animated-movies-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil Damnation</h2>
+      <p class="film-meta">Makoto Kamiya &nbsp;&middot;&nbsp; 2012 &nbsp;&middot;&nbsp; 100 min</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">6.0</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>Damnation takes Leon to an Eastern European country in the middle of a civil war where Las Plagas is being used as a bioweapon by rebel forces. Ada Wong returns. The political backdrop gives the film more texture than Degeneration attempted and the Eastern European setting is genuinely atmospheric in ways the airport of the previous film was not.</p>
+        <p>The Licker sequences are where Damnation most clearly misunderstands what made those enemies frightening in the games. In Resident Evil 2 a single Licker in a corridor is a genuine threat that forces you to move slowly and carefully. Here multiple Lickers are deployed in broad daylight as combat units and the threat they represent dissipates almost immediately. The horror logic of the games requires scarcity. Damnation gives you abundance and loses the tension that abundance destroys.</p>
+        <p>Ada Wong is well used here and her presence adds a layer of intrigue the story needs. The conspiracy threading through the narrative is more interesting than the action set pieces and the film is at its best when it slows down and lets the politics breathe.</p>
+        <p>Leon is written consistently well across all of these films and Damnation is no exception. He is professional, capable and carries the weight of everything he has seen without it being constantly narrated. The same template as Degeneration, executed with slightly more ambition. 6 out of 10.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL VENDETTA 2017 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2017" style="background-image: url('assets/movies/wallpaper-v11.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2017.webp" alt="Resident Evil Vendetta 2017" class="film-poster">
+        <img src="assets/movies/animated-movies-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil Vendetta</h2>
+      <p class="film-meta">Takanori Tsujimoto &nbsp;&middot;&nbsp; 2017 &nbsp;&middot;&nbsp; 97 min</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star half">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">7.0</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>Vendetta opens in a mansion and for a brief stretch it feels like something genuinely special. The claustrophobia, the darkness, the sense of being trapped in a space designed to disorient and kill. It captures something the previous two films did not manage and immediately signals that this entry has different intentions.</p>
+        <p>Then it goes off the rails in the way these films always go off the rails. The action escalates beyond what the horror premise can support and by the final act you are watching something closer to an animated blockbuster than a survival horror story. That is a consistent frustration across all five films and Vendetta is not immune to it.</p>
+        <p>What saves it is the cast. Rebecca Chambers returning in a lab coat, clearly having built a life and a career in the years since RE0, is genuinely satisfying. She deserved more screen time in the mainline series and Vendetta at least acknowledges her competence and gives her something meaningful to do. The moment where she is in danger and the stakes feel real is one of the better emotional beats across all of these films.</p>
+        <p>The narrow space sequence where Leon and Chris have to work together against zombies in close quarters is exactly the kind of scene this franchise does well when it commits to it. Two experienced operators in an impossible situation, using the environment, covering each other. It works completely and shows what the whole film could have been with different priorities in the third act.</p>
+        <p>The best of the animated films and the one most worth watching. 7 out of 10.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL INFINITE DARKNESS 2021 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2021b" style="background-image: url('assets/movies/wallpaper-v12.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2021b.webp" alt="Resident Evil Infinite Darkness 2021" class="film-poster">
+        <img src="assets/movies/animated-movies-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil Infinite Darkness</h2>
+      <p class="film-meta">Eiichiro Hasumi &nbsp;&middot;&nbsp; 2021 &nbsp;&middot;&nbsp; Netflix Series</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">5.5</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>Infinite Darkness arrived during the period when Netflix discovered Resident Evil existed and decided to produce multiple adaptations simultaneously. The live action series they produced in the same era, featuring a reimagined Wesker with children in a near future setting, was one of the more baffling creative decisions the franchise has ever produced and has nothing to do with anything the games established. Infinite Darkness is significantly better than that simply by being recognizable as Resident Evil.</p>
+        <p>Leon investigating a zombie incident at the White House while Claire separately uncovers a government conspiracy in a foreign country is a workable premise. The political thriller framing gives the story more texture than pure action would and the four episode structure allows more breathing room than a ninety minute film. The conspiracy itself is more interesting than the monsters and the film is at its best when it leans into that.</p>
+        <p>The end boss sequence is the most game-like moment across all five animated films. Something genuinely monstrous, confined space, limited options. It briefly captures what the games feel like in a way the rest of the runtime does not.</p>
+        <p>Claire is sidelined in ways that feel like a writing failure. She is one of the franchise's best characters and Infinite Darkness gives her a storyline that never connects to the main narrative with the impact it should. The series left room for continuation and then did not continue. In the context of Netflix's broader retreat from ambitious animated projects that ending makes sense but it remains unsatisfying.</p>
+        <p>Forgettable but not offensive. Better than the Milla Jovovich films, which is the consistent benchmark for this section of the archive. 5.5 out of 10.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= -->
+<!-- RESIDENT EVIL DEATH ISLAND 2023 -->
+<!-- ======================================================= -->
+<section class="film-section" id="f2023" style="background-image: url('assets/movies/wallpaper-v13.webp');">
+  <div class="film-inner">
+    <div class="poster-col">
+      <div class="poster-wrap">
+        <img src="assets/movies/posters/re2023.webp" alt="Resident Evil Death Island 2023" class="film-poster">
+        <img src="assets/movies/animated-movies-frame.webp" alt="" class="poster-frame">
+      </div>
+    </div>
+    <div class="content-col">
+      <h2 class="film-title">Resident Evil Death Island</h2>
+      <p class="film-meta">Kazuya Sasahara &nbsp;&middot;&nbsp; 2023 &nbsp;&middot;&nbsp; 100 min</p>
+      <div class="stars-row">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star empty">&#9734;</span>
+        <span class="star empty">&#9734;</span>
+      </div>
+      <div class="score-wrap">
+        <div>
+          <div class="score-label">Score</div>
+          <div class="score-stamp">6.0</div>
+        </div>
+      </div>
+      <div class="review-text">
+        <p>Death Island assembles the largest cast in the history of the animated films and delivers exactly what that assembly promises. Fan service, spectacle and a plot that exists primarily to justify putting everyone in the same location.</p>
+        <p>Jill Valentine returning is the headline and the film handles her reappearance with one genuinely interesting detail. She has not aged in the way that Chris, Leon, Claire and Rebecca clearly have. The explanation connects to what Wesker did to her during the events of RE5 and the T-virus modifications that kept her alive under his control. It is a small thing but it shows that someone thought carefully about the canon implications of bringing her back and that care is appreciated.</p>
+        <p>Leon drinking is the film's other memorable character beat. A running thread of him being burnt out and disillusioned, finding some relief in whiskey, a conversation with Chris that briefly addresses what years of this kind of work does to a person. It does not go far enough but it gestures toward something real and it is the most human moment in the film.</p>
+        <p>Everything else follows the established template without deviation. Evil person with a virus. Alcatraz as the setting provides atmosphere that the story does not fully exploit. A large monster at the end. The heroes prevail. The day is saved. The franchise continues.</p>
+        <p>The people who dislike this film are not wrong. It offers nothing new beyond the assembled cast and the Jill aging detail. But seeing everyone together, handled with basic competence and genuine affection for the characters, is enough to make it worth the runtime. Barely. 6 out of 10.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="page-footer">
+  <p class="footer-copy">
+    &copy; 2026 WRETVISION &nbsp; Film coverage.<br>
+    Not affiliated with Constantin Film or Capcom Co., Ltd.
+  </p>
+</footer>
+
+<script>
+(function() {
+
+  // === FADE IN ON LOAD ===
+  var overlay = document.getElementById('fade-overlay');
+  overlay.style.opacity = '1';
+  overlay.style.transition = 'none';
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      overlay.style.transition = 'opacity 0.6s ease';
+      overlay.style.opacity = '0';
+    });
+  });
+
+  // === TYPEWRITER TITLE ===
+  var titleEl = document.getElementById('page-title');
+  var cursorEl = document.getElementById('title-cursor');
+  var fullText = 'The Resident Evil Films';
+  var chars = 0;
+
+  function typeNext() {
+    if (chars < fullText.length) {
+      var textNode = document.createTextNode(fullText[chars]);
+      titleEl.insertBefore(textNode, cursorEl);
+      chars++;
+      setTimeout(typeNext, chars === 1 ? 320 : 68);
+    }
+  }
+  setTimeout(typeNext, 520);
+
+  // === BACK / FADE NAVIGATION ===
+  var _going = false;
+
+  window.goBack = function() {
+    if (_going) return;
+    _going = true;
+    var ov = document.getElementById('fade-overlay');
+    ov.style.transition = 'opacity 0.6s ease';
+    ov.style.pointerEvents = 'all';
+    ov.style.opacity = '1';
+    setTimeout(function() {
+      var audio = document.getElementById('bg-music');
+      if (audio) {
+        sessionStorage.setItem('rpd_music', JSON.stringify({
+          playing: !audio.paused && !audio.muted,
+          muted: window._musicMuted
+        }));
+      }
+      window.location.href = 'resident-evil.html';
+    }, 650);
+  };
+
+  // === MUSIC ===
+  window._musicMuted = false;
+  (function() {
+    var audio = document.getElementById('bg-music');
+    var started = false;
+
+    window._startMusic = function() {
+      if (started) return;
+      started = true;
+      audio.volume = 0.15;
+      audio.loop = true;
+      audio.src = 'https://archive.org/download/01.-the-beginning-of-story/Resident%20Evil%202%20Original%20Soundtrack/11.%20Secure%20Place.mp3';
+      audio.play().catch(function() {});
+    };
+
+    window.toggleMusic = function() {
+      window._musicMuted = !window._musicMuted;
+      if (!window._musicMuted) {
+        window._startMusic();
+        audio.muted = false;
+      } else {
+        audio.muted = true;
+      }
+      document.querySelectorAll('.music-btn').forEach(function(b) {
+        b.innerHTML = window._musicMuted ? '&#9834; BGM OFF' : '&#9834; BGM ON';
+        b.classList.toggle('muted', window._musicMuted);
+      });
+    };
+
+    // Restore state from previous page
+    var saved = sessionStorage.getItem('rpd_music');
+    if (saved) {
+      try {
+        var s = JSON.parse(saved);
+        sessionStorage.removeItem('rpd_music');
+        window._musicMuted = !!s.muted;
+        document.querySelectorAll('.music-btn').forEach(function(b) {
+          b.innerHTML = window._musicMuted ? '&#9834; BGM OFF' : '&#9834; BGM ON';
+          b.classList.toggle('muted', window._musicMuted);
+        });
+        if (s.playing) {
+          audio.volume = 0.15;
+          audio.loop = true;
+          audio.src = 'https://archive.org/download/01.-the-beginning-of-story/Resident%20Evil%202%20Original%20Soundtrack/11.%20Secure%20Place.mp3';
+          started = true;
+          audio.play().catch(function() { started = false; });
+        }
+      } catch(e) {}
+    }
+
+    function onFirstInteraction() {
+      if (!window._musicMuted) window._startMusic();
+      document.removeEventListener('mousedown', onFirstInteraction);
+      document.removeEventListener('touchstart', onFirstInteraction);
+    }
+    document.addEventListener('mousedown', onFirstInteraction);
+    document.addEventListener('touchstart', onFirstInteraction, { passive: true });
+
+    var btn = document.getElementById('music-toggle');
+    if (btn) btn.addEventListener('click', window.toggleMusic);
+  })();
+
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$b='C:\\Users\\Wretic\\Desktop\\re-reviews'; $ctx = (Get-Content \"$b\\MASTER.md\" -Raw -ErrorAction SilentlyContinue) + \"`n`n\" + (Get-Content \"$b\\voice.md\" -Raw -ErrorAction SilentlyContinue) + \"`n`n\" + (Get-Content \"$b\\visual.md\" -Raw -ErrorAction SilentlyContinue); [pscustomobject]@{hookSpecificOutput=[pscustomobject]@{hookEventName='SessionStart';additionalContext=$ctx}} | ConvertTo-Json -Depth 3 -Compress",
+            "statusMessage": "Loading project context..."
+          }
+        ]
+      }
+    ]
+  }
+}

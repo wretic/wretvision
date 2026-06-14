@@ -1,0 +1,1123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WRETVISION — The Ultimate Resident Evil Playthrough</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { padding: 0; margin: 0; box-sizing: border-box; }
+
+  :root {
+    --text: #e8d5b0;
+    --red: #8b1a1a;
+    --red-light: #a52a2a;
+    --dark: #0a0a08;
+    --card-border: #2a2a22;
+    --green: #4caf72;
+    --amber: #c8973a;
+    --live-red: #e03030;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Special Elite', serif;
+    color: var(--text);
+    background-color: #0a0a0a;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* === FILM GRAIN === */
+  .bg-grain {
+    position: fixed;
+    inset: 0;
+    background-image: url('assets/film-grain.webp');
+    background-repeat: repeat;
+    opacity: 0.08;
+    mix-blend-mode: overlay;
+    z-index: 999;
+    pointer-events: none;
+  }
+
+  /* === FADE OVERLAY === */
+  #fade-overlay {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 9998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+  }
+
+  /* === HERO === */
+  .pt-hero {
+    position: relative;
+    background-image: url('assets/playthrough-header.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 320px;
+    overflow: hidden;
+  }
+
+  .pt-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .pt-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, rgba(10,10,10,1));
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .pt-hero > * { position: relative; z-index: 2; }
+
+  /* === SITE HEADER === */
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 28px 40px 20px;
+    border-bottom: 1px solid rgba(139, 26, 26, 0.3);
+  }
+
+  .site-brand {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-name {
+    font-family: 'Special Elite', serif;
+    font-size: 18px;
+    font-variant: small-caps;
+    letter-spacing: 0.25em;
+    color: var(--red-light);
+    text-transform: uppercase;
+    animation: logo-pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes logo-pulse {
+    0%, 100% { text-shadow: none; }
+    50% { text-shadow: 0 0 10px rgba(139,26,26,0.6), 0 0 22px rgba(139,26,26,0.3); }
+  }
+
+  .site-tagline {
+    font-size: 10px;
+    color: rgba(232,213,176,0.45);
+    letter-spacing: 0.15em;
+    margin-top: 3px;
+    text-transform: uppercase;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+
+  .header-nav a {
+    font-family: 'Special Elite', serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: rgba(232,213,176,0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    cursor: pointer;
+  }
+
+  .header-nav a:hover { color: var(--text); }
+  .header-nav a.active { color: var(--red-light); }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .music-btn {
+    font-family: 'Special Elite', serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: rgba(232,213,176,0.55);
+    text-transform: uppercase;
+    border: 1px solid rgba(232,213,176,0.13);
+    padding: 8px 14px;
+    background: rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+
+  .music-btn:hover {
+    color: var(--text);
+    border-color: rgba(232,213,176,0.28);
+  }
+
+  .music-btn.muted {
+    color: rgba(232,213,176,0.28);
+    border-color: rgba(232,213,176,0.07);
+  }
+
+  /* === HERO CONTENT === */
+  .pt-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 40px 60px;
+    text-align: center;
+  }
+
+  .pt-title {
+    font-family: 'Special Elite', serif;
+    font-size: clamp(30px, 4.5vw, 58px);
+    line-height: 1.2;
+    color: var(--text);
+    text-shadow: 0 0 40px rgba(139,26,26,0.5), 0 2px 4px rgba(0,0,0,0.9);
+    letter-spacing: 0.02em;
+    min-height: 1.3em;
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 3px;
+    background: var(--text);
+    margin-left: 2px;
+    animation: blink 0.85s step-end infinite;
+    vertical-align: text-bottom;
+    height: 0.85em;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  .pt-subtitle {
+    margin-top: 14px;
+    font-size: 15px;
+    font-style: italic;
+    color: rgba(232,213,176,0.58);
+    letter-spacing: 0.1em;
+  }
+
+  /* === MAIN CONTENT === */
+  .pt-main {
+    width: 100%;
+    padding: 48px 40px 80px;
+  }
+
+  /* === PROGRESS TERMINAL === */
+  .pt-progress-terminal {
+    background: #060707;
+    border: 1px solid rgba(76,175,114,0.25);
+    border-left: 3px solid rgba(76,175,114,0.55);
+    padding: 18px 28px 20px;
+    margin-bottom: 28px;
+  }
+
+  .pt-progress-label {
+    font-size: 13px;
+    color: #4caf72;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .pt-prompt {
+    color: rgba(76,175,114,0.45);
+    margin-right: 6px;
+  }
+
+  .pt-count-val {
+    color: #4caf72;
+  }
+
+  .pt-progress-bar-wrap {
+    background: rgba(76,175,114,0.08);
+    height: 5px;
+    border: 1px solid rgba(76,175,114,0.18);
+  }
+
+  .pt-progress-bar-fill {
+    background: linear-gradient(to right, #2d7a4a, #4caf72);
+    height: 100%;
+    width: 0%;
+    transition: width 1s ease;
+  }
+
+  /* === LEGEND === */
+  .pt-legend {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(139,26,26,0.18);
+  }
+
+  .pt-legend-label {
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    color: rgba(232,213,176,0.3);
+    text-transform: uppercase;
+    margin-right: 6px;
+  }
+
+  .pt-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: rgba(232,213,176,0.42);
+    text-transform: uppercase;
+  }
+
+  /* === SECTION RULE === */
+  .pt-section-rule {
+    border: none;
+    border-top: 1px solid rgba(139,26,26,0.2);
+    margin: 4px 0 0;
+  }
+
+  /* === GAME CARDS === */
+  .pt-card {
+    display: flex;
+    align-items: center;
+    min-height: 120px;
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(42,42,34,0.7);
+    transition: background 0.18s;
+    gap: 0;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.04) 0px,
+      rgba(255,255,255,0.04) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+
+  .pt-card:hover {
+    background-color: rgba(139,26,26,0.06);
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.04) 0px,
+      rgba(255,255,255,0.04) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+
+  .pt-card-rank {
+    width: 64px;
+    flex-shrink: 0;
+    font-size: 28px;
+    color: rgba(139,26,26,0.55);
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-variant: small-caps;
+  }
+
+  .pt-card-thumb {
+    width: 64px;
+    height: 88px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-right: 28px;
+    border: 1px solid rgba(42,42,34,0.9);
+  }
+
+  .pt-card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.82) contrast(1.05);
+    display: block;
+  }
+
+  .pt-card-info {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .pt-card-title {
+    font-size: 20px;
+    color: var(--text);
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+  }
+
+  .pt-card-year {
+    font-size: 16px;
+    color: rgba(232,213,176,0.35);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .pt-card-badge {
+    flex-shrink: 0;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+  }
+
+  .pt-vod-links {
+    flex-shrink: 0;
+    width: 1171px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    padding-left: 0;
+  }
+
+  .pt-vod-link {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12px;
+    color: rgba(232,213,176,0.4);
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    white-space: nowrap;
+  }
+
+  .pt-vod-link:hover {
+    color: var(--text);
+  }
+
+  .pt-vod-icon {
+    width: auto;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .pt-vod-icon img {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .vod-link { text-decoration: none; display: block; }
+  .vod-link img { width: 32px; height: 32px; object-fit: contain; opacity: 0.85; transition: opacity 0.2s; display: block; }
+  .vod-link:hover img { opacity: 1; }
+
+  /* === TWITCH LIVE PANEL === */
+  /* === TWITCH LIVE BUTTON === */
+  #twitch-toggle-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 8000;
+    font-family: 'Special Elite', serif;
+    font-size: 13px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--text);
+    background: #0d0d0b;
+    border: 1px solid rgba(139,26,26,0.7);
+    padding: 16px 32px;
+    cursor: pointer;
+    animation: pulse-twitch-btn 2s ease-in-out infinite;
+    transition: letter-spacing 0.2s;
+  }
+
+  #twitch-toggle-btn:hover {
+    letter-spacing: 0.35em;
+  }
+
+  @keyframes pulse-twitch-btn {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(139,26,26,0), 0 0 6px rgba(139,26,26,0.2);
+      border-color: rgba(139,26,26,0.5);
+    }
+    50% {
+      box-shadow: 0 0 22px 4px rgba(139,26,26,0.35), 0 0 8px rgba(139,26,26,0.5);
+      border-color: rgba(180,30,30,0.95);
+    }
+  }
+
+  /* === TWITCH SIDE PANEL === */
+  #twitch-panel {
+    position: fixed;
+    bottom: 100px;
+    right: 32px;
+    z-index: 7999;
+    width: 480px;
+    height: 270px;
+    transform: translateX(calc(100% + 48px));
+    transition: transform 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+    border: 1px solid rgba(139,26,26,0.55);
+    background: #000;
+    box-shadow: -6px 0 40px rgba(0,0,0,0.85), 0 0 0 1px rgba(0,0,0,0.6);
+  }
+
+  #twitch-panel.open {
+    transform: translateX(0);
+  }
+
+  #twitch-panel iframe {
+    width: 100%;
+    height: 270px;
+    border: none;
+    display: block;
+  }
+
+  /* === STATUS BADGES === */
+  .pt-badge {
+    font-family: 'Special Elite', serif;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 10px 28px;
+    border: 1px solid;
+    white-space: nowrap;
+  }
+
+  .pt-badge-upcoming {
+    color: var(--amber);
+    border-color: rgba(200,151,58,0.35);
+    background: rgba(200,151,58,0.07);
+  }
+
+  .pt-badge-live {
+    color: var(--live-red);
+    border-color: rgba(224,48,48,0.5);
+    background: rgba(224,48,48,0.1);
+    animation: pulse-live-border 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse-live-border {
+    0%, 100% { box-shadow: none; }
+    50% { box-shadow: 0 0 8px rgba(224,48,48,0.4), inset 0 0 6px rgba(224,48,48,0.08); }
+  }
+
+  .pt-live-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--live-red);
+    animation: blink-live 1s step-end infinite;
+    vertical-align: middle;
+    margin-right: 7px;
+    position: relative;
+    top: -2px;
+  }
+
+  @keyframes blink-live {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  .pt-badge-completed {
+    color: var(--green);
+    border-color: rgba(76,175,114,0.38);
+    background: rgba(76,175,114,0.07);
+  }
+
+  /* === DLC ROWS === */
+  .pt-dlc-row {
+    display: flex;
+    align-items: center;
+    padding: 8px 0 8px 148px;
+    border-bottom: 1px solid rgba(42,42,34,0.45);
+    gap: 12px;
+  }
+
+  .pt-dlc-indicator {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: rgba(76,175,114,0.35);
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+
+  .pt-dlc-link {
+    font-size: 13px;
+    color: rgba(76,175,114,0.55);
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .pt-dlc-link:hover {
+    color: var(--green);
+  }
+
+  /* === BACK BUTTON STRIP === */
+  .pt-back-strip {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-top: 28px;
+  }
+
+  .pt-back-btn {
+    font-family: 'Special Elite', serif;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(232,213,176,0.5);
+    background: transparent;
+    border: 1px solid rgba(232,213,176,0.13);
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .pt-back-btn:hover {
+    color: var(--text);
+    border-color: rgba(232,213,176,0.3);
+  }
+
+  /* === BOTTOM SPACER / FOOTER === */
+  .pt-footer {
+    border-top: 1px solid rgba(139,26,26,0.2);
+    padding: 28px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pt-footer-brand {
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    color: rgba(232,213,176,0.25);
+    text-transform: uppercase;
+  }
+
+  .pt-footer-stat {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: rgba(232,213,176,0.2);
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     COMING SOON OVERLAY — remove this block when playthroughs are live
+     ═══════════════════════════════════════════════════════ -->
+<div id="pt-coming-soon" style="position:fixed;inset:0;z-index:9500;background:rgba(5,4,3,0.97);display:flex;align-items:center;justify-content:center;font-family:'Special Elite',serif;padding:24px;">
+  <div style="border:1px solid rgba(139,26,26,0.35);max-width:560px;width:100%;padding:56px 64px;background:rgba(10,10,8,0.95);position:relative;text-align:center;">
+    <div style="position:absolute;top:-1px;left:-1px;width:14px;height:14px;border-top:2px solid #8b1a1a;border-left:2px solid #8b1a1a;"></div>
+    <div style="position:absolute;top:-1px;right:-1px;width:14px;height:14px;border-top:2px solid #8b1a1a;border-right:2px solid #8b1a1a;"></div>
+    <div style="position:absolute;bottom:-1px;left:-1px;width:14px;height:14px;border-bottom:2px solid #8b1a1a;border-left:2px solid #8b1a1a;"></div>
+    <div style="position:absolute;bottom:-1px;right:-1px;width:14px;height:14px;border-bottom:2px solid #8b1a1a;border-right:2px solid #8b1a1a;"></div>
+    <div style="font-size:9px;letter-spacing:0.55em;color:rgba(139,26,26,0.6);text-transform:uppercase;margin-bottom:36px;">WRETVISION // SURVIVAL HORROR DATABASE</div>
+    <div style="font-size:46px;color:#a52a2a;letter-spacing:0.12em;text-transform:uppercase;line-height:1.15;text-shadow:0 0 28px rgba(139,26,26,0.45);margin-bottom:6px;">ACCESS<br>RESTRICTED</div>
+    <div style="width:48px;height:1px;background:rgba(139,26,26,0.35);margin:28px auto;"></div>
+    <div style="font-size:11px;letter-spacing:0.35em;color:rgba(232,213,176,0.38);text-transform:uppercase;margin-bottom:20px;">TRANSMISSION PENDING</div>
+    <div style="font-size:16px;color:rgba(232,213,176,0.55);line-height:1.85;font-style:italic;margin-bottom:36px;">The playthrough series is in preparation.<br>All 19 case files will be broadcast in story order.</div>
+    <div style="font-size:9px;letter-spacing:0.28em;color:rgba(139,26,26,0.45);text-transform:uppercase;margin-bottom:40px;">CASE STATUS: PENDING ACTIVATION</div>
+    <a href="resident-evil.html" onclick="goToPage('resident-evil.html');return false;" style="font-family:'Special Elite',serif;font-size:10px;letter-spacing:0.28em;color:rgba(232,213,176,0.45);text-decoration:none;text-transform:uppercase;border:1px solid rgba(232,213,176,0.13);padding:12px 28px;display:inline-block;transition:color 0.2s,border-color 0.2s;" onmouseover="this.style.color='#e8d5b0';this.style.borderColor='rgba(232,213,176,0.32)'" onmouseout="this.style.color='rgba(232,213,176,0.45)';this.style.borderColor='rgba(232,213,176,0.13)'">← RETURN TO ARCHIVE</a>
+  </div>
+</div>
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<!-- Film grain overlay -->
+<div class="bg-grain"></div>
+
+<!-- Fade-to-black overlay -->
+<div id="fade-overlay"></div>
+
+<!-- Audio -->
+<audio id="bg-music" loop preload="none"></audio>
+
+<!-- ===================== HERO ===================== -->
+<section class="pt-hero">
+
+  <!-- Site header -->
+  <header class="site-header">
+    <div class="site-brand">
+      <div class="site-name">WRETVISION</div>
+      <div class="site-tagline">Survival Horror Database</div>
+    </div>
+    <nav class="header-nav">
+      <a href="#" onclick="goToPage('resident-evil.html'); return false;">Hub</a>
+      <a href="#" onclick="goToPage('resident-evil.html'); return false;">Reviews</a>
+      <a href="#" onclick="goToPage('ranking.html'); return false;">Rankings</a>
+      <a href="#" onclick="goToPage('re-movies.html'); return false;">Films</a>
+      <a href="#" onclick="goToPage('resident-evil.html#wanted'); return false;">Wanted Files</a>
+      <a href="resident-evil-playthrough.html" class="active">Playthrough</a>
+    </nav>
+    <div class="header-right">
+      <button id="music-toggle" class="music-btn" onclick="toggleMusic()">&#9834; BGM ON</button>
+    </div>
+  </header>
+
+  <!-- Hero content -->
+  <div class="pt-hero-content">
+    <div class="pt-title" id="pt-title"><span class="cursor" id="cursor" style="opacity:0"></span></div>
+    <div class="pt-subtitle" id="pt-subtitle" style="opacity:0">Every game. Live. Uncut. In order.</div>
+  </div>
+
+</section>
+
+<!-- ===================== MAIN ===================== -->
+<div class="pt-main">
+
+  <!-- Progress terminal -->
+  <div class="pt-progress-terminal">
+    <div class="pt-progress-label">
+      <span class="pt-prompt">&gt;</span>
+      FILES COMPLETED:
+      <span class="pt-count-val" id="pt-count">0</span>
+      /
+      <span class="pt-count-val" id="pt-total">19</span>
+    </div>
+    <div class="pt-progress-bar-wrap">
+      <div class="pt-progress-bar-fill" id="pt-bar"></div>
+    </div>
+  </div>
+
+  <!-- Status legend -->
+  <div class="pt-legend">
+    <span class="pt-legend-label">Status:</span>
+    <div class="pt-legend-item">
+      <span class="pt-badge pt-badge-upcoming">UPCOMING</span>
+      Scheduled for broadcast
+    </div>
+    <div class="pt-legend-item">
+      <span class="pt-badge pt-badge-live"><span class="pt-live-dot"></span>LIVE</span>
+      Currently streaming
+    </div>
+    <div class="pt-legend-item">
+      <span class="pt-badge pt-badge-completed">COMPLETED</span>
+      VOD available
+    </div>
+  </div>
+
+  <!-- Game cards — rendered by JS -->
+  <div id="pt-cards"></div>
+
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="pt-footer">
+    <div class="pt-footer-brand">WRETVISION &mdash; Survival Horror Database</div>
+    <div class="pt-footer-stat">19 Games &mdash; Story Order</div>
+  </div>
+</footer>
+
+<script>
+(function() {
+
+  // ── Game data ──────────────────────────────────────────────────────────────
+  var _games = [
+    {
+      rank: '01', title: 'Resident Evil 0', year: '2002',
+      cover: 'assets/covers/RE_0.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '02', title: 'Resident Evil 1 Classic', year: '1996',
+      cover: 'assets/covers/RE1_classic.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '03', title: 'Resident Evil 1 HD Remaster', year: '2015',
+      cover: 'assets/covers/RE_1_Remaster.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '04', title: 'Resident Evil 2 Classic', year: '1998',
+      cover: 'assets/covers/RE_2_Classic.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '05', title: 'Resident Evil 2 Remake', year: '2019',
+      cover: 'assets/covers/RE2_Remake.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '06', title: 'Resident Evil 3 Classic', year: '1999',
+      cover: 'assets/covers/RE3_nemesis_classic.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '07', title: 'Resident Evil 3 Remake', year: '2020',
+      cover: 'assets/covers/RE3_remake.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '08', title: 'Resident Evil Code Veronica X', year: '2001',
+      cover: 'assets/covers/RE_Code_Veronica_X.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '09', title: 'Resident Evil 4', year: '2005',
+      cover: 'assets/covers/RE4_classic.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '10', title: 'Resident Evil 4 Remake', year: '2023',
+      cover: 'assets/covers/RE4_Remake.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '11', title: 'Resident Evil Revelations', year: '2012',
+      cover: 'assets/covers/RE_Revelations_1.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '12', title: 'Resident Evil 5', year: '2009',
+      cover: 'assets/covers/RE5.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '13', title: 'Resident Evil Revelations 2', year: '2015',
+      cover: 'assets/covers/RE_Revelations_2.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '14', title: 'Resident Evil 6', year: '2012',
+      cover: 'assets/covers/RE6..webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '15', title: 'Resident Evil Outbreak', year: '2003',
+      cover: 'assets/covers/RE_Outbreak.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '16', title: 'Resident Evil Outbreak File 2', year: '2004',
+      cover: 'assets/covers/RE_Outbreak_2.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '17', title: 'Resident Evil 7 Biohazard', year: '2017',
+      cover: 'assets/covers/RE7.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '18', title: 'Resident Evil Village RE8', year: '2021',
+      cover: 'assets/covers/RE8.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    },
+    {
+      rank: '19', title: 'Resident Evil 9 Requiem', year: '2026',
+      cover: 'assets/covers/RE9-REQUIEM.webp',
+      status: 'upcoming', yt: '', runtime: '', dlc: []
+    }
+  ];
+
+  // ── Render cards ──────────────────────────────────────────────────────────
+  function renderCards() {
+    var container = document.getElementById('pt-cards');
+    if (!container) return;
+    var html = '';
+
+    for (var i = 0; i < _games.length; i++) {
+      var g = _games[i];
+      var s = g.status.toLowerCase();
+
+      // Badge HTML
+      var badgeHtml = '';
+      if (s === 'upcoming') {
+        badgeHtml = '<span class="pt-badge pt-badge-upcoming">UPCOMING</span>';
+      } else if (s === 'live') {
+        badgeHtml = '<span class="pt-badge pt-badge-live"><span class="pt-live-dot"></span>LIVE</span>';
+      } else if (s === 'completed') {
+        badgeHtml = '<span class="pt-badge pt-badge-completed">COMPLETED</span>';
+      }
+
+      // Badge column (middle-right)
+      var badgeSection = '<div class="pt-card-badge">' + badgeHtml + '</div>';
+
+      // VOD links column (far right) — placeholder icons on all rows, full links on completed
+      var vodSection = '<div class="pt-vod-links">';
+      vodSection +=
+        '<a href="#" class="vod-link yt-link" title="Watch on YouTube"><img src="assets/youtube-icon.webp" alt="YouTube"></a>' +
+        '<a href="#" class="vod-link twitch-link" title="Watch on Twitch"><img src="assets/twitch-icon.webp" alt="Twitch"></a>';
+      if (s === 'completed') {
+        var ytHref = g.yt || '#';
+        var twHref = g.tw || '#';
+        vodSection +=
+          '<a class="pt-vod-link" href="' + ytHref + '" target="_blank" rel="noopener">' +
+            '<span class="pt-vod-icon"><img src="assets/youtube-icon.webp" alt="YouTube"></span>' +
+            '<span>Watch on YouTube</span>' +
+          '</a>' +
+          '<a class="pt-vod-link" href="' + twHref + '" target="_blank" rel="noopener">' +
+            '<span class="pt-vod-icon"><img src="assets/twitch-icon.webp" alt="Twitch"></span>' +
+            '<span>Watch on Twitch</span>' +
+          '</a>';
+      }
+      vodSection += '</div>';
+
+      // Card
+      html += '<div class="pt-card">';
+      html += '<div class="pt-card-rank">' + g.rank + '</div>';
+      html += '<div class="pt-card-thumb"><img src="' + g.cover + '" alt="' + g.title + '" loading="lazy"></div>';
+      html += '<div class="pt-card-info">';
+      html += '<div class="pt-card-title">' + g.title + '</div>';
+      html += '<div class="pt-card-year">' + g.year + '</div>';
+      html += '</div>';
+      html += badgeSection;
+      html += vodSection;
+      html += '</div>';
+
+      // DLC rows (only for completed entries with DLC)
+      if (s === 'completed' && g.dlc && g.dlc.length > 0) {
+        for (var d = 0; d < g.dlc.length; d++) {
+          var dlc = g.dlc[d];
+          html += '<div class="pt-dlc-row">';
+          html += '<span class="pt-dlc-indicator">DLC</span>';
+          if (dlc.yt) {
+            html += '<a class="pt-dlc-link" href="' + dlc.yt + '" target="_blank" rel="noopener">' + dlc.label + '</a>';
+          } else {
+            html += '<span class="pt-dlc-link">' + dlc.label + '</span>';
+          }
+          html += '</div>';
+        }
+      }
+    }
+
+    container.innerHTML = html;
+  }
+
+  // ── Update progress bar ───────────────────────────────────────────────────
+  function updateProgress() {
+    var completed = 0;
+    for (var i = 0; i < _games.length; i++) {
+      if (_games[i].status.toLowerCase() === 'completed') completed++;
+    }
+    var total = _games.length;
+    var pct = total > 0 ? (completed / total) * 100 : 0;
+
+    var countEl = document.getElementById('pt-count');
+    var totalEl = document.getElementById('pt-total');
+    var barEl = document.getElementById('pt-bar');
+
+    if (countEl) countEl.textContent = completed;
+    if (totalEl) totalEl.textContent = total;
+    if (barEl) {
+      setTimeout(function() {
+        barEl.style.width = pct + '%';
+      }, 300);
+    }
+  }
+
+  // ── Typewriter ────────────────────────────────────────────────────────────
+  function typeWriter(targetId, text, speed, onDone) {
+    var el = document.getElementById(targetId);
+    if (!el) { if (onDone) onDone(); return; }
+    var cursor = document.getElementById('cursor');
+    if (cursor) cursor.style.opacity = '1';
+
+    var i = 0;
+    var typed = '';
+    var interval = setInterval(function() {
+      if (i < text.length) {
+        typed += text[i];
+        el.innerHTML = typed + '<span class="cursor" id="cursor"></span>';
+        i++;
+      } else {
+        clearInterval(interval);
+        if (onDone) onDone();
+      }
+    }, speed);
+  }
+
+  // ── Fade in subtitle ──────────────────────────────────────────────────────
+  function showSubtitle() {
+    var sub = document.getElementById('pt-subtitle');
+    if (!sub) return;
+    sub.style.transition = 'opacity 0.8s ease';
+    sub.style.opacity = '1';
+  }
+
+  // ── Navigation with fade-to-black ─────────────────────────────────────────
+  var _transitioning = false;
+
+  window.goToPage = function(href) {
+    if (_transitioning) return;
+    _transitioning = true;
+    var overlay = document.getElementById('fade-overlay');
+    overlay.style.pointerEvents = 'all';
+    overlay.style.opacity = '1';
+    setTimeout(function() {
+      var a = document.getElementById('bg-music');
+      if (a) saveMusicState();
+      window.location.href = href;
+    }, 650);
+  };
+
+  // ── Music persistence ─────────────────────────────────────────────────────
+  window._musicMuted = false;
+
+  (function() {
+    var audio = document.getElementById('bg-music');
+    var started = false;
+    var musicSrc = 'https://archive.org/download/01.-the-beginning-of-story/Resident%20Evil%202%20Original%20Soundtrack/11.%20Secure%20Place.mp3';
+
+    window.saveMusicState = function() {
+      if (!audio) return;
+      sessionStorage.setItem('rpd_music', JSON.stringify({
+        playing: !audio.paused && !audio.muted,
+        muted: window._musicMuted,
+        currentTime: audio.currentTime || 0,
+        src: audio.currentSrc || audio.src || musicSrc
+      }));
+    };
+
+    window.addEventListener('pagehide', window.saveMusicState);
+
+    window._startMusic = function() {
+      if (started) return;
+      started = true;
+      audio.volume = 0.15;
+      audio.loop = true;
+      audio.src = musicSrc;
+      audio.play().catch(function() {});
+    };
+
+    window.toggleMusic = function() {
+      window._musicMuted = !window._musicMuted;
+      if (!window._musicMuted) {
+        window._startMusic();
+        audio.muted = false;
+      } else {
+        audio.muted = true;
+      }
+      document.querySelectorAll('.music-btn').forEach(function(b) {
+        b.innerHTML = window._musicMuted ? '&#9834; BGM OFF' : '&#9834; BGM ON';
+        b.classList.toggle('muted', window._musicMuted);
+      });
+    };
+
+    // Restore state from previous page
+    var saved = sessionStorage.getItem('rpd_music');
+    if (saved) {
+      try {
+        var s = JSON.parse(saved);
+        sessionStorage.removeItem('rpd_music');
+        window._musicMuted = !!s.muted;
+        document.querySelectorAll('.music-btn').forEach(function(b) {
+          b.innerHTML = window._musicMuted ? '&#9834; BGM OFF' : '&#9834; BGM ON';
+          b.classList.toggle('muted', window._musicMuted);
+        });
+        if (s.playing) {
+          audio.volume = 0.15;
+          audio.loop = true;
+          audio.src = s.src || musicSrc;
+          started = true;
+          var resumeAt = Number(s.currentTime) || 0;
+          var resumePlayback = function() {
+            if (resumeAt > 0 && isFinite(resumeAt)) {
+              try { audio.currentTime = resumeAt; } catch(e) {}
+            }
+            audio.play().catch(function() { started = false; });
+          };
+          if (audio.readyState >= 1) {
+            resumePlayback();
+          } else {
+            audio.addEventListener('loadedmetadata', resumePlayback, { once: true });
+            audio.load();
+          }
+        }
+      } catch(e) {}
+    }
+  })();
+
+  // ── Page-in fade ──────────────────────────────────────────────────────────
+  (function() {
+    var overlay = document.getElementById('fade-overlay');
+    overlay.style.opacity = '1';
+    overlay.style.pointerEvents = 'all';
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+        overlay.style.transition = 'opacity 0.55s ease';
+        overlay.style.opacity = '0';
+        setTimeout(function() {
+          overlay.style.pointerEvents = 'none';
+        }, 560);
+      });
+    });
+  })();
+
+  // ── Init ──────────────────────────────────────────────────────────────────
+  renderCards();
+  updateProgress();
+
+  // Start typewriter after brief delay for page-in fade
+  setTimeout(function() {
+    typeWriter('pt-title', 'The Ultimate Resident Evil Playthrough', 52, function() {
+      setTimeout(showSubtitle, 200);
+    });
+  }, 400);
+
+})();
+</script>
+
+<!-- ===================== TWITCH LIVE PANEL ===================== -->
+<div id="twitch-panel"></div>
+<button id="twitch-toggle-btn" onclick="toggleTwitchPanel()">&#9679; WATCH LIVE</button>
+
+<script>
+(function() {
+  var _panelOpen = false;
+  var _iframeLoaded = false;
+  var _embedUrl = 'https://player.twitch.tv/?channel=wretic&parent=localhost&muted=true';
+
+  window.toggleTwitchPanel = function() {
+    var panel = document.getElementById('twitch-panel');
+    var btn   = document.getElementById('twitch-toggle-btn');
+    _panelOpen = !_panelOpen;
+
+    if (_panelOpen) {
+      if (!_iframeLoaded) {
+        var iframe = document.createElement('iframe');
+        iframe.src = _embedUrl;
+        iframe.allowFullscreen = true;
+        iframe.setAttribute('allow', 'autoplay; fullscreen');
+        panel.appendChild(iframe);
+        _iframeLoaded = true;
+      }
+      panel.classList.add('open');
+      btn.innerHTML = '&#10005; CLOSE STREAM';
+      btn.style.animation = 'none';
+    } else {
+      panel.classList.remove('open');
+      btn.innerHTML = '&#9679; WATCH LIVE';
+      btn.style.animation = '';
+    }
+  };
+})();
+</script>
+</body>
+</html>

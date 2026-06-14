@@ -1,0 +1,1529 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>WRETVISION â€” The Ultimate Resident Evil Rankings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --text: #e8d5b0;
+  --red: #8b1a1a;
+  --red-light: #a52a2a;
+  --green-glow: #00ff41;
+  --dark: #0a0a08;
+  --card-border: #2a2a22;
+}
+
+*, *::before, *::after {
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Special Elite', serif;
+  color: var(--text);
+  background-color: #0a0a0a;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+}
+
+/* === GRAIN OVERLAY === */
+.bg-grain {
+  position: fixed;
+  inset: 0;
+  background-image: url('assets/film-grain.webp');
+  background-repeat: repeat;
+  opacity: 0.08;
+  mix-blend-mode: overlay;
+  z-index: 200;
+  pointer-events: none;
+}
+
+/* === FADE OVERLAY === */
+#fade-overlay {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 9998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+/* === SITE HEADER === */
+.site-header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 40px 18px;
+  border-bottom: 1px solid rgba(139, 26, 26, 0.3);
+  background: rgba(6, 5, 4, 0.98);
+}
+
+.site-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-name {
+  font-family: 'Special Elite', serif;
+  font-size: 18px;
+  font-variant: small-caps;
+  letter-spacing: 0.25em;
+  color: var(--red-light);
+  text-transform: uppercase;
+  animation: logo-pulse 3s ease-in-out infinite;
+}
+
+@keyframes logo-pulse {
+  0%, 100% { text-shadow: none; }
+  50% { text-shadow: 0 0 10px rgba(139, 26, 26, 0.6), 0 0 22px rgba(139, 26, 26, 0.3); }
+}
+
+.site-tagline {
+  font-size: 10px;
+  color: rgba(232, 213, 176, 0.45);
+  letter-spacing: 0.15em;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+
+.header-nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.header-nav a {
+  font-family: 'Special Elite', serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: rgba(232, 213, 176, 0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.header-nav a:hover { color: var(--text); }
+.header-nav a.active { color: var(--red-light); }
+
+.music-btn {
+  font-family: 'Special Elite', serif;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: rgba(232, 213, 176, 0.5);
+  background: transparent;
+  border: 1px solid rgba(232, 213, 176, 0.15);
+  padding: 5px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color 0.2s, border-color 0.2s;
+}
+.music-btn:hover { color: var(--text); border-color: rgba(232, 213, 176, 0.28); }
+.music-btn.muted { color: rgba(232, 213, 176, 0.28); border-color: rgba(232, 213, 176, 0.07); }
+
+/* === RANKING HERO === */
+.ranking-hero {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background-image: url('assets/ranking-header.webp');
+  background-size: auto 580px;
+  background-position: center 55%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ranking-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.ranking-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.ranking-title {
+  font-family: 'Special Elite', serif;
+  color: var(--text);
+  text-shadow: 0 0 40px rgba(139, 26, 26, 0.5), 0 2px 4px rgba(0,0,0,0.9);
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.title-line1 {
+  display: block;
+  font-size: clamp(22px, 2.8vw, 38px);
+  color: rgba(232, 213, 176, 0.72);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  min-height: 1.4em;
+}
+
+.title-line2 {
+  display: block;
+  font-size: clamp(32px, 4.5vw, 62px);
+  min-height: 1.3em;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background: var(--text);
+  margin-left: 2px;
+  animation: blink 0.85s step-end infinite;
+  vertical-align: text-bottom;
+  height: 0.85em;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.ranking-subtitle {
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(232, 213, 176, 0.62);
+  letter-spacing: 0.08em;
+  margin-top: 22px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.ranking-subtitle.visible { opacity: 1; }
+
+/* === STICKY NAV BAR === */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(6, 5, 4, 0.97);
+  border-bottom: 1px solid rgba(139, 26, 26, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 40px;
+  gap: 20px;
+}
+
+.back-btn {
+  font-family: 'Special Elite', serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: rgba(232, 213, 176, 0.65);
+  background: none;
+  border: 1px solid rgba(139, 26, 26, 0.3);
+  padding: 8px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.back-btn:hover {
+  color: var(--text);
+  border-color: rgba(139, 26, 26, 0.65);
+}
+
+.cat-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  font-family: 'Special Elite', serif;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(232, 213, 176, 0.55);
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(139, 26, 26, 0.25);
+  padding: 7px 20px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.filter-btn:hover {
+  color: var(--text);
+  border-color: rgba(139, 26, 26, 0.55);
+}
+
+.filter-btn.active {
+  color: var(--red-light);
+  border-color: var(--red);
+  box-shadow: 0 0 8px rgba(139, 26, 26, 0.25);
+}
+
+/* === RANKINGS MAIN === */
+.rankings-main {
+  background-color: #0d0b09;
+  border-top: 1px solid rgba(139,26,26,0.2);
+  border-bottom: 1px solid rgba(139,26,26,0.2);
+  position: relative;
+  min-height: 60vh;
+}
+
+/* Hex-arranged biological cell rings */
+.rankings-main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 0%   0%,  transparent 21px, rgba(120,18,18,0.055) 21px, rgba(120,18,18,0.055) 23px, transparent 23px),
+    radial-gradient(circle at 50%  0%,  transparent 21px, rgba(120,18,18,0.055) 21px, rgba(120,18,18,0.055) 23px, transparent 23px),
+    radial-gradient(circle at 100% 0%,  transparent 21px, rgba(120,18,18,0.055) 21px, rgba(120,18,18,0.055) 23px, transparent 23px),
+    radial-gradient(circle at 25%  50%, transparent 21px, rgba(120,18,18,0.055) 21px, rgba(120,18,18,0.055) 23px, transparent 23px),
+    radial-gradient(circle at 75%  50%, transparent 21px, rgba(120,18,18,0.055) 21px, rgba(120,18,18,0.055) 23px, transparent 23px),
+    radial-gradient(circle 9px at 0%   0%,  rgba(139,26,26,0.022) 0%, transparent 100%),
+    radial-gradient(circle 9px at 50%  0%,  rgba(139,26,26,0.022) 0%, transparent 100%),
+    radial-gradient(circle 9px at 100% 0%,  rgba(139,26,26,0.022) 0%, transparent 100%),
+    radial-gradient(circle 9px at 25%  50%, rgba(139,26,26,0.022) 0%, transparent 100%),
+    radial-gradient(circle 9px at 75%  50%, rgba(139,26,26,0.022) 0%, transparent 100%);
+  background-size: 120px 104px;
+  background-repeat: repeat;
+  z-index: 0;
+  pointer-events: none;
+  animation: bio-cell-pulse 45s ease-in-out infinite;
+}
+
+/* Hex grid line overlay at 0deg 60deg 120deg */
+.rankings-main::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg,   transparent 0, transparent 51px, rgba(139,26,26,0.028) 51px, rgba(139,26,26,0.028) 52px),
+    repeating-linear-gradient(60deg,  transparent 0, transparent 51px, rgba(139,26,26,0.028) 51px, rgba(139,26,26,0.028) 52px),
+    repeating-linear-gradient(120deg, transparent 0, transparent 51px, rgba(139,26,26,0.028) 51px, rgba(139,26,26,0.028) 52px);
+  z-index: 0;
+  pointer-events: none;
+  animation: bio-grid-drift 55s linear infinite;
+}
+
+@keyframes bio-cell-pulse {
+  0%, 100% { opacity: 0.55; }
+  50%       { opacity: 1; }
+}
+
+@keyframes bio-grid-drift {
+  0%   { background-position: 0 0, 0 0, 0 0; }
+  100% { background-position: 52px 52px, 52px 52px, 52px 52px; }
+}
+
+/* === CATEGORY SECTION === */
+.rank-category {
+  display: none;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 36px 40px 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.rank-category.active { display: block; }
+
+/* === TIER DIVIDER === */
+.tier-divider {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 36px 0 12px;
+  padding: 10px 0;
+  background: rgba(0,0,0,0.38);
+  border-top: 1px solid rgba(139,26,26,0.2);
+  border-bottom: 1px solid rgba(139,26,26,0.2);
+}
+
+.rank-category > .tier-divider:first-child { margin-top: 0; }
+
+.tier-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(139,26,26,0.5), transparent);
+}
+
+.tier-label {
+  font-size: 11px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: rgba(155, 30, 30, 0.9);
+  white-space: nowrap;
+  padding: 0 8px;
+}
+
+/* === RANK ENTRY === */
+.rank-entry {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 16px;
+  min-height: 104px;
+  overflow: hidden;
+  background: rgba(8, 7, 5, 0.78);
+  border: 1px solid rgba(42, 42, 34, 0.55);
+  margin-bottom: 5px;
+  position: relative;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rank-entry:hover {
+  transform: scale(1.01);
+  border-color: rgba(0, 255, 65, 0.28);
+  box-shadow: 0 0 16px rgba(0, 255, 65, 0.07), inset 0 0 24px rgba(0,0,0,0.3);
+}
+
+/* === RANK NUMBER === */
+.rank-num {
+  font-family: 'Special Elite', serif;
+  font-size: 48px;
+  color: rgba(139, 26, 26, 0.52);
+  line-height: 1;
+  min-width: 60px;
+  text-align: center;
+  flex-shrink: 0;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.8);
+  letter-spacing: 0.01em;
+}
+
+/* === THUMBNAIL === */
+.rank-thumb {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+}
+
+.thumb-placeholder {
+  width: 80px;
+  height: 80px;
+  background: rgba(14, 11, 9, 0.92);
+  border: 1px solid rgba(42, 42, 34, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.thumb-placeholder img,
+.rank-thumb > img {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.thumb-label {
+  font-size: 7.5px;
+  color: rgba(232, 213, 176, 0.18);
+  letter-spacing: 0.06em;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0 5px;
+}
+
+/* === RANK INFO === */
+.rank-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.rank-name {
+  font-family: 'Special Elite', serif;
+  font-size: 18px;
+  color: var(--text);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  margin-bottom: 3px;
+}
+
+.rank-origin {
+  font-size: 10.5px;
+  color: rgba(232, 213, 176, 0.4);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.rank-verdict {
+  font-style: italic;
+  font-size: 13px;
+  color: rgba(232, 213, 176, 0.66);
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+}
+
+/* === TIER BADGE === */
+.rank-badge {
+  flex-shrink: 0;
+  font-family: 'Special Elite', serif;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  padding: 5px 9px;
+  text-align: center;
+  min-width: 30px;
+}
+
+.tier-s { background: rgba(110,18,18,0.85); color: #e8d5b0; border: 1px solid rgba(160,30,30,0.5); }
+.tier-a { background: rgba(110,58,0,0.75); color: #e8d5b0; border: 1px solid rgba(150,80,0,0.45); }
+.tier-b { background: rgba(22,52,22,0.75); color: #e8d5b0; border: 1px solid rgba(36,80,36,0.45); }
+.tier-c { background: rgba(16,30,50,0.75); color: #e8d5b0; border: 1px solid rgba(28,50,78,0.45); }
+.tier-d { background: rgba(16,14,12,0.92); color: rgba(232,213,176,0.4); border: 1px solid rgba(40,38,34,0.5); }
+.tier-e { background: rgba(10,9,8,0.95); color: rgba(232,213,176,0.28); border: 1px solid rgba(28,26,22,0.5); }
+
+/* === RANK SCORE === */
+.rank-score {
+  font-family: 'Special Elite', serif;
+  font-size: 19px;
+  color: var(--red-light);
+  flex-shrink: 0;
+  transform: rotate(-3deg);
+  text-shadow: 0 0 8px rgba(139,26,26,0.55), 1px 1px 0 rgba(0,0,0,0.8);
+  letter-spacing: 0.02em;
+  min-width: 68px;
+  text-align: center;
+  border: 1px solid rgba(139,26,26,0.32);
+  padding: 4px 8px;
+  background: rgba(0,0,0,0.45);
+  line-height: 1.2;
+}
+
+/* === FOOTER === */
+.ranking-footer {
+  position: relative;
+  z-index: 4;
+  border-top: 1px solid rgba(139,26,26,0.3);
+  padding: 44px 40px 32px;
+  background: rgba(5,4,3,0.99);
+  text-align: center;
+}
+
+.footer-flavour {
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(232, 213, 176, 0.52);
+  line-height: 1.75;
+  margin-bottom: 18px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-copy {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: rgba(232, 213, 176, 0.27);
+  text-transform: uppercase;
+}
+
+/* === PAGE FADE IN === */
+body {
+  animation: page-in 0.5s ease both;
+}
+
+@keyframes page-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg-grain"></div>
+<div id="fade-overlay"></div>
+
+<!-- Site Header -->
+<header class="site-header">
+  <div class="site-brand">
+    <div class="site-name">WRETVISION</div>
+    <div class="site-tagline">Survival Horror Database</div>
+  </div>
+  <nav class="header-nav">
+    <a href="resident-evil.html" onclick="goBack(event)">Hub</a>
+    <a href="resident-evil.html" onclick="goBack(event)">Reviews</a>
+    <a href="ranking.html" class="active">Rankings</a>
+    <a href="re-movies.html">Films</a>
+    <a href="resident-evil.html#wanted">Wanted Files</a>
+    <a href="resident-evil-playthrough.html">Playthrough</a>
+  </nav>
+  <button id="music-toggle" class="music-btn">&#9834; BGM ON</button>
+</header>
+
+<!-- Ranking Hero -->
+<section class="ranking-hero">
+  <div class="ranking-hero-overlay"></div>
+  <div class="ranking-hero-content">
+    <div class="ranking-title">
+      <span class="title-line1" id="line1"></span>
+      <span class="title-line2" id="line2"><span id="cursor-el" class="cursor"></span></span>
+    </div>
+    <div class="ranking-subtitle" id="ranking-subtitle">One reviewer. One franchise. Every opinion on record.</div>
+  </div>
+</section>
+
+<!-- Sticky Nav: Back Button + Category Tabs -->
+<nav class="sticky-nav">
+  <div class="cat-tabs">
+    <button class="filter-btn active" data-cat="villains" onclick="switchCat('villains')">Villains</button>
+    <button class="filter-btn" data-cat="locations" onclick="switchCat('locations')">Locations</button>
+    <button class="filter-btn" data-cat="protagonists" onclick="switchCat('protagonists')">Protagonists</button>
+    <button class="filter-btn" data-cat="remakes" onclick="switchCat('remakes')">Remakes</button>
+  </div>
+</nav>
+
+<!-- Rankings Main -->
+<main class="rankings-main">
+
+  <!-- VILLAINS -->
+  <section class="rank-category active" id="cat-villains">
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">S Tier &nbsp;Â·&nbsp; Legendary</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">01</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/wesker.webp" alt="Albert Wesker"></div>
+      <div class="rank-info">
+        <div class="rank-name">Albert Wesker</div>
+        <div class="rank-origin">RE1 Â· Code Veronica Â· RE5</div>
+        <div class="rank-verdict">One of the greatest villains in gaming. Always in the background, never enough screen time. The franchise has never replaced him.</div>
+      </div>
+      <div class="rank-badge tier-s">S</div>
+      <div class="rank-score">9.5/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">02</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/birkin.webp" alt="William Birkin"></div>
+      <div class="rank-info">
+        <div class="rank-name">William Birkin</div>
+        <div class="rank-origin">RE2 Classic and Remake</div>
+        <div class="rank-verdict">A tragic scientist who saw no other way. His design across every form is iconic. Should have been used more aggressively in the remake.</div>
+      </div>
+      <div class="rank-badge tier-s">S</div>
+      <div class="rank-score">9.5/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">A Tier &nbsp;Â·&nbsp; Excellent</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">03</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/nemesis.webp" alt="Nemesis"></div>
+      <div class="rank-info">
+        <div class="rank-name">Nemesis</div>
+        <div class="rank-origin">RE3 Classic</div>
+        <div class="rank-verdict">Relentless, unpredictable, terrifying. STARS. His classic form is one of the greatest horror game antagonist designs ever made.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">9/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">04</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/mrX.webp" alt="Mr. X"></div>
+      <div class="rank-info">
+        <div class="rank-name">Mr. X</div>
+        <div class="rank-origin">RE2 Remake</div>
+        <div class="rank-verdict">Those footsteps. That trench coat. Hearing him move through the floor above you changes everything about how you play. Tragic in his own way.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">9/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">05</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/Jackbaker.webp" alt="Jack Baker"></div>
+      <div class="rank-info">
+        <div class="rank-name">Jack Baker</div>
+        <div class="rank-origin">Resident Evil 7</div>
+        <div class="rank-verdict">Bursting through walls, cheerful in a way that is more frightening than anger. One of the best horror antagonists the franchise has ever produced.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">9/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">06</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/margueritebaker.webp" alt="Marguerite Baker"></div>
+      <div class="rank-info">
+        <div class="rank-name">Marguerite Baker</div>
+        <div class="rank-origin">Resident Evil 7</div>
+        <div class="rank-verdict">Biological horror at its finest. The spider transformation is genuinely terrifying. A tragic figure made monstrous.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">9/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">B Tier &nbsp;Â·&nbsp; Solid</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">07</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/saddler.webp" alt="Osmund Saddler"></div>
+      <div class="rank-info">
+        <div class="rank-name">Osmund Saddler</div>
+        <div class="rank-origin">Resident Evil 4</div>
+        <div class="rank-verdict">A cool cult leader concept and not much more. A memorable one-off weirdo that the franchise was right to leave behind.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">7/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">08</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/lucasbaker.webp" alt="Lucas Baker"></div>
+      <div class="rank-info">
+        <div class="rank-name">Lucas Baker</div>
+        <div class="rank-origin">Resident Evil 7</div>
+        <div class="rank-verdict">Saw meets Resident Evil. The trap sections are inventive but he never fully resonated with me personally.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">7/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">09</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/heisenberg.webp" alt="Karl Heisenberg"></div>
+      <div class="rank-info">
+        <div class="rank-name">Karl Heisenberg</div>
+        <div class="rank-origin">Resident Evil Village</div>
+        <div class="rank-verdict">Hellsing energy. Loved his character design and wanted more of him. Killing him felt like a waste.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">7/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">10</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/ramon-salazar.webp" alt="Ramon Salazar"></div>
+      <div class="rank-info">
+        <div class="rank-name">Ramon Salazar</div>
+        <div class="rank-origin">RE4 and RE4 Remake</div>
+        <div class="rank-verdict">Theatrical, annoying and genuinely funny. The intercom harassment of Leon is one of RE4's best running jokes. Capcom played it smart making you think he was the final villain when Saddler was waiting the whole time.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">7/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">C Tier &nbsp;Â·&nbsp; Decent</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">11</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/marcus.webp" alt="James Marcus"></div>
+      <div class="rank-info">
+        <div class="rank-name">James Marcus</div>
+        <div class="rank-origin">Resident Evil 0</div>
+        <div class="rank-verdict">Disgusting in the best way. Turning himself into a leech monster is a genuinely vile concept. The backstory is interesting but the boss encounter is nothing special.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">6/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">12</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/twins.webp" alt="The Ashford Twins"></div>
+      <div class="rank-info">
+        <div class="rank-name">The Ashford Twins</div>
+        <div class="rank-origin">Code Veronica X</div>
+        <div class="rank-verdict">Generic and forgettable. The backstory did nothing for me. Could not care less about either of them.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">6/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">13</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/eveline.webp" alt="Eveline"></div>
+      <div class="rank-info">
+        <div class="rank-name">Eveline</div>
+        <div class="rank-origin">Resident Evil 7</div>
+        <div class="rank-verdict">Done with little girls in horror games. Tragic sure but did not resonate at all.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">6/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">D Tier &nbsp;Â·&nbsp; Disappointing</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">14</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/dimitrescu.webp" alt="Lady Dimitrescu"></div>
+      <div class="rank-info">
+        <div class="rank-name">Lady Dimitrescu</div>
+        <div class="rank-origin">Resident Evil Village</div>
+        <div class="rank-verdict">More of a cinematic moment than a villain. Imposing yes. Memorable beyond the internet hype? Not to me personally.</div>
+      </div>
+      <div class="rank-badge tier-d">D</div>
+      <div class="rank-score">5/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">15</div>
+      <div class="rank-thumb"><img src="assets/ranking/villains/miranda.webp" alt="Mother Miranda"></div>
+      <div class="rank-info">
+        <div class="rank-name">Mother Miranda</div>
+        <div class="rank-origin">Resident Evil Village</div>
+        <div class="rank-verdict">Not memorable at all. The puppet master reveal landed flat.</div>
+      </div>
+      <div class="rank-badge tier-d">D</div>
+      <div class="rank-score">5/10</div>
+    </div>
+
+  </section>
+
+  <!-- LOCATIONS -->
+  <section class="rank-category" id="cat-locations">
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">S Tier &nbsp;Â·&nbsp; Perfect</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">01</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/RPD.webp" alt="Raccoon Police Department" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Raccoon Police Department</div>
+        <div class="rank-origin">RE2 Classic and Remake</div>
+        <div class="rank-verdict">The greatest game environment ever designed. I would revisit it in any form at any time.</div>
+      </div>
+      <div class="rank-badge tier-s">S</div>
+      <div class="rank-score">10/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">A Tier &nbsp;Â·&nbsp; Excellent</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">02</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Ecliptic Express.png" alt="Ecliptic Express" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Ecliptic Express</div>
+        <div class="rank-origin">Resident Evil 0</div>
+        <div class="rank-verdict">Almost perfect. Would have been a 10 if the whole game stayed on the train. The best opening in the franchise.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">9.5/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">03</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/QueenZenobia.webp" alt="Queen Zenobia" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Queen Zenobia</div>
+        <div class="rank-origin">Revelations</div>
+        <div class="rank-verdict">Narrow, isolated, surrounded by open water. A completely unique setting that the franchise has never bettered for pure claustrophobic horror.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">9/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">04</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/jacks-bar.webp" alt="Jack's Bar" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Jack's Bar</div>
+        <div class="rank-origin">Outbreak</div>
+        <div class="rank-verdict">The best thing in Outbreak by a significant margin. Everything that happens there works perfectly.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">9/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">05</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Spencer Mansion.png" alt="Spencer Mansion" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Spencer Mansion</div>
+        <div class="rank-origin">RE1 and Remaster</div>
+        <div class="rank-verdict">The original. Iconic in every room. The remaster made it look as good as it always deserved.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">9/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">06</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Beneviento Dollhouse.png" alt="Beneviento Dollhouse" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Beneviento Dollhouse</div>
+        <div class="rank-origin">Resident Evil Village</div>
+        <div class="rank-verdict">Genuinely frightening. Stripping away weapons and replacing them with psychological horror is the bravest creative decision Village made.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">9/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">07</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Raccoon City Streets.png" alt="Raccoon City Streets" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Raccoon City Streets</div>
+        <div class="rank-origin">Resident Evil 3</div>
+        <div class="rank-verdict">Iconic and atmospheric. The city in collapse communicates catastrophe better than any enclosed space could.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">8/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">B Tier &nbsp;Â·&nbsp; Great</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">08</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Baker Estate.png" alt="Baker Estate" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Baker Estate</div>
+        <div class="rank-origin">Resident Evil 7</div>
+        <div class="rank-verdict">Narrow, intimate and deeply wrong. A family home transformed into something monstrous.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">8/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">09</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Spanish Village.png" alt="RE4 Spanish Village" ></div>
+      <div class="rank-info">
+        <div class="rank-name">RE4 Spanish Village and Castle</div>
+        <div class="rank-origin">Resident Evil 4</div>
+        <div class="rank-verdict">A cool rural setting with real atmosphere in the early hours. The castle sections push it into spectacle over horror.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">7/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">10</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Castle Dimitrescu.png" alt="Castle Dimitrescu" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Castle Dimitrescu</div>
+        <div class="rank-origin">Resident Evil Village</div>
+        <div class="rank-verdict">Visually stunning and atmospherically strong. The best extended environment in Village.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">7/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">11</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Eastern Europe Village.png" alt="Eastern Europe Village" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Eastern Europe Village</div>
+        <div class="rank-origin">Resident Evil Village</div>
+        <div class="rank-verdict">Cool setting with great mist and atmosphere. Did not quite reach the heights it was aiming for.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">7/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">12</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Raccoon City Streets.png" alt="Raccoon City Streets" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Raccoon City Streets</div>
+        <div class="rank-origin">Resident Evil 3</div>
+        <div class="rank-verdict">Solid but less iconic than the RPD sections that bookend it.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">7/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">13</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Africa.webp" alt="Kijuju / Africa"></div>
+      <div class="rank-info">
+        <div class="rank-name">Kijuju / Africa</div>
+        <div class="rank-origin">Resident Evil 5</div>
+        <div class="rank-verdict">A completely different setting for the franchise. The heat, the open spaces, the scale. Wesker operating in the shadows and Jill appearing controlled before you understand what is happening to her. Memorable for all the right reasons.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">7/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">C Tier &nbsp;Â·&nbsp; Decent</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">14</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/RE6 Leon Campaign.png" alt="RE6 Leon Campaign" ></div>
+      <div class="rank-info">
+        <div class="rank-name">RE6 Leon Campaign</div>
+        <div class="rank-origin">Resident Evil 6</div>
+        <div class="rank-verdict">The only section of RE6 worth visiting. Some decent building sections with actual zombies.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">6/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">15</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/rockfort island.png" alt="Rockfort Island" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Rockfort Island</div>
+        <div class="rank-origin">Code Veronica X</div>
+        <div class="rank-verdict">Decent isolated setting that does not fully deliver on its premise.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">6/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">16</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/sewers.webp" alt="The Sewers" ></div>
+      <div class="rank-info">
+        <div class="rank-name">The Sewers</div>
+        <div class="rank-origin">Resident Evil 2</div>
+        <div class="rank-verdict">A necessary evil. The atmosphere is there but nobody's favorite part of the game.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">6/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">D Tier &nbsp;Â·&nbsp; Weak</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">17</div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Antarctic Base.png" alt="Antarctic Base" ></div>
+      <div class="rank-info">
+        <div class="rank-name">Antarctic Base</div>
+        <div class="rank-origin">Code Veronica X</div>
+        <div class="rank-verdict">Did not like it at all. A momentum killing location at the worst possible time.</div>
+      </div>
+      <div class="rank-badge tier-d">D</div>
+      <div class="rank-score">5/10</div>
+    </div>
+
+  </section>
+
+  <!-- PROTAGONISTS -->
+  <section class="rank-category" id="cat-protagonists">
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">S Tier &nbsp;Â·&nbsp; Legendary</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">01</div>
+       <div class="rank-thumb"><img src="assets/ranking/protagonists/leon_kennedy.webp" alt="Leon Kennedy"></div>
+      <div class="rank-info">
+        <div class="rank-name">Leon Kennedy</div>
+        <div class="rank-origin">RE2 Â· RE4 Â· RE9</div>
+        <div class="rank-verdict">From rookie cop to elite operative. The best character arc in the franchise. Nobody comes close.</div>
+      </div>
+      <div class="rank-badge tier-s">S</div>
+      <div class="rank-score">10/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">A Tier &nbsp;Â·&nbsp; Excellent</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">02</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/claire_redfield.webp" alt="Claire Redfield"></div>
+      <div class="rank-info">
+        <div class="rank-name">Claire Redfield</div>
+        <div class="rank-origin">RE2 Â· Code Veronica</div>
+        <div class="rank-verdict">Lovable, determined and underused. One of the franchise's best and we have not seen nearly enough of her.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">9/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">03</div>
+       <div class="rank-thumb"><img src="assets/ranking/protagonists/Jill_Valentine.webp" alt="Jill Valentine"></div>
+
+      <div class="rank-info">
+        <div class="rank-name">Jill Valentine</div>
+        <div class="rank-origin">RE1 Â· RE3 Â· Revelations</div>
+        <div class="rank-verdict">A genuine badass. Her arc including the possession adds real tragedy to an already great character.</div>
+      </div>
+      <div class="rank-badge tier-a">A</div>
+      <div class="rank-score">9/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">B Tier &nbsp;Â·&nbsp; Great</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">04</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/Chris_Redfield.webp" alt="Chris Redfield"></div>
+      <div class="rank-info">
+        <div class="rank-name">Chris Redfield</div>
+        <div class="rank-origin">RE1 Â· RE5</div>
+        <div class="rank-verdict">Boulder Chris. More interesting than he gets credit for but criminally underused across the franchise.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">8/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">05</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/Rebecca_Chambers.webp" alt="Rebecca Chambers"></div>
+      <div class="rank-info">
+        <div class="rank-name">Rebecca Chambers</div>
+        <div class="rank-origin">Resident Evil 0</div>
+        <div class="rank-verdict">The rookie medic. Likeable and competent. Disappeared from the spotlight far too soon.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">8/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">06</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/Barry_Burton.webp" alt="Barry Burton"></div>
+      <div class="rank-info">
+        <div class="rank-name">Barry Burton</div>
+        <div class="rank-origin">RE1 Â· Revelations 2</div>
+        <div class="rank-verdict">One of the coolest characters in the franchise. Older, experienced, and we never got enough of him.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">8/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">07</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/ethan_winters.webp" alt="Ethan Winters"></div>
+      <div class="rank-info">
+        <div class="rank-name">Ethan Winters</div>
+        <div class="rank-origin">RE7 Â· RE8</div>
+        <div class="rank-verdict">Tragic and compelling. His arc across two games is one of the most complete in the series.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">8/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">08</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/Grace_Ashcroft.webp" alt="Grace Ashcroft"></div>
+      <div class="rank-info">
+        <div class="rank-name">Grace Ashcroft</div>
+        <div class="rank-origin">Resident Evil 9</div>
+        <div class="rank-verdict">A strong debut. Progresses well across the game and holds her own alongside Leon.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">8/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">C Tier &nbsp;Â·&nbsp; Solid</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">09</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/Ada_Wong.webp" alt="Ada_Wong"></div>
+      <div class="rank-info">
+        <div class="rank-name">Ada Wong</div>
+        <div class="rank-origin">RE2 Â· RE4 Â· RE6</div>
+        <div class="rank-verdict">Cool and mysterious in RE2 and RE4. RE6 did her no favors. The over the top version of her does not work.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">7.5/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">10</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/Carlos_Oliveira.webp" alt="Carlos Oliveira"></div>
+      <div class="rank-info">
+        <div class="rank-name">Carlos Oliveira</div>
+        <div class="rank-origin">Resident Evil 3</div>
+        <div class="rank-verdict">More interesting in the classic than the remake. A decent supporting character that never quite got his moment.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">7/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">11</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/billy-coen.webp" alt="Billy Coen"></div>
+      <div class="rank-info">
+        <div class="rank-name">Billy Coen</div>
+        <div class="rank-origin">Resident Evil 0</div>
+        <div class="rank-verdict">Survived the Ecliptic Express and disappeared forever. One of RE's great unsolved mysteries.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">6/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">12</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/outbreak-survivors.webp" alt="The Outbreak Survivors"></div>
+      <div class="rank-info">
+        <div class="rank-name">Outbreak Survivors</div>
+        <div class="rank-origin">Outbreak</div>
+        <div class="rank-verdict">A group entry. Nothing stood out individually but the concept of ordinary civilians was brilliant.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">6/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">13</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/Parker-Luciani.webp" alt="Parker Luciani"></div>
+      <div class="rank-info">
+        <div class="rank-name">Parker Luciani</div>
+        <div class="rank-origin">Revelations</div>
+        <div class="rank-verdict">Decent and quirky. Did not spend enough time with him to feel strongly either way.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">6/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">14</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/Sheva-Alomar.webp" alt="Sheva Alomar"></div>
+      <div class="rank-info">
+        <div class="rank-name">Sheva Alomar</div>
+        <div class="rank-origin">Resident Evil 5</div>
+        <div class="rank-verdict">Only appeared in RE5 and that is all. Not enough character development to rank higher.</div>
+      </div>
+      <div class="rank-badge tier-c">C</div>
+      <div class="rank-score">6/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">E Tier &nbsp;Â·&nbsp; Forgettable</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">15</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/moira-burton.webp" alt="Moira Burton"></div>
+      <div class="rank-info">
+        <div class="rank-name">Moira Burton</div>
+        <div class="rank-origin">Revelations 2</div>
+        <div class="rank-verdict">Cannot fully remember her. A one off character that left no lasting impression.</div>
+      </div>
+      <div class="rank-badge tier-e">E</div>
+      <div class="rank-score">5/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">16</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/Sherry-Birkin.webp" alt="Sherry Birkin"></div>
+      <div class="rank-info">
+        <div class="rank-name">Sherry Birkin</div>
+        <div class="rank-origin">RE2 / RE6</div>
+        <div class="rank-verdict">Brief as a child, wasted as an adult. RE6 had no idea what to do with her.</div>
+      </div>
+      <div class="rank-badge tier-e">E</div>
+      <div class="rank-score">4/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">17</div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/Natalia-Vasquez.webp" alt="Natalia Vasquez"></div>
+      <div class="rank-info">
+        <div class="rank-name">Natalia Vasquez</div>
+        <div class="rank-origin">Revelations 2</div>
+        <div class="rank-verdict">Standard creepy little girl. Nothing about her stood out.</div>
+      </div>
+      <div class="rank-badge tier-e">E</div>
+      <div class="rank-score">5/10</div>
+    </div>
+
+  </section>
+
+  <!-- REMAKES -->
+  <section class="rank-category" id="cat-remakes">
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">S Tier &nbsp;Â·&nbsp; Gold Standard</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">01</div>
+      <div class="rank-thumb"><img src="assets/covers/RE2_Remake.webp" alt="Resident Evil 2 Remake"></div>
+      <div class="rank-info">
+        <div class="rank-name">Resident Evil 2 Remake</div>
+        <div class="rank-origin">2019</div>
+        <div class="rank-verdict">The gold standard. Everything the original promised, delivered flawlessly.</div>
+      </div>
+      <div class="rank-badge tier-s">S</div>
+      <div class="rank-score">9.5/10</div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">02</div>
+      <div class="rank-thumb"><img src="assets/covers/RE4_Remake.webp" alt="Resident Evil 4 Remake"></div>
+      <div class="rank-info">
+        <div class="rank-name">Resident Evil 4 Remake</div>
+        <div class="rank-origin">2023</div>
+        <div class="rank-verdict">How you remake a game. The horror the original avoided, fully realized.</div>
+      </div>
+      <div class="rank-badge tier-s">S</div>
+      <div class="rank-score">9.5/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">B Tier &nbsp;Â·&nbsp; Respectful</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">03</div>
+      <div class="rank-thumb"><img src="assets/covers/RE_1_Remaster.webp" alt="Resident Evil 1 HD Remaster"></div>
+      <div class="rank-info">
+        <div class="rank-name">Resident Evil 1 HD Remaster</div>
+        <div class="rank-origin">2015</div>
+        <div class="rank-verdict">Respectful and atmospheric. The crimson head system deserved to live on.</div>
+      </div>
+      <div class="rank-badge tier-b">B</div>
+      <div class="rank-score">8/10</div>
+    </div>
+
+    <div class="tier-divider">
+      <div class="tier-line"></div>
+      <div class="tier-label">D Tier &nbsp;Â·&nbsp; Disappointing</div>
+      <div class="tier-line"></div>
+    </div>
+
+    <div class="rank-entry">
+      <div class="rank-num">04</div>
+      <div class="rank-thumb"><img src="assets/covers/RE3_remake.webp" alt="Resident Evil 3 Remake"></div>
+      <div class="rank-info">
+        <div class="rank-name">Resident Evil 3 Remake</div>
+        <div class="rank-origin">2020</div>
+        <div class="rank-verdict">Rushed and content cut. The clock tower is gone. Nemesis is scripted. A real disappointment after RE2 Remake.</div>
+      </div>
+      <div class="rank-badge tier-d">D</div>
+      <div class="rank-score">6/10</div>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="ranking-footer">
+  <div class="footer-flavour">
+    These rankings reflect one person's experience with the franchise. Disagree? Good. That is what the comments section is for.
+  </div>
+  <div class="footer-copy">&#169; 2026 WRETVISION &nbsp;Â·&nbsp; Not affiliated with Capcom Co., Ltd.</div>
+</footer>
+
+<audio id="bg-music" loop preload="none"></audio>
+
+<script>
+
+  // === TYPEWRITER ANIMATION ===
+  var line1Text = 'The Ultimate';
+  var line2Text = 'Resident Evil Rankings';
+  var line1El   = document.getElementById('line1');
+  var line2El   = document.getElementById('line2');
+  var cursorEl  = document.getElementById('cursor-el');
+  var subtitleEl = document.getElementById('ranking-subtitle');
+
+  function typeText(el, text, speed, callback) {
+    var i = 0;
+    function tick() {
+      if (i <= text.length) {
+        el.textContent = text.slice(0, i);
+        i++;
+        setTimeout(tick, speed);
+      } else if (callback) {
+        callback();
+      }
+    }
+    tick();
+  }
+
+  function typeTextWithCursor(el, text, speed, callback) {
+    var i = 0;
+    function tick() {
+      if (i <= text.length) {
+        el.textContent = text.slice(0, i);
+        el.appendChild(cursorEl);
+        i++;
+        setTimeout(tick, speed);
+      } else if (callback) {
+        callback();
+      }
+    }
+    tick();
+  }
+
+  setTimeout(function() {
+    typeText(line1El, line1Text, 65, function() {
+      line2El.textContent = '';
+      line2El.appendChild(cursorEl);
+      setTimeout(function() {
+        typeTextWithCursor(line2El, line2Text, 55, function() {
+          line2El.appendChild(cursorEl);
+          setTimeout(function() {
+            subtitleEl.classList.add('visible');
+          }, 400);
+        });
+      }, 180);
+    });
+  }, 300);
+
+  // === CATEGORY SWITCHING ===
+  function switchCat(cat) {
+    document.querySelectorAll('.rank-category').forEach(function(el) {
+      el.classList.remove('active');
+    });
+    document.querySelectorAll('.filter-btn').forEach(function(el) {
+      el.classList.remove('active');
+    });
+    document.getElementById('cat-' + cat).classList.add('active');
+    document.querySelector('[data-cat="' + cat + '"]').classList.add('active');
+    window.scrollTo({ top: document.querySelector('.sticky-nav').offsetTop - 2, behavior: 'smooth' });
+  }
+
+  // === FADE TO BLACK NAVIGATION ===
+  function goBack(e) {
+    if (e) e.preventDefault();
+    var overlay = document.getElementById('fade-overlay');
+    overlay.style.transition = 'opacity 0.6s ease';
+    overlay.style.opacity = '1';
+    overlay.style.pointerEvents = 'all';
+    setTimeout(function() {
+      var a = document.getElementById('bg-music');
+      if (a) sessionStorage.setItem('rpd_music', JSON.stringify({ playing: !a.paused && !a.muted, muted: window._musicMuted }));
+      window.location.href = 'resident-evil.html';
+    }, 650);
+  }
+
+  // Fade in on load (page-in animation handles it via CSS, but ensure overlay is clear)
+  document.getElementById('fade-overlay').style.opacity = '0';
+
+  // â”€â”€ RPD background music + global mute toggle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  window._musicMuted = false;
+  (function() {
+    const audio = document.getElementById('bg-music');
+    let started = false;
+
+    window._startMusic = function() {
+      if (started) return;
+      started = true;
+      audio.volume = 0.15;
+      audio.loop = true;
+      audio.src = 'https://archive.org/download/01.-the-beginning-of-story/Resident%20Evil%202%20Original%20Soundtrack/11.%20Secure%20Place.mp3';
+      audio.play().catch(function() {});
+    };
+
+    window.toggleMusic = function() {
+      window._musicMuted = !window._musicMuted;
+      if (!window._musicMuted) {
+        window._startMusic();
+        audio.muted = false;
+      } else {
+        audio.muted = true;
+      }
+      document.querySelectorAll('.music-btn').forEach(function(b) {
+        b.innerHTML = window._musicMuted ? '&#9834; BGM OFF' : '&#9834; BGM ON';
+        b.classList.toggle('muted', window._musicMuted);
+      });
+    };
+
+    // Restore state from previous page if music was playing
+    var saved = sessionStorage.getItem('rpd_music');
+    if (saved) {
+      try {
+        var s = JSON.parse(saved);
+        sessionStorage.removeItem('rpd_music');
+        window._musicMuted = !!s.muted;
+        document.querySelectorAll('.music-btn').forEach(function(b) {
+          b.innerHTML = window._musicMuted ? '&#9834; BGM OFF' : '&#9834; BGM ON';
+          b.classList.toggle('muted', window._musicMuted);
+        });
+        if (s.playing) {
+          audio.volume = 0.15;
+          audio.loop = true;
+          audio.src = 'https://archive.org/download/01.-the-beginning-of-story/Resident%20Evil%202%20Original%20Soundtrack/11.%20Secure%20Place.mp3';
+          started = true;
+          audio.play().catch(function() { started = false; });
+        }
+      } catch(e) {}
+    }
+
+    function onFirstInteraction() {
+      if (!window._musicMuted) window._startMusic();
+      document.removeEventListener('mousedown', onFirstInteraction);
+      document.removeEventListener('touchstart', onFirstInteraction);
+    }
+    document.addEventListener('mousedown', onFirstInteraction);
+    document.addEventListener('touchstart', onFirstInteraction, { passive: true });
+
+    const btn = document.getElementById('music-toggle');
+    if (btn) btn.addEventListener('click', window.toggleMusic);
+  })();
+
+</script>
+</body>
+</html>
