@@ -631,21 +631,70 @@
 <!-- ═══════════════════════════════════════════════════════
      COMING SOON OVERLAY — remove this block when playthroughs are live
      ═══════════════════════════════════════════════════════ -->
+<style>
+  @keyframes cs-glow-pulse {
+    0%, 100% { opacity: 0.18; transform: scale(1); }
+    50%       { opacity: 0.32; transform: scale(1.08); }
+  }
+  @keyframes cs-glow-pulse-2 {
+    0%, 100% { opacity: 0.12; transform: scale(1); }
+    50%       { opacity: 0.22; transform: scale(1.12); }
+  }
+  #cs-cursor { display:inline-block; width:2px; background:#a52a2a; margin-left:3px; vertical-align:middle; animation: cs-blink 0.75s step-end infinite; }
+  @keyframes cs-blink { 0%,100%{opacity:1} 50%{opacity:0} }
+</style>
 <div id="pt-coming-soon" style="position:fixed;inset:0;z-index:9500;background:rgba(5,4,3,0.97);display:flex;align-items:center;justify-content:center;font-family:'Special Elite',serif;padding:24px;">
-  <div style="border:1px solid rgba(139,26,26,0.35);max-width:560px;width:100%;padding:56px 64px;background:rgba(10,10,8,0.95);position:relative;text-align:center;">
+
+  <!-- Red hazard glows behind the box -->
+  <div style="position:absolute;top:30%;left:38%;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(139,26,26,0.55) 0%,transparent 70%);filter:blur(60px);animation:cs-glow-pulse 3.5s ease-in-out infinite;pointer-events:none;"></div>
+  <div style="position:absolute;bottom:28%;right:36%;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(100,10,10,0.45) 0%,transparent 70%);filter:blur(48px);animation:cs-glow-pulse-2 4.8s ease-in-out infinite;pointer-events:none;"></div>
+
+  <div style="border:1px solid rgba(139,26,26,0.35);max-width:560px;width:100%;padding:56px 64px;background:rgba(10,10,8,0.95);position:relative;text-align:center;z-index:1;">
     <div style="position:absolute;top:-1px;left:-1px;width:14px;height:14px;border-top:2px solid #8b1a1a;border-left:2px solid #8b1a1a;"></div>
     <div style="position:absolute;top:-1px;right:-1px;width:14px;height:14px;border-top:2px solid #8b1a1a;border-right:2px solid #8b1a1a;"></div>
     <div style="position:absolute;bottom:-1px;left:-1px;width:14px;height:14px;border-bottom:2px solid #8b1a1a;border-left:2px solid #8b1a1a;"></div>
     <div style="position:absolute;bottom:-1px;right:-1px;width:14px;height:14px;border-bottom:2px solid #8b1a1a;border-right:2px solid #8b1a1a;"></div>
     <div style="font-size:9px;letter-spacing:0.55em;color:rgba(139,26,26,0.6);text-transform:uppercase;margin-bottom:36px;">WRETVISION // SURVIVAL HORROR DATABASE</div>
-    <div style="font-size:46px;color:#a52a2a;letter-spacing:0.12em;text-transform:uppercase;line-height:1.15;text-shadow:0 0 28px rgba(139,26,26,0.45);margin-bottom:6px;">ACCESS<br>RESTRICTED</div>
-    <div style="width:48px;height:1px;background:rgba(139,26,26,0.35);margin:28px auto;"></div>
-    <div style="font-size:11px;letter-spacing:0.35em;color:rgba(232,213,176,0.38);text-transform:uppercase;margin-bottom:20px;">TRANSMISSION PENDING</div>
-    <div style="font-size:16px;color:rgba(232,213,176,0.55);line-height:1.85;font-style:italic;margin-bottom:36px;">The playthrough series is in preparation.<br>All 19 case files will be broadcast in story order.</div>
-    <div style="font-size:9px;letter-spacing:0.28em;color:rgba(139,26,26,0.45);text-transform:uppercase;margin-bottom:40px;">CASE STATUS: PENDING ACTIVATION</div>
-    <a href="resident-evil.html" onclick="goToPage('resident-evil.html');return false;" style="font-family:'Special Elite',serif;font-size:10px;letter-spacing:0.28em;color:rgba(232,213,176,0.45);text-decoration:none;text-transform:uppercase;border:1px solid rgba(232,213,176,0.13);padding:12px 28px;display:inline-block;transition:color 0.2s,border-color 0.2s;" onmouseover="this.style.color='#e8d5b0';this.style.borderColor='rgba(232,213,176,0.32)'" onmouseout="this.style.color='rgba(232,213,176,0.45)';this.style.borderColor='rgba(232,213,176,0.13)'">← RETURN TO ARCHIVE</a>
+    <div id="cs-title" style="font-size:46px;color:#a52a2a;letter-spacing:0.12em;text-transform:uppercase;line-height:1.15;text-shadow:0 0 28px rgba(139,26,26,0.45);margin-bottom:6px;min-height:2.4em;"></div>
+    <div id="cs-rest" style="opacity:0;transition:opacity 0.5s ease;">
+      <div style="width:48px;height:1px;background:rgba(139,26,26,0.35);margin:28px auto;"></div>
+      <div style="font-size:11px;letter-spacing:0.35em;color:rgba(232,213,176,0.38);text-transform:uppercase;margin-bottom:20px;">TRANSMISSION PENDING</div>
+      <div style="font-size:16px;color:rgba(232,213,176,0.55);line-height:1.85;font-style:italic;margin-bottom:36px;">The playthrough series is in preparation.<br>All 19 case files will be broadcast in story order.</div>
+      <div style="font-size:9px;letter-spacing:0.28em;color:rgba(139,26,26,0.45);text-transform:uppercase;margin-bottom:40px;">CASE STATUS: PENDING ACTIVATION</div>
+      <a href="resident-evil.html" onclick="goToPage('resident-evil.html');return false;" style="font-family:'Special Elite',serif;font-size:10px;letter-spacing:0.28em;color:rgba(232,213,176,0.45);text-decoration:none;text-transform:uppercase;border:1px solid rgba(232,213,176,0.13);padding:12px 28px;display:inline-block;transition:color 0.2s,border-color 0.2s;" onmouseover="this.style.color='#e8d5b0';this.style.borderColor='rgba(232,213,176,0.32)'" onmouseout="this.style.color='rgba(232,213,176,0.45)';this.style.borderColor='rgba(232,213,176,0.13)'">← RETURN TO ARCHIVE</a>
+    </div>
   </div>
 </div>
+<script>
+(function() {
+  var lines = ['ACCESS', 'RESTRICTED'];
+  var el    = document.getElementById('cs-title');
+  var rest  = document.getElementById('cs-rest');
+  var line  = 0, char = 0;
+  var cursor = '<span id="cs-cursor" style="height:0.8em;">&nbsp;</span>';
+
+  function tick() {
+    if (line >= lines.length) {
+      el.innerHTML = lines.join('<br>');
+      rest.style.opacity = '1';
+      return;
+    }
+    var current = lines.slice(0, line).join('<br>');
+    if (line > 0) current += '<br>';
+    current += lines[line].slice(0, char + 1);
+    el.innerHTML = current + cursor;
+    char++;
+    if (char >= lines[line].length) {
+      line++; char = 0;
+      setTimeout(tick, line < lines.length ? 260 : 0);
+    } else {
+      setTimeout(tick, 95);
+    }
+  }
+
+  setTimeout(tick, 600);
+})();
+</script>
 <!-- ═══════════════════════════════════════════════════════ -->
 
 <!-- Film grain overlay -->
