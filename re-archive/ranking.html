@@ -589,32 +589,24 @@ body {
   .cat-tabs { flex-wrap: nowrap; gap: 6px; }
   .filter-btn { font-size: 10px; padding: 6px 14px; letter-spacing: 0.18em; white-space: nowrap; flex-shrink: 0; }
 
-  /* Rank entry: verdict on its own full-width row */
+  /* Rank entry: top row = num+thumb+badge+score, full-width row = info */
   .rank-entry {
     flex-wrap: wrap;
-    gap: 10px 12px;
+    gap: 8px 10px;
     padding: 14px 16px;
     align-items: center;
   }
-  .rank-num   { order: 1; font-size: 28px; min-width: 32px; }
-  .rank-thumb { order: 2; width: 56px; height: 56px; flex-shrink: 0; }
-  .rank-thumb > img, .thumb-placeholder img { width: 56px !important; height: 56px !important; }
-  .rank-info  { order: 3; flex: 1; min-width: 0; }
-  .rank-badge { order: 4; flex-shrink: 0; }
-  .rank-score { order: 5; flex-shrink: 0; font-size: 14px; }
-  .rank-name  { font-size: 15px; }
-  .rank-origin { font-size: 9px; }
-  /* Verdict: full width below the top row */
-  .rank-verdict {
-    order: 6;
-    flex-basis: 100%;
-    font-size: 13px;
-    line-height: 1.6;
-    color: rgba(232,213,176,0.65);
-    padding-top: 6px;
-    border-top: 1px solid rgba(139,26,26,0.12);
-    margin-top: 2px;
-  }
+  .rank-num   { order: 1; font-size: 26px; min-width: 28px; flex-shrink: 0; }
+  .rank-thumb { order: 2; width: 60px; height: 60px; flex-shrink: 0; }
+  .rank-thumb > img, .thumb-placeholder img { width: 60px !important; height: 60px !important; }
+  /* badge+score pushed to right end of the top row */
+  .rank-badge { order: 3; flex-shrink: 0; margin-left: auto; }
+  .rank-score { order: 4; flex-shrink: 0; font-size: 14px; }
+  /* info takes the full second row */
+  .rank-info  { order: 5; flex-basis: 100%; min-width: 0; padding-top: 8px; border-top: 1px solid rgba(139,26,26,0.12); }
+  .rank-name  { font-size: 15px; margin-bottom: 2px; }
+  .rank-origin { font-size: 9px; margin-bottom: 6px; }
+  .rank-verdict { font-size: 13px; line-height: 1.6; color: rgba(232,213,176,0.65); }
   .rank-entry:hover { transform: none; }
 }
 
