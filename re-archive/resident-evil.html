@@ -4514,9 +4514,9 @@
   [class$="-mobile-card"] p,
   [class*="-mobile-card"] p { color: rgba(232,213,176,0.82) !important; font-size: 18px !important; }
 
-  /* Evidence notes: slightly larger than body for visual emphasis */
+  /* Evidence notes bullets */
   [class$="-mobile-card"] li,
-  [class*="-mobile-card"] li { color: rgba(232,213,176,0.78) !important; font-size: 20px !important; }
+  [class*="-mobile-card"] li { color: rgba(232,213,176,0.78) !important; font-size: clamp(15px, 0.74vw, 13px) !important; }
 
   [class$="-mobile-card"] [class$="-evidence-head"],
   [class*="-mobile-card"] [class*="-evidence-head"] { color: rgba(232,213,176,0.5) !important; font-size: 18px !important; }
@@ -4528,18 +4528,9 @@
   .re6006-mobile-card li                        { font-size: 19px !important; }
   .re6006-mobile-card [class*="-evidence-head"] { font-size: 13px !important; }
 
-  /* Per-card evidence li sizes (user-verified via DevTools) */
-  .cv001-mobile-card li                         { font-size: 14px !important; }
-
-  .re5002-mobile-card li                        { font-size: 15px !important; }
-
+  /* Per-card body text overrides */
   .ob003-mobile-card p                          { font-size: 16px !important; }
-  .ob003-mobile-card li                         { font-size: 15px !important; }
-
   .re1004-mobile-card p                         { font-size: 16px !important; }
-  .re1004-mobile-card li                        { font-size: 15px !important; }
-
-  .re0005-mobile-card li                        { font-size: 15px !important; }
 
   /* Red glow on the bottom edge of wanted mobile cards */
   [class$="-mobile-card"]::after,
