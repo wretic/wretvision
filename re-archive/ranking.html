@@ -553,15 +553,21 @@ body {
 }
 
 @media (max-width: 900px) {
-  .site-header { padding: 12px 16px 0; flex-wrap: wrap; gap: 0; align-items: center; }
-  .site-brand { flex: 1; order: 1; }
-  .site-name { font-size: 13px !important; letter-spacing: 0.18em !important; }
+  /* ── HEADER: logo centered on top, nav scrollable below ── */
+  .site-header {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 16px 0;
+    gap: 0;
+  }
+  .site-brand { text-align: center; width: 100%; margin-bottom: 4px; }
+  .site-name { font-size: 15px !important; letter-spacing: 0.2em !important; }
   .site-tagline { display: none; }
-  .header-right { flex-shrink: 0; order: 2; }
-  /* Header: logo row + scrollable nav below */
-  .site-header { flex-wrap: wrap; padding: 14px 18px 0; gap: 0; align-items: center; }
-  .site-brand { flex: 1; }
+  .header-right { position: absolute; top: 14px; right: 16px; }
   .music-btn { font-size: 9px; padding: 6px 10px; }
+
+  /* Scrollable nav below logo */
   .header-nav {
     display: flex !important;
     width: 100%;
@@ -572,23 +578,43 @@ body {
     border-top: 1px solid rgba(139,26,26,0.15);
     margin-top: 10px;
     gap: 0;
+    justify-content: flex-start;
   }
   .header-nav::-webkit-scrollbar { display: none; }
   .header-nav a { font-size: 10px; letter-spacing: 0.14em; padding: 4px 14px; white-space: nowrap; flex-shrink: 0; border-right: 1px solid rgba(139,26,26,0.18); }
   .header-nav a:last-child { border-right: none; }
 
   /* Sticky nav: scrollable on mobile */
-  .sticky-nav { padding: 10px 16px; flex-wrap: wrap; gap: 8px; }
-  .cat-tabs { flex-wrap: wrap; gap: 6px; }
-  .filter-btn { font-size: 10px; padding: 6px 14px; letter-spacing: 0.18em; }
+  .sticky-nav { padding: 10px 16px; overflow-x: auto; }
+  .cat-tabs { flex-wrap: nowrap; gap: 6px; }
+  .filter-btn { font-size: 10px; padding: 6px 14px; letter-spacing: 0.18em; white-space: nowrap; flex-shrink: 0; }
 
-  /* Rank entry: fix text wrapping */
-  .rank-entry { gap: 12px; padding: 14px 16px; }
-  .rank-num { font-size: 32px; min-width: 36px; }
-  .rank-thumb { width: 64px; height: 64px; }
-  .rank-thumb > img, .thumb-placeholder img { width: 64px !important; height: 64px !important; }
-  .rank-name { font-size: 15px; }
-  .rank-desc { font-size: 12px; line-height: 1.5; }
+  /* Rank entry: verdict on its own full-width row */
+  .rank-entry {
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    padding: 14px 16px;
+    align-items: center;
+  }
+  .rank-num   { order: 1; font-size: 28px; min-width: 32px; }
+  .rank-thumb { order: 2; width: 56px; height: 56px; flex-shrink: 0; }
+  .rank-thumb > img, .thumb-placeholder img { width: 56px !important; height: 56px !important; }
+  .rank-info  { order: 3; flex: 1; min-width: 0; }
+  .rank-badge { order: 4; flex-shrink: 0; }
+  .rank-score { order: 5; flex-shrink: 0; font-size: 14px; }
+  .rank-name  { font-size: 15px; }
+  .rank-origin { font-size: 9px; }
+  /* Verdict: full width below the top row */
+  .rank-verdict {
+    order: 6;
+    flex-basis: 100%;
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(232,213,176,0.65);
+    padding-top: 6px;
+    border-top: 1px solid rgba(139,26,26,0.12);
+    margin-top: 2px;
+  }
   .rank-entry:hover { transform: none; }
 }
 
@@ -886,7 +912,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">02</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/Ecliptic Express.png" alt="Ecliptic Express" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Ecliptic Express.webp" alt="Ecliptic Express" ></div>
       <div class="rank-info">
         <div class="rank-name">Ecliptic Express</div>
         <div class="rank-origin">Resident Evil 0</div>
@@ -922,7 +948,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">05</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/Spencer Mansion.png" alt="Spencer Mansion" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Spencer Mansion.webp" alt="Spencer Mansion" ></div>
       <div class="rank-info">
         <div class="rank-name">Spencer Mansion</div>
         <div class="rank-origin">RE1 and Remaster</div>
@@ -934,7 +960,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">06</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/Beneviento Dollhouse.png" alt="Beneviento Dollhouse" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Beneviento Dollhouse.webp" alt="Beneviento Dollhouse" ></div>
       <div class="rank-info">
         <div class="rank-name">Beneviento Dollhouse</div>
         <div class="rank-origin">Resident Evil Village</div>
@@ -946,7 +972,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">07</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/Raccoon City Streets.png" alt="Raccoon City Streets" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Raccoon City Streets.webp" alt="Raccoon City Streets" ></div>
       <div class="rank-info">
         <div class="rank-name">Raccoon City Streets</div>
         <div class="rank-origin">Resident Evil 3</div>
@@ -964,7 +990,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">08</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/Baker Estate.png" alt="Baker Estate" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Baker Estate.webp" alt="Baker Estate" ></div>
       <div class="rank-info">
         <div class="rank-name">Baker Estate</div>
         <div class="rank-origin">Resident Evil 7</div>
@@ -976,7 +1002,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">09</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/Spanish Village.png" alt="RE4 Spanish Village" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Spanish Village.webp" alt="RE4 Spanish Village" ></div>
       <div class="rank-info">
         <div class="rank-name">RE4 Spanish Village and Castle</div>
         <div class="rank-origin">Resident Evil 4</div>
@@ -988,7 +1014,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">10</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/Castle Dimitrescu.png" alt="Castle Dimitrescu" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Castle Dimitrescu.webp" alt="Castle Dimitrescu" ></div>
       <div class="rank-info">
         <div class="rank-name">Castle Dimitrescu</div>
         <div class="rank-origin">Resident Evil Village</div>
@@ -1000,7 +1026,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">11</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/Eastern Europe Village.png" alt="Eastern Europe Village" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Eastern Europe Village.webp" alt="Eastern Europe Village" ></div>
       <div class="rank-info">
         <div class="rank-name">Eastern Europe Village</div>
         <div class="rank-origin">Resident Evil Village</div>
@@ -1012,7 +1038,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">12</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/Raccoon City Streets.png" alt="Raccoon City Streets" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Raccoon City Streets.webp" alt="Raccoon City Streets" ></div>
       <div class="rank-info">
         <div class="rank-name">Raccoon City Streets</div>
         <div class="rank-origin">Resident Evil 3</div>
@@ -1042,7 +1068,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">14</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/RE6 Leon Campaign.png" alt="RE6 Leon Campaign" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/RE6 Leon Campaign.webp" alt="RE6 Leon Campaign" ></div>
       <div class="rank-info">
         <div class="rank-name">RE6 Leon Campaign</div>
         <div class="rank-origin">Resident Evil 6</div>
@@ -1054,7 +1080,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">15</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/rockfort island.png" alt="Rockfort Island" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/rockfort island.webp" alt="Rockfort Island" ></div>
       <div class="rank-info">
         <div class="rank-name">Rockfort Island</div>
         <div class="rank-origin">Code Veronica X</div>
@@ -1084,7 +1110,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">17</div>
-      <div class="rank-thumb"><img src="assets/ranking/Locations/Antarctic Base.png" alt="Antarctic Base" ></div>
+      <div class="rank-thumb"><img src="assets/ranking/Locations/Antarctic Base.webp" alt="Antarctic Base" ></div>
       <div class="rank-info">
         <div class="rank-name">Antarctic Base</div>
         <div class="rank-origin">Code Veronica X</div>
@@ -1156,7 +1182,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">04</div>
-      <div class="rank-thumb"><img src="assets/ranking/protagonists/Chris_Redfield.webp" alt="Chris Redfield"></div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/chris_redfield.webp" alt="Chris Redfield"></div>
       <div class="rank-info">
         <div class="rank-name">Chris Redfield</div>
         <div class="rank-origin">RE1 Â· RE5</div>
@@ -1168,7 +1194,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">05</div>
-      <div class="rank-thumb"><img src="assets/ranking/protagonists/Rebecca_Chambers.webp" alt="Rebecca Chambers"></div>
+      <div class="rank-thumb"><img src="assets/ranking/protagonists/rebecca_chambers.webp" alt="Rebecca Chambers"></div>
       <div class="rank-info">
         <div class="rank-name">Rebecca Chambers</div>
         <div class="rank-origin">Resident Evil 0</div>
