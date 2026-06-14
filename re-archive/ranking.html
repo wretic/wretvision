@@ -556,11 +556,38 @@ body {
   .site-header { padding: 16px 20px 14px; flex-wrap: wrap; gap: 10px; }
   .header-nav { display: none; }
   .header-right { margin-left: auto; }
+  /* Header: logo row + scrollable nav below */
+  .site-header { flex-wrap: wrap; padding: 14px 18px 0; gap: 0; align-items: center; }
+  .site-brand { flex: 1; }
   .music-btn { font-size: 9px; padding: 6px 10px; }
-  .ranking-grid { grid-template-columns: 1fr !important; gap: 12px; }
-  .rank-card { flex-direction: row; align-items: center; gap: 14px; padding: 14px 16px; }
-  .rank-poster { width: 60px; height: 80px; flex-shrink: 0; }
-  .rank-number { font-size: 28px; }
+  .header-nav {
+    display: flex !important;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 10px 0 12px;
+    border-top: 1px solid rgba(139,26,26,0.15);
+    margin-top: 10px;
+    gap: 0;
+  }
+  .header-nav::-webkit-scrollbar { display: none; }
+  .header-nav a { font-size: 10px; letter-spacing: 0.14em; padding: 4px 14px; white-space: nowrap; flex-shrink: 0; border-right: 1px solid rgba(139,26,26,0.18); }
+  .header-nav a:last-child { border-right: none; }
+
+  /* Sticky nav: scrollable on mobile */
+  .sticky-nav { padding: 10px 16px; flex-wrap: wrap; gap: 8px; }
+  .cat-tabs { flex-wrap: wrap; gap: 6px; }
+  .filter-btn { font-size: 10px; padding: 6px 14px; letter-spacing: 0.18em; }
+
+  /* Rank entry: fix text wrapping */
+  .rank-entry { gap: 12px; padding: 14px 16px; }
+  .rank-num { font-size: 32px; min-width: 36px; }
+  .rank-thumb { width: 64px; height: 64px; }
+  .rank-thumb > img, .thumb-placeholder img { width: 64px !important; height: 64px !important; }
+  .rank-name { font-size: 15px; }
+  .rank-desc { font-size: 12px; line-height: 1.5; }
+  .rank-entry:hover { transform: none; }
 }
 
 </style>
@@ -624,7 +651,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">01</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/wesker.webp" alt="Albert Wesker"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/wesker.webp" alt="Albert Wesker"></div>
       <div class="rank-info">
         <div class="rank-name">Albert Wesker</div>
         <div class="rank-origin">RE1 Â· Code Veronica Â· RE5</div>
@@ -636,7 +663,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">02</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/birkin.webp" alt="William Birkin"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/birkin.webp" alt="William Birkin"></div>
       <div class="rank-info">
         <div class="rank-name">William Birkin</div>
         <div class="rank-origin">RE2 Classic and Remake</div>
@@ -654,7 +681,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">03</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/nemesis.webp" alt="Nemesis"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/nemesis.webp" alt="Nemesis"></div>
       <div class="rank-info">
         <div class="rank-name">Nemesis</div>
         <div class="rank-origin">RE3 Classic</div>
@@ -666,7 +693,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">04</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/mrX.webp" alt="Mr. X"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/mrX.webp" alt="Mr. X"></div>
       <div class="rank-info">
         <div class="rank-name">Mr. X</div>
         <div class="rank-origin">RE2 Remake</div>
@@ -678,7 +705,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">05</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/Jackbaker.webp" alt="Jack Baker"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/Jackbaker.webp" alt="Jack Baker"></div>
       <div class="rank-info">
         <div class="rank-name">Jack Baker</div>
         <div class="rank-origin">Resident Evil 7</div>
@@ -690,7 +717,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">06</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/margueritebaker.webp" alt="Marguerite Baker"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/margueritebaker.webp" alt="Marguerite Baker"></div>
       <div class="rank-info">
         <div class="rank-name">Marguerite Baker</div>
         <div class="rank-origin">Resident Evil 7</div>
@@ -708,7 +735,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">07</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/saddler.webp" alt="Osmund Saddler"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/saddler.webp" alt="Osmund Saddler"></div>
       <div class="rank-info">
         <div class="rank-name">Osmund Saddler</div>
         <div class="rank-origin">Resident Evil 4</div>
@@ -720,7 +747,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">08</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/lucasbaker.webp" alt="Lucas Baker"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/lucasbaker.webp" alt="Lucas Baker"></div>
       <div class="rank-info">
         <div class="rank-name">Lucas Baker</div>
         <div class="rank-origin">Resident Evil 7</div>
@@ -732,7 +759,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">09</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/heisenberg.webp" alt="Karl Heisenberg"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/heisenberg.webp" alt="Karl Heisenberg"></div>
       <div class="rank-info">
         <div class="rank-name">Karl Heisenberg</div>
         <div class="rank-origin">Resident Evil Village</div>
@@ -744,7 +771,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">10</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/ramon-salazar.webp" alt="Ramon Salazar"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/ramon-salazar.webp" alt="Ramon Salazar"></div>
       <div class="rank-info">
         <div class="rank-name">Ramon Salazar</div>
         <div class="rank-origin">RE4 and RE4 Remake</div>
@@ -762,7 +789,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">11</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/marcus.webp" alt="James Marcus"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/marcus.webp" alt="James Marcus"></div>
       <div class="rank-info">
         <div class="rank-name">James Marcus</div>
         <div class="rank-origin">Resident Evil 0</div>
@@ -774,7 +801,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">12</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/twins.webp" alt="The Ashford Twins"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/twins.webp" alt="The Ashford Twins"></div>
       <div class="rank-info">
         <div class="rank-name">The Ashford Twins</div>
         <div class="rank-origin">Code Veronica X</div>
@@ -786,7 +813,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">13</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/eveline.webp" alt="Eveline"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/eveline.webp" alt="Eveline"></div>
       <div class="rank-info">
         <div class="rank-name">Eveline</div>
         <div class="rank-origin">Resident Evil 7</div>
@@ -804,7 +831,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">14</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/dimitrescu.webp" alt="Lady Dimitrescu"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/dimitrescu.webp" alt="Lady Dimitrescu"></div>
       <div class="rank-info">
         <div class="rank-name">Lady Dimitrescu</div>
         <div class="rank-origin">Resident Evil Village</div>
@@ -816,7 +843,7 @@ body {
 
     <div class="rank-entry">
       <div class="rank-num">15</div>
-      <div class="rank-thumb"><img src="assets/ranking/villains/miranda.webp" alt="Mother Miranda"></div>
+      <div class="rank-thumb"><img src="assets/ranking/Villains/miranda.webp" alt="Mother Miranda"></div>
       <div class="rank-info">
         <div class="rank-name">Mother Miranda</div>
         <div class="rank-origin">Resident Evil Village</div>

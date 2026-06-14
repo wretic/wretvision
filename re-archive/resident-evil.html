@@ -2215,7 +2215,7 @@
     }
     .cv001-mobile-card {
       display: block;
-      background: #f5f0e8;
+      background: linear-gradient(160deg, #0d0907 0%, #1a0505 70%, #2a0808 100%);
       padding: 24px 20px;
     }
     .cv001-mobile-card .cv001-title {
@@ -4419,6 +4419,45 @@
   }
   .modal-hero-title { font-size: clamp(22px, 6vw, 38px); }
   .modal-close { top: 12px; right: 14px; font-size: 22px; }
+
+  /* ── MODAL HERO: stack image above info ── */
+  .review-hero-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 18px 20px;
+    gap: 20px;
+  }
+  .review-cover-img {
+    width: min(70vw, 220px);
+    flex-shrink: 0;
+  }
+  .review-hero-info {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /* ── WANTED FILE MOBILE CARDS: dark theme text + hide images ── */
+  [class$="-mobile-card"] img,
+  [class*="-mobile-card"] img { display: none !important; }
+
+  [class$="-mobile-card"] [class$="-title"],
+  [class*="-mobile-card"] [class*="-title"] { color: #e8d5b0 !important; }
+
+  [class$="-mobile-card"] [class$="-subtitle"],
+  [class*="-mobile-card"] [class*="-subtitle"] { color: rgba(232,213,176,0.55) !important; border-color: rgba(139,26,26,0.35) !important; }
+
+  [class$="-mobile-card"] p,
+  [class*="-mobile-card"] p { color: rgba(232,213,176,0.82) !important; }
+
+  /* Red glow on the bottom edge of wanted mobile cards */
+  [class$="-mobile-card"]::after,
+  [class*="-mobile-card"]::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(139,26,26,0.6), transparent);
+    margin-top: 16px;
+  }
 
   /* ── FOOTER ── */
   .footer-columns {
