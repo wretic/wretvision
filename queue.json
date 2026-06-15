@@ -2,16 +2,16 @@
   "_instructions": "Add titles here. Set 'done': true when reviewed. 'score' and 'notes' are optional pre-logs of your gut reaction — if set, the AI will write to that score.",
   "movies": [
     {
-      "title": "Longlegs",
-      "year": 2024,
-      "director": "Osgood Perkins",
-      "runtime": "101 min",
+      "title": "They Will Kill You",
+      "year": 2026,
+      "director": "Kirill Sokolov",
+      "runtime": "94 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller", "Mystery"],
-      "streaming": "Shudder",
-      "done": true,
-      "score": null,
-      "notes": null
+      "genre": ["Horror", "Comedy", "Action"],
+      "streaming": "HBO MAX",
+      "done": false,
+      "score": 5.5,
+      "notes": "I loved the R-rated parts but I disliked the rest, didn't make sense, felt too bizarre, constant action sure, but it couldn't keep my attention throughout, I felt more like I wanted to grab my phone than look at my monitor."
     },
     {
       "title": "MaXXXine",
