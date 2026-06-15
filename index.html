@@ -35,7 +35,46 @@
       --movie-gold-glow:   #ffd86b;
     }
 
-    @media (max-width: 768px) { .re-teaser-wrap { display: none; } }
+
+
+    /* ── RE TERMINAL PROMPT CARD ── */
+    .re-term-card {
+      margin-top: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      border: 1px solid rgba(160,20,20,0.4);
+      background: rgba(10,0,0,0.7);
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .re-term-card:hover { background: rgba(30,2,2,0.85); border-color: rgba(160,20,20,0.7); }
+    .re-term-prompt {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 8px;
+      color: #c41c1c;
+    }
+    .re-term-text {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px;
+      color: rgba(232,213,176,0.7);
+      letter-spacing: 0.1em;
+      line-height: 1.8;
+    }
+    .re-term-sep { color: rgba(160,20,20,0.6); margin: 0 4px; }
+    .re-term-action { color: #e8d5b0; }
+    .re-term-card:hover .re-term-action { color: #fff5e0; }
+    .re-term-cursor {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      filter: drop-shadow(0 0 4px rgba(196,28,28,0.7));
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    .re-term-cursor { animation-duration: 2s; }
+
 
     /* ── MOVIE CARD OVERRIDES (homepage) ── */
     .review-card[data-category="movie"],
@@ -217,49 +256,6 @@
     .stream-divider { height: 1px; background: rgba(10,143,212,0.15); }
     @media (max-width: 560px) { .streams-panel { display: none; } }
 
-    /* ── RE TEASER BUTTON ── */
-    .re-teaser-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 18px;
-      gap: 8px;
-    }
-    .re-teaser-btn {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      padding-top: 22px;
-      width: 400px;
-      height: 80px;
-      background-image: url('images/re-teaser-btn.png');
-      background-size: cover;
-      background-position: center;
-      box-shadow: none;
-      text-decoration: none;
-      transition: box-shadow 0.3s;
-    }
-    .re-teaser-btn span {
-      font-family: 'Special Elite', serif;
-      font-size: 9px;
-      letter-spacing: 0.3em;
-      color: #e8d5b0;
-      text-transform: uppercase;
-      transition: color 0.3s;
-    }
-    .re-teaser-btn:hover span { color: #fff5e0; }
-    .re-teaser-sub {
-      font-family: 'Rajdhani', sans-serif;
-      font-size: 10px;
-      letter-spacing: 0.2em;
-      color: rgba(232,213,176,0.35);
-      text-align: center;
-      margin: 0;
-    }
-    @media (max-width: 560px) {
-      .re-teaser-wrap { width: 100%; align-items: center; margin-top: 14px; }
-      .re-teaser-btn { width: 90vw; max-width: 340px; }
-    }
   </style>
 </head>
 <body class="page-home">
@@ -336,9 +332,20 @@
       <h1 class="hero-title">WRET<span>VISION</span></h1>
       <div class="lightning-bar"></div>
       <p class="hero-sub">Honest takes on films, shows, and games.<br>Even the forgotten ones.</p>
-      <div class="re-teaser-wrap">
-        <a class="re-teaser-btn" href="re-archive/resident-evil.html"><span>THE ARCHIVE IS OPEN</span></a>
-      </div>
+      <a class="re-term-card" href="re-archive/resident-evil.html">
+        <span class="re-term-prompt">&gt;</span>
+        <span class="re-term-text">ACCESSING: RESIDENT EVIL ARCHIVE <span class="re-term-sep">//</span> STATUS: OPEN <span class="re-term-sep">//</span> <span class="re-term-action">[ENTER] ▶</span></span>
+        <svg class="re-term-cursor" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="tr"><stop offset="0%" stop-color="#cc0000"/><stop offset="100%" stop-color="#aa1111"/></radialGradient>
+            <radialGradient id="tw"><stop offset="0%" stop-color="#dddddd"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#dddddd"/></radialGradient>
+          </defs>
+          <g transform="rotate(0,150,150)"><path d="m206 5s-28 14-56 14-56-14-56-14l56 135z" fill="url(#tr)"/><path d="m87 8s-10 30-30 50c-19 19-49 29-49 29l135 56z" fill="url(#tw)"/></g>
+          <g transform="rotate(90,150,150)"><path d="m206 5s-28 14-56 14-56-14-56-14l56 135z" fill="url(#tr)"/><path d="m87 8s-10 30-30 50c-19 19-49 29-49 29l135 56z" fill="url(#tw)"/></g>
+          <g transform="rotate(180,150,150)"><path d="m206 5s-28 14-56 14-56-14-56-14l56 135z" fill="url(#tr)"/><path d="m87 8s-10 30-30 50c-19 19-49 29-49 29l135 56z" fill="url(#tw)"/></g>
+          <g transform="rotate(270,150,150)"><path d="m206 5s-28 14-56 14-56-14-56-14l56 135z" fill="url(#tr)"/><path d="m87 8s-10 30-30 50c-19 19-49 29-49 29l135 56z" fill="url(#tw)"/></g>
+        </svg>
+      </a>
     </div>
 
     <!-- RIGHT: System Notice -->
@@ -373,6 +380,9 @@
     <span class="cat-count" id="count-horror">— titles</span>
   </a>
 </div>
+
+
+
 
 <!-- ── STATS BAR (with outer metadata) ── -->
 <div class="stats-outer">
