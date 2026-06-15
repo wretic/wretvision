@@ -4394,6 +4394,9 @@
     text-shadow: 0 0 12px rgba(139,26,26,0.3) !important;
   }
 
+  /* ── WANTED FILE: bottom-fade overlay (hidden on desktop) ── */
+  .wf-bottom-fade { display: none; }
+
   /* ── WANTED FILE PAGES (cv001, re5002 etc): hide desktop layout, show plain text ── */
   .cv001-bg, .cv001-stage,
   .re5002-bg, .re5002-stage,
@@ -4487,8 +4490,7 @@
   [class$="-mobile-banner"],
   [class*="-mobile-banner"] { display: none !important; }
 
-  /* card starts at 90px to clear the taller two-row topnav,
-     gradient extends all the way to the bottom past the fixed buttons */
+  /* card starts at 90px to clear the taller two-row topnav */
   [class$="-mobile-card"],
   [class*="-mobile-card"] {
     display: block !important;
@@ -4497,9 +4499,30 @@
     left: 0 !important;
     right: 0 !important;
     margin: 0 !important;
-    padding: 24px 20px 110px !important;
+    padding: 24px 20px calc(170px + env(safe-area-inset-bottom)) !important;
     box-sizing: border-box !important;
     background: linear-gradient(to bottom, #0a0a08 0%, #0e0806 40%, #1a0808 70%, #240a0a 100%) !important;
+  }
+
+  /* Move pager above iPhone home indicator */
+  [class*="-bottomnav-wrap"] {
+    bottom: calc(18px + env(safe-area-inset-bottom)) !important;
+  }
+
+  /* Fade overlay: sits above scrollable text, below nav buttons */
+  .wf-bottom-fade {
+    display: block !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    height: calc(160px + env(safe-area-inset-bottom)) !important;
+    background: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(26, 8, 8, 0.85) 55%,
+      #1a0808 100%) !important;
+    pointer-events: none !important;
+    z-index: 50 !important;
   }
 
   [class$="-mobile-card"] img,
@@ -6270,6 +6293,13 @@
     card.style.height = (window.innerHeight - 90) + 'px';
     card.style.overflowY = 'scroll';
     card.style.webkitOverflowScrolling = 'touch';
+    // Inject fade overlay into the content wrapper (once per render)
+    var content = card.parentNode;
+    if (content && !content.querySelector('.wf-bottom-fade')) {
+      var fade = document.createElement('div');
+      fade.className = 'wf-bottom-fade';
+      content.appendChild(fade);
+    }
   }
 
   function renderWantedFile(num) {
