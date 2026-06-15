@@ -1,0 +1,2 @@
+*, *::before, *::after { cursor: url('../images/cursor-red.svg') 1 1, auto !important; }
+a, button, [role="button"], [tabindex] { cursor: url('../images/cursor-red.svg') 1 1, pointer !important; }
