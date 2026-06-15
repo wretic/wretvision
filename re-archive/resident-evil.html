@@ -23,6 +23,8 @@
 
   html {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   body {
@@ -30,6 +32,7 @@
     color: var(--text);
     background-color: #0a0a0a;
     min-height: 100vh;
+    max-width: 100%;
     overflow-x: hidden;
     position: relative;
   }
@@ -4274,6 +4277,28 @@
    GLOBAL MOBILE STYLES — resident-evil.html
    ============================================================ */
 @media (max-width: 900px) {
+
+  /* ── HORIZONTAL SCROLL LOCK ──
+     overflow-x: clip avoids the BFC side-effect of hidden, so sticky
+     elements and the wanted-file overlay still work correctly.
+     touch-action: pan-y on body prevents accidental sideways page drags
+     while leaving vertical scroll untouched.
+     The inventory carousel gets pan-x to restore its intentional swipe. */
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  body {
+    touch-action: pan-y;
+  }
+
+  /* Restore horizontal swipe for the intentional game-card carousel */
+  .inventory-grid {
+    touch-action: pan-x !important;
+  }
 
   /* ── HEADER (hub + review page): logo centered on top, nav below ── */
   header, .review-nav {
