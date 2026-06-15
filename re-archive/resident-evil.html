@@ -6699,7 +6699,7 @@
       document.getElementById('page-wanted').style.display = '';
       document.documentElement.classList.add('wanted-open');
       document.body.style.overflow = 'hidden';
-      lockScroll();
+      if (window.innerWidth > 900) lockScroll();
       window.scrollTo(0, 0);
       requestAnimationFrame(function() {
         requestAnimationFrame(function() {
@@ -6724,7 +6724,7 @@
       document.getElementById('page-hub').style.display    = '';
       document.documentElement.classList.remove('wanted-open');
       document.body.style.overflow = '';
-      unlockScroll();
+      if (window.innerWidth > 900) unlockScroll();
       window.scrollTo(0, 0);
       requestAnimationFrame(function() {
         requestAnimationFrame(function() {
