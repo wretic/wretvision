@@ -2592,6 +2592,7 @@ const HORROR_VAULT = [
     "decade": "2010s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2017",
     "id": 325
   },
   {
@@ -2600,6 +2601,7 @@ const HORROR_VAULT = [
     "decade": "2000s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2008",
     "id": 326
   },
   {
@@ -2608,6 +2610,7 @@ const HORROR_VAULT = [
     "decade": "2010s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2012b",
     "id": 327
   },
   {
@@ -2616,6 +2619,7 @@ const HORROR_VAULT = [
     "decade": "2020s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2023",
     "id": 328
   },
   {
@@ -2672,6 +2676,7 @@ const HORROR_VAULT = [
     "decade": "2020s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2021",
     "id": 335
   },
   {
@@ -3248,6 +3253,7 @@ const HORROR_VAULT = [
     "decade": "2000s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2002",
     "id": 409
   },
   {
@@ -3256,6 +3262,7 @@ const HORROR_VAULT = [
     "decade": "2000s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2004",
     "id": 410
   },
   {
@@ -3264,6 +3271,7 @@ const HORROR_VAULT = [
     "decade": "2000s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2007",
     "id": 411
   },
   {
@@ -3272,6 +3280,7 @@ const HORROR_VAULT = [
     "decade": "2010s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2010",
     "id": 412
   },
   {
@@ -3280,6 +3289,7 @@ const HORROR_VAULT = [
     "decade": "2010s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2012",
     "id": 413
   },
   {
@@ -3288,6 +3298,7 @@ const HORROR_VAULT = [
     "decade": "2010s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2016",
     "id": 414
   },
   {
@@ -3384,6 +3395,7 @@ const HORROR_VAULT = [
     "decade": "2020s",
     "status": "watched",
     "note": "",
+    "link": "re-archive/re-movies.html#f2021b",
     "id": 426
   }
 ];

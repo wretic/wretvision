@@ -369,8 +369,10 @@
       const filtered = HORROR_VAULT.filter(item => passesDecade(item) && (!q || item.title.toLowerCase().includes(q) || String(item.year).includes(q)));
       list.innerHTML = filtered.map(item => {
         const review = reviewedMap.get(reviewedKey(item));
-        const reviewed = Boolean(review);
-        const actionAttrs = reviewed ? ` data-review-id="${review.id}" role="button" tabindex="0" aria-label="Open full review for ${escapeHTML(item.title)}"` : '';
+        const reviewed = Boolean(review) || Boolean(item.link);
+        let actionAttrs = '';
+        if (review) actionAttrs = ` data-review-id="${review.id}" role="button" tabindex="0" aria-label="Open full review for ${escapeHTML(item.title)}"`;
+        else if (item.link) actionAttrs = ` data-review-link="${escapeHTML(item.link)}" role="button" tabindex="0" aria-label="Open full review for ${escapeHTML(item.title)}"`;
         return `<article class="vault-item${reviewed ? ' has-review' : ''}" data-vault-id="${item.id}"${actionAttrs}>
           <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
           <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
@@ -386,15 +388,11 @@
 
     function bindReviewedItems(){
       document.querySelectorAll('.vault-item.has-review').forEach(card => {
-        const id = Number(card.dataset.reviewId);
-        card.addEventListener('click', () => {
-          window.location.href = 'review.html?id=' + id;
-        });
+        const href = card.dataset.reviewLink || (card.dataset.reviewId ? 'review.html?id=' + card.dataset.reviewId : null);
+        if (!href) return;
+        card.addEventListener('click', () => { window.location.href = href; });
         card.addEventListener('keydown', e => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            window.location.href = 'review.html?id=' + id;
-          }
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); window.location.href = href; }
         });
       });
     }
