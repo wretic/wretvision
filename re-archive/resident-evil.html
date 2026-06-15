@@ -4496,13 +4496,8 @@
     top: 90px !important;
     left: 0 !important;
     right: 0 !important;
-    bottom: 0 !important;
     margin: 0 !important;
-    padding: 24px 20px 120px !important;
-    height: auto !important;
-    min-height: 0 !important;
-    overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch !important;
+    padding: 24px 20px 110px !important;
     box-sizing: border-box !important;
     background: linear-gradient(to bottom, #0a0a08 0%, #0e0806 40%, #1a0808 70%, #240a0a 100%) !important;
   }
@@ -6268,6 +6263,15 @@
     '06': 'assets/ranking/Locations/RE6 Leon Campaign.png'
   };
 
+  function _fixMobileCardScroll() {
+    if (window.innerWidth > 900) return;
+    var card = document.querySelector('[class*="-mobile-card"]');
+    if (!card) return;
+    card.style.height = (window.innerHeight - 90) + 'px';
+    card.style.overflowY = 'scroll';
+    card.style.webkitOverflowScrolling = 'touch';
+  }
+
   function renderWantedFile(num) {
     var f = _wantedFiles[num];
     if (!f) return;
@@ -6689,6 +6693,7 @@
     overlay.style.opacity = '1';
     setTimeout(function() {
       renderWantedFile(num);
+      _fixMobileCardScroll();
       document.getElementById('page-hub').style.display    = 'none';
       document.getElementById('page-review').style.display = 'none';
       document.getElementById('page-wanted').style.display = '';
@@ -6741,6 +6746,7 @@
     overlay.style.opacity = '1';
     setTimeout(function() {
       renderWantedFile(num);
+      _fixMobileCardScroll();
       window.scrollTo(0, 0);
       requestAnimationFrame(function() {
         requestAnimationFrame(function() {
