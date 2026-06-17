@@ -1,6 +1,78 @@
 {
-  "_instructions": "Add titles here. Set 'done': true when reviewed. 'score' and 'notes' are optional pre-logs of your gut reaction — if set, the AI will write to that score. This batch was selected to avoid titles already present in the existing queue and horror-vault.js.",
+  "_instructions": "Add titles here. Set 'done': true when reviewed. 'score' and 'notes' are optional pre-logs of your gut reaction — if set, the AI will write to that score. This is the ONLY queue file the daily review bot reads (data/queue.json) — do not create or edit a queue.json at the repo root, it is ignored by the script.",
   "movies": [
+    {
+      "title": "They Will Kill You",
+      "year": 2026,
+      "director": "Kirill Sokolov",
+      "runtime": "94 min",
+      "rating": "R",
+      "genre": ["Horror", "Comedy", "Action"],
+      "streaming": "HBO MAX",
+      "done": false,
+      "score": 5.5,
+      "notes": "I loved the R-rated parts but I disliked the rest, didn't make sense, felt too bizarre, constant action sure, but it couldn't keep my attention throughout, I felt more like I wanted to grab my phone than look at my monitor."
+    },
+    {
+      "title": "Good Luck, Have Fun, Don't Die",
+      "year": 2025,
+      "director": "Gore Verbinski",
+      "runtime": "134 min",
+      "rating": "R",
+      "genre": ["Action", "Adventure", "Comedy"],
+      "streaming": "Prime Video",
+      "done": false,
+      "score": 8,
+      "notes": "I loved the twist at the end, everything else yeah maybe in parts a bit convuluted but I enjoyed the wacky stuff of it all, and Sam Rockwell played the role of a lifetime."
+    },
+    {
+      "title": "Alien: Romulus",
+      "year": 2024,
+      "director": "Fede Álvarez",
+      "runtime": "119 min",
+      "rating": "R",
+      "genre": ["Sci-Fi", "Horror", "Action"],
+      "streaming": "Disney+",
+      "done": false,
+      "score": 6,
+      "notes": "the action was decent, but its the same female protagonist, never a guy, dont know why they can't change that up, also it felt too much like the original certain lines like get away from her you bitch said by Ripley in the original comes back for no reason I genuinely couldn't buy into this movie all that much, a 6/10 for the effort."
+    },
+    {
+      "title": "Punisher: One Last Kill",
+      "year": 2026,
+      "director": "Reinaldo Marcus Green",
+      "runtime": "51 min",
+      "rating": "R",
+      "genre": ["Drama", "Thriller", "Action", "Crime"],
+      "streaming": "Disney+",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Immaculate",
+      "year": 2024,
+      "director": "Michael Mohan",
+      "runtime": "89 min",
+      "rating": "R",
+      "genre": ["Horror", "Mystery", "Thriller"],
+      "streaming": "Shudder",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Substance",
+      "year": 2024,
+      "director": "Coralie Fargeat",
+      "runtime": "141 min",
+      "rating": "R",
+      "genre": ["Horror", "Body Horror", "Sci-Fi"],
+      "streaming": "Mubi",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
     {
       "title": "Alien",
       "year": 1979,
@@ -34,7 +106,73 @@
       "notes": null
     }
   ],
-  "tv": [],
+  "tv": [
+    {
+      "title": "Midnight Mass",
+      "season": 1,
+      "year": 2021,
+      "director": "Mike Flanagan",
+      "runtime": "60 min",
+      "rating": "TV-MA",
+      "genre": ["Horror", "Mystery"],
+      "streaming": "Netflix",
+      "done": false,
+      "score": 9.5,
+      "notes": "An absolute twist that I didn't really see coming. However, it had an incredible build-up and it's a show I could rewatch anytime. I'm also happy that it is a mini-series; not everything has to be stretched across multiple seasons."
+    },
+    {
+      "title": "The Bear",
+      "season": 3,
+      "year": 2024,
+      "director": "Christopher Storer",
+      "runtime": "30 min",
+      "rating": "TV-MA",
+      "genre": ["Drama", "Comedy"],
+      "streaming": "Disney+",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "Shogun",
+      "season": 1,
+      "year": 2024,
+      "director": "Rachel Kondo, Caillin Pupool",
+      "runtime": "60 min",
+      "rating": "TV-MA",
+      "genre": ["Drama", "Historical", "Action"],
+      "streaming": "Disney+",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "House of the Dragon",
+      "season": 2,
+      "year": 2024,
+      "director": "Ryan Condal",
+      "runtime": "60 min",
+      "rating": "TV-MA",
+      "genre": ["Fantasy", "Drama", "Action"],
+      "streaming": "HBO Max",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "True Detective: Night Country",
+      "season": 4,
+      "year": 2024,
+      "director": "Issa López",
+      "runtime": "60 min",
+      "rating": "TV-MA",
+      "genre": ["Crime", "Horror", "Mystery"],
+      "streaming": "HBO Max",
+      "done": true,
+      "score": null,
+      "notes": null
+    }
+  ],
   "horror_vault": [
     {
       "title": "The Thing",
@@ -211,6 +349,114 @@
       "done": true,
       "score": 8,
       "notes": null
+    },
+    {
+      "title": "The Wicker Man",
+      "year": 1973,
+      "director": "Robin Hardy",
+      "runtime": "88 min",
+      "rating": "R",
+      "genre": ["Horror", "Folk Horror", "Mystery"],
+      "streaming": "Various",
+      "done": true,
+      "score": 6,
+      "notes": null
+    },
+    {
+      "title": "Suspiria",
+      "year": 1977,
+      "director": "Dario Argento",
+      "runtime": "98 min",
+      "rating": "R",
+      "genre": ["Horror", "Giallo", "Mystery"],
+      "streaming": "Various",
+      "done": true,
+      "score": 6,
+      "notes": null
+    },
+    {
+      "title": "Hereditary",
+      "year": 2018,
+      "director": "Ari Aster",
+      "runtime": "127 min",
+      "rating": "R",
+      "genre": ["Horror", "Mystery", "Drama"],
+      "streaming": "Various",
+      "done": true,
+      "score": 8,
+      "notes": null
+    },
+    {
+      "title": "Midsommar",
+      "year": 2019,
+      "director": "Ari Aster",
+      "runtime": "148 min",
+      "rating": "R",
+      "genre": ["Horror", "Folk Horror", "Mystery"],
+      "streaming": "Various",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Lighthouse",
+      "year": 2019,
+      "director": "Robert Eggers",
+      "runtime": "109 min",
+      "rating": "R",
+      "genre": ["Horror", "Psychological", "Drama"],
+      "streaming": "Various",
+      "done": true,
+      "score": 9,
+      "notes": null
+    },
+    {
+      "title": "It Follows",
+      "year": 2014,
+      "director": "David Robert Mitchell",
+      "runtime": "100 min",
+      "rating": "R",
+      "genre": ["Horror", "Mystery", "Thriller"],
+      "streaming": "Various",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Witch",
+      "year": 2015,
+      "director": "Robert Eggers",
+      "runtime": "92 min",
+      "rating": "R",
+      "genre": ["Horror", "Folk Horror", "Mystery"],
+      "streaming": "Various",
+      "done": true,
+      "score": null,
+      "notes": null
+    },
+    {
+      "title": "The Autopsy of Jane Doe",
+      "year": 2016,
+      "director": "André Øvredal",
+      "runtime": "86 min",
+      "rating": "R",
+      "genre": ["Horror", "Mystery", "Thriller"],
+      "streaming": "Various",
+      "done": true,
+      "score": 8,
+      "notes": null
+    },
+    {
+      "title": "We Bury The Dead",
+      "year": 2024,
+      "director": "Zak Hilditch",
+      "runtime": "94 min",
+      "rating": "R",
+      "genre": ["Horror", "Thriller"],
+      "streaming": "Various",
+      "done": true,
+      "score": 6,
+      "notes": null
     }
   ],
   "games": [
@@ -279,6 +525,16 @@
       "steam_id": 57300,
       "done": true,
       "score": 9.6,
+      "notes": null
+    },
+    {
+      "title": "ROUTINE",
+      "year": 2026,
+      "developer": "Lunar Games",
+      "platform": "PC, Xbox Series X/S",
+      "genre": ["Psychological Horror", "Atmospheric", "Sci-Fi"],
+      "done": true,
+      "score": 7,
       "notes": null
     }
   ]
