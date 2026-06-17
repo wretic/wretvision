@@ -7,7 +7,11 @@
       "director": "Kirill Sokolov",
       "runtime": "94 min",
       "rating": "R",
-      "genre": ["Horror", "Comedy", "Action"],
+      "genre": [
+        "Horror",
+        "Comedy",
+        "Action"
+      ],
       "streaming": "HBO MAX",
       "done": false,
       "score": 5.5,
@@ -19,7 +23,11 @@
       "director": "Gore Verbinski",
       "runtime": "134 min",
       "rating": "R",
-      "genre": ["Action", "Adventure", "Comedy"],
+      "genre": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
       "streaming": "Prime Video",
       "done": false,
       "score": 8,
@@ -31,79 +39,15 @@
       "director": "Fede Álvarez",
       "runtime": "119 min",
       "rating": "R",
-      "genre": ["Sci-Fi", "Horror", "Action"],
+      "genre": [
+        "Sci-Fi",
+        "Horror",
+        "Action"
+      ],
       "streaming": "Disney+",
       "done": false,
       "score": 6,
       "notes": "the action was decent, but its the same female protagonist, never a guy, dont know why they can't change that up, also it felt too much like the original certain lines like get away from her you bitch said by Ripley in the original comes back for no reason I genuinely couldn't buy into this movie all that much, a 6/10 for the effort."
-    },
-    {
-      "title": "Punisher: One Last Kill",
-      "year": 2026,
-      "director": "Reinaldo Marcus Green",
-      "runtime": "51 min",
-      "rating": "R",
-      "genre": ["Drama", "Thriller", "Action", "Crime"],
-      "streaming": "Disney+",
-      "done": true,
-      "score": null,
-      "notes": null
-    },
-    {
-      "title": "Immaculate",
-      "year": 2024,
-      "director": "Michael Mohan",
-      "runtime": "89 min",
-      "rating": "R",
-      "genre": ["Horror", "Mystery", "Thriller"],
-      "streaming": "Shudder",
-      "done": true,
-      "score": null,
-      "notes": null
-    },
-    {
-      "title": "The Substance",
-      "year": 2024,
-      "director": "Coralie Fargeat",
-      "runtime": "141 min",
-      "rating": "R",
-      "genre": ["Horror", "Body Horror", "Sci-Fi"],
-      "streaming": "Mubi",
-      "done": true,
-      "score": null,
-      "notes": null
-    },
-    {
-      "title": "Alien",
-      "year": 1979,
-      "director": "Ridley Scott",
-      "runtime": "117 min",
-      "rating": "R",
-      "genre": [
-        "Sci-Fi",
-        "Horror",
-        "Thriller"
-      ],
-      "streaming": "Disney+",
-      "done": true,
-      "score": 9,
-      "notes": null
-    },
-    {
-      "title": "Aliens",
-      "year": 1986,
-      "director": "James Cameron",
-      "runtime": "137 min",
-      "rating": "R",
-      "genre": [
-        "Sci-Fi",
-        "Action",
-        "Horror"
-      ],
-      "streaming": "Disney+",
-      "done": true,
-      "score": 9.8,
-      "notes": null
     }
   ],
   "tv": [
@@ -114,351 +58,17 @@
       "director": "Mike Flanagan",
       "runtime": "60 min",
       "rating": "TV-MA",
-      "genre": ["Horror", "Mystery"],
+      "genre": [
+        "Horror",
+        "Mystery"
+      ],
       "streaming": "Netflix",
       "done": false,
       "score": 9.5,
       "notes": "An absolute twist that I didn't really see coming. However, it had an incredible build-up and it's a show I could rewatch anytime. I'm also happy that it is a mini-series; not everything has to be stretched across multiple seasons."
-    },
-    {
-      "title": "The Bear",
-      "season": 3,
-      "year": 2024,
-      "director": "Christopher Storer",
-      "runtime": "30 min",
-      "rating": "TV-MA",
-      "genre": ["Drama", "Comedy"],
-      "streaming": "Disney+",
-      "done": true,
-      "score": null,
-      "notes": null
-    },
-    {
-      "title": "Shogun",
-      "season": 1,
-      "year": 2024,
-      "director": "Rachel Kondo, Caillin Pupool",
-      "runtime": "60 min",
-      "rating": "TV-MA",
-      "genre": ["Drama", "Historical", "Action"],
-      "streaming": "Disney+",
-      "done": true,
-      "score": null,
-      "notes": null
-    },
-    {
-      "title": "House of the Dragon",
-      "season": 2,
-      "year": 2024,
-      "director": "Ryan Condal",
-      "runtime": "60 min",
-      "rating": "TV-MA",
-      "genre": ["Fantasy", "Drama", "Action"],
-      "streaming": "HBO Max",
-      "done": true,
-      "score": null,
-      "notes": null
-    },
-    {
-      "title": "True Detective: Night Country",
-      "season": 4,
-      "year": 2024,
-      "director": "Issa López",
-      "runtime": "60 min",
-      "rating": "TV-MA",
-      "genre": ["Crime", "Horror", "Mystery"],
-      "streaming": "HBO Max",
-      "done": true,
-      "score": null,
-      "notes": null
     }
   ],
-  "horror_vault": [
-    {
-      "title": "The Thing",
-      "year": 1982,
-      "director": "John Carpenter",
-      "runtime": "109 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Sci-Fi",
-        "Body Horror"
-      ],
-      "streaming": "Various",
-      "done": true,
-      "score": 9,
-      "notes": null
-    },
-    {
-      "title": "Jacob's Ladder",
-      "year": 1990,
-      "director": "Adrian Lyne",
-      "runtime": "113 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Psychological",
-        "Mystery"
-      ],
-      "streaming": "Various",
-      "done": true,
-      "score": 8,
-      "notes": null
-    },
-    {
-      "title": "Possession",
-      "year": 1981,
-      "director": "Andrzej Żuławski",
-      "runtime": "124 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Psychological",
-        "Drama"
-      ],
-      "streaming": "Various",
-      "done": true,
-      "score": 7,
-      "notes": null
-    },
-    {
-      "title": "Session 9",
-      "year": 2001,
-      "director": "Brad Anderson",
-      "runtime": "100 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Psychological",
-        "Mystery"
-      ],
-      "streaming": "Various",
-      "done": true,
-      "score": 7,
-      "notes": null
-    },
-    {
-      "title": "The Descent",
-      "year": 2005,
-      "director": "Neil Marshall",
-      "runtime": "99 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Survival",
-        "Thriller"
-      ],
-      "streaming": "Various",
-      "done": true,
-      "score": 8,
-      "notes": null
-    },
-    {
-      "title": "Pulse",
-      "year": 2001,
-      "director": "Kiyoshi Kurosawa",
-      "runtime": "119 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Psychological",
-        "J-Horror"
-      ],
-      "streaming": "Various",
-      "done": true,
-      "score": 8,
-      "notes": null
-    },
-    {
-      "title": "The Night House",
-      "year": 2020,
-      "director": "David Bruckner",
-      "runtime": "107 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Psychological",
-        "Mystery"
-      ],
-      "streaming": "Various",
-      "done": true,
-      "score": 6,
-      "notes": null
-    },
-    {
-      "title": "The Empty Man",
-      "year": 2020,
-      "director": "David Prior",
-      "runtime": "137 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Mystery",
-        "Cosmic Horror"
-      ],
-      "streaming": "Various",
-      "done": true,
-      "score": 6,
-      "notes": null
-    },
-    {
-      "title": "Late Night with the Devil",
-      "year": 2023,
-      "director": "Cameron Cairnes, Colin Cairnes",
-      "runtime": "93 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Found Footage",
-        "Supernatural"
-      ],
-      "streaming": "Various",
-      "done": true,
-      "score": 9,
-      "notes": null
-    },
-    {
-      "title": "Oddity",
-      "year": 2024,
-      "director": "Damian McCarthy",
-      "runtime": "98 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Mystery",
-        "Supernatural"
-      ],
-      "streaming": "Various",
-      "done": true,
-      "score": 6,
-      "notes": null
-    },
-    {
-      "title": "Gonjiam: Haunted Asylum",
-      "year": 2018,
-      "director": "Jung Bum-shik",
-      "runtime": "95 min",
-      "rating": "NR",
-      "genre": [
-        "Horror",
-        "Found Footage",
-        "K-Horror"
-      ],
-      "streaming": "Various",
-      "done": true,
-      "score": 8,
-      "notes": null
-    },
-    {
-      "title": "The Wicker Man",
-      "year": 1973,
-      "director": "Robin Hardy",
-      "runtime": "88 min",
-      "rating": "R",
-      "genre": ["Horror", "Folk Horror", "Mystery"],
-      "streaming": "Various",
-      "done": true,
-      "score": 6,
-      "notes": null
-    },
-    {
-      "title": "Suspiria",
-      "year": 1977,
-      "director": "Dario Argento",
-      "runtime": "98 min",
-      "rating": "R",
-      "genre": ["Horror", "Giallo", "Mystery"],
-      "streaming": "Various",
-      "done": true,
-      "score": 6,
-      "notes": null
-    },
-    {
-      "title": "Hereditary",
-      "year": 2018,
-      "director": "Ari Aster",
-      "runtime": "127 min",
-      "rating": "R",
-      "genre": ["Horror", "Mystery", "Drama"],
-      "streaming": "Various",
-      "done": true,
-      "score": 8,
-      "notes": null
-    },
-    {
-      "title": "Midsommar",
-      "year": 2019,
-      "director": "Ari Aster",
-      "runtime": "148 min",
-      "rating": "R",
-      "genre": ["Horror", "Folk Horror", "Mystery"],
-      "streaming": "Various",
-      "done": true,
-      "score": null,
-      "notes": null
-    },
-    {
-      "title": "The Lighthouse",
-      "year": 2019,
-      "director": "Robert Eggers",
-      "runtime": "109 min",
-      "rating": "R",
-      "genre": ["Horror", "Psychological", "Drama"],
-      "streaming": "Various",
-      "done": true,
-      "score": 9,
-      "notes": null
-    },
-    {
-      "title": "It Follows",
-      "year": 2014,
-      "director": "David Robert Mitchell",
-      "runtime": "100 min",
-      "rating": "R",
-      "genre": ["Horror", "Mystery", "Thriller"],
-      "streaming": "Various",
-      "done": true,
-      "score": null,
-      "notes": null
-    },
-    {
-      "title": "The Witch",
-      "year": 2015,
-      "director": "Robert Eggers",
-      "runtime": "92 min",
-      "rating": "R",
-      "genre": ["Horror", "Folk Horror", "Mystery"],
-      "streaming": "Various",
-      "done": true,
-      "score": null,
-      "notes": null
-    },
-    {
-      "title": "The Autopsy of Jane Doe",
-      "year": 2016,
-      "director": "André Øvredal",
-      "runtime": "86 min",
-      "rating": "R",
-      "genre": ["Horror", "Mystery", "Thriller"],
-      "streaming": "Various",
-      "done": true,
-      "score": 8,
-      "notes": null
-    },
-    {
-      "title": "We Bury The Dead",
-      "year": 2024,
-      "director": "Zak Hilditch",
-      "runtime": "94 min",
-      "rating": "R",
-      "genre": ["Horror", "Thriller"],
-      "streaming": "Various",
-      "done": true,
-      "score": 6,
-      "notes": null
-    }
-  ],
+  "horror_vault": [],
   "games": [
     {
       "title": "Silent Hill 2",
@@ -478,22 +88,6 @@
       "notes": "Original classic"
     },
     {
-      "title": "SOMA",
-      "year": 2015,
-      "developer": "Frictional Games",
-      "genre": [
-        "Psychological Horror",
-        "Sci-Fi Horror",
-        "Single Player"
-      ],
-      "platform": "PC, PlayStation 4, Xbox One",
-      "playtime": "8 hours",
-      "steam_id": 282140,
-      "done": true,
-      "score": 9.5,
-      "notes": null
-    },
-    {
       "title": "Alien: Isolation",
       "year": 2014,
       "developer": "Creative Assembly",
@@ -509,32 +103,6 @@
       "done": false,
       "skip": true,
       "score": 10,
-      "notes": null
-    },
-    {
-      "title": "Amnesia: The Dark Descent",
-      "year": 2010,
-      "developer": "Frictional Games",
-      "genre": [
-        "Psychological Horror",
-        "Survival Horror",
-        "Single Player"
-      ],
-      "platform": "PC, PlayStation, Xbox",
-      "playtime": "8 hours",
-      "steam_id": 57300,
-      "done": true,
-      "score": 9.6,
-      "notes": null
-    },
-    {
-      "title": "ROUTINE",
-      "year": 2026,
-      "developer": "Lunar Games",
-      "platform": "PC, Xbox Series X/S",
-      "genre": ["Psychological Horror", "Atmospheric", "Sci-Fi"],
-      "done": true,
-      "score": 7,
       "notes": null
     }
   ]
