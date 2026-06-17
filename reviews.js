@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1781710221487,
+      "slug": "midnight-mass-season-1-review",
+      "seoTitle": "Midnight Mass Season 1 Review (2021) | WretVision",
+      "seoDescription": "Midnight Mass builds dread for hours then detonates with a twist and ending that earns every minute of patience.",
+      "category": "tv",
+      "title": "Midnight Mass Season 1",
+      "year": 2021,
+      "director": "Mike Flanagan",
+      "runtime": "60 min",
+      "rating": "TV-MA",
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "score": 9.5,
+      "featured": false,
+      "excerpt": "Midnight Mass builds dread for hours then detonates with a twist and ending that earns every minute of patience.",
+      "body": [
+        "Mike Flanagan's Midnight Mass is the patient kind of horror that trusts silence more than noise. Set on the dying fishing community of Crockett Island, the show spends its early hours on grief, addiction, and faith long before anything supernatural creeps into frame. That patience is the entire point. By the time Father Paul arrives with his impossible vitality and his cryptic sermons, you already know these people well enough that the dread hits different. Flanagan, working from his own small town Catholic upbringing, writes long monologues about death and resurrection that could have collapsed into pretension in lesser hands. Here they land because the cast sells every word like it's the only thing keeping them upright. Hamish Linklater is doing the best work of his career as Father Paul, charismatic enough that you almost forgive what he's hiding. This is slow burn horror in the truest sense, not a marketing label slapped on a show that gets impatient by episode two.",
+        "The build up across the first five episodes is genuinely incredible, every scene loaded with information you don't clock until the back half forces you to reassess everything. And then the twist lands, and it is not the twist you expect even if you think you know your vampire lore going in. Flanagan earns it because he never treats the reveal as a gotcha, he treats it as the inevitable conclusion of every choice these characters already made out of grief and desperation. The final two episodes are some of the best television Flanagan has made, full stop. What I appreciate most is the restraint of keeping this a single season. Too many shows like this would have been stretched across three more seasons of diminishing returns. Midnight Mass says what it needs to say and ends, which makes it a show I can rewatch in one sitting without dreading a slower season two.",
+        "If there's a knock against it, it's that the dialogue occasionally tips from poetic into overwritten, and a few side characters get speeches that exist more for thematic weight than character truth. It is a minor complaint against a show this confident. Midnight Mass is currently streaming on Netflix and stands alongside The Haunting of Hill House and The Haunting of Bly Manor as proof Flanagan is the closest thing horror TV has to a consistent auteur, and this might be his best work yet."
+      ],
+      "images": [],
+      "verdict": "9.5/10, a slow burn that rewards every minute of patience with one of the best endings horror television has produced.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/iYoMZYVD775MtBYJfv6OGY1FsnL.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/YauN3gyvgqktYhze4gXPWuoZBY.jpg"
+      }
+    },
+    {
       "id": 1781434241947,
       "slug": "alien-review",
       "seoTitle": "Alien Review (1979) | WretVision",

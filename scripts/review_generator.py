@@ -238,7 +238,9 @@ def build_review_entry(category, item, parsed):
     return entry
 
 def is_horror(category, item):
-    """Return True if this title belongs in the horror vault."""
+    """Return True if this title belongs in the horror vault. Movies only — never TV or games."""
+    if category not in ("movies", "horror_vault"):
+        return False
     if category == "horror_vault":
         return True
     return any("horror" in g.lower() for g in item.get("genre", []))
