@@ -31,6 +31,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wretvision.com/review.html?slug=midnight-mass-season-1-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=alien-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=aliens-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=soma-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wretvision.com/review.html?slug=amnesia-the-dark-descent-review</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
