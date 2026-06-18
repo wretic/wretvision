@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1781783573937,
+      "slug": "alien-romulus-review-2",
+      "seoTitle": "Alien: Romulus Review (2024) | WretVision",
+      "seoDescription": "Alien: Romulus looks incredible and says absolutely nothing. Fede Alvarez knows how to build a frame but forgot to put anything inside it.",
+      "category": "movie",
+      "title": "Alien: Romulus",
+      "year": 2024,
+      "director": "Fede Álvarez",
+      "runtime": "119 min",
+      "rating": "R",
+      "genres": [
+        "Sci-Fi",
+        "Horror",
+        "Action"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Alien: Romulus looks incredible and says absolutely nothing. Fede Alvarez knows how to build a frame but forgot to put anything inside it.",
+      "body": [
+        "Fede Alvarez can direct. That much is obvious. Alien: Romulus is one of the better looking films of 2024, a genuinely gorgeous piece of production design with lighting and set work that earns every penny of its budget. The derelict spaces feel lived in, the grime feels real, and there are moments where the practical creature work reminds you why this franchise ever mattered. When the xenomorphs are on screen doing what xenomorphs do, it clicks. Cailee Spaeny commits fully and she is the best reason to keep watching when the film starts coasting. So yes, the craft is here. Nobody phoned in the technical side of this thing.",
+        "But here is the problem. Romulus is so focused on reminding you of better Alien films that it forgets to be its own thing. The callbacks pile up fast and by the third or fourth one you stop feeling nostalgic and start feeling managed. This is a film that mistakes reverence for vision. The story puts a group of young colonists through familiar beats with no real deviation, no moment where you think the film is going somewhere unexpected. Characters make the kind of decisions that exist to move the plot forward rather than because they would actually do that. The tension Alvarez builds so carefully in the first act gets squandered by a second half that keeps reaching for Aliens and Alien 3 instead of earning its own climax.",
+        "Alien: Romulus lands on Disney+ as the kind of franchise entry that will satisfy a Saturday night watch and evaporate from your memory by Sunday morning. It is not a disaster. It is not Alien Covenant levels of baffling creative misfires. It is competent, watchable, occasionally impressive, and completely safe. If you want atmosphere and dread done properly, go back to Ridley Scott's original or rewatch Aliens. If you want something new to say about bodies, survival, and corporate horror, this is not it. Romulus had the ingredients and the talent and it chose to make something you have already seen."
+      ],
+      "images": [],
+      "verdict": "6/10, gorgeous to look at and creatively empty, Alien: Romulus is the cinematic equivalent of a very expensive cover version.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/2uSWRTtCG336nuBiG8jOTEUKSy8.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/iYqSQaWDttQIQzsxg9xHyg0bttG.jpg"
+      }
+    },
+    {
       "id": 1781710221487,
       "slug": "midnight-mass-season-1-review",
       "seoTitle": "Midnight Mass Season 1 Review (2021) | WretVision",
