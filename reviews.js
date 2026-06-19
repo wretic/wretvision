@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1781871013384,
+      "slug": "good-luck-have-fun-dont-die-review",
+      "seoTitle": "Good Luck, Have Fun, Don't Die Review (2025) | WretVision",
+      "seoDescription": "Good Luck, Have Fun, Don't Die swings big and mostly connects, and Sam Rockwell is the reason you show up.",
+      "category": "movie",
+      "title": "Good Luck, Have Fun, Don't Die",
+      "year": 2025,
+      "director": "Gore Verbinski",
+      "runtime": "134 min",
+      "rating": "R",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "Good Luck, Have Fun, Don't Die swings big and mostly connects, and Sam Rockwell is the reason you show up.",
+      "body": [
+        "Good Luck, Have Fun, Don't Die (2025) is the kind of film that knows exactly how unhinged it is and leans into that with both hands. This is a Prime Video action comedy that wears its chaos like a badge of honour, and for the most part it earns the right to be this weird. The premise gets convoluted in the middle stretch, no point pretending otherwise. There are moments where the plot folds in on itself in ways that feel more accidental than clever, and you can feel the screenplay straining to keep all its plates spinning. But here is the thing: the wackiness has genuine energy behind it. This is not randomness for its own sake. There is a commitment to the bit that keeps you onside even when the logic starts wobbling. If you have a soft spot for action films that genuinely do not care about playing it safe, this one is speaking your language from the first scene.",
+        "Sam Rockwell is doing something special here. I have always thought he was one of the most underrated working actors and this film finally gives him a role that matches his actual range. He is funny without mugging, physical without looking choreographed, and he brings a specificity to moments that another actor would have just coasted through. There is a scene in the second act where he has to hold the screen with almost nothing to work with and he turns it into the funniest thirty seconds in the whole film without even trying that hard. Or at least it looks that way. That is the craft. The supporting cast does solid work around him but make no mistake, this is his film entirely. The direction keeps things moving at a pace that respects your time, which I always appreciate, and the action sequences have a practical scrappiness to them that suits the tone perfectly.",
+        "The ending is where Good Luck, Have Fun, Don't Die earns its place in the conversation. I will not spoil it but the twist lands in a way that feels genuinely earned rather than bolted on for surprise value. It recontextualises just enough of what came before to make you want to go back and look for the threads. That is the mark of a twist that actually works, it does not make you feel cheated, it makes you feel like the film was smarter than you gave it credit for. Comparable to something like Free Guy in its genre energy but with sharper teeth and a better lead performance. If you are on Prime Video looking for something that does not take itself seriously but still delivers, this one is worth your evening. Convoluted in parts, yes. But alive in a way a lot of bigger budget films simply are not."
+      ],
+      "images": [],
+      "verdict": "8/10, Good Luck, Have Fun, Don't Die is a wacky, occasionally messy, thoroughly entertaining ride with Sam Rockwell giving the performance of his career and a twist ending that actually sticks the landing.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/rWcfOdY7TU6lTdazWj0ebDZnAfO.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/drRxbu2OHG0DEENptZ8wI5f0uEU.jpg"
+      }
+    },
+    {
       "id": 1781783573937,
       "slug": "alien-romulus-review-2",
       "seoTitle": "Alien: Romulus Review (2024) | WretVision",
