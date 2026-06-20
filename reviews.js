@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1781947371424,
+      "slug": "backrooms-review",
+      "seoTitle": "Backrooms Review (2026) | WretVision",
+      "seoDescription": "Kane Parsons translates years of liminal space dread into a studio horror film and somehow keeps the unease intact.",
+      "category": "movie",
+      "title": "Backrooms",
+      "year": 2026,
+      "director": "Kane Parsons",
+      "runtime": "110 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Sci-Fi",
+        "Mystery"
+      ],
+      "score": 8.5,
+      "featured": false,
+      "excerpt": "Kane Parsons translates years of liminal space dread into a studio horror film and somehow keeps the unease intact.",
+      "body": [
+        "Backrooms works because Kane Parsons never forgets what made the original Backrooms anything in the first place, the feeling of being somewhere that should not exist, lit by buzzing fluorescents that go on forever. I have followed his original videos since they first started circulating and even messed around with the Backrooms games myself, and what struck me back then was how much care went into building a world out of almost nothing, empty rooms, wrong angles, a low hum that never really stops. That same instinct survives the jump to a feature film with a real cast and an A24 budget behind it. The pacing in the first half is patient in a way mainstream horror studios usually do not allow, content to let the wrongness of the space speak for itself before anything chases you. Chiwetel Ejiofor grounds the film in something that could have floated away into pure concept, giving the dread an actual human face to attach to.",
+        "The middle stretch is where the film truly earns its runtime, expanding the mythology of the levels without ever fully explaining them, which is exactly the right call. Parsons clearly understands that the Backrooms concept loses its power the moment someone draws you a map. Practical sets do a lot of heavy lifting here, the production clearly spent money on physically building these wrong spaces rather than leaning on CGI corridors, and you can feel that texture on screen. There are stretches that recall the found footage energy of his early videos even inside a polished studio production, which is a tightrope walk that mostly pays off. A few sequences in the back half lean harder into chase horror than I would have liked, trading some of that suffocating stillness for momentum, but it never fully betrays the tone that built the whole concept.",
+        "What gets me most about Backrooms is not really the scares, it is the worldbuilding instinct underneath them. Watching what Parsons built from essentially nothing made me think seriously about animation and 3D work myself, the kind of creative spark that does not come from every horror movie you watch. Backrooms is currently in theaters with a move to HBO Max expected later this year, and it stands as one of the stronger video game adjacent horror adaptations out there. This is a rare case of an internet horror phenomenon translating to the big screen without losing what made it work."
+      ],
+      "images": [],
+      "verdict": "8.5/10, a liminal space horror film that respects the dread of its source material enough to let silence do most of the damage.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/oUozq2XHWifwAVOoS1qHU0qfXqM.jpg"
+      }
+    },
+    {
       "id": 1781871013384,
       "slug": "good-luck-have-fun-dont-die-review",
       "seoTitle": "Good Luck, Have Fun, Don't Die Review (2025) | WretVision",

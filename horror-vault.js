@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "Backrooms",
+    "year": 2026,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 430
+  },
+  {
     "title": "Alien: Romulus",
     "year": 2024,
     "decade": "2020s",
