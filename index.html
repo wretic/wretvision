@@ -78,6 +78,19 @@
     }
     @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
     .re-term-cursor { animation-duration: 2s; }
+    @media (max-width: 600px) {
+      .re-term-card {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 90vw;
+        padding: 10px 16px;
+      }
+      .re-term-text {
+        min-width: 0;
+        white-space: normal;
+        text-align: center;
+      }
+    }
 
 
     /* ── MOVIE CARD OVERRIDES (homepage) ── */
