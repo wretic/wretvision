@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "They Will Kill You",
+    "year": 2026,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 431
+  },
+  {
     "title": "Backrooms",
     "year": 2026,
     "decade": "2020s",

@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1781951728691,
+      "slug": "they-will-kill-you-review",
+      "seoTitle": "They Will Kill You Review (2026) | WretVision",
+      "seoDescription": "They Will Kill You has moments that genuinely slap, but you'll spend half the runtime reaching for your phone.",
+      "category": "movie",
+      "title": "They Will Kill You",
+      "year": 2026,
+      "director": "Kirill Sokolov",
+      "runtime": "94 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Comedy",
+        "Action"
+      ],
+      "score": 5.5,
+      "featured": false,
+      "excerpt": "They Will Kill You has moments that genuinely slap, but you'll spend half the runtime reaching for your phone.",
+      "body": [
+        "They Will Kill You (2026) arrives on HBO Max as a horror comedy action hybrid that clearly knows what it wants to be in flashes, and has absolutely no idea the rest of the time. When it goes R-rated it earns that rating. The violence is nasty in the right ways, the gore has personality, and there are sequences here that reminded me of the better moments in something like Freaky or Renfield where the comedy and the carnage actually feed each other. Those moments work. They are genuinely fun and occasionally surprising. The problem is everything built around them.",
+        "The connective tissue between the good stuff is where this falls apart. The plot does not hold up to even casual scrutiny and the film seems to know it, so it throws constant action at you hoping you will not notice the logic dissolving underneath. I noticed. The tone swings so wildly between registers that it stops feeling intentional and starts feeling like nobody agreed on what film they were making. Characters do things that have no internal consistency. The comedy bits that are not tied to the violence mostly land flat. I caught myself drifting more than once, which is a damning thing to admit about a film this loud.",
+        "If you are hunting for something mindless on HBO Max with some decent R-rated carnage, They Will Kill You 2026 will scratch that itch for maybe forty minutes of its runtime. If you want that energy sustained across a full film the way something like Cocaine Bear managed to do despite its own messiness, this does not get there. It is too bizarre in the wrong ways, too inconsistent to build any real momentum, and the action that should keep you locked in somehow still leaves the door open for distraction. There is a better film hiding in here. They did not find it."
+      ],
+      "images": [],
+      "verdict": "5.5/10, some genuinely nasty fun buried inside a film that cannot decide what it is long enough to be worth your full attention.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/6oI4oQKTWMVUlr8Ivqydp28Ruu6.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/7IwBgIwoHtkQ0lYGbBbqKintSWx.jpg"
+      }
+    },
+    {
       "id": 1781947371424,
       "slug": "backrooms-review",
       "seoTitle": "Backrooms Review (2026) | WretVision",
