@@ -50,6 +50,11 @@ const staticPages = [
   { url: BASE + '/tv.html',            priority: '0.9', changefreq: 'weekly'  },
   { url: BASE + '/games.html',         priority: '0.9', changefreq: 'weekly'  },
   { url: BASE + '/horror-vault.html',  priority: '0.8', changefreq: 'weekly'  },
+  { url: BASE + '/re-archive/resident-evil.html',             priority: '0.9', changefreq: 'weekly'  },
+  { url: BASE + '/re-archive/re-movies.html',                 priority: '0.8', changefreq: 'weekly'  },
+  { url: BASE + '/re-archive/ranking.html',                   priority: '0.7', changefreq: 'monthly' },
+  { url: BASE + '/re-archive/about.html',                     priority: '0.6', changefreq: 'monthly' },
+  { url: BASE + '/re-archive/resident-evil-playthrough.html', priority: '0.6', changefreq: 'monthly' },
 ];
 
 // Slug URLs in sitemap; fall back to id URL only if slug is missing

@@ -182,7 +182,7 @@ body::before {
 
 /* ── MAIN LAYOUT ─────────────────────────────────────────── */
 .main-layout { display: grid; grid-template-columns: 1fr 280px; max-width: 1200px; margin: 0 auto; }
-.reviews-col { padding: 28px 28px 40px; border-right: 2px solid var(--border); }
+.reviews-col { padding: 28px 28px 40px; border-right: 2px solid var(--border); min-width: 0; }
 .col-header { font-family: 'Press Start 2P', monospace; font-size: 8px; color: var(--blue); letter-spacing: 3px; text-transform: uppercase; border-left: 3px solid var(--blue-light); padding-left: 12px; margin-bottom: 24px; }
 
 /* ── REVIEW CARDS ────────────────────────────────────────── */
@@ -1434,5 +1434,92 @@ body.page-home { padding-bottom: 28px; }
   .has-artwork .card-content {
     padding: 0;
   }
+}
+
+/* ── RE FRANCHISE SPOTLIGHT CARD (homepage) ───────────────── */
+.re-spotlight-card {
+  margin: 18px 0;
+  background: linear-gradient(105deg, #150000 0%, #1e0202 40%, #120000 100%);
+  border: 1px solid rgba(160,20,20,0.45);
+  padding: 20px 24px;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.re-spotlight-header { text-align: center; margin-bottom: 16px; }
+.re-spotlight-stamp {
+  display: block;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  letter-spacing: 0.3em;
+  color: rgba(180,30,30,0.75);
+  margin-bottom: 10px;
+}
+.re-spotlight-title {
+  font-family: 'Special Elite', serif;
+  font-size: clamp(18px, 2.4vw, 26px);
+  color: #e8d5b0;
+  letter-spacing: 0.05em;
+  margin: 0 0 6px;
+  text-shadow: 0 0 20px rgba(180,30,30,0.5), 0 2px 6px rgba(0,0,0,0.9);
+}
+.re-spotlight-sub {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: rgba(180,30,30,0.8);
+  text-transform: uppercase;
+  margin: 0;
+}
+.re-spotlight-strip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  scrollbar-width: none;
+}
+.re-spotlight-strip::-webkit-scrollbar { display: none; }
+.re-spotlight-poster {
+  flex-shrink: 0;
+  width: 86px;
+  height: 129px;
+  display: block;
+  border: 1px solid rgba(160,20,20,0.35);
+  overflow: hidden;
+  cursor: default;
+}
+.re-spotlight-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.re-spotlight-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 12px 20px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: #e8d5b0;
+  background: rgba(160,20,20,0.15);
+  border: 1px solid rgba(160,20,20,0.55);
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.2s, border-color 0.2s, letter-spacing 0.2s;
+}
+.re-spotlight-cta:hover {
+  background: rgba(160,20,20,0.4);
+  border-color: rgba(196,28,28,0.9);
+  color: #fff5e0;
+  letter-spacing: 0.15em;
+}
+.re-spotlight-cta-icon { font-size: 12px; }
+.re-spotlight-cta-arrow { transition: transform 0.2s; }
+.re-spotlight-cta:hover .re-spotlight-cta-arrow { transform: translateX(3px); }
+@media (max-width: 600px) {
+  .re-spotlight-cta { font-size: 7px; padding: 12px 14px; letter-spacing: 0.05em; }
+}
+@media (max-width: 600px) {
+  .re-spotlight-card { padding: 16px 16px; }
+  .re-spotlight-poster, .re-spotlight-more { width: 70px; height: 105px; }
 }
 

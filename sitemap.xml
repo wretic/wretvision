@@ -31,6 +31,31 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wretvision.com/re-archive/resident-evil.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/re-archive/re-movies.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/re-archive/ranking.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/re-archive/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/re-archive/resident-evil-playthrough.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://wretvision.com/review.html?slug=backrooms-review</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

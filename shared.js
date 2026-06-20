@@ -299,12 +299,6 @@ function openReviewFromHash() {
 }
 
 
-function getFeaturedReview(baseReviews) {
-  if (activeCategory !== 'all') return null;
-  if (currentFilter !== 'all') return null;
-  if (currentPage !== 1) return null;
-  return baseReviews.find(r => r.featured) || null;
-}
 
 function getRelatedReviews(review) {
   const reviewGenres = new Set(review.genres || []);
@@ -572,13 +566,51 @@ function createReviewCard(r, isHome) {
   return article;
 }
 
+// ── RE FRANCHISE SPOTLIGHT CARD (homepage only) ────────────────
+const RE_SPOTLIGHT_FILMS = [
+  { title: "Resident Evil (2002)",                       poster: "re2002.jpg",  anchor: "f2002"  },
+  { title: "Resident Evil: Apocalypse (2004)",            poster: "re2004.jpg",  anchor: "f2004"  },
+  { title: "Resident Evil: Extinction (2007)",            poster: "re2007.jpg",  anchor: "f2007"  },
+  { title: "Resident Evil: Degeneration (2008)",          poster: "re2008.webp", anchor: "f2008"  },
+  { title: "Resident Evil: Afterlife (2010)",             poster: "re2010.jpg",  anchor: "f2010"  },
+  { title: "Resident Evil: Retribution (2012)",           poster: "re2012.jpg",  anchor: "f2012"  },
+  { title: "Resident Evil: Damnation (2012)",             poster: "re2012b.webp",anchor: "f2012b" },
+  { title: "Resident Evil: The Final Chapter (2016)",     poster: "re2016.jpg",  anchor: "f2016"  },
+  { title: "Resident Evil: Vendetta (2017)",              poster: "re2017.webp", anchor: "f2017"  },
+  { title: "Resident Evil: Welcome to Raccoon City (2021)", poster: "re2021.jpg", anchor: "f2021" },
+  { title: "Resident Evil: Infinite Darkness (2021)",     poster: "re2021b.webp",anchor: "f2021b" },
+  { title: "Resident Evil: Death Island (2023)",          poster: "re2023.webp", anchor: "f2023"  }
+];
+
+function createReSpotlightCard() {
+  const wrap = document.createElement('div');
+  wrap.className = 're-spotlight-card';
+  wrap.innerHTML = `
+    <div class="re-spotlight-header">
+      <span class="re-spotlight-stamp">✦ FRANCHISE SPOTLIGHT ✦</span>
+      <h3 class="re-spotlight-title">RESIDENT EVIL: THE FULL FRANCHISE</h3>
+      <p class="re-spotlight-sub">12 films. Ranked. Reviewed. No mercy.</p>
+    </div>
+    <div class="re-spotlight-strip">
+      ${RE_SPOTLIGHT_FILMS.map(f => `
+        <div class="re-spotlight-poster" title="${f.title}">
+          <img src="re-archive/assets/movies/posters/${f.poster}" alt="${f.title}" loading="lazy">
+        </div>
+      `).join('')}
+    </div>
+    <a class="re-spotlight-cta" href="re-archive/re-movies.html">
+      <span class="re-spotlight-cta-icon">📁</span> OPEN FULL CASE FILE — ALL REVIEWS <span class="re-spotlight-cta-arrow">▶</span>
+    </a>
+  `;
+  return wrap;
+}
+
 // ── RENDER CARDS ─────────────────────────────────────────────
 function render() {
   const filtered   = getFilteredReviews();
   const isHome     = activeCategory === 'all';
-  const featured   = getFeaturedReview(filtered);
-  const featuredItem = (activeCategory === 'all' && currentFilter === 'all') ? filtered.find(r => r.featured) || null : null;
-  const listForPagination = featuredItem ? filtered.filter(r => r.id !== featuredItem.id) : filtered;
+  const showSpotlight = isHome && currentFilter === 'all' && currentPage === 1;
+  const listForPagination = filtered;
   const totalPages = Math.max(1, Math.ceil(listForPagination.length / REVIEWS_PER_PAGE));
   if (currentPage > totalPages) currentPage = totalPages;
 
@@ -588,12 +620,8 @@ function render() {
   const container = document.getElementById('reviews-container');
   container.innerHTML = '';
 
-  if (featured && currentPage === 1) {
-    const featuredBlock = document.createElement('div');
-    featuredBlock.className = 'featured-home-block';
-    featuredBlock.innerHTML = '<div class="featured-home-label">featured review</div>';
-    featuredBlock.appendChild(createReviewCard(featured, true));
-    container.appendChild(featuredBlock);
+  if (showSpotlight) {
+    container.appendChild(createReSpotlightCard());
 
     if (page.length) {
       const latestLabel = document.createElement('div');
