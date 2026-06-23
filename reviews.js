@@ -935,7 +935,7 @@ const REVIEWS = [
       "Horror",
       "Thriller"
     ],
-    "score": 8,
+    "score": 8.5,
     "featured": false,
     "excerpt": "Obsession earns your attention in the first act and spends the second quietly testing it. Barker has real craft. The film around him mostly does too.",
     "body": [
