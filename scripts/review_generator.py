@@ -51,6 +51,75 @@ def save_json(path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
+def normalize_title(s):
+    s = str(s or "").lower().replace("&", "and")
+    s = re.sub(r"[^a-z0-9]+", " ", s)
+    return s.strip()
+
+def get_existing_review_keys():
+    """Set of 'normalized title|year' for everything already in reviews.js."""
+    source = REVIEWS_JS.read_text(encoding="utf-8")
+    titles = re.findall(r'"title"\s*:\s*"([^"]+)"', source)
+    years  = re.findall(r'"year"\s*:\s*(\d+)', source)
+    return {f"{normalize_title(t)}|{y}" for t, y in zip(titles, years)}
+
+def load_vault_backlog():
+    """Titles already watched in horror-vault.js that don't have a review yet."""
+    source = HORROR_VAULT_JS.read_text(encoding="utf-8")
+    entries = re.findall(
+        r'\{\s*"title":\s*"([^"]+)",\s*"year":\s*(\d+|null),.*?"status":\s*"([^"]+)"',
+        source, re.DOTALL
+    )
+    existing = get_existing_review_keys()
+    backlog = []
+    for title, year, status in entries:
+        if status == "excluded" or not year or year == "null":
+            continue
+        if f"{normalize_title(title)}|{year}" in existing:
+            continue
+        backlog.append({"title": title, "year": int(year)})
+    return backlog
+
+def fetch_tmdb_full_details(title, year):
+    """Best-effort fetch of genre/runtime/director/rating for a vault backlog title."""
+    api_key = "901e304e38b7fb43f193ee28baf95720"
+    try:
+        query = urllib.parse.quote(str(title))
+        search_url = f"https://api.themoviedb.org/3/search/movie?api_key={api_key}&query={query}&year={year}&language=en-US"
+        with urllib.request.urlopen(search_url, timeout=10) as r:
+            results = json.loads(r.read().decode()).get("results", [])
+        if not results:
+            return None
+        movie_id = results[0]["id"]
+
+        detail_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&append_to_response=credits,release_dates&language=en-US"
+        with urllib.request.urlopen(detail_url, timeout=10) as r:
+            detail = json.loads(r.read().decode())
+
+        genres = [g["name"] for g in detail.get("genres", [])] or ["Horror"]
+        runtime = f"{detail['runtime']} min" if detail.get("runtime") else "?? min"
+
+        director = "Unknown"
+        for c in detail.get("credits", {}).get("crew", []):
+            if c.get("job") == "Director":
+                director = c.get("name")
+                break
+
+        rating = "NR"
+        for entry in detail.get("release_dates", {}).get("results", []):
+            if entry.get("iso_3166_1") == "US":
+                for rd in entry.get("release_dates", []):
+                    if rd.get("certification"):
+                        rating = rd["certification"]
+                        break
+                break
+
+        return {"title": title, "year": year, "director": director, "runtime": runtime,
+                "rating": rating, "genre": genres, "streaming": "Various"}
+    except Exception as e:
+        print(f"TMDB full details fetch failed for '{title}' ({year}): {e}")
+        return None
+
 def pick_title(queue):
     today      = datetime.now()
     is_weekend = today.weekday() >= 5
@@ -65,11 +134,22 @@ def pick_title(queue):
             pool.append((category, item))
             pool_weights.append(weight / len(items))
 
-    if not pool:
+    if pool:
+        return random.choices(pool, weights=pool_weights, k=1)[0]
+
+    print("Queue staging list is empty — falling back to horror vault backlog...")
+    backlog = load_vault_backlog()
+    if not backlog:
         print("Queue is empty — all titles reviewed!")
         sys.exit(0)
 
-    return random.choices(pool, weights=pool_weights, k=1)[0]
+    pick = random.choice(backlog)
+    print(f"Vault backlog: {len(backlog)} unreviewed titles remaining. Picked '{pick['title']}' ({pick['year']}).")
+    details = fetch_tmdb_full_details(pick["title"], pick["year"]) or {
+        "title": pick["title"], "year": pick["year"], "director": "Unknown",
+        "runtime": "?? min", "rating": "NR", "genre": ["Horror"], "streaming": "Various",
+    }
+    return ("horror_vault", details)
 
 def get_pre_logged_score(item, seen_scores):
     key = f"{item['title']} ({item.get('year', '')})"
