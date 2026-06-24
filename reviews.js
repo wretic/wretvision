@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1782298417290,
+      "slug": "alien-covenant-review",
+      "seoTitle": "Alien: Covenant Review (2017) | WretVision",
+      "seoDescription": "Alien: Covenant had everything it needed to be great and somehow managed to be just... fine.",
+      "category": "movie",
+      "title": "Alien: Covenant",
+      "year": 2017,
+      "director": "Ridley Scott",
+      "runtime": "122 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Science Fiction"
+      ],
+      "score": 5.0,
+      "featured": false,
+      "excerpt": "Alien: Covenant had everything it needed to be great and somehow managed to be just... fine.",
+      "body": [
+        "Ridley Scott had a second chance here. Prometheus divided people badly but it at least had ambition, genuine ideas about creation and faith rattling around inside its flawed skull. Alien: Covenant in 2017 felt like a course correction that overcorrected. Too many nods to the original Alien, too many people walking toward obvious danger for no defensible reason, and a script that seems embarrassed by the philosophical territory Prometheus was trying to explore. If you were hoping for answers, you get some. If you were hoping they would feel earned, you are going to be disappointed.",
+        "What actually works here is Michael Fassbender, and he works twice because he is playing two synthetic characters at once. The scenes between David and Walter are genuinely the most interesting thing in the film, and when Fassbender is on screen doing something quietly unsettling you get a glimpse of the film this could have been. The practical creature work has some strong moments too, especially early on. The Neomorph sequences carry real tension before the film loses its nerve and retreats into familiar Xenomorph territory. The atmosphere on the planet surface is briefly beautiful in a genuinely eerie way.",
+        "But then the crew keeps making decisions so catastrophically stupid that you stop caring about them fast. These are supposedly trained colonists and scientists behaving like they have never seen a horror film, which is not a compliment when you are actually in one. The ending telegraphs its twist so early that when it lands it produces a shrug rather than a chill. Alien: Covenant is streaming across various platforms now and it sits in an awkward space between Prometheus and the original Alien without fully satisfying fans of either. Worth watching for Fassbender alone, but it is a frustrating experience overall."
+      ],
+      "images": [],
+      "verdict": "Alien: Covenant is a film that had the pieces to be something special and settled for being a passable sci-fi horror retread, 5/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/zecMELPbU5YMQpC81Z8ImaaXuf9.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/iXXPaQPfQowpQ5UvhsHLj9BgFhe.jpg"
+      }
+    },
+    {
       "id": 1781951728691,
       "slug": "they-will-kill-you-review",
       "seoTitle": "They Will Kill You Review (2026) | WretVision",
