@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1782384367491,
+      "slug": "saw-x-review",
+      "seoTitle": "Saw X Review (2023) | WretVision",
+      "seoDescription": "Nobody expected Saw X to be this good. John Kramer is back and for once, the franchise remembered why we cared in the first place.",
+      "category": "movie",
+      "title": "Saw X",
+      "year": 2023,
+      "director": "Kevin Greutert",
+      "runtime": "118 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "score": 7.5,
+      "featured": false,
+      "excerpt": "Nobody expected Saw X to be this good. John Kramer is back and for once, the franchise remembered why we cared in the first place.",
+      "body": [
+        "Saw X does something the franchise stopped doing about eight films ago. It slows down. It lets Tobin Bell actually act. Set between the original Saw and Saw II, this is a prequel built around John Kramer as a dying man, a grieving man, someone who gets conned by a fake cancer cure operation while he is at his most vulnerable. That setup is genuinely interesting and the film earns real sympathy for a character you are technically supposed to despise. Director Kevin Greutert knows this series inside out and you can feel that confidence in the pacing. The first act builds with patience that the Saw franchise rarely bothers with. By the time the traps arrive, you are actually invested in why they are happening, which is something even the best entries in this series sometimes forget to bother with.",
+        "The traps themselves are brutal and inventive in the way fans expect, mostly practical, mostly visceral, and shot with enough clarity that you can actually register what is happening rather than cutting away like a coward. Synnove Macody Lund is genuinely menacing as Cecilia and she holds her own against Bell across some really charged scenes. The middle section is where Saw X is at its strongest, a contained and nasty little revenge story that works almost like a standalone thriller. It does lose some steam toward the final act when the franchise mechanics start grinding back in and you can feel the studio puppet strings twitching. Some late character decisions exist purely to extend the runtime and the ending reaches for something bigger than it quite lands.",
+        "For longtime fans of the series this is absolutely one of the better entries, sitting comfortably up there with the original and maybe Saw II for sheer rewatchability. For newcomers it probably works less well but if you want a gateway film to understand why people kept coming back to this franchise despite everything, Saw X from 2023 is a decent answer. It is streaming across various platforms now and worth hunting down if you have any appetite for this kind of gruesome puzzle box horror. Think less Jigsaw the 2017 reboot and more a genuine return to form. It is not reinventing the genre but it is doing what it does better than it has any right to after ten films."
+      ],
+      "images": [],
+      "verdict": "Saw X is the franchise finally respecting its own mythology enough to tell a proper story, and Tobin Bell reminds you he was always the best thing in it.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/u7Lp1Hi8aBS73jv4KRMIv5aK4ax.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/uUJp5I4IbzuhdUiEx4R9OAoFpbz.jpg"
+      }
+    },
+    {
       "id": 1782298417290,
       "slug": "alien-covenant-review",
       "seoTitle": "Alien: Covenant Review (2017) | WretVision",
