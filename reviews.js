@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1782471281535,
+      "slug": "shaun-of-the-dead-review",
+      "seoTitle": "Shaun of the Dead Review (2004) | WretVision",
+      "seoDescription": "Twenty years on and Shaun of the Dead still hits harder than most pure horror films. Edgar Wright understood something most directors never figure out.",
+      "category": "movie",
+      "title": "Shaun of the Dead",
+      "year": 2004,
+      "director": "Edgar Wright",
+      "runtime": "99 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Twenty years on and Shaun of the Dead still hits harder than most pure horror films. Edgar Wright understood something most directors never figure out.",
+      "body": [
+        "Shaun of the Dead from 2004 is one of those films that gets called a comedy so often people forget it is genuinely, properly scary in places. Edgar Wright understood that the best horror comedies do not wink at the audience constantly. They commit. The Wyndham's pub siege in the third act has real tension because Wright spent the first two acts making you actually care about these people and their stupid little lives. That is craft. Simon Pegg and Nick Frost are not performing chemistry, they just have it, and it grounds every absurd moment in something emotionally true. The film also works as a genuinely sharp piece of social commentary about going through life on autopilot, surrounded by zombies before the zombies even show up. Wright lays that groundwork so cleanly that when the metaphor becomes literal it lands with weight instead of feeling like a film studies lecture.",
+        "The practical effects throughout hold up beautifully. There is nothing here that dates it badly, no rubbery CGI nonsense pulling you out of the moment. The gore is earned and specific. The editing is borderline extraordinary, with visual callbacks and foreshadowing payoffs that reward a rewatch in ways most films do not bother with. The Winchester sequence where the gang try to blend in with zombies by acting dead inside is funny and tense simultaneously, which is an almost impossible balance to maintain. Compare this to something like Zombieland, which is a fun film but plays almost everything purely for laughs. Wright refuses to take that easy road. He wants you laughing and then wants the laugh to stick in your throat.",
+        "If there is a criticism to make, and honestly it is a small one, the very final stretch of the film wraps things up a touch too neatly and quickly for what came before. The emotional weight of certain losses gets slightly undercut by the pace of the ending. But that is a minor wobble in an otherwise exceptional film. Shaun of the Dead is available across various streaming platforms right now and if you have somehow not seen it, that is the only recommendation you need. It belongs in the same conversation as An American Werewolf in London as one of the finest British contributions to the horror genre full stop."
+      ],
+      "images": [],
+      "verdict": "9/10, a near perfect horror comedy that works as hard as any straight horror film and earns every single laugh it gets.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/dgXPhzNJH8HFTBjXPB177yNx6RI.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/wb34q3VgzHgL8frVMywrN3wXmqx.jpg"
+      }
+    },
+    {
       "id": 1782384367491,
       "slug": "saw-x-review",
       "seoTitle": "Saw X Review (2023) | WretVision",
