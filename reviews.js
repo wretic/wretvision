@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1782555149953,
+      "slug": "the-others-review",
+      "seoTitle": "The Others Review (2001) | WretVision",
+      "seoDescription": "The Others is the rare ghost story that earns every single scare through atmosphere alone, and it still holds up over twenty years later.",
+      "category": "movie",
+      "title": "The Others",
+      "year": 2001,
+      "director": "Alejandro Amenábar",
+      "runtime": "101 min",
+      "rating": "PG-13",
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "The Others is the rare ghost story that earns every single scare through atmosphere alone, and it still holds up over twenty years later.",
+      "body": [
+        "Alejandro Amenábar made something genuinely special with The Others in 2001 and I think it still does not get enough credit for how controlled it is. This is a film that understands dread. It understands that what you do not see is almost always more terrifying than what you do. The entire thing runs on fog and candlelight and the sound of footsteps in empty rooms, and Amenábar keeps the tension coiled so tight for so long that by the time anything actually happens you are already rattled. No cheap jump scares. No reliance on gore. Just a house that feels genuinely wrong and a woman desperately trying to hold her world together. Nicole Kidman is exceptional here, and I say that as someone who thinks she is often better than the films she chooses. Grace is brittle and controlling and completely convinced she is right, and watching that certainty crack is where the film lives.",
+        "What works beyond Kidman is the atmosphere as a total package. The muted colour palette, the heavy curtains, the way sound behaves in those rooms. It feels like a film shot inside a held breath. The supporting cast, particularly Fionnula Flanagan, adds layers of unease that the script lets breathe rather than over-explaining. The child performances are solid too, which matters enormously because this kind of story collapses if you do not believe the kids. Comparisons to The Sixth Sense are lazy but inevitable, and honestly The Others holds up better on rewatch precisely because the reveal recontextualises character motivation rather than just flipping a plot switch. The screenplay trusts you. That is rarer than it should be in horror. The pacing is patient in a way that modern horror rarely allows itself to be, and it pays off completely.",
+        "If I am being honest about flaws, there are moments in the second act where the film lingers a beat too long in a way that slightly softens the tension rather than building it. Small complaint. The ending lands so cleanly that it almost forgives every slower stretch before it. This is the kind of horror film you can watch with someone who does not like horror, the kind that operates more like a psychological thriller with genuine weight, and if you are streaming around looking for something on Various platforms that actually respects your intelligence, The Others from 2001 belongs near the top of your list. Put it alongside The Innocents from 1961 or The Awakening from 2011 if you want a proper double bill of slow burn British and European gothic horror done right."
+      ],
+      "images": [],
+      "verdict": "The Others is patient, intelligent, and genuinely unsettling in a way that most modern horror has completely forgotten how to be, 9/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/p8g1vlTvpM6nr2hMMiZ1fUlKF0D.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/rbBe9WQ1OqCxzgwskOTnaY6JdUA.jpg"
+      }
+    },
+    {
       "id": 1782471281535,
       "slug": "shaun-of-the-dead-review",
       "seoTitle": "Shaun of the Dead Review (2004) | WretVision",
