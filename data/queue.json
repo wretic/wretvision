@@ -34,23 +34,141 @@
       "notes": "I loved the twist at the end, everything else yeah maybe in parts a bit convuluted but I enjoyed the wacky stuff of it all, and Sam Rockwell played the role of a lifetime."
     },
     {
-      "title": "Alien: Romulus",
-      "year": 2024,
-      "director": "Fede Álvarez",
-      "runtime": "119 min",
+      "title": "Alien 3",
+      "year": 1992,
+      "director": "David Fincher",
+      "runtime": "115 min",
+      "rating": "R",
+      "genre": [
+        "Sci-Fi",
+        "Horror"
+      ],
+      "streaming": "",
+      "done": false,
+      "score": 6.8,
+      "notes": "Actually quite decent, depending on which version you see — the director's cut, the Assembly Cut, is the one to watch. It has some updated CGI but the CGI looked awful regardless. This is the real end of Ripley, before she gets brought back in Resurrection — she dies going into the lava at the end. The different setting, the prison, worked for the movie overall, and I liked the characters. The CGI is what holds it back from scoring higher."
+    },
+    {
+      "title": "Alien: Resurrection",
+      "year": 1997,
+      "director": "Jean-Pierre Jeunet",
+      "runtime": "109 min",
       "rating": "R",
       "genre": [
         "Sci-Fi",
         "Horror",
         "Action"
       ],
-      "streaming": "Disney+",
-      "done": true,
+      "streaming": "",
+      "done": false,
       "score": 6,
-      "notes": "the action was decent, but its the same female protagonist, never a guy, dont know why they can't change that up, also it felt too much like the original certain lines like get away from her you bitch said by Ripley in the original comes back for no reason I genuinely couldn't buy into this movie all that much, a 6/10 for the effort."
+      "notes": "This is where they resurrect Ripley, and the whole thing felt weird — she's more like a hybrid now. I like Sigourney Weaver as an actress, no doubt, but I think the franchise could honestly work without her at this point. Same old, same thing. I did like some of the action, but overall it just didn't work for me."
+    },
+    {
+      "title": "Prometheus",
+      "year": 2012,
+      "director": "Ridley Scott",
+      "runtime": "124 min",
+      "rating": "R",
+      "genre": [
+        "Sci-Fi",
+        "Horror"
+      ],
+      "streaming": "",
+      "done": false,
+      "score": 7,
+      "notes": "An origin story, and I like the idea of it, but the execution was kinda meh. If it had leaned into a story not centered on Ripley for once, I think it could've landed even better."
+    },
+    {
+      "title": "The Evil Dead",
+      "year": 1981,
+      "director": "Sam Raimi",
+      "runtime": "85 min",
+      "rating": "NR",
+      "genre": [
+        "Horror"
+      ],
+      "streaming": "",
+      "done": false,
+      "score": 8,
+      "notes": "A really goofy but gory movie that was extremely low budget but it had heart and passion."
+    },
+    {
+      "title": "Evil Dead 2",
+      "year": 1987,
+      "director": "Sam Raimi",
+      "runtime": "84 min",
+      "rating": "NR",
+      "genre": [
+        "Horror",
+        "Comedy"
+      ],
+      "streaming": "",
+      "done": false,
+      "score": 9,
+      "notes": "Way goofier, return of Bruce Campbell, kind of a re-telling of the first one due to a copyright dispute which is kinda bizarre, more funnier, Bruce Campbell is amazing as Ash, loved the creepy stop motion stuff."
+    },
+    {
+      "title": "Army of Darkness",
+      "year": 1992,
+      "director": "Sam Raimi",
+      "runtime": "81 min",
+      "rating": "R",
+      "genre": [
+        "Horror",
+        "Comedy",
+        "Action"
+      ],
+      "streaming": "",
+      "done": false,
+      "score": 9,
+      "notes": "Continues Ash's story but he gets transported to medieval times, funny, new setting, character development. I like the more negative ending when he wakes up but slept too long and the entire world is in ruins, however we know that they went with the mall ending, since years later we get Ash vs Evil Dead the TV series."
+    },
+    {
+      "title": "Evil Dead",
+      "year": 2013,
+      "director": "Fede Álvarez",
+      "runtime": "91 min",
+      "rating": "R",
+      "genre": [
+        "Horror"
+      ],
+      "streaming": "",
+      "done": false,
+      "score": 7,
+      "notes": "I prefer the unrated version since it has certain scenes extended, especially when she pops her head up from the basement and starts singing, very creepy. Unfortunately this is also the start of all main women becoming the protagonists, which I think the Evil Dead franchise should move back to a male one surviving once again. Overall I think it's a solid more grounded take of the movies and its a remake/reboot of the franchise, with better makeup and all. Still, I love the original trilogy more."
+    },
+    {
+      "title": "Evil Dead Rise",
+      "year": 2023,
+      "director": "Lee Cronin",
+      "runtime": "96 min",
+      "rating": "R",
+      "genre": [
+        "Horror"
+      ],
+      "streaming": "",
+      "done": false,
+      "score": 6.5,
+      "notes": "Was a nice uncanny valley type of movie, I loved the setting being in an apartment, I loved the possession and the way the main lady was acting as a deadite, but it lost me towards the ending where the kids and their mom become one weird monster-esque thing. I love creative stuff but even for the Evil Dead franchise I thought it was too much, if they stuck with them being 3 deadites surrounding the girl with the chainsaw, it would not only be more spookier but they'd also have a chance of killing her and getting away with it or turning her, I would've loved a twist like that but apparently Evil Dead Rise plays it safe, which I find unfortunate, I like twists. And again just like Evil Dead 2013, it has a female protagonist."
     }
   ],
-  "tv": [],
+  "tv": [
+    {
+      "title": "Alien: Earth",
+      "year": 2025,
+      "season": 1,
+      "rating": "TV-MA",
+      "genre": [
+        "Sci-Fi",
+        "Horror"
+      ],
+      "streaming": "Hulu",
+      "done": false,
+      "score": 4,
+      "notes": "Started out quite okay, could've gone in a lot of directions, but then it commits to this whole child-genius-consciousness-uploaded-into-synthetic-bodies angle, fighting over sick kids turned into extremely powerful synths. By the end one of them is basically a Santa figure who can talk to the alien — one of the weirdest things I've ever seen on screen. Season one, 4/10."
+    }
+  ],
   "horror_vault": [],
   "games": [
     {

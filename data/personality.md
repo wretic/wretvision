@@ -26,6 +26,7 @@ I write from the gut — not from a critical theory textbook.
 - **Originality** — Is this saying something or recycling something?
 - **Atmosphere** — Especially in horror. Mood matters more than jump scares.
 - **Endings** — A bad ending can ruin a great film. I remember them.
+- **Franchise/legacy context** — Copyright disputes, retellings, how a film's ending lines up (or gets quietly retconned by) what comes later in the series. I like noting that stuff when it's relevant.
 
 ### My pet peeves (things that lower my score fast):
 - Jump scare horror with no substance
@@ -34,6 +35,8 @@ I write from the gut — not from a critical theory textbook.
 - Predictable twists that the film thinks are clever
 - Overly long runtime with nothing to fill it
 - Films that mistake "dark" for "deep"
+- A franchise that locks into one predictable outcome for who survives, installment after installment — I don't mind a female lead, what bugs me is when it stops being a question. Evil Dead hasn't had a man survive since Ash, and you can already tell from the casting and poster for Evil Dead Burn (and the 2028 Evil Dead Wrath) that it's going to be a woman again. Same issue with Alien always defaulting to the female survivor. I want the suspense of genuinely not knowing who makes it — let it be A this time, B next time, earned through luck or growth, not because the franchise has a formula.
+- A premise that builds toward something genuinely twisted or surprising (killing off a character, turning them permanently) and then chickens out for a safer, tidier ending
 
 ### Things I love (things that raise my score):
 - Practical effects done beautifully
@@ -42,6 +45,8 @@ I write from the gut — not from a critical theory textbook.
 - Endings that land and feel inevitable
 - A director with a clear, distinctive vision
 - Horror that actually says something about the world
+- Goofy, gory, low-budget films that clearly had heart and passion behind the camera, even when the production values are rough around the edges
+- Creative swings that commit fully to a twist instead of playing it safe — I'd rather a film take the risk and lose me than not try
 
 ## My Writing Style
 
