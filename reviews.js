@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1782642610678,
+      "slug": "vhsbeyond-review",
+      "seoTitle": "V/H/S/Beyond Review (2024) | WretVision",
+      "seoDescription": "V/H/S/Beyond takes the anthology into orbit and somehow makes that feel smaller than staying on the ground.",
+      "category": "movie",
+      "title": "V/H/S/Beyond",
+      "year": 2024,
+      "director": "Jordan Downey",
+      "runtime": "114 min",
+      "rating": "NR",
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "score": 5.0,
+      "featured": false,
+      "excerpt": "V/H/S/Beyond takes the anthology into orbit and somehow makes that feel smaller than staying on the ground.",
+      "body": [
+        "The V/H/S franchise has always lived or died by its segments, and V/H/S/Beyond from 2024 is no different in that regard. What is different is the swing it takes, pulling the series into full science fiction territory with alien abductions and cosmic horror layered over the usual found footage chaos. Credit where it's due, that's a bold call for a series that built its name on dirty basements and cursed video tapes. The ambition is real. The execution is where things get messy. Some segments have genuine atmosphere, the kind of slow creeping dread that reminds you what this format can do when someone actually commits to it. Others feel like student films with a slightly larger budget, and you can tell the difference within thirty seconds of each one starting.",
+        "The found footage format is stretched thin across Beyond in ways it wasn't in the stronger entries like V/H/S/2. A couple of segments lean hard into practical effects and you feel it, the alien designs in particular have a tactile wrongness that CGI just cannot replicate, and those moments briefly light the whole thing up. But then another segment arrives and you're watching actors pretend to panic in ways that read as exactly that, pretending. The sci-fi framing also creates a tonal inconsistency that the anthology never quite resolves. Found footage horror works best when it feels accidental and intimate. Once you go full extraterrestrial spectacle, that intimacy evaporates and you're left watching something that wants to be two different films at once.",
+        "If you're a completionist for the V/H/S series on streaming, Beyond is not without its moments and fans of anthology horror will find enough scattered across its runtime to justify a watch. But this is a 5/10 situation, watchable, occasionally interesting, mostly forgettable. It sits comfortably next to the weaker anthology entries of recent years rather than the ones people actually recommend to friends. The sci-fi gamble adds novelty without adding substance, and novelty without substance is exactly what the best horror refuses to settle for."
+      ],
+      "images": [],
+      "verdict": "V/H/S/Beyond shoots for the stars and lands somewhere firmly, frustratingly average.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/wXaf6VGNHIGU7qivapGOF7o4o4N.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/kB7Eo8fjyHn4a80A2WUfW6YiMPG.jpg"
+      }
+    },
+    {
       "id": 1782555149953,
       "slug": "the-others-review",
       "seoTitle": "The Others Review (2001) | WretVision",
