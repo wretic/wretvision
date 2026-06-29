@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1782736675693,
+      "slug": "alien-resurrection-review",
+      "seoTitle": "Alien: Resurrection Review (1997) | WretVision",
+      "seoDescription": "They brought Ripley back from the dead and somehow made it feel like the franchise needed a defibrillator too.",
+      "category": "movie",
+      "title": "Alien: Resurrection",
+      "year": 1997,
+      "director": "Jean-Pierre Jeunet",
+      "runtime": "109 min",
+      "rating": "R",
+      "genres": [
+        "Sci-Fi",
+        "Horror",
+        "Action"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "They brought Ripley back from the dead and somehow made it feel like the franchise needed a defibrillator too.",
+      "body": [
+        "Alien Resurrection, released in 1997 and directed by Jean-Pierre Jeunet, is the fourth entry in the Alien franchise and honestly one of the stranger swings in sci-fi horror history. The premise is bold enough on paper: clone Ripley two hundred years after her death, harvest the queen xenomorph gestating inside her, and deal with the fallout. Jeunet brings a weird, slightly grotesque visual energy that actually suits the material in places. The production design is grimy and interesting. Some of the action sequences genuinely deliver. But the whole thing has this off-putting quality that never quite settles into being either a strength or a flaw. It just sits there, awkward, like the film itself is not sure what it wants to be.",
+        "The big issue is Ripley. Sigourney Weaver is a great actress, no question, but the hybrid clone version of the character feels like a narrative dead end dressed up as a bold idea. She is part alien now, detached, vaguely predatory, occasionally licking things. It is interesting for about twenty minutes and then it stops going anywhere. The franchise at this point had already established that a woman survives, and Resurrection does nothing to challenge that formula. You never genuinely wonder who makes it out. The secondary crew, including Ron Perlman and Winona Ryder, are fine but underwritten. Ryder in particular gets saddled with a twist that the film treats as a revelation but lands more like a shrug.",
+        "Compared to Alien and Aliens, which remain the gold standard for this genre, Resurrection feels like a film made by people who respected the series but had no new argument to make with it. There are flashes of something genuinely strange and unsettling, especially in the underwater xenomorph sequence, which is legitimately tense and creative. But those moments are surrounded by stretches that drag and choices that confuse. The newborn creature at the end is famously awful, a CGI disaster that undercuts the finale completely. Practical effects built this franchise. That ending is a reminder of what happens when you abandon them. Alien Resurrection is watchable, occasionally fun, and ultimately forgettable."
+      ],
+      "images": [],
+      "verdict": "6/10, a sci-fi horror curiosity with enough energy to keep you watching but not enough conviction to make any of it stick.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/9aRDMlU5Zwpysilm0WCWzU2PCFv.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/zQI8yxl61JTpjCB3MrTbcQBOT82.jpg"
+      }
+    },
+    {
       "id": 1782642610678,
       "slug": "vhsbeyond-review",
       "seoTitle": "V/H/S/Beyond Review (2024) | WretVision",
