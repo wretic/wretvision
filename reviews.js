@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1782817991182,
+      "slug": "alien-3-review",
+      "seoTitle": "Alien 3 Review (1992) | WretVision",
+      "seoDescription": "Alien 3 gets more grief than it deserves, but make sure you're watching the right version.",
+      "category": "movie",
+      "title": "Alien 3",
+      "year": 1992,
+      "director": "David Fincher",
+      "runtime": "115 min",
+      "rating": "R",
+      "genres": [
+        "Sci-Fi",
+        "Horror"
+      ],
+      "score": 6.8,
+      "featured": false,
+      "excerpt": "Alien 3 gets more grief than it deserves, but make sure you're watching the right version.",
+      "body": [
+        "Alien 3 from 1992 had one of the roughest productions in Hollywood history and honestly you can feel it. David Fincher famously walked away and disowned the thing, and the theatrical cut is a mess that earns every piece of criticism thrown at it. But here is the thing: the Assembly Cut, sometimes called the director's cut, is a genuinely different experience. It breathes. The story makes more sense. The characters get room to exist. If you have only seen the theatrical version, you have not really seen Alien 3, and that distinction matters when you are trying to decide whether this film is a failure or something more complicated.",
+        "The prison setting is actually one of the stronger ideas in the Alien franchise. Furlong Abbey, a penal colony full of violent men with a religious streak, gives the film a grimy, claustrophobic texture that works well for the genre. Charles Dance is excellent and criminally underused. Charles S. Dutton brings real weight to Dillon. Weaver is locked in throughout. The characters feel lived in, which is not nothing. What drags the whole thing down is the CGI, and there is no version of this film where that criticism does not stick. The alien footage looks rough and cartoony in a way that kills the tension the atmosphere is working so hard to build. Practical effects would have saved this film.",
+        "Then there is the ending. Ripley going into the furnace, choosing death over letting the Weyland Yutani Corporation get the queen embryo inside her, is genuinely bold filmmaking. It is a real ending. A permanent one. It lands. The tragedy is that Alien Resurrection retroactively softened what should have been the defining close to her arc, which is exactly the kind of franchise meddling that frustrates me. Taken on its own terms though, Alien 3 is a flawed but underrated entry in the sci fi horror genre that rewards patience, especially in its longer cut. If you have bounced off it before, try the Assembly Cut before writing it off completely."
+      ],
+      "images": [],
+      "verdict": "6.8/10, a compromised but genuinely decent sci fi horror film that the right cut and some patience will reward, held back almost entirely by CGI that looked bad in 1992 and looks worse now.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/xh5wI0UoW7DfS1IyLy3d2CgrCEP.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/lU0zVj8KcQVkPczdGGraYGiRC72.jpg"
+      }
+    },
+    {
       "id": 1782736675693,
       "slug": "alien-resurrection-review",
       "seoTitle": "Alien: Resurrection Review (1997) | WretVision",
