@@ -10,6 +10,35 @@
 
 const REVIEWS = [
     {
+      "id": 1782905232682,
+      "slug": "evil-dead-review",
+      "seoTitle": "Evil Dead Review (2013) | WretVision",
+      "seoDescription": "A genuinely nasty remake that earns its gore, even if it marks the start of a franchise pattern that's getting old fast.",
+      "category": "movie",
+      "title": "Evil Dead",
+      "year": 2013,
+      "director": "Fede Álvarez",
+      "runtime": "91 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "A genuinely nasty remake that earns its gore, even if it marks the start of a franchise pattern that's getting old fast.",
+      "body": [
+        "Evil Dead 2013 had no business being this solid. Fede Alvarez stepped in with a straightforward mission: strip the campiness of the original trilogy, ground it in something uglier, and see if the premise could still terrify without Bruce Campbell winking at the camera. Mostly it works. The setup is lean, the cabin feels genuinely oppressive, and the film commits hard to its tone from the opening scene. This is not a film trying to be clever about being a remake. It knows what it is and it gets on with it. The practical effects work is exceptional, probably the best reason to watch it. When things get wet and horrible, and they do, it looks real in a way that CGI gore never quite manages. If you can get your hands on the unrated version, do it. The scene where the possessed Mia slowly rises from the basement and starts singing is one of the creepiest moments in the whole film, and the extended cut lets that dread breathe properly.",
+        "Where the film earns genuine credit is in its restraint during the first act. Alvarez understands pacing. He lets you settle into the group dynamic before the Naturom Demonto starts doing its thing, and the early signs of possession are unsettling precisely because they are quiet. Jane Levy is doing serious work here. She is living inside this role, not performing it, and when the possession takes hold fully she goes places that are genuinely uncomfortable to watch. The makeup and prosthetics department deserve enormous credit. Every wound, every transformation, every horrible thing that happens to a face or a hand looks earned. Compare this to the lazy CGI blood splatter in half the studio horror releases around the same period and the difference is stark. This is what passion behind the camera looks like even inside a franchise reboot.",
+        "That said, a couple of things hold it back from being great rather than just good. Some of the character decisions in the second act strain credibility even by horror standards, and the finale, while visually impressive, reaches a little too hard for iconic status. My bigger issue with the film in retrospect is what it started. This is where the Evil Dead franchise locked into the pattern of always putting a woman at the center as the sole survivor, and since then it has not deviated once. Evil Dead Rise did it, and from what has been announced, Evil Dead Burn and Evil Dead Wrath look set to do the same. I do not have a problem with a female lead, what I have a problem with is when survival stops being a question. The original trilogy worked because Ash felt specific and earned. If you want a comparison point for tone, think Martyrs or The Descent but with a more mainstream polish. Still, I love the original trilogy more, and nothing here changes that."
+      ],
+      "images": [],
+      "verdict": "Evil Dead 2013 is a confident, brutal remake that respects the source material without being enslaved to it, and a 7 out of 10 feels exactly right for a film that gets so much correct but quietly kickstarts a franchise formula that needs breaking.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/1gDV0Lm9y8ufIKzyf0h0GBgb9Zj.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/6RDgtEBzjuF7W25DVziXRABchpX.jpg"
+      }
+    },
+    {
       "id": 1782817991182,
       "slug": "alien-3-review",
       "seoTitle": "Alien 3 Review (1992) | WretVision",
