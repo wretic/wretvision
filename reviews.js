@@ -10,6 +10,32 @@
 
 const REVIEWS = [
     {
+      "id": 1782989059747,
+      "slug": "alien-earth-season-1-review",
+      "seoTitle": "Alien: Earth Season 1 Review (2025) | WretVision",
+      "seoDescription": "Alien: Earth starts with genuine promise and then loses its mind in the back half in ways I still cannot fully explain.",
+      "category": "tv",
+      "title": "Alien: Earth Season 1",
+      "year": 2025,
+      "director": "",
+      "runtime": "?? min",
+      "rating": "TV-MA",
+      "genres": [
+        "Sci-Fi",
+        "Horror"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "Alien: Earth starts with genuine promise and then loses its mind in the back half in ways I still cannot fully explain.",
+      "body": [
+        "Alien: Earth on Hulu had a real shot at being something. The early episodes carry that slow dread the franchise runs on when it is working properly, claustrophobic settings, bodies doing wrong things, the sense that the world is already broken before the xenomorphs even show up. Noah Hawley is a capable showrunner and you can feel that in the first few episodes. The 2025 setting is interesting enough, the cast is committed, and there are moments in the opening stretch that genuinely reminded me of the tension Ridley Scott built in the original. I was in. I was ready. I kept waiting for the show to cash in on that goodwill and do something worthy of the Alien name.",
+        "Then the wheels come off. The show commits, fully and apparently without embarrassment, to a storyline involving children with genius level consciousness being uploaded into synthetic bodies. These synth kids are then at the centre of a power struggle that escalates into something I can only describe as deeply strange. By the finale one of these characters has essentially become a Santa Claus figure who can commune with the alien organism. I watched that sequence twice because I genuinely thought I had missed something. I had not missed anything. That is what the show decided to do. It is the kind of swing that demands respect in theory but this one does not land, it craters. The tone shifts so hard from grounded sci fi horror into something closer to a fever dream YA novel that the whole structure collapses under it.",
+        "Alien: Earth season one joins a long list of franchise extensions that start with a strong premise and make increasingly baffling choices trying to justify a full season runtime. The first three episodes could sit comfortably next to Prometheus or the better stretches of Alien 3 in terms of mood and setup. The back half belongs in a different show entirely, maybe a different genre. The practical creature work is decent when it appears but the story buries it. If season two happens and they course correct, fine, but right now this is a 4/10 series that squandered what it built."
+      ],
+      "images": [],
+      "verdict": "Alien: Earth 2025 is a frustrating watch that starts as one of the more promising entries in the franchise and ends as one of the strangest things currently streaming on Hulu, 4/10."
+    },
+    {
       "id": 1782905232682,
       "slug": "evil-dead-review",
       "seoTitle": "Evil Dead Review (2013) | WretVision",
