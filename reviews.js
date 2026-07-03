@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1783075177806,
+      "slug": "prometheus-review",
+      "seoTitle": "Prometheus Review (2012) | WretVision",
+      "seoDescription": "Prometheus has ambition to burn, but it keeps stepping on its own oxygen hose.",
+      "category": "movie",
+      "title": "Prometheus",
+      "year": 2012,
+      "director": "Ridley Scott",
+      "runtime": "124 min",
+      "rating": "R",
+      "genres": [
+        "Sci-Fi",
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Prometheus has ambition to burn, but it keeps stepping on its own oxygen hose.",
+      "body": [
+        "Ridley Scott returning to the Alien universe in 2012 was always going to be a big deal. Prometheus pitches itself as a prequel and a creation myth rolled into one, asking where the xenomorphs came from and, bigger than that, where WE came from. That is a genuinely bold swing. The film looks stunning, the Engineers are unsettling in a way that feels properly ancient and unknowable, and there are sequences here, particularly the medical pod scene with Noomi Rapace, that are as viscerally effective as anything in the franchise. Scott still knows how to build dread through scale and silence. The production design is extraordinary. You believe this world completely.",
+        "But then the crew opens their mouths. Some of the decision making in this film is genuinely painful to sit through. Scientists removing helmets on an alien world because the air reads clean. People running in straight lines from a rolling object the size of a building. Characters who are supposed to be the best and brightest humanity has to offer acting like they have never watched a horror film in their lives. The plot also keeps gesturing at deep philosophical questions about creation and faith and then never actually committing to any of them. It teases profundity and delivers a setup for sequels instead.",
+        "My bigger gripe is this. The Alien franchise has always had a Ripley problem, and Prometheus does not solve it, it just resets it. Noomi Rapace is fine, genuinely fine, but Shaw is not a character with the weight to carry this mythology. If Scott had been brave enough to build this around someone entirely new, someone without the pressure of being the next Ripley, or better yet had committed to a story where survival is genuinely uncertain regardless of gender or top billing, Prometheus could have been something special. Instead it is a beautiful, frustrating near miss that lands somewhere between inspired and incomplete. Worth watching as a Sci-Fi spectacle and as Alien universe context, comparable to something like Annihilation in its cosmic ambition but nowhere near as disciplined."
+      ],
+      "images": [],
+      "verdict": "7/10, stunning to look at and occasionally terrifying, but Prometheus mistakes a grand setup for a grand story.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/qsYQflQhOuhDpQ0W2aOcwqgDAeI.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/sM42bpH73dmf3kJrE8xr4kztYqR.jpg"
+      }
+    },
+    {
       "id": 1782989059747,
       "slug": "alien-earth-season-1-review",
       "seoTitle": "Alien: Earth Season 1 Review (2025) | WretVision",
