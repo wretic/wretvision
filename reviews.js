@@ -94,8 +94,8 @@ const REVIEWS = [
       "images": [],
       "verdict": "Alien: Earth 2025 is a frustrating watch that starts as one of the more promising entries in the franchise and ends as one of the strangest things currently streaming on Hulu, 4/10.",
       "media": {
-        "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/yueXS3q8BtoWekcHOATFHicLl3e.jpg",
-        "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/yueXS3q8BtoWekcHOATFHicLl3e.jpg"
+        "poster": "https://i.ebayimg.com/images/g/Tk0AAOSw5fBoCP0K/s-l1200.jpg",
+        "backdrop": "https://assets.fxnetworks.com/fx/91d0d0f7-460d-4680-9aed-09d744f7fe0f.jpg?imwidth=1440"
       }
     {
       "id": 1782905232682,
