@@ -92,8 +92,11 @@ const REVIEWS = [
         "Alien: Earth season one joins a long list of franchise extensions that start with a strong premise and make increasingly baffling choices trying to justify a full season runtime. The first three episodes could sit comfortably next to Prometheus or the better stretches of Alien 3 in terms of mood and setup. The back half belongs in a different show entirely, maybe a different genre. The practical creature work is decent when it appears but the story buries it. If season two happens and they course correct, fine, but right now this is a 4/10 series that squandered what it built."
       ],
       "images": [],
-      "verdict": "Alien: Earth 2025 is a frustrating watch that starts as one of the more promising entries in the franchise and ends as one of the strangest things currently streaming on Hulu, 4/10."
-    },
+      "verdict": "Alien: Earth 2025 is a frustrating watch that starts as one of the more promising entries in the franchise and ends as one of the strangest things currently streaming on Hulu, 4/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/yueXS3q8BtoWekcHOATFHicLl3e.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w600_and_h900_face/yueXS3q8BtoWekcHOATFHicLl3e.jpg"
+      }
     {
       "id": 1782905232682,
       "slug": "evil-dead-review",
