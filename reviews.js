@@ -10,6 +10,35 @@
 
 const REVIEWS = [
     {
+      "id": 1783160022144,
+      "slug": "evil-dead-rise-review",
+      "seoTitle": "Evil Dead Rise Review (2023) | WretVision",
+      "seoDescription": "Evil Dead Rise has real teeth in its middle act, but fumbles the ending so badly it almost undoes everything that came before it.",
+      "category": "movie",
+      "title": "Evil Dead Rise",
+      "year": 2023,
+      "director": "Lee Cronin",
+      "runtime": "96 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "Evil Dead Rise has real teeth in its middle act, but fumbles the ending so badly it almost undoes everything that came before it.",
+      "body": [
+        "Evil Dead Rise (2023) does something the franchise hasn't done in a while: it finds a genuinely fresh setting. Ditching the cabin in the woods for a cramped, decaying Los Angeles apartment block was a smart call. Director Lee Cronin squeezes real dread out of those corridors and thin walls. The uncanny valley stuff works brilliantly too. Alyssa Sutherland as the possessed Ellie is legitimately unsettling, moving wrong, speaking wrong, smiling wrong. That is the kind of deadite performance that gets under your skin. The early and middle sections of this film are doing exactly what Evil Dead should do, building pressure in a claustrophobic space, making you feel like there is no way out, no help coming, just concrete and fluorescent light and something that used to be your mum.",
+        "But then the third act arrives and it loses its nerve in the worst possible way, by going too big instead of too safe, which sounds like a contradiction but hear me out. The three deadite kids and their mother merging into some kind of fleshy blob creature felt like a creative swing that just did not land for me. I actually think the scarier, smarter version of that finale is three deadite children and one deadite mother closing in on the girl with the chainsaw, using patience, using tactics, maybe even getting the upper hand. There was a version of this ending where the franchise does something genuinely bold, lets the deadites win, or at least lets it feel like a coin flip. Instead we get a creature that is more spectacle than threat. Comparable to how Evil Dead 2013 chickened out in its own way, Rise swaps one kind of safety for another.",
+        "And look, I have to say it again: this is now another Evil Dead film with a female protagonist who survives. After Ash, after the 2013 reboot, after Rise, and with Evil Dead Burn and Evil Dead Wrath already in the pipeline with what looks like more of the same, it is becoming a formula rather than a choice. I do not have a problem with female leads. I have a problem with knowing the answer before the film even starts. Evil Dead Rise is a decent horror film with a strong first two acts, good practical gore, and one genuinely great central performance. It just fumbles the landing and keeps the franchise locked in a pattern that is starting to feel predictable. If you are looking for a solid 2023 horror watch it scratches the itch, but it could have been so much more."
+      ],
+      "images": [],
+      "verdict": "Evil Dead Rise is a 6.5 out of 10, a film that earns your trust early and spends a chunk of it on a finale that goes for spectacle when it should have gone for dread.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/5ik4ATKmNtmJU6AYD0bLm56BCVM.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/7bWxAsNPv9CXHOhZbJVlj2KxgfP.jpg"
+      }
+    },
+    {
       "id": 1783075177806,
       "slug": "prometheus-review",
       "seoTitle": "Prometheus Review (2012) | WretVision",
