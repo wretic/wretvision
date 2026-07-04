@@ -97,6 +97,7 @@ const REVIEWS = [
         "poster": "https://i.ebayimg.com/images/g/Tk0AAOSw5fBoCP0K/s-l1200.jpg",
         "backdrop": "https://assets.fxnetworks.com/fx/91d0d0f7-460d-4680-9aed-09d744f7fe0f.jpg?imwidth=1440"
       }
+    },     
     {
       "id": 1782905232682,
       "slug": "evil-dead-review",
