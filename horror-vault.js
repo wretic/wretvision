@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "Army of Darkness",
+    "year": 1992,
+    "decade": "1990s",
+    "status": "watched",
+    "note": "",
+    "id": 432
+  },
+  {
     "title": "They Will Kill You",
     "year": 2026,
     "decade": "2020s",

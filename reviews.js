@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1783246696509,
+      "slug": "army-of-darkness-review",
+      "seoTitle": "Army of Darkness Review (1992) | WretVision",
+      "seoDescription": "Ash Williams goes medieval and somehow gets better. Army of Darkness is one of the most confident tonal swings in horror comedy history.",
+      "category": "movie",
+      "title": "Army of Darkness",
+      "year": 1992,
+      "director": "Sam Raimi",
+      "runtime": "81 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Comedy",
+        "Action"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Ash Williams goes medieval and somehow gets better. Army of Darkness is one of the most confident tonal swings in horror comedy history.",
+      "body": [
+        "Sam Raimi took the grubby cabin horror of Evil Dead, kept Bruce Campbell, and then threw everything else out the window. Army of Darkness from 1992 drops Ash Williams into medieval England and just commits fully to the bit. No apologies, no hesitation. What you get is a horror comedy action film that understands exactly what it is and has an absolute blast being it. The slapstick is broad and physical, the one liners are quotable to the point of being cultural shorthand, and Campbell grows into Ash here in a way the first two films only hinted at. He is charismatic and ridiculous and weirdly heroic all at once. The character actually develops across this film, which sounds like a low bar but given how many genre films coast on a static protagonist, it genuinely matters. The medieval setting gives the whole thing room to breathe in a way a cabin never could.",
+        "The practical effects work is fantastic. The skeleton army sequences have this manic handmade energy that no amount of CGI could replicate, and Raimi clearly loves the chaos of it all. There are sequences in this film that feel like a director showing off in the best possible way, like he is daring you to keep up. The humor never undercuts the momentum either, which is a real tightrope to walk in this genre. Comparable films like Braindead or Re-Animator nail that same balance of gory and goofy, but Army of Darkness has a scale those films never attempted. The third act siege is genuinely thrilling. The film earns every bit of its cult status. It is not a horror film in any traditional sense by this point, but it does not need to be. It is something weirder and more interesting than that.",
+        "Now, the ending. This is where things get genuinely fascinating and a little bittersweet. The theatrical mall ending is fine, it wraps things up cleanly, Ash is back where he belongs. But the alternate ending, where he sleeps too long and wakes up to a ruined post apocalyptic world, is so much more interesting. It is bleak and strange and it commits to a consequence in a way the studio version refuses to. It feels like the real ending Raimi wanted. And of course we know the mall ending is the one that stuck, because years later Ash vs Evil Dead picks up from that continuity. The darker ending would have closed the door permanently. The mall ending left it open. I understand the business logic. I still prefer the version that had the nerve to punish him."
+      ],
+      "images": [],
+      "verdict": "Army of Darkness is a 9/10 because it is one of those rare sequels that expands the world, deepens the character, and genuinely surprises you, even if the studio ending played it just a little too safe.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/xsgTuAtR2zSH8Umg3jWZcZjlDpe.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/5RPXs9g0sZ9Woo4pNLxdXdge7tc.jpg"
+      }
+    },
+    {
       "id": 1783160022144,
       "slug": "evil-dead-rise-review",
       "seoTitle": "Evil Dead Rise Review (2023) | WretVision",
