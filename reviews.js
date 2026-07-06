@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1783339654869,
+      "slug": "evil-dead-2-review",
+      "seoTitle": "Evil Dead 2 Review (1987) | WretVision",
+      "seoDescription": "Evil Dead 2 is Sam Raimi losing his mind in the best possible way, and somehow it works better than it has any right to.",
+      "category": "movie",
+      "title": "Evil Dead 2",
+      "year": 1987,
+      "director": "Sam Raimi",
+      "runtime": "84 min",
+      "rating": "NR",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Evil Dead 2 is Sam Raimi losing his mind in the best possible way, and somehow it works better than it has any right to.",
+      "body": [
+        "Here is the thing about Evil Dead 2 from 1987. It is technically a retelling of the first film, not a direct sequel, and that happened because of a copyright dispute over the original that prevented Raimi from just picking up where things left off. So he does something genuinely strange. He compresses the first film into a ten minute recap, reshuffles the setup, and then launches into something far wilder and far funnier than what came before. It should feel like a cheat. It does not. What it feels like is a filmmaker who has been given permission to stop being careful, and the result is one of the most energetic and purely entertaining horror comedies ever made. If you have never seen it and you are coming in expecting straight horror in the vein of the original, adjust your expectations fast because this film has a completely different gear.",
+        "Bruce Campbell is the reason this works as completely as it does. Ash in this film is not just a protagonist, he is a physical comedian doing Looney Tunes level punishment with genuine commitment and real charisma. The scene where his own hand turns against him and he has to fight it across the cabin is the kind of sequence that gets permanently lodged in your brain. Campbell plays it terrified and furious and absurd all at once and never breaks the logic of the world even when the world stops making any sense. The stop motion work in this film also deserves a proper mention because it is genuinely creepy in a way that CGI almost never manages. There is something about the slightly wrong movement of those practical creature effects that sits in your chest. Raimi clearly loved this stuff and it shows in every frame.",
+        "Where Evil Dead 2 sits in the larger franchise context is interesting. It lands in a lineage that includes the original, Army of Darkness, the 2013 remake, Evil Dead Rise, and the upcoming Evil Dead Burn and Evil Dead Wrath. As someone who tracks these things, it is worth noting that the franchise has leaned increasingly formulaic in who survives its installments since Ash exited the picture. Campbell brought something genuinely unpredictable to these films because you believed the character might actually lose. Evil Dead 2 in particular has that quality. The ending earns its chaos. For comparable energy look at Braindead or even early Peter Jackson but Raimi at this point in his career was doing something uniquely his own, gory and goofy and oddly joyful, with craft underneath the splatter."
+      ],
+      "images": [],
+      "verdict": "9/10, Evil Dead 2 is the rare horror comedy that commits fully to both halves and delivers one of the great unhinged performances in the genre thanks to Bruce Campbell at his absolute best.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/4zqCKJVHUolGs6C5AZwAZqLWixW.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/dOvEJK2u0slAGTfhdZOjnNgCQet.jpg"
+      }
+    },
+    {
       "id": 1783246696509,
       "slug": "army-of-darkness-review",
       "seoTitle": "Army of Darkness Review (1992) | WretVision",

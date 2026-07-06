@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "Evil Dead 2",
+    "year": 1987,
+    "decade": "1980s",
+    "status": "watched",
+    "note": "",
+    "id": 433
+  },
+  {
     "title": "Army of Darkness",
     "year": 1992,
     "decade": "1990s",
