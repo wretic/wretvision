@@ -1054,8 +1054,8 @@ const HORROR_VAULT = [
     "title": "Scream VI",
     "year": 2023,
     "decade": "2020s",
-    "status": "watched",
-    "note": "",
+    "status": "skip",
+    "note": "Did not watch, do not plan to",
     "id": 127
   },
   {
@@ -3466,7 +3466,7 @@ const HORROR_VAULT = [
   { "title": "Halloween: Resurrection", "year": 2002, "decade": "2000s", "status": "watched", "note": "", "id": 459 },
   { "title": "Halloween", "year": 2007, "decade": "2000s", "status": "watched", "note": "Rob Zombie", "id": 460 },
   { "title": "Halloween II", "year": 2009, "decade": "2000s", "status": "watched", "note": "Rob Zombie", "id": 461 },
-  { "title": "Ringu 2", "year": 1999, "decade": "1990s", "status": "watched", "note": "", "id": 462 },
+  { "title": "Ringu 2", "year": 1999, "decade": "1990s", "status": "skip", "note": "Did not watch", "id": 462 },
   { "title": "Rings", "year": 2017, "decade": "2010s", "status": "watched", "note": "", "id": 463 },
   { "title": "Hellbound: Hellraiser II", "year": 1988, "decade": "1980s", "status": "watched", "note": "", "id": 464 },
   { "title": "Hellraiser III: Hell on Earth", "year": 1992, "decade": "1990s", "status": "watched", "note": "", "id": 465 },
