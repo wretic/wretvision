@@ -10,6 +10,35 @@
 
 const REVIEWS = [
     {
+      "id": 1783422670896,
+      "slug": "the-evil-dead-review",
+      "seoTitle": "The Evil Dead Review (1981) | WretVision",
+      "seoDescription": "Sam Raimi made The Evil Dead on almost nothing and somehow made something that still hits harder than films with a hundred times the budget.",
+      "category": "movie",
+      "title": "The Evil Dead",
+      "year": 1981,
+      "director": "Sam Raimi",
+      "runtime": "85 min",
+      "rating": "NR",
+      "genres": [
+        "Horror"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "Sam Raimi made The Evil Dead on almost nothing and somehow made something that still hits harder than films with a hundred times the budget.",
+      "body": [
+        "Sam Raimi was twenty one years old, had basically no money, and shot this thing in a Tennessee cabin over a brutally cold production that nearly broke everyone involved. The Evil Dead from 1981 has no business being this effective. It is scrappy, it is cheap, it is proudly rough around the edges, and it absolutely commits to every single insane idea it has. That commitment is everything. You can feel the passion bleeding through every frame, every questionable effect, every creative camera angle Raimi used because he literally could not afford a dolly. The film follows five college students who stumble onto a demonic force via a tape recording in a cabin in the woods, and what follows is one of the most gleefully unhinged horror films ever made on a shoestring. It is not pretty. It was never trying to be.",
+        "What works here is the energy. Raimi's camera never sits still, it crawls through the woods, it rushes at characters, it tilts and spins in ways that feel genuinely threatening. It gave the film a visual identity that punched way above its budget. The practical effects are gooey, gory, and wonderfully tactile in that specific way that bad CGI will never replicate. When the deadites show up they look wrong in the best possible way, all white eyes and twisted grins and prosthetics that were clearly made by people who cared deeply about every gross detail. Bruce Campbell is doing something interesting here too, playing Ash as a guy who is mostly just terrified and overwhelmed rather than a hero, which makes the chaos feel more genuine. He had not yet become the chin swinging icon he would later be in Evil Dead 2 and Army of Darkness, and that rawness actually serves this film well.",
+        "The Evil Dead 1981 is not a perfect film. The pacing in the middle section drags slightly, and some of the acting from the supporting cast tips into stiff territory that goes beyond what the low budget can excuse. But honestly none of that matters much when the whole thing has this much heart behind it. This is the kind of film where you can feel people solving problems on the fly because they had no other option, and the results are often more inventive than anything a studio safety net would have produced. If you love horror and you have not seen where this franchise started, go fix that. It sits comfortably alongside other scrappy genre classics like Night of the Living Dead as proof that vision and guts matter more than money. 8/10, a goofy gory masterclass in low budget passion that still holds up."
+      ],
+      "images": [],
+      "verdict": "The Evil Dead is proof that the right director with zero dollars and total conviction can make something that outlasts almost everything made with a hundred times the budget.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/54C1qdaiSijIU5NeNb4WsPJdNkG.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/onq6lsJLX8ay5iwxEbKX3qJKeO9.jpg"
+      }
+    },
+    {
       "id": 1783339654869,
       "slug": "evil-dead-2-review",
       "seoTitle": "Evil Dead 2 Review (1987) | WretVision",
