@@ -2,163 +2,15 @@
   "_instructions": "Add titles here. Set 'done': true when reviewed. 'score' and 'notes' are optional pre-logs of your gut reaction — if set, the AI will write to that score. This is the ONLY queue file the daily review bot reads (data/queue.json) — do not create or edit a queue.json at the repo root, it is ignored by the script.",
   "movies": [
     {
-      "title": "They Will Kill You",
-      "year": 2026,
-      "director": "Kirill Sokolov",
-      "runtime": "94 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Comedy",
-        "Action"
-      ],
-      "streaming": "HBO MAX",
-      "done": true,
-      "score": 5.5,
-      "notes": "I loved the R-rated parts but I disliked the rest, didn't make sense, felt too bizarre, constant action sure, but it couldn't keep my attention throughout, I felt more like I wanted to grab my phone than look at my monitor."
-    },
-    {
-      "title": "Good Luck, Have Fun, Don't Die",
-      "year": 2025,
-      "director": "Gore Verbinski",
-      "runtime": "134 min",
-      "rating": "R",
-      "genre": [
-        "Action",
-        "Adventure",
-        "Comedy"
-      ],
-      "streaming": "Prime Video",
-      "done": true,
-      "score": 8,
-      "notes": "I loved the twist at the end, everything else yeah maybe in parts a bit convuluted but I enjoyed the wacky stuff of it all, and Sam Rockwell played the role of a lifetime."
-    },
-    {
-      "title": "Alien 3",
-      "year": 1992,
-      "director": "David Fincher",
-      "runtime": "115 min",
-      "rating": "R",
-      "genre": [
-        "Sci-Fi",
-        "Horror"
-      ],
-      "streaming": "",
-      "done": true,
-      "score": 6.8,
-      "notes": "Actually quite decent, depending on which version you see — the director's cut, the Assembly Cut, is the one to watch. It has some updated CGI but the CGI looked awful regardless. This is the real end of Ripley, before she gets brought back in Resurrection — she dies going into the lava at the end. The different setting, the prison, worked for the movie overall, and I liked the characters. The CGI is what holds it back from scoring higher."
-    },
-    {
-      "title": "Alien: Resurrection",
-      "year": 1997,
-      "director": "Jean-Pierre Jeunet",
-      "runtime": "109 min",
-      "rating": "R",
-      "genre": [
-        "Sci-Fi",
-        "Horror",
-        "Action"
-      ],
-      "streaming": "",
-      "done": true,
-      "score": 6,
-      "notes": "This is where they resurrect Ripley, and the whole thing felt weird — she's more like a hybrid now. I like Sigourney Weaver as an actress, no doubt, but I think the franchise could honestly work without her at this point. Same old, same thing. I did like some of the action, but overall it just didn't work for me."
-    },
-    {
-      "title": "Prometheus",
-      "year": 2012,
-      "director": "Ridley Scott",
-      "runtime": "124 min",
-      "rating": "R",
-      "genre": [
-        "Sci-Fi",
-        "Horror"
-      ],
-      "streaming": "",
-      "done": true,
-      "score": 7,
-      "notes": "An origin story, and I like the idea of it, but the execution was kinda meh. If it had leaned into a story not centered on Ripley for once, I think it could've landed even better."
-    },
-    {
-      "title": "The Evil Dead",
-      "year": 1981,
-      "director": "Sam Raimi",
-      "runtime": "85 min",
-      "rating": "NR",
-      "genre": [
-        "Horror"
-      ],
-      "streaming": "",
-      "done": true,
-      "score": 8,
-      "notes": "A really goofy but gory movie that was extremely low budget but it had heart and passion."
-    },
-    {
-      "title": "Evil Dead 2",
-      "year": 1987,
-      "director": "Sam Raimi",
-      "runtime": "84 min",
-      "rating": "NR",
-      "genre": [
-        "Horror",
-        "Comedy"
-      ],
-      "streaming": "",
-      "done": true,
-      "score": 9,
-      "notes": "Way goofier, return of Bruce Campbell, kind of a re-telling of the first one due to a copyright dispute which is kinda bizarre, more funnier, Bruce Campbell is amazing as Ash, loved the creepy stop motion stuff."
-    },
-    {
-      "title": "Army of Darkness",
-      "year": 1992,
-      "director": "Sam Raimi",
-      "runtime": "81 min",
-      "rating": "R",
-      "genre": [
-        "Horror",
-        "Comedy",
-        "Action"
-      ],
-      "streaming": "",
-      "done": true,
-      "score": 9,
-      "notes": "Continues Ash's story but he gets transported to medieval times, funny, new setting, character development. I like the more negative ending when he wakes up but slept too long and the entire world is in ruins, however we know that they went with the mall ending, since years later we get Ash vs Evil Dead the TV series."
-    },
-    {
-      "title": "Evil Dead",
-      "year": 2013,
-      "director": "Fede Álvarez",
-      "runtime": "91 min",
-      "rating": "R",
-      "genre": [
-        "Horror"
-      ],
-      "streaming": "",
-      "done": true,
-      "score": 7,
-      "notes": "I prefer the unrated version since it has certain scenes extended, especially when she pops her head up from the basement and starts singing, very creepy. Unfortunately this is also the start of all main women becoming the protagonists, which I think the Evil Dead franchise should move back to a male one surviving once again. Overall I think it's a solid more grounded take of the movies and its a remake/reboot of the franchise, with better makeup and all. Still, I love the original trilogy more."
-    },
-    {
-      "title": "Evil Dead Rise",
-      "year": 2023,
-      "director": "Lee Cronin",
-      "runtime": "96 min",
-      "rating": "R",
-      "genre": [
-        "Horror"
-      ],
-      "streaming": "",
-      "done": true,
-      "score": 6.5,
-      "notes": "Was a nice uncanny valley type of movie, I loved the setting being in an apartment, I loved the possession and the way the main lady was acting as a deadite, but it lost me towards the ending where the kids and their mom become one weird monster-esque thing. I love creative stuff but even for the Evil Dead franchise I thought it was too much, if they stuck with them being 3 deadites surrounding the girl with the chainsaw, it would not only be more spookier but they'd also have a chance of killing her and getting away with it or turning her, I would've loved a twist like that but apparently Evil Dead Rise plays it safe, which I find unfortunate, I like twists. And again just like Evil Dead 2013, it has a female protagonist."
-    },
-    {
       "title": "Saw",
       "year": 2004,
       "director": "James Wan",
       "runtime": "103 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "",
       "done": false,
       "score": 9,
@@ -170,7 +22,10 @@
       "director": "Darren Lynn Bousman",
       "runtime": "93 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "",
       "done": false,
       "score": 8,
@@ -182,7 +37,10 @@
       "director": "Darren Lynn Bousman",
       "runtime": "108 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -194,7 +52,10 @@
       "director": "Darren Lynn Bousman",
       "runtime": "93 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -206,7 +67,10 @@
       "director": "David Hackl",
       "runtime": "92 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -218,7 +82,10 @@
       "director": "Kevin Greutert",
       "runtime": "90 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -230,7 +97,10 @@
       "director": "Kevin Greutert",
       "runtime": "90 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -242,7 +112,10 @@
       "director": "Michael Spierig, Peter Spierig",
       "runtime": "92 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "",
       "done": false,
       "score": 6.5,
@@ -254,7 +127,10 @@
       "director": "Darren Lynn Bousman",
       "runtime": "93 min",
       "rating": "R",
-      "genre": ["Horror", "Thriller"],
+      "genre": [
+        "Horror",
+        "Thriller"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -266,7 +142,9 @@
       "director": "Ti West",
       "runtime": "105 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 8,
@@ -278,7 +156,9 @@
       "director": "Ti West",
       "runtime": "102 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -290,7 +170,9 @@
       "director": "Jon Harris",
       "runtime": "94 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -302,7 +184,10 @@
       "director": "Matthijs van Heijningen Jr.",
       "runtime": "103 min",
       "rating": "R",
-      "genre": ["Horror", "Sci-Fi"],
+      "genre": [
+        "Horror",
+        "Sci-Fi"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -314,7 +199,9 @@
       "director": "Various",
       "runtime": "116 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -326,7 +213,9 @@
       "director": "Various",
       "runtime": "96 min",
       "rating": "NR",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -338,7 +227,9 @@
       "director": "Various",
       "runtime": "81 min",
       "rating": "NR",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6.5,
@@ -350,7 +241,9 @@
       "director": "Various",
       "runtime": "100 min",
       "rating": "NR",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6.8,
@@ -362,7 +255,9 @@
       "director": "Various",
       "runtime": "109 min",
       "rating": "NR",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -374,7 +269,9 @@
       "director": "Various",
       "runtime": "110 min",
       "rating": "NR",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -386,7 +283,9 @@
       "director": "James Wan",
       "runtime": "103 min",
       "rating": "PG-13",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 8,
@@ -398,7 +297,9 @@
       "director": "James Wan",
       "runtime": "106 min",
       "rating": "PG-13",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7.5,
@@ -410,7 +311,9 @@
       "director": "Leigh Whannell",
       "runtime": "97 min",
       "rating": "PG-13",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -422,7 +325,9 @@
       "director": "Adam Robitel",
       "runtime": "103 min",
       "rating": "PG-13",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6.5,
@@ -434,7 +339,9 @@
       "director": "Patrick Wilson",
       "runtime": "107 min",
       "rating": "PG-13",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -446,7 +353,9 @@
       "director": "James Wan",
       "runtime": "112 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 8,
@@ -458,7 +367,9 @@
       "director": "John R. Leonetti",
       "runtime": "99 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -470,7 +381,9 @@
       "director": "James Wan",
       "runtime": "134 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -482,7 +395,9 @@
       "director": "David F. Sandberg",
       "runtime": "109 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -494,7 +409,9 @@
       "director": "Corin Hardy",
       "runtime": "96 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -506,7 +423,9 @@
       "director": "Michael Chaves",
       "runtime": "93 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -518,7 +437,9 @@
       "director": "Gary Dauberman",
       "runtime": "106 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -530,7 +451,9 @@
       "director": "Michael Chaves",
       "runtime": "112 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6.8,
@@ -542,7 +465,9 @@
       "director": "Michael Chaves",
       "runtime": "110 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 3,
@@ -554,7 +479,9 @@
       "director": "Wes Craven",
       "runtime": "111 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 9,
@@ -566,7 +493,9 @@
       "director": "Wes Craven",
       "runtime": "120 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -578,7 +507,9 @@
       "director": "Wes Craven",
       "runtime": "116 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -590,7 +521,9 @@
       "director": "Wes Craven",
       "runtime": "111 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -602,7 +535,9 @@
       "director": "Matt Bettinelli-Olpin, Tyler Gillett",
       "runtime": "114 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7.2,
@@ -614,7 +549,9 @@
       "director": "Tom Holland",
       "runtime": "87 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 9,
@@ -626,7 +563,9 @@
       "director": "John Lafia",
       "runtime": "84 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6.5,
@@ -638,7 +577,9 @@
       "director": "Jack Bender",
       "runtime": "90 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -650,7 +591,9 @@
       "director": "Ronny Yu",
       "runtime": "89 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -662,7 +605,10 @@
       "director": "Don Mancini",
       "runtime": "87 min",
       "rating": "R",
-      "genre": ["Horror", "Comedy"],
+      "genre": [
+        "Horror",
+        "Comedy"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -674,7 +620,9 @@
       "director": "Don Mancini",
       "runtime": "97 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -686,7 +634,9 @@
       "director": "Don Mancini",
       "runtime": "91 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -698,7 +648,9 @@
       "director": "Lars Klevberg",
       "runtime": "90 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -710,7 +662,9 @@
       "director": "Hideo Nakata",
       "runtime": "96 min",
       "rating": "NR",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -722,7 +676,9 @@
       "director": "Gore Verbinski",
       "runtime": "115 min",
       "rating": "PG-13",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7.5,
@@ -734,7 +690,9 @@
       "director": "Hideo Nakata",
       "runtime": "110 min",
       "rating": "PG-13",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6.5,
@@ -746,7 +704,9 @@
       "director": "F. Javier Gutiérrez",
       "runtime": "102 min",
       "rating": "PG-13",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -757,7 +717,10 @@
       "year": 2021,
       "season": 1,
       "rating": "TV-MA",
-      "genre": ["Horror", "Comedy"],
+      "genre": [
+        "Horror",
+        "Comedy"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -769,7 +732,9 @@
       "director": "John Carpenter",
       "runtime": "91 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 8.5,
@@ -781,7 +746,9 @@
       "director": "Rick Rosenthal",
       "runtime": "92 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -793,7 +760,9 @@
       "director": "Tommy Lee Wallace",
       "runtime": "98 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -805,7 +774,9 @@
       "director": "Dwight H. Little",
       "runtime": "88 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -817,7 +788,9 @@
       "director": "Dominique Othenin-Girard",
       "runtime": "96 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -829,7 +802,9 @@
       "director": "Joe Chappelle",
       "runtime": "88 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -841,7 +816,9 @@
       "director": "Steve Miner",
       "runtime": "86 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -853,7 +830,9 @@
       "director": "Rick Rosenthal",
       "runtime": "94 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -865,7 +844,9 @@
       "director": "Rob Zombie",
       "runtime": "109 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -877,7 +858,9 @@
       "director": "Rob Zombie",
       "runtime": "105 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6.5,
@@ -889,7 +872,9 @@
       "director": "David Gordon Green",
       "runtime": "106 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -901,7 +886,9 @@
       "director": "David Gordon Green",
       "runtime": "105 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -913,7 +900,9 @@
       "director": "David Gordon Green",
       "runtime": "111 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -925,7 +914,9 @@
       "director": "Sean S. Cunningham",
       "runtime": "95 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 9,
@@ -937,7 +928,9 @@
       "director": "Steve Miner",
       "runtime": "87 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 8,
@@ -949,7 +942,9 @@
       "director": "Steve Miner",
       "runtime": "95 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -961,7 +956,9 @@
       "director": "Joseph Zito",
       "runtime": "91 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6.5,
@@ -973,7 +970,9 @@
       "director": "Danny Steinmann",
       "runtime": "92 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -985,7 +984,9 @@
       "director": "Tom McLoughlin",
       "runtime": "86 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -997,7 +998,9 @@
       "director": "John Carl Buechler",
       "runtime": "88 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -1009,7 +1012,9 @@
       "director": "Rob Hedden",
       "runtime": "100 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -1021,7 +1026,9 @@
       "director": "Adam Marcus",
       "runtime": "88 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -1033,7 +1040,10 @@
       "director": "James Isaac",
       "runtime": "91 min",
       "rating": "R",
-      "genre": ["Horror", "Sci-Fi"],
+      "genre": [
+        "Horror",
+        "Sci-Fi"
+      ],
       "streaming": "",
       "done": false,
       "score": 6.5,
@@ -1045,7 +1055,9 @@
       "director": "Ronny Yu",
       "runtime": "97 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6.5,
@@ -1057,7 +1069,9 @@
       "director": "Marcus Nispel",
       "runtime": "97 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -1069,7 +1083,9 @@
       "director": "Wes Craven",
       "runtime": "91 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 9,
@@ -1081,7 +1097,9 @@
       "director": "Jack Sholder",
       "runtime": "87 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -1093,7 +1111,9 @@
       "director": "Chuck Russell",
       "runtime": "96 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 8,
@@ -1105,7 +1125,9 @@
       "director": "Renny Harlin",
       "runtime": "93 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -1117,7 +1139,9 @@
       "director": "Stephen Hopkins",
       "runtime": "89 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -1129,7 +1153,9 @@
       "director": "Rachel Talalay",
       "runtime": "89 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -1141,7 +1167,9 @@
       "director": "Clive Barker",
       "runtime": "94 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 9,
@@ -1153,7 +1181,9 @@
       "director": "Tony Randel",
       "runtime": "97 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 7,
@@ -1165,7 +1195,9 @@
       "director": "Anthony Hickox",
       "runtime": "93 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 5,
@@ -1177,7 +1209,9 @@
       "director": "Kevin Yagher",
       "runtime": "85 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -1189,7 +1223,9 @@
       "director": "Scott Derrickson",
       "runtime": "99 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 6,
@@ -1201,7 +1237,9 @@
       "director": "Rick Bota",
       "runtime": "89 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -1213,7 +1251,9 @@
       "director": "Rick Bota",
       "runtime": "88 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -1225,7 +1265,9 @@
       "director": "Rick Bota",
       "runtime": "95 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -1237,7 +1279,9 @@
       "director": "Víctor García",
       "runtime": "75 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 2,
@@ -1249,7 +1293,9 @@
       "director": "Gary J. Tunnicliffe",
       "runtime": "81 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "",
       "done": false,
       "score": 4,
@@ -1261,7 +1307,9 @@
       "director": "David Bruckner",
       "runtime": "121 min",
       "rating": "R",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "Hulu",
       "done": false,
       "score": 6,
@@ -1274,7 +1322,9 @@
       "year": 2018,
       "season": 1,
       "rating": "TV-MA",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "Netflix",
       "done": false,
       "score": 9,
@@ -1285,7 +1335,9 @@
       "year": 2020,
       "season": 1,
       "rating": "TV-MA",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "Netflix",
       "done": false,
       "score": 6.5,
@@ -1296,25 +1348,13 @@
       "year": 2023,
       "season": 1,
       "rating": "TV-MA",
-      "genre": ["Horror"],
+      "genre": [
+        "Horror"
+      ],
       "streaming": "Netflix",
       "done": false,
       "score": 7,
       "notes": "Slow start — the beginning was meh — but the story builds and gets better as it progresses. Never reaches Hill House in terms of execution but it finds its footing and delivers enough to be worth it."
-    },
-    {
-      "title": "Alien: Earth",
-      "year": 2025,
-      "season": 1,
-      "rating": "TV-MA",
-      "genre": [
-        "Sci-Fi",
-        "Horror"
-      ],
-      "streaming": "Hulu",
-      "done": true,
-      "score": 4,
-      "notes": "Started out quite okay, could've gone in a lot of directions, but then it commits to this whole child-genius-consciousness-uploaded-into-synthetic-bodies angle, fighting over sick kids turned into extremely powerful synths. By the end one of them is basically a Santa figure who can talk to the alien — one of the weirdest things I've ever seen on screen. Season one, 4/10."
     }
   ],
   "horror_vault": [],
