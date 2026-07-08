@@ -56,6 +56,26 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://wretvision.com/review.html?slug=the-haunting-of-hill-house-season-1-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=the-evil-dead-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=evil-dead-2-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=army-of-darkness-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wretvision.com/review.html?slug=evil-dead-rise-review</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
