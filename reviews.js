@@ -32,6 +32,10 @@ const REVIEWS = [
         "If I am being honest the finale softens what the show had been building toward, and part of me wanted it to go darker and not blink. It does not fully chicken out but you can feel it pulling back slightly from the edge it spent nine episodes walking toward. That is the one thing stopping this from being a 10. Comparable to something like The Haunting of Bly Manor which followed it, Hill House is the stronger of the two by some distance. If you are a horror fan and you have not watched this on Netflix, that is genuinely something you need to fix."
       ],
       "images": [],
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/nWPZb800NCGiDPNGsKCfY0w44Z2.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/dQF17lG4OZ3pC4QD9iNjaMS96gO.jpg"
+      },
       "verdict": "9/10, one of the finest horror seasons ever made and proof that dread, patience, and actual character work will always outrun jump scares, though the jump scares here are pretty great too."
     },
     {
