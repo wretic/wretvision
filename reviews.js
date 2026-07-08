@@ -10,6 +10,31 @@
 
 const REVIEWS = [
     {
+      "id": 1783506107888,
+      "slug": "the-haunting-of-hill-house-season-1-review",
+      "seoTitle": "The Haunting of Hill House Season 1 Review (2018) | WretVision",
+      "seoDescription": "The Haunting of Hill House is the best haunted house story put to screen, and it earns that without a single cheap trick.",
+      "category": "tv",
+      "title": "The Haunting of Hill House Season 1",
+      "year": 2018,
+      "director": "",
+      "runtime": "?? min",
+      "rating": "TV-MA",
+      "genres": [
+        "Horror"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "The Haunting of Hill House is the best haunted house story put to screen, and it earns that without a single cheap trick.",
+      "body": [
+        "Mike Flanagan took Shirley Jackson's novel, kept the bones, and built something entirely his own around them. The Haunting of Hill House Season 1 on Netflix is not interested in being a conventional ghost story. It is a family trauma drama that uses horror as its language, and it speaks that language fluently. The structure is clever without being showy, bouncing between the Crain children as adults and the summer they spent inside Hill House as kids, and crucially it never loses you in the crosscutting. You feel the weight of that house accumulating across every episode, the way a place can mark people permanently without them even understanding why.",
+        "The scares are genuinely earned and that matters more than anything else here. The coffin scene where the camera slowly pans and the girl is just there, suddenly, no warning, no sting, just present, it got me. The ghost with the cane floating and striking the floor hit harder than most things I have seen in mainstream horror in years. The girl in the car is wrong in the best possible way. Flanagan buries figures in the background of shots throughout and rewards rewatches. The performances across the whole cast are exceptional, both the adult and child versions of the Crains feel lived in and connected. Victoria Pedretti and Oliver Jackson-Cohen in particular are doing serious work.",
+        "If I am being honest the finale softens what the show had been building toward, and part of me wanted it to go darker and not blink. It does not fully chicken out but you can feel it pulling back slightly from the edge it spent nine episodes walking toward. That is the one thing stopping this from being a 10. Comparable to something like The Haunting of Bly Manor which followed it, Hill House is the stronger of the two by some distance. If you are a horror fan and you have not watched this on Netflix, that is genuinely something you need to fix."
+      ],
+      "images": [],
+      "verdict": "9/10, one of the finest horror seasons ever made and proof that dread, patience, and actual character work will always outrun jump scares, though the jump scares here are pretty great too."
+    },
+    {
       "id": 1783422670896,
       "slug": "the-evil-dead-review",
       "seoTitle": "The Evil Dead Review (1981) | WretVision",
