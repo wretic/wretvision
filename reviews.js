@@ -10,6 +10,31 @@
 
 const REVIEWS = [
     {
+      "id": 1783594668739,
+      "slug": "the-haunting-of-bly-manor-season-1-review",
+      "seoTitle": "The Haunting of Bly Manor Season 1 Review (2020) | WretVision",
+      "seoDescription": "Bly Manor has real moments of beauty, but it spends too long reminding you it's not Hill House.",
+      "category": "tv",
+      "title": "The Haunting of Bly Manor Season 1",
+      "year": 2020,
+      "director": "",
+      "runtime": "?? min",
+      "rating": "TV-MA",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "Bly Manor has real moments of beauty, but it spends too long reminding you it's not Hill House.",
+      "body": [
+        "After The Haunting of Hill House, Mike Flanagan had earned serious goodwill. That show was layered, emotionally devastating, and atmospheric in a way modern horror television rarely manages. So when Bly Manor landed on Netflix in 2020, adapting Henry James's The Turn of the Screw, the expectations were enormous and honestly a bit unfair. But here is the thing: Flanagan and his team did not exactly push back against those expectations either. Bly Manor leans hard into the same emotional horror playbook, the same slow grief, the same family trauma dressed up in ghost clothes, and without the tightness that made Hill House feel earned. You are watching a director repeat himself, and you can feel it. Not catastrophically, but enough that it sits in the back of your mind through almost every episode.",
+        "What genuinely works is worth naming. Victoria Pedretti is quietly magnetic as Dani, and her performance keeps you tethered when the pacing starts to drag. And it does drag, significantly in the middle episodes, where the show disappears into backstory and lore that feels more obligatory than revelatory. The ghost design is genuinely unsettling at times, faces blurred and wrong in ways that stick with you. Episode five, the one that breaks format entirely, is the standout of the season and probably the most purely cinematic piece of television Flanagan produced this whole run. But one great episode surrounded by decent to middling ones is not enough. The atmosphere never fully congeals the way it should. Too many moments that should land as dread land as sentimentality instead.",
+        "Bly Manor is not a bad show. It is a watchable, occasionally moving, well acted ghost story streaming on Netflix that clearly had craft and care behind it. But compared to Hill House, and you cannot stop comparing them, it feels like a step sideways into softer, safer ground. The romance at the centre of the story is genuinely affecting but it comes at the cost of the horror, which increasingly feels like furniture rather than the point. If you came to this cold, no Hill House baggage, you would probably rate it higher. Fans of slow burn gothic drama in the vein of something like Rebecca or The Others will find plenty to appreciate. But for anyone who expected Flanagan to raise the stakes rather than redistribute them, Bly Manor will leave a mild but persistent sense of disappointment."
+      ],
+      "images": [],
+      "verdict": "6.5/10, gorgeous in places, sincere throughout, but Bly Manor coasts on the goodwill of what came before it rather than earning its own."
+    },
+    {
       "id": 1783506107888,
       "slug": "the-haunting-of-hill-house-season-1-review",
       "seoTitle": "The Haunting of Hill House Season 1 Review (2018) | WretVision",
