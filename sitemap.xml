@@ -56,6 +56,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://wretvision.com/review.html?slug=halloween-ii-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=the-haunting-of-bly-manor-season-1-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wretvision.com/review.html?slug=the-haunting-of-hill-house-season-1-review</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
