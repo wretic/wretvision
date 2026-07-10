@@ -10,6 +10,35 @@
 
 const REVIEWS = [
     {
+      "id": 1783681077083,
+      "slug": "halloween-ii-review",
+      "seoTitle": "Halloween II Review (1981) | WretVision",
+      "seoDescription": "Halloween II (1981) picks up right where Michael Myers left you breathless, and that's both its strength and its ceiling.",
+      "category": "movie",
+      "title": "Halloween II",
+      "year": 1981,
+      "director": "Rick Rosenthal",
+      "runtime": "92 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Halloween II (1981) picks up right where Michael Myers left you breathless, and that's both its strength and its ceiling.",
+      "body": [
+        "Halloween II 1981 doesn't waste a single frame pretending time has passed. The film opens literally seconds after the original ends, Laurie bleeding, Michael somewhere in the dark, Loomis still firing into nothing. That commitment to continuity is smart. Rick Rosenthal understood that the audience didn't need reintroduction, they needed escalation. The move to Haddonfield Memorial Hospital is the right call too. Empty corridors, skeleton night staff, flickering lights. It's a different kind of trap than the suburban streets of the first film, but it functions just as well as a space where dread can breathe and build. John Carpenter and Debra Hill wrote the script and you can feel that connective tissue throughout. The pacing is tight early on, maybe not as surgical as Carpenter's direction in the original, but efficient enough that you're never checking the clock.",
+        "Where it slips is in the supporting cast. The hospital staff exist almost entirely to die, and you feel that. There's a conveyor belt quality to the kills that the first film never had because Carpenter made you spend time with people before Myers reached them. Here the body count ticks up faster but hits softer. Jamie Lee Curtis spends a significant stretch of the film sedated or limping through corridors, which limits what she can do, and she was the emotional engine of the original. Donald Pleasence as Loomis is reliably intense but the script leans on his obsession without adding much new to it. The revelation about Laurie's connection to Michael feels bolted on rather than earned, the kind of twist that sounds good in a pitch room but creates more questions than it answers, and honestly it's a thread the franchise would pull on in ways that diluted the original's power.",
+        "Still, Halloween II 1981 does enough. The hospital setting generates genuine atmosphere and a few of the kills have real craft behind them, practical effects work that holds up. The score, again Carpenter and Alan Howarth, keeps that signature dread humming underneath everything. As slasher sequels go, especially from that early 1980s horror wave alongside films like Friday the 13th Part 2, this one at least respects where it came from. It's not trying to reinvent anything, it's extending a nightmare, and on those terms it earns its place. Not every sequel needs to justify its existence with bold reinvention. Sometimes solid continuation is enough."
+      ],
+      "images": [],
+      "verdict": "7/10, Halloween II 1981 is the rare horror sequel that knows its lane, stays in it, and delivers enough to satisfy without ever threatening to surpass what came before.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/3nX5HHGgOKaVMxXwMLT9DHO1Ne6.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/lDXQNRmQKzJGdEJSDxWrjIZb7gB.jpg"
+      }
+    },
+    {
       "id": 1783594668739,
       "slug": "the-haunting-of-bly-manor-season-1-review",
       "seoTitle": "The Haunting of Bly Manor Season 1 Review (2020) | WretVision",
