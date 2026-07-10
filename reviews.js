@@ -61,7 +61,11 @@ const REVIEWS = [
         "Bly Manor is not a bad show. It is a watchable, occasionally moving, well acted ghost story streaming on Netflix that clearly had craft and care behind it. But compared to Hill House, and you cannot stop comparing them, it feels like a step sideways into softer, safer ground. The romance at the centre of the story is genuinely affecting but it comes at the cost of the horror, which increasingly feels like furniture rather than the point. If you came to this cold, no Hill House baggage, you would probably rate it higher. Fans of slow burn gothic drama in the vein of something like Rebecca or The Others will find plenty to appreciate. But for anyone who expected Flanagan to raise the stakes rather than redistribute them, Bly Manor will leave a mild but persistent sense of disappointment."
       ],
       "images": [],
-      "verdict": "6.5/10, gorgeous in places, sincere throughout, but Bly Manor coasts on the goodwill of what came before it rather than earning its own."
+      "verdict": "6.5/10, gorgeous in places, sincere throughout, but Bly Manor coasts on the goodwill of what came before it rather than earning its own.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/vIXQ8UymmQ7zJEPrKJP3s3fSbhR.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/iDYiSNqZlPNvYA4qL6gUs4Okkrh.jpg"
+      }
     },
     {
       "id": 1783506107888,
