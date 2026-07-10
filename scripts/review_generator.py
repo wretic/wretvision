@@ -312,7 +312,7 @@ def build_review_entry(category, item, parsed):
             if media:
                 entry["media"] = media
     else:
-        media = fetch_tmdb_media(title, year)
+        media = fetch_tmdb_media(title, year, is_tv=(CATEGORY_MAP.get(category) == "tv"))
         if media:
             entry["media"] = media
     return entry
@@ -394,21 +394,24 @@ def fetch_steam_media(steam_id):
         print(f"Steam fetch failed: {e}")
         return None
 
-def fetch_tmdb_media(title, year):
+def fetch_tmdb_media(title, year, is_tv=False):
     """Fetch poster + backdrop from TMDB. Returns media dict or None."""
     api_key = "901e304e38b7fb43f193ee28baf95720"
     try:
         query = urllib.parse.quote(str(title))
-        url   = f"https://api.themoviedb.org/3/search/movie?api_key={api_key}&query={query}&year={year}&language=en-US"
+        if is_tv:
+            url = f"https://api.themoviedb.org/3/search/tv?api_key={api_key}&query={query}&first_air_date_year={year}&language=en-US"
+        else:
+            url = f"https://api.themoviedb.org/3/search/movie?api_key={api_key}&query={query}&year={year}&language=en-US"
         with urllib.request.urlopen(url, timeout=10) as r:
             data = json.loads(r.read().decode())
         results = data.get("results", [])
         if not results:
             print(f"TMDB: no results for '{title}' ({year})")
             return None
-        movie    = results[0]
-        poster   = movie.get("poster_path")
-        backdrop = movie.get("backdrop_path")
+        result   = results[0]
+        poster   = result.get("poster_path")
+        backdrop = result.get("backdrop_path")
         if not poster and not backdrop:
             return None
         media = {
