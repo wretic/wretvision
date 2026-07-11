@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1783762827135,
+      "slug": "saw-3d-the-final-chapter-review",
+      "seoTitle": "Saw 3D: The Final Chapter Review (2010) | WretVision",
+      "seoDescription": "Saw 3D promised a definitive ending and delivered a film that doesn't know what it wants to be.",
+      "category": "movie",
+      "title": "Saw 3D: The Final Chapter",
+      "year": 2010,
+      "director": "Kevin Greutert",
+      "runtime": "90 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Saw 3D promised a definitive ending and delivered a film that doesn't know what it wants to be.",
+      "body": [
+        "Seven films in and Saw 3D: The Final Chapter had one job. Wrap it up. Give the fans a finale that meant something. Instead what you get is a film that feels like it was assembled from a checklist: bring back a legacy character, shoot it in 3D, call it the last one, and hope the goodwill of six previous installments carries you over the finish line. It does not. Kevin Greutert directs with competence but no real conviction, and the 3D gimmick is exactly that, a gimmick, with gore flying at the lens in ways that feel more carnival than horror. This is a franchise that genuinely unnerved people in 2004 and by 2010 it had calcified into pure formula.",
+        "The return of Dr. Lawrence Gordon, played again by Cary Elwes, should have been a gut punch. It is not. His arc resolves in a way that raises more questions than it answers, and depending on how generously you read what follows in later entries, it barely registers as canon anyway. The traps here are elaborate but cold. There is no dread, no investment in who ends up in them. The franchise formula had locked in so hard by this point that you are just watching mechanics rather than tension. The script treats its characters as props, which was always a Saw risk, but earlier films at least made you feel something before the blood.",
+        "Saw 3D: The Final Chapter sits in that frustrating middle ground where it is not broken enough to be entertainingly bad and not good enough to satisfy. Fans of the series will find moments, the callbacks land if you are emotionally invested, and the practical effects work is still doing its job in places. But as a finale to one of horror's most commercially dominant franchises, this is thin. Compare it to something like the closing chapter of the original Scream trilogy and you feel the gap immediately. Mediocre is the honest word. It exists, it moves, and then it ends without leaving much behind."
+      ],
+      "images": [],
+      "verdict": "5/10, a finale in name only, Saw 3D had the pieces for a satisfying close and fumbled almost all of them.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/qHCZ6LjtmqWDfXXN28TlIC9OppK.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/qXTSZkk8mQHnZjuRjW9fc2Ax5vj.jpg"
+      }
+    },
+    {
       "id": 1783681077083,
       "slug": "halloween-ii-review",
       "seoTitle": "Halloween II Review (1981) | WretVision",
