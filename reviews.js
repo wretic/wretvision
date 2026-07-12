@@ -10,6 +10,35 @@
 
 const REVIEWS = [
     {
+      "id": 1783850002125,
+      "slug": "hellraiser-review",
+      "seoTitle": "Hellraiser Review (1987) | WretVision",
+      "seoDescription": "Hellraiser doesn't just show you Hell. It makes you feel like you've been there.",
+      "category": "movie",
+      "title": "Hellraiser",
+      "year": 1987,
+      "director": "Clive Barker",
+      "runtime": "94 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Hellraiser doesn't just show you Hell. It makes you feel like you've been there.",
+      "body": [
+        "Clive Barker adapted his own novella The Hellbound Heart in 1987 and in doing so made one of the most genuinely distinctive horror films ever committed to celluloid. There is nothing else that looks like this, sounds like this, or feels like this. Where most horror of the era was slashers and teenagers, Barker was building a mythology around desire, flesh, and consequence. The Cenobites arrive and you believe in them completely, not because of exposition but because of what they represent. These aren't monsters in the traditional sense. They're emissaries of a dimension where pleasure and pain are the same thing, and the film never lets you forget it.",
+        "The practical effects work here is extraordinary and it holds up in a way that CGI from the same era absolutely does not. Frank's resurrection, that slow, grotesque rebuild of a body from nothing, is one of the great practical sequences in horror history. It's disgusting in the best possible way. You can feel the budget constraints throughout the film but Barker uses them intelligently, keeping the horror focused and intimate rather than sprawling. The acting is uneven in places but Andrew Robinson as Larry and Clare Higgins as Julia do genuinely unsettling work, especially Higgins who plays seduction and cold calculation with real commitment.",
+        "The ending lands exactly where it needs to. Hellraiser 1987 isn't interested in easy resolutions and it earns that refusal. Pinhead has become a cultural icon over decades of diminishing sequels but go back to this original and remember how strange and specific and terrifying the character actually was before franchise logic softened everything. Comparable to early Cronenberg in its body horror ambitions and to Suspiria in its commitment to atmosphere over explanation. This is horror that actually means something, that uses the genre to say something real about obsession and the price of chasing sensation past every reasonable limit."
+      ],
+      "images": [],
+      "verdict": "9/10, one of the most unique horror films ever made, grotesque and visionary in equal measure, and proof that genuine imagination hits harder than any jump scare.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/3Z0oPHyLnk3Vx6ZMC1MiVwIrKhO.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/jInJNDIyzlYBV79nx8Qb5s2xjfM.jpg"
+      }
+    },
+    {
       "id": 1783762827135,
       "slug": "saw-3d-the-final-chapter-review",
       "seoTitle": "Saw 3D: The Final Chapter Review (2010) | WretVision",
