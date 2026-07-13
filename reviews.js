@@ -10,6 +10,35 @@
 
 const REVIEWS = [
     {
+      "id": 1783941313636,
+      "slug": "the-fall-of-the-house-of-usher-season-1-review",
+      "seoTitle": "The Fall of the House of Usher Season 1 Review (2023) | WretVision",
+      "seoDescription": "Usher takes its sweet time getting started, but stick with it and Flanagan delivers something genuinely worth finishing.",
+      "category": "tv",
+      "title": "The Fall of the House of Usher Season 1",
+      "year": 2023,
+      "director": "",
+      "runtime": "?? min",
+      "rating": "TV-MA",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Usher takes its sweet time getting started, but stick with it and Flanagan delivers something genuinely worth finishing.",
+      "body": [
+        "Mike Flanagan's The Fall of the House of Usher, landing on Netflix in 2023, is an ambitious gothic horror miniseries that adapts Poe's work into a sprawling family saga about wealth, legacy, and consequence. If you came in expecting the immediate dread of The Haunting of Hill House, you're going to spend the first two or three episodes wondering what everyone's been raving about. The opening is genuinely slow. The structural setup, all flashbacks and courtroom framing, keeps you at arm's length when the show should be pulling you in. It's a slow burn that occasionally just feels like slow. Characters are being positioned like chess pieces and for a while you can see the strings.",
+        "But here's the thing. Once it commits to picking off the Usher children one by one, it finds a real pulse. Each episode leaning into a different sibling's downfall gives the season a rhythm that eventually starts to click. The performances help enormously. Bruce Greenwood is doing serious work as Roderick, carrying grief and guilt with real weight. Carla Gugino is magnetic every single scene she's in. The kills are inventive, some genuinely unsettling, and Flanagan keeps the atmosphere thick enough that when the horror lands it actually lands. The Verna scenes carry a quiet menace that the early episodes badly needed from the start.",
+        "It never quite reaches the emotional gut punch of Hill House or Bly Manor. The middle episodes vary in quality and some of the CGI work undercuts moments that should have hit harder with practical choices. The ending is satisfying though, earned in a way that feels true to the Poe spirit without being slavishly faithful to any single source text. For fans of prestige horror streaming on Netflix, this sits comfortably in the worthwhile column. It's not Flanagan at his best but it's still Flanagan, and that counts for something."
+      ],
+      "images": [],
+      "verdict": "7/10, a slow start that tests your patience before delivering enough dread and dark family drama to justify the commitment.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/2rl04pRCaGfz91lwfWdDQmOiGJp.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/4qDlkEAKFb4pgIUbeJMLyHX2Xym.jpg"
+      }
+    },
+    {
       "id": 1783850002125,
       "slug": "hellraiser-review",
       "seoTitle": "Hellraiser Review (1987) | WretVision",
