@@ -56,6 +56,31 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://wretvision.com/review.html?slug=evil-dead-burn-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=friday-the-13th-part-2-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=the-fall-of-the-house-of-usher-season-1-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=hellraiser-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=saw-3d-the-final-chapter-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wretvision.com/review.html?slug=halloween-ii-review</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
