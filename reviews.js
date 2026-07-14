@@ -10,35 +10,120 @@
 
 const REVIEWS = [
     {
-      "id": 1784046288204,
-      "slug": "evil-dead-burn-review",
-      "seoTitle": "Evil Dead Burn Review (2026) — Spoilers | WretVision",
-      "seoDescription": "Evil Dead Burn has brutal kills and a capable lead, but Sébastien Vaniček's franchise debut is the series at its most formulaic. A full spoiler review.",
+      "id": 1784023286780,
+      "slug": "friday-the-13th-part-2-review",
+      "seoTitle": "Friday the 13th Part 2 Review (1981) | WretVision",
+      "seoDescription": "Jason gets the mask... well, not yet. But Friday the 13th Part 2 gets almost everything else right.",
       "category": "movie",
-      "title": "Evil Dead Burn",
-      "year": 2026,
-      "director": "Sébastien Vaniček",
-      "runtime": "111 min",
+      "title": "Friday the 13th Part 2",
+      "year": 1981,
+      "director": "Steve Miner",
+      "runtime": "87 min",
       "rating": "R",
-      "genres": ["Horror", "Thriller"],
-      "score": 6,
+      "genres": [
+        "Horror"
+      ],
+      "score": 8,
       "featured": false,
-      "youtube": "",
-      "excerpt": "Evil Dead Burn has brutal kills and a capable lead, but Sébastien Vaniček's franchise debut is the series at its most formulaic.",
+      "excerpt": "Jason gets the mask... well, not yet. But Friday the 13th Part 2 gets almost everything else right.",
       "body": [
-        "To understand what Evil Dead Burn gets wrong, you have to understand what made this franchise worth caring about in the first place. Sam Raimi's original 1981 film was made for nothing and changed everything — a scrappy, legitimately terrifying piece of guerrilla filmmaking that felt like it was breaking rules that nobody had even written yet. Evil Dead 2 rebuilt the entire thing six years later with the same cabin, the same Ash, and a completely different soul — part horror, part slapstick, deranged in ways that should not have worked but absolutely did. Army of Darkness sent Ash back to medieval England and became something else entirely. Three films, three distinct personalities, all unified by a refusal to behave. That is what made the original trilogy stick. The chaos was the point. Then in 2013, Fede Álvarez came in with a full reboot — brutal, straight-faced, no Bruce Campbell, no winking at the camera — and it worked because it had the courage of its convictions. Rise followed ten years later, moved the action to an apartment building in Los Angeles, and gave us Alyssa Sutherland as Ellie, one of the best Deadite performances the franchise has ever produced. Rise had problems, but it felt necessary. Like it was asking a real question about what this series can be in a new space. Evil Dead Burn is the film that comes after, and the question it seems to be asking is: what if we just did it again?",
-        "The setup is more layered than previous entries, at least on paper. Alice — played by Souheila Yacoub, who you might know from Dune: Part Two — is grieving the death of her husband Will, killed in a car accident that the audience understands immediately was actually a Deadite attack. She travels to a grey, secluded house to mourn alongside Will's family: his cold and protective mother Susan, his father Edgar, his elderly grandmother Polly, his brother Joseph, and Joseph's girlfriend Thya. The wrinkle is that Will was not a good man. He was abusive — there is a scene early on where Alice bluntly tells Susan that her son pushed her into a stove and burned her, and that his family spent years looking the other way. It is a genuinely interesting foundation. You have a woman surrounded by people who protected the person who hurt her, all of them now united in grief for someone she has every reason to not mourn, in an isolated house where something ancient and hungry is about to make itself known. There is real dramatic tension in that premise, and in the hands of a different script it could have become the most psychologically complex Evil Dead film yet.",
-        "The possession chain kicks off at Will's funeral, where Edgar is the first to fall. From there Vaniček escalates efficiently — Edgar kills the family dog, kills Thya, Polly is corrupted, Joseph ends up possessed off-screen. The kills are where the film unquestionably delivers. Evil Dead Burn does not hold back. There is a sequence involving a pen and someone's ear, a genuinely horrible moment where Alice's face is threatened while her head is wrapped in plastic, a hair trimmer used in ways a hair trimmer should never be used, and a dog stabbed at the dinner table that made the entire cinema go quiet. This is Hostel and Saw territory in terms of the visceral discomfort it is willing to put on screen, and Vaniček stages these sequences with real craft. There is an overhead shot from the rooftop that briefly reminded me of the filmmaker I saw in Infested, his 2023 debut — a genuine compositional choice, a moment where you feel a director making a decision rather than following a template. The film's centerpiece is the moment Alice stabs Joseph through the heart with the Kandarian dagger. It is the one beat that actually hurts — the right dagger reverts him to human, but he has been stabbed through the heart, so he dies human. That is a gut punch that the rest of the film does not quite earn but lands anyway.",
-        "The problem is everything surrounding those moments. Evil Dead Burn is the most structurally predictable film this franchise has produced, and I mean that in a specific way. Not the fun kind of predictable, where you are enjoying the ride even knowing where it ends up. The kind of predictable where you have mentally mapped the next forty minutes of runtime by the end of the first act, and the film spends the rest of its running time confirming what you already worked out. You know who the survivor is before the first possession happens. You know when the Necronomicon factors in, you know the false safety beats, you know the escalation, you know the climax. Three films into this modern run — 2013, Rise, Burn — every one of them has ended the same way, with a woman walking out of the wreckage. I am not here to argue that is the wrong call. I am here to say that when a franchise repeats a structural decision that precisely, it stops being a choice and becomes a formula. And formula is lethal in horror, because horror runs on uncertainty. The moment an audience can identify the survivor in the opening fifteen minutes without the filmmaking earning it, you have pulled the teeth out of the whole thing.",
-        "What makes this particularly frustrating is the director. Sébastien Vaniček's debut, Infested, was a genuinely distinctive piece of work. A spider horror film set in a French apartment building, fusing social realism with creature-feature dread, it had a specific visual language and a point of view that you could feel behind every frame. The free-floating camera movement, the intimate spaces becoming death traps, the way he built and sustained tension — all of it translated almost perfectly to the Evil Dead template on paper, which is clearly why he was hired. But Evil Dead Burn does not feel like it was made by the same filmmaker. The edges are filed down. The risks are not taken. Whether that is studio pressure, the weight of a franchise with forty years of mythology behind it, or simply the reality of working inside an IP with strict guardrails — something creative got ironed out between Infested and this. What you are left with is technically competent filmmaking in service of a script that does not give it enough room to do anything interesting.",
-        "For context on where Burn sits relative to Rise: Rise was not a flawless film. The ending, where a giant Marauder creature just shows up, fundamentally undermined the intimate horror that the preceding ninety minutes had built so carefully. The scariest thing in Rise was Ellie in that apartment. The film did not need to escalate beyond that and it made a mistake by trying. But Rise felt like it had something to say — about family horror, about a mother becoming a monster, about children having to confront that. There was thematic weight underneath the carnage. Burn's domestic abuse backstory gestures toward something similar but drops it before it can develop into anything. The film is too busy processing the next kill to sit with its own ideas. The post-credits scene is the most interesting thing in the final act: a woman and a young girl in a crematorium, one of the urns labeled Ellie, the girl looking into a mirror and seeing not her own reflection but Ellie's — dead-eyed, possessed, the Deadite from Rise looking back through the glass. It is a solid tease. It sets up something genuinely intriguing for whatever comes next. I just wish it appeared at the end of a film that had earned it more.",
-        "Evil Dead Burn is a 6 out of 10. The kills are there, Souheila Yacoub holds the center, and Vaniček has the technical skill to make it look and feel like an Evil Dead film. But there is nothing here that sticks. Nothing that reaches through the screen. A franchise that once gave us a man fighting himself in a haunted cabin and somehow made it funny and terrifying at the same time deserves films that take swings, that risk being wrong, that have a genuine creative heartbeat underneath the gore. Evil Dead Burn does not take swings. It executes. And for a series built on chaos, that might be the most disappointing thing it could do."
+        "Friday the 13th Part 2 had one job: follow up a slasher that genuinely surprised people and not embarrass itself in the process. Steve Miner steps in and mostly nails it. What works here is the continuity of tone. Camp Crystal Lake is still soaked in that thick, rural dread that made the original feel genuinely uncomfortable rather than just gory. The 1981 sequel picks up almost immediately after the first film, and that opening sequence is brutal and confident. It tells you straight away that this is not a soft retread. The film understands its own momentum.",
+        "Jason as the killer is a different proposition to his mother, and the film leans into that shift well. He is bigger, more physical, more relentless. The sack mask is genuinely unsettling in a way that feels almost more primal than the hockey mask that came later. The kills are inventive without being ridiculous, the pacing is tight, and the cast is likeable enough that you actually feel something when they start dropping. Amy Steel as Ginny is a strong final girl, smarter and more resourceful than the genre usually bothers to write, and she carries the back half of the film with real conviction.",
+        "Is it as fresh as the original? No. The formula is now the formula, and you can feel it locking into place here. A few of the middle kills are more perfunctory than they should be, and the ending leans on a twist that does not land quite as hard as the film thinks it does. But Friday the 13th Part 2 is exactly what a good horror sequel should be. It keeps the energy alive, adds something to the mythology, and never feels like a cash grab made by people who did not care. For fans of early 80s slashers like Halloween II or The Burning, this one belongs right alongside them."
       ],
       "images": [],
-      "verdict": "6/10 — brutal kills and a strong lead can't mask the fact that Evil Dead Burn is the franchise running in place. Competent. Forgettable.",
+      "verdict": "8/10, a sharp, confident sequel that earns its place in the franchise and keeps Crystal Lake genuinely worth revisiting.",
       "media": {
-        "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
-        "backdrop": "https://image.tmdb.org/t/p/w1280/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg"
+        "poster": "https://image.tmdb.org/t/p/w500/92rGctBMTv4uaSlIBVnhz01kRWL.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/80emEEa0svrT0YJDZLgLUu85ttp.jpg"
+      }
+    },
+    {
+      "id": 1783941313636,
+      "slug": "the-fall-of-the-house-of-usher-season-1-review",
+      "seoTitle": "The Fall of the House of Usher Season 1 Review (2023) | WretVision",
+      "seoDescription": "Usher takes its sweet time getting started, but stick with it and Flanagan delivers something genuinely worth finishing.",
+      "category": "tv",
+      "title": "The Fall of the House of Usher Season 1",
+      "year": 2023,
+      "director": "",
+      "runtime": "?? min",
+      "rating": "TV-MA",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Usher takes its sweet time getting started, but stick with it and Flanagan delivers something genuinely worth finishing.",
+      "body": [
+        "Mike Flanagan's The Fall of the House of Usher, landing on Netflix in 2023, is an ambitious gothic horror miniseries that adapts Poe's work into a sprawling family saga about wealth, legacy, and consequence. If you came in expecting the immediate dread of The Haunting of Hill House, you're going to spend the first two or three episodes wondering what everyone's been raving about. The opening is genuinely slow. The structural setup, all flashbacks and courtroom framing, keeps you at arm's length when the show should be pulling you in. It's a slow burn that occasionally just feels like slow. Characters are being positioned like chess pieces and for a while you can see the strings.",
+        "But here's the thing. Once it commits to picking off the Usher children one by one, it finds a real pulse. Each episode leaning into a different sibling's downfall gives the season a rhythm that eventually starts to click. The performances help enormously. Bruce Greenwood is doing serious work as Roderick, carrying grief and guilt with real weight. Carla Gugino is magnetic every single scene she's in. The kills are inventive, some genuinely unsettling, and Flanagan keeps the atmosphere thick enough that when the horror lands it actually lands. The Verna scenes carry a quiet menace that the early episodes badly needed from the start.",
+        "It never quite reaches the emotional gut punch of Hill House or Bly Manor. The middle episodes vary in quality and some of the CGI work undercuts moments that should have hit harder with practical choices. The ending is satisfying though, earned in a way that feels true to the Poe spirit without being slavishly faithful to any single source text. For fans of prestige horror streaming on Netflix, this sits comfortably in the worthwhile column. It's not Flanagan at his best but it's still Flanagan, and that counts for something."
+      ],
+      "images": [],
+      "verdict": "7/10, a slow start that tests your patience before delivering enough dread and dark family drama to justify the commitment.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/2rl04pRCaGfz91lwfWdDQmOiGJp.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/4qDlkEAKFb4pgIUbeJMLyHX2Xym.jpg"
+      }
+    },
+    {
+      "id": 1783850002125,
+      "slug": "hellraiser-review",
+      "seoTitle": "Hellraiser Review (1987) | WretVision",
+      "seoDescription": "Hellraiser doesn't just show you Hell. It makes you feel like you've been there.",
+      "category": "movie",
+      "title": "Hellraiser",
+      "year": 1987,
+      "director": "Clive Barker",
+      "runtime": "94 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Hellraiser doesn't just show you Hell. It makes you feel like you've been there.",
+      "body": [
+        "Clive Barker adapted his own novella The Hellbound Heart in 1987 and in doing so made one of the most genuinely distinctive horror films ever committed to celluloid. There is nothing else that looks like this, sounds like this, or feels like this. Where most horror of the era was slashers and teenagers, Barker was building a mythology around desire, flesh, and consequence. The Cenobites arrive and you believe in them completely, not because of exposition but because of what they represent. These aren't monsters in the traditional sense. They're emissaries of a dimension where pleasure and pain are the same thing, and the film never lets you forget it.",
+        "The practical effects work here is extraordinary and it holds up in a way that CGI from the same era absolutely does not. Frank's resurrection, that slow, grotesque rebuild of a body from nothing, is one of the great practical sequences in horror history. It's disgusting in the best possible way. You can feel the budget constraints throughout the film but Barker uses them intelligently, keeping the horror focused and intimate rather than sprawling. The acting is uneven in places but Andrew Robinson as Larry and Clare Higgins as Julia do genuinely unsettling work, especially Higgins who plays seduction and cold calculation with real commitment.",
+        "The ending lands exactly where it needs to. Hellraiser 1987 isn't interested in easy resolutions and it earns that refusal. Pinhead has become a cultural icon over decades of diminishing sequels but go back to this original and remember how strange and specific and terrifying the character actually was before franchise logic softened everything. Comparable to early Cronenberg in its body horror ambitions and to Suspiria in its commitment to atmosphere over explanation. This is horror that actually means something, that uses the genre to say something real about obsession and the price of chasing sensation past every reasonable limit."
+      ],
+      "images": [],
+      "verdict": "9/10, one of the most unique horror films ever made, grotesque and visionary in equal measure, and proof that genuine imagination hits harder than any jump scare.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/3Z0oPHyLnk3Vx6ZMC1MiVwIrKhO.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/jInJNDIyzlYBV79nx8Qb5s2xjfM.jpg"
+      }
+    },
+    {
+      "id": 1783762827135,
+      "slug": "saw-3d-the-final-chapter-review",
+      "seoTitle": "Saw 3D: The Final Chapter Review (2010) | WretVision",
+      "seoDescription": "Saw 3D promised a definitive ending and delivered a film that doesn't know what it wants to be.",
+      "category": "movie",
+      "title": "Saw 3D: The Final Chapter",
+      "year": 2010,
+      "director": "Kevin Greutert",
+      "runtime": "90 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Saw 3D promised a definitive ending and delivered a film that doesn't know what it wants to be.",
+      "body": [
+        "Seven films in and Saw 3D: The Final Chapter had one job. Wrap it up. Give the fans a finale that meant something. Instead what you get is a film that feels like it was assembled from a checklist: bring back a legacy character, shoot it in 3D, call it the last one, and hope the goodwill of six previous installments carries you over the finish line. It does not. Kevin Greutert directs with competence but no real conviction, and the 3D gimmick is exactly that, a gimmick, with gore flying at the lens in ways that feel more carnival than horror. This is a franchise that genuinely unnerved people in 2004 and by 2010 it had calcified into pure formula.",
+        "The return of Dr. Lawrence Gordon, played again by Cary Elwes, should have been a gut punch. It is not. His arc resolves in a way that raises more questions than it answers, and depending on how generously you read what follows in later entries, it barely registers as canon anyway. The traps here are elaborate but cold. There is no dread, no investment in who ends up in them. The franchise formula had locked in so hard by this point that you are just watching mechanics rather than tension. The script treats its characters as props, which was always a Saw risk, but earlier films at least made you feel something before the blood.",
+        "Saw 3D: The Final Chapter sits in that frustrating middle ground where it is not broken enough to be entertainingly bad and not good enough to satisfy. Fans of the series will find moments, the callbacks land if you are emotionally invested, and the practical effects work is still doing its job in places. But as a finale to one of horror's most commercially dominant franchises, this is thin. Compare it to something like the closing chapter of the original Scream trilogy and you feel the gap immediately. Mediocre is the honest word. It exists, it moves, and then it ends without leaving much behind."
+      ],
+      "images": [],
+      "verdict": "5/10, a finale in name only, Saw 3D had the pieces for a satisfying close and fumbled almost all of them.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/qHCZ6LjtmqWDfXXN28TlIC9OppK.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/qXTSZkk8mQHnZjuRjW9fc2Ax5vj.jpg"
       }
     },
     {

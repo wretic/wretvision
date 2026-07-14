@@ -102,7 +102,7 @@
         "Thriller"
       ],
       "streaming": "",
-      "done": false,
+      "done": true,
       "score": 5,
       "notes": "Didn't know what it was supposed to be and it didn't work for me. Marketed as the definitive end, shot in 3D, brought back Dr. Gordon — none of it added up to anything satisfying."
     },
@@ -932,7 +932,7 @@
         "Horror"
       ],
       "streaming": "",
-      "done": false,
+      "done": true,
       "score": 8,
       "notes": "Continues the story well — another very enjoyable sequel that keeps the energy of the original going."
     },
@@ -1171,7 +1171,7 @@
         "Horror"
       ],
       "streaming": "",
-      "done": false,
+      "done": true,
       "score": 9,
       "notes": "Disgusting deaths, genuinely unique, grotesque in the best way. Hell as a concept felt real and horrifying here. One of the most distinctive horror films ever made."
     },
@@ -1352,7 +1352,7 @@
         "Horror"
       ],
       "streaming": "Netflix",
-      "done": false,
+      "done": true,
       "score": 7,
       "notes": "Slow start — the beginning was meh — but the story builds and gets better as it progresses. Never reaches Hill House in terms of execution but it finds its footing and delivers enough to be worth it."
     }
