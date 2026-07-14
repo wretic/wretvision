@@ -10,6 +10,35 @@
 
 const REVIEWS = [
     {
+      "id": 1784023286780,
+      "slug": "friday-the-13th-part-2-review",
+      "seoTitle": "Friday the 13th Part 2 Review (1981) | WretVision",
+      "seoDescription": "Jason gets the mask... well, not yet. But Friday the 13th Part 2 gets almost everything else right.",
+      "category": "movie",
+      "title": "Friday the 13th Part 2",
+      "year": 1981,
+      "director": "Steve Miner",
+      "runtime": "87 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "Jason gets the mask... well, not yet. But Friday the 13th Part 2 gets almost everything else right.",
+      "body": [
+        "Friday the 13th Part 2 had one job: follow up a slasher that genuinely surprised people and not embarrass itself in the process. Steve Miner steps in and mostly nails it. What works here is the continuity of tone. Camp Crystal Lake is still soaked in that thick, rural dread that made the original feel genuinely uncomfortable rather than just gory. The 1981 sequel picks up almost immediately after the first film, and that opening sequence is brutal and confident. It tells you straight away that this is not a soft retread. The film understands its own momentum.",
+        "Jason as the killer is a different proposition to his mother, and the film leans into that shift well. He is bigger, more physical, more relentless. The sack mask is genuinely unsettling in a way that feels almost more primal than the hockey mask that came later. The kills are inventive without being ridiculous, the pacing is tight, and the cast is likeable enough that you actually feel something when they start dropping. Amy Steel as Ginny is a strong final girl, smarter and more resourceful than the genre usually bothers to write, and she carries the back half of the film with real conviction.",
+        "Is it as fresh as the original? No. The formula is now the formula, and you can feel it locking into place here. A few of the middle kills are more perfunctory than they should be, and the ending leans on a twist that does not land quite as hard as the film thinks it does. But Friday the 13th Part 2 is exactly what a good horror sequel should be. It keeps the energy alive, adds something to the mythology, and never feels like a cash grab made by people who did not care. For fans of early 80s slashers like Halloween II or The Burning, this one belongs right alongside them."
+      ],
+      "images": [],
+      "verdict": "8/10, a sharp, confident sequel that earns its place in the franchise and keeps Crystal Lake genuinely worth revisiting.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/92rGctBMTv4uaSlIBVnhz01kRWL.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/80emEEa0svrT0YJDZLgLUu85ttp.jpg"
+      }
+    },
+    {
       "id": 1783941313636,
       "slug": "the-fall-of-the-house-of-usher-season-1-review",
       "seoTitle": "The Fall of the House of Usher Season 1 Review (2023) | WretVision",
