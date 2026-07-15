@@ -10,6 +10,35 @@
 
 const REVIEWS = [
     {
+      "id": 1784109958570,
+      "slug": "the-conjuring-2-review",
+      "seoTitle": "The Conjuring 2 Review (2016) | WretVision",
+      "seoDescription": "The Conjuring 2 earns its place in the franchise, even if it never quite reaches the heights of the first.",
+      "category": "movie",
+      "title": "The Conjuring 2",
+      "year": 2016,
+      "director": "James Wan",
+      "runtime": "134 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "The Conjuring 2 earns its place in the franchise, even if it never quite reaches the heights of the first.",
+      "body": [
+        "The Conjuring 2 does something smart by getting out of America. Transplanting the Warrens to Enfield in 1977, grounding the whole thing in the real life Enfield Poltergeist case, gives James Wan a fresh canvas and the film a genuinely different texture. There is something about rain soaked council houses and grey British skies that breeds a different kind of dread than a New England farmhouse, and Wan leans into it. The production design is excellent. Period detail is sharp without being showy. And the atmosphere in the early acts is properly unsettling, the kind of slow creep that makes you aware you are leaning forward in your seat without noticing you did it.",
+        "Patrick Wilson and Vera Farmiga remain the best thing this franchise has going for it. Their dynamic as the Warrens feels lived in and genuinely warm, which sounds like an odd thing to praise in a horror film but it matters. You have to care about the people walking into the dark rooms. Madison Wolfe as young Janet Hodgson handles some genuinely difficult material with more composure than a lot of adult actors manage. Where the film stumbles is in the back half. Wan reaches for too many set pieces and the pacing starts to sag under the weight of them. The Crooked Man sequence looks visually striking but feels like a detour from a different film entirely.",
+        "Worth flagging that the real Enfield case was later partly exposed as staged for publicity by the children involved, which adds a strange melancholy to watching a film treat it as genuine supernatural history. It does not ruin anything, it is just a bit sad. The Conjuring 2 as a piece of 2016 mainstream horror is a solid, well crafted entry in a genre that is often lazy with its sequels. It is not as tight or as scary as the original Conjuring, and it runs longer than it should, but it delivers on atmosphere and performance in ways that most big budget horror simply does not bother to. If you liked The Nun or Annabelle and want to see what the series looks like when it is actually firing on most cylinders, this is the one to watch."
+      ],
+      "images": [],
+      "verdict": "7/10, a genuinely decent horror sequel that earns your time through atmosphere and strong leads even if it overstays its welcome in the final act.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/zEqyD0SBt6HL7W9JQoWwtd5Do1T.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/mFCS5OuhPYT79KXu5jl7RqznPR1.jpg"
+      }
+    },
+    {
       "id": 1784046288204,
       "slug": "evil-dead-burn-review",
       "seoTitle": "Evil Dead Burn Review (2026) Full Spoilers | WretVision",
