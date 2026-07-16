@@ -10,6 +10,35 @@
 
 const REVIEWS = [
     {
+      "id": 1784196714342,
+      "slug": "hellraiser-judgment-review",
+      "seoTitle": "Hellraiser: Judgment Review (2018) | WretVision",
+      "seoDescription": "Hellraiser: Judgment tries harder than Revelations ever did. That's the nicest thing I can say about it.",
+      "category": "movie",
+      "title": "Hellraiser: Judgment",
+      "year": 2018,
+      "director": "Gary J. Tunnicliffe",
+      "runtime": "81 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "Hellraiser: Judgment tries harder than Revelations ever did. That's the nicest thing I can say about it.",
+      "body": [
+        "Hellraiser: Judgment from 2018 is a strange beast because you can genuinely feel the effort behind it, and that makes the disappointment sting more than usual. Director Gary J. Tunnicliffe, who wrote the screenplay and plays the grotesque Auditor, is clearly a fan. He loves this franchise. He wanted to do something with it. And compared to the absolute wreckage of Hellraiser: Revelations, this thing looks like Kubrick. There's a grimy, low budget aesthetic that works in its favour early on. The Auditor sequences have a weird, unsettling texture to them, something genuinely off about the bureaucratic horror of sin being catalogued and processed. That stuff is interesting. It hints at a mythology that could have been expanded into something worth watching.",
+        "But the detective thriller wrapped around all of that mythology is dead on arrival. The two cop brothers investigation plot is the kind of procedural scaffolding that screams 'we needed a structure and grabbed the nearest one off the shelf.' The acting across that storyline ranges from flat to actively painful. Paul T. Taylor as Pinhead does what he can, and I respect the attempt, but he never escapes the shadow of Doug Bradley, and the script gives him nothing to work with that feels earned. The kills are competent but the film mistakes grimness for dread. There is no atmosphere being built here, just a series of unpleasant things happening without weight or consequence. Jump scare horror without substance is bad enough, but grimness without substance might be worse.",
+        "What really kills Hellraiser: Judgment is the ending. After flirting with something genuinely strange and theologically twisted, it retreats into a tidy, predictable resolution that feels cowardly. The franchise formula locks in again. You know who is surviving before the third act even starts. Tunnicliffe tried, and I will not take that away from him, but trying and landing are completely different things. If you are working through the Hellraiser catalogue or comparing it to similar low budget horror sequels like the later Wishmaster entries, this sits somewhere in the middle of the pile, better than the worst but nowhere near good enough to recommend."
+      ],
+      "images": [],
+      "verdict": "Hellraiser: Judgment is the most ambitious bad Hellraiser film, which is a category that only makes it more frustrating to sit through. 4/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/nYlSoysJVSvfKhMMKB6PLbXuWUK.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/qW4hr2WweKiyztgd4Ql0wlfRYBF.jpg"
+      }
+    },
+    {
       "id": 1784109958570,
       "slug": "the-conjuring-2-review",
       "seoTitle": "The Conjuring 2 Review (2016) | WretVision",
