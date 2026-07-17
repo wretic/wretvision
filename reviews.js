@@ -10,6 +10,35 @@
 
 const REVIEWS = [
     {
+      "id": 1784282454786,
+      "slug": "jason-goes-to-hell-the-final-friday-review",
+      "seoTitle": "Jason Goes to Hell: The Final Friday Review (1993) | WretVision",
+      "seoDescription": "Bold concept, gutless execution — Jason Goes to Hell had one genuinely wild idea and somehow made it boring.",
+      "category": "movie",
+      "title": "Jason Goes to Hell: The Final Friday",
+      "year": 1993,
+      "director": "Adam Marcus",
+      "runtime": "88 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Bold concept, gutless execution — Jason Goes to Hell had one genuinely wild idea and somehow made it boring.",
+      "body": [
+        "Here is the thing about Jason Goes to Hell: The Final Friday from 1993. The core idea is actually interesting. Jason Voorhees as a possessing entity, a dark spirit that jumps from body to body like some kind of demonic parasite, could have been a genuinely unsettling reinvention for a franchise that was running on fumes. New Line Cinema had just acquired the rights from Paramount and they clearly wanted to do something different. You have to respect the ambition on paper. A slasher villain reimagined as something more primal, more supernatural, something closer to The Hidden than your standard summer camp stalk and slash. That is not a bad pitch. I will give them that much.",
+        "The problem is that almost none of it works in practice. Director Adam Marcus fumbles the concept almost immediately. The body hopping mechanics are murky and inconsistent, the rules keep shifting, and the film spends so much time on a bounty hunter subplot and a whole mythology about Voorhees bloodlines that it forgets to be frightening or fun. It barely feels like a Friday the 13th film. You could strip the Jason branding completely and it would read as a generic early nineties horror oddity, the kind that gets buried in a bargain bin next to Shocker and The First Power. There are a couple of genuinely nasty practical gore moments that show some real commitment, and the opening FBI ambush sequence has energy. But that energy evaporates fast.",
+        "What kills it is the pacing and the identity crisis at the heart of the whole thing. Jason Goes to Hell cannot decide if it wants to be a serious supernatural horror film or a crowd pleasing franchise entry, and it ends up being neither. Fans who showed up for Jason got a film where Jason is barely present as himself. Fans who wanted something bold got a half baked mythology with wooden performances and a screenplay that mistakes convoluted for clever. The Freddy glove ending is fun, a genuine crowd pleaser that teased Freddy vs Jason a full decade before it arrived, but one fun final second does not redeem ninety minutes of mediocrity. If you want comparable films done better, The Hidden from 1987 does the body hopping concept with far more style."
+      ],
+      "images": [],
+      "verdict": "5/10, a Friday the 13th film that forgot what made Friday the 13th work, and replaced it with a concept it was never brave enough to fully commit to.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/Aacq05foqiWdXqetFv02HBvMoJy.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/wqRyyOZcMaUxTnKsxDexPp4IAZ5.jpg"
+      }
+    },
+    {
       "id": 1784196714342,
       "slug": "hellraiser-judgment-review",
       "seoTitle": "Hellraiser: Judgment Review (2018) | WretVision",
