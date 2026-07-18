@@ -36,28 +36,20 @@ WEEKEND_WEIGHTS = {"movies": 0.20, "tv": 0.20, "horror_vault": 0.30, "games": 0.
 # ── Review length tiers (randomly selected per review) ────────────────────────
 LENGTH_TIERS = [
     {
-        "name":        "short",
-        "weight":      0.30,
-        "paragraphs":  2,
-        "words":       "80-120 words each",
-        "guidance":    "punchy and direct. Get in, say what needs saying, get out. No padding.",
-        "max_tokens":  600,
-    },
-    {
-        "name":        "medium",
-        "weight":      0.40,
-        "paragraphs":  3,
+        "name":        "standard",
+        "weight":      0.50,
+        "paragraphs":  4,
         "words":       "150-200 words each",
-        "guidance":    "solid and complete. Cover what works, what doesn't, and why it matters.",
-        "max_tokens":  1200,
+        "guidance":    "solid and professional. Cover the premise, what works, what doesn't, and a clear verdict. No filler, no padding — every sentence earns its place.",
+        "max_tokens":  1400,
     },
     {
         "name":        "long",
-        "weight":      0.30,
-        "paragraphs":  5,
+        "weight":      0.50,
+        "paragraphs":  9,
         "words":       "200-280 words each",
-        "guidance":    "full essay. Dig into craft, context, comparisons. Explain properly.",
-        "max_tokens":  2800,
+        "guidance":    "fully detailed, professional longform. Think IGN or a serious film magazine. Cover the setup and context, performances, direction and craft, pacing, standout moments, flaws, how it compares to similar work, and a full verdict. Each paragraph should go deep on one specific angle. Nothing superficial.",
+        "max_tokens":  4500,
     },
 ]
 
