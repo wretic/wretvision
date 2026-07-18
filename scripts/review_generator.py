@@ -33,6 +33,38 @@ HORROR_VAULT_JS = ROOT / "horror-vault.js"
 WEEKDAY_WEIGHTS = {"movies": 0.40, "tv": 0.30, "horror_vault": 0.10, "games": 0.20}
 WEEKEND_WEIGHTS = {"movies": 0.20, "tv": 0.20, "horror_vault": 0.30, "games": 0.30}
 
+# ── Review length tiers (randomly selected per review) ────────────────────────
+LENGTH_TIERS = [
+    {
+        "name":        "short",
+        "weight":      0.30,
+        "paragraphs":  2,
+        "words":       "80-120 words each",
+        "guidance":    "punchy and direct. Get in, say what needs saying, get out. No padding.",
+        "max_tokens":  600,
+    },
+    {
+        "name":        "medium",
+        "weight":      0.40,
+        "paragraphs":  3,
+        "words":       "150-200 words each",
+        "guidance":    "solid and complete. Cover what works, what doesn't, and why it matters.",
+        "max_tokens":  1200,
+    },
+    {
+        "name":        "long",
+        "weight":      0.30,
+        "paragraphs":  5,
+        "words":       "200-280 words each",
+        "guidance":    "full essay. Dig into craft, context, comparisons. Explain properly.",
+        "max_tokens":  2800,
+    },
+]
+
+def pick_length_tier():
+    weights = [t["weight"] for t in LENGTH_TIERS]
+    return random.choices(LENGTH_TIERS, weights=weights, k=1)[0]
+
 # Map your queue category names → reviews.js category values
 CATEGORY_MAP = {
     "movies":       "movie",
@@ -159,7 +191,7 @@ def get_pre_logged_score(item, seen_scores):
         return {"score": item["score"], "notes": item.get("notes")}
     return None
 
-def build_prompt(category, item, personality, pre_score):
+def build_prompt(category, item, personality, pre_score, length_tier):
     title     = item["title"]
     year      = item.get("year", "")
     season    = item.get("season", "")
@@ -196,14 +228,14 @@ Output format — respond with a JSON object and nothing else, no markdown fence
   "excerpt": "<one sentence hook, under 200 characters, punchy>",
   "paragraphs": [
     "<paragraph 1>",
-    "<paragraph 2>",
-    "<paragraph 3>"
+    "<paragraph 2 if applicable>",
+    "..."
   ],
   "verdict": "<one closing sentence, the gut-punch summary>"
 }}
 
 Rules:
-- 3 paragraphs, each 150-200 words
+- {length_tier['paragraphs']} paragraphs, {length_tier['words']}. Tone: {length_tier['guidance']}
 - Sound like the reviewer — specific, opinionated, no filler
 - excerpt is what shows on the card before someone clicks in
 - verdict is the final line inside the full review
@@ -213,11 +245,11 @@ Rules:
 - Never use hyphens or em dashes, use commas or rewrite the sentence instead
 """
 
-def call_claude(prompt):
+def call_claude(prompt, max_tokens=1200):
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
     msg = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=1200,
+        max_tokens=max_tokens,
         messages=[{"role": "user", "content": prompt}],
     )
     return msg.content[0].text.strip()
@@ -496,9 +528,12 @@ def main():
     else:
         print("No pre-logged score — AI will judge (slightly skeptical)")
 
+    length_tier = pick_length_tier()
+    print(f"Length tier: {length_tier['name']} ({length_tier['paragraphs']} paragraphs)")
+
     print("Calling Claude...")
-    prompt = build_prompt(category, item, personality, pre_score)
-    raw    = call_claude(prompt)
+    prompt = build_prompt(category, item, personality, pre_score, length_tier)
+    raw    = call_claude(prompt, max_tokens=length_tier["max_tokens"])
 
     try:
         parsed = parse_response(raw)
