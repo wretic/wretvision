@@ -10,6 +10,122 @@
 
 const REVIEWS = [
     {
+      "id": 1784367402874,
+      "slug": "friday-the-13th-review",
+      "seoTitle": "Friday the 13th Review (1980) | WretVision",
+      "seoDescription": "Friday the 13th is one of the finest slashers ever made, and if you disagree, I want to know what film you watched instead.",
+      "category": "movie",
+      "title": "Friday the 13th",
+      "year": 1980,
+      "director": "Sean S. Cunningham",
+      "runtime": "95 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Friday the 13th is one of the finest slashers ever made, and if you disagree, I want to know what film you watched instead.",
+      "body": [
+        "Sean Cunningham's Friday the 13th from 1980 does not mess around. Camp Crystal Lake, a bunch of counsellors, and something lurking in the trees. That is the whole pitch and it is executed with a confidence that a lot of modern horror directors would kill for. What the film gets absolutely right is the setting. The cabin environment does something to the atmosphere that no amount of city streets or suburban houses can replicate. You are isolated, you are surrounded by dark water and darker woods, and the film makes you feel every square metre of that isolation. It reminded me of Evil Dead in the best possible way, that same sense of dread baked into the geography itself. The kills are creative, practical, and genuinely impactful. Tom Savini's effects work here is some of the best in the genre and they still hold up over forty years later. No CGI nonsense, just craft.",
+        "The performances are solid across the board. Nobody is doing Shakespeare but that is not the point, these actors feel like real people stuck in a bad situation and that naturalism matters. Betsy Palmer is the real standout though, and if you have somehow avoided spoilers for a 1980 film, I will leave it at that. What she brings to this movie in a relatively short amount of screen time is genuinely unsettling. The pacing is tight, the film never outstays its welcome, and each scene of quiet tension earns the moments of violence that follow. The reveal at the end lands with real weight and does not feel like a cheat. Compared to its contemporaries and even to Halloween two years earlier, Friday the 13th holds its own as a genre cornerstone rather than just a copycat cash grab.",
+        "Is it perfect? Not quite. A few of the early character scenes drag slightly before the film finds its rhythm, and some of the geography gets a little muddy in the night sequences. But these are minor complaints against a film that genuinely delivers on almost every level it sets out to reach. Friday the 13th 1980 is the kind of horror film that reminds you why the slasher genre existed in the first place before it got lazy and repetitive. It has atmosphere, it has real tension, it has practical effects that still make you wince, and it has an ending that sticks with you. One of the best slashers ever put to film, sitting comfortably alongside Halloween as a genre essential that belongs in any serious horror watchlist."
+      ],
+      "images": [],
+      "verdict": "9/10, Friday the 13th is a near flawless slasher and one of the greatest horror films of its era, full stop.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/uGGpnWHOmWTARVN9wbC1nPxNgps.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/16zzKM5vDxnYiqG6Tg6wOkOLSmj.jpg"
+      }
+    },
+    {
+      "id": 1784282454786,
+      "slug": "jason-goes-to-hell-the-final-friday-review",
+      "seoTitle": "Jason Goes to Hell: The Final Friday Review (1993) | WretVision",
+      "seoDescription": "Bold concept, gutless execution — Jason Goes to Hell had one genuinely wild idea and somehow made it boring.",
+      "category": "movie",
+      "title": "Jason Goes to Hell: The Final Friday",
+      "year": 1993,
+      "director": "Adam Marcus",
+      "runtime": "88 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Bold concept, gutless execution — Jason Goes to Hell had one genuinely wild idea and somehow made it boring.",
+      "body": [
+        "Here is the thing about Jason Goes to Hell: The Final Friday from 1993. The core idea is actually interesting. Jason Voorhees as a possessing entity, a dark spirit that jumps from body to body like some kind of demonic parasite, could have been a genuinely unsettling reinvention for a franchise that was running on fumes. New Line Cinema had just acquired the rights from Paramount and they clearly wanted to do something different. You have to respect the ambition on paper. A slasher villain reimagined as something more primal, more supernatural, something closer to The Hidden than your standard summer camp stalk and slash. That is not a bad pitch. I will give them that much.",
+        "The problem is that almost none of it works in practice. Director Adam Marcus fumbles the concept almost immediately. The body hopping mechanics are murky and inconsistent, the rules keep shifting, and the film spends so much time on a bounty hunter subplot and a whole mythology about Voorhees bloodlines that it forgets to be frightening or fun. It barely feels like a Friday the 13th film. You could strip the Jason branding completely and it would read as a generic early nineties horror oddity, the kind that gets buried in a bargain bin next to Shocker and The First Power. There are a couple of genuinely nasty practical gore moments that show some real commitment, and the opening FBI ambush sequence has energy. But that energy evaporates fast.",
+        "What kills it is the pacing and the identity crisis at the heart of the whole thing. Jason Goes to Hell cannot decide if it wants to be a serious supernatural horror film or a crowd pleasing franchise entry, and it ends up being neither. Fans who showed up for Jason got a film where Jason is barely present as himself. Fans who wanted something bold got a half baked mythology with wooden performances and a screenplay that mistakes convoluted for clever. The Freddy glove ending is fun, a genuine crowd pleaser that teased Freddy vs Jason a full decade before it arrived, but one fun final second does not redeem ninety minutes of mediocrity. If you want comparable films done better, The Hidden from 1987 does the body hopping concept with far more style."
+      ],
+      "images": [],
+      "verdict": "5/10, a Friday the 13th film that forgot what made Friday the 13th work, and replaced it with a concept it was never brave enough to fully commit to.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/Aacq05foqiWdXqetFv02HBvMoJy.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/wqRyyOZcMaUxTnKsxDexPp4IAZ5.jpg"
+      }
+    },
+    {
+      "id": 1784196714342,
+      "slug": "hellraiser-judgment-review",
+      "seoTitle": "Hellraiser: Judgment Review (2018) | WretVision",
+      "seoDescription": "Hellraiser: Judgment tries harder than Revelations ever did. That's the nicest thing I can say about it.",
+      "category": "movie",
+      "title": "Hellraiser: Judgment",
+      "year": 2018,
+      "director": "Gary J. Tunnicliffe",
+      "runtime": "81 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "Hellraiser: Judgment tries harder than Revelations ever did. That's the nicest thing I can say about it.",
+      "body": [
+        "Hellraiser: Judgment from 2018 is a strange beast because you can genuinely feel the effort behind it, and that makes the disappointment sting more than usual. Director Gary J. Tunnicliffe, who wrote the screenplay and plays the grotesque Auditor, is clearly a fan. He loves this franchise. He wanted to do something with it. And compared to the absolute wreckage of Hellraiser: Revelations, this thing looks like Kubrick. There's a grimy, low budget aesthetic that works in its favour early on. The Auditor sequences have a weird, unsettling texture to them, something genuinely off about the bureaucratic horror of sin being catalogued and processed. That stuff is interesting. It hints at a mythology that could have been expanded into something worth watching.",
+        "But the detective thriller wrapped around all of that mythology is dead on arrival. The two cop brothers investigation plot is the kind of procedural scaffolding that screams 'we needed a structure and grabbed the nearest one off the shelf.' The acting across that storyline ranges from flat to actively painful. Paul T. Taylor as Pinhead does what he can, and I respect the attempt, but he never escapes the shadow of Doug Bradley, and the script gives him nothing to work with that feels earned. The kills are competent but the film mistakes grimness for dread. There is no atmosphere being built here, just a series of unpleasant things happening without weight or consequence. Jump scare horror without substance is bad enough, but grimness without substance might be worse.",
+        "What really kills Hellraiser: Judgment is the ending. After flirting with something genuinely strange and theologically twisted, it retreats into a tidy, predictable resolution that feels cowardly. The franchise formula locks in again. You know who is surviving before the third act even starts. Tunnicliffe tried, and I will not take that away from him, but trying and landing are completely different things. If you are working through the Hellraiser catalogue or comparing it to similar low budget horror sequels like the later Wishmaster entries, this sits somewhere in the middle of the pile, better than the worst but nowhere near good enough to recommend."
+      ],
+      "images": [],
+      "verdict": "Hellraiser: Judgment is the most ambitious bad Hellraiser film, which is a category that only makes it more frustrating to sit through. 4/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/nYlSoysJVSvfKhMMKB6PLbXuWUK.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/qW4hr2WweKiyztgd4Ql0wlfRYBF.jpg"
+      }
+    },
+    {
+      "id": 1784109958570,
+      "slug": "the-conjuring-2-review",
+      "seoTitle": "The Conjuring 2 Review (2016) | WretVision",
+      "seoDescription": "The Conjuring 2 earns its place in the franchise, even if it never quite reaches the heights of the first.",
+      "category": "movie",
+      "title": "The Conjuring 2",
+      "year": 2016,
+      "director": "James Wan",
+      "runtime": "134 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "The Conjuring 2 earns its place in the franchise, even if it never quite reaches the heights of the first.",
+      "body": [
+        "The Conjuring 2 does something smart by getting out of America. Transplanting the Warrens to Enfield in 1977, grounding the whole thing in the real life Enfield Poltergeist case, gives James Wan a fresh canvas and the film a genuinely different texture. There is something about rain soaked council houses and grey British skies that breeds a different kind of dread than a New England farmhouse, and Wan leans into it. The production design is excellent. Period detail is sharp without being showy. And the atmosphere in the early acts is properly unsettling, the kind of slow creep that makes you aware you are leaning forward in your seat without noticing you did it.",
+        "Patrick Wilson and Vera Farmiga remain the best thing this franchise has going for it. Their dynamic as the Warrens feels lived in and genuinely warm, which sounds like an odd thing to praise in a horror film but it matters. You have to care about the people walking into the dark rooms. Madison Wolfe as young Janet Hodgson handles some genuinely difficult material with more composure than a lot of adult actors manage. Where the film stumbles is in the back half. Wan reaches for too many set pieces and the pacing starts to sag under the weight of them. The Crooked Man sequence looks visually striking but feels like a detour from a different film entirely.",
+        "Worth flagging that the real Enfield case was later partly exposed as staged for publicity by the children involved, which adds a strange melancholy to watching a film treat it as genuine supernatural history. It does not ruin anything, it is just a bit sad. The Conjuring 2 as a piece of 2016 mainstream horror is a solid, well crafted entry in a genre that is often lazy with its sequels. It is not as tight or as scary as the original Conjuring, and it runs longer than it should, but it delivers on atmosphere and performance in ways that most big budget horror simply does not bother to. If you liked The Nun or Annabelle and want to see what the series looks like when it is actually firing on most cylinders, this is the one to watch."
+      ],
+      "images": [],
+      "verdict": "7/10, a genuinely decent horror sequel that earns your time through atmosphere and strong leads even if it overstays its welcome in the final act.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/zEqyD0SBt6HL7W9JQoWwtd5Do1T.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/mFCS5OuhPYT79KXu5jl7RqznPR1.jpg"
+      }
+    },
+    {
       "id": 1784046288204,
       "slug": "evil-dead-burn-review",
       "seoTitle": "Evil Dead Burn Review (2026) Full Spoilers | WretVision",
