@@ -10,6 +10,35 @@
 
 const REVIEWS = [
     {
+      "id": 1784367402874,
+      "slug": "friday-the-13th-review",
+      "seoTitle": "Friday the 13th Review (1980) | WretVision",
+      "seoDescription": "Friday the 13th is one of the finest slashers ever made, and if you disagree, I want to know what film you watched instead.",
+      "category": "movie",
+      "title": "Friday the 13th",
+      "year": 1980,
+      "director": "Sean S. Cunningham",
+      "runtime": "95 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Friday the 13th is one of the finest slashers ever made, and if you disagree, I want to know what film you watched instead.",
+      "body": [
+        "Sean Cunningham's Friday the 13th from 1980 does not mess around. Camp Crystal Lake, a bunch of counsellors, and something lurking in the trees. That is the whole pitch and it is executed with a confidence that a lot of modern horror directors would kill for. What the film gets absolutely right is the setting. The cabin environment does something to the atmosphere that no amount of city streets or suburban houses can replicate. You are isolated, you are surrounded by dark water and darker woods, and the film makes you feel every square metre of that isolation. It reminded me of Evil Dead in the best possible way, that same sense of dread baked into the geography itself. The kills are creative, practical, and genuinely impactful. Tom Savini's effects work here is some of the best in the genre and they still hold up over forty years later. No CGI nonsense, just craft.",
+        "The performances are solid across the board. Nobody is doing Shakespeare but that is not the point, these actors feel like real people stuck in a bad situation and that naturalism matters. Betsy Palmer is the real standout though, and if you have somehow avoided spoilers for a 1980 film, I will leave it at that. What she brings to this movie in a relatively short amount of screen time is genuinely unsettling. The pacing is tight, the film never outstays its welcome, and each scene of quiet tension earns the moments of violence that follow. The reveal at the end lands with real weight and does not feel like a cheat. Compared to its contemporaries and even to Halloween two years earlier, Friday the 13th holds its own as a genre cornerstone rather than just a copycat cash grab.",
+        "Is it perfect? Not quite. A few of the early character scenes drag slightly before the film finds its rhythm, and some of the geography gets a little muddy in the night sequences. But these are minor complaints against a film that genuinely delivers on almost every level it sets out to reach. Friday the 13th 1980 is the kind of horror film that reminds you why the slasher genre existed in the first place before it got lazy and repetitive. It has atmosphere, it has real tension, it has practical effects that still make you wince, and it has an ending that sticks with you. One of the best slashers ever put to film, sitting comfortably alongside Halloween as a genre essential that belongs in any serious horror watchlist."
+      ],
+      "images": [],
+      "verdict": "9/10, Friday the 13th is a near flawless slasher and one of the greatest horror films of its era, full stop.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/uGGpnWHOmWTARVN9wbC1nPxNgps.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/16zzKM5vDxnYiqG6Tg6wOkOLSmj.jpg"
+      }
+    },
+    {
       "id": 1784282454786,
       "slug": "jason-goes-to-hell-the-final-friday-review",
       "seoTitle": "Jason Goes to Hell: The Final Friday Review (1993) | WretVision",
