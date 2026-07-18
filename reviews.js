@@ -10,6 +10,38 @@
 
 const REVIEWS = [
     {
+      "id": 1784414471908,
+      "slug": "the-odyssey-2026-review",
+      "seoTitle": "The Odyssey Review (2026) | WretVision",
+      "seoDescription": "Nolan's most expensive mistake. Stunning IMAX photography wrapped around baffling creative decisions that betray everything Homer wrote.",
+      "category": "movie",
+      "title": "The Odyssey",
+      "year": 2026,
+      "director": "Christopher Nolan",
+      "runtime": "168 min",
+      "rating": "PG-13",
+      "genres": ["Action", "Adventure", "Fantasy"],
+      "score": 2,
+      "featured": false,
+      "youtube": "",
+      "excerpt": "Nolan's most expensive mistake. Stunning IMAX photography wrapped around baffling creative decisions that betray everything Homer wrote.",
+      "body": [
+        "Christopher Nolan is one of the most technically gifted directors working today. That is not up for debate, and it is the only thing that stops this review from going lower. Hoyte van Hoytema's IMAX 70mm photography is, predictably, extraordinary. There are sequences in The Odyssey — the Cyclops cave, the Sirens passage, the final assault on the suitors — that are visually among the most ambitious things Nolan has ever committed to film. The scale is real, the compositions are deliberate, and the IMAX format makes certain moments feel genuinely enormous. If you strip the sound, strip the dialogue, and just watch the images, you are looking at one of the best shot films of 2026. Then someone opens their mouth.",
+        "The decision to have an ancient Greek king, his son, his crew, and every character around them speak in flat American accents is not just a creative liberty. It is a fundamental misunderstanding of what adaptation is supposed to do. Nolan has publicly defended this choice, stating he wanted language with emotional not intellectual meaning for contemporary audiences. What he delivered instead is Matt Damon's Odysseus calling his son Dad across the deck of a trireme. Homer wrote one of the most poetic, formally intricate works in the history of human literature. What we get here sounds like it was workshopped for a Thursday night network drama. The disconnect between the visual grandeur and the dialogue register is so severe it becomes actively comic.",
+        "And the casting. This is a film adapting a specific Greek epic with specific Greek characters described in specific ways across thousands of years of text, translation, and scholarship. Helen of Troy, whose appearance is described throughout the source material in precise and well-documented terms, is played here by Lupita Nyong'o, whose physical appearance bears no resemblance to those descriptions. Not a single principal cast member is Greek. Not one. A $250 million adaptation of the foundational text of Greek civilisation and the Greeks themselves are nowhere to be found. Travis Scott plays a Greek bard. Elliot Page appears as Sinon. The film reads less like an adaptation of Homer and more like a casting spreadsheet was handed out and characters were assigned to fill it.",
+        "Performancewise, Damon is adequate in the way that adequate in a film this ambitious is a quiet disaster. He carries the physicality well enough but there is no interior life to his Odysseus. The grief, the cunning, the moral complexity of a man who has been away from home for twenty years and done terrible things to get back, none of it lands. Tom Holland as Telemachus is similarly surface-level. Anne Hathaway as Penelope is the closest the film gets to genuine emotional weight, and the reunion scene between her and Damon in the final act is well-played by both, but it arrives too late and too undercooked to land as the catharsis it should be. Zendaya as Athena is present mostly in brief interjections and offers nothing that reads as divine or threatening.",
+        "The plot follows Homer's broad structure: Odysseus and his men escape the Cyclops by blinding him and hiding among his sheep, they lose men to the Laestrygonians, Circe turns the crew to swine, the Sirens nearly destroy what is left of the fleet. On screen these episodes have spectacle but no accumulation. The episodic nature of the source material works in the poem because each episode builds Odysseus as a character and a myth. Here it just feels like a checklist being ticked. You watch a set piece, it ends, you move to the next one. The emotional connective tissue that should hold everything together is simply not there.",
+        "The ending is where Nolan makes his most significant departure from Homer, and also where the film is at its most philosophically interesting, which is frustrating because it arrives three minutes before the credits. After killing the suitors, Odysseus does not settle back into Ithaca. He and Penelope sail west into the unknown, leaving Telemachus to rule. Nolan explicitly draws a parallel to Oppenheimer, framing Odysseus and the Trojan Horse as a pre-apocalyptic moment, the man who invented the strategy that ended the war unable to live with what he built. It is a genuinely compelling idea. It is also the only genuinely compelling idea in a nearly three hour film, and it arrives too late to redeem anything before it.",
+        "This is the weakest film of Nolan's career by a significant margin. Memento, Inception, Dunkirk, even Tenet with all its problems, all of them had a coherent emotional argument at their center. The Odyssey has spectacle and ambition and nothing underneath either. At $250 million it is a film that represents exactly what happens when a director of this stature is given unlimited resources and no meaningful creative pushback. Every wrong decision here, the accents, the casting against the source material, the flattening of Homer's characters, could have been challenged in development. None of them were. The cinematography is extraordinary. The film around it is the biggest letdown of 2026."
+      ],
+      "images": [],
+      "verdict": "2/10. Nolan has made a visually stunning film that fundamentally disrespects its source material at every creative decision point. Homer deserved better.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg"
+      }
+    },
+    {
       "id": 1784367402874,
       "slug": "friday-the-13th-review",
       "seoTitle": "Friday the 13th Review (1980) | WretVision",
