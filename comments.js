@@ -513,7 +513,7 @@
       }
 
       // Success
-      showMsg(msgEl, '// SUBMITTED — AWAITING MODERATION', 'success');
+      showMsg(msgEl, parentId ? '// REPLY POSTED' : '// COMMENT POSTED', 'success');
       if (nameEl)    nameEl.value    = '';
       if (bodyEl)    bodyEl.value    = '';
       if (spoilerEl) spoilerEl.checked = false;
@@ -521,10 +521,19 @@
       if (counter) counter.textContent = '0 / 2000';
       resetTurnstileInForm(formEl, isMain);
 
-      // Collapse reply form after a brief delay
+      // Reload thread so new comment/reply appears
+      setTimeout(function () {
+        s.page        = 0;
+        s.allComments = [];
+        s.total       = 0;
+        s.hasMore     = false;
+        fetchPage();
+      }, 800);
+
+      // Collapse reply form after reload
       if (parentId) {
         var wrap = $id('rvc-reply-' + parentId);
-        if (wrap) setTimeout(function () { wrap.hidden = true; }, 2200);
+        if (wrap) setTimeout(function () { wrap.hidden = true; }, 1000);
       }
 
     } catch (e) {
