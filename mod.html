@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>WretVision // MOD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blue:   #0a8fd4;
+  --bg:     #060d14;
+  --bg2:    #091520;
+  --bg3:    #0d1e2e;
+  --text:   #c8e8ff;
+  --accent: #ffe066;
+  --green:  #4fffb0;
+  --muted:  #3d6a88;
+  --red:    #ff4757;
+  --orange: #ffa502;
+  --border: rgba(10,143,212,0.22);
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-mono:  'VT323', monospace;
+  --font-ui:    'Rajdhani', sans-serif;
+}
+
+[hidden] { display: none !important; }
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+/* ── Login ───────────────────────────────────────────────── */
+#login-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.login-box {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+}
+
+.login-box::before,
+.login-box::after,
+.login-box .pc-bl,
+.login-box .pc-br {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--blue);
+}
+.login-box::before  { top: -1px; left: -1px; }
+.login-box::after   { top: -1px; right: -1px; }
+.login-box .pc-bl   { bottom: -1px; left: -1px; }
+.login-box .pc-br   { bottom: -1px; right: -1px; }
+
+.login-title {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: var(--blue);
+  line-height: 1.8;
+  margin-bottom: 28px;
+  letter-spacing: 1px;
+}
+
+.login-title span {
+  display: block;
+  font-size: 7px;
+  color: var(--muted);
+  margin-top: 6px;
+  letter-spacing: 2px;
+}
+
+.login-label {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  color: var(--muted);
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.login-input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 18px;
+  padding: 10px 14px;
+  letter-spacing: 2px;
+  outline: none;
+  margin-bottom: 20px;
+}
+.login-input:focus { border-color: var(--blue); }
+
+.login-btn {
+  width: 100%;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  font-family: var(--font-pixel);
+  font-size: 9px;
+  padding: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: opacity .15s;
+}
+.login-btn:hover    { opacity: .85; }
+.login-btn:disabled { opacity: .4; cursor: not-allowed; }
+
+.login-error {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  color: var(--red);
+  letter-spacing: 1px;
+  margin-top: 12px;
+  min-height: 24px;
+}
+
+/* ── App shell ───────────────────────────────────────────── */
+#app { display: flex; flex-direction: column; min-height: 100vh; }
+
+/* ── Header ──────────────────────────────────────────────── */
+.mod-header {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 52px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.mod-header-title {
+  font-family: var(--font-pixel);
+  font-size: 8px;
+  color: var(--blue);
+  letter-spacing: 1px;
+}
+.mod-header-title em { color: var(--accent); font-style: normal; }
+
+.logout-btn {
+  background: transparent;
+  border: 1px solid var(--muted);
+  color: var(--muted);
+  font-family: var(--font-pixel);
+  font-size: 7px;
+  padding: 7px 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all .15s;
+}
+.logout-btn:hover { border-color: var(--red); color: var(--red); }
+
+/* ── Stats bar ───────────────────────────────────────────── */
+.stats-bar {
+  display: flex;
+  gap: 10px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  background: var(--bg2);
+}
+
+.stat-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: border-color .15s;
+  font-family: var(--font-mono);
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.stat-chip:hover           { border-color: var(--blue); }
+.stat-chip.active          { border-color: var(--blue); background: rgba(10,143,212,.12); }
+.stat-chip .chip-label     { color: var(--muted); text-transform: uppercase; }
+.stat-chip .chip-val       { font-weight: 700; color: var(--text); }
+.stat-chip[data-filter="pending"]  .chip-val { color: var(--accent); }
+.stat-chip[data-filter="reports"]  .chip-val { color: var(--red); }
+.stat-chip[data-filter="hidden"]   .chip-val { color: var(--muted); }
+.stat-chip[data-filter="approved"] .chip-val { color: var(--green); }
+.stat-chip[data-filter="pinned"]   .chip-val { color: var(--blue); }
+
+/* ── Toolbar ─────────────────────────────────────────────── */
+.toolbar {
+  display: flex;
+  gap: 10px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.toolbar-input {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 17px;
+  padding: 7px 12px;
+  outline: none;
+  letter-spacing: 1px;
+}
+.toolbar-input:focus { border-color: var(--blue); }
+#search-input  { flex: 1; min-width: 180px; }
+#slug-input    { width: 220px; }
+
+.toolbar-btn {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  padding: 7px 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all .15s;
+}
+.toolbar-btn:hover        { border-color: var(--blue); color: var(--text); }
+.toolbar-btn.active       { border-color: var(--blue); color: var(--blue); background: rgba(10,143,212,.1); }
+
+/* ── Tab row ─────────────────────────────────────────────── */
+.tab-row {
+  display: flex;
+  gap: 0;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 17px;
+  padding: 10px 16px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  transition: all .15s;
+}
+.tab-btn:hover  { color: var(--text); }
+.tab-btn.active { color: var(--blue); border-bottom-color: var(--blue); }
+
+/* ── Content ─────────────────────────────────────────────── */
+.content {
+  flex: 1;
+  padding: 16px 20px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ── Comment cards ───────────────────────────────────────── */
+.comment-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+  padding: 14px 16px;
+  transition: border-color .15s;
+}
+.comment-card:hover { border-color: rgba(10,143,212,.5); }
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  font-family: var(--font-mono);
+  font-size: 16px;
+}
+
+.card-slug  { color: var(--blue); letter-spacing: 1px; }
+.card-name  { color: var(--accent); font-weight: 700; }
+.card-time  { color: var(--muted); }
+.card-sep   { color: var(--border); }
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  padding: 2px 7px;
+  border: 1px solid;
+  letter-spacing: 1px;
+}
+.badge-pending  { color: var(--accent); border-color: var(--accent); }
+.badge-approved { color: var(--green);  border-color: var(--green);  }
+.badge-rejected { color: var(--red);    border-color: var(--red);    }
+.badge-hidden   { color: var(--muted);  border-color: var(--muted);  }
+.badge-reply    { color: var(--muted);  border-color: var(--muted);  }
+.badge-spoiler  { color: var(--orange); border-color: var(--orange); }
+.badge-pinned   { color: var(--blue);   border-color: var(--blue);   }
+.badge-deleted  { color: var(--red);    border-color: var(--red);    }
+
+.card-body {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+.card-body.deleted { color: var(--muted); font-style: italic; }
+
+.expand-btn {
+  background: none;
+  border: none;
+  color: var(--blue);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.act-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  padding: 4px 10px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all .15s;
+}
+.act-btn:hover            { border-color: var(--blue); color: var(--text); }
+.act-btn.approve:hover    { border-color: var(--green); color: var(--green); }
+.act-btn.reject:hover     { border-color: var(--red);   color: var(--red);   }
+.act-btn.delete-btn:hover { border-color: var(--red);   color: var(--red);   }
+.act-btn.pin:hover        { border-color: var(--blue);  color: var(--blue);  }
+.act-btn.hide:hover       { border-color: var(--orange);color: var(--orange);}
+.act-btn:disabled         { opacity: .35; cursor: not-allowed; }
+
+.act-feedback {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  padding: 4px 0;
+  letter-spacing: 1px;
+}
+
+/* ── Report cards ────────────────────────────────────────── */
+.report-card {
+  background: var(--bg2);
+  border: 1px solid rgba(255,71,87,.25);
+  margin-bottom: 10px;
+  padding: 14px 16px;
+}
+
+.report-meta {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+.report-reason { color: var(--red); }
+.report-body {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--text);
+  margin-bottom: 10px;
+  border-left: 2px solid var(--border);
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+/* ── Pagination ──────────────────────────────────────────── */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px 0;
+  font-family: var(--font-mono);
+  font-size: 17px;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+
+.page-nav-btn {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  padding: 6px 16px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all .15s;
+}
+.page-nav-btn:hover    { border-color: var(--blue); color: var(--blue); }
+.page-nav-btn:disabled { opacity: .3; cursor: not-allowed; }
+
+/* ── Empty / loading states ──────────────────────────────── */
+.state-msg {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--muted);
+  text-align: center;
+  padding: 48px 0;
+  letter-spacing: 2px;
+}
+
+/* ── Modal ───────────────────────────────────────────────── */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(6,13,20,.85);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal-box {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  width: 100%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.modal-title {
+  font-family: var(--font-pixel);
+  font-size: 8px;
+  color: var(--blue);
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.modal-close {
+  float: right;
+  background: none;
+  border: 1px solid var(--muted);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 18px;
+  padding: 2px 10px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.modal-close:hover { border-color: var(--red); color: var(--red); }
+
+.log-entry {
+  border-bottom: 1px solid var(--border);
+  padding: 10px 0;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.log-entry:last-child { border-bottom: none; }
+.log-action  { color: var(--accent); }
+.log-by      { color: var(--muted); }
+.log-time    { color: var(--muted); font-size: 14px; }
+.log-detail  { color: var(--text); font-size: 14px; margin-top: 3px; }
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .stats-bar   { padding: 10px 12px; }
+  .toolbar     { padding: 10px 12px; }
+  .tab-row     { padding: 0 12px; }
+  .content     { padding: 12px; }
+  #slug-input  { width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── Login ──────────────────────────────────────────────────────────────── -->
+<div id="login-screen">
+  <div class="login-box">
+    <div class="pc-bl"></div><div class="pc-br"></div>
+    <div class="login-title">
+      WRETVISION
+      <span>// MOD DASHBOARD</span>
+    </div>
+    <label class="login-label" for="token-input">OWNER TOKEN</label>
+    <input id="token-input" class="login-input" type="password"
+           autocomplete="current-password" spellcheck="false" />
+    <button id="login-btn" class="login-btn">AUTHENTICATE ►</button>
+    <div id="login-error" class="login-error"></div>
+  </div>
+</div>
+
+<!-- ── App ────────────────────────────────────────────────────────────────── -->
+<div id="app" hidden>
+
+  <header class="mod-header">
+    <div class="mod-header-title">WRETVISION // <em>MOD</em></div>
+    <button id="logout-btn" class="logout-btn">LOGOUT</button>
+  </header>
+
+  <div class="stats-bar" id="stats-bar">
+    <div class="stat-chip" data-filter="all">
+      <span class="chip-label">TOTAL</span>
+      <span class="chip-val" id="stat-total">—</span>
+    </div>
+    <div class="stat-chip" data-filter="pending">
+      <span class="chip-label">PENDING</span>
+      <span class="chip-val" id="stat-pending">—</span>
+    </div>
+    <div class="stat-chip" data-filter="approved">
+      <span class="chip-label">APPROVED</span>
+      <span class="chip-val" id="stat-approved">—</span>
+    </div>
+    <div class="stat-chip" data-filter="rejected">
+      <span class="chip-label">REJECTED</span>
+      <span class="chip-val" id="stat-rejected">—</span>
+    </div>
+    <div class="stat-chip" data-filter="hidden">
+      <span class="chip-label">HIDDEN</span>
+      <span class="chip-val" id="stat-hidden">—</span>
+    </div>
+    <div class="stat-chip" data-filter="pinned">
+      <span class="chip-label">PINNED</span>
+      <span class="chip-val" id="stat-pinned">—</span>
+    </div>
+    <div class="stat-chip" data-filter="reports">
+      <span class="chip-label">REPORTS</span>
+      <span class="chip-val" id="stat-reports">—</span>
+    </div>
+  </div>
+
+  <div class="tab-row" id="tab-row">
+    <button class="tab-btn active" data-tab="all">ALL</button>
+    <button class="tab-btn" data-tab="pending">PENDING</button>
+    <button class="tab-btn" data-tab="approved">APPROVED</button>
+    <button class="tab-btn" data-tab="rejected">REJECTED</button>
+    <button class="tab-btn" data-tab="hidden">HIDDEN</button>
+    <button class="tab-btn" data-tab="reports">REPORTS</button>
+    <button class="tab-btn" data-tab="pinned">PINNED</button>
+  </div>
+
+  <div class="toolbar">
+    <input id="search-input" class="toolbar-input" type="search"
+           placeholder="// SEARCH COMMENTS..." spellcheck="false" />
+    <input id="slug-input" class="toolbar-input" type="text"
+           placeholder="FILTER BY REVIEW SLUG" spellcheck="false" />
+    <button id="sort-btn" class="toolbar-btn active" data-sort="newest">NEWEST</button>
+    <button id="refresh-btn" class="toolbar-btn">↺ REFRESH</button>
+  </div>
+
+  <div class="content">
+    <div id="list-container"></div>
+    <div class="pagination" id="pagination" hidden>
+      <button class="page-nav-btn" id="prev-btn">◄ PREV</button>
+      <span id="page-info">PAGE 1 OF 1</span>
+      <button class="page-nav-btn" id="next-btn">NEXT ►</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── Modal ──────────────────────────────────────────────────────────────── -->
+<div id="modal" hidden>
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close">✕ CLOSE</button>
+      <div class="modal-title" id="modal-title">MOD HISTORY</div>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  // ── State ────────────────────────────────────────────────────────────────────
+  var API   = '';
+  var state = {
+    tab:    'all',
+    status: 'all',
+    search: '',
+    slug:   '',
+    sort:   'newest',
+    page:   1,
+    limit:  20,
+    total:  0,
+    loading: false,
+  };
+
+  // ── Auth helpers ─────────────────────────────────────────────────────────────
+  function getToken() { return sessionStorage.getItem('mod_token') || ''; }
+  function setToken(t) { sessionStorage.setItem('mod_token', t); }
+  function clearToken() { sessionStorage.removeItem('mod_token'); }
+
+  function authHeaders() {
+    return { 'Authorization': 'Bearer ' + getToken(), 'Content-Type': 'application/json' };
+  }
+
+  async function apiFetch(path, opts) {
+    var res = await fetch(API + path, Object.assign({ headers: authHeaders() }, opts || {}));
+    if (res.status === 401) { logout(); throw new Error('Unauthorized'); }
+    return res;
+  }
+
+  // ── Login ────────────────────────────────────────────────────────────────────
+  var loginScreen = document.getElementById('login-screen');
+  var appEl       = document.getElementById('app');
+  var loginBtn    = document.getElementById('login-btn');
+  var tokenInput  = document.getElementById('token-input');
+  var loginError  = document.getElementById('login-error');
+
+  tokenInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') attemptLogin();
+  });
+  loginBtn.addEventListener('click', attemptLogin);
+
+  async function attemptLogin() {
+    var tok = tokenInput.value.trim();
+    if (!tok) { loginError.textContent = '// TOKEN REQUIRED'; return; }
+    loginBtn.disabled = true;
+    loginError.textContent = '// AUTHENTICATING...';
+    try {
+      var res = await fetch(API + '/api/mod/stats', {
+        headers: { 'Authorization': 'Bearer ' + tok }
+      });
+      if (!res.ok) throw new Error('bad');
+      setToken(tok);
+      tokenInput.value = '';
+      loginError.textContent = '';
+      showApp();
+    } catch (_) {
+      loginError.textContent = '// AUTHENTICATION FAILED';
+      clearToken();
+    } finally {
+      loginBtn.disabled = false;
+    }
+  }
+
+  function showApp() {
+    loginScreen.hidden = true;
+    appEl.hidden = false;
+    loadStats();
+    loadList();
+  }
+
+  function showLogin() {
+    appEl.hidden = true;
+    loginScreen.hidden = false;
+    tokenInput.focus();
+  }
+
+  // ── Logout ───────────────────────────────────────────────────────────────────
+  document.getElementById('logout-btn').addEventListener('click', logout);
+  function logout() { clearToken(); showLogin(); }
+
+  // ── Stats ────────────────────────────────────────────────────────────────────
+  async function loadStats() {
+    try {
+      var res  = await apiFetch('/api/mod/stats');
+      var data = await res.json();
+      document.getElementById('stat-total').textContent    = data.total    ?? 0;
+      document.getElementById('stat-pending').textContent  = data.pending  ?? 0;
+      document.getElementById('stat-approved').textContent = data.approved ?? 0;
+      document.getElementById('stat-rejected').textContent = data.rejected ?? 0;
+      document.getElementById('stat-hidden').textContent   = data.hidden   ?? 0;
+      document.getElementById('stat-pinned').textContent   = data.pinned   ?? 0;
+      document.getElementById('stat-reports').textContent  = data.reports  ?? 0;
+    } catch (_) {}
+  }
+
+  // ── Stat chip clicks ─────────────────────────────────────────────────────────
+  document.getElementById('stats-bar').addEventListener('click', function (e) {
+    var chip = e.target.closest('.stat-chip');
+    if (!chip) return;
+    var f = chip.dataset.filter;
+    if (f === 'reports') {
+      switchTab('reports');
+    } else if (f === 'hidden') {
+      switchTab('hidden');
+    } else if (f === 'pinned') {
+      switchTab('pinned');
+    } else if (f === 'all') {
+      switchTab('all');
+    } else {
+      switchTab(f);
+    }
+  });
+
+  // ── Tabs ─────────────────────────────────────────────────────────────────────
+  document.getElementById('tab-row').addEventListener('click', function (e) {
+    var btn = e.target.closest('.tab-btn');
+    if (!btn) return;
+    switchTab(btn.dataset.tab);
+  });
+
+  function switchTab(tab) {
+    state.tab  = tab;
+    state.page = 1;
+
+    // Update active tab
+    document.querySelectorAll('.tab-btn').forEach(function (b) {
+      b.classList.toggle('active', b.dataset.tab === tab);
+    });
+
+    // Map tab → status filter
+    var tabStatusMap = {
+      all:      'all',
+      pending:  'pending',
+      approved: 'approved',
+      rejected: 'rejected',
+      hidden:   'all',   // shadow_hidden filter handled differently
+      pinned:   'all',
+      reports:  null,    // uses reports endpoint
+    };
+    state.status = tabStatusMap[tab] || 'all';
+
+    // Update toolbar search relevance
+    document.getElementById('search-input').value = '';
+    document.getElementById('slug-input').value   = '';
+    state.search = '';
+    state.slug   = '';
+
+    loadList();
+  }
+
+  // ── Toolbar ──────────────────────────────────────────────────────────────────
+  var searchTimeout;
+  document.getElementById('search-input').addEventListener('input', function (e) {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(function () {
+      state.search = e.target.value.trim();
+      state.page   = 1;
+      loadList();
+    }, 350);
+  });
+
+  document.getElementById('slug-input').addEventListener('input', function (e) {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(function () {
+      state.slug = e.target.value.trim();
+      state.page = 1;
+      loadList();
+    }, 350);
+  });
+
+  document.getElementById('sort-btn').addEventListener('click', function () {
+    state.sort = state.sort === 'newest' ? 'oldest' : 'newest';
+    this.textContent = state.sort === 'newest' ? 'NEWEST' : 'OLDEST';
+    state.page = 1;
+    loadList();
+  });
+
+  document.getElementById('refresh-btn').addEventListener('click', function () {
+    loadStats();
+    loadList();
+  });
+
+  // ── Pagination ────────────────────────────────────────────────────────────────
+  document.getElementById('prev-btn').addEventListener('click', function () {
+    if (state.page > 1) { state.page--; loadList(); }
+  });
+  document.getElementById('next-btn').addEventListener('click', function () {
+    var pages = Math.ceil(state.total / state.limit);
+    if (state.page < pages) { state.page++; loadList(); }
+  });
+
+  // ── List loader ───────────────────────────────────────────────────────────────
+  async function loadList() {
+    if (state.loading) return;
+    state.loading = true;
+    var container = document.getElementById('list-container');
+    container.innerHTML = '<div class="state-msg">// LOADING...</div>';
+
+    try {
+      if (state.tab === 'reports') {
+        await loadReports(container);
+      } else {
+        await loadComments(container);
+      }
+    } catch (err) {
+      if (err.message !== 'Unauthorized') {
+        container.innerHTML = '<div class="state-msg" style="color:var(--red)">// ERROR LOADING DATA</div>';
+      }
+    } finally {
+      state.loading = false;
+    }
+  }
+
+  async function loadComments(container) {
+    var params = new URLSearchParams({
+      status: state.status,
+      page:   state.page,
+      limit:  state.limit,
+      sort:   state.sort,
+    });
+    if (state.search) params.set('search', state.search);
+    if (state.slug)   params.set('slug',   state.slug);
+
+    var res  = await apiFetch('/api/mod/comments?' + params.toString());
+    var data = await res.json();
+
+    state.total = data.total || 0;
+
+    var comments = data.comments || [];
+
+    // Client-side filter for tabs that don't have a direct status mapping
+    if (state.tab === 'hidden') {
+      comments = comments.filter(function (c) { return c.shadow_hidden; });
+    } else if (state.tab === 'pinned') {
+      comments = comments.filter(function (c) { return c.is_pinned; });
+    }
+
+    if (comments.length === 0) {
+      container.innerHTML = '<div class="state-msg">// NO COMMENTS</div>';
+      document.getElementById('pagination').hidden = true;
+      return;
+    }
+
+    container.innerHTML = comments.map(buildCommentCard).join('');
+    updatePagination(data.total, data.page, Math.ceil(data.total / state.limit));
+  }
+
+  async function loadReports(container) {
+    var params = new URLSearchParams({ page: state.page, limit: state.limit });
+    var res    = await apiFetch('/api/mod/reports?' + params.toString());
+    var data   = await res.json();
+
+    state.total = data.total || 0;
+    var reports = data.reports || [];
+
+    if (reports.length === 0) {
+      container.innerHTML = '<div class="state-msg">// NO REPORTS — CLEAN QUEUE</div>';
+      document.getElementById('pagination').hidden = true;
+      return;
+    }
+
+    container.innerHTML = reports.map(buildReportCard).join('');
+    updatePagination(data.total, data.page, Math.ceil(data.total / state.limit));
+  }
+
+  function updatePagination(total, page, pages) {
+    var pag = document.getElementById('pagination');
+    if (pages <= 1) { pag.hidden = true; return; }
+    pag.hidden = false;
+    document.getElementById('page-info').textContent = 'PAGE ' + page + ' OF ' + pages;
+    document.getElementById('prev-btn').disabled = (page <= 1);
+    document.getElementById('next-btn').disabled = (page >= pages);
+  }
+
+  // ── Card builders ─────────────────────────────────────────────────────────────
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function reltime(iso) {
+    if (!iso) return '';
+    var d = Math.floor((Date.now() - new Date(iso)) / 1000);
+    if (d < 60)   return d + 's ago';
+    if (d < 3600) return Math.floor(d/60) + 'm ago';
+    if (d < 86400) return Math.floor(d/3600) + 'h ago';
+    return Math.floor(d/86400) + 'd ago';
+  }
+
+  function statusBadge(c) {
+    var s = c.shadow_hidden ? 'hidden' : c.status;
+    var labels = { pending:'PENDING', approved:'APPROVED', rejected:'REJECTED', hidden:'HIDDEN' };
+    return '<span class="badge badge-' + s + '">' + (labels[s] || s.toUpperCase()) + '</span>';
+  }
+
+  function buildCommentCard(c) {
+    var bodyText = c.is_deleted ? '[DELETED]' : (c.body || '');
+    var truncated = bodyText.length > 300;
+    var preview   = truncated ? bodyText.slice(0, 300) : bodyText;
+
+    var badges = statusBadge(c);
+    if (c.parent_id) badges += ' <span class="badge badge-reply">REPLY</span>';
+    if (c.is_spoiler) badges += ' <span class="badge badge-spoiler">SPOILER</span>';
+    if (c.is_pinned)  badges += ' <span class="badge badge-pinned">PINNED</span>';
+    if (c.is_deleted) badges += ' <span class="badge badge-deleted">DELETED</span>';
+
+    var actions = buildActions(c);
+
+    return '<div class="comment-card" data-id="' + c.id + '">' +
+      '<div class="card-meta">' +
+        '<span class="card-slug">[' + esc(c.review_slug) + ']</span>' +
+        '<span class="card-sep">·</span>' +
+        '<span class="card-name">' + esc(c.display_name) + '</span>' +
+        '<span class="card-sep">·</span>' +
+        '<span class="card-time">' + esc(reltime(c.created_at)) + '</span>' +
+        '<span class="card-sep">·</span>' +
+        badges +
+      '</div>' +
+      '<div class="card-body' + (c.is_deleted ? ' deleted' : '') + '" id="body-' + c.id + '">' +
+        esc(preview) +
+        (truncated ? '…' : '') +
+      '</div>' +
+      (truncated ? '<button class="expand-btn" data-expand="' + c.id + '" data-full="' + esc(bodyText) + '">[ SHOW MORE ]</button>' : '') +
+      '<div class="card-actions" id="actions-' + c.id + '">' + actions + '</div>' +
+    '</div>';
+  }
+
+  function buildActions(c) {
+    var btns = '';
+    var id   = c.id;
+    var del  = c.is_deleted;
+    var hidden = c.shadow_hidden;
+
+    if (!del) {
+      if (c.status === 'pending') {
+        btns += '<button class="act-btn approve" data-action="approve" data-id="' + id + '">✓ APPROVE</button>';
+        btns += '<button class="act-btn reject"  data-action="reject"  data-id="' + id + '">✕ REJECT</button>';
+      }
+      if (c.status === 'approved') {
+        btns += '<button class="act-btn reject" data-action="reject" data-id="' + id + '">REJECT</button>';
+      }
+      if (c.status === 'rejected') {
+        btns += '<button class="act-btn approve" data-action="approve" data-id="' + id + '">APPROVE</button>';
+      }
+      if (!hidden) {
+        btns += '<button class="act-btn hide" data-action="hide" data-id="' + id + '">HIDE</button>';
+      } else {
+        btns += '<button class="act-btn" data-action="restore" data-id="' + id + '">RESTORE</button>';
+      }
+      if (!c.is_pinned) {
+        btns += '<button class="act-btn pin" data-action="pin" data-id="' + id + '">PIN</button>';
+      } else {
+        btns += '<button class="act-btn" data-action="unpin" data-id="' + id + '">UNPIN</button>';
+      }
+    }
+
+    btns += '<button class="act-btn delete-btn" data-action="delete" data-id="' + id + '">DELETE</button>';
+    btns += '<button class="act-btn" data-action="history" data-id="' + id + '">HISTORY</button>';
+    btns += '<span class="act-feedback" id="feedback-' + id + '"></span>';
+
+    return btns;
+  }
+
+  function buildReportCard(r) {
+    var body = r.body ? (r.body.length > 200 ? r.body.slice(0, 200) + '…' : r.body) : '[deleted]';
+    return '<div class="report-card" data-report-id="' + r.id + '">' +
+      '<div class="report-meta">' +
+        'REPORT #' + r.id + ' · ' +
+        '<span class="report-reason">' + esc(r.reason.toUpperCase()) + '</span>' +
+        ' · COMMENT #' + r.comment_id +
+        (r.display_name ? ' BY ' + esc(r.display_name) : '') +
+        ' · <span style="color:var(--muted)">' + esc(reltime(r.created_at)) + '</span>' +
+        ' · <span style="color:var(--muted)">REVIEW: ' + esc(r.review_slug || '—') + '</span>' +
+      '</div>' +
+      '<div class="report-body">' + esc(body) + '</div>' +
+      '<div class="card-actions">' +
+        '<button class="act-btn" data-resolve="' + r.id + '">✓ RESOLVE</button>' +
+        '<span class="act-feedback" id="rfeedback-' + r.id + '"></span>' +
+      '</div>' +
+    '</div>';
+  }
+
+  // ── Event delegation (list) ───────────────────────────────────────────────────
+  document.getElementById('list-container').addEventListener('click', function (e) {
+    // Expand body
+    var expandBtn = e.target.closest('[data-expand]');
+    if (expandBtn) {
+      var cid = expandBtn.dataset.expand;
+      document.getElementById('body-' + cid).textContent = expandBtn.dataset.full;
+      expandBtn.remove();
+      return;
+    }
+
+    // Comment actions
+    var actBtn = e.target.closest('[data-action]');
+    if (actBtn) {
+      var action = actBtn.dataset.action;
+      var id     = parseInt(actBtn.dataset.id, 10);
+      if (action === 'history') { openHistory(id); return; }
+      if (action === 'delete') {
+        if (!confirm('Delete comment #' + id + '? This marks it as deleted for all users.')) return;
+      }
+      doCommentAction(id, action, actBtn);
+      return;
+    }
+
+    // Resolve report
+    var resolveBtn = e.target.closest('[data-resolve]');
+    if (resolveBtn) {
+      var rid = parseInt(resolveBtn.dataset.resolve, 10);
+      doResolveReport(rid, resolveBtn);
+    }
+  });
+
+  async function doCommentAction(id, action, btn) {
+    var allBtns = document.querySelectorAll('#actions-' + id + ' .act-btn');
+    allBtns.forEach(function (b) { b.disabled = true; });
+    var feedback = document.getElementById('feedback-' + id);
+    if (feedback) feedback.textContent = '// ...';
+
+    try {
+      var method = action === 'delete' ? 'DELETE' : 'POST';
+      var path   = action === 'delete'
+        ? '/api/mod/comment/' + id
+        : '/api/mod/comment/' + id + '/' + action;
+
+      var res  = await apiFetch(path, { method: method });
+      var data = await res.json();
+
+      if (!res.ok) {
+        if (feedback) { feedback.textContent = '// ERROR'; feedback.style.color = 'var(--red)'; }
+        allBtns.forEach(function (b) { b.disabled = false; });
+        return;
+      }
+
+      if (feedback) { feedback.textContent = '// DONE'; feedback.style.color = 'var(--green)'; }
+      loadStats();
+      setTimeout(function () { loadList(); }, 600);
+
+    } catch (err) {
+      if (err.message !== 'Unauthorized') {
+        if (feedback) { feedback.textContent = '// FAILED'; feedback.style.color = 'var(--red)'; }
+        allBtns.forEach(function (b) { b.disabled = false; });
+      }
+    }
+  }
+
+  async function doResolveReport(id, btn) {
+    btn.disabled = true;
+    var feedback = document.getElementById('rfeedback-' + id);
+    try {
+      var res = await apiFetch('/api/mod/report/' + id + '/resolve', { method: 'POST' });
+      if (res.ok) {
+        if (feedback) { feedback.textContent = '// RESOLVED'; feedback.style.color = 'var(--green)'; }
+        loadStats();
+        setTimeout(function () { loadList(); }, 800);
+      } else {
+        btn.disabled = false;
+      }
+    } catch (_) { btn.disabled = false; }
+  }
+
+  // ── History modal ─────────────────────────────────────────────────────────────
+  async function openHistory(id) {
+    var modal = document.getElementById('modal');
+    modal.hidden = false;
+    document.getElementById('modal-title').textContent = 'MOD HISTORY — COMMENT #' + id;
+    document.getElementById('modal-body').innerHTML = '<div class="state-msg">// LOADING...</div>';
+
+    try {
+      var res  = await apiFetch('/api/mod/comment/' + id + '/history');
+      var data = await res.json();
+      var log  = data.log || [];
+
+      if (log.length === 0) {
+        document.getElementById('modal-body').innerHTML = '<div class="state-msg">// NO HISTORY YET</div>';
+        return;
+      }
+
+      document.getElementById('modal-body').innerHTML = log.map(function (entry) {
+        var detail = '';
+        if (entry.prev_status || entry.new_status) {
+          detail = entry.prev_status + ' → ' + entry.new_status;
+        } else if (entry.reason) {
+          detail = entry.reason;
+        }
+        return '<div class="log-entry">' +
+          '<span class="log-action">' + esc(entry.action.toUpperCase()) + '</span>' +
+          ' <span class="log-by">by ' + esc(entry.moderator) + '</span>' +
+          ' <span class="log-time">· ' + esc(reltime(entry.created_at)) + '</span>' +
+          (detail ? '<div class="log-detail">' + esc(detail) + '</div>' : '') +
+        '</div>';
+      }).join('');
+    } catch (_) {}
+  }
+
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  document.getElementById('modal-backdrop').addEventListener('click', function (e) {
+    if (e.target === this) closeModal();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeModal();
+  });
+  function closeModal() { document.getElementById('modal').hidden = true; }
+
+  // ── Boot ──────────────────────────────────────────────────────────────────────
+  if (getToken()) {
+    showApp();
+  } else {
+    tokenInput.focus();
+  }
+
+}());
+</script>
+</body>
+</html>

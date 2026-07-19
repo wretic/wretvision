@@ -84,8 +84,8 @@ export async function insertComment(db, {
   const result = await db
     .prepare(`
       INSERT INTO comments
-        (review_slug, parent_id, display_name, body, is_spoiler, ip_hash)
-      VALUES (?, ?, ?, ?, ?, ?)
+        (review_slug, parent_id, display_name, body, is_spoiler, ip_hash, status)
+      VALUES (?, ?, ?, ?, ?, ?, 'approved')
     `)
     .bind(
       review_slug,

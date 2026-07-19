@@ -235,3 +235,76 @@ export async function deleteNote(db, id) {
     .bind(id)
     .run();
 }
+
+// ── Phase 3: Comment management ───────────────────────────────────────────────
+
+export async function listModComments(db, { status, search, slug, page, limit, sort }) {
+  const offset  = (page - 1) * limit;
+  const clauses = [];
+  const params  = [];
+
+  if (status && status !== 'all') { clauses.push('status = ?');                        params.push(status); }
+  if (slug)                       { clauses.push('review_slug = ?');                   params.push(slug); }
+  if (search)                     { clauses.push('(body LIKE ? OR display_name LIKE ?)'); params.push(`%${search}%`, `%${search}%`); }
+
+  const where   = clauses.length ? 'WHERE ' + clauses.join(' AND ') : '';
+  const orderBy = sort === 'oldest' ? 'created_at ASC' : 'created_at DESC';
+
+  const [rows, counts] = await Promise.all([
+    db.prepare(`SELECT id,review_slug,parent_id,display_name,body,status,is_pinned,is_spoiler,is_deleted,is_locked,is_edited,shadow_hidden,report_count,ip_hash,created_at FROM comments ${where} ORDER BY ${orderBy} LIMIT ? OFFSET ?`).bind(...params, limit, offset).all(),
+    db.prepare(`SELECT COUNT(*) AS total FROM comments ${where}`).bind(...params).all(),
+  ]);
+
+  return { comments: rows.results, total: counts.results[0]?.total ?? 0 };
+}
+
+export async function getCommentByIdFull(db, id) {
+  const { results } = await db.prepare(
+    `SELECT id,review_slug,parent_id,display_name,body,status,is_pinned,is_spoiler,is_deleted,is_locked,is_edited,shadow_hidden,report_count,ip_hash,created_at FROM comments WHERE id = ?`
+  ).bind(id).all();
+  return results[0] ?? null;
+}
+
+export async function setCommentStatus(db, id, newStatus) {
+  await db.prepare(`UPDATE comments SET status=?,updated_at=strftime('%Y-%m-%dT%H:%M:%SZ','now') WHERE id=?`).bind(newStatus, id).run();
+}
+
+export async function setCommentDeleted(db, id) {
+  await db.prepare(`UPDATE comments SET is_deleted=1,updated_at=strftime('%Y-%m-%dT%H:%M:%SZ','now') WHERE id=?`).bind(id).run();
+}
+
+export async function setCommentHidden(db, id, hidden) {
+  await db.prepare(`UPDATE comments SET shadow_hidden=?,updated_at=strftime('%Y-%m-%dT%H:%M:%SZ','now') WHERE id=?`).bind(hidden ? 1 : 0, id).run();
+}
+
+export async function setCommentPinned(db, id, pinned) {
+  await db.prepare(`UPDATE comments SET is_pinned=?,updated_at=strftime('%Y-%m-%dT%H:%M:%SZ','now') WHERE id=?`).bind(pinned ? 1 : 0, id).run();
+}
+
+export async function listReports(db, { page, limit }) {
+  const offset = (page - 1) * limit;
+  const [rows, counts] = await Promise.all([
+    db.prepare(`SELECT r.id,r.comment_id,r.reason,r.created_at,c.display_name,c.body,c.review_slug,c.status AS comment_status,c.is_deleted FROM reports r LEFT JOIN comments c ON c.id=r.comment_id ORDER BY r.created_at DESC LIMIT ? OFFSET ?`).bind(limit, offset).all(),
+    db.prepare(`SELECT COUNT(*) AS total FROM reports`).all(),
+  ]);
+  return { reports: rows.results, total: counts.results[0]?.total ?? 0 };
+}
+
+export async function deleteReport(db, id) {
+  await db.prepare(`DELETE FROM reports WHERE id=?`).bind(id).run();
+}
+
+export async function getCommentAuditLog(db, commentId) {
+  const { results } = await db.prepare(
+    `SELECT id,moderator,action,prev_status,new_status,reason,created_at FROM mod_audit_log WHERE comment_id=? ORDER BY created_at DESC LIMIT 50`
+  ).bind(commentId).all();
+  return results;
+}
+
+export async function getModStats(db) {
+  const [{ results }, { results: rr }] = await Promise.all([
+    db.prepare(`SELECT SUM(CASE WHEN status='pending'  THEN 1 ELSE 0 END) AS pending, SUM(CASE WHEN status='approved' THEN 1 ELSE 0 END) AS approved, SUM(CASE WHEN status='rejected' THEN 1 ELSE 0 END) AS rejected, SUM(CASE WHEN shadow_hidden=1 THEN 1 ELSE 0 END) AS hidden, SUM(CASE WHEN is_pinned=1 THEN 1 ELSE 0 END) AS pinned, COUNT(*) AS total FROM comments`).all(),
+    db.prepare(`SELECT COUNT(*) AS reports FROM reports`).all(),
+  ]);
+  return { ...results[0], reports: rr[0]?.reports ?? 0 };
+}

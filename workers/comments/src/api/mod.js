@@ -2,91 +2,125 @@
 // Moderator API  (/api/mod/*)
 // ============================================================
 // All routes require:  Authorization: Bearer <OWNER_TOKEN>
-// All responses are internal — never linked from public pages.
 //
-// Routes:
-//   GET    /api/mod/commenter/:hash          — profile + live stats
-//   GET    /api/mod/commenter/:hash/history  — paginated comment history
-//   GET    /api/mod/commenter/:hash/notes    — moderator notes
-//   POST   /api/mod/commenter/:hash/notes    — add note
-//   POST   /api/mod/commenter/:hash/ban      — ban commenter
-//   POST   /api/mod/commenter/:hash/unban    — lift ban
-//   PUT    /api/mod/notes/:id                — edit note
-//   DELETE /api/mod/notes/:id                — delete note
+// Phase 1–2 routes:
+//   GET    /api/mod/commenter/:hash
+//   GET    /api/mod/commenter/:hash/history
+//   GET    /api/mod/commenter/:hash/notes
+//   POST   /api/mod/commenter/:hash/notes
+//   POST   /api/mod/commenter/:hash/ban
+//   POST   /api/mod/commenter/:hash/unban
+//   PUT    /api/mod/notes/:id
+//   DELETE /api/mod/notes/:id
 //
-// :hash is always a 64-char lowercase hex string (SHA-256 ip_hash).
-// :id   is always a positive integer (mod_notes.id).
+// Phase 3 routes:
+//   GET    /api/mod/stats
+//   GET    /api/mod/comments
+//   GET    /api/mod/comment/:id/history
+//   POST   /api/mod/comment/:id/approve
+//   POST   /api/mod/comment/:id/reject
+//   DELETE /api/mod/comment/:id
+//   POST   /api/mod/comment/:id/hide
+//   POST   /api/mod/comment/:id/restore
+//   POST   /api/mod/comment/:id/pin
+//   POST   /api/mod/comment/:id/unpin
+//   GET    /api/mod/reports
+//   POST   /api/mod/report/:id/resolve
 // ============================================================
 
-import { requireMod }                from '../middleware/auth.js';
-import { validatePaginationParams }  from '../middleware/validation.js';
+import { requireMod }                             from '../middleware/auth.js';
+import { validatePaginationParams }               from '../middleware/validation.js';
 import { validateNoteBody, validateNoteCategory } from '../middleware/validation.js';
-import { logModAction }              from '../db/audit.js';
+import { logModAction }                           from '../db/audit.js';
 import {
-  getCommenterStats,
-  getCommenterProfile,
-  upsertBanState,
-  getFingerprints,
-  getFingerprintCount,
-  getCommenterHistory,
-  getCommenterCommentCount,
-  getNotes,
-  getNoteCount,
-  getNoteById,
-  insertNote,
-  updateNote,
-  deleteNote,
+  getCommenterStats, getCommenterProfile, upsertBanState,
+  getFingerprints, getFingerprintCount,
+  getCommenterHistory, getCommenterCommentCount,
+  getNotes, getNoteCount, getNoteById, insertNote, updateNote, deleteNote,
+  listModComments, getCommentByIdFull,
+  setCommentStatus, setCommentDeleted, setCommentHidden, setCommentPinned,
+  listReports, deleteReport, getCommentAuditLog, getModStats,
 } from '../db/mod_queries.js';
-import { MOD_ACTIONS } from '../config/constants.js';
-import { jsonOk, jsonError } from './response.js';
+import { MOD_ACTIONS }           from '../config/constants.js';
+import { jsonOk, jsonError }     from './response.js';
 
-// ── Path patterns ─────────────────────────────────────────────────────────────
-// ip_hash is 64 lowercase hex chars (SHA-256 output).
-const HASH_RE  = /^[a-f0-9]{64}$/;
-const NOTE_ID_RE = /^\d+$/;
+// ── Path parser ───────────────────────────────────────────────────────────────
 
-function parseModPath(path, method) {
-  // /api/mod/commenter/:hash
+function parseModPath(path) {
+  if (path === '/api/mod/stats')    return { route: 'stats' };
+  if (path === '/api/mod/comments') return { route: 'mod_comments' };
+  if (path === '/api/mod/reports')  return { route: 'mod_reports' };
+
+  const reportResolve = path.match(/^\/api\/mod\/report\/(\d+)\/resolve$/);
+  if (reportResolve) return { route: 'report_resolve', id: +reportResolve[1] };
+
+  const commentAction = path.match(/^\/api\/mod\/comment\/(\d+)\/(approve|reject|hide|restore|pin|unpin|history)$/);
+  if (commentAction) return { route: 'comment_action', id: +commentAction[1], action: commentAction[2] };
+
+  const commentBase = path.match(/^\/api\/mod\/comment\/(\d+)$/);
+  if (commentBase) return { route: 'comment_base', id: +commentBase[1] };
+
   const commenterBase = path.match(/^\/api\/mod\/commenter\/([a-f0-9]{64})$/);
   if (commenterBase) return { route: 'commenter', hash: commenterBase[1] };
 
-  // /api/mod/commenter/:hash/history
   const historyPath = path.match(/^\/api\/mod\/commenter\/([a-f0-9]{64})\/history$/);
   if (historyPath) return { route: 'history', hash: historyPath[1] };
 
-  // /api/mod/commenter/:hash/notes
   const notesPath = path.match(/^\/api\/mod\/commenter\/([a-f0-9]{64})\/notes$/);
   if (notesPath) return { route: 'notes', hash: notesPath[1] };
 
-  // /api/mod/commenter/:hash/ban
   const banPath = path.match(/^\/api\/mod\/commenter\/([a-f0-9]{64})\/ban$/);
   if (banPath) return { route: 'ban', hash: banPath[1] };
 
-  // /api/mod/commenter/:hash/unban
   const unbanPath = path.match(/^\/api\/mod\/commenter\/([a-f0-9]{64})\/unban$/);
   if (unbanPath) return { route: 'unban', hash: unbanPath[1] };
 
-  // /api/mod/notes/:id
   const noteById = path.match(/^\/api\/mod\/notes\/(\d+)$/);
-  if (noteById) return { route: 'note_by_id', id: parseInt(noteById[1], 10) };
+  if (noteById) return { route: 'note_by_id', id: +noteById[1] };
 
   return null;
 }
 
-// ── Main dispatcher ───────────────────────────────────────────────────────────
+// ── Dispatcher ────────────────────────────────────────────────────────────────
 
 export async function handleMod(request, env, path) {
-  // ── Auth gate — checked before any DB access ─────────────────
   const auth = requireMod(request, env);
   if (!auth.authorized) return jsonError(auth.error, 401);
 
-  const method  = request.method.toUpperCase();
-  const parsed  = parseModPath(path, method);
-
+  const method = request.method.toUpperCase();
+  const parsed = parseModPath(path);
   if (!parsed) return jsonError('Not found.', 404);
 
   try {
     switch (parsed.route) {
+
+      case 'stats':
+        if (method === 'GET') return await handleGetStats(env.DB);
+        break;
+
+      case 'mod_comments':
+        if (method === 'GET') return await handleListComments(request, env.DB);
+        break;
+
+      case 'comment_action':
+        if (parsed.action === 'history' && method === 'GET')
+          return await handleCommentHistory(env.DB, parsed.id);
+        if (method === 'POST')
+          return await handleCommentAction(env, parsed.id, parsed.action);
+        break;
+
+      case 'comment_base':
+        if (method === 'DELETE') return await handleDeleteComment(env, parsed.id);
+        break;
+
+      case 'mod_reports':
+        if (method === 'GET') return await handleListReports(request, env.DB);
+        break;
+
+      case 'report_resolve':
+        if (method === 'POST') return await handleResolveReport(env.DB, parsed.id);
+        break;
+
       case 'commenter':
         if (method === 'GET') return await handleGetProfile(env.DB, parsed.hash);
         break;
@@ -121,9 +155,91 @@ export async function handleMod(request, env, path) {
   return jsonError('Method not allowed.', 405);
 }
 
-// ── GET /api/mod/commenter/:hash ─────────────────────────────────────────────
-// Returns live stats + ban state + note/fingerprint counts in one round-trip.
-// All four sub-queries run in parallel via Promise.all.
+// ── Phase 3 handlers ──────────────────────────────────────────────────────────
+
+async function handleGetStats(db) {
+  return jsonOk(await getModStats(db));
+}
+
+async function handleListComments(request, db) {
+  const url    = new URL(request.url);
+  const status = url.searchParams.get('status') || 'all';
+  const search = url.searchParams.get('search') || '';
+  const slug   = url.searchParams.get('slug')   || '';
+  const sort   = url.searchParams.get('sort')   || 'newest';
+  const { limit, offset } = validatePaginationParams(
+    url.searchParams.get('limit'),
+    url.searchParams.get('page'),
+  );
+  const page = Math.floor(offset / limit) + 1;
+  const { comments, total } = await listModComments(db, { status, search, slug, page, limit, sort });
+  return jsonOk({ comments, total, page, limit });
+}
+
+async function handleCommentHistory(db, id) {
+  const comment = await getCommentByIdFull(db, id);
+  if (!comment) return jsonError('Comment not found.', 404);
+  const log = await getCommentAuditLog(db, id);
+  return jsonOk({ comment_id: id, log });
+}
+
+async function handleCommentAction(env, id, action) {
+  const comment = await getCommentByIdFull(env.DB, id);
+  if (!comment) return jsonError('Comment not found.', 404);
+
+  const ACTION_MAP = {
+    approve: { fn: () => setCommentStatus(env.DB, id, 'approved'), audit: MOD_ACTIONS.APPROVE,        msg: 'Comment approved.' },
+    reject:  { fn: () => setCommentStatus(env.DB, id, 'rejected'), audit: MOD_ACTIONS.REJECT,         msg: 'Comment rejected.' },
+    hide:    { fn: () => setCommentHidden(env.DB, id, true),        audit: MOD_ACTIONS.SHADOW_HIDE,    msg: 'Comment hidden.' },
+    restore: { fn: () => setCommentHidden(env.DB, id, false),       audit: MOD_ACTIONS.SHADOW_RESTORE, msg: 'Comment restored.' },
+    pin:     { fn: () => setCommentPinned(env.DB, id, true),        audit: MOD_ACTIONS.PIN,            msg: 'Comment pinned.' },
+    unpin:   { fn: () => setCommentPinned(env.DB, id, false),       audit: MOD_ACTIONS.UNPIN,          msg: 'Comment unpinned.' },
+  };
+
+  const op = ACTION_MAP[action];
+  if (!op) return jsonError('Unknown action.', 400);
+
+  await op.fn();
+  await logModAction(env.DB, {
+    moderator:  'owner',
+    action:     op.audit,
+    commentId:  id,
+    reviewSlug: comment.review_slug,
+    prevStatus: comment.status,
+    newStatus:  action === 'approve' ? 'approved' : action === 'reject' ? 'rejected' : null,
+  });
+
+  return jsonOk({ message: op.msg });
+}
+
+async function handleDeleteComment(env, id) {
+  const comment = await getCommentByIdFull(env.DB, id);
+  if (!comment) return jsonError('Comment not found.', 404);
+  await setCommentDeleted(env.DB, id);
+  await logModAction(env.DB, {
+    moderator: 'owner', action: MOD_ACTIONS.DELETE,
+    commentId: id, reviewSlug: comment.review_slug, prevStatus: comment.status,
+  });
+  return jsonOk({ message: 'Comment deleted.' });
+}
+
+async function handleListReports(request, db) {
+  const url = new URL(request.url);
+  const { limit, offset } = validatePaginationParams(
+    url.searchParams.get('limit'),
+    url.searchParams.get('page'),
+  );
+  const page = Math.floor(offset / limit) + 1;
+  const { reports, total } = await listReports(db, { page, limit });
+  return jsonOk({ reports, total, page, limit });
+}
+
+async function handleResolveReport(db, id) {
+  await deleteReport(db, id);
+  return jsonOk({ message: 'Report resolved.' });
+}
+
+// ── Phase 1–2 handlers (unchanged) ───────────────────────────────────────────
 
 async function handleGetProfile(db, ipHash) {
   const [stats, profile, noteCount, fpCount] = await Promise.all([
@@ -132,182 +248,74 @@ async function handleGetProfile(db, ipHash) {
     getNoteCount(db, ipHash),
     getFingerprintCount(db, ipHash),
   ]);
-
   return jsonOk({
-    ip_hash: ipHash,
-    stats,
+    ip_hash: ipHash, stats,
     profile: profile
-      ? {
-          is_banned:  Boolean(profile.is_banned),
-          ban_reason: profile.ban_reason,
-          banned_at:  profile.banned_at,
-          banned_by:  profile.banned_by,
-          created_at: profile.created_at,
-        }
-      : {
-          is_banned:  false,
-          ban_reason: null,
-          banned_at:  null,
-          banned_by:  null,
-          created_at: null,
-        },
-    note_count:        noteCount,
-    fingerprint_count: fpCount,
+      ? { is_banned: Boolean(profile.is_banned), ban_reason: profile.ban_reason, banned_at: profile.banned_at, banned_by: profile.banned_by, created_at: profile.created_at }
+      : { is_banned: false, ban_reason: null, banned_at: null, banned_by: null, created_at: null },
+    note_count: noteCount, fingerprint_count: fpCount,
   });
 }
 
-// ── GET /api/mod/commenter/:hash/history ──────────────────────────────────────
-// Paginated list of all comments by this commenter (all statuses, all fields).
-
 async function handleGetHistory(request, db, ipHash) {
   const url = new URL(request.url);
-  const { limit, offset } = validatePaginationParams(
-    url.searchParams.get('limit'),
-    url.searchParams.get('page'),
-  );
-
+  const { limit, offset } = validatePaginationParams(url.searchParams.get('limit'), url.searchParams.get('page'));
   const [comments, total] = await Promise.all([
     getCommenterHistory(db, ipHash, limit, offset),
     getCommenterCommentCount(db, ipHash),
   ]);
-
-  return jsonOk({
-    ip_hash: ipHash,
-    total,
-    page:     Math.floor(offset / limit) + 1,
-    limit,
-    comments,
-  });
+  return jsonOk({ ip_hash: ipHash, total, page: Math.floor(offset / limit) + 1, limit, comments });
 }
-
-// ── GET /api/mod/commenter/:hash/notes ────────────────────────────────────────
 
 async function handleGetNotes(db, ipHash) {
-  const notes = await getNotes(db, ipHash);
-  return jsonOk({ ip_hash: ipHash, notes });
+  return jsonOk({ ip_hash: ipHash, notes: await getNotes(db, ipHash) });
 }
-
-// ── POST /api/mod/commenter/:hash/notes ───────────────────────────────────────
 
 async function handleAddNote(request, env, ipHash) {
   let body;
-  try { body = await request.json(); } catch {
-    return jsonError('Invalid JSON body.', 400);
-  }
-
-  const { body: noteBody, category } = body;
-
-  const bodyCheck = validateNoteBody(noteBody);
+  try { body = await request.json(); } catch { return jsonError('Invalid JSON body.', 400); }
+  const bodyCheck = validateNoteBody(body?.body);
   if (!bodyCheck.valid) return jsonError(bodyCheck.error, 400);
-
-  const catCheck = validateNoteCategory(category);
+  const catCheck = validateNoteCategory(body?.category);
   if (!catCheck.valid) return jsonError(catCheck.error, 400);
-
-  // Infer moderator identity from the token itself.
-  // Phase 3 can replace this with a real session lookup.
-  const moderator = 'moderator';
-
-  const id = await insertNote(env.DB, ipHash, moderator, bodyCheck.value, catCheck.value);
-
-  await logModAction(env.DB, {
-    moderator,
-    action:     MOD_ACTIONS.ADD_NOTE,
-    commentId:  null,
-    reviewSlug: null,
-    reason:     `Note #${id} added [${catCheck.value}]`,
-  });
-
+  const id = await insertNote(env.DB, ipHash, 'moderator', bodyCheck.value, catCheck.value);
+  await logModAction(env.DB, { moderator: 'moderator', action: MOD_ACTIONS.ADD_NOTE, reason: `Note #${id} added [${catCheck.value}]` });
   return jsonOk({ id, message: 'Note added.' }, 201);
 }
 
-// ── POST /api/mod/commenter/:hash/ban ─────────────────────────────────────────
-
 async function handleBan(request, env, ipHash) {
   let body;
-  try { body = await request.json(); } catch {
-    return jsonError('Invalid JSON body.', 400);
-  }
-
-  const reason    = typeof body?.reason === 'string' ? body.reason.trim().slice(0, 500) : null;
-  const moderator = 'moderator';
-
-  await upsertBanState(env.DB, ipHash, {
-    isBanned:  true,
-    banReason: reason || null,
-    bannedBy:  moderator,
-  });
-
-  await logModAction(env.DB, {
-    moderator,
-    action:  MOD_ACTIONS.BAN,
-    reason:  reason || null,
-  });
-
+  try { body = await request.json(); } catch { return jsonError('Invalid JSON body.', 400); }
+  const reason = typeof body?.reason === 'string' ? body.reason.trim().slice(0, 500) : null;
+  await upsertBanState(env.DB, ipHash, { isBanned: true, banReason: reason, bannedBy: 'moderator' });
+  await logModAction(env.DB, { moderator: 'moderator', action: MOD_ACTIONS.BAN, reason });
   return jsonOk({ message: 'Commenter banned.' });
 }
 
-// ── POST /api/mod/commenter/:hash/unban ───────────────────────────────────────
-
 async function handleUnban(request, env, ipHash) {
-  const moderator = 'moderator';
-
-  await upsertBanState(env.DB, ipHash, {
-    isBanned:  false,
-    banReason: null,
-    bannedBy:  null,
-  });
-
-  await logModAction(env.DB, {
-    moderator,
-    action: MOD_ACTIONS.UNBAN,
-  });
-
+  await upsertBanState(env.DB, ipHash, { isBanned: false, banReason: null, bannedBy: null });
+  await logModAction(env.DB, { moderator: 'moderator', action: MOD_ACTIONS.UNBAN });
   return jsonOk({ message: 'Ban lifted.' });
 }
 
-// ── PUT /api/mod/notes/:id ────────────────────────────────────────────────────
-
 async function handleUpdateNote(request, env, noteId) {
   let body;
-  try { body = await request.json(); } catch {
-    return jsonError('Invalid JSON body.', 400);
-  }
-
+  try { body = await request.json(); } catch { return jsonError('Invalid JSON body.', 400); }
   const note = await getNoteById(env.DB, noteId);
   if (!note) return jsonError('Note not found.', 404);
-
   const bodyCheck = validateNoteBody(body?.body);
   if (!bodyCheck.valid) return jsonError(bodyCheck.error, 400);
-
   const catCheck = validateNoteCategory(body?.category ?? note.category);
   if (!catCheck.valid) return jsonError(catCheck.error, 400);
-
   await updateNote(env.DB, noteId, bodyCheck.value, catCheck.value);
-
-  const moderator = 'moderator';
-  await logModAction(env.DB, {
-    moderator,
-    action: MOD_ACTIONS.EDIT_NOTE,
-    reason: `Note #${noteId} edited`,
-  });
-
+  await logModAction(env.DB, { moderator: 'moderator', action: MOD_ACTIONS.EDIT_NOTE, reason: `Note #${noteId} edited` });
   return jsonOk({ message: 'Note updated.' });
 }
-
-// ── DELETE /api/mod/notes/:id ─────────────────────────────────────────────────
 
 async function handleDeleteNote(request, env, noteId) {
   const note = await getNoteById(env.DB, noteId);
   if (!note) return jsonError('Note not found.', 404);
-
   await deleteNote(env.DB, noteId);
-
-  const moderator = 'moderator';
-  await logModAction(env.DB, {
-    moderator,
-    action: MOD_ACTIONS.DELETE_NOTE,
-    reason: `Note #${noteId} deleted [was: ${note.category}]`,
-  });
-
+  await logModAction(env.DB, { moderator: 'moderator', action: MOD_ACTIONS.DELETE_NOTE, reason: `Note #${noteId} deleted [was: ${note.category}]` });
   return jsonOk({ message: 'Note deleted.' });
 }
