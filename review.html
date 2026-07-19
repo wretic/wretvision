@@ -23,6 +23,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="comments.css" />
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
   <!-- Populated by JS before first paint -->
   <style id="review-theme"></style>
@@ -887,6 +889,8 @@
 
   <div id="rv-video"></div>
 
+  <div id="rv-comments"></div>
+
   <div class="rv-pager">
     <a href="#" class="rv-pager-link disabled" id="rv-prev">← PREV REVIEW</a>
     <a href="#" class="rv-pager-link disabled" id="rv-next">NEXT REVIEW →</a>
@@ -944,6 +948,8 @@
 
     <div id="grv-video"></div>
 
+    <div id="grv-comments"></div>
+
     <div class="grv-pager">
       <a href="#" class="grv-pager-link disabled" id="grv-prev">← PREV REVIEW</a>
       <a href="#" class="grv-pager-link disabled" id="grv-next">NEXT REVIEW →</a>
@@ -958,6 +964,16 @@
 </footer>
 
 <script src="reviews.js"></script>
+<script>
+  // ── Comments configuration ─────────────────────────────────────────────────
+  // Update apiBase with your deployed Worker URL before going live.
+  // Update turnstileSiteKey with your Cloudflare Turnstile site key.
+  window.COMMENTS_CONFIG = {
+    apiBase:          'https://wretvision-comments.workers.dev',
+    turnstileSiteKey: '',
+  };
+</script>
+<script src="comments.js"></script>
 <script>
 (function () {
   'use strict';
@@ -1515,6 +1531,12 @@
   } else {
     renderPoster(review);
     renderRight(review);
+  }
+
+  // Initialise comments asynchronously — review renders first, comments load independently.
+  if (typeof WretVisionComments !== 'undefined' && review.slug) {
+    var commentsContainerId = review.category === 'game' ? 'grv-comments' : 'rv-comments';
+    WretVisionComments.init(review.slug, commentsContainerId);
   }
 
 }());

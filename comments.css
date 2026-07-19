@@ -1,0 +1,606 @@
+/* ═══════════════════════════════════════════════════════════
+   WRETVISION COMMENTS — Phase 2 Frontend Styles
+   Extends shared.css variables and utility classes.
+   Class prefix: rvc- (Review Comments)
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── SECTION WRAPPER ──────────────────────────────────────── */
+.rvc-section {
+  margin-top: 36px;
+  padding-top: 26px;
+  border-top: 1px dashed rgba(10, 143, 212, 0.25);
+}
+
+/* ── HEADER ROW ───────────────────────────────────────────── */
+.rvc-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.rvc-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rvc-count {
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+}
+
+/* ── SORT CONTROLS ────────────────────────────────────────── */
+.rvc-sort {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rvc-sort-label {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 6px;
+  color: var(--muted);
+  letter-spacing: 2px;
+  margin-right: 4px;
+}
+
+.rvc-sort-btn {
+  font-size: 14px !important;
+}
+
+/* ── COMPOSER ─────────────────────────────────────────────── */
+.rvc-composer {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--rv-accent, var(--blue));
+  padding: 18px 20px;
+  margin-bottom: 28px;
+}
+
+.rvc-composer-label {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 6px;
+  color: var(--rv-accent, var(--blue-light));
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.rvc-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.rvc-input {
+  background: var(--bg3, #0c1e2e);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 18px;
+  padding: 10px 14px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.15s;
+  resize: vertical;
+  font-weight: 600;
+}
+
+.rvc-input::placeholder {
+  color: var(--muted);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 6px;
+  letter-spacing: 1px;
+}
+
+.rvc-input:focus {
+  border-color: var(--rv-accent, var(--blue));
+}
+
+.rvc-input.rvc-input--error {
+  border-color: #e74c3c;
+}
+
+.rvc-body-wrap {
+  position: relative;
+}
+
+.rvc-char-count {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  color: var(--muted);
+  pointer-events: none;
+  user-select: none;
+}
+
+.rvc-char-count.rvc-near-limit { color: var(--accent); }
+
+.rvc-form-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* Spoiler checkbox label */
+.rvc-spoiler-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.rvc-spoiler-check {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--rv-accent, var(--blue));
+  cursor: pointer;
+}
+
+.rvc-spoiler-label-text {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 6px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  user-select: none;
+  transition: color 0.12s;
+}
+
+.rvc-spoiler-label:hover .rvc-spoiler-label-text {
+  color: var(--rv-accent, var(--blue-light));
+}
+
+/* Turnstile containers */
+.rvc-ts-widget,
+.rvc-ts-report {
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.rvc-submit-btn { margin-left: auto; }
+
+.rvc-form-msg {
+  margin-top: 10px;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  letter-spacing: 1px;
+  min-height: 1.1em;
+  transition: color 0.15s;
+}
+
+.rvc-form-msg--error   { color: #e74c3c; }
+.rvc-form-msg--success { color: var(--green); }
+.rvc-form-msg--info    { color: var(--text-dim); }
+
+/* ── SKELETON LOADING ─────────────────────────────────────── */
+@keyframes rvc-skeleton-pulse {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.rvc-skeleton {
+  display: block;
+  background: linear-gradient(90deg, var(--bg2) 25%, var(--bg3, #0c1e2e) 50%, var(--bg2) 75%);
+  background-size: 200% 100%;
+  animation: rvc-skeleton-pulse 1.5s infinite;
+}
+
+.rvc-skeleton-card {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 18px;
+  padding: 16px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+}
+
+.rvc-skeleton-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.rvc-skeleton-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+/* ── COMMENT LIST ─────────────────────────────────────────── */
+.rvc-list { margin-bottom: 16px; }
+
+/* ── COMMENT CARD ─────────────────────────────────────────── */
+.rvc-card {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--rv-accent, var(--blue));
+  transition: border-left-color 0.15s, background 0.15s;
+}
+
+.rvc-card:hover { background: var(--bg3, #0c1e2e); }
+
+.rvc-card--deleted {
+  border-left-color: var(--muted) !important;
+  opacity: 0.55;
+}
+
+.rvc-card--reply {
+  background: var(--bg3, #0c1e2e);
+  border-left: 2px solid var(--muted);
+  margin-left: 32px;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+}
+
+.rvc-card--reply:hover {
+  border-left-color: var(--rv-accent, var(--blue));
+}
+
+/* ── AVATAR ───────────────────────────────────────────────── */
+.rvc-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
+  letter-spacing: 0;
+  user-select: none;
+}
+
+.rvc-avatar--official {
+  background: linear-gradient(135deg, #b8860b, #e6b84a);
+  color: #fff8e1;
+  box-shadow: 0 0 10px rgba(230, 184, 74, 0.4);
+}
+
+/* ── COMMENT MAIN ─────────────────────────────────────────── */
+.rvc-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.rvc-card-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.rvc-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.5px;
+}
+
+/* Official WretVision account — metallic gold shimmer */
+.rvc-name--official {
+  color: #e6b84a;
+  text-shadow: 0 0 6px rgba(230, 184, 74, 0.35);
+  animation: rvc-official-shimmer 10s ease-in-out infinite;
+}
+
+@keyframes rvc-official-shimmer {
+  0%,  80%, 100% {
+    color: #e6b84a;
+    text-shadow: 0 0 6px rgba(230, 184, 74, 0.35);
+  }
+  88% {
+    color: #fff8c0;
+    text-shadow: 0 0 18px rgba(255, 248, 192, 0.85), 0 0 7px rgba(230, 184, 74, 0.7);
+  }
+}
+
+/* ── BADGES ───────────────────────────────────────────────── */
+.rvc-badge {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 5px;
+  padding: 2px 5px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.6;
+}
+
+.rvc-badge--owner {
+  background: rgba(230, 184, 74, 0.14);
+  border: 1px solid rgba(230, 184, 74, 0.4);
+  color: #e6b84a;
+}
+
+.rvc-badge--edited {
+  border: 1px solid rgba(10, 143, 212, 0.22);
+  color: var(--muted);
+}
+
+.rvc-badge--spoiler {
+  background: rgba(255, 224, 102, 0.1);
+  border: 1px solid rgba(255, 224, 102, 0.3);
+  color: var(--accent);
+}
+
+.rvc-time {
+  font-family: 'VT323', monospace;
+  font-size: 17px;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* ── COMMENT BODY ─────────────────────────────────────────── */
+.rvc-body {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 19px;
+  line-height: 1.65;
+  color: var(--text);
+  word-break: break-word;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+}
+
+.rvc-body--deleted {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 17px;
+}
+
+/* ── SPOILER ──────────────────────────────────────────────── */
+.rvc-spoiler-wrap { margin-bottom: 10px; }
+
+.rvc-spoiler-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 224, 102, 0.07);
+  border: 1px solid rgba(255, 224, 102, 0.28);
+  color: var(--accent);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 6px;
+  letter-spacing: 1px;
+  padding: 9px 14px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s;
+  margin-bottom: 8px;
+}
+
+.rvc-spoiler-btn:hover {
+  background: rgba(255, 224, 102, 0.14);
+  border-color: rgba(255, 224, 102, 0.45);
+}
+
+.rvc-spoiler-content {
+  filter: blur(7px);
+  user-select: none;
+  pointer-events: none;
+  transition: filter 0.35s ease, opacity 0.35s ease;
+  opacity: 0.35;
+  margin-bottom: 0;
+}
+
+.rvc-spoiler-content.rvc-spoiler-revealed {
+  filter: none;
+  user-select: auto;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* ── ACTIONS ──────────────────────────────────────────────── */
+.rvc-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.rvc-btn {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 6px;
+  letter-spacing: 1px;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.15s;
+  line-height: 1;
+}
+
+.rvc-btn:hover           { color: var(--rv-accent, var(--blue-light)); }
+.rvc-report-btn:hover    { color: #e74c3c; }
+
+/* ── INLINE REPLY COMPOSER ────────────────────────────────── */
+.rvc-reply-composer {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: var(--bg, #050e18);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--rv-accent, var(--blue));
+}
+
+.rvc-reply-composer .rvc-fields { margin-bottom: 8px; }
+
+/* ── REPLIES ──────────────────────────────────────────────── */
+.rvc-replies { margin-top: 14px; }
+
+/* ── EMPTY STATE ──────────────────────────────────────────── */
+.rvc-empty {
+  text-align: center;
+  padding: 44px 20px;
+  border: 1px dashed rgba(10, 143, 212, 0.2);
+}
+
+.rvc-empty-icon {
+  font-family: 'VT323', monospace;
+  font-size: 48px;
+  color: var(--muted);
+  letter-spacing: 4px;
+  margin-bottom: 14px;
+  opacity: 0.45;
+  display: block;
+}
+
+.rvc-empty-text {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  color: var(--muted);
+  letter-spacing: 2px;
+}
+
+/* ── LOAD MORE ────────────────────────────────────────────── */
+.rvc-loadmore-row {
+  text-align: center;
+  padding: 14px 0 8px;
+}
+
+.rvc-loadmore-btn { min-width: 180px; }
+
+/* ── OFFLINE / ERROR ──────────────────────────────────────── */
+.rvc-offline-msg {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  border: 1px solid rgba(231, 76, 60, 0.28);
+  background: rgba(231, 76, 60, 0.05);
+  margin-bottom: 16px;
+}
+
+.rvc-offline-text {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  color: #e74c3c;
+  letter-spacing: 1px;
+  flex: 1;
+}
+
+/* ── REPORT MODAL ─────────────────────────────────────────── */
+@keyframes rvc-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes rvc-modal-in {
+  from { transform: translateY(-14px); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
+.rvc-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 14, 24, 0.9);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rvc-fade-in 0.15s ease;
+}
+
+.rvc-modal {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--rv-accent, var(--blue));
+  padding: 26px 30px;
+  max-width: 460px;
+  width: 90%;
+  position: relative;
+  animation: rvc-modal-in 0.2s ease;
+}
+
+.rvc-modal-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  color: var(--rv-accent, var(--blue-light));
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.rvc-modal-hint {
+  font-family: 'VT323', monospace;
+  font-size: 19px;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.rvc-reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.rvc-reason-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  transition: color 0.12s;
+}
+
+.rvc-reason-label:hover { color: var(--rv-accent, var(--blue-light)); }
+
+.rvc-reason-radio { accent-color: var(--rv-accent, var(--blue)); }
+
+.rvc-modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .rvc-card--reply  { margin-left: 18px; }
+  .rvc-sort-label   { display: none; }
+}
+
+@media (max-width: 560px) {
+  .rvc-section          { margin-top: 24px; padding-top: 20px; }
+  .rvc-header-row       { flex-direction: column; align-items: flex-start; }
+  .rvc-form-footer      { flex-direction: column; align-items: flex-start; }
+  .rvc-submit-btn       { margin-left: 0; width: 100%; text-align: center; }
+  .rvc-sort             { flex-wrap: wrap; }
+  .rvc-sort-btn         { font-size: 12px !important; }
+  .rvc-card             { padding: 12px 14px; gap: 10px; }
+  .rvc-card--reply      { margin-left: 10px; }
+  .rvc-avatar           { width: 30px; height: 30px; font-size: 6px; }
+  .rvc-modal            { padding: 18px 16px; }
+  .rvc-modal-actions    { flex-direction: column-reverse; }
+  .rvc-ts-widget,
+  .rvc-ts-report        { width: 100%; }
+}
