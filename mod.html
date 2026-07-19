@@ -563,6 +563,7 @@ body {
     <button class="tab-btn" data-tab="approved">APPROVED</button>
     <button class="tab-btn" data-tab="rejected">REJECTED</button>
     <button class="tab-btn" data-tab="hidden">HIDDEN</button>
+    <button class="tab-btn" data-tab="replies">REPLIES</button>
     <button class="tab-btn" data-tab="reports">REPORTS</button>
     <button class="tab-btn" data-tab="pinned">PINNED</button>
   </div>
@@ -737,9 +738,10 @@ body {
       pending:  'pending',
       approved: 'approved',
       rejected: 'rejected',
-      hidden:   'all',   // shadow_hidden filter handled differently
+      hidden:   'all',
+      replies:  'all',
       pinned:   'all',
-      reports:  null,    // uses reports endpoint
+      reports:  null,
     };
     state.status = tabStatusMap[tab] || 'all';
 
@@ -822,8 +824,9 @@ body {
       limit:  state.limit,
       sort:   state.sort,
     });
-    if (state.search) params.set('search', state.search);
-    if (state.slug)   params.set('slug',   state.slug);
+    if (state.search)           params.set('search', state.search);
+    if (state.slug)             params.set('slug',   state.slug);
+    if (state.tab === 'replies') params.set('reply', '1');
 
     var res  = await apiFetch('/api/mod/comments?' + params.toString());
     var data = await res.json();
@@ -832,7 +835,7 @@ body {
 
     var comments = data.comments || [];
 
-    // Client-side filter for tabs that don't have a direct status mapping
+    // Client-side filter for tabs that need extra narrowing
     if (state.tab === 'hidden') {
       comments = comments.filter(function (c) { return c.shadow_hidden; });
     } else if (state.tab === 'pinned') {

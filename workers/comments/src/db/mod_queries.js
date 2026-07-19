@@ -238,16 +238,18 @@ export async function deleteNote(db, id) {
 
 // ── Phase 3: Comment management ───────────────────────────────────────────────
 
-export async function listModComments(db, { status, search, slug, page, limit, sort }) {
+export async function listModComments(db, { status, search, slug, page, limit, sort, reply }) {
   const offset  = (page - 1) * limit;
-  const clauses = [];
+  const clauses = ['is_deleted = 0'];
   const params  = [];
 
-  if (status && status !== 'all') { clauses.push('status = ?');                        params.push(status); }
-  if (slug)                       { clauses.push('review_slug = ?');                   params.push(slug); }
+  if (status && status !== 'all') { clauses.push('status = ?');                           params.push(status); }
+  if (slug)                       { clauses.push('review_slug = ?');                      params.push(slug); }
   if (search)                     { clauses.push('(body LIKE ? OR display_name LIKE ?)'); params.push(`%${search}%`, `%${search}%`); }
+  if (reply === true)             { clauses.push('parent_id IS NOT NULL'); }
+  else if (reply === false)       { clauses.push('parent_id IS NULL'); }
 
-  const where   = clauses.length ? 'WHERE ' + clauses.join(' AND ') : '';
+  const where   = 'WHERE ' + clauses.join(' AND ');
   const orderBy = sort === 'oldest' ? 'created_at ASC' : 'created_at DESC';
 
   const [rows, counts] = await Promise.all([

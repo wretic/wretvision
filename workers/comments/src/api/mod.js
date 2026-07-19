@@ -166,13 +166,15 @@ async function handleListComments(request, db) {
   const status = url.searchParams.get('status') || 'all';
   const search = url.searchParams.get('search') || '';
   const slug   = url.searchParams.get('slug')   || '';
-  const sort   = url.searchParams.get('sort')   || 'newest';
+  const sort    = url.searchParams.get('sort')  || 'newest';
+  const replyRaw = url.searchParams.get('reply');
+  const reply    = replyRaw === '1' ? true : replyRaw === '0' ? false : undefined;
   const { limit, offset } = validatePaginationParams(
     url.searchParams.get('limit'),
     url.searchParams.get('page'),
   );
   const page = Math.floor(offset / limit) + 1;
-  const { comments, total } = await listModComments(db, { status, search, slug, page, limit, sort });
+  const { comments, total } = await listModComments(db, { status, search, slug, page, limit, sort, reply });
   return jsonOk({ comments, total, page, limit });
 }
 
