@@ -24,6 +24,7 @@ export async function getComments(db, slug, limit, offset) {
       AND    status        = '${STATUS.APPROVED}'
       AND    parent_id     IS NULL
       AND    shadow_hidden = 0
+      AND    is_deleted    = 0
       ORDER  BY is_pinned DESC, created_at DESC
       LIMIT  ? OFFSET ?
     `)
@@ -45,6 +46,7 @@ export async function getReplies(db, parentId) {
       WHERE  parent_id    = ?
       AND    status       = '${STATUS.APPROVED}'
       AND    shadow_hidden = 0
+      AND    is_deleted    = 0
       ORDER  BY created_at ASC
     `)
     .bind(parentId)
@@ -63,6 +65,7 @@ export async function getCommentCount(db, slug) {
       AND    status        = '${STATUS.APPROVED}'
       AND    parent_id     IS NULL
       AND    shadow_hidden = 0
+      AND    is_deleted    = 0
     `)
     .bind(slug)
     .all();
