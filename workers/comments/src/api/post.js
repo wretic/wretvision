@@ -18,12 +18,13 @@ import {
   validateBody,
   validateParentId,
 } from '../middleware/validation.js';
-import { runSpamChecks }     from '../middleware/spam.js';
-import { verifyTurnstile }   from '../middleware/turnstile.js';
-import { isRateLimited, logAction } from '../middleware/ratelimit.js';
-import { cleanBody, cleanName }     from '../utils/sanitize.js';
-import { hashIP, getClientIP }      from '../utils/hash.js';
-import { jsonOk, jsonError }        from './response.js';
+import { runSpamChecks }             from '../middleware/spam.js';
+import { verifyTurnstile }           from '../middleware/turnstile.js';
+import { isRateLimited, logAction }  from '../middleware/ratelimit.js';
+import { cleanBody, cleanName }      from '../utils/sanitize.js';
+import { hashIP, getClientIP }       from '../utils/hash.js';
+import { buildFingerprint }          from '../utils/fingerprint.js';
+import { jsonOk, jsonError }         from './response.js';
 
 export async function handlePostComment(request, env) {
   let body;
@@ -43,7 +44,7 @@ export async function handlePostComment(request, env) {
   } = body;
 
   // ── Turnstile first (cheapest rejection) ──────────────────
-  const ip     = getClientIP(request);
+  const ip      = getClientIP(request);
   const tsCheck = await verifyTurnstile(
     cf_turnstile_response,
     env.TURNSTILE_SECRET_KEY,
@@ -51,11 +52,14 @@ export async function handlePostComment(request, env) {
   );
   if (!tsCheck.success) return jsonError(tsCheck.error, 403);
 
-  // ── IP hash (used for rate limiting) ─────────────────────
-  const ipHash = await hashIP(ip, env.OWNER_TOKEN ?? '');
+  // ── IP hash + fingerprint (dual rate-limit signals) ───────
+  const [ipHash, fingerprintHash] = await Promise.all([
+    hashIP(ip, env.OWNER_TOKEN ?? ''),
+    buildFingerprint(request, ip),
+  ]);
 
-  // ── Rate limiting ─────────────────────────────────────────
-  const limited = await isRateLimited(env.DB, ipHash, 'post');
+  // ── Rate limiting (both signals checked) ──────────────────
+  const limited = await isRateLimited(env.DB, ipHash, 'post', fingerprintHash);
   if (limited) return jsonError('You are posting too frequently. Please wait a few minutes.', 429);
 
   // ── Input validation ──────────────────────────────────────
@@ -71,12 +75,16 @@ export async function handlePostComment(request, env) {
   const parentCheck = validateParentId(parent_id);
   if (!parentCheck.valid) return jsonError(parentCheck.error, 400);
 
-  // ── If replying, verify parent exists and belongs to same slug ──
+  // ── If replying, verify parent exists, same slug, not nested ──
   if (parentCheck.value) {
     const parent = await getCommentById(env.DB, parentCheck.value);
     if (!parent) return jsonError('Parent comment not found.', 404);
-    if (parent.review_slug !== review_slug) return jsonError('Parent comment belongs to a different review.', 400);
-    if (parent.parent_id !== null) return jsonError('Replies cannot be nested beyond one level.', 400);
+    if (parent.review_slug !== review_slug)
+      return jsonError('Parent comment belongs to a different review.', 400);
+    if (parent.parent_id !== null)
+      return jsonError('Replies cannot be nested beyond one level.', 400);
+    if (parent.is_locked)
+      return jsonError('This comment is locked and cannot receive replies.', 403);
   }
 
   // ── Spam checks ───────────────────────────────────────────
@@ -96,7 +104,7 @@ export async function handlePostComment(request, env) {
     ip_hash:      ipHash,
   });
 
-  await logAction(env.DB, ipHash, 'post');
+  await logAction(env.DB, ipHash, 'post', fingerprintHash);
 
   return jsonOk(
     { id, message: 'Comment submitted and awaiting moderation.' },

@@ -6,6 +6,14 @@
 //   slug   (required) — review slug, e.g. "evil-dead-burn-review"
 //   page   (optional) — page number, default 1
 //   limit  (optional) — results per page, default 20, max 50
+//
+// Shadow moderation (Phase 2):
+//   Comments with shadow_hidden = 1 are excluded from all responses here.
+//   Phase 2 will pass the requester's IP hash so shadow-hidden comments are
+//   visible ONLY to their author (matching ip_hash). The getComments and
+//   getReplies queries in queries.js already filter shadow_hidden = 0.
+//   Phase 2 change: add requesterIpHash param and change filter to
+//   (shadow_hidden = 0 OR ip_hash = ?).
 // ============================================================
 
 import { getComments, getReplies, getCommentCount } from '../db/queries.js';
@@ -43,13 +51,14 @@ export async function handleGetComments(request, env) {
   return jsonOk({
     slug,
     total,
-    page:    Math.floor(offset / limit) + 1,
+    page:     Math.floor(offset / limit) + 1,
     limit,
     comments: withReplies,
   });
 }
 
-// Strip internal fields and escape output before sending to client
+// Strip internal fields and escape output before sending to client.
+// ip_hash, report_count, and shadow_hidden are intentionally NOT sent.
 function sanitizeComment(c) {
   return {
     id:           c.id,
@@ -59,7 +68,8 @@ function sanitizeComment(c) {
     is_pinned:    Boolean(c.is_pinned),
     is_spoiler:   Boolean(c.is_spoiler),
     is_deleted:   Boolean(c.is_deleted),
+    is_edited:    Boolean(c.is_edited),
+    is_locked:    Boolean(c.is_locked),
     created_at:   c.created_at,
   };
-  // ip_hash and report_count are intentionally NOT sent to the client
 }

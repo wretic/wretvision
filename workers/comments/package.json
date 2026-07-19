@@ -1,11 +1,12 @@
 {
   "name": "wretvision-comments",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
-    "dev":    "wrangler dev",
-    "deploy": "wrangler deploy",
-    "db:init": "wrangler d1 execute wretvision-comments --file=src/db/schema.sql"
+    "dev":        "wrangler dev",
+    "deploy":     "wrangler deploy",
+    "db:init":    "wrangler d1 execute wretvision-comments --file=src/db/schema.sql",
+    "db:migrate": "wrangler d1 execute wretvision-comments --file=src/db/migrations/001_phase1_1_harden.sql"
   },
   "devDependencies": {
     "wrangler": "^3.0.0"
