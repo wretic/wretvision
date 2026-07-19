@@ -43,6 +43,8 @@ import {
 } from '../db/mod_queries.js';
 import { MOD_ACTIONS }           from '../config/constants.js';
 import { jsonOk, jsonError }     from './response.js';
+import { insertComment }         from '../db/queries.js';
+import { cleanBody, cleanName }  from '../utils/sanitize.js';
 
 // ── Path parser ───────────────────────────────────────────────────────────────
 
@@ -54,7 +56,7 @@ function parseModPath(path) {
   const reportResolve = path.match(/^\/api\/mod\/report\/(\d+)\/resolve$/);
   if (reportResolve) return { route: 'report_resolve', id: +reportResolve[1] };
 
-  const commentAction = path.match(/^\/api\/mod\/comment\/(\d+)\/(approve|reject|hide|restore|pin|unpin|history)$/);
+  const commentAction = path.match(/^\/api\/mod\/comment\/(\d+)\/(approve|reject|hide|restore|pin|unpin|history|reply)$/);
   if (commentAction) return { route: 'comment_action', id: +commentAction[1], action: commentAction[2] };
 
   const commentBase = path.match(/^\/api\/mod\/comment\/(\d+)$/);
@@ -105,6 +107,8 @@ export async function handleMod(request, env, path) {
       case 'comment_action':
         if (parsed.action === 'history' && method === 'GET')
           return await handleCommentHistory(env.DB, parsed.id);
+        if (parsed.action === 'reply' && method === 'POST')
+          return await handleModReply(request, env.DB, parsed.id);
         if (method === 'POST')
           return await handleCommentAction(env, parsed.id, parsed.action);
         break;
@@ -239,6 +243,39 @@ async function handleListReports(request, db) {
 async function handleResolveReport(db, id) {
   await deleteReport(db, id);
   return jsonOk({ message: 'Report resolved.' });
+}
+
+async function handleModReply(request, db, parentId) {
+  const parent = await getCommentByIdFull(db, parentId);
+  if (!parent)             return jsonError('Comment not found.', 404);
+  if (parent.parent_id)   return jsonError('Cannot reply to a reply.', 400);
+  if (parent.is_deleted)  return jsonError('Cannot reply to a deleted comment.', 400);
+
+  let body;
+  try { body = await request.json(); } catch { return jsonError('Invalid JSON body.', 400); }
+
+  const text = typeof body?.body === 'string' ? cleanBody(body.body.trim()) : '';
+  const name = typeof body?.name === 'string' ? cleanName(body.name.trim()) : 'WretVision';
+  if (!text || text.length < 1) return jsonError('Reply body is required.', 400);
+
+  const id = await insertComment(db, {
+    review_slug:  parent.review_slug,
+    parent_id:    parentId,
+    display_name: name,
+    body:         text,
+    is_spoiler:   false,
+    ip_hash:      'owner',
+  });
+
+  await logModAction(db, {
+    moderator:  'owner',
+    action:     'mod_reply',
+    commentId:  parentId,
+    reviewSlug: parent.review_slug,
+    reason:     `Owner reply #${id}`,
+  });
+
+  return jsonOk({ id, message: 'Reply posted.' }, 201);
 }
 
 // ── Phase 1–2 handlers (unchanged) ───────────────────────────────────────────

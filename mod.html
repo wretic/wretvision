@@ -490,6 +490,83 @@ body {
 .log-time    { color: var(--muted); font-size: 14px; }
 .log-detail  { color: var(--text); font-size: 14px; margin-top: 3px; }
 
+/* ── Inline reply form ───────────────────────────────────── */
+.mod-reply-form {
+  margin-top: 10px;
+  padding: 12px 14px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--blue);
+}
+
+.mod-reply-name {
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  padding: 6px 10px;
+  letter-spacing: 1px;
+  outline: none;
+  margin-bottom: 8px;
+}
+.mod-reply-name:focus { border-color: var(--blue); }
+
+.mod-reply-body {
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  padding: 8px 10px;
+  outline: none;
+  resize: vertical;
+  min-height: 72px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+.mod-reply-body:focus { border-color: var(--blue); }
+
+.mod-reply-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mod-reply-submit {
+  background: var(--blue);
+  border: none;
+  color: #fff;
+  font-family: var(--font-pixel);
+  font-size: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: opacity .15s;
+}
+.mod-reply-submit:hover    { opacity: .85; }
+.mod-reply-submit:disabled { opacity: .4; cursor: not-allowed; }
+
+.mod-reply-cancel {
+  background: transparent;
+  border: 1px solid var(--muted);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  padding: 6px 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.mod-reply-cancel:hover { border-color: var(--red); color: var(--red); }
+
+.mod-reply-msg {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
 /* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 768px) {
   .stats-bar   { padding: 10px 12px; }
@@ -928,6 +1005,7 @@ body {
       '</div>' +
       (truncated ? '<button class="expand-btn" data-expand="' + c.id + '" data-full="' + esc(bodyText) + '">[ SHOW MORE ]</button>' : '') +
       '<div class="card-actions" id="actions-' + c.id + '">' + actions + '</div>' +
+      (!c.parent_id && !c.is_deleted ? buildReplyForm(c.id) : '') +
     '</div>';
   }
 
@@ -960,11 +1038,26 @@ body {
       }
     }
 
+    if (!del && !c.parent_id) {
+      btns += '<button class="act-btn reply-toggle" data-reply-toggle="' + id + '">REPLY</button>';
+    }
     btns += '<button class="act-btn delete-btn" data-action="delete" data-id="' + id + '">DELETE</button>';
     btns += '<button class="act-btn" data-action="history" data-id="' + id + '">HISTORY</button>';
     btns += '<span class="act-feedback" id="feedback-' + id + '"></span>';
 
     return btns;
+  }
+
+  function buildReplyForm(id) {
+    return '<div class="mod-reply-form" id="mod-reply-form-' + id + '" hidden>' +
+      '<input class="mod-reply-name" placeholder="YOUR NAME (e.g. WretVision)" value="WretVision" maxlength="50" />' +
+      '<textarea class="mod-reply-body" placeholder="WRITE YOUR REPLY..." maxlength="2000"></textarea>' +
+      '<div class="mod-reply-footer">' +
+        '<button class="mod-reply-submit" data-reply-submit="' + id + '">POST REPLY ►</button>' +
+        '<button class="mod-reply-cancel" data-reply-cancel="' + id + '">CANCEL</button>' +
+        '<span class="mod-reply-msg" id="mod-reply-msg-' + id + '"></span>' +
+      '</div>' +
+    '</div>';
   }
 
   function buildReportCard(r) {
@@ -1007,6 +1100,33 @@ body {
         if (!confirm('Delete comment #' + id + '? This marks it as deleted for all users.')) return;
       }
       doCommentAction(id, action, actBtn);
+      return;
+    }
+
+    // Reply toggle
+    var replyToggle = e.target.closest('[data-reply-toggle]');
+    if (replyToggle) {
+      var tid = replyToggle.dataset.replyToggle;
+      var form = document.getElementById('mod-reply-form-' + tid);
+      if (form) {
+        form.hidden = !form.hidden;
+        if (!form.hidden) form.querySelector('.mod-reply-body').focus();
+      }
+      return;
+    }
+
+    // Reply cancel
+    var replyCancel = e.target.closest('[data-reply-cancel]');
+    if (replyCancel) {
+      var form = document.getElementById('mod-reply-form-' + replyCancel.dataset.replyCancel);
+      if (form) form.hidden = true;
+      return;
+    }
+
+    // Reply submit
+    var replySubmit = e.target.closest('[data-reply-submit]');
+    if (replySubmit) {
+      doModReply(parseInt(replySubmit.dataset.replySubmit, 10), replySubmit);
       return;
     }
 
@@ -1064,6 +1184,46 @@ body {
         btn.disabled = false;
       }
     } catch (_) { btn.disabled = false; }
+  }
+
+  async function doModReply(parentId, submitBtn) {
+    var form    = document.getElementById('mod-reply-form-' + parentId);
+    var nameEl  = form.querySelector('.mod-reply-name');
+    var bodyEl  = form.querySelector('.mod-reply-body');
+    var msgEl   = document.getElementById('mod-reply-msg-' + parentId);
+
+    var name = nameEl.value.trim() || 'WretVision';
+    var body = bodyEl.value.trim();
+    if (!body) { msgEl.textContent = '// WRITE SOMETHING FIRST'; msgEl.style.color = 'var(--red)'; return; }
+
+    submitBtn.disabled = true;
+    msgEl.textContent  = '// POSTING...';
+    msgEl.style.color  = 'var(--muted)';
+
+    try {
+      var res  = await apiFetch('/api/mod/comment/' + parentId + '/reply', {
+        method: 'POST',
+        body:   JSON.stringify({ name: name, body: body }),
+      });
+      var data = await res.json();
+
+      if (!res.ok) {
+        msgEl.textContent = '// ' + (data.error || 'FAILED');
+        msgEl.style.color = 'var(--red)';
+        submitBtn.disabled = false;
+        return;
+      }
+
+      msgEl.textContent  = '// REPLY POSTED';
+      msgEl.style.color  = 'var(--green)';
+      bodyEl.value       = '';
+      setTimeout(function () { form.hidden = true; msgEl.textContent = ''; loadList(); }, 1000);
+
+    } catch (_) {
+      msgEl.textContent  = '// NETWORK ERROR';
+      msgEl.style.color  = 'var(--red)';
+      submitBtn.disabled = false;
+    }
   }
 
   // ── History modal ─────────────────────────────────────────────────────────────
