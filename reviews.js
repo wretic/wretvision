@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1784454867457,
+      "slug": "friday-the-13th-part-viii-jason-takes-manhattan-review",
+      "seoTitle": "Friday the 13th Part VIII: Jason Takes Manhattan Review (1989) | WretVision",
+      "seoDescription": "The title promises Jason in New York. The film delivers Jason on a boat for an hour. Classic bait and switch.",
+      "category": "movie",
+      "title": "Friday the 13th Part VIII: Jason Takes Manhattan",
+      "year": 1989,
+      "director": "Rob Hedden",
+      "runtime": "100 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "The title promises Jason in New York. The film delivers Jason on a boat for an hour. Classic bait and switch.",
+      "body": [
+        "Friday the 13th Part VIII: Jason Takes Manhattan arrived in 1989 with one of the most exciting premises the franchise had ever dangled in front of its audience. After seven entries set almost entirely around Crystal Lake, the idea of unleashing Jason Voorhees on New York City felt genuinely fresh. A slasher loose in Times Square, in the subway tunnels, on the streets. You could feel the potential from the poster alone. The reality, unfortunately, is one of the more frustrating bait and switches in horror history, and that is saying something for a franchise that had already stretched its premise across seven films with diminishing returns.",
+        "The film was directed by Rob Hedden, making his feature debut, and you can feel the gap between ambition and execution throughout. Hedden clearly had a concept he believed in. The New York angle was his pitch, his hook, and you get the sense he genuinely wanted to do something different with the Friday the 13th formula. The problem is that different ideas require resources, and this production did not have them. The budget constraints are visible in almost every frame once the film eventually arrives in Manhattan, and the compromises forced on Hedden shape the entire structure in ways that hurt the final product badly.",
+        "Before we even get to the city, the film spends the majority of its runtime on a cruise ship called the Lazarus, which is ferrying a group of graduating high school seniors from Crystal Lake to New York. Jason, awakened by an underwater power cable near his old stomping ground, boards the ship and begins working his way through the cast. The kills on the ship are serviceable. The rooftop boxing sequence where Jason knocks a character's head clean off is genuinely iconic and earns its place in franchise history. But you are sitting there watching a Friday the 13th film set almost entirely on a boat, and the promised city keeps not arriving.",
+        "Jensen Daggett plays Rennie, our lead for this installment, and she brings a slightly different energy to the final girl role than the franchise had seen before. Her character carries a backstory involving a traumatic childhood experience with Jason, a detail that gives her more emotional texture than most Friday victims get. She is not just running and screaming. There is something behind her eyes. Scott Reeves plays her boyfriend Sean and is largely inoffensive, which is about as much as the script allows. Peter Mark Richman plays the antagonistic authority figure of the piece and commits to being genuinely unpleasant in a way that gives the film a secondary tension, even if his arc goes nowhere particularly interesting.",
+        "Kane Hodder is Jason in his second outing in the role, and at this point he had settled into the physicality in a way that felt definitive. Hodder's Jason has weight and presence. There is something almost mournful about the way he moves, slow and inevitable, which Hedden does occasionally use well in the boat sections. The confined corridors of the ship actually suit the character. The tighter the space, the more threatening Hodder becomes. When Jason is stalking through a narrow passageway and there is genuinely nowhere for the victim to go, it works. The film knows this and stays there too long instead of getting to the city it promised.",
+        "When Manhattan does finally show up with roughly thirty minutes left in the runtime, the film shifts into a different gear that is simultaneously more interesting and more visibly strained. The budget clearly could not support sustained location shooting in actual New York, so much of it is filmed in Vancouver standing in for the city, and it shows. The Times Square scenes feel thin. The streets feel underpopulated. The subway tunnel sequence has atmosphere but collapses under the logic of what is happening. A city full of people encountering Jason Voorhees should feel chaotic and overwhelming. Instead it feels like a very long street that nobody else is using.",
+        "Pacing is where the film genuinely suffers. The boat section goes on long enough that you start adjusting your expectations downward. You stop waiting for New York and start accepting that this is a boat movie with a misleading title. That resignation sets in around the forty-five minute mark and it does real damage to how you receive the rest of the film. If the Manhattan portion had been expanded and the boat section compressed to a tight, tense first act, this could have been one of the more interesting entries in the franchise. As it stands it is a decent boat slasher attached to a rushed city climax that cannot deliver what it set up.",
+        "Compared to something like Friday the 13th Part VI: Jason Lives, which actually committed to its tonal shift and had fun with the self-awareness, Part VIII feels like it never fully committed to its own idea. Jason Lives knew exactly what it was and leaned in. Part VIII wants to be ambitious but keeps hedging. The franchise formula pulls it back toward familiar beats, familiar character types, familiar structure, and the New York promise becomes more of a marketing concept than a creative direction. If you stack it against something like the more contained and effective Friday the 13th Part IV: The Final Chapter, the difference in focus and execution is pretty stark.",
+        "Friday the 13th Part VIII: Jason Takes Manhattan is a film that had a genuinely good idea and then did not trust itself enough to follow through. The boat setting is underused as a claustrophobic space and overused as a substitute for the concept on the poster. The Manhattan sequence is too little too late and too underfunded to land. There are individual moments worth seeing, the rooftop boxing kill, Kane Hodder doing his thing, Rennie as a more layered lead than usual, but the overall experience is one of accumulated disappointment. Not unwatchable. Not a total write-off. Just a film that kept reminding you of the better version it could have been with more budget, more time, and more nerve."
+      ],
+      "images": [],
+      "verdict": "6/10, the idea was genuinely good and someone should have been given the money to actually make it.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/6ezOsZ9UzqGnbDokaatxdOWP6e9.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/6U5sEPgkf3nnQC51kUUKcKzNSyR.jpg"
+      }
+    },
+    {
       "id": 1784414471908,
       "slug": "the-odyssey-2026-review",
       "seoTitle": "The Odyssey (2026) Review: Nolan's Most Expensive Mistake | WretVision",
