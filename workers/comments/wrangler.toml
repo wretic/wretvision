@@ -1,0 +1,35 @@
+name = "wretvision-comments"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# ── D1 Database ────────────────────────────────────────────────────────────────
+[[d1_databases]]
+binding     = "DB"
+database_name = "wretvision-comments"
+database_id   = "51d519cb-8ca5-4e2f-a0bb-d61b16a8e74f"
+
+# ── Environment Variables ──────────────────────────────────────────────────────
+[vars]
+ENVIRONMENT          = "production"
+CORS_ORIGIN          = "https://wretvision.com"
+TURNSTILE_VERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify"
+
+# ── Secrets (set via: wrangler secret put SECRET_NAME) ────────────────────────
+# TURNSTILE_SECRET_KEY  — Cloudflare Turnstile secret key
+# OWNER_TOKEN           — Bearer token for owner/moderation requests
+
+# ── Routes ─────────────────────────────────────────────────────────────────────
+# Two entries needed: one for the exact /api/comments endpoint (GET+POST),
+# one for sub-paths (/api/comments/report, /api/mod/*).
+[[routes]]
+pattern = "wretvision.com/api/comments"
+zone_name = "wretvision.com"
+
+[[routes]]
+pattern = "wretvision.com/api/*"
+zone_name = "wretvision.com"
+
+# ── Cache rules: review pages remain fully cacheable ──────────────────────────
+# Comments load from /api/* which bypasses Cloudflare page cache.
+# Static review pages keep their full cache TTL; only API paths hit the Worker.
