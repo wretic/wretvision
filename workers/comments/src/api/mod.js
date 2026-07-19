@@ -267,14 +267,6 @@ async function handleModReply(request, db, parentId) {
     ip_hash:      'owner',
   });
 
-  await logModAction(db, {
-    moderator:  'owner',
-    action:     'mod_reply',
-    commentId:  parentId,
-    reviewSlug: parent.review_slug,
-    reason:     `Owner reply #${id}`,
-  });
-
   return jsonOk({ id, message: 'Reply posted.' }, 201);
 }
 
