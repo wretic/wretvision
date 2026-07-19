@@ -7,7 +7,7 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding     = "DB"
 database_name = "wretvision-comments"
-database_id   = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id   = "51d519cb-8ca5-4e2f-a0bb-d61b16a8e74f"
 
 # ── Environment Variables ──────────────────────────────────────────────────────
 [vars]
@@ -20,10 +20,16 @@ TURNSTILE_VERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverif
 # OWNER_TOKEN           — Bearer token for owner/moderation requests
 
 # ── Routes ─────────────────────────────────────────────────────────────────────
+# Two entries needed: one for the exact /api/comments endpoint (GET+POST),
+# one for sub-paths (/api/comments/report, /api/mod/*).
 [[routes]]
-pattern = "wretvision.com/api/comments/*"
+pattern = "wretvision.com/api/comments"
+zone_name = "wretvision.com"
+
+[[routes]]
+pattern = "wretvision.com/api/*"
 zone_name = "wretvision.com"
 
 # ── Cache rules: review pages remain fully cacheable ──────────────────────────
-# Comments load from /api/comments/* which bypasses Cloudflare page cache.
-# This keeps static review pages at full cache TTL while comments are dynamic.
+# Comments load from /api/* which bypasses Cloudflare page cache.
+# Static review pages keep their full cache TTL; only API paths hit the Worker.
