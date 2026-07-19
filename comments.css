@@ -4,6 +4,10 @@
    Class prefix: rvc- (Review Comments)
    ═══════════════════════════════════════════════════════════ */
 
+/* Restore [hidden] semantics — class-level display properties
+   override the UA stylesheet's [hidden]{display:none} rule. */
+[hidden] { display: none !important; }
+
 /* ── SECTION WRAPPER ──────────────────────────────────────── */
 .rvc-section {
   margin-top: 36px;
