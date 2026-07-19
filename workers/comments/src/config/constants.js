@@ -15,17 +15,13 @@ export const PAGINATION = {
 };
 
 export const RATE_LIMIT = {
-  // Max new comments per IP (or fingerprint) within the window
-  POST_MAX:    3,
-  POST_WINDOW: 60 * 10,   // 10 minutes in seconds
-
-  // Max reports per IP (or fingerprint) within the window
+  POST_MAX:      3,
+  POST_WINDOW:   60 * 10,   // 10 minutes in seconds
   REPORT_MAX:    5,
-  REPORT_WINDOW: 60 * 60, // 1 hour in seconds
+  REPORT_WINDOW: 60 * 60,   // 1 hour in seconds
 };
 
 export const AUTO_HIDE = {
-  // If a comment accumulates this many reports, auto-set status = 'rejected'
   REPORT_THRESHOLD: 5,
 };
 
@@ -54,4 +50,16 @@ export const MOD_ACTIONS = {
   BAN:            'ban',
   UNBAN:          'unban',
   AUTO_REJECT:    'auto_reject',
+  ADD_NOTE:       'add_note',
+  EDIT_NOTE:      'edit_note',
+  DELETE_NOTE:    'delete_note',
+};
+
+// Mod note categories. Mirrors DB CHECK constraint on mod_notes.category.
+export const NOTE_CATEGORIES = ['spam', 'spoilers', 'abuse', 'general'];
+
+// Mod note body length limits.
+export const MOD_NOTE = {
+  MIN_BODY_LENGTH: 5,
+  MAX_BODY_LENGTH: 1000,
 };

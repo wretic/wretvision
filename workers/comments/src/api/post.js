@@ -12,6 +12,7 @@
 // ============================================================
 
 import { insertComment, getCommentById } from '../db/queries.js';
+import { linkFingerprint }              from '../db/mod_queries.js';
 import {
   validateSlug,
   validateDisplayName,
@@ -104,7 +105,10 @@ export async function handlePostComment(request, env) {
     ip_hash:      ipHash,
   });
 
-  await logAction(env.DB, ipHash, 'post', fingerprintHash);
+  await Promise.all([
+    logAction(env.DB, ipHash, 'post', fingerprintHash),
+    linkFingerprint(env.DB, ipHash, fingerprintHash),
+  ]);
 
   return jsonOk(
     { id, message: 'Comment submitted and awaiting moderation.' },

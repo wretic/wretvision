@@ -5,7 +5,7 @@
 // Returns { valid: true } or { valid: false, error: string }
 // ============================================================
 
-import { COMMENT } from '../config/constants.js';
+import { COMMENT, MOD_NOTE, NOTE_CATEGORIES } from '../config/constants.js';
 import { isReservedUsername } from '../utils/reserved.js';
 
 export function validateSlug(slug) {
@@ -87,4 +87,35 @@ export function validatePaginationParams(limitRaw, pageRaw) {
   );
   const page = Math.max(parseInt(pageRaw, 10) || 1, 1);
   return { limit, offset: (page - 1) * limit };
+}
+
+// ── Moderator note validators ──────────────────────────────────────────────────
+
+export function validateNoteBody(body) {
+  if (!body || typeof body !== 'string') {
+    return { valid: false, error: 'Note body is required.' };
+  }
+  const trimmed = body.trim();
+  if (trimmed.length < MOD_NOTE.MIN_BODY_LENGTH) {
+    return { valid: false, error: `Note must be at least ${MOD_NOTE.MIN_BODY_LENGTH} characters.` };
+  }
+  if (trimmed.length > MOD_NOTE.MAX_BODY_LENGTH) {
+    return { valid: false, error: `Note must be ${MOD_NOTE.MAX_BODY_LENGTH} characters or fewer.` };
+  }
+  return { valid: true, value: trimmed };
+}
+
+export function validateNoteCategory(category) {
+  if (!category) return { valid: true, value: 'general' };
+  if (!NOTE_CATEGORIES.includes(category)) {
+    return { valid: false, error: `Invalid category. Allowed: ${NOTE_CATEGORIES.join(', ')}.` };
+  }
+  return { valid: true, value: category };
+}
+
+export function validateIpHash(hash) {
+  if (!hash || typeof hash !== 'string' || !/^[a-f0-9]{64}$/.test(hash)) {
+    return { valid: false, error: 'Invalid commenter identifier.' };
+  }
+  return { valid: true };
 }

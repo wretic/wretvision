@@ -13,9 +13,12 @@ Review pages remain fully cached. Comments load dynamically from `/api/comments/
 |-------|--------|-------------|
 | 1.0   | Complete | Core architecture: D1 schema, GET/POST/report endpoints, Turnstile, rate limiting, spam detection, reserved usernames |
 | 1.1   | Complete | Hardening: dual-signal rate limiting, impersonation-resistant username blocking, audit log, revision history, vote schema, shadow moderation schema, spoiler architecture |
+| 1.2   | Complete | Moderator intelligence: commenter profiles, fingerprint linking, mod notes, moderation history, moderator dashboard API, ban/unban |
 | 2     | Planned | Frontend comment UI on review.html, click-to-reveal spoilers, per-author shadow visibility |
-| 3     | Planned | Moderation dashboard, approve/reject queue, revision history viewer |
+| 3     | Planned | Moderation dashboard UI, approve/reject queue, revision history viewer, full mod action implementation |
 | 4     | Planned | Vote system (upvote/downvote), user accounts |
+
+**Backend is feature-complete after Phase 1.2.** Phase 2+ is purely frontend and dashboard work.
 
 ---
 
@@ -305,6 +308,164 @@ High-traffic reviews could trigger hundreds of simultaneous `UPDATE comments SET
 ### Page Cache
 Review pages stay at full Cloudflare CDN cache TTL. Comments load from `/api/comments/*` which bypasses the page cache entirely — no cache purge needed when a comment is approved.
 
+### Performance expectations (Phase 1.2 additions)
+
+All mod endpoints operate on small, indexed datasets:
+
+| Endpoint | Queries | Index used | Expected latency |
+|----------|---------|-----------|-----------------|
+| GET /api/mod/commenter/:hash | 4 parallel | `idx_comments_ip_hash`, profile PK, `idx_mod_notes_ip`, `idx_fp_ip` | <5ms |
+| GET /api/mod/commenter/:hash/history | 2 parallel | `idx_comments_ip_hash` | <3ms |
+| GET /api/mod/commenter/:hash/notes | 1 | `idx_mod_notes_ip` | <2ms |
+| POST /api/mod/commenter/:hash/notes | 2 sequential | PK insert + audit insert | <5ms |
+| POST /api/mod/commenter/:hash/ban | 2 sequential | PK upsert + audit insert | <5ms |
+
+No N+1 queries anywhere. The profile endpoint runs all four sub-queries with `Promise.all`. At WretVision scale (<50k total comments ever), all queries are sub-millisecond at the DB layer.
+
+---
+
+## Moderator API (Phase 1.2)
+
+### Authentication
+
+All `/api/mod/*` routes require:
+```
+Authorization: Bearer <OWNER_TOKEN>
+```
+
+`OWNER_TOKEN` is set via `wrangler secret put OWNER_TOKEN`. The same token is used as the IP hash salt — do not rotate it unless rebuilding all ip_hash values in the database.
+
+Origin locking is **not applied** to mod routes since they are called from the dashboard (not from the site's Origin). Mod endpoints must never be linked from public pages.
+
+### Endpoint Reference
+
+#### `GET /api/mod/commenter/:hash`
+Returns commenter profile + live stats in one response. All four sub-queries run in parallel.
+
+```json
+{
+  "ip_hash": "abc123...",
+  "stats": {
+    "total": 15,
+    "approved": 10,
+    "pending": 2,
+    "rejected": 3,
+    "deleted": 1,
+    "shadow_hidden": 0,
+    "total_reports_received": 4,
+    "first_comment_at": "2026-01-15T10:30:00Z",
+    "last_comment_at": "2026-07-19T14:22:00Z"
+  },
+  "profile": {
+    "is_banned": false,
+    "ban_reason": null,
+    "banned_at": null,
+    "banned_by": null,
+    "created_at": null
+  },
+  "note_count": 2,
+  "fingerprint_count": 1
+}
+```
+
+#### `GET /api/mod/commenter/:hash/history?page=1&limit=20`
+Paginated list of all comments by this commenter across all statuses. Includes internal fields (`status`, `shadow_hidden`, `report_count`) not sent in public responses.
+
+#### `GET /api/mod/commenter/:hash/notes`
+All moderator notes for this commenter.
+
+```json
+{
+  "ip_hash": "abc123...",
+  "notes": [
+    {
+      "id": 1,
+      "moderator": "moderator",
+      "body": "Posted spoilers without marking them twice.",
+      "category": "spoilers",
+      "created_at": "2026-07-19T14:22:00Z",
+      "updated_at": "2026-07-19T14:22:00Z"
+    }
+  ]
+}
+```
+
+#### `POST /api/mod/commenter/:hash/notes`
+Add a new note. Notes are never overwritten — this always creates a new record.
+
+```json
+{ "body": "Repeated spam attempts.", "category": "spam" }
+```
+
+Valid categories: `spam`, `spoilers`, `abuse`, `general`
+
+#### `POST /api/mod/commenter/:hash/ban`
+Ban a commenter. Creates or updates the `commenter_profiles` row. Logs to audit log.
+
+```json
+{ "reason": "Persistent spam after two warnings." }
+```
+
+#### `POST /api/mod/commenter/:hash/unban`
+Lift a ban. Clears ban fields. Logs to audit log.
+
+#### `PUT /api/mod/notes/:id`
+Edit an existing note body and/or category.
+
+```json
+{ "body": "Updated note text.", "category": "abuse" }
+```
+
+#### `DELETE /api/mod/notes/:id`
+Permanently delete a note. Logged to audit log with note ID and category.
+
+### New Tables (Phase 1.2)
+
+#### `commenter_profiles`
+One row per ip_hash. Created lazily on first ban or when first note is added. Only stores non-derivable data — stats are always computed live from `comments`.
+
+| Column | Description |
+|--------|-------------|
+| ip_hash | PK — SHA-256 hash |
+| is_banned | Ban flag |
+| ban_reason | Optional free-text reason |
+| banned_at | Timestamp of ban |
+| banned_by | Moderator who issued ban |
+
+#### `commenter_fingerprints`
+Maps ip_hash ↔ fingerprint_hash associations. Updated on every comment submission so `last_seen_at` stays current. Used to detect ban evasion (same device fingerprint, changed IP).
+
+Reverse lookup (`idx_fp_fingerprint`): given a fingerprint, find all ip_hashes that have ever used it.
+
+#### `mod_notes`
+Internal notes per commenter. Multiple notes allowed. Notes are never overwritten — add creates a new row, edit updates `body`/`category`/`updated_at`. All note CRUD is logged in `mod_audit_log`.
+
+### Security Model
+
+| Concern | Mitigation |
+|---------|-----------|
+| Unauthorized access | Bearer token required on every request, checked before any DB access |
+| Token brute-force | Cloudflare rate-limits and DDoS-protects the Worker; all requests go through CF network |
+| Data exposure | Mod endpoints return full internal fields (status, shadow_hidden, ip_hash) — never reachable without token |
+| Note content | Notes are internal — never included in public GET /api/comments responses |
+| Audit trail | Every mod action (including note CRUD) appended to mod_audit_log, permanent record |
+
+### Privacy Considerations
+
+- `commenter_profiles` stores only hashes, ban metadata, and timestamps. No PII.
+- `commenter_fingerprints` stores only hashes. No raw UA, no raw IP.
+- The `:hash` in mod URLs is the SHA-256 ip_hash — non-reversible. A moderator who has the hash cannot recover the original IP.
+- Notes may contain moderator-written text about behaviour patterns — this is internal data and must remain internal.
+
+### Future Workflow (Phase 3)
+
+1. Moderator opens dashboard and sees the pending queue.
+2. Clicks a comment → sees commenter profile sidebar: total history, ban status, existing notes.
+3. Approves, rejects, or shadow-hides the comment (logged to mod_audit_log).
+4. Optionally adds a note: "First offence, warned about spoilers."
+5. If pattern repeats → bans the commenter.
+6. Ban evasion check: dashboard shows fingerprint count. If same fingerprint appears on a new ip_hash, that's an evader.
+
 ---
 
 ## Local Setup
@@ -320,17 +481,17 @@ wrangler d1 create wretvision-comments
 
 # 3. Update wrangler.toml — paste the database_id from step 2
 
-# 4. Run schema (fresh install)
+# 4. Run schema (fresh install — includes all phases)
 npm run db:init
 
-# 5. If upgrading an existing Phase 1 database
-npm run db:migrate
+# If upgrading an existing Phase 1.1 database:
+npm run db:migrate:1.2
 
-# 6. Set secrets
+# 5. Set secrets
 wrangler secret put TURNSTILE_SECRET_KEY
 wrangler secret put OWNER_TOKEN
 
-# 7. Test locally
+# 6. Test locally
 npm run dev
 ```
 
@@ -347,4 +508,10 @@ Do not deploy until:
 - [ ] POST /api/comments passes Turnstile + rate limit + spam checks
 - [ ] POST /api/comments/report handles duplicate reports correctly
 - [ ] Reserved username blocking tested against impersonation examples
-- [ ] No regressions in existing site functionality
+- [ ] GET /api/mod/* returns 401 without valid token
+- [ ] GET /api/mod/* returns 401 with wrong token
+- [ ] GET /api/mod/commenter/:hash returns stats + profile
+- [ ] POST /api/mod/commenter/:hash/notes adds note, visible in GET
+- [ ] POST /api/mod/commenter/:hash/ban + unban cycle works
+- [ ] mod_audit_log records all actions above
+- [ ] No regressions in existing public comment API
