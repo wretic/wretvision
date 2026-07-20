@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1784544915195,
+      "slug": "the-conjuring-review",
+      "seoTitle": "The Conjuring Review (2013) | WretVision",
+      "seoDescription": "The Conjuring does what most modern horror is too lazy to attempt: it actually scares you with craft instead of cheap tricks.",
+      "category": "movie",
+      "title": "The Conjuring",
+      "year": 2013,
+      "director": "James Wan",
+      "runtime": "112 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "The Conjuring does what most modern horror is too lazy to attempt: it actually scares you with craft instead of cheap tricks.",
+      "body": [
+        "After Paranormal Activity made found footage the default mode for cheap supernatural horror, James Wan came along in 2013 and reminded everyone what a proper haunted house film looks like. The Conjuring is based on the real case files of Ed and Lorraine Warren, a couple of paranormal investigators who in 1971 were called to help the Perron family after things in their isolated Rhode Island farmhouse started going very wrong. Wan had already proven himself with Saw and Insidious, but this is the film where everything clicked into place. He was clearly playing at a different level here.",
+        "What works is almost everything. The atmosphere is thick from the first frame. Wan builds dread the old fashioned way, with framing, with negative space, with sounds just outside what you can see. There is a scene involving a wardrobe and a pair of hands that genuinely made me hold my breath. The practical effects are used sparingly and land every single time. Vera Farmiga and Patrick Wilson are exceptional as the Warrens, bringing warmth and genuine conviction to roles that could have been cardboard ghost hunters. You believe them completely, and that belief is what makes the scares hit harder.",
+        "If I am being honest about the flaws, the film does lean on a few familiar haunted house beats, and anyone who has seen enough of the genre will clock where certain scenes are heading. The final act escalates into more conventional exorcism territory, which slightly deflates the quiet dread Wan had been so carefully building for most of the runtime. It does not ruin the film, not even close, but you feel the gear change. There is also the wider Conjuring universe to consider. The sequels and spinoffs that followed varied wildly in quality, and in hindsight this original stands so far above most of them that it almost feels like a different franchise entirely.",
+        "The Conjuring from 2013 is one of the best haunted house films in years, full stop. It earns comparison to the genuine classics of the genre, films like The Haunting of Hill House and Poltergeist, because it understands that atmosphere and character investment are the foundation everything else has to be built on. Jump scares mean nothing if you do not care who is being scared. Wan cared, and it shows in every single scene. 8/10 and a genuine recommendation to anyone who thought mainstream horror had forgotten how to be actually terrifying."
+      ],
+      "images": [],
+      "verdict": "The Conjuring is exactly what a ghost movie should be, creepy, crafted with real intention, and genuinely hard to shake after the credits roll.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/wVYREutTvI2tmxr6ujrHT704wGF.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/ecKQlAEG95k62SMGhvX83oEqANK.jpg"
+      }
+    },
+    {
       "id": 1784454867457,
       "slug": "friday-the-13th-part-viii-jason-takes-manhattan-review",
       "seoTitle": "Friday the 13th Part VIII: Jason Takes Manhattan Review (1989) | WretVision",
