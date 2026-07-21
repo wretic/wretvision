@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1784629652167,
+      "slug": "friday-the-13th-review-2",
+      "seoTitle": "Friday the 13th Review (2009) | WretVision",
+      "seoDescription": "The 2009 Friday the 13th remake has no right being this watchable, but here we are.",
+      "category": "movie",
+      "title": "Friday the 13th",
+      "year": 2009,
+      "director": "Marcus Nispel",
+      "runtime": "97 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "The 2009 Friday the 13th remake has no right being this watchable, but here we are.",
+      "body": [
+        "Let's be honest about what this film is and what it was never going to be. The 2009 Friday the 13th remake from director Marcus Nispel and producer Michael Bay's Platinum Dunes is not trying to reinvent the slasher genre. It's not trying to say anything profound about grief or trauma or the sins of Camp Crystal Lake. It's a slick, competent, unapologetically commercial reboot of a franchise that had already run itself into the ground across a dozen sequels. And given all of that, it does its job better than it had any right to.",
+        "What actually works here is Jason himself. Derek Mears brings genuine physicality and menace to the role in a way the franchise hadn't seen in years. This is a Jason who feels dangerous, who moves with purpose and speed and actual threat. The film smartly condenses the original story into a tight prologue and then jumps forward, giving us a Crystal Lake that feels lived in and a Jason who has been surviving out there for years. That detail matters. It grounds him in a way that makes him feel less like a supernatural boogeyman and more like something terrifyingly real.",
+        "Where it stumbles is exactly where you expect it to. The characters are mostly interchangeable. You get the usual Platinum Dunes lineup of attractive twenty somethings sorted into obvious categories and dispatched in the expected order. There are one or two people you mildly root for and a lot of people you are actively fine watching get an axe to the face. The kills are solid but not particularly inventive. The film leans hard on the established formula and rarely deviates from it, which is both its comfort and its ceiling. If you want something surprising, go elsewhere. This is Friday the 13th on rails.",
+        "But here is the thing. Compared to other Platinum Dunes horror remakes of that era, like the 2003 Texas Chainsaw Massacre or the 2010 Nightmare on Elm Street, this one actually respects what made its source material work. It keeps the lake, the atmosphere, the woods at night doing all the heavy lifting. Nispel knows how to shoot a kill and he keeps the pacing tight enough that you are never bored. It is not groundbreaking horror. It is not going to change how you think about the genre. But it is a genuinely solid modern take on Jason Voorhees and that counts for something. 7/10."
+      ],
+      "images": [],
+      "verdict": "A remake that knows exactly what it is and delivers it competently, which in the horror reboot landscape of the late 2000s was rarer than it should have been.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/uGGpnWHOmWTARVN9wbC1nPxNgps.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/16zzKM5vDxnYiqG6Tg6wOkOLSmj.jpg"
+      }
+    },
+    {
       "id": 1784544915195,
       "slug": "the-conjuring-review",
       "seoTitle": "The Conjuring Review (2013) | WretVision",
