@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1784802351274,
+      "slug": "friday-the-13th-part-vii-the-new-blood-review",
+      "seoTitle": "Friday the 13th Part VII: The New Blood Review (1988) | WretVision",
+      "seoDescription": "Jason versus telekinesis sounds wild on paper. In practice, it's just another body count film wearing a slightly different hat.",
+      "category": "movie",
+      "title": "Friday the 13th Part VII: The New Blood",
+      "year": 1988,
+      "director": "John Carl Buechler",
+      "runtime": "88 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Jason versus telekinesis sounds wild on paper. In practice, it's just another body count film wearing a slightly different hat.",
+      "body": [
+        "Friday the 13th Part VII: The New Blood arrived in 1988 with what seemed like a genuinely interesting pitch: Jason Voorhees going up against a girl with telekinetic powers, essentially Carrie versus Jason. Director John Carl Buechler clearly had ambitions. On paper that is a fun, silly, committed swing and exactly the kind of creative detour a franchise needs when it is running out of road. The problem is the film never really commits to the concept. The telekinesis is mostly window dressing rather than the engine driving the story, and what you are left with is a Friday the 13th film that looks and feels almost identical to the five that came before it.",
+        "What genuinely works here is Kane Hodder. His physical performance as Jason is the best the character had received to that point, all weight and menace and deliberate movement. You believe in him in a way that some earlier entries made difficult. Buechler also delivers the practical effects work you want from this franchise, and Jason's unmasked design in this one is legitimately great, rotting and exposed and grotesque in all the right ways. If you are watching for the kills and the creature work, there are moments here that absolutely deliver, and for horror fans who love practical gore over anything digital, this one has its highlights.",
+        "But the MPAA gutted this film and it shows. Cuts that should land with real impact feel truncated and toothless, and the pacing suffers badly because of it. The supporting cast exists almost entirely to be dispatched, and the characters are so thinly written that you stop caring who survives about twenty minutes in. Lar Park Lincoln does what she can with Tina but the script gives her almost nothing to work with emotionally outside of trauma signposting. The telekinetic showdown at the end is entertaining enough but it arrives after so much meandering that the payoff feels smaller than it should.",
+        "Friday the 13th Part VII: The New Blood is mediocre in the most specific way possible, not a disaster, not a gem, just another entry on the conveyor belt. Fans of the franchise will find enough to enjoy and Hodder alone is worth something. But the premise promised something genuinely different and the film blinks. If you want a sharper slasher from the same era, A Nightmare on Elm Street 3: Dream Warriors pulls off the elevated concept trick far more successfully. This one sits comfortably in the middle of the Friday the 13th ranking pile, which is exactly where a film this safe deserves to land."
+      ],
+      "images": [],
+      "verdict": "5/10, a franchise running on fumes, propped up by Kane Hodder and some solid practical work, but too timid to do anything interesting with its own best idea.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/rUzk9Qnyz2FZGxHMBrq6DYIQZkO.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/roHX6N0VkySKBlramHUw1zdMQHB.jpg"
+      }
+    },
+    {
       "id": 1784716121871,
       "slug": "hellbound-hellraiser-ii-review",
       "seoTitle": "Hellbound: Hellraiser II Review (1988) | WretVision",
