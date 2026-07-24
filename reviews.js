@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1784888511126,
+      "slug": "vhs94-review",
+      "seoTitle": "V/H/S/94 Review (2021) | WretVision",
+      "seoDescription": "V/H/S/94 has one segment so genuinely disturbing it almost carries the whole anthology on its back.",
+      "category": "movie",
+      "title": "V/H/S/94",
+      "year": 2021,
+      "director": "Various",
+      "runtime": "100 min",
+      "rating": "NR",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6.8,
+      "featured": false,
+      "excerpt": "V/H/S/94 has one segment so genuinely disturbing it almost carries the whole anthology on its back.",
+      "body": [
+        "Anthology horror lives and dies by its weakest link, and V/H/S/94 is no different. The fourth entry in the long-running found footage series arrives in 2021 with a new roster of directors and a fresh wraparound, this time set inside a cult compound crawling with bodies and old television sets. It's a decent framing device. It sets a grimy, oppressive mood early and at least tries to connect the segments thematically rather than just stringing them together and hoping for the best. The format is familiar if you've spent any time with the earlier instalments, Shudder staples all of them, but V/H/S/94 leans harder into practical nastiness than some of its predecessors and that counts for something.",
+        "The standout is Storm Drain, directed by Chloe Okuno, and it is genuinely one of the more unsettling short horror pieces I've seen in years. A local news reporter investigating a sewer story starts transforming into something wrong, something alien, and the practical effects work on that sequence is disgusting in exactly the right way. Okuno commits fully to the creature concept and the payoff lands hard. Your stomach will know about it. That segment alone justifies watching the whole film. The Body is darkly funny and punches well above its runtime. Holy Hell closes things out with some ambition even if the execution gets messy toward the end.",
+        "Where V/H/S/94 loses ground is in the segments that feel like placeholders. Terror, the one centred on a militia group and a rat monster, has ideas rattling around inside it but never finds a way to make them land with any real force. The pacing drags in places and the found footage conceit starts to feel like a limitation rather than a creative choice. There is also the persistent anthology problem where you are constantly aware that the quality is uneven, and the dips pull you out of whatever the stronger entries built up. A bad segment after a great one is a real mood killer.",
+        "V/H/S/94 is not a clean recommendation but it is not a waste of your time either. If you are already invested in the series this is comfortably one of the better instalments, and Storm Drain alone makes it worth a watch for any fan of practical creature horror. It sits in that frustrating space where one exceptional piece is surrounded by work that ranges from decent to forgettable. Think of it like a strong track on a patchy album. Worth finding, not worth the full price of admission on its own. Fans of found footage horror and anthology films like Trick r Treat will find enough here to chew on, just know going in that the highs and lows are further apart than they should be."
+      ],
+      "images": [],
+      "verdict": "V/H/S/94 is an uneven anthology saved from mediocrity by one genuinely great segment that reminds you exactly what practical horror effects can do when a director actually commits.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/9fSogEkqDfJQTuGHsTFloQz3Tw8.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/uWbP41poWgP0f7sgAQTf6UeRtwg.jpg"
+      }
+    },
+    {
       "id": 1784802351274,
       "slug": "friday-the-13th-part-vii-the-new-blood-review",
       "seoTitle": "Friday the 13th Part VII: The New Blood Review (1988) | WretVision",
