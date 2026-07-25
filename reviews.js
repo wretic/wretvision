@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1784973079795,
+      "slug": "the-conjuring-the-devil-made-me-do-it-review",
+      "seoTitle": "The Conjuring: The Devil Made Me Do It Review (2021) | WretVision",
+      "seoDescription": "The Conjuring 3 ditches haunted houses for a courtroom, which is either a bold swing or a wrong turn depending on your patience.",
+      "category": "movie",
+      "title": "The Conjuring: The Devil Made Me Do It",
+      "year": 2021,
+      "director": "Michael Chaves",
+      "runtime": "112 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6.8,
+      "featured": false,
+      "excerpt": "The Conjuring 3 ditches haunted houses for a courtroom, which is either a bold swing or a wrong turn depending on your patience.",
+      "body": [
+        "The Conjuring: The Devil Made Me Do It from 2021 does something genuinely unexpected for a third entry in a horror franchise. It abandons the haunted location formula almost entirely and builds itself around a real murder case where the defendant, Arne Cheyenne Johnson, actually pleaded demonic possession in court. That is a wild premise. The kind that should generate something genuinely unsettling and morally complicated. Director Michael Chaves steps in for James Wan and you feel that absence, but to his credit he at least commits to the new direction rather than just reheating the formula.",
+        "What works here is the central couple. Patrick Wilson and Vera Farmiga as Ed and Lorraine Warren remain the best thing about this entire franchise and they carry the film on their backs. The opening exorcism sequence is legitimately intense, probably the best setpiece in the movie, and the early dread around Arne has some genuine weight. There are moments where the court thriller angle actually pays off because you feel the desperation of trying to prove something unprovable. That tension is real and the film earns it occasionally.",
+        "But the execution keeps letting it down. The villain and the occult conspiracy element feel underdeveloped and frankly a bit dumb compared to the grounded horror of the first two films. The mystery of who is behind the curse gets resolved in a way that feels rushed and convenient rather than earned. Pacing becomes a problem in the second act where the film is neither scary enough to work as horror nor tight enough to work as a thriller. It falls into the gap between two genres without fully committing to either one.",
+        "Compared to the Conjuring spinoffs like Annabelle Comes Home or The Nun, The Devil Made Me Do It is noticeably better. That is a low bar but the Warren dynamic and the unusual structure at least give it something to say beyond jump scare delivery. It resonates more than the spinoffs because it is trying something different, even when it stumbles. If you are working through the Conjuring universe in order, it is worth your time. Just do not go in expecting the atmospheric slow burn of the original. 6.8 out of 10."
+      ],
+      "images": [],
+      "verdict": "A court case horror film that had a genuinely fascinating real world premise and half the nerve required to do it justice.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/xbSuFiJbbBWCkyCCKIMfuDCA4yV.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/p26c040MErns7DJYhisa1CpVB5i.jpg"
+      }
+    },
+    {
       "id": 1784888511126,
       "slug": "vhs94-review",
       "seoTitle": "V/H/S/94 Review (2021) | WretVision",
