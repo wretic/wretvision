@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1785060162162,
+      "slug": "annabelle-review",
+      "seoTitle": "Annabelle Review (2014) | WretVision",
+      "seoDescription": "Annabelle (2014) doesn't need to be this good, but somehow it mostly is.",
+      "category": "movie",
+      "title": "Annabelle",
+      "year": 2014,
+      "director": "John R. Leonetti",
+      "runtime": "99 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Annabelle (2014) doesn't need to be this good, but somehow it mostly is.",
+      "body": [
+        "Annabelle arrives as a spin-off nobody was demanding, riding the coattails of The Conjuring's breakout success and leaning hard on a creepy doll that barely appeared in the original. Director John R. Leonetti is not James Wan. That's obvious within the first twenty minutes. But the film is smarter than its origins suggest, grounding itself in a slow domestic dread that actually works more often than it has any right to. It knows what it is and mostly plays to its strengths rather than overreaching.",
+        "The 1960s setting does a lot of heavy lifting here. There's a paranoia baked into that era, young couples isolated in apartments, suspicious neighbours, a world that feels just slightly off-kilter before anything supernatural even enters the frame. Annabelle Wallis and Ward Horton are fine, nothing extraordinary, but Wallis sells the exhaustion and mounting terror without ever tipping into hysteria. The film builds tension competently. A few sequences, particularly the basement scene with the pram, land with genuine unease rather than cheap shock tactics.",
+        "Here's the thing though. The doll itself is the problem. The production design team gave Annabelle a full makeover, cracked porcelain face, hollow eyes, unsettling grin, and somehow made her less frightening than the actual Annabelle doll sitting in Ed and Lorraine Warren's occult museum. That original doll is a battered, unremarkable Raggedy Ann. The fact that something so mundane inspired such documented fear is genuinely disturbing. The movie version looks like a prop from a Halloween shop. You can feel the studio's thinking behind every design choice and it undercuts the horror every time she appears on screen.",
+        "Compared to something like Rosemary's Baby, which this film clearly draws from in its apartment setting and isolated young mother premise, Annabelle does not reach those heights. It is not trying to reinvent the genre. But as a 2014 studio horror release, as a Conjuring universe entry, it holds up reasonably well. The pacing is tight, the atmosphere is consistent, and it does not rely entirely on jump scares to carry the load. It has real problems but none of them are fatal. 7/10, a better film than it had any business being, let down mainly by the one thing its title is named after."
+      ],
+      "images": [],
+      "verdict": "Annabelle (2014) is a solid, atmosphere-first horror film that works in spite of its most famous flaw, the doll herself is less scary than the idea of her.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/yLsuU2P2SpDYFwtZQ7dtfVAf6TE.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pWZ0srAfPx4XyJMlFkKBlmYfx3C.jpg"
+      }
+    },
+    {
       "id": 1784973079795,
       "slug": "the-conjuring-the-devil-made-me-do-it-review",
       "seoTitle": "The Conjuring: The Devil Made Me Do It Review (2021) | WretVision",
