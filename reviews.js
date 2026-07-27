@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1785151670320,
+      "slug": "ringu-review",
+      "seoTitle": "Ringu Review (1998) | WretVision",
+      "seoDescription": "Ringu is genuinely unsettling and historically important, but the revelation others promised me never quite arrived.",
+      "category": "movie",
+      "title": "Ringu",
+      "year": 1998,
+      "director": "Hideo Nakata",
+      "runtime": "96 min",
+      "rating": "NR",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Ringu is genuinely unsettling and historically important, but the revelation others promised me never quite arrived.",
+      "body": [
+        "There is a version of this review where I tell you Ringu changed my life. Where I describe it as the most frightening thing I have ever sat through and warn you to clear your schedule and sleep with the lights on. I have read that review a hundred times from a hundred different people. I am not going to write that review, because it would not be honest. What I will tell you is that Ringu is a very good film. A genuinely effective piece of atmospheric horror with a clear and confident vision behind it. It just did not do to me what so many people swore it would, and I think that gap between expectation and experience is worth talking about before anything else.",
+        "Directed by Hideo Nakata and released in Japan in 1998, Ringu is based on Koji Suzuki's 1991 novel and follows journalist Reiko Asakawa as she investigates the death of her teenage niece, one of four teenagers who died simultaneously after reportedly watching a mysterious videotape. The premise is genuinely elegant in its simplicity. Watch the tape, receive a phone call, die in seven days. There is a countdown built into the concept that creates immediate structural tension, and Nakata understands that. He does not mess with it. The story moves with purpose and the central mystery unfolds at a pace that respects the audience without ever dragging its feet through unnecessary padding.",
+        "Nanako Matsushima plays Reiko with a calm, grounded intelligence that anchors the film throughout. She is not screaming her way through scenes or reacting with exaggerated horror to every development. There is a journalistic pragmatism to how she approaches the investigation and Matsushima plays that completely straight, which makes the moments where Reiko is genuinely shaken land harder. Hiroyuki Sanada as her ex-husband Ryuji brings a cooler, almost detached quality to the role that works well as a counterpoint. The two of them have a dynamic that feels like a real fractured relationship rather than a convenient plot device, and their scenes together have more texture than you typically get from a horror film built around a central gimmick.",
+        "The craft on display here is where Nakata really distinguishes himself. The film is shot in a desaturated, muted palette that makes the world feel slightly wrong even in ordinary moments. There is no aggressive colour grading trying to signal to you that something scary is coming. Everything just looks a little too cold, a little too still. The sound design operates in the same register, using absence and low ambient hum rather than stingers and jump scare blasts. This is a film interested in dread rather than shock, and that choice is the right one. The cursed tape itself, when we finally see it, is a masterpiece of surreal editing. Images that do not connect logically but feel deeply wrong in your gut. It is the kind of filmmaking that sticks.",
+        "What strikes me most rewatching Ringu with fresh eyes is how much of its horror lives in implication rather than explicit threat. Sadako, the figure at the centre of the curse, is barely present for most of the runtime. Nakata rations her carefully. The well, the static, the phone call, all of it builds a mythology around an absence, and that is genuinely smart horror construction. The famous final sequence involving the television delivers. I will not pretend otherwise. It is a well-executed reveal and the image of Sadako crawling from the screen is iconic for good reason. But for me personally it landed as a great scene rather than a life-altering one, and I think part of that is the journey to get there.",
+        "Here is where I will say something that I know is going to bother people. The 2002 American remake directed by Gore Verbinski hit me harder. I know. I know. The original is supposed to be the definitive version and calling the remake more effective feels like a betrayal of good taste. But Verbinski's film has a visual scale and an oppressive bleakness to its Pacific Northwest setting that got under my skin in a way the original did not quite manage. The American version also has a slightly tighter grip on pacing in the second act. I am not saying the remake is a better film in every regard, because Ringu has a quieter intelligence that the Hollywood version occasionally trades for spectacle. But on the specific question of which one actually frightened me more, I have to be honest.",
+        "The film is not without weaknesses. The subplot involving Reiko's son Yoichi and his apparent psychic sensitivity to the tape is handled inconsistently. It raises implications that the film does not fully commit to exploring, and in a story this carefully constructed that feels like an oversight rather than a deliberate choice. There is also a sequence midway through involving the investigation into Sadako's origins on the island that slows the momentum noticeably. It is necessary for the mythology but Nakata paces it slightly too loosely and you feel the film marking time when it should be tightening the screw.",
+        "In terms of its place in horror history, Ringu's significance cannot be overstated. It launched J-horror as a globally recognised genre, inspired a wave of imitators and remakes, and introduced Western audiences to a visual language around long black hair and twisted, jerking movement that became ubiquitous throughout the 2000s. Films like Ju-On: The Grudge and its American counterpart The Grudge, along with Dark Water, owe their existence to what Nakata built here. Even if Ringu did not personally reach the heights I had been promised, I can see exactly what it gave the genre and I have genuine respect for that. Watching it in 2025 means watching something that has been absorbed and diluted by twenty years of influence, which inevitably affects how fresh it can feel.",
+        "Ringu earns a 7 out of 10 from me, which I suspect will frustrate some people. It is better than Nakata's own follow-up Ringu 2, which loses the restraint and starts chasing mythology at the expense of tension. It is a well-made, atmospherically assured piece of horror with two strong lead performances and a central concept that remains genuinely clever. It just did not terrify me the way it terrified so many others, and I think the honest version of this review has to acknowledge that gap instead of cosigning hype I cannot personally verify. Go in with managed expectations and you will find something very good. Go in expecting to never sleep again, and you might end up where I did."
+      ],
+      "images": [],
+      "verdict": "Ringu is a genuinely well-crafted and historically essential horror film that earns your time and your respect, even if it does not always earn the mythology built around it.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/1YINof6kN5yRdePEbcU5360ejoq.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/sGhbO6muh1Fnpa7nkxYCfvmgWCo.jpg"
+      }
+    },
+    {
       "id": 1785060162162,
       "slug": "annabelle-review",
       "seoTitle": "Annabelle Review (2014) | WretVision",
