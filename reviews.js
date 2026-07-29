@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1785321718514,
+      "slug": "friday-the-13th-part-vi-jason-lives-review",
+      "seoTitle": "Friday the 13th Part VI: Jason Lives Review (1986) | WretVision",
+      "seoDescription": "Jason Lives is the one where they stopped pretending this was survivalist horror and just leaned into the cartoon. It mostly works.",
+      "category": "movie",
+      "title": "Friday the 13th Part VI: Jason Lives",
+      "year": 1986,
+      "director": "Tom McLoughlin",
+      "runtime": "86 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Jason Lives is the one where they stopped pretending this was survivalist horror and just leaned into the cartoon. It mostly works.",
+      "body": [
+        "Friday the 13th Part VI: Jason Lives from 1986 is the entry that stops dancing around what this franchise actually is and just commits. Tommy Jarvis digs up Jason's corpse, lightning strikes, and suddenly we've got a supernatural killing machine instead of a guy in a mask. It's a tonal pivot that should feel cheap but actually gives the series something it was starting to desperately need: an identity. Director Tom McLoughlin knew exactly what kind of film he was making and he didn't apologise for it.",
+        "What works here is the self-awareness. There's a dry, almost deadpan humour running through the kills and the dialogue that keeps it from feeling stale. McLoughlin opens with a James Bond style credits sequence, a genuinely clever bit of throat clearing that signals you're not about to watch a serious film. The kills are inventive, there's some decent practical work, and the pacing is tight enough that you're never sitting around waiting for something to happen. For a sixth entry in a slasher series, that's more than you'd expect.",
+        "What it doesn't do is linger with you. I'll be straight with you, I don't have much rattling around in the memory bank beyond that lightning resurrection and a general sense that things moved along fine. Nothing here cuts deep, no standout performance, no scene that really gets under your skin. It's competent and fun but it trades the grimy tension of the original Friday the 13th or even the raw nastiness of Part II for something closer to action horror. Watchable and largely forgettable.",
+        "Jason Lives sits comfortably alongside other mid-franchise course corrections like A Nightmare on Elm Street 3 in that it finds a new gear without necessarily finding new depth. For fans of the series it's essential viewing because this is genuinely where the Jason mythology locks in. For casual horror watchers it's a decent enough Friday night watch that delivers exactly what it promises. 6/10, decent and watchable, but I couldn't tell you much about it the morning after."
+      ],
+      "images": [],
+      "verdict": "Jason Lives does its job without overstaying its welcome, which puts it ahead of a lot of franchise horror, but it left no marks.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/6vdUpHvkspQonXBdWcLWW5ciEPJ.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/93tvkTtV6tQQiYhxhij9tuODNOq.jpg"
+      }
+    },
+    {
       "id": 1785235148987,
       "slug": "the-ring-review",
       "seoTitle": "The Ring Review (2002) | WretVision",
