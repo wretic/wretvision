@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1785407262916,
+      "slug": "insidious-the-red-door-review",
+      "seoTitle": "Insidious: The Red Door Review (2023) | WretVision",
+      "seoDescription": "Insidious: The Red Door is the kind of sequel that exists, plays out, ends, and then immediately vacates your memory.",
+      "category": "movie",
+      "title": "Insidious: The Red Door",
+      "year": 2023,
+      "director": "Patrick Wilson",
+      "runtime": "107 min",
+      "rating": "PG-13",
+      "genres": [
+        "Horror"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Insidious: The Red Door is the kind of sequel that exists, plays out, ends, and then immediately vacates your memory.",
+      "body": [
+        "Here is the clearest sign a horror film has failed: you finish it, you move on, and a week later you genuinely cannot recall a single specific moment that stuck with you. That is exactly what Insidious: The Red Door did to me. Patrick Wilson steps behind the camera for this fifth instalment in the Insidious franchise, returning to the Lambert family story that James Wan and Leigh Whannell kicked off back in 2010. The premise is serviceable enough, picking up years later with a college-age Dalton and a fractured father-son relationship that is supposed to carry emotional weight alongside the supernatural threat. It is a reasonable foundation. The problem is almost everything built on top of it.",
+        "What the original Insidious did well was atmosphere. It was cheap, it was scrappy, and it had genuine dread baked into its bones. The Further felt like a real place with real rules and real menace. The Red Door goes back to that well and comes up with something that looks the part but feels completely hollow. The college setting briefly promises something fresh, a new environment to infect with wrongness, but the film never commits to it. The scares are almost entirely jump-scare architecture, loud noise, sudden face, move on. There is no slow build. No creeping unease. Just a film going through familiar motions.",
+        "Patrick Wilson and Ty Simpkins do what they can with a script that underserves them both. The father-son tension has the bones of something genuinely affecting but the film keeps abandoning it to chase the next spook sequence. Wilson as director shows competence, the framing is clean, the pacing is not a disaster, but nothing here announces a distinctive voice behind the camera. It is a film made by someone who understands how these films are supposed to look without quite understanding why the best ones worked. Compare it to something like Insidious Chapter 2, which at least had the confidence to get properly weird with its structure.",
+        "Insidious: The Red Door is not offensive, it is not unwatchable, and that is almost the worst thing you can say about a horror film. It is completely mediocre. It fills its runtime, it delivers the expected beats, and then it disappears. Fans of the franchise will find mild comfort in the familiar faces and returning mythology, but this is a sequel that exists more as a farewell lap than a genuine story that needed telling. If you are looking for 2023 horror with actual atmosphere, look elsewhere. 5 out of 10."
+      ],
+      "images": [],
+      "verdict": "Insidious: The Red Door is the definition of a forgettable fifth entry, competent enough to watch, empty enough to forget before the credits finish rolling.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/d07phJqCx6z5wILDYqkyraorDPi.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/i2GVEvltEu3BXn5crBSxgKuTaca.jpg"
+      }
+    },
+    {
       "id": 1785321718514,
       "slug": "friday-the-13th-part-vi-jason-lives-review",
       "seoTitle": "Friday the 13th Part VI: Jason Lives Review (1986) | WretVision",
