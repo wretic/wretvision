@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1785578532889,
+      "slug": "insidious-chapter-2-review",
+      "seoTitle": "Insidious: Chapter 2 Review (2013) | WretVision",
+      "seoDescription": "Insidious: Chapter 2 picks up right where the nightmare left off, and somehow, James Wan mostly pulls it off.",
+      "category": "movie",
+      "title": "Insidious: Chapter 2",
+      "year": 2013,
+      "director": "James Wan",
+      "runtime": "106 min",
+      "rating": "PG-13",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7.5,
+      "featured": false,
+      "excerpt": "Insidious: Chapter 2 picks up right where the nightmare left off, and somehow, James Wan mostly pulls it off.",
+      "body": [
+        "Some horror sequels exist to cash a cheque. Insidious: Chapter 2 from 2013 is not quite that. James Wan came back to direct, Patrick Wilson and Rose Byrne came back to anchor it, and crucially, Leigh Whannell came back to write it. That alone puts it in a different category from most follow-ups. This is a continuation with intent, not just a retread with a new monster bolted on. Whether it fully earns that intent is where things get complicated, but the attempt is genuine and you feel it in the filmmaking from the very first frame.",
+        "The film picks up immediately after the ending of the original Insidious. Josh Lambert has returned from the Further, but something came back with him, or maybe instead of him. The family is shaken, their medium Elise is dead, and Renai is watching her husband with the kind of quiet dread that makes your stomach drop. It is a smart setup because it trusts the audience to remember what happened. There is no awkward recapping, no hand-holding. Wan just drops you back into the tension and lets it breathe, which is exactly the right call after a first film that worked so hard to build its atmosphere.",
+        "Patrick Wilson is doing genuinely unsettling work here. The first film asked him to be reactive, frightened, a father out of his depth. Chapter 2 asks him to be wrong in a way that is hard to articulate but impossible to ignore. He is too composed in the wrong moments, too flat when he should be warm. It is a specific kind of creepy performance because you keep waiting for the man you recognise to resurface. Wilson commits to it completely without tipping into pantomime, which is harder than it sounds. Rose Byrne is also good, carrying most of the emotional weight as Renai, though the script gives her less to do than she deserves.",
+        "Wan has a genuine visual language and it is on display throughout Chapter 2. The Further sequences have a particular aesthetic, desaturated and cold, that contrasts sharply with the domestic warmth of the Lambert home. The hospital sequences early on have a clinical unease to them. There is a scene involving Josh and a woman in white in a derelict house that is composed with real care, slow and deliberate, letting the wrongness accumulate rather than punctuating it with a loud sting. Wan understands that horror lives in the gap between what you see and what you expect to see, and he keeps exploiting that gap with confidence.",
+        "The mythology expansion is where Chapter 2 earns its place as a legitimate sequel rather than a cheap one. Whannell's screenplay folds back into the events of the first film in ways that recontextualise specific moments without cheapening them. The Bride in Black gets a proper backstory and it is a genuinely disturbing one. The time mechanics that tie the two films together could easily have felt gimmicky but they land with more weight than expected. This is the kind of sequel work that respects what came before rather than cannibalising it, and in horror especially, that matters.",
+        "Pacing is where Chapter 2 starts to show its cracks. The middle section sags in a way the first film never did. Wan is juggling multiple timelines and storylines simultaneously, and while the ambition is admirable, the execution occasionally loses momentum. Specs and Tucker, the comic relief investigators played by Angus Sampson and Leigh Whannell, are back and they work fine, but their scenes can feel like breathing room when you want escalation instead. There is probably ten minutes of Chapter 2 that could have been cut without losing anything essential, and in horror, ten unnecessary minutes is ten minutes where the atmosphere can deflate.",
+        "The jump scares are used more generously here than in the original and that is a slight step backwards. The first Insidious was disciplined about this. Chapter 2 is less so. Not egregiously, not in the way that cheap franchise horror is, but enough to notice. The film works best when it is building slow dread rather than going for the quick hit, and there are moments here where it reaches for the easier option when it had the tools to do something more considered. It does not ruin the film but it is a visible compromise, the kind of thing that gets made in a sequel when the studio has numbers to think about.",
+        "Compared to something like The Conjuring, which Wan made the same year, Chapter 2 feels slightly less controlled. The Conjuring is a masterclass in sustained tension. Insidious: Chapter 2 is messier, more ambitious in some ways, and occasionally undone by its own complexity. But compared to the broader landscape of mainstream horror sequels in this era, it stands well above average. It has a genuine commitment to its characters and its mythology that you just do not see in most franchise horror. Films like Sinister 2 or Paranormal Activity 3 show you what this could have been if the money was the only motivation.",
+        "Insidious: Chapter 2 is a solid, sometimes genuinely effective continuation that earns its place in the series without quite reaching the heights of the original. The mythology is richer, Wilson is doing something interesting, and Wan's craft is evident throughout. It stumbles on pacing and leans on jump scares more than it should, but the foundation is strong and the ambition is real. If you watched the first film and wanted more of that world, this delivers it with enough care to justify the return trip. It is not a great horror film but it is a good one, and in 2013, that mattered."
+      ],
+      "images": [],
+      "verdict": "7.5/10, a genuinely decent sequel that expands the mythology with care, even if it does not quite match the tight dread of the original.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/w5JjiB3O1CLDXbTJe1QpU5RHmlU.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/i9oyhCYxIYH2082J0Rc3a3jQjRB.jpg"
+      }
+    },
+    {
       "id": 1785494562535,
       "slug": "hellraiser-hellseeker-review",
       "seoTitle": "Hellraiser: Hellseeker Review (2002) | WretVision",
