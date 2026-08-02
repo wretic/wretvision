@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1785664822442,
+      "slug": "scream-3-review",
+      "seoTitle": "Scream 3 Review (2000) | WretVision",
+      "seoDescription": "Scream 3 is still watchable, but the seams are showing and the spark that made the first two work is mostly gone.",
+      "category": "movie",
+      "title": "Scream 3",
+      "year": 2000,
+      "director": "Wes Craven",
+      "runtime": "116 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Scream 3 is still watchable, but the seams are showing and the spark that made the first two work is mostly gone.",
+      "body": [
+        "By the time Scream 3 landed in 2000, the slasher revival that Wes Craven and Kevin Williamson had reignited was already cooling down. Williamson didn't write this one, Ehren Kruger did, and you feel that absence almost immediately. The wit is thinner. The self-awareness, which was the whole engine of the original, starts to eat itself. We're now watching a film about the making of a film about the events of the first film, and the meta layers are stacking up without adding any real weight. It's clever on paper. In practice it's a bit exhausting.",
+        "There are things that work here. Neve Campbell is still solid as Sidney, and Courteney Cox and David Arquette bring enough warmth and familiarity that the trio still functions. Parker Posey is genuinely funny as Jennifer Jolie and she steals scenes in a way that makes you wish the whole film had her energy. The Hollywood studio setting gives the production a glossy look that feels different from the previous entries, and there's a decent sequence or two that Craven stages with real craft. He always knew how to build tension in a hallway.",
+        "But the formula is wearing thin and Scream 3 does very little to disguise it. The kills feel routine. The mystery around Ghostface doesn't generate much genuine suspense because the film telegraphs its reveals too broadly. There's a subplot involving Sidney's mother's past that's meant to reframe everything but lands with a dull thud rather than a gut punch. The ending in particular chickens out of doing anything genuinely dark or surprising when the franchise had earned the right to take a real swing. It tidies itself up too neatly and walks away without a bruise.",
+        "Scream 3 isn't a bad film, it's a decent enough film that coast on the goodwill its predecessors built. If you're doing a franchise rewatch you watch it because it's there, not because it's demanding to be seen. Compared to the tight construction of the original or the confidence of Scream 2, this feels like a studio product filling a slot. Fans of the series will find enough to get through it, and Craven's direction keeps it from falling apart entirely, but nothing here lingers. It sits comfortably in the watchable but forgettable category and that's about as much credit as it's earned."
+      ],
+      "images": [],
+      "verdict": "Scream 3 is the point where the franchise stopped surprising anyone and started just showing up, and that gap between what it could have been and what it settled for is exactly what keeps it at a 6.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/qpH8ToZVlFD1bakL04LkEKodyDI.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/AbFWty0o5nKGo4iLJaGRgqFtC8W.jpg"
+      }
+    },
+    {
       "id": 1785578532889,
       "slug": "insidious-chapter-2-review",
       "seoTitle": "Insidious: Chapter 2 Review (2013) | WretVision",
