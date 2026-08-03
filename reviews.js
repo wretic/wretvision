@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1785756500076,
+      "slug": "vhs-viral-review",
+      "seoTitle": "V/H/S: Viral Review (2014) | WretVision",
+      "seoDescription": "V/H/S: Viral is the franchise running on fumes but occasionally catching fire, and that's just enough to keep it interesting.",
+      "category": "movie",
+      "title": "V/H/S: Viral",
+      "year": 2014,
+      "director": "Various",
+      "runtime": "81 min",
+      "rating": "NR",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "V/H/S: Viral is the franchise running on fumes but occasionally catching fire, and that's just enough to keep it interesting.",
+      "body": [
+        "Anthology horror is a brutal format to sustain across multiple entries. The original V/H/S worked because it felt genuinely scrappy and nasty and unpredictable, like something you'd found on an old tape that you probably shouldn't have. V/H/S/2 refined some of that energy but you could already feel the series settling into its own formula. By the time V/H/S: Viral landed in 2014, the diminishing returns were real and visible. That said, this third entry is a more interesting failure than the second, which sounds like faint praise because it is, but in the context of a franchise that was clearly running out of road, interesting counts for something.",
+        "The wraparound segment, Vicious Circles, directed by Marcel Sarmiento, follows a guy chasing an ice cream truck through Los Angeles while his girlfriend appears to be trapped inside it. The truck is broadcasting something, and everyone around it is losing their minds. It's a solid hook and there's a genuinely unsettling atmosphere to the opening stretch. But Sarmiento can't quite sustain it, and the segment gets increasingly muddled as it tries to tie the anthology together. The idea of a viral video as a literal infectious object is timely and conceptually strong. The execution, though, loses the thread badly and ends on a note that feels unfinished rather than deliberately ambiguous.",
+        "The first real segment is Dante the Great, directed by Gregg Bishop, and it's probably the most purely watchable thing in the film. A small time magician finds a cloak that belonged to Houdini and discovers it grants genuine supernatural power, with a terrible price attached. Bishop shoots it with more visual confidence than most of the film manages, and the mockumentary framing actually earns its format here in a way the wraparound never does. The escalating body horror works because Bishop commits to the logic of the premise instead of just piling on weirdness. It's not revelatory but it's tight and satisfying, which in an anthology is more valuable than it sounds.",
+        "Then comes Parallel Monsters, directed by Nacho Vigalondo, and this is where V/H/S: Viral gets genuinely interesting, maybe even brave. A man opens a portal to a parallel version of his own house and meets his alternate self, and the two agree to swap for fifteen minutes to explore each other's worlds. The setup is clever but what Vigalondo does with it in the back half is properly deranged. The alternate world is soaked in cult imagery and sexual horror and theological dread, and it's shot with a confidence that feels almost out of place in this franchise. It's the most committed, fully realised piece of the whole film and it earns its rating in this entry almost by itself.",
+        "Parallel Monsters also does something the wraparound fails to do, which is make the found footage format feel necessary rather than incidental. The camera serves the horror here because the discovery is happening in real time and the medium reflects that. The cult imagery is layered and uncomfortable in ways that aren't explained away, and Vigalondo resists the urge to over clarify. The ending is blunt and final and weirdly satisfying. It's the kind of segment that makes you sit up and remember why this format can still produce something genuinely unnerving when someone brings a real idea to the table.",
+        "The third segment, Bonestorm, directed by Justin Benson and Aaron Moorhead, is a different animal entirely. A group of skaters head to Tijuana and end up in a supernatural satanic cult bloodbath. It's self aware to the point of parody, loud and gory and clearly not trying to scare you so much as entertain you with maximum carnage. Benson and Moorhead would go on to do genuinely impressive work elsewhere, and you can see their instincts here, but the segment is more exhausting than exhilarating. There's craft in the chaos but the joke wears thin fast and the runtime overstays its welcome by about ten minutes. It's the entry most likely to split an audience clean down the middle.",
+        "Pacing is a real issue across the whole film. The wraparound interrupts the segments in ways that disrupt momentum rather than build it, and by the time you're deep into Bonestorm's frenetic energy, the connective tissue of the frame story feels completely forgotten. Part of what made the original V/H/S work as an anthology was the sense of dread carried across the whole thing, a throughline of unease. V/H/S: Viral can't maintain that. It's too tonally inconsistent, veering from Vigalondo's cerebral cult horror to Bonestorm's almost comedic splatter without enough connective weight to make the contrast feel intentional.",
+        "Effects work is mixed. Practical stuff lands when it's used, and the creature and body horror elements in Parallel Monsters are genuinely impressive on what was clearly not a large budget. The CGI moments are rougher and they show, though the series has always had that problem so it's not a new wound. Acting across the board is functional rather than remarkable, which again is consistent with the anthology format where you rarely get enough screen time to build genuine investment in any one character. The format protects weak performances but it also caps the ceiling on how emotionally engaged you can get.",
+        "V/H/S: Viral from 2014 is not a great horror film. It's also not a useless one. Parallel Monsters alone is worth the runtime for anyone willing to sit through the surrounding material, and Dante the Great delivers more genre satisfaction than most of what V/H/S/2 had to offer. If you've already committed to the series, this is a slightly more ambitious instalment than its predecessor, even if the ambition is patchy and inconsistently realised. If you're coming in cold, start with the first film. But if you're hunting for anthology horror with at least one segment that genuinely commits to a disturbing, cult soaked vision of something strange and uncomfortable, Viral earns its place on the pile. Barely, but it earns it."
+      ],
+      "images": [],
+      "verdict": "V/H/S: Viral is a franchise in visible decline that still manages one genuinely unsettling segment worth your time, and one mediocre one, and one that'll either thrill or exhaust you, which puts it just above the line of watchable rather than anywhere near essential. 6.5/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/xe4S3x4Kq1UqCsDZdtLCeYt9moY.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/mfP8XBN3qyXVmqH4YfDnUBA1y1j.jpg"
+      }
+    },
+    {
       "id": 1785664822442,
       "slug": "scream-3-review",
       "seoTitle": "Scream 3 Review (2000) | WretVision",
