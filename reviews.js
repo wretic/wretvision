@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1785840130931,
+      "slug": "annabelle-creation-review",
+      "seoTitle": "Annabelle: Creation Review (2017) | WretVision",
+      "seoDescription": "Annabelle: Creation has some genuine atmosphere and a solid setup, but the whole thing collapses under its own lore before the credits roll.",
+      "category": "movie",
+      "title": "Annabelle: Creation",
+      "year": 2017,
+      "director": "David F. Sandberg",
+      "runtime": "109 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Annabelle: Creation has some genuine atmosphere and a solid setup, but the whole thing collapses under its own lore before the credits roll.",
+      "body": [
+        "Annabelle: Creation is the prequel nobody asked for but got anyway, telling the origin story of the creepy doll from The Conjuring universe. David F. Sandberg directs, and the man clearly has instincts. This is the same guy who made Lights Out work on a shoestring, and you can feel that eye for darkness and spatial tension in the early going. The setup is simple enough: a grieving dollmaker and his wife open their home to a group of orphaned girls, and the doll in the locked upstairs room starts doing what these dolls always do. On paper it works. In practice it gets messy fast.",
+        "The first half earns its keep. Sandberg builds unease properly, letting rooms do the work before anything jumps out at you. The farmhouse feels genuinely oppressive, the girl in the back brace played by Talitha Bateman gives you someone to actually root for, and there are a handful of sequences that land with real weight. The scarecrow scene. The chair lift. Moments where the film remembers it can just be quiet and let dread accumulate rather than throwing something at your face. Those moments remind you what this genre can do when it stops trying so hard.",
+        "But Annabelle: Creation loses the plot somewhere around the halfway mark and never quite finds it again. The mythology gets tangled, the demon logic stops making sense on its own terms, and the film starts piling on set pieces without earning them. Characters make decisions that exist purely to move the story forward rather than because any actual person would do that. The tonal control Sandberg shows early evaporates. By the third act you have a decent haunted house movie that has tripped over its own continuity and is just hoping you're too spooked to notice. You notice.",
+        "As a standalone horror film with a creepy doll and a competent director, Annabelle: Creation is watchable. As a piece of the Conjuring universe, it does the minimum required to justify its existence without adding much of value. Better than the first Annabelle, which set a low bar. Fans of the franchise or of Sandberg's work will find enough to appreciate. Everyone else will have a decent evening and forget most of it by the weekend. 6/10, decent enough, but it does not hold together well enough to sit alongside the better entries in this genre."
+      ],
+      "images": [],
+      "verdict": "Annabelle: Creation is a film with real flashes of craft buried inside a story that loses its nerve and its logic in equal measure.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/tb86j8jVCVsdZnzf8I6cIi65IeM.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/o8u0NyEigCEaZHBdCYTRfXR8U4i.jpg"
+      }
+    },
+    {
       "id": 1785756500076,
       "slug": "vhs-viral-review",
       "seoTitle": "V/H/S: Viral Review (2014) | WretVision",
