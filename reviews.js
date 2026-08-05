@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1785926331570,
+      "slug": "hellraiser-hellworld-review",
+      "seoTitle": "Hellraiser: Hellworld Review (2005) | WretVision",
+      "seoDescription": "Hellraiser: Hellworld mistakes a gimmick for a concept and spends ninety minutes proving it.",
+      "category": "movie",
+      "title": "Hellraiser: Hellworld",
+      "year": 2005,
+      "director": "Rick Bota",
+      "runtime": "95 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "Hellraiser: Hellworld mistakes a gimmick for a concept and spends ninety minutes proving it.",
+      "body": [
+        "Two Hellraiser films in 2005. Two. And neither one of them had any business being made. Hellraiser: Hellworld arrived alongside Hellraiser: Hellseeker in the same calendar year, both direct to video, both existing purely to keep Dimension Films' grip on the property. When a franchise is cranking out two entries in twelve months at this budget level, you already know what you're getting. But even by the standards of late period Hellraiser, Hellworld is a special kind of failure. It's not just bad. It's conceptually broken from the ground up.",
+        "The premise sounds almost interesting on paper. A group of online gamers become obsessed with a Hellraiser themed multiplayer game called Hellworld, and when they're invited to an exclusive party by a mysterious host, things go predictably wrong. There's a version of this concept that could work. A meta horror film about the Hellraiser mythology becoming commodified, turned into entertainment, people cosplaying the cenobites for clout, Pinhead reduced to an avatar in someone's browser. That's genuinely fertile ground for horror satire. But the film has zero interest in exploring any of that. It takes the setup, parks it, and then just starts killing people.",
+        "The direction is handled by Rick Bota, who also made Hellseeker and Deader. Bota is not a filmmaker with a distinctive voice. There's nothing here that suggests a vision, a tone, or even a basic understanding of what made the original Hellraiser unsettling. Clive Barker's world was built on desire, on the idea that pleasure and pain are inseparable and that certain people chase the extreme so hard they invite damnation. There is none of that here. Bota shoots this like a mid tier slasher with a few cenobite costumes thrown in. The atmosphere is completely absent. You're watching logistics, not horror.",
+        "Doug Bradley is back as Pinhead and that's honestly the saddest part of watching this. Bradley is a genuinely commanding screen presence when the material gives him something to work with. Here he's handed nothing. Pinhead shows up occasionally to say something vaguely menacing and then disappears. The iconic menace of the character, that cold philosophical cruelty, is completely gone. He's a cameo in his own franchise. And then the film pulls a twist involving his role in the story that I won't fully spoil but which fundamentally undermines any reason Pinhead needed to be in this film at all. It's a choice so bizarre it almost earns points for audacity, and then immediately loses them for how sloppily it's executed.",
+        "The young cast is led by Lance Henriksen as the mysterious host, and Henriksen is the only performer here doing anything remotely interesting. He's clearly aware of what film he's in and decides to just lean into it with a kind of amused detachment. The younger cast members, including Henry Cavill in an early role, are given absolutely nothing to work with. Cavill looks the part but the script gives him no character, no arc, no reason to exist beyond being a body in a party scene. It's not a criticism of him. You can't build a performance out of nothing.",
+        "The pacing is genuinely punishing in the worst way. Not slow in a dread building atmospheric sense, slow in a nothing is happening sense. The party setup drags on for so long before anything really kicks off that you start checking the runtime. And when the kills do arrive, they're shot with the kind of flat, generic coverage that drains any tension immediately. There are sequences in this film that feel like they were assembled to hit a required runtime rather than to serve any storytelling purpose. Padding dressed up as content.",
+        "The effects work, which in a Hellraiser film should be a selling point, is underwhelming. The practical work that made the original films viscerally disturbing is almost entirely absent here. What you get instead is a low budget production doing its best to hide its limitations, which mostly means keeping things dark and cutting away before anything truly grim can land. Compare that to the original Hellraiser or even Hellbound where the grotesque imagery was presented with a kind of horrible confidence. This film flinches constantly. For a franchise built on transgression, flinching is unforgivable.",
+        "The twist the film builds toward lands with a thud rather than a punch. It's the kind of twist that recontextualises the preceding events in a way that creates more questions than it answers, and not interesting questions. Logistical questions. Plot hole questions. The film thinks it's being clever. It isn't. And the resolution, such as it is, feels completely disconnected from anything that came before it. It's the ending of a different film grafted onto this one. A premise that builds toward something and then chickens out with a tidier resolution than the story earned is one of my genuine pet peeves, and Hellworld does exactly that.",
+        "Hellraiser: Hellworld is available in various places as part of the broader Hellraiser collection and honestly that's the only reason to find it, completionist curiosity. As a standalone horror film it fails on almost every level. The concept had potential. The execution is flatlined. If you want late period Hellraiser that's at least watchable, Inferno has more going for it. If you want to understand why the franchise needed the 2022 Hulu reboot so badly, watch this and Hellseeker back to back. 4/10."
+      ],
+      "images": [],
+      "verdict": "Hellraiser: Hellworld is a franchise on life support that someone forgot to unplug, a gimmick masquerading as a concept with nothing behind the mask.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/p3QI77LO2TSeLfZ0CHdbw0uITef.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/lXpBj7RDr7wShql0KpCLYHyYvdi.jpg"
+      }
+    },
+    {
       "id": 1785840130931,
       "slug": "annabelle-creation-review",
       "seoTitle": "Annabelle: Creation Review (2017) | WretVision",
