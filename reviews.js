@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1786012937217,
+      "slug": "childs-play-2-review",
+      "seoTitle": "Child's Play 2 Review (1990) | WretVision",
+      "seoDescription": "Chucky's back, the budget's bigger, but something from that original apartment got left behind.",
+      "category": "movie",
+      "title": "Child's Play 2",
+      "year": 1990,
+      "director": "John Lafia",
+      "runtime": "84 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "Chucky's back, the budget's bigger, but something from that original apartment got left behind.",
+      "body": [
+        "Child's Play 2 arrives in 1990 doing exactly what a horror sequel is supposed to do: more money, more mayhem, more Chucky. Universal stepped in after the original's success and the result is a film that looks slicker, moves faster, and commits fully to the slasher spectacle side of the franchise. Director John Lafia takes the reins from Tom Holland and makes no secret of what he's here to deliver. This isn't a slow burn. It's a body count picture with a killer doll front and centre, and for stretches it works exactly as advertised.",
+        "What genuinely works here is Brad Dourif. He was terrific in the original and he hasn't lost a step. The voice work is nastier, funnier, and more unhinged, and Chucky as a physical creation gets a lot of screen time that the practical effects team mostly justify. The toy factory finale in particular is a genuinely inspired setting, all conveyor belts and molten plastic and industrial noise. That climax delivers something memorably brutal for Chucky specifically, the kind of committed, ugly ending that horror sequels rarely bother with. It earns real credit for not flinching.",
+        "But here's the problem. The original Child's Play worked because Karen Barclay's disbelief created genuine tension. You were watching a mother slowly realise something impossible was true, and that domestic dread gave the horror weight. Andy is older here, shuffled off to a foster family, and the new setup never builds that same pressure. Alex Vincent does fine but the film around him is thinner. Foster mother played by Jenny Agutter is underused. The kills happen, the pacing moves, but there's a kind of mechanical quality to it all. You can feel the formula clicking into place rather than anything truly dangerous.",
+        "Child's Play 2 is a decent continuation that knows its audience and mostly satisfies them. Fans of the original will find enough here to enjoy, and compared to later entries in the Chucky franchise this one holds up reasonably well as straight horror before the series leaned harder into self-aware comedy. It sits somewhere between Nightmare on Elm Street 2 and Halloween 4 in the sequel quality conversation, competent and occasionally impressive but never threatening to match what came before. Worth a watch for franchise completionists and practical effects lovers, but don't go in expecting the tension of the 1988 original."
+      ],
+      "images": [],
+      "verdict": "Child's Play 2 is a bigger, brasher sequel that delivers a brutal finale but loses the intimate dread that made the first film genuinely scary, 6.5/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/2tPQbPQeHEYAGoXFSW61IWNmoce.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/fNkt4S5iXgBD4ea5bP9MZRHO8su.jpg"
+      }
+    },
+    {
       "id": 1785926331570,
       "slug": "hellraiser-hellworld-review",
       "seoTitle": "Hellraiser: Hellworld Review (2005) | WretVision",
