@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1786093348962,
+      "slug": "halloween-review",
+      "seoTitle": "Halloween Review (1978) | WretVision",
+      "seoDescription": "John Carpenter's Halloween is the blueprint. Nearly 50 years later, it still holds.",
+      "category": "movie",
+      "title": "Halloween",
+      "year": 1978,
+      "director": "John Carpenter",
+      "runtime": "91 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 8.5,
+      "featured": false,
+      "excerpt": "John Carpenter's Halloween is the blueprint. Nearly 50 years later, it still holds.",
+      "body": [
+        "Some films age out of relevance. Halloween (1978) does the opposite. John Carpenter made this on a shoestring budget with a cast nobody knew yet, and what he produced became the foundation that every slasher film since has been built on or measured against. It is the reason we have Friday the 13th, A Nightmare on Elm Street, and every masked killer franchise that followed. That legacy is impossible to ignore when you sit down with it now, but here is the thing: it earns that legacy every single time.",
+        "What makes Halloween genuinely frightening, even today, is how real it feels. Carpenter shoots Haddonfield, Illinois like it is an actual place. The suburban streets, the dead leaves, the grey October light. There is no stylised unreality to hide behind. Michael Myers does not teleport or defy physics in cartoonish ways. He walks. Slowly. And somehow that is more unsettling than anything a bigger budget could manufacture. The restraint is the point. Carpenter builds dread the way good horror should, through atmosphere, negative space, and a score that burrows into your skull and refuses to leave.",
+        "Jamie Lee Curtis as Laurie Strode is quietly exceptional. She is not performing a scream queen, she is living in a teenager on a quiet babysitting night who slowly realises something is very wrong. The naturalism in her performance is what grounds the whole film. Donald Pleasence as Dr. Loomis plays obsession so earnestly that you believe every word he says about Myers, which matters because the film asks a lot of you on that front. The practical craft throughout, the framing, the use of shadow, the long takes that let tension breathe, is undeniable. This is a director who knew exactly what he was doing.",
+        "If Halloween has a weakness it is that some of the secondary characters exist almost entirely to die, and the film does not pretend otherwise. That is not a fatal flaw, it is just an honest one. The structure is lean to the point of simplicity. But that simplicity is also a feature, not a bug. Carpenter was not interested in complexity for its own sake, he wanted to make you feel unsafe in a familiar place, and he succeeded completely. Comparable to Psycho in terms of genre impact, Halloween (1978) is a benchmark slasher and one of the finest horror films ever made, available across various streaming platforms and absolutely worth every revisit."
+      ],
+      "images": [],
+      "verdict": "8.5/10, one of the greatest slashers ever made and proof that craft, restraint, and a clear directorial vision will outlast any budget.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/sHI9xlFRWCJ38AIIfOqnGjuEvXz.jpg"
+      }
+    },
+    {
       "id": 1786012937217,
       "slug": "childs-play-2-review",
       "seoTitle": "Child's Play 2 Review (1990) | WretVision",
