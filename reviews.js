@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1786178733709,
+      "slug": "hellraiser-iii-hell-on-earth-review",
+      "seoTitle": "Hellraiser III: Hell on Earth Review (1992) | WretVision",
+      "seoDescription": "The cenobites are back but something crucial got left in Hell — the soul of what made these films terrifying in the first place.",
+      "category": "movie",
+      "title": "Hellraiser III: Hell on Earth",
+      "year": 1992,
+      "director": "Anthony Hickox",
+      "runtime": "93 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "The cenobites are back but something crucial got left in Hell — the soul of what made these films terrifying in the first place.",
+      "body": [
+        "There is a version of Hellraiser III: Hell on Earth that could have worked. You take one of horror's most visually arresting villains, move him to New York City, and let him loose on a world that doesn't yet know what he is. That's a genuinely interesting setup. Pinhead as an urban predator, stalking a world of neon and noise rather than creaking Victorian corridors. The concept has teeth. The 1992 execution, directed by Anthony Hickox, does not. What you get instead is a film that looks like it's trying to be a Hellraiser movie while quietly forgetting everything that made the first two worth watching.",
+        "Some context matters here. Hellraiser and Hellraiser II: Hellbound were Clive Barker productions in spirit if not always in full control. They had his fingerprints all over them, that sense of pain and pleasure being philosophically intertwined, of suffering as a kind of transcendence. Barker wasn't directing here, and Hickox is a competent genre filmmaker but he's not operating anywhere near that wavelength. Hell on Earth isn't interested in ideas. It wants to be an early nineties American horror movie, which means it's more interested in body count and set pieces than in the mythology that made this franchise mean something.",
+        "The story follows Joey Summerskill, a TV news reporter played by Terry Farrell, who stumbles onto the Hellraiser mythology while investigating a bizarre death at a club. She's paired with the ghost of WWII soldier Elliott Spencer, the man who became Pinhead, who tries to guide her toward stopping the Cenobite's growing power. Spencer is being held captive inside the Pillar of Souls, a grotesque sculpture that a sleazy club owner named J.P. Monroe has purchased. Monroe feeds the pillar human victims, allowing Pinhead to slowly reconstitute himself. It's not a bad premise. The problem is that almost none of it feels urgent or frightening.",
+        "Terry Farrell is doing her best and she's honestly not the problem. She's a capable screen presence and she brings enough grounded energy to Joey that you can almost believe in her as a protagonist. Almost. The issue is the writing gives her nothing to really work with beyond being reactive. She runs, she investigates, she has visions, she survives. There's no genuine arc beneath the surface. Kevin Bernhardt as Monroe is slimier than he needs to be, which in a different film might have been fun, but here it just makes him feel like a placeholder villain until Pinhead fully arrives. Doug Bradley is still commanding as Pinhead when the script gives him room, but even he seems slightly adrift in what this film is asking him to be.",
+        "And that gets to the central problem with Pinhead in this film. The original Pinhead was terrifying partly because he was restrained. He showed up with purpose. He had rules. He spoke with a kind of cold, baroque authority that made you feel like you were in the presence of something genuinely other. Here he cracks wise. He makes puns. He delivers villain lines like he's auditioning for a franchise that ended up being Freddy Krueger's career. The Cenobites in the third act include a man with CDs embedded in his skull and a guy who fires cigarettes like projectiles. I am not making that up. Whatever philosophical dread the original films were carrying, Hell on Earth burns it on the pyre of trying to be commercially entertaining.",
+        "The new Cenobites are worth dwelling on because they represent exactly what went wrong. In the first two films, Cenobites felt like the result of a genuinely alien transformation. Their designs were disturbing because they suggested something about the nature of the person who became them. Here the transformations feel like props. The CD Cenobite in particular is the kind of thing that probably seemed edgy in 1992 and now just looks like someone raided a media section at a car boot sale. There's no weight to them. No dread. They exist to dispatch side characters and give the film something to cut to between its bigger moments. Practical effects are still in play and some of the gore is genuinely nasty but nasty isn't the same as scary.",
+        "The kills themselves deserve acknowledgment because that's genuinely where the film delivers. Some of the death sequences are grotesque in a way that earns real points. A scene in a club where Pinhead tears through a crowd is viscerally brutal and for a few minutes you feel a flicker of what this franchise used to be capable of producing. The practical work in those moments is committed and ugly in the right ways. If you're watching Hell on Earth specifically for extreme horror content and don't need it to mean anything, those scenes hold up. But they're islands in an otherwise flat sea. You get your disgusting deaths and then the film goes back to being ordinary.",
+        "Pacing is a consistent issue. The film runs just over ninety minutes and still manages to feel padded. The middle section especially drags. Joey's investigation scenes have no tension because the film keeps undercutting them with exposition dumps rather than letting dread build organically. Hickox stages things competently but there's no real visual identity here, no sense of a director who has a specific idea of how horror should feel in the frame. Compare it to something like Candyman from the same year, another film about a supernatural entity being brought into the modern urban world, and the gulf in craft and atmosphere is significant. Candyman understood that mythology needs texture. Hell on Earth just needs the next scene.",
+        "Hellraiser III: Hell on Earth is a 1992 horror sequel that gets the surface details right and almost everything underneath wrong. The franchise was already starting to calcify here, leaning on kills and iconography rather than the genuinely unsettling ideas that made the original so memorable. It's not unwatchable, and horror fans who want gore will find enough to justify the runtime. But it marked the point where Pinhead stopped being a philosophical entity and started being a product. 5/10, disgusting in places and hollow everywhere else."
+      ],
+      "images": [],
+      "verdict": "Hell on Earth keeps the kills and loses the soul, which is a bad trade for a franchise that was supposed to be about so much more than the blood.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/qnXEJp6KP6aIGWhNrg1fOKza4kp.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/xjeoa7KjnUMQzJXGunHmgMjhHmP.jpg"
+      }
+    },
+    {
       "id": 1786093348962,
       "slug": "halloween-review",
       "seoTitle": "Halloween Review (1978) | WretVision",
