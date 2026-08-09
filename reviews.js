@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1786265196303,
+      "slug": "childs-play-3-review",
+      "seoTitle": "Child's Play 3 Review (1991) | WretVision",
+      "seoDescription": "Child's Play 3 is the last time Chucky felt even remotely threatening, and that's both its saving grace and its quiet indictment.",
+      "category": "movie",
+      "title": "Child's Play 3",
+      "year": 1991,
+      "director": "Jack Bender",
+      "runtime": "90 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Child's Play 3 is the last time Chucky felt even remotely threatening, and that's both its saving grace and its quiet indictment.",
+      "body": [
+        "Child's Play 3 came out in 1991, just nine months after Child's Play 2, and you can feel the speed in every frame. Universal wanted product and they got product. Don Mancini is back on screenplay duties, and to his credit he at least tries to do something structurally different. Andy Barclay is older now, shipped off to Kent Military Academy, and the military school setting gives the film a grimy, institutional texture that the suburban houses of the first two entries never had. It's a genuine attempt at a fresh environment and it half works.",
+        "What actually functions here is the tone. This is one of the last entries in the franchise where Chucky is still playing it relatively straight, still operating as something approaching a credible threat rather than a wisecracking cartoon. Brad Dourif's voice work keeps the menace dialled up even when the script lets him down. There's a paintball sequence in the third act set in a carnival ghost train that has real atmosphere. Practical effects throughout are solid. Nothing flashy but they do the job honestly.",
+        "What holds it back is almost everything surrounding those bright spots. The military school setting gets wasted pretty quickly once the plot kicks in. The supporting characters are thin even by slasher standards, and you genuinely cannot tell me the names of half the cadets without looking them up. Andy himself, played by Justin Whalin replacing Alex Vincent, feels like a different person rather than a continuation. The pacing drags badly in the middle stretch and the film keeps stalling to set up kills that are cheaper than they should be.",
+        "Child's Play 3 sits in that specific category of horror sequels that are watchable once and mostly forgettable. It does not embarrass itself the way later Chucky entries would, and compared to the increasingly camp direction the franchise eventually took, this one feels almost restrained. If you're running through the series chronologically it earns its place, but nobody is rewatching this over the original or even the second one. A curiosity more than a film. Worth one sit if you're invested in the franchise."
+      ],
+      "images": [],
+      "verdict": "6/10, a decent enough slasher with a setting that had potential and a Chucky who still had some bite left before the franchise lost the plot entirely.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/6toMk9OCuDYEEf733Bzlq3yiw3z.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/8kZT97Ml1ZyawrfHCajmP2b0wPC.jpg"
+      }
+    },
+    {
       "id": 1786178733709,
       "slug": "hellraiser-iii-hell-on-earth-review",
       "seoTitle": "Hellraiser III: Hell on Earth Review (1992) | WretVision",

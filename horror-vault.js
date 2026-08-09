@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "Child's Play 3",
+    "year": 1991,
+    "decade": "1990s",
+    "status": "watched",
+    "note": "",
+    "id": 480
+  },
+  {
     "title": "Child's Play 2",
     "year": 1990,
     "decade": "1990s",
