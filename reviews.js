@@ -10,6 +10,42 @@
 
 const REVIEWS = [
     {
+      "id": 1786353953988,
+      "slug": "saw-v-review",
+      "seoTitle": "Saw V Review (2008) | WretVision",
+      "seoDescription": "Saw V has traps. It has gore. It has almost nothing else.",
+      "category": "movie",
+      "title": "Saw V",
+      "year": 2008,
+      "director": "David Hackl",
+      "runtime": "92 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Saw V has traps. It has gore. It has almost nothing else.",
+      "body": [
+        "By 2008, the Saw franchise had already done something genuinely impressive, which was survive its own success. The original Saw from 2004 was a lean, nasty little thriller with a twist that actually landed. Saw II expanded the world with some intelligence. Saw III pushed too hard but still had ambition behind the brutality. Then Saw IV arrived and you could feel the machine starting to grind. Saw V is what happens when a franchise stops asking questions and just starts filling in timelines. It is the fifth chapter in four years, released on time like clockwork, like a product rolling off an assembly line rather than a film someone felt compelled to make.",
+        "The story picks up directly after Saw IV, splitting its time between two threads. One follows Detective Strahm, played by Scott Patterson, who is closing in on Hoffman, played by Costas Mandylor, the newly revealed apprentice of Jigsaw. The other follows a group of five strangers working through a series of traps connected to a shared secret. On paper that sounds functional. In execution it feels like two half-finished ideas stitched together and neither one gets enough room to breathe. The Strahm and Hoffman thread is the more interesting of the two, mostly because Costas Mandylor at least brings a cold menace to Hoffman. But it is also almost entirely people walking through corridors and finding files, which is not exactly cinema.",
+        "Director David Hackl is making his feature debut here after serving as production designer on earlier entries in the series, and that background shows in both directions. The film looks competent. The production design is consistent with the established visual language of the franchise, all rust and grime and industrial decay, and Hackl clearly knows how these sets are supposed to feel. But knowing how a space looks and knowing how to build tension inside it are different skills entirely. There is very little sense of dread in Saw V. You never feel like anything is genuinely at stake because the film is too busy connecting dots from previous instalments to actually scare you.",
+        "The trap sequences are where the film earns what little goodwill it can scrape together. There is a pendulum blade trap early on that is probably the most purely effective set piece in the entire film, a simple and viscerally uncomfortable design that does what these films are supposed to do. The coffin nail trap is another standout. Practical effects throughout are solid, which matters in a franchise that was always at its best when the gore felt tactile and real rather than rendered. The problem is that the five strangers working through the trap sequence feel interchangeable. You genuinely cannot remember most of their names twenty minutes after the credits roll. Compared to the group dynamic in Saw II, which at least gave you personalities to latch onto, this is a significant step down.",
+        "Scott Patterson as Strahm is one of the film's more noticeable weaknesses. He is doing the work but the character is so thinly written that Patterson has almost nothing to build on. Strahm spends most of the film reacting to evidence and looking suspicious, which is not a character arc, it is just plot function. Costas Mandylor fares better because Hoffman is written with a little more texture, a man performing competence while hiding something genuinely cold underneath. Tobin Bell appears in the expected flashback sequences, and Bell is as watchable as he always is, but by this point the flashbacks feel obligatory rather than illuminating. We are not learning anything new about Jigsaw. We are just watching the mythology get padded out.",
+        "Pacing is a real issue. Saw V runs at ninety two minutes and somehow still manages to feel padded. The corridor investigation scenes between Strahm and Hoffman drag in ways that earlier entries avoided by keeping momentum high and cutting aggressively. David Hackl does not have James Wan's instinct for kinetic editing or Darren Lynn Bousman's willingness to go completely unhinged. What you get instead is something that sits in the middle, too slow to feel propulsive and too shallow to justify the slower stretches. There are sequences in the back half where you are genuinely just waiting for the next trap to arrive because the connective tissue between them offers nothing compelling.",
+        "What made the original Saw work was a genuine question at its centre. Who is this man and why is he doing this. What made Saw II and even Saw III work, in fits and starts, was the expansion of that question into something about complicity and survival instinct. Saw V has no question. It knows where it is going and it is just getting there. The franchise has locked into a formula and that formula is starting to calcify. You can feel the creative exhaustion in every scene that is not a trap. The reveal of how Hoffman survived the events of Saw IV is handled with all the excitement of a footnote. There is no sense that anyone behind the camera is genuinely surprised or delighted by what they are building.",
+        "It is worth noting where Saw V sits in the context of the wider franchise because that context matters. The ending sets up Saw VI in a way that is more interested in continuity maintenance than in landing a satisfying conclusion on its own terms. Saw V as a standalone film barely functions. As an episode in a serialised mythology it is passable but completely skippable. If you removed it from the series and jumped from Saw IV to Saw VI you would miss almost nothing of substance. That is a damning thing to be able to say about a film. Compare that to even the wobbliest entries in comparable franchises, Friday the 13th has plenty of bad instalments but they are usually bad in memorable ways. Saw V is bad in a forgettable way, which is somehow worse.",
+        "Saw V is not a disaster. It is not insulting and it is not broken. It has traps that work, some decent practical gore, and Costas Mandylor doing his best with underwritten material. But it is running on fumes and it knows it. The passion and nastiness that made the early films feel vital has been replaced by obligation. This is a franchise going through the motions, delivering its annual product on schedule, trusting that brand loyalty will carry the audience through the thin stretches. For some viewers it will. For anyone hoping this was the entry where the series found a second wind, Saw V from 2008 is a disappointing answer to that question. If you are working through the franchise for the first time you will not regret watching it, but you will not think about it the next morning either."
+      ],
+      "images": [],
+      "verdict": "Saw V is the franchise finally admitting it has nothing left to say, keeping the traps alive while everything around them quietly flatlines.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/rKl79KqLXg60KFyKsLe4wSSjQ08.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/jIjVPKDow5ai8dbs4PgWmtqg9Ol.jpg"
+      }
+    },
+    {
       "id": 1786265196303,
       "slug": "childs-play-3-review",
       "seoTitle": "Child's Play 3 Review (1991) | WretVision",
