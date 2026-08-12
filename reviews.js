@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1786526103607,
+      "slug": "scream-review",
+      "seoTitle": "Scream Review (1996) | WretVision",
+      "seoDescription": "Scream (1996) didn't just revive slasher horror, it rewrote the rulebook mid-game and somehow made you love it for doing so.",
+      "category": "movie",
+      "title": "Scream",
+      "year": 1996,
+      "director": "Wes Craven",
+      "runtime": "111 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Scream (1996) didn't just revive slasher horror, it rewrote the rulebook mid-game and somehow made you love it for doing so.",
+      "body": [
+        "There are films that arrive at exactly the right moment and remake the landscape around them. Scream is one of those films. Wes Craven in 1996 was a director with serious credentials already behind him, Nightmare on Elm Street, The Hills Have Eyes, but the genre he helped build had rotted on the vine by the mid-nineties. Slasher films had become a punchline. Sequels had bled every major franchise dry. The audience was checked out. Then Kevin Williamson handed Craven this script and something genuinely electric happened. Scream didn't just make horror scary again. It made it smart again, and it did it by doing something almost no genre film had the nerve to try: it let its characters know exactly what kind of film they were in.",
+        "The setup is deceptively simple. A masked killer is targeting teenagers in the small town of Woodsboro. Sidney Prescott, played by Neve Campbell, is our anchor, a young woman still processing the murder of her mother the year before. The killer, Ghostface, taunts his victims with horror movie trivia before he attacks. That hook sounds like a gimmick on paper. In practice it creates something much more interesting than a standard slasher because every character in this film is carrying the weight of genre expectation and actively arguing about it. The meta-commentary never feels like smugness though. Craven threads it carefully so the film earns laughs and genuine terror in the same breath, sometimes in the same scene.",
+        "The opening sequence with Drew Barrymore is still one of the great cold opens in horror history. Barrymore was the biggest name attached to the project and every piece of marketing leaned into her presence. Craven weaponises that. You assume she survives. She does not. Her character, Casey Becker, gets a phone call that starts flirtatious and turns into something genuinely horrible in a matter of minutes, and by the time Ghostface is on the other side of the glass she is already in serious trouble. The sequence runs about twelve minutes and it does more work establishing dread than most full-length horror films manage in ninety. The practical gore is effective and deliberate. Nothing gratuitous, everything purposeful.",
+        "Neve Campbell is doing something quietly brilliant in this film that I think gets overlooked in conversations about Scream's legacy. She plays Sidney not as a screaming victim type but as someone carrying real grief and real anger. There is a scene early on where she pushes back against her boyfriend Billy, played by Skeet Ulrich, and you can feel the weight of everything she is not saying. Campbell keeps the performance grounded even when the script is sprinting through self-referential dialogue around her. She is the emotional spine of the film and she holds. Courteney Cox as reporter Gale Weathers and David Arquette as the bumbling Deputy Dewey are excellent support, Cox in particular leaning into a sharp, almost satirical energy that could have been annoying but lands perfectly.",
+        "Craven's direction here is operating at a level that I think surprised even his admirers at the time. He uses camera placement to create sustained unease rather than cheap jolts. The film is not generous with jump scares. What it is generous with is the feeling that someone is always just out of frame. The party sequence in the third act is a masterclass in building tension across multiple spaces simultaneously. You are watching characters in the house, characters outside, the news van, and the garage, and Craven cuts between them in a way that keeps you genuinely uncertain where the threat is coming from. That is real craft. Not every director working in genre cinema at that level is thinking spatially the way Craven does here.",
+        "The pacing across the runtime is almost flawless. The film clocks in at around one hundred and eleven minutes and there is no fat on it. Each scene is doing work, establishing character, building the mythology of the kills, layering in the whodunit element without making it feel like a separate film stapled onto a horror chassis. I have sat through plenty of slashers that mistake runtime for tension. Scream never does that. Even the comedic scenes, and there are several that are genuinely funny, function as pressure valves that make the next terrifying moment hit harder. Williamson's script has a rhythm to it that Craven respects completely. They are in sync in a way that collaborative filmmaking rarely achieves.",
+        "The twist lands. And I want to dwell on that because twists in horror films usually do not land. They are either telegraphed miles out or they arrive with no earned foundation and feel cheap. Scream pulls off something remarkable by hiding its reveal in plain sight. Once you know, you watch everything differently. Every line recontextualises. The logic holds. The emotional betrayal it creates, specifically around Sidney and the connection to her mother's death, elevates the conclusion from clever genre exercise to something that actually stings. The film could have settled for a slick, satisfied conclusion. It does not. It goes for the gut and it gets there. That willingness to commit fully to the twist rather than hedge it is exactly what separates Scream from the dozens of imitators that came after it.",
+        "The influence of Scream on what followed is almost impossible to overstate. I Know What You Did Last Summer, Urban Legend, the entire late nineties and early two thousands wave of self-aware slashers, all of them exist because this film worked. Most of them are notably worse. The thing those imitators missed is that Scream's self-awareness is not a substitute for actual horror filmmaking. Craven still understood atmosphere, still understood timing, still understood how to make a mask and a voice modulator genuinely threatening. The Ghostface costume works because the film earns it, not because it is inherently iconic. Comparing it to something like Halloween, which Scream references obsessively, the two films are doing different work but both are doing it with full commitment, and that respect for the craft shows.",
+        "Scream in 1996 was one of the rare horror films that felt genuinely fresh when it landed and has only grown in stature since. It is not perfect. Some of the supporting cast outside the core three are there mainly to be killed and they do not get much beyond their archetypes. And the very act of commenting on horror tropes while executing them means the film occasionally tips into a slightly too-pleased-with-itself register, though Craven always pulls it back before it curdles. But these are minor friction points against a film that is doing something genuinely difficult and doing it with style, wit, and real menace. You can stream earlier entries in the franchise across various platforms to trace how the series evolved, though honestly most sequels diminish what this one built. Come back to the original. It still bites."
+      ],
+      "images": [],
+      "verdict": "Scream (1996) is a near-perfect piece of genre filmmaking, terrifying and funny and smarter than it has any right to be, and the twist at the end hits exactly as hard as Craven intended: 9/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/3O3klyyYpAZBBE4n7IngzTomRDp.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/4w6nQYAY0eb7B0VVRDXilXcgAUV.jpg"
+      }
+    },
+    {
       "id": 1786438857594,
       "slug": "the-ring-two-review",
       "seoTitle": "The Ring Two Review (2005) | WretVision",
