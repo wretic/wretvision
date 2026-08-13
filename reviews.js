@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1786612507881,
+      "slug": "the-thing-review-2",
+      "seoTitle": "The Thing Review (2011) | WretVision",
+      "seoDescription": "A decent enough prequel that can't escape the enormous shadow of one of horror's greatest films.",
+      "category": "movie",
+      "title": "The Thing",
+      "year": 2011,
+      "director": "Matthijs van Heijningen Jr.",
+      "runtime": "103 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Sci-Fi"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "A decent enough prequel that can't escape the enormous shadow of one of horror's greatest films.",
+      "body": [
+        "Let me be straight with you. John Carpenter's The Thing from 1982 is as close to a perfect horror film as anything I've ever seen. Kurt Russell, the isolation, the paranoia, the practical effects that still hold up better than most modern CGI work. That film did not need a prequel. Nobody was sitting around desperate to know what happened at the Norwegian camp before the events of the original. But here we are with The Thing 2011, directed by Matthijs van Heijningen Jr., which tries to fill in those gaps and lands somewhere in the territory of competent but completely unnecessary.",
+        "What the 2011 version gets right is its setup. Mary Elizabeth Winstead is a genuinely solid lead, bringing real grounded energy to a role that could have easily been generic. The first half builds decent tension and the film understands what made the original work, specifically that creeping distrust between characters who cannot verify who is still human. There are scenes where that paranoia lands properly and you feel it in your chest. The production design is solid. They clearly understood what they were walking into thematically.",
+        "Here is where it falls apart though. The film leans on CGI for its creature work and it shows badly. The original's practical effects were grotesque and tactile and genuinely unsettling in a way that felt real. The 2011 version's digital creature sequences feel weightless by comparison, like watching something from a video game cutscene rather than a horror film. It undercuts the tension every single time a creature appears fully on screen. For a film set in the same universe as one of the most celebrated examples of practical horror effects ever put to film, that is a significant problem.",
+        "The ending does something clever by connecting directly into the opening of the 1982 film, and I respect the attempt to make this feel like it genuinely belongs in that world. But the overall experience is a film that reminds you constantly of something better. The Thing 2011 is a watchable sci-fi horror film that earns its place as a solid genre entry in a vacuum. Compared to what it is standing next to, it cannot help but feel like a lesser copy. If you have never seen the Carpenter original, fix that first and come back to this one later."
+      ],
+      "images": [],
+      "verdict": "6/10, decent horror sci-fi that does enough right to justify a single watch, but the moment you picture Kurt Russell in that same Antarctic darkness, this version struggles to compete.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/r9leYNa8nTRCceZrZhP1DXkgKVb.jpg"
+      }
+    },
+    {
       "id": 1786526103607,
       "slug": "scream-review",
       "seoTitle": "Scream Review (1996) | WretVision",
