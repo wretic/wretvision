@@ -10,6 +10,42 @@
 
 const REVIEWS = [
     {
+      "id": 1786698634362,
+      "slug": "saw-iv-review",
+      "seoTitle": "Saw IV Review (2007) | WretVision",
+      "seoDescription": "Saw IV does exactly what it says on the tin, nothing more, nothing less, and that's precisely the problem.",
+      "category": "movie",
+      "title": "Saw IV",
+      "year": 2007,
+      "director": "Darren Lynn Bousman",
+      "runtime": "93 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Saw IV does exactly what it says on the tin, nothing more, nothing less, and that's precisely the problem.",
+      "body": [
+        "There's a version of Saw IV that could have been genuinely interesting. Jigsaw is dead. The trap has snapped shut on John Kramer for good. The obvious move would be to let the franchise breathe, to sit with the mythology, to figure out what it actually means when the architect of all this carnage is lying on a slab in the opening scene. Instead, Saw IV plants its flag in the ground and says: more. More traps, more flashbacks, more Tobin Bell via increasingly elaborate workarounds, more of everything that made the series profitable and almost none of what made the original film genuinely unsettling. Director Darren Lynn Bousman, back for his third entry in the series, is a competent hand at this point. He knows the visual language. He knows the rhythm. But there's a difference between knowing how to do something and having a reason to do it, and Saw IV never quite clears that bar.",
+        "Let's start with the setup, because it matters. The film opens with the autopsy of John Kramer, which is a strong cold open and probably the most confident five minutes in the movie. Watching the medical examiner pull a wax-coated tape from inside Kramer's stomach while the body is laid out under harsh clinical light, it's a good image. It says something about Jigsaw as an idea, the way his reach extends even past death, the way the game was always designed to outlive him. That's the film at its most ambitious, and it burns that ambition fast. The rest of Saw IV is largely a procedural, following SWAT Commander Rigg through a series of set piece traps while the franchise mythology gets stapled to the sides like wallpaper.",
+        "Costas Mandylor shows up here as Detective Hoffman, who the franchise will lean on heavily going forward. He's fine. He does what the role asks. But the role at this stage doesn't ask much. He's a presence more than a character, a plot mechanism wearing a badge. Lyriq Bent as Rigg carries the film's emotional core, or tries to. There's a decent idea buried in his arc, that his obsession with saving people is itself a kind of violence, that the compulsion to fix things can trap people just as surely as any chain or collar. It's a thematic thread that fits neatly into the Jigsaw worldview. The execution is clunky though. The script tells you what Rigg's problem is rather than letting you feel it, and Bent is working against dialogue that doesn't trust its own subtext.",
+        "Tobin Bell is back, naturally, through the now familiar mechanism of flashbacks. By this point the prequel structure has become a series staple and it still works on a basic level because Bell is genuinely compelling in the role. There's something in the way he plays Kramer that never quite tips into pantomime, even when the material around him does. The flashbacks here attempt to humanise John Kramer further, to trace the grief and disillusionment that built the Jigsaw philosophy, and some of that lands. Betsy Russell as Jill Tuck, Kramer's wife, adds a new dimension to the mythology. Their relationship is sketched with genuine care in places. But you're always aware these scenes exist to justify the franchise continuing rather than to deepen a story that needs deepening.",
+        "The traps. Let's talk about the traps, because this is Saw and the traps are the product being sold. They're fine. Technically competent, occasionally inventive, shot with the series' trademark urgency and close editing. The Mausoleum trap early in the film has a nasty mechanical elegance to it. The ice block scene is unpleasant in the right ways. Bousman and the practical effects team know their craft and the gore lands where it's supposed to. But here's the thing with Saw IV and this is the core problem that the film never really solves: none of the traps feel like they matter. You're watching impressive machinery without any emotional investment in the people inside it. That's partly a writing failure and partly a franchise fatigue issue arriving earlier than the studio probably wanted to admit.",
+        "Pacing is where Saw IV does real damage to itself. The film runs at about 93 minutes and yet it manages to feel padded. The intercut timelines, the dual investigations, the procedural back and forth between characters you barely have time to care about, it creates a bustle of activity that substitutes for momentum. You feel like things are happening because the editing is fast and the score is insistent, but strip that away and there are long stretches where the story isn't actually moving. The twist at the end, which attempts to reframe the chronology of events in relation to Saw III, is clever on paper. In practice it requires a rewatch to fully track and the payoff isn't satisfying enough to justify the effort.",
+        "Comparing Saw IV to its immediate predecessors is a slightly grim exercise. The original Saw is a genuinely tight thriller with an ending that earns its place in horror history. Saw II and Saw III are messier but have enough going on to justify their existence. Saw IV feels like the first entry in the series where the machinery is running but nobody's particularly sure where it's supposed to go. It's not incompetent. It's not a disaster. It's just there. Doing Saw things. Filling a release window. As horror films go in 2007, it's roughly in the same conversational space as something like Hostel Part II, another sequel that could execute its genre mechanics but struggled to argue for its own existence beyond the commercial.",
+        "There's also the franchise formula problem that the Saw series would never really shake. By this point you know certain things are locked in. You know the twist is coming. You know the game is rigged toward a specific kind of revelation. That predictability doesn't sink the film on its own but it does raise the stakes for genuine surprise, and Saw IV doesn't really deliver one. The timeline reframing at the end is the closest it gets, and it's more a structural trick than a genuine emotional gut punch. The best Saw moments make you feel something beyond the mechanics. Saw IV mostly just makes you appreciate the mechanics, which is a lesser achievement and a sign that the series is beginning to calcify.",
+        "Saw IV is a 6 out of 10 and that feels exactly right. It's watchable. If you're a franchise completist you'll sit through it without misery. The production is competent, a few traps genuinely impress, Bell and Bent do honest work, and there are glimmers of a more interesting film in the mythology building around Jill Tuck and Hoffman. But it doesn't stick. You'll finish it and move on and a week later struggle to recall specific details without prompting. That's not a crime exactly, but in a genre where the best work lodges in your skull and won't let go, forgettable is its own kind of failure. Saw IV is the series finding its cruising altitude, and unfortunately cruising altitude in this franchise means something that exists comfortably between decent and disposable."
+      ],
+      "images": [],
+      "verdict": "Saw IV does the job without ever making you glad it did, a franchise on autopilot doing Saw things for Saw people, and that's about as much as you can say for it.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/ku1QdCXOU4ckz3zxLLlis8MIJVm.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/3lrNJ5jNqKq9UpQrXo8FNFzyoE4.jpg"
+      }
+    },
+    {
       "id": 1786612507881,
       "slug": "the-thing-review-2",
       "seoTitle": "The Thing Review (2011) | WretVision",
