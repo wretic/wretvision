@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1786869165859,
+      "slug": "cult-of-chucky-review",
+      "seoTitle": "Cult of Chucky Review (2017) | WretVision",
+      "seoDescription": "Cult of Chucky wants to be the serious chapter that earns its legacy. It gets halfway there.",
+      "category": "movie",
+      "title": "Cult of Chucky",
+      "year": 2017,
+      "director": "Don Mancini",
+      "runtime": "91 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Cult of Chucky wants to be the serious chapter that earns its legacy. It gets halfway there.",
+      "body": [
+        "There is a version of Cult of Chucky that works completely. You can almost see it, running alongside the actual film, making slightly better decisions at every turn. Don Mancini has been steering this franchise since the beginning and by 2017 he clearly knew exactly what he wanted to do with it. The problem is not ambition. The problem is execution. Cult of Chucky picks up the more grounded, psychologically textured tone that Curse of Chucky established back in 2013 and tries to push it further. Sometimes it does. Sometimes it stumbles over its own mythology and forgets to be frightening in the process.",
+        "The setup is genuinely promising. Nica Pierce, played again by Fiona Dourif, has been institutionalized following the events of Curse of Chucky. Nobody believes her about the doll. She has been convinced by her therapist that she imagined the whole thing. That is a solid foundation for psychological horror. A woman who survived something real being gaslit into doubting her own memory inside a mental institution. There is real teeth in that premise if you commit to it. Mancini commits to it about sixty percent of the time. The other forty percent he is busy servicing the franchise mythology in ways that pull you out of the dread he has been carefully building.",
+        "Fiona Dourif is the best thing in this film. Full stop. She was excellent in Curse and she is excellent here, carrying a character who is fragile and furious in equal measure. There is a scene midway through where Nica finally confronts the reality of what is happening to her and Dourif plays it with this exhausted, heartbreaking clarity rather than screaming panic. That is a choice. A good one. She is doing serious dramatic work inside a film about a killer doll and she never once lets you see the seams. If the franchise is going to continue leaning into this more grounded register, keeping Dourif central is the right instinct.",
+        "Alex Vincent and Jennifer Tilly also return and their appearances are a genuine treat, though Tilly's Tiffany is used more as a late game reveal than a proper character with something to do. Vincent's Andy Barclay showing up with a very specific piece of his basement setup is the kind of fan service that actually earns the reaction it is going for rather than just pointing at the past and expecting applause. These connections feel considered rather than cynical. The franchise timeline stuff gets convoluted quickly but if you have been watching since Child's Play 1988 there is real satisfaction in seeing these threads pulled together even when the weave gets messy.",
+        "Don Mancini directs with more visual confidence here than in Curse of Chucky. The psychiatric facility setting is well used. White corridors, institutional lighting, wide empty spaces. It creates an unease that works in the film's favour and there are moments where Mancini frames shots in ways that make the space feel genuinely wrong rather than just clinical. The Chucky puppet work remains impressive. Practical effects continue to define this franchise and the Good Guy doll still has a physicality that CGI simply cannot replicate. When Chucky moves across a room or tilts his head, the craft behind that movement is undeniable.",
+        "Where the film stumbles most badly is pacing. The middle act drags. There is a stretch roughly forty to sixty minutes in where very little of consequence happens and the tension Mancini worked to build in the opening dissipates almost completely. Characters in the facility do not behave with anything resembling internal logic during this section and the kills, when they come, feel disconnected from the psychological thread the film had been pulling on. It is not that the kills are bad exactly. Some of them are inventive. But they belong to a different, gorier, less interested film than the one Mancini appeared to be making in the first act.",
+        "The multiple Chucky angle is where Cult of Chucky gets the most interesting and the most unstable simultaneously. The idea of several dolls operating at once inside one location plays with questions about identity and belief in ways that genuinely intrigue. If everyone thinks you are crazy and then there are multiple versions of the thing that was never supposed to be real, what does that do to you. It is a smart conceptual move. The execution though is choppy. The film never fully commits to exploring what this multiplicity means thematically. It uses the concept for set pieces more than for dread, which feels like the easier choice when the braver one was right there.",
+        "Comparing this to Curse of Chucky is unavoidable because this is explicitly a continuation of that film's tone and ambition. Curse was tighter. More controlled. It had a single location, a contained threat, and it never lost the thread between its psychological horror and its slasher mechanics. Cult tries to do more and pays the price in focus. If you enjoyed what Mancini was building with Curse then Cult will give you enough to justify watching it. If you were hoping this would be the film that fully delivered on that promise, you are going to finish it feeling like it got within reach and then fumbled. That is frustrating when you can see exactly what it was going for.",
+        "Cult of Chucky 2017 lands as a decent but uneven entry in a franchise that has always been more interesting than it gets credit for. The serious tone the series adopted after the Seed and Bride era comedic detour is still the right call. This film just does not execute it with the consistency it needs. Fiona Dourif elevates it. The practical effects keep it grounded. The mythology payoffs land for long term fans. But the pacing issues and a middle act that loses the thread drag it back to being a film that sort of worked and sort of did not. Worth watching if you have been following along. Not the one to convert anyone who has not. 6/10."
+      ],
+      "images": [],
+      "verdict": "Cult of Chucky has real ideas and one genuinely great performance but cannot hold its own tension together long enough to deliver on the promise it keeps almost keeping.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/r5JUiMYfatwYeDkxkLWYUx5GIjY.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/af7uKmGnrOn4P1zyfFXPQZOCCEp.jpg"
+      }
+    },
+    {
       "id": 1786782765267,
       "slug": "halloween-5-the-revenge-of-michael-myers-review",
       "seoTitle": "Halloween 5: The Revenge of Michael Myers Review (1989) | WretVision",
