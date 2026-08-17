@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1786956391689,
+      "slug": "scream-4-review",
+      "seoTitle": "Scream 4 Review (2011) | WretVision",
+      "seoDescription": "Scream 4 isn't bad exactly, but it's the kind of film you finish and then just... move on from.",
+      "category": "movie",
+      "title": "Scream 4",
+      "year": 2011,
+      "director": "Wes Craven",
+      "runtime": "111 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Scream 4 isn't bad exactly, but it's the kind of film you finish and then just... move on from.",
+      "body": [
+        "Scream 4 arrives in 2011 with Wes Craven back in the director's chair and Kevin Williamson back on script duties, which on paper sounds like a genuine return to form. The premise has some promise too: Sidney Prescott returns to Woodsboro on a book tour and the killings start again, this time with a new generation of horror-savvy teenagers who've grown up on the very films the original Scream inspired. There's something potentially sharp in that. A decade of torture porn and found footage had changed the landscape, and the film clearly wants to say something about that shift.",
+        "And occasionally it does. There are moments where Scream 4 finds its footing, particularly in a handful of tense setpieces that Craven stages with real craft. He hadn't lost the ability to build a scene. Emma Roberts is committed, Hayden Panettiere brings energy, and Neve Campbell does what she always does which is hold the emotional core together without much help from the script. The opening sequence is genuinely fun, playing with the format in a way that earns a smile.",
+        "But here's the problem: the self-awareness angle is running on fumes by this point. When Scream did it in 1996 it felt fresh and genuinely clever. By 2011, winking at the audience about horror rules and genre conventions isn't subversive anymore, it's just the genre. The film keeps nudging you to notice how smart it's being and you start to feel like you're watching a film explain its own jokes. The third act tries to inject something genuinely nasty into proceedings and almost pulls it off, then doesn't quite commit to the landing. That's the version of Scream 4 I wanted to see and didn't get.",
+        "The honest truth is I can't fully remember large chunks of it, and that tells you everything. It's watchable in the way that a lot of decent franchise continuations are watchable, which is to say you'll sit through it without suffering but you won't be thinking about it the next morning. Scream 4 is the kind of entry that fans of the series will find enough to enjoy, especially compared to the disappointment of Scream 3, but as a standalone horror film in 2011 it sits comfortably below what Williamson and Craven were once capable of together. 6/10, decent but forgettable."
+      ],
+      "images": [],
+      "verdict": "Scream 4 has the right people and the right bones but runs out of things to actually say, and a horror franchise built on being clever can't afford to feel this tired.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/3cf8p2qw9qnsaaFWc64AG6U05eT.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/c5EmNhLQsTTKAyUHULnKYQjlloz.jpg"
+      }
+    },
+    {
       "id": 1786869165859,
       "slug": "cult-of-chucky-review",
       "seoTitle": "Cult of Chucky Review (2017) | WretVision",
