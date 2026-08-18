@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1787042434955,
+      "slug": "the-nun-ii-review",
+      "seoTitle": "The Nun II Review (2023) | WretVision",
+      "seoDescription": "The Nun II is a masterclass in how to do everything wrong, a film so aggressively bad it makes its predecessor look competent.",
+      "category": "movie",
+      "title": "The Nun II",
+      "year": 2023,
+      "director": "Michael Chaves",
+      "runtime": "110 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 3,
+      "featured": false,
+      "excerpt": "The Nun II is a masterclass in how to do everything wrong, a film so aggressively bad it makes its predecessor look competent.",
+      "body": [
+        "There is a moment about twenty minutes into The Nun II where you realise, with a sinking feeling, that this is not going to turn around. Not because horror films cannot recover from a slow start, but because what you are watching is not a slow start. It is the film working at full capacity. This is it. This is the best it has got. The Conjuring universe has produced some genuinely effective horror over the years, from the original Conjuring to Annabelle Creation, but The Nun II released in 2023 represents something else entirely. A new floor. A benchmark for squandered opportunity and catastrophic miscalculation at virtually every level of production.",
+        "To understand how badly this film fails, you need a bit of context. The original Nun from 2018 was already considered one of the weaker entries in the Conjuring universe, a film that leaned too hard on style and atmosphere without earning either. It had Taissa Farmiga and some decent production design going for it, and audiences showed up despite mixed reviews because the brand still carried weight. The Nun II had a chance to course correct. Director Michael Chaves, who also helmed The Conjuring: The Devil Made Me Do It, had the budget, the returning cast, and a new setting in 1950s France that should have given the film a distinctive visual identity. It does none of those things with any competence whatsoever.",
+        "Let us talk about the setting because it is one of the biggest failures here and that is saying something given the competition for that title. 1950s rural France sounds promising on paper. There is history there, texture, the ruins of postwar Europe, the weight of a Catholic country still processing trauma. You could do a lot with that. Chaves and screenwriter Ian Goldberg do almost nothing with it. The setting is essentially decorative. It functions as a backdrop that could be swapped out for any generic European countryside without changing a single scene. The boarding school where much of the action takes place looks like every other horror film boarding school you have ever seen, lit the same way, dressed the same way, populated by the same archetypes reacting to things the same way.",
+        "The jump scares. I need to talk about the jump scares. I genuinely cannot remember the last time I watched a horror film where the mechanics of each scare were this visible, this telegraphed, this utterly devoid of craft. You can feel them coming from so far away that the film practically sends you a written notice. The silence stretches. The character walks slowly toward the thing. The camera lingers one beat too long on the wrong part of the frame. And then bang, loud noise, something in the face, sting on the soundtrack. Again and again and again. There is no variation. There is no atmosphere being built between them. There is no sense that the film understands the difference between surprise and dread. Valak jumping out from behind things is not horror. It is a carnival haunted house ride with a bigger budget and worse instincts.",
+        "Taissa Farmiga returns as Sister Irene and I feel genuinely bad writing what I am about to write because she is a talented actress who has shown real range elsewhere. But she is completely lost here. Some of that is the writing, which gives her nothing to work with beyond reacting to CGI and walking through dark corridors looking concerned. Some of it is direction that does not seem to know what to do with a lead character between scare sequences. She is present in almost every scene and yet barely registers as a person. There is no interiority, no arc that feels lived in, no moment where you connect with her on any human level. Storm Reid joins the cast as a young girl caught up in the chaos and she fares no better, not because she lacks ability but because the script reduces everyone to function.",
+        "The CGI is genuinely bad and that matters in a film built almost entirely around visual horror. Valak as a figure has always required careful handling because the more you show a monster the less frightening it becomes, and The Nun II shows you Valak constantly, in poorly rendered digital form, in sequences that look less like a studio horror film and more like a mid-budget streaming production from five years ago. There is a sequence involving a newsstand and possessed magazines that has already become something of an internet meme and rightfully so. It looks unfinished. It looks like a proof of concept for an effect that was never properly completed. In a genre where practical work is still the gold standard, watching Valak glide around in unconvincing CGI smoke is genuinely deflating.",
+        "Pacing is another catastrophic issue and I want to be specific here because it is not just that the film is too long, though at 110 minutes it absolutely is. It is that the film has no rhythm. No tension architecture. Good horror films, even deeply flawed ones, understand that you need breathing room between sequences, moments of quiet where dread can accumulate. The Nun II does not build. It lurches. It throws a scare at you, cuts to some exposition, throws another scare, cuts to some character interaction that goes nowhere, throws another scare. There is no momentum because the film does not understand that momentum requires contrast. Everything is at the same pitch. Everything feels equally weightless.",
+        "Comparing this to other recent entries in the Conjuring universe is instructive because it highlights just how far this film sits from even the middling entries. Annabelle Creation, directed by David F. Sandberg, is not a perfect film but it is constructed with genuine care. It earns its scares through patient setup and spatial awareness. The Conjuring itself remains genuinely effective because James Wan understood that the horror has to come from somewhere real, some emotional truth the audience is already carrying into the cinema. The Nun II does not appear to have been made by people who have thought about any of this. It appears to have been made to fulfil a release date and exploit a character that tested well with focus groups. That is not filmmaking. That is product management.",
+        "A 3 out of 10. That score reflects a film that is not just disappointing but genuinely difficult to sit through, a film that manages to be worse than its already troubled predecessor in almost every measurable way. The setting is wasted. The scares are laughable. The performances are stranded by writing that reduces everyone to a reaction machine. The CGI undercuts whatever atmosphere the production design occasionally gestures toward. The Nun II in 2023 is a new low point for the Conjuring universe and a reminder that brand recognition is not a substitute for craft, for patience, or for having any genuine interest in what makes horror work."
+      ],
+      "images": [],
+      "verdict": "The Nun II is baffling in its badness, a film that gets every single thing wrong with such consistency that it almost becomes impressive, and it is the worst thing to carry the Conjuring name.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/5gzzkR7y3hnY8AD1wXjCnVlHba5.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/27jtaS1oCiLK5Y7P6iOXG2yj1Nc.jpg"
+      }
+    },
+    {
       "id": 1786956391689,
       "slug": "scream-4-review",
       "seoTitle": "Scream 4 Review (2011) | WretVision",
