@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1787215310715,
+      "slug": "a-nightmare-on-elm-street-2-freddys-revenge-review",
+      "seoTitle": "A Nightmare on Elm Street 2: Freddy's Revenge Review (1985) | WretVision",
+      "seoDescription": "Freddy's Revenge tries something genuinely different with the formula and almost pulls it off, but almost isn't enough.",
+      "category": "movie",
+      "title": "A Nightmare on Elm Street 2: Freddy's Revenge",
+      "year": 1985,
+      "director": "Jack Sholder",
+      "runtime": "87 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Freddy's Revenge tries something genuinely different with the formula and almost pulls it off, but almost isn't enough.",
+      "body": [
+        "The original A Nightmare on Elm Street is one of those rare horror films that felt like it arrived from nowhere fully formed. Wes Craven built something genuinely unsettling out of a simple but brilliant idea: what if the thing trying to kill you lived inside the one place you couldn't avoid? Sleep. Dreams. Your own head. So when New Line came back for a sequel in 1985, the pressure was real. And to the credit of director Jack Sholder and writer David Chaskin, A Nightmare on Elm Street 2: Freddy's Revenge doesn't just retread the first film beat for beat. It swings in a different direction. Whether that swing connects is another question entirely.",
+        "The setup follows Jesse Walsh, played by Mark Patton, a teenager who has moved into the old Elm Street house with his family. He starts having nightmares about Freddy Krueger, which you'd expect. But the twist here is that Freddy isn't content to just haunt Jesse's dreams and kill him. He wants to use Jesse as a vessel, possessing him from the inside out, forcing Jesse's body to do the killing in the waking world. It's a fundamentally different angle compared to the first film, and for a franchise that could have just photocopied the original and cashed in, you've got to at least acknowledge the attempt to evolve the concept rather than clone it.",
+        "Mark Patton is doing a lot of heavy lifting here and he deserves credit for committing fully to a role that asks him to be terrified, confused, and increasingly unhinged across the entire runtime. There's a raw vulnerability to his performance that feels genuine rather than performed, which is genuinely not easy in a horror sequel from 1985 where the genre expectation was mostly screaming and running. Kim Myers plays his girlfriend Lisa and she's solid, warm, and grounded, which helps anchor the film when things get weird. Robert Englund is still doing exactly what he does best as Freddy, that blend of theatrical menace and dark humour that made the character iconic. He doesn't have as many moments to shine here but when he does, he's magnetic.",
+        "Jack Sholder's direction is competent and occasionally more than that. There are individual shots in this film that carry real atmosphere. The nightmare sequences have a genuine unease to them early on, before the film's logic starts to collapse under its own ambition. The transformation sequences, where Freddy starts to physically manifest through Jesse's body, are genuinely impressive practical effects work for the era. Claws bursting through flesh, Freddy literally tearing his way out from inside a person, that stuff holds up. Practical effects done with that kind of commitment always deserve recognition, and Freddy's Revenge has a few moments where the craft is quietly excellent.",
+        "The pacing is where things start to lose me. The film runs about 87 minutes and there are stretches in the middle that feel like they're circling rather than building. Jesse's internal struggle with what's happening to him is the emotional core of the film, but the screenplay doesn't give that struggle enough shape or escalation to keep you locked in. You get scenes that feel like they're going somewhere interesting and then they just stop and reset. A horror film needs momentum even when it's going for dread over shock, and Freddy's Revenge keeps stalling itself right when it should be tightening the screws.",
+        "There's also the question of coherence within the franchise's own rules. The first film established a fairly specific internal logic about how Freddy operates, tied to dreams, tied to sleep, tied to the vulnerability of the unconscious mind. Freddy's Revenge more or less sidesteps all of that to make a possession story. Which is fine in theory, but it means the film is playing by different rules without ever quite earning that shift. And then later entries in the franchise would quietly move on from this film's version of Freddy entirely, almost treating it as a detour. That retcon says something about how much Freddy's Revenge fits within the larger series mythology.",
+        "The film has gathered a significant cult following over the decades, partly for its themes around repression and identity, particularly Jesse's arc, which has been read and reread by audiences and critics since its release. There's something genuinely interesting buried in that reading of the film, whether intentional or not. Jesse's terror at what's growing inside him, his inability to control his own body, the relationships around him straining under pressure he can't explain. It gives the film a layer that most 1985 horror sequels simply don't have. I appreciate that. It doesn't fix the pacing problems but it does give Freddy's Revenge a reason to exist beyond a cash grab, and that matters.",
+        "Compared to the original, it's a step down, but it's a more interesting step down than most franchise sequels manage. Dream Warriors the following year would arguably crack the formula open in a more successful way, giving Freddy a richer playground and a stronger ensemble to work with. Freddy's Revenge sits in an awkward middle position, not as tight as the original, not as inventive as what would follow, but not a lazy retread either. Some of the deaths are well constructed. The pool party sequence has genuine energy and chaos to it. There are flashes here of a film that could have landed harder if the script had one more pass and the middle act had been tightened.",
+        "At the end of the day, A Nightmare on Elm Street 2: Freddy's Revenge from 1985 is a decent horror sequel that tried something different and half succeeded. The possession angle is interesting, the practical effects have genuine craft behind them, and Mark Patton gives a performance that deserves more recognition than it typically gets. But the pacing drags, the internal logic of the franchise takes a hit, and the film never quite builds to the release it's promising. It's watchable. It's got real problems. It's not a waste of your time if you're working through the Elm Street series, but it's the kind of film you finish and think, close but not quite."
+      ],
+      "images": [],
+      "verdict": "Freddy's Revenge earns points for trying something genuinely different but loses them through a sagging middle act, muddled franchise logic, and a possession concept that needed a sharper screenplay to fully pay off. 6/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/53kxYw0G3o55yJ23K7s7KMaOyAM.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/8cxB1CiiODiWFayDPxLsAeviZvc.jpg"
+      }
+    },
+    {
       "id": 1787128849919,
       "slug": "a-nightmare-on-elm-street-5-the-dream-child-review",
       "seoTitle": "A Nightmare on Elm Street 5: The Dream Child Review (1989) | WretVision",
