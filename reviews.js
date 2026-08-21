@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1787301825297,
+      "slug": "halloween-review-2",
+      "seoTitle": "Halloween Review (2018) | WretVision",
+      "seoDescription": "Halloween 2018 does something brave: it pretends 40 years of sequels never happened, and mostly gets away with it.",
+      "category": "movie",
+      "title": "Halloween",
+      "year": 2018,
+      "director": "David Gordon Green",
+      "runtime": "106 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Halloween 2018 does something brave: it pretends 40 years of sequels never happened, and mostly gets away with it.",
+      "body": [
+        "There is a version of Halloween 2018 that could have been a disaster. After decades of increasingly convoluted sequels, a resurrection, a Rob Zombie reimagining, and a timeline that required a flowchart to follow, the franchise was a mess. David Gordon Green and Danny McBride made a bold call: wipe the slate. Forget Halloween II, forget the cult, forget Halloween H20, forget all of it. This is a direct sequel to John Carpenter's 1978 original and nothing else. That choice alone earns the film a certain respect before a single frame has played.",
+        "The setup is clean and efficient. It has been exactly forty years since Michael Myers terrorized Haddonfield. Laurie Strode has spent those decades preparing, building a fortified home, stockpiling weapons, and quietly falling apart in the process. She is estranged from her daughter Karen, played by Judy Greer, and has a tentative but genuine relationship with her granddaughter Allyson, played by Andi Matichak. The generational trauma angle is the film's smartest structural move. It gives the story emotional stakes that go beyond the slasher mechanics, and it gives Jamie Lee Curtis something real to play.",
+        "And Curtis delivers. This is the best she has been as Laurie Strode since the original. She is not a screaming victim and she is not a Hollywood action hero either. She is a woman who is genuinely broken, and genuinely dangerous, and the film treats both of those things as equally true. There is a scene early on where she watches Michael being transported and you can see forty years of fear and fury and obsessive preparation sitting behind her eyes. No monologue needed. Curtis just does it. That is the kind of performance that quietly holds a film together.",
+        "The supporting cast is more of a mixed bag. Judy Greer is given frustratingly little to work with for most of the runtime, which is a waste of a capable actor. Allyson's friend group at school exists almost purely as future body count, and the film does not bother disguising that fact particularly well. Will Patton shows up as a local cop with a connection to the case and gives a grounded, likeable performance without being asked to do anything especially demanding. Haluk Bilginer as Dr. Ranbir Sartain is the most interesting supporting character on paper, a successor to the infamous Dr. Loomis, and the film does something genuinely unexpected with him mid-movie that I respected enormously.",
+        "David Gordon Green is not a horror director by trade. Coming off films like Pineapple Express and Stronger, this was a pivot nobody saw coming. And for the most part he handles the material with real craft. The Halloween 2018 sequences that work best are the ones that trust silence and space. The tracking shot through a suburban street as Michael moves from house to house is genuinely great filmmaking. It is unhurried, methodical, and deeply uncomfortable. Michael feels heavy and inevitable in those moments, which is exactly what he needs to feel. Green understands that Myers is scariest when he is just walking.",
+        "The script, co-written by Green, McBride, and Jeff Fradley, is where the film shows its cracks most clearly. Some of the dialogue is clunky in a way that feels self-conscious, like the writers knew they were working in a genre and occasionally could not stop themselves from winking at the audience. A pair of true crime podcasters who arrive in Haddonfield to interview Michael serve as a framing device early on, and while the idea has potential the execution feels undercooked. They disappear from the story without much payoff, which is a structural problem. The film sets up threads that it does not always follow through on.",
+        "The kills are well-staged and mostly practical in their feel. This is not a gore showcase, but it does not pull punches either. There is a bathroom scene involving Michael and a babysitter that is brutal and efficient and lands with real impact. What the film avoids almost entirely is the cheap jump scare trap. There are moments of sudden violence but they feel earned rather than manufactured. Green shoots them with purpose. The score, reworked by John Carpenter himself alongside his son Cody Carpenter and Daniel Davies, is outstanding. Hearing those iconic themes in a new configuration is one of the film's genuine pleasures and gives the whole thing a legitimacy that a lesser sequel would not have earned.",
+        "Pacing is the film's biggest weakness outside of the script problems. The first two acts build well. The third act at Laurie's fortified house is where Halloween 2018 most confidently becomes its own thing, and there are moments there that are tense and inventive and satisfying. But the middle section drags in places, particularly in the Allyson storyline at the school dance. The film wants you to care about the teenage characters but has not done enough work to earn that investment, so those scenes feel like time-filling compared to the sharper Laurie material surrounding them. A tighter cut would have served the story better.",
+        "Halloween 2018 sits comfortably alongside films like It Follows and Ready or Not as a modern horror entry that respects the intelligence of its audience without entirely reinventing the wheel. It is not a masterpiece. It is not the original. But it is a genuinely solid, respectful, and occasionally inspired return for characters who deserved better than what the franchise had given them for decades. Curtis is the reason to watch it, Green gives it a steadier hand than it probably had any right to expect, and the decision to strip everything back to the source pays off more often than it does not. 7/10."
+      ],
+      "images": [],
+      "verdict": "Halloween 2018 is a confident, flawed, and mostly earned soft reboot that reminds you why Laurie Strode and Michael Myers mattered in the first place, even if it cannot quite sustain that feeling for the full runtime.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/sHI9xlFRWCJ38AIIfOqnGjuEvXz.jpg"
+      }
+    },
+    {
       "id": 1787215310715,
       "slug": "a-nightmare-on-elm-street-2-freddys-revenge-review",
       "seoTitle": "A Nightmare on Elm Street 2: Freddy's Revenge Review (1985) | WretVision",
