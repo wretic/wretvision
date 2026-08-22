@@ -10,6 +10,42 @@
 
 const REVIEWS = [
     {
+      "id": 1787387606862,
+      "slug": "saw-iii-review",
+      "seoTitle": "Saw III Review (2006) | WretVision",
+      "seoDescription": "Saw III is the franchise starting to eat itself, but the Jigsaw deathbed thread is genuinely compelling enough to keep you hooked.",
+      "category": "movie",
+      "title": "Saw III",
+      "year": 2006,
+      "director": "Darren Lynn Bousman",
+      "runtime": "108 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Saw III is the franchise starting to eat itself, but the Jigsaw deathbed thread is genuinely compelling enough to keep you hooked.",
+      "body": [
+        "By the time Saw III landed in 2006, the franchise had already locked itself into a rhythm. First film: brilliant, lean, genuinely shocking. Second film: bigger, louder, more traps. Third film: even bigger, even more traps, and a plot that starts to buckle under the weight of its own mythology. Director Darren Lynn Bousman returns from Saw II and you can feel both the confidence and the complacency in equal measure. This is a film that knows exactly what its audience wants and delivers most of it on time, but somewhere in the delivery the spark that made the original so quietly terrifying has faded a little further.",
+        "The setup splits the film across two narrative tracks. On one side you have Jeff, a grieving father dragged through a gauntlet of traps connected to the drunk driver who killed his son. On the other, and far more interesting, you have Amanda tasked with keeping John Kramer alive long enough to see Jeff complete his journey, while Jigsaw lies dying of brain cancer on a surgical table with a doctor essentially held hostage to keep him breathing. The Jeff storyline is functional. The Jigsaw and Amanda storyline is where the film actually lives.",
+        "Tobin Bell has always been the heart of this series and Saw III gives him more to work with than either of the previous entries. Watching him deteriorate physically while still commanding every scene he is in is genuinely impressive work. He is barely mobile for most of the runtime and yet he still fills the frame. There is something almost Shakespearean about a villain dictating his legacy from a deathbed and Bell plays it without a single note of self-pity. It is quiet, controlled, and the best performance in the entire Saw franchise up to this point.",
+        "Shawnee Smith as Amanda is the other major draw here and the film finally gives her room to unravel properly. The tension between her and Jigsaw, the creeping revelation that she has been rigging her traps to be unwinnable, that she has broken the code she was supposedly reformed by, is the most psychologically interesting thread the series had explored to that point. Smith plays the desperation and the resentment without overdoing it. When her story closes out in the final act it hits hard in a way that a lot of the trap sequences simply do not.",
+        "The traps themselves are where Saw III makes its name and also where it starts to expose the formula. The practical effects work is legitimately impressive. The twisted angel trap, the rack, the freezer chamber, these are constructed with real craft and the gore is not lazy shock value, it is meticulously designed to be as visceral as possible. Bousman commits to them fully. But the issue is that they are becoming the point rather than a means to the point. In the original, the traps served the theme. Here the theme increasingly serves the traps. That is a subtle but meaningful shift.",
+        "Jeff as a protagonist is the film's biggest structural weakness. His arc is clear enough, a man consumed by revenge who is tested on whether he can find mercy, but the execution is flat. Angus Macfadyen does what he can with the material but Jeff never feels like someone you are rooting for or against with any real investment. The people in his traps are sketched too thinly to carry emotional weight and so each sequence becomes more of a technical exercise than a dramatic one. You admire the construction. You do not feel it.",
+        "Pacing is something Bousman handles with a blunt instrument. The film moves fast when it needs to and occasionally grinds when it does not. The surgical sequences with Bahar Soomekh as Lynn Denlon are tense in a specific, claustrophobic way that works well, the collar around her neck counting down as a physical clock on the entire film is a genuinely clever device. But some of the connective tissue between Jeff's traps drags and you feel the runtime stretching. At around 108 minutes it is not egregious but there is fat here that sharper editing would have trimmed.",
+        "In the context of the broader franchise, Saw III sits at a crossroads. It closes the original trilogy with a genuinely brutal final act that at the time felt like a real ending. The reveal cascade in those last fifteen minutes is the most ambitious thing the series had attempted structurally and mostly it lands. The problem of course is that the franchise did not end here and so some of what feels definitive gets quietly walked back by later entries. Watching it now knowing where the series goes softens the impact slightly. But taken on its own terms in 2006 it was a genuine gut punch of a finale.",
+        "Saw III is not a step forward for the franchise but it is a worthy closer to the chapter it was finishing. The Jigsaw deathbed material is compelling enough that it elevates the whole film above what a simpler trap-delivery vehicle would have been. Bell and Smith do career-best work within this universe. The Jeff storyline and the increasingly mechanical trap structure are the anchors pulling it back toward formula. If you are watching the Saw series through and comparing it to something like the original or even the recent Saw X, this sits comfortably in the middle tier. Solid, occasionally powerful, but beginning the drift toward self-parody that would define the years that followed."
+      ],
+      "images": [],
+      "verdict": "7/10, Jigsaw on his deathbed is genuinely gripping and Bell and Smith make it count, but the formula is calcifying fast and Jeff's storyline is dead weight the film cannot quite carry.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/4iO9n24Rb10peXV0JH2EldIOrAp.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/qx8Pb3nVnHLBizI9792pbRN5nnm.jpg"
+      }
+    },
+    {
       "id": 1787301825297,
       "slug": "halloween-review-2",
       "seoTitle": "Halloween Review (2018) | WretVision",
