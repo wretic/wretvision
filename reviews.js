@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1787473995365,
+      "slug": "hellraiser-deader-review",
+      "seoTitle": "Hellraiser: Deader Review (2005) | WretVision",
+      "seoDescription": "Hellraiser: Deader feels less like a sequel and more like a tax write-off someone stapled Pinhead onto at the last minute.",
+      "category": "movie",
+      "title": "Hellraiser: Deader",
+      "year": 2005,
+      "director": "Rick Bota",
+      "runtime": "88 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "Hellraiser: Deader feels less like a sequel and more like a tax write-off someone stapled Pinhead onto at the last minute.",
+      "body": [
+        "There is a point watching Hellraiser: Deader where you genuinely forget this is supposed to be a Hellraiser film. That is not a compliment. Released in 2005 as the seventh entry in a franchise that had been running on fumes since part three, Deader follows journalist Amy Klein as she investigates a cult in Bucharest that appears to be resurrecting the dead. On paper that premise has legs. In execution it shuffles around like something that does not quite know it should be dead already. Rick Bota directs from a script that started life as an entirely unrelated project before someone bought it cheap and retrofitted the Cenobites in. You can feel every seam of that transplant surgery.",
+        "Kari Wuhrer works hard and she deserves credit for committing to a role that gives her almost nothing to work with. There are a handful of moments where the film gestures toward something genuinely unsettling, particularly in some of the earlier nightmare sequences where the imagery gets strange enough to hold your attention. The Bucharest locations have a grey, crumbling atmosphere that could have served the film well if anyone had known how to use them. Those are the bones of something watchable buried underneath everything else. The practical gore, when it shows up, has the rough tactile quality the franchise built its reputation on. Those moments land.",
+        "But the production value is so thin it becomes its own distraction. Scenes feel underlit in the wrong way, not atmospheric but cheap. The pacing drags through the middle with a determined commitment to going nowhere interesting. Doug Bradley shows up as Pinhead and does what he can, but he is barely in the film, which tells you everything about how confident anyone was that the Hellraiser elements were load-bearing. The cult storyline never builds to anything that feels earned or threatening. By the time the third act arrives with its obligatory puzzle box resolution you are not scared, you are just waiting for it to end.",
+        "Hellraiser: Deader sits in a specific tier of direct-to-video horror sequels from the mid-2000s alongside titles like Hellraiser: Hellseeker and the later Prophecy sequels, films that exist to maintain copyright rather than to say anything. If you are a completionist working through the full Hellraiser catalogue on a horror binge this will get watched. Everyone else has no reason to seek it out. There is wasted potential here and a premise that in better hands, with a real budget and a script written for this world, might have produced something worth watching. Instead it produced this. 4/10."
+      ],
+      "images": [],
+      "verdict": "Deader does not kill the Hellraiser franchise because by 2005 there was barely anything left to kill, but it makes absolutely no case for its own existence.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/mWOiwo2mA1rDJzR2idMZCFhSizy.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/cARh4D78SYGvOiLCjTjYA5PkCxe.jpg"
+      }
+    },
+    {
       "id": 1787387606862,
       "slug": "saw-iii-review",
       "seoTitle": "Saw III Review (2006) | WretVision",
