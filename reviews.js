@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1787561492262,
+      "slug": "vhs2-review",
+      "seoTitle": "V/H/S/2 Review (2013) | WretVision",
+      "seoDescription": "V/H/S/2 turns up the volume but forgets to say anything new — more gore, same formula.",
+      "category": "movie",
+      "title": "V/H/S/2",
+      "year": 2013,
+      "director": "Various",
+      "runtime": "96 min",
+      "rating": "NR",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "V/H/S/2 turns up the volume but forgets to say anything new — more gore, same formula.",
+      "body": [
+        "V/H/S/2 arrives in 2013 with a simple promise: take what worked in the first anthology and do it again, but nastier. New directors, new segments, same found footage wrapper. Simon Barrett, Jason Eisener, Gareth Evans, Eduardo Sanchez and others rotate through the camera. On paper that is a genuinely exciting lineup. In practice the film functions exactly like its predecessor, a tape-within-a-tape horror grab bag that gives you four short films and a framing device nobody cares about. If you loved the original V/H/S you will find things here to enjoy. If you were hoping for evolution rather than repetition, prepare to be patient.",
+        "The standout is Gareth Evans and Timo Tjahjanto's Safe Haven, and it is not even close. A documentary crew infiltrates an Indonesian cult compound and things go properly, irreversibly wrong at a pace that makes your chest tight. The practical effects are genuinely impressive, the escalation is earned, and the final image lands with real weight. It is the kind of short that makes you wish it were a feature. Jason Eisener's Alien Abduction Slumber Party also commits hard to its premise and has fun doing it. These two segments alone justify sitting through the runtime.",
+        "The problem is everything around those two peaks. Phase I Clinical Trials opens the anthology and is almost aggressively forgettable, a haunted eye implant concept that goes nowhere interesting and exits before it even tries. A Ride in the Park, the zombie segment shot from a cyclist's helmet cam, is gimmicky in a way that wears thin inside five minutes. The framing narrative with the guys in the house is dead weight the same way it was in the first film, and the film still has not figured out how to make that structure feel like anything other than connective tissue you are waiting to skip past.",
+        "V/H/S/2 is a decent anthology horror and a watchable night in with the right crowd, but it is also a film that had a real opportunity to push the format somewhere unexpected and chose not to. The original V/H/S had the energy of something scrappy and new. This feels like a confident repeat of that same playbook without the novelty to excuse the weaker parts. Safe Haven is legitimately great and would sit comfortably next to the best horror shorts of the decade. The rest of the film just reminds you what you are missing when the standard is that high. Comparable to the original V/H/S and Trick r Treat in structure, but less consistent than either at their best."
+      ],
+      "images": [],
+      "verdict": "V/H/S/2 has one genuinely brilliant segment surrounded by a film that mistakes familiarity for comfort, and a 6 is exactly what that gets you.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/o4hcWsHaHaNQ9BBReOxLvYJNRhA.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/aELgHEHFGDCcGslMoyg9KGiDV4v.jpg"
+      }
+    },
+    {
       "id": 1787473995365,
       "slug": "hellraiser-deader-review",
       "seoTitle": "Hellraiser: Deader Review (2005) | WretVision",
