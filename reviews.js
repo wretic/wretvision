@@ -10,6 +10,42 @@
 
 const REVIEWS = [
     {
+      "id": 1787647592014,
+      "slug": "jigsaw-review",
+      "seoTitle": "Jigsaw Review (2017) | WretVision",
+      "seoDescription": "Seven years later, Jigsaw crawls back out of the trap room with a mystery that works just fine and a spark that mostly doesn't.",
+      "category": "movie",
+      "title": "Jigsaw",
+      "year": 2017,
+      "director": "Michael Spierig, Peter Spierig",
+      "runtime": "92 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "Seven years later, Jigsaw crawls back out of the trap room with a mystery that works just fine and a spark that mostly doesn't.",
+      "body": [
+        "Here is the thing about Jigsaw. The Saw franchise ended in 2010 with Saw 3D, a film that was by most measures a mess, and everyone involved seemed to know it. So when the Spierig Brothers brought the series back in 2017 after a seven year silence, there was a version of this that could have felt genuinely exciting. A reset. A chance to do something smarter with one of horror's most recognizable properties. What we got instead is a film that is technically competent, occasionally interesting, and almost entirely safe. That is not a disaster. But given the gap and the opportunity, it feels like a missed swing.",
+        "The setup in Jigsaw 2017 is actually reasonably clever on paper. Bodies start turning up around a city, each bearing the hallmarks of Jigsaw's work, which is a problem because John Kramer has been dead for a decade. The film runs two storylines in parallel, one following a new group of victims working through traps on some kind of remote farm, the other following the police investigation and the forensic pathologists piecing together what is happening. The tension the film is betting on is the mystery of who is actually running the game. That is a solid enough hook, and for stretches it holds your attention.",
+        "The Spierig Brothers, Michael and Peter, made Predestination before this, which is a genuinely inventive time loop thriller. So you come in with some expectations around structural craft. And to be fair, the bones of Jigsaw's construction are more thoughtful than the later Saw sequels ever managed. The film does not just line up traps and call it a narrative. There is a plot working underneath the gore, and the dual timeline structure is handled cleanly enough that you do not get lost. The direction is controlled. Nothing here is sloppy. But controlled is not the same as inspired, and the Spierigs never quite find the pulse of what made the original Saw genuinely unsettling.",
+        "The trap sequences themselves are where any Saw film lives or dies, and here the results are mixed. The opening laser collar sequence is effective and sets an efficient, grim tone. The grain silo scene has a decent sense of scale and disorientation. But as the film moves forward, the traps start to feel like obligations rather than inventions. The original Saw traps were horrifying partly because they felt philosophically specific to each victim. John Kramer chose his methods deliberately. Here the traps are fine, but they do not carry that weight. They feel designed for a highlight reel rather than to say anything about the people dying in them.",
+        "The effects work is a step up from some of the franchise's lower points. There is practical work here, and it shows. The gore has texture and weight in ways that bad CGI blood never achieves. That counts for something. The farm location gives the film a different visual register than the grimy industrial spaces of the middle Saw entries, and the cinematography actually uses the space rather than just staging kills against a grey background. These are genuine craft credits. It does not fully compensate for the lack of dread in the quieter scenes, but it means the film is never ugly to watch in a way that undermines the production.",
+        "The cast is largely unknowns and character actors doing solid, workmanlike jobs. Matt Passmore as the forensic detective Logan Nelson holds the investigative thread together without doing anything remarkable. Callum Keith Rennie brings some energy to the police side of things as Detective Halloran. Tobin Bell returns via flashbacks, and even in limited screen time he reminds you what made John Kramer compelling in the first place. That quiet, absolute certainty. The new victims running the traps are serviceable but thinly written, which makes it harder to care who survives. You are watching them rather than feeling anything for them.",
+        "The mystery of who is running the game is the engine the whole film runs on, and it is where Jigsaw is most likely to divide people. The reveal lands as a reasonable twist with some internal logic, but it does not hit with the gut punch the film clearly wants. Part of the problem is that the franchise formula is now so well established that the audience spends the entire runtime auditing suspects rather than being scared. The film knows you are doing this, and it tries to account for it, but the twist does not land with enough weight to justify the slow burn getting there. Compare it to something like the first Saw or even Saw II, where the reveals recontextualised everything and hit like a slap. This one lands more like a firm nod.",
+        "There is also a pacing issue in the second act that is hard to ignore. The investigative scenes start to drag and repeat themselves without meaningfully advancing either the mystery or the tension. The film clocks in at around 92 minutes which is about right for the genre, but those middle 30 minutes feel padded in a way that undercuts the momentum. Horror lives in momentum. Once you lose it you are fighting to get it back, and Jigsaw never quite does after the midpoint lull. The ending picks things up, but by then the film has spent some of the goodwill it built in the opening.",
+        "Jigsaw 2017 is a soft reboot that does exactly enough to justify existing without doing enough to make you excited about where the franchise goes next. It is better than the Saw franchise's worst entries, more coherent than Saw 3D by some margin, and it earns its mystery structure. But it does not reignite anything. It does not make you feel the dread that the original managed on a fraction of the budget. For horror fans who want something to get through on a slow weekend it is watchable, and it does set the table for Spiral and the later entries to do something different. Whether those films do anything worthwhile with that table is another conversation. 6.5/10."
+      ],
+      "images": [],
+      "verdict": "Jigsaw is competent, occasionally clever, and completely forgettable, a franchise resurrection that breathes without ever really coming alive.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/7RwHxhdUNS996JPFNB9a7CJtlwR.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/ucLGZ3zBRFDhdlRNhvXdkjXkNyd.jpg"
+      }
+    },
+    {
       "id": 1787561492262,
       "slug": "vhs2-review",
       "seoTitle": "V/H/S/2 Review (2013) | WretVision",
