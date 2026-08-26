@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1787734079520,
+      "slug": "a-nightmare-on-elm-street-4-the-dream-master-review",
+      "seoTitle": "A Nightmare on Elm Street 4: The Dream Master Review (1988) | WretVision",
+      "seoDescription": "Dream Warriors built something special. Dream Master tears it down and replaces it with a music video.",
+      "category": "movie",
+      "title": "A Nightmare on Elm Street 4: The Dream Master",
+      "year": 1988,
+      "director": "Renny Harlin",
+      "runtime": "93 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "Dream Warriors built something special. Dream Master tears it down and replaces it with a music video.",
+      "body": [
+        "A Nightmare on Elm Street 4: The Dream Master arrives in 1988 with the worst possible job to do. It has to follow Dream Warriors, which is arguably the best entry in the franchise, a film that gave Freddy Krueger genuine mythological weight and surrounded him with characters you actually cared about. Renny Harlin steps into the director's chair from Chuck Russell and the shift in sensibility is immediate and brutal. This is a slicker film, a more expensive looking film, and an almost completely hollow one. Where Dream Warriors felt like a horror film that understood why Freddy worked, The Dream Master feels like a film that understood why Freddy sold merchandise.",
+        "The setup is essentially a handover. Kristen, Kincaid, and Joey, the surviving Dream Warriors from the previous film, are back briefly. And I do mean briefly. The film dispatches them with startling efficiency, almost like it resents having to acknowledge them at all. Kincaid and Joey go down so fast and so cheaply that you genuinely have to check whether you imagined the last film. These were characters with arcs, with trauma, with reasons to root for them. Here they are obstacles to clearing the decks so a new set of teens can be introduced. It is one of the most blatant and disrespectful examples of legacy character disposal I can think of in a major horror franchise.",
+        "Kristen gets the longest goodbye of the three, played here by Tuesday Knight rather than Patricia Arquette who wisely did not return. Knight is not bad but she is not Arquette either, and the recasting adds another layer of disconnect. There is no emotional continuity. Kristen was defined by her ability to pull others into her dreams, her gift and her curse, and the film uses that ability as a plot mechanism to transfer power to Alice, the new lead, rather than as the character beat it should be. Kristen dies terrified and alone in a way that feels designed to be convenient rather than meaningful, and the franchise just moves on without looking back.",
+        "Alice, played by Lisa Wilcox, is now the centre of the film. Wilcox does what she can. She is likeable enough, and the film tries to build her up as a shy, introverted girl who grows into her confidence as she absorbs the traits of her dead friends. It is an interesting idea on paper. In practice it plays out like a checklist. Friend dies, Alice gets a new skill, repeat. There is no real emotional weight to the progression because we have barely met these new friends before they start dying. You cannot feel the loss of characters you have known for fifteen minutes, and the film does not seem particularly interested in making you feel it anyway.",
+        "Renny Harlin is a competent action director and that is precisely the problem. He shoots The Dream Master with energy and visual flair and almost no instinct for dread. The dream sequences are elaborate and imaginative at times, the roach motel sequence and the soul pizza bit have a deranged creativity to them, but they feel like set pieces in isolation rather than scenes in a horror film. Dream Warriors used its dream logic to reveal character and build mythology. Here the dream sequences are closer to music video interludes. They look cool. They do not scare you. They do not mean anything beyond themselves.",
+        "The practical effects work is a genuine bright spot and I want to be fair about that. There are moments in The Dream Master where the creature work is genuinely impressive, the transformations and body horror sequences show craftsmanship and commitment. The soul torso in Freddy's chest at the climax is a memorable image. But good practical effects in service of a story that does not earn them are just expensive decorations. They give you something to look at while the script spins its wheels. And the script, credited to Brian Helgeland and Scott Pierce among others, spins a lot of wheels.",
+        "Robert Englund is on autopilot here, and that matters more than people admit. Freddy Krueger in the original film and even in Dream Warriors had menace underneath the one liners. The comedy was dark, rooted in something genuinely disturbing. By The Dream Master, the balance has tipped fully into performance mode. Freddy is doing bits now. He is a crowd pleasing villain rather than a horrifying one, and Englund, talented as he is, can only work with what the film asks of him. The film asks him to be entertaining. He is. But entertaining and scary are not the same thing, and this franchise was supposed to be about the latter.",
+        "The pacing is another real issue. The film runs at just over 90 minutes which should be tight, but it manages to feel padded in the middle section where new characters are introduced and then orbited until it is their turn to die. There is a mechanical quality to the kills that makes the film feel less like a story and more like a tour of set pieces. You stop wondering who will survive because the formula is too visible. The new characters are archetypes, the jock, the bookworm, the cool girl, and the film does not have the time or the interest to make them more than that. When they die, you note it and move on.",
+        "A Nightmare on Elm Street 4: The Dream Master is the moment the franchise commits to being a product rather than a film. It made enormous money in 1988, the highest grossing entry in the series at that point, and you can see exactly why the studio loved it. It is colourful, propulsive, filled with memorable images, and Freddy delivers the goods on a surface level. But it abandoned the heart of Dream Warriors for a shinier shell, and that trade is not worth it. If you are watching the Nightmare on Elm Street series through, this is where the slide begins. 4/10."
+      ],
+      "images": [],
+      "verdict": "The Dream Master traded everything Dream Warriors earned for a glossier, emptier product, and the franchise never fully recovered from that bargain.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/boStYG7jKdoIZTduiOOsUVknD13.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/eH9XCRkbpLq9gm1YiQGm66TYkZd.jpg"
+      }
+    },
+    {
       "id": 1787647592014,
       "slug": "jigsaw-review",
       "seoTitle": "Jigsaw Review (2017) | WretVision",
