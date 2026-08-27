@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1787857055273,
+      "slug": "halloween-kills-review",
+      "seoTitle": "Halloween Kills Review (2021) | WretVision",
+      "seoDescription": "Halloween Kills had one job: make Michael Myers terrifying again. It couldn't even manage that.",
+      "category": "movie",
+      "title": "Halloween Kills",
+      "year": 2021,
+      "director": "David Gordon Green",
+      "runtime": "105 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Halloween Kills had one job: make Michael Myers terrifying again. It couldn't even manage that.",
+      "body": [
+        "Halloween Kills (2021) is the middle chapter of David Gordon Green's rebooted trilogy, picking up the exact second Halloween (2018) left off, with Laurie Strode bleeding out in a truck while Haddonfield collectively loses its mind. The premise has real potential. A whole town turning on a monster, mob mentality warping good people into something ugly, Michael Myers as a force that corrupts everything around him. That's a genuinely interesting angle. The problem is the film gestures at these ideas constantly and then does absolutely nothing meaningful with them.",
+        "There are things that work here, and I won't pretend otherwise. Michael is brutal in 2021 in a way that feels earned, some of the kills are nasty and physical, and the hospital sequences have a decent charge of energy early on. The callbacks to the original 1978 film land better than they should. Anthony Michael Hall commits to Tommy Doyle with everything he has, even when the script is handing him some of the worst dialogue in the franchise. You feel for him even when you're wincing at his lines.",
+        "But the film collapses under its own weight almost immediately. The pacing is a disaster. Scenes repeat the same emotional beat over and over, characters make decisions so spectacularly stupid they feel less like people and more like bodies waiting to be arranged. The Evil Dies Tonight chant becomes unintentionally comedic through sheer repetition. And the ending, where the mob gets massacred and Michael just walks away again, wants to feel mythic and lands as hollow. It mistakes bleakness for depth and thinks cycling through carnage is the same as saying something.",
+        "Halloween Kills (2021) is not necessarily the worst Halloween sequel ever made, which is a low bar it barely clears. It is however genuinely bad in a way that stings because the bones of something worthwhile are visible the whole time. If you are working through the Halloween franchise or catching up before Halloween Ends, you will need to sit through it. I cannot tell you it is worth it on its own terms. Fans of the slasher genre who lived through Halloween: Resurrection will recognise the specific frustration of a film that wastes a good setup entirely. 5 out of 10, mediocre and forgettable despite its ambitions."
+      ],
+      "images": [],
+      "verdict": "Halloween Kills had the ideas and threw them all away for noise, and that is somehow more frustrating than if it had never tried at all.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/ir9eyz1mtgsohjvo7UYtqUfFuES.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/fuuZFPc8x6gQ8mLGoBp9vrmcQMT.jpg"
+      }
+    },
+    {
       "id": 1787734079520,
       "slug": "a-nightmare-on-elm-street-4-the-dream-master-review",
       "seoTitle": "A Nightmare on Elm Street 4: The Dream Master Review (1988) | WretVision",
