@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1787947198034,
+      "slug": "a-nightmare-on-elm-street-3-dream-warriors-review",
+      "seoTitle": "A Nightmare on Elm Street 3: Dream Warriors Review (1987) | WretVision",
+      "seoDescription": "Dream Warriors is the sequel that actually earned its place, and in 1987 it set a bar the Elm Street franchise never really cleared again.",
+      "category": "movie",
+      "title": "A Nightmare on Elm Street 3: Dream Warriors",
+      "year": 1987,
+      "director": "Chuck Russell",
+      "runtime": "96 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "Dream Warriors is the sequel that actually earned its place, and in 1987 it set a bar the Elm Street franchise never really cleared again.",
+      "body": [
+        "A Nightmare on Elm Street 3: Dream Warriors arrives two films into a franchise that was already showing signs of squandering its premise, and it course corrects in a way that feels almost miraculous. Directed by Chuck Russell and co-written by Frank Darabont and Wes Craven himself, this is the rare horror sequel that understands what made the original work and builds on it instead of just photocopying it. The setup is clever: the last surviving Elm Street children are committed to a psychiatric ward where their Freddy nightmares are being dismissed as delusion. That is genuinely smart genre writing. It gives the horror a second layer of dread, not just Freddy, but a world that will lock you up for telling the truth about him.",
+        "Bringing Heather Langenkamp back as Nancy Thompson, now working as a counsellor, is the move that makes the whole thing land. It would have been easy to treat her as a cameo or a passing-of-the-torch gesture, but the film commits to her. She carries real weight here, and Langenkamp plays the exhaustion and determination of someone who has been fighting this thing her whole life without making it feel performed. The ensemble of kids in the ward is strong too. Patricia Arquette in her film debut is magnetic, and the decision to give each character a unique power within their dreams is exactly the kind of creative swing this reviewer responds to. It could have been gimmicky. It is not.",
+        "The deaths in Dream Warriors are some of the best in the entire series. Freddy uses each victim's personal fears and weaknesses against them in ways that feel specific rather than random, and the practical effects work is genuinely impressive for 1987. The puppet sequences, the skeleton puppet fight especially, have a handmade charm that holds up far better than any digital effect could. There is atmosphere here too, real dread built in the corridors and quiet rooms of the ward before anything violent even happens. If I am reaching for a criticism, the film does lose a little momentum in its final act. The climax spreads itself across too many threads simultaneously and the resolution for Nancy feels rushed given how much emotional investment the film has built around her.",
+        "Compared to the original Nightmare on Elm Street or something like Hellraiser from the same era, Dream Warriors is not quite at that level of tightly controlled vision. But as sequels go, especially in the slasher genre where the drop-off is usually immediate and brutal, this one is a genuine achievement. It is entertaining from start to finish, it takes its mythology seriously, and it actually has something going on underneath the kills. A Nightmare on Elm Street 3: Dream Warriors from 1987 is the definitive entry in the franchise after the original, and honestly it makes an argument for being the better film on some nights. 8/10."
+      ],
+      "images": [],
+      "verdict": "Dream Warriors should have been the blueprint for every Elm Street sequel that followed, and the tragedy is that none of them listened.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/qbtZewU6EGvxi8yFVzwZ31NijLX.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/euXJlfeYSyrdkOoFQ9gtUG8OOhH.jpg"
+      }
+    },
+    {
       "id": 1787857055273,
       "slug": "halloween-kills-review",
       "seoTitle": "Halloween Kills Review (2021) | WretVision",
