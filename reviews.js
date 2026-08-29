@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1788010920948,
+      "slug": "insidious-the-last-key-review",
+      "seoTitle": "Insidious: The Last Key Review (2018) | WretVision",
+      "seoDescription": "Insidious: The Last Key has enough Lin Shaye to stay watchable, but the franchise is clearly running on fumes by 2018.",
+      "category": "movie",
+      "title": "Insidious: The Last Key",
+      "year": 2018,
+      "director": "Adam Robitel",
+      "runtime": "103 min",
+      "rating": "PG-13",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "Insidious: The Last Key has enough Lin Shaye to stay watchable, but the franchise is clearly running on fumes by 2018.",
+      "body": [
+        "Four films in and the Insidious series is starting to show its age in ways that are hard to ignore. The Last Key is a prequel focused entirely on Elise Rainier, the paranormal investigator played by Lin Shaye, and if there is one reason to sit through this film it is her. Shaye has always been the best thing about this franchise and giving her the lead was the right instinct. The film takes Elise back to her childhood home in Five Keys, New Mexico, where a new client happens to live, and where her troubled past with a violent father and a traumatic loss is waiting to be unpacked. It is a reasonable setup. The problem is what the film does with it.",
+        "Director Adam Robitel, who would go on to do Escape Room, shows he can build a mood when the film lets him. There are a handful of genuinely unsettling moments in the first half, particularly anything involving the locked door in the basement and the creature design for the key demon, which is a solid piece of practical and visual work. The idea of a monster that locks away voices and emotions is actually one of the more interesting concepts the franchise has produced. If the film had committed fully to that idea and followed it somewhere genuinely dark, you might have had something.",
+        "Instead it bottlenecks into the same recycled bag of tricks the series has been pulling since 2010. Jump scares with a loud sting. A ghost who turns out to be more sad than scary. A third act that scrambles to tie emotional knots that the script has not properly earned. The subplot involving Elise's nieces is underdeveloped and the two investigators from the earlier films, Tucker and Specs, are back doing their comedy relief routine which lands about half the time. The plot also goes to places that do not hold up once you start thinking about the timeline continuity with the original films. It is the kind of screenplay that works scene to scene but collapses when you step back.",
+        "Insidious: The Last Key is not a bad film in the way that actively wastes your evening, but it is absolutely a film that exists because the IP still had commercial value in 2018 rather than because anyone had a genuinely fresh story to tell. Lin Shaye deserved better material and she elevates what she has with real commitment. Fans of the series will find enough to hold onto. Everyone else will find a competent but forgettable horror entry that retreads familiar ground without the atmosphere or originality of the original Insidious. Worth a watch if you have already seen the others, but do not come in expecting it to surprise you."
+      ],
+      "images": [],
+      "verdict": "Insidious: The Last Key is a franchise running on goodwill and Lin Shaye carrying the whole thing on her back, and even she cannot make the recycled scares and shaky plot feel like more than a stopgap.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/6c9ti2JcR3dHyR3qFXoZqVMx0SH.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/q1r0QUf4UVTqtkxOSMnTD8RyTaL.jpg"
+      }
+    },
+    {
       "id": 1787947198034,
       "slug": "a-nightmare-on-elm-street-3-dream-warriors-review",
       "seoTitle": "A Nightmare on Elm Street 3: Dream Warriors Review (1987) | WretVision",
