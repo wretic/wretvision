@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1788097199907,
+      "slug": "vhs99-review",
+      "seoTitle": "V/H/S/99 Review (2022) | WretVision",
+      "seoDescription": "V/H/S/99 tries hard to recapture the found footage anthology magic, but trying hard and landing hard are very different things.",
+      "category": "movie",
+      "title": "V/H/S/99",
+      "year": 2022,
+      "director": "Various",
+      "runtime": "109 min",
+      "rating": "NR",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "V/H/S/99 tries hard to recapture the found footage anthology magic, but trying hard and landing hard are very different things.",
+      "body": [
+        "The V/H/S franchise has always lived or died by its segments, and V/H/S/99 knows that. Set in the grimy, lo-fi aesthetic of late nineties camcorder culture, the 2022 entry leans into the era hard, with grain and static and that particular kind of teenage recklessness that felt genuinely dangerous before the internet sanitised everything. On paper it should work. The wraparound framing is light, the directors bring varied sensibilities, and the commitment to the VHS visual language is consistent. It is a competent anthology in the way that a competent anthology can still leave you cold.",
+        "What works is spread thin. The segment Suicide Bid is probably the strongest, building genuine dread through claustrophobia and a solid performance that does not feel performed. There is a moment underground that actually got under my skin. Shredding has a fun punk-rock energy and some gory practical work that the franchise is known for, and it commits to its chaos in a way that feels alive. Those two segments justify sitting down with it. The rest of the film does not.",
+        "Here is the problem. None of the other segments land with any real impact, and when an anthology misfires on more than half its content, you start doing the maths on whether it was worth your evening. DREAM DRIVE feels like a concept that needed another draft. The finale, To Hell and Back, goes big and loses me completely once the practical charm runs out and the ambition outpaces the budget. And the whole thing just sort of ends. I watched this and had to remind myself what happened in it. That is not a good sign.",
+        "V/H/S/99 sits in the same frustrating space as V/H/S/94 before it, a try-hard entry from a franchise that clearly has passionate filmmakers attached but cannot quite pull the anthology format into a satisfying whole. If you are a completionist or a deep fan of found footage horror in the vein of the original V/H/S or ABCs of Death, there is enough here to chew on. But it is watchable in the forgettable sense, not the rewatchable sense. 6/10."
+      ],
+      "images": [],
+      "verdict": "V/H/S/99 has two decent segments rattling around inside a feature that cannot sustain them, and the fact that I had to look up what half of it contained tells you everything.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/1bOMmFtnykBmvhFcx8zdXO6bCAa.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/zLUeVsiJ4mKlqSI7cB7lnxCzSbb.jpg"
+      }
+    },
+    {
       "id": 1788010920948,
       "slug": "insidious-the-last-key-review",
       "seoTitle": "Insidious: The Last Key Review (2018) | WretVision",
