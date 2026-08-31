@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1788191902489,
+      "slug": "halloween-ends-review",
+      "seoTitle": "Halloween Ends Review (2022) | WretVision",
+      "seoDescription": "Halloween Ends doesn't just fumble the landing — it actively disrespects everything the trilogy built.",
+      "category": "movie",
+      "title": "Halloween Ends",
+      "year": 2022,
+      "director": "David Gordon Green",
+      "runtime": "111 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "Halloween Ends doesn't just fumble the landing — it actively disrespects everything the trilogy built.",
+      "body": [
+        "Halloween Ends (2022) had one job. Close out David Gordon Green's trilogy with some dignity. Give Michael Myers a sendoff worthy of the character, wrap up Laurie Strode's arc, and leave the audience with something that felt earned after three films of buildup. It does none of that. What we get instead is a strange, half-baked detour about a new character named Corey Cunningham, a loner who the film seems far more interested in than the actual villain on the poster. For a large chunk of the runtime, Michael is barely in it. In a Halloween film. The Shape is essentially a supporting character in his own finale.",
+        "There are a handful of things that work, and I'll give them their due. Jamie Lee Curtis is committed as always. Judy Greer is gone, wasted in the previous entry, but Curtis carries the emotional weight of Laurie with real conviction. Some of the early Haddonfield atmosphere is decent enough, and the film has a few visually competent moments that remind you Green can point a camera. The practical gore, when it shows up, is solid. But these are scraps. You're picking through rubble looking for something to hold onto, and the pickings are genuinely thin.",
+        "The Corey subplot is where the film loses me completely and never wins me back. The idea of exploring how evil spreads, how a community's fear and cruelty can corrupt someone, is not a bad concept on paper. But it needed its own film, not the final chapter of a legacy sequel trilogy. Shoehorning this into Halloween Ends means Michael gets sidelined, Laurie's story gets diluted, and the whole thing loses momentum fast. And then there's the ending. The way they kill Michael Myers here is genuinely disgraceful, not in a bold creative way, in a lazy, anticlimactic way that feels like the writers had no real idea what to do with the character they'd been building toward for two films. It is a bad ending. A genuinely bad one.",
+        "Halloween (2018) had real promise. It stripped things back, respected the source material, and gave Curtis something to work with. Halloween Kills was messy but at least swung hard. Halloween Ends lands with a thud so soft you almost miss it. Fans of the franchise deserve better than this. If you want a legacy sequel done right, go watch Halloween H20. If you want to see what happens when a trilogy forgets what made it work, Halloween Ends is right here waiting for you. A disappointing, disrespectful close to a series that started with genuine potential."
+      ],
+      "images": [],
+      "verdict": "Halloween Ends (2022) is a 4/10 and an embarrassment to Michael Myers, a finale so misguided it retroactively makes the whole trilogy feel like a waste of time.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/q06saepaXeBdkMibuN4R2fXmgIw.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/aTovumsNlDjof7YVoU5nW2RHaYn.jpg"
+      }
+    },
+    {
       "id": 1788097199907,
       "slug": "vhs99-review",
       "seoTitle": "V/H/S/99 Review (2022) | WretVision",
