@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1788268531752,
+      "slug": "bride-of-chucky-review",
+      "seoTitle": "Bride of Chucky Review (1998) | WretVision",
+      "seoDescription": "Bride of Chucky is where the franchise blinked first — trading genuine dread for winking campiness, and Chucky was never quite as scary again.",
+      "category": "movie",
+      "title": "Bride of Chucky",
+      "year": 1998,
+      "director": "Ronny Yu",
+      "runtime": "89 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Bride of Chucky is where the franchise blinked first — trading genuine dread for winking campiness, and Chucky was never quite as scary again.",
+      "body": [
+        "Bride of Chucky (1998) is the moment the Child's Play franchise made a choice. After three films of Chucky operating as a genuinely unnerving killer doll with a credible threat level, director Ronny Yu and writer Don Mancini decided to pivot hard into self-aware comedy horror. You can see the logic. The formula was running dry. Lean into the absurdity. But there is a real cost to that decision, and this film is where you start paying it.",
+        "What works here is Jennifer Tilly. She commits completely to Tiffany, and her energy is infectious in a way that makes the film far more watchable than it has any right to be. The practical doll work is still solid, the kills have some creativity to them, and there is a road trip structure that at least gives the film momentum when it needs it. Yu keeps things moving. It never drags. For a late nineties horror comedy it is competently assembled.",
+        "The problem is Chucky himself. The original films worked because Brad Dourif played that character with a genuine menace underneath the one liners. There was something unsettling coiled in there. Bride of Chucky amps the comedy so far forward that the creepiness gets buried. Chucky becomes a gag delivery machine. Tiffany as a concept is fun but her presence fundamentally changes the dynamic, and not always for the better. Two killer dolls bickering like a dysfunctional couple is a different film entirely from what this franchise started as.",
+        "For fans of self aware horror comedies in the vein of Scream or even Jason X, Bride of Chucky scratches a specific itch. It knows what it is and it commits. But if you came to this series for atmosphere and dread, this is where you start feeling the distance. It is watchable, it has its moments, and Tilly alone earns it some goodwill. But it is a clear step sideways for the franchise, and the tonal shift it introduced locked in a direction the series never fully walked back from."
+      ],
+      "images": [],
+      "verdict": "Bride of Chucky is a decent horror comedy that sacrifices everything that made Chucky actually frightening, and whether that trade was worth it depends entirely on what you wanted from this franchise in the first place.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/yaIPNOcC7ZRuwH3maNwP9qzIo5G.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/fLTd0VxpijUt6Hm1QM2ehLpWPeu.jpg"
+      }
+    },
+    {
       "id": 1788191902489,
       "slug": "halloween-ends-review",
       "seoTitle": "Halloween Ends Review (2022) | WretVision",
