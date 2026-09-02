@@ -10,6 +10,42 @@
 
 const REVIEWS = [
     {
+      "id": 1788352732647,
+      "slug": "jason-x-review",
+      "seoTitle": "Jason X Review (2001) | WretVision",
+      "seoDescription": "Jason in space sounds like a joke, and it kind of is, but Jason X commits so hard to the absurdity that it almost earns it.",
+      "category": "movie",
+      "title": "Jason X",
+      "year": 2001,
+      "director": "James Isaac",
+      "runtime": "91 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Sci-Fi"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "Jason in space sounds like a joke, and it kind of is, but Jason X commits so hard to the absurdity that it almost earns it.",
+      "body": [
+        "Let me be upfront about something. I actually like the idea of Jason X. I know that puts me in a minority. I know the mainstream horror community largely treats this 2001 entry in the Friday the 13th franchise as a punchline, the moment the series finally ate itself. But here is the thing about punchlines: sometimes they are funny. Sometimes the joke lands. And Jason X, for all its genuine failures and there are real ones worth getting into, lands more often than people give it credit for. It is a bad film. It is also a surprisingly entertaining one. Those two things can be true at the same time, and pretending otherwise would be dishonest reviewing.",
+        "The setup is pure pulp sci-fi. Jason Voorhees, having been captured by the military in 2008, is cryogenically frozen after a failed containment attempt and ends up drifting in space, only to be discovered four centuries later by a group of student researchers aboard a spacecraft. The film does not spend a lot of time justifying this. It does not particularly want to. Director James Isaac, working from a script by Todd Farmer, knows exactly what kind of film this is and calibrates accordingly. This is not trying to be Alien. It is trying to be a gleefully stupid slasher with enough energy to make the stupidity feel like a choice rather than incompetence.",
+        "The cast is largely anonymous, which is partly the point. Friday the 13th films have never been known for their character writing, and Jason X does not break that tradition. You have the resourceful woman, the useless authority figure, the horny students, and a few token personalities scattered around to give Jason something to work through. Lexa Doig as Rowan stands out simply by doing more with her screen time than the material asks for. Kane Hodder returns as Jason for the fourth consecutive time, and whatever you think of the film around him, Hodder is doing his thing with total commitment. There is physicality to his Jason that later castings never quite replicated. He makes the mask feel inhabited rather than worn.",
+        "The kills are where Jason X earns back serious goodwill. The liquid nitrogen face smash, where Jason dunks a woman's frozen head into a counter and shatters it, is genuinely creative gore work, and it plays to the strengths of practical effects done with a sense of timing and wit. This is the kind of kill that horror fans quote for a reason. It is not just violent, it is funny in exactly the way slasher horror can be when it has a sense of itself. The film has a few moments like this, where the genre awareness creates a kind of winking pleasure. The holographic Camp Crystal Lake sequence, where two Android characters simulate ditzy camp victims to distract Jason, is cheap and silly and completely works.",
+        "The pacing is a real problem though, and I am not going to pretend otherwise. The middle section of the film drags. There is a stretch of roughly thirty minutes where the film loses its momentum almost entirely, cycling through corridor chases and minor character deaths without building much tension or doing anything interesting with the space setting. The spacecraft itself looks cheap even by the standards of the budget, which was reportedly around fourteen million dollars, and the CGI effects have not aged well at all. Shots of the ship moving through space look like an early PlayStation cutscene. This is where the film's low-budget origins actually work against it rather than adding charm.",
+        "Uber Jason, the metal-plated regenerated version of the character that arrives in the third act, is the film's most divisive element and I land somewhere in the middle on it. Visually it is interesting. The idea of Jason physically evolving, being rebuilt by nanobots into something more monstrous, is the kind of swinging creative choice I generally respect. The execution is inconsistent. The suit looks good in certain shots and noticeably rigid in others, and the final confrontation does not live up to the design concept. It promises something operatic and delivers something functional. Not a disaster but definitely a missed opportunity to go fully over the top at exactly the moment the film needed it most.",
+        "Comparing Jason X to something like Event Horizon or even Leprechaun 4 in Space is instructive. Event Horizon takes the horror in space concept seriously and is genuinely frightening for it. Leprechaun 4 is a cynical cash grab with no soul. Jason X sits somewhere between those two poles, closer to the latter in craft but with more genuine entertainment value than the comparison might suggest. Todd Farmer's script actually has some self aware jokes that land, which puts it ahead of many Friday the 13th sequels that take themselves too seriously without the filmmaking quality to back it up. The franchise was already running on fumes by this point. At least this entry tried something different.",
+        "The franchise context matters here. By 2001, the Friday the 13th series had been running for twenty years across nine mainline entries, each progressively more desperate for a new angle. Jason X is the most formally experimental entry in the series outside of A New Beginning, and while that is a low bar, it is worth noting. This came out a year before Freddy vs. Jason would temporarily revive mainstream interest in the character, and in many ways it reads like a creative pressure valve, a film where the producers gave the writers permission to be weird because nobody expected much anyway. That freedom produces some of the film's best moments and also its most undisciplined ones.",
+        "So here is where I land. Jason X is not a good film by most reasonable measures. The pacing sags, the CGI is embarrassing, and the third act does not deliver on its own setup with enough conviction. But it has a reckless energy I find genuinely appealing. It commits to its absurd premise instead of apologizing for it. It has real practical effects highlights. It has a sense of humor about itself without tipping into outright parody. If you go in expecting Friday the 13th in space and nothing more, you will find a film that delivers exactly that with occasional flashes of creativity that surprise you. 6.5 out of 10, and I will not be talked down from it."
+      ],
+      "images": [],
+      "verdict": "Jason X is a dumb film that knows it is dumb and mostly uses that self-awareness well, which puts it above half the franchise and earns it a genuinely watchable 6.5 out of 10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/ggOND0hfoE0f3K857joSzEeIchb.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/fR5Hkf4OH6aLExl2qP2ucMV2Xdt.jpg"
+      }
+    },
+    {
       "id": 1788268531752,
       "slug": "bride-of-chucky-review",
       "seoTitle": "Bride of Chucky Review (1998) | WretVision",
