@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1788525337454,
+      "slug": "rings-review",
+      "seoTitle": "Rings Review (2017) | WretVision",
+      "seoDescription": "Rings (2017) is a horror sequel that forgot to bring the horror, the tension, or any good reason to exist.",
+      "category": "movie",
+      "title": "Rings",
+      "year": 2017,
+      "director": "F. Javier Gutiérrez",
+      "runtime": "102 min",
+      "rating": "PG-13",
+      "genres": [
+        "Horror"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "Rings (2017) is a horror sequel that forgot to bring the horror, the tension, or any good reason to exist.",
+      "body": [
+        "There is a specific kind of bad that is worse than outright terrible. Outright terrible at least gives you something to react to. Rings, the 2017 sequel to The Ring and The Ring Two, is the other kind of bad. It is the slow, grey, joyless kind. The kind where you keep checking how much time is left not because you are scared but because you are bored. I will be honest with you upfront: I could not make myself sit through the whole thing. I watched enough to know what I was dealing with, and what I was dealing with was a film that had no idea why it existed beyond the fact that the IP still technically had name recognition.",
+        "The Ring, Gore Verbinski's 2002 American remake of Hideo Nakata's Ringu, worked because it understood dread. It understood that the image of a pale girl climbing out of a television set is only as frightening as the atmosphere surrounding it. It built that atmosphere carefully, with cold Pacific Northwest light and a creeping sense of wrongness that got under your skin before anything explicitly horrifying had even happened. Naomi Watts was genuinely great in it, grounded and reactive, and the film trusted its own mythology enough to let it breathe. Rings does not have any of that. It looks like it was shot under fluorescent office lighting and edited by someone who had read a summary of what made the original work but had never actually felt it.",
+        "The setup here involves a college student named Holt, played by Alex Roe, who gets pulled into a subculture around the cursed tape. His girlfriend Julia, played by Matilda Anna Ingrid Lutz, goes looking for him and ends up watching the tape herself. There is also Gabriel, a professor played by Johnny Galecki, who has been studying the tape and essentially running experiments with it on students. On paper, the idea of an academic underground built around Samara's curse has some potential. A secret society of people passing the tape along, watching it, copying it, surviving by making someone else watch it. That could be genuinely unsettling. The film does almost nothing interesting with it.",
+        "Lutz is not bad exactly, but she is not given anything to work with. Her performance is earnest and committed in a way that the film does not deserve. You can tell she is trying to build something out of the material and the material keeps refusing to meet her halfway. Roe is largely inert, which might be a direction problem as much as a performance problem, but the result is that you never once care whether these two people survive or stay together. Vincent D'Onofrio shows up later in the film playing a blind man connected to Samara's history and he at least brings some presence to the room, but by the time he arrives the film has already lost whatever thread it was pulling on.",
+        "F. Javier Gutierrez directs this, and from what I saw there is no distinctive vision here at all. Nothing in the frame feels chosen. Nothing in the pacing feels intentional. The scares are almost entirely jump scares, which is already a strike against it, but they are not even particularly well constructed jump scares. There is no buildup, no misdirection, no craft to the timing. Things just suddenly get loud. The original Ring used Samara sparingly and kept her movements strange and wrong in a way that felt genuinely inhuman. Here she is just kind of present, which removes almost everything that made her frightening.",
+        "The mythology expansion is where Rings tries hardest and fails most completely. There is a backstory involving a church, a blind man, and something buried underneath it all, and the film keeps peeling back layers as though it is building toward something revelatory. It is not. The revelations are predictable, the twist you see arriving from so far away that by the time it lands you have long since stopped caring. The Ring worked in part because its mythology felt like it had weight and internal logic. The cursed tape felt like something that had existed in the world, that had a history. The mythology in Rings feels like it was constructed to fill a runtime.",
+        "Pacing is a disaster. The first act drags without building tension, the second act drags while pretending to investigate something, and the third act rushes through a resolution that does not earn any of the dramatic weight it reaches for. Bloat is one of my genuine pet peeves and Rings is full of it. Scenes go on past their point. Conversations happen that feel like they are there to get the runtime over a certain threshold rather than because they serve the story. There is a version of this film that is 85 minutes, lean and mean, that might have been a passable genre entry. What we got is not that.",
+        "The CGI is also a problem. Samara's movements, the imagery around the tape itself, the moments where the film reaches for something visually unsettling, all of it is rendered digitally in a way that looks cheap and unconvincing. Compare that to the original's practical commitment to making things look physically wrong, the grain, the texture, the way the tape footage felt genuinely corrupted, and you understand immediately what has been lost in the seventeen years between the two films. Budget is one thing. Creative choices are another. Rings had enough money to do better.",
+        "So here is where I land. Rings (2017) is not so bad it is interesting. It is not so bad it made me angry. It is just a hollow retread that takes the shape of the first American film without any of its soul, its atmosphere, or its intelligence. Sequels that exist to extend a franchise rather than say something new are a pet peeve of mine, and this is a textbook example. A 4 out of 10, and honestly that might be generous for a film I could not bring myself to finish. If you want the real thing, go back to Verbinski's 2002 original or Nakata's Ringu and leave this one well alone."
+      ],
+      "images": [],
+      "verdict": "Rings (2017) is a franchise on life support pretending to have a pulse, and no amount of mythology expansion can resuscitate something that forgot to be scary in the first place.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/yp4CDOVpVmNwiPoZKQeFCpW8CFo.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/a4r8xcRwTgKIUKdWtxFXyxTZLeN.jpg"
+      }
+    },
+    {
       "id": 1788439304879,
       "slug": "saw-ii-review",
       "seoTitle": "Saw II Review (2005) | WretVision",
