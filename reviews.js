@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1788608633835,
+      "slug": "friday-the-13th-the-final-chapter-review",
+      "seoTitle": "Friday the 13th: The Final Chapter Review (1984) | WretVision",
+      "seoDescription": "It called itself the final chapter. We all know how that went.",
+      "category": "movie",
+      "title": "Friday the 13th: The Final Chapter",
+      "year": 1984,
+      "director": "Joseph Zito",
+      "runtime": "91 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "It called itself the final chapter. We all know how that went.",
+      "body": [
+        "Friday the 13th: The Final Chapter came out in 1984 with one job: end the franchise. Paramount had taken enough heat for the series, critics hated it, moral guardians were losing their minds, and the plan was to kill Jason Voorhees for good and close the book. Director Joseph Zito was brought in to deliver something with a bit more weight than the previous entries, Tom Savini returned specifically to kill the monster he helped create, and the marketing leaned hard into the word 'final.' It was sincere. They meant it. And then Jason X happened forty years later, so take that sincerity for what it's worth. But standing alone, as a piece of slasher cinema from a franchise that was already running on formula by its fourth outing, The Final Chapter is a competent and occasionally effective horror film that does exactly what it sets out to do, no more, no less.",
+        "Context matters here. By 1984 the slasher genre was already starting to eat itself. Halloween had redefined horror in 1978, Friday the 13th in 1980 rode that wave, and by the time you hit the fourth film you are deep in diminishing returns territory. The audience knew the beats. Kill some teenagers, get to the final girl, kill Jason, roll credits. The Final Chapter doesn't break that formula. It doesn't pretend to. What it does is execute the formula with a bit more craft and a lot more gore than Friday the 13th Part III managed. Zito keeps things moving and doesn't linger on the filler too long, which immediately puts this above some of the weaker entries in the series. That's a low bar, sure, but credit where it's due.",
+        "The cast is where things get interesting in a franchise context. You've got Corey Feldman as Tommy Jarvis, and he is genuinely the most memorable human element in the entire film. Feldman plays the kid with real energy, a horror obsessive who builds masks and models and ends up being the one who actually figures out how to get to Jason. His arc across the third act is the closest this franchise ever gets to actual character development in its early run. Kimberly Beck carries the final girl role with enough presence to feel like a real person and not just a prop waiting to survive, and that matters in a genre where final girls were increasingly becoming interchangeable. The rest of the cast is functional. They exist to be killed. They know it. You know it. The film knows it.",
+        "Tom Savini's return for the effects work is the single biggest selling point of The Final Chapter from a craft perspective. He had done the original Friday the 13th and walked away, and coming back to finish what he started gave him a clear motivation to push things. The kills here are creative, practical, and in some cases genuinely memorable. The corkscrew kill, the banana peel slip into the door, Jason taking a machete to the face as his body slides down the blade toward Tommy's hands. These moments are the film at its best, and they hold up because they are built with real materials and real craft. No CGI softening the edges. No quick cut to hide a bad effect. Savini puts it on screen and dares you to look away. This is exactly what practical effects can do when someone who cares is running the department.",
+        "Zito's direction is solid without being distinctive. He keeps the camera functional, builds reasonable tension in the right places, and understands that pacing is the difference between a watchable slasher and a slog. The Final Chapter doesn't drag the way Part III did, and that alone makes it more rewatchable. The lakeside setting is used well, the woods feel genuinely isolating, and Zito has enough control to let a scene breathe before going for the kill. What he doesn't have is a real visual identity. Compare this to something like Halloween where Carpenter's framing is doing half the work, and you can feel the gap. Zito is professional but anonymous. He delivers the film that was asked for, and that's fine, but it means the craft ceiling stays capped.",
+        "Pacing is where The Final Chapter earns its modest reputation over some of its siblings. The setup is quick. The kills are spread with reasonable rhythm. There is no twenty minute stretch where you are watching people play board games and joke around with nothing happening, which was a real problem in Part III. The Final Chapter respects your time, more or less. The middle section sags slightly when the focus shifts to the group of older teenagers and away from the Jarvis family, because those characters are thin even by slasher standards. You can rank them by how likely they are to survive within ten minutes of meeting them. That predictability isn't unique to this film but it does mean a chunk of the runtime is on autopilot.",
+        "The finale is the film's strongest section and the reason it still gets talked about. Tommy's decision to shave his head to look like young Jason, to get inside the monster's head and buy himself enough time to deliver the killing blow, is one of the most genuinely odd and committed choices in the franchise's history. Feldman plays the post-kill scene with something close to real disturbance, and the implication that Tommy has been broken by the encounter is the kind of ending that could have been genuinely bold if anyone had followed through on it. The sequel eventually picked up Tommy's story but softened what was clearly being set up here. The original ending as delivered has weight. It lands. And then the franchise moved on and quietly unwound it.",
+        "Compared to other entries in the Friday the 13th series, The Final Chapter sits comfortably in the upper tier. It is better than Part II, significantly better than Part III, and it has a better cast than most of the later entries. Whether it competes with the original 1980 film is debatable. The original had novelty and genuine tension built on a mystery that no longer exists. The Final Chapter is working without that advantage and compensates with better effects and a more engaging protagonist. Against the broader slasher landscape of 1984, it is a solid mid-tier genre film. Nothing that was pushing horror forward the way A Nightmare on Elm Street was doing the same year, but a confident and technically capable piece of work within its own lane.",
+        "Friday the 13th: The Final Chapter is a film that does its job and mostly stops there. The kills are inventive and Savini's practical effects are the real star of the picture. Corey Feldman gives the franchise its most interesting human performance up to this point. Zito keeps things moving with enough discipline to avoid the padding that dragged down earlier entries. But there is nothing here that transcends the formula, nothing that makes you think about it the next day, and the 'final chapter' promise is obviously hollow in retrospect. It is a competent and occasionally impressive slasher that delivers the goods for genre fans and offers relatively little to everyone else. Fine for what it is, and what it is has a ceiling."
+      ],
+      "images": [],
+      "verdict": "The kills are great, Feldman is genuinely good, and calling it the final anything is the funniest joke the franchise ever told, but fine, 6.5/10, it earns its cult reputation without ever threatening to exceed it.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/1J7zudfR3VLPwAf9lK5YPfSu0n6.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/2bbEE2aLu47unsPJwS57UZW0YF4.jpg"
+      }
+    },
+    {
       "id": 1788525337454,
       "slug": "rings-review",
       "seoTitle": "Rings Review (2017) | WretVision",
