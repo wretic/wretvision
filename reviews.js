@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1788696091185,
+      "slug": "vhs-review",
+      "seoTitle": "V/H/S Review (2012) | WretVision",
+      "seoDescription": "V/H/S is a filthy, scrappy anthology that gets under your skin more than it has any right to.",
+      "category": "movie",
+      "title": "V/H/S",
+      "year": 2012,
+      "director": "Various",
+      "runtime": "116 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "V/H/S is a filthy, scrappy anthology that gets under your skin more than it has any right to.",
+      "body": [
+        "Anthology horror is a format that lives and dies on its weakest entry. Throw five or six directors into a room, give them a loose connective tissue, and hope the whole thing holds together long enough to justify the runtime. V/H/S from 2012 does not always hold together. But when it works, it really works, and the moments that land hit hard enough to carry the film across the finish line. This is found footage horror made by people who clearly love the genre and wanted to push it somewhere grittier and nastier than the Paranormal Activity conveyor belt had been taking it.",
+        "The framing device involves a group of criminals breaking into a house and finding a dead man slumped in front of a bank of static televisions. They start watching the tapes. It is a simple setup and it does not overstay its welcome, which is exactly what a framing device should do. The problem is that the criminals themselves are genuinely unpleasant to spend time with, and not in an interesting way. They are aggressive, dim, and hard to root for. Some people will say that is the point. Maybe. But it makes the stretches between tapes feel like a chore rather than a breather.",
+        "The directing lineup is what gives this film its identity. Adam Wingard, David Bruckner, Ti West, Glenn McQuaid, Joe Swanberg, and the collective known as Radio Silence all contribute segments. These are not household names to most audiences in 2012, but to anyone paying attention to the horror underground at the time, this is a murderers row. The fact that they were given genuine creative freedom shows in every segment. Each one has a distinct texture, a distinct rhythm, a distinct sense of what it is trying to do. That is both the strength and the weakness of the anthology format.",
+        "David Bruckner's segment, Amateur Night, is where the film announces itself. Three guys with a hidden camera in a pair of glasses pick up women at a bar, and what follows is one of the most genuinely unsettling creature horror sequences in found footage history. The creature design is practical and deeply strange, the escalation is relentless, and the final moments are the kind of thing you cannot unsee. It commits fully to its twist and does not blink. This is the segment that people remember and talk about, and rightfully so. It sets a bar that the rest of the film spends its runtime trying to match.",
+        "Ti West's contribution, Second Honeymoon, is the outlier that will divide people most sharply. West is a filmmaker obsessed with slow burn and deliberate pacing, and that approach feels slightly at odds with an anthology format where momentum matters. There is craft here, absolutely, and the payoff lands with real impact, but getting there requires patience that not every viewer will bring to it. Knowing it is a Ti West segment helps, because you understand intellectually that the stillness is intentional. Without that context, it might read as the film losing steam at a critical moment.",
+        "The Sick Thing That Happened to Emily When She Was Younger from Joe Swanberg takes a different structural approach entirely, playing out as a series of video calls between a woman and her long distance boyfriend. It is inventive and claustrophobic in a completely different way from the other segments, and the reveal is twisted enough to earn genuine discomfort. What keeps it from being great is that the acting feels slightly stiff in places, which is a problem when the format is this intimate. Found footage horror depends on naturalism, and when you can sense someone performing rather than living in the moment, the illusion cracks.",
+        "Radio Silence closes the film with 10/31/98, a Halloween party gone very wrong, and it is a strong note to end on. The practical effects work in this segment is inventive and chaotic, and the momentum is exactly what the film needs after some of the slower middle sections. There is genuine energy here, a sense of giddy escalation that leans into the gory absurdity without losing the horror entirely. It is the segment that feels most like a group of friends who love making scary things and got to do exactly that. That enthusiasm comes through on screen.",
+        "Compared to something like Trick r Treat, which is probably the gold standard for anthology horror in the modern era, V/H/S is rougher and less polished. That roughness is partly the point, and in the best moments it works in the film's favour, giving everything a raw, unfiltered quality that feels genuinely dangerous. But Trick r Treat has a tightness and a connective elegance that V/H/S cannot match. The found footage conceit, used this aggressively across multiple segments, also starts to strain by the end. The format is genuinely effective in the right hands, but used this repeatedly it begins to feel like a limitation as much as a choice.",
+        "V/H/S is not a perfect film and it is not trying to be. What it is trying to be is a mean, nasty, inventive horror anthology that takes the found footage format somewhere new, and for the most part it succeeds. The quality variation between segments is real and worth acknowledging, but the highs are high enough to make the whole thing worth sitting through. If you have any affection for low budget horror with genuine ambition and some genuinely effective practical gore, this delivers. It sits comfortably alongside the better horror anthology work of the 2010s and holds up better than a lot of its contemporaries. 7/10, a strong recommendation for genre fans with the caveat that your mileage will vary depending on which segment hits your specific nerve."
+      ],
+      "images": [],
+      "verdict": "V/H/S is uneven by design but the peaks are vicious enough to make the valleys worth crossing.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/xVGfCaTwVdZt3lFqtOVhTDqmG58.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/xAC9kXLxUHpdCkISgYcLzYrxIQR.jpg"
+      }
+    },
+    {
       "id": 1788608633835,
       "slug": "friday-the-13th-the-final-chapter-review",
       "seoTitle": "Friday the 13th: The Final Chapter Review (1984) | WretVision",
