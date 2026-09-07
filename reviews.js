@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1788789911500,
+      "slug": "insidious-chapter-3-review",
+      "seoTitle": "Insidious: Chapter 3 Review (2015) | WretVision",
+      "seoDescription": "Insidious Chapter 3 is more of the same, and depending on your patience for that, it's either reassuring or deflating.",
+      "category": "movie",
+      "title": "Insidious: Chapter 3",
+      "year": 2015,
+      "director": "Leigh Whannell",
+      "runtime": "97 min",
+      "rating": "PG-13",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Insidious Chapter 3 is more of the same, and depending on your patience for that, it's either reassuring or deflating.",
+      "body": [
+        "Prequels are a gamble. You already know the world survives, which means the tension has a ceiling. Insidious Chapter 3, released in 2015 and directed this time by Leigh Whannell stepping up from the writer's chair, is a prequel to the first two films and centres on a completely new family. New protagonist, new tragedy, same Further. The gamble partially pays off. By distancing itself from the Lambert storyline, the film buys itself a little breathing room to try something slightly different. Whether it uses that room wisely is the real question.",
+        "The setup is genuinely solid. Quinn Brennan, played by Stefanie Scott, is a teenager grieving her dead mother and convinced she can make contact with her. She approaches psychic Elise Rainier, played once again by Lin Shaye, asking for help. Elise is retired at this point, rattled by her own demons, and turns Quinn away. That decision has consequences. Quinn, still reaching out on her own, attracts the wrong kind of attention from the Further, and things go badly from there. It is a clean, emotionally grounded premise. The grief angle is handled with more care than you might expect from a franchise horror entry.",
+        "Lin Shaye is the engine of this film and the reason it works at all. She has always been the quiet backbone of the Insidious series, but here she is finally front and centre, and she earns every second of it. Shaye plays Elise as a woman who has genuinely been broken by what she has seen, not as a spooky exposition machine. There is weight to her reluctance, and when she eventually steps back into the fight, it feels like something is actually at stake. She is doing real character work in a genre that rarely rewards it.",
+        "Leigh Whannell behind the camera is competent but you can feel the training wheels. He knows this world inside out as a writer, and that familiarity translates into a film that hits its marks reliably. But James Wan's eye is missing. Wan has a particular talent for building spatial dread, for making you feel the geometry of a room as a threat. Whannell composes cleanly enough but the setpieces lack that coiled, architectural tension. The house feels like a location rather than a living thing. That is not a fatal flaw, but it is a noticeable one once you have spent two films in Wan's hands.",
+        "The horror itself is a mixed bag. There are genuinely effective sequences here. Quinn's first paralysis scene in her apartment, unable to move while something closes in, is well constructed and genuinely unsettling. The Further sequences have the right visual grammar, strange and cold and wrong in the way they should be. But the film also leans on jump scares more than the first two did, and several of them are telegraphed badly. You can feel the film grasping for shock when it has not done enough groundwork to earn real dread. The ratio of atmosphere to cheap fright tilts slightly in the wrong direction.",
+        "Dermot Mulroney plays Quinn's father Sean, and he is fine without being memorable. He is doing the concerned parent role that the franchise requires and doing it adequately. The supporting cast including Whannell and Angus Sampson reprising their ghost hunters is there for comic relief and light connective tissue. Their presence ties this back to the original films without demanding you remember everything. It is functional. Tucker and Specs have never been the reason to watch any of these films, but they never actively drag things down either. Background noise with a purpose.",
+        "Pacing is where Chapter 3 loses some ground. The first act is patient in a way that is occasionally too patient. Quinn's accident, a brutal and effective sequence involving a car, happens before the horror escalates, and the film uses her physical recovery as a vessel for the supernatural threat. That is a clever structural choice. But the middle section drags. There is a stretch where the film is clearly marking time between setpieces, filling space rather than building anything. You feel it. By the time the third act arrives, you are ready for it more out of restlessness than genuine excitement.",
+        "As a comparison point, the first Insidious film still stands as the high watermark of this franchise. That film had a lean 103 minutes, a deeply committed central performance from Rose Byrne, and a final act that genuinely unsettled people. Chapter 2 expanded the mythology in interesting ways. Chapter 3 consolidates without expanding. It answers questions about Elise's backstory that are worth answering, but it does not push the mythology anywhere genuinely new. Fans of the series will find enough to appreciate. If you are coming to this fresh, the 2010 original is still the entry point worth your time first.",
+        "Insidious Chapter 3 is a solid franchise entry that holds the standard of the first two well enough without clearing any new bar. It earns its existence through Lin Shaye's performance and a premise rooted in real grief rather than pure mechanics. The direction is capable if not inspired, the scares are inconsistent, and the pacing has slack in the middle that a tighter edit would have fixed. But it is watchable, it respects the world it is playing in, and it has more soul than most studio horror sequels bother to muster. The formula is becoming familiar though. You can feel it calcifying. 7/10."
+      ],
+      "images": [],
+      "verdict": "Insidious Chapter 3 is a respectful, Lin Shaye led entry that holds the line without pushing it, and that is both its quiet strength and the thing that keeps it from being anything more.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/iDdGfdNvY1EX0uDdA4Ru77fwMfc.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/1fpwEe2GvNjAq2MN2xxdifNZLBT.jpg"
+      }
+    },
+    {
       "id": 1788696091185,
       "slug": "vhs-review",
       "seoTitle": "V/H/S Review (2012) | WretVision",
