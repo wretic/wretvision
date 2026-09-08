@@ -10,6 +10,42 @@
 
 const REVIEWS = [
     {
+      "id": 1788871361189,
+      "slug": "seed-of-chucky-review",
+      "seoTitle": "Seed of Chucky Review (2004) | WretVision",
+      "seoDescription": "Seed of Chucky (2004) is where the franchise officially stopped being horror and just became a comedy sketch with knife kills.",
+      "category": "movie",
+      "title": "Seed of Chucky",
+      "year": 2004,
+      "director": "Don Mancini",
+      "runtime": "87 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Seed of Chucky (2004) is where the franchise officially stopped being horror and just became a comedy sketch with knife kills.",
+      "body": [
+        "There's a version of Seed of Chucky that works as a bold creative swing. A self-aware, meta horror comedy that winks at the audience while still delivering the goods. Don Mancini clearly had ambitions here, and you can see them in almost every frame. The problem is ambition without discipline gives you a film that's mostly gags, occasionally punctuated by kills, with almost no horror whatsoever. By 2004, the Child's Play franchise had been drifting away from genuine dread for a while. Seed of Chucky is where it fully commits to the drift and never looks back.",
+        "Context matters here. The original Child's Play from 1988 was a legitimately unsettling film. The concept of a murdered serial killer's soul trapped inside a children's doll had genuine menace. Tom Holland directed that first film with real craft and Karen Black's performance as Karen Barclay grounded it in something human and frightening. Child's Play 2 kept enough of the threat alive. By the third installment things were already slipping. Then Bride of Chucky in 1998 made Jennifer Tilly a full co-star alongside Brad Dourif and leaned into camp. That film still had teeth occasionally. Seed of Chucky is what happens when you remove the teeth entirely and replace them with punchlines.",
+        "Don Mancini writes and directs here, and it's his directorial debut after writing every film in the series from the start. You have to respect the ownership he has over this material. He knows these characters better than anyone alive. But knowing your characters and knowing what to do with them are two different skills. Mancini leans so hard into parody that the film essentially becomes a spoof of itself. There are moments where you can see a more interesting film trying to break through, and then the script pivots to another joke and the moment is gone.",
+        "The central hook this time around is Glen or Glenda, the child of Chucky and Tiffany, who discovers their parents through a news segment and travels to Hollywood to find them. Glen is voiced by Billy Boyd, and that casting choice tells you everything about the tone Mancini is chasing. Boyd plays the character with a kind of gentle confusion that's charming enough on its own terms, but Glen as a concept is more interesting in theory than in execution. The gender identity element, Glen shifting between Glen and Glenda, feels genuinely ahead of its time for a 2004 horror comedy, but the film never goes anywhere meaningful with it. It's used more as a comedic device than an actual character arc.",
+        "Jennifer Tilly playing a fictionalized version of Jennifer Tilly alongside voicing Tiffany is probably the most committed performance in the film. She's clearly having an absolute blast and there's something genuinely funny about watching her navigate both roles simultaneously. Tilly understands exactly what kind of film she's in and pitches herself accordingly. Brad Dourif as Chucky is reliable as always because Dourif could do this in his sleep at this point. The voice work is sharp, the one liners land more often than not. But even Dourif sounds like he's doing comedy sketches rather than playing a character with any menace behind him.",
+        "The kills in Seed of Chucky are actually a genuine bright spot and one of the few areas where the film earns something close to praise. Mancini stages several of them with real creativity and a commitment to practical effects that you can appreciate even when the surrounding film is falling flat. The Britney Spears cameo kill is ridiculous in the best possible way. Redman's fate is absurd but executed with enough energy that it lands. These sequences feel like the work of someone who genuinely loves genre filmmaking and wants to deliver the goods on a basic craft level. The problem is they're islands of entertainment in a film that otherwise isn't working as horror at all.",
+        "Pacing is a real issue. The film runs at about 87 minutes which should be lean and efficient, but it doesn't feel that way. Scenes that should snap by drag because the comedy isn't landing consistently enough to carry the weight. The Hollywood satire angle, with the film within a film about Chucky the doll being made into a movie, is a concept that should work better than it does. It feels half developed, like Mancini had the idea but didn't push it far enough to become genuinely biting. Compare this to something like Wes Craven's New Nightmare from 1994, which used a similar meta approach and actually had something to say about horror filmmaking and the nature of fear. Seed of Chucky just points at Hollywood and shrugs.",
+        "What frustrates me most about Seed of Chucky is that the franchise had options here. You could go full comedy and commit so completely that it becomes a cult classic on those terms alone. You could swing back toward genuine horror and surprise everyone who'd written the series off. Instead the film sits in a comfortable middle ground where it's neither funny enough to be a great comedy nor scary enough to function as horror. It's watchable, I want to be clear about that. You won't suffer through it. But you also won't remember much of it three days later beyond the occasional kill and Tilly's double performance.",
+        "Seed of Chucky is a 5 out of 10 and I mean that without cruelty. It's not incompetent. It's not insulting. It's a franchise that has fully lost the plot in terms of what made the original work, replaced genuine dread with self aware comedy, and delivered something that fans of the series will sit through once and casual horror viewers will find baffling. If you're coming to this wanting horror, go back to the 1988 original. If you want a horror comedy with actual teeth, Bride of Chucky does what this is attempting but with more confidence and better results. Seed of Chucky is a curiosity. It has its moments. But the horror is essentially gone, and without the horror, Chucky is just a rude doll with a knife and some decent one liners."
+      ],
+      "images": [],
+      "verdict": "Seed of Chucky (2004) is proof that knowing your characters isn't the same as knowing what they're for, and this franchise stopped being scary so gradually that by 2004 it forgot to be scary at all.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/vd9K93gQ9whMKjXzADZanxWpIXM.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/eZOt0qAmxwCXyJHLgEIEKdjQVM8.jpg"
+      }
+    },
+    {
       "id": 1788789911500,
       "slug": "insidious-chapter-3-review",
       "seoTitle": "Insidious: Chapter 3 Review (2015) | WretVision",
