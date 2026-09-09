@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1788958161322,
+      "slug": "friday-the-13th-a-new-beginning-review",
+      "seoTitle": "Friday the 13th: A New Beginning Review (1985) | WretVision",
+      "seoDescription": "The one where Jason isn't even Jason. A New Beginning is the odd one out, and it knows it.",
+      "category": "movie",
+      "title": "Friday the 13th: A New Beginning",
+      "year": 1985,
+      "director": "Danny Steinmann",
+      "runtime": "92 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "The one where Jason isn't even Jason. A New Beginning is the odd one out, and it knows it.",
+      "body": [
+        "There is a version of Friday the 13th: A New Beginning that could have been genuinely bold. A slasher sequel in 1985 that commits to a copycat killer twist, that strips away the supernatural mythology and replaces it with something grittier and more grounded, that dares to say the real monster might just be a broken man in a hockey mask rather than an undead killing machine. That version almost exists here. Almost. What Danny Steinmann actually delivers is a film that sits in permanent tension with itself, never fully committing to being either a proper Friday the 13th entry or something genuinely different. The result is watchable, occasionally entertaining, and permanently stuck at decent.",
+        "Context matters here. After Friday the 13th: The Final Chapter supposedly ended things in 1984, Paramount needed another entry fast. The working solution was to shift focus to Tommy Jarvis, the kid who killed Jason at the end of the previous film, now a traumatised teenager being transferred to a rural halfway house for troubled youth. The setup is actually smart. A young man haunted by what he did, surrounded by unstable people in an isolated location, with the spectre of Jason Voorhees hanging over everything like a bad dream. On paper, this premise has real meat on it. Steinmann and the writing team had something to work with.",
+        "The decision to make the killer a copycat rather than the real Jason is the defining choice of this film, and honestly it is a braver swing than the franchise usually takes. The reveal is that Roy Burns, a local paramedic, snapped after witnessing the brutal murder of his estranged son and decided to strap on a hockey mask and start carving through the countryside. It is a tragic motivation wrapped in a pulpy slasher package. The problem is the film never earns the emotional weight that twist demands. Roy is barely a presence before the reveal. You feel none of the grief. The twist lands as a plot mechanic rather than a gut punch, and that is a missed opportunity of the highest order.",
+        "John Shepherd plays the older Tommy Jarvis and he does solid work with a role that keeps getting sidelined by the film's own structure. Tommy is clearly struggling, prone to violent outbursts, haunted by visions of Jason, and you keep waiting for the film to really lean into the question of whether he might be the killer. For stretches it teases that possibility with genuine effectiveness. Shepherd plays the paranoia and dissociation well without overdoing it. But the script keeps pulling him offscreen to make room for kills, and every time that happens you feel the air go out of the central idea. The supporting cast at the halfway house is broad, loud, and mostly disposable in the way the genre demands, though Shavar Ross as Reggie provides some genuine energy.",
+        "Steinmann's direction is competent and occasionally more than that. He has a good eye for isolated rural geography, and the halfway house and surrounding woods carry a decent amount of grime and unease. This is not a clean or glossy film. It has a rough, slightly trashy texture that suits the material. Some of the kill setups show real craft in terms of staging and tension build. The problem is Steinmann leans too hard on sleaze as a shortcut to atmosphere. There is a lot of gratuitous nudity and a meanness to some scenes that feels less like horror and more like the film leering at its own cast. It tips the tone from grubby and tense into something that occasionally makes you want to take a shower.",
+        "The kills themselves are the franchise at a competent midpoint. Nothing here reaches the creative heights of the best Tom Savini work from earlier in the series. The practical effects are decent without being exceptional, functional without being memorable. You get a reasonable body count, a few moments that land with impact, and nothing that genuinely disturbs or surprises. For a series built on its set pieces this is a problem. The kills in A New Beginning feel like they are going through the motions, checking the boxes of what a Friday the 13th film is supposed to deliver rather than pushing anything forward. Compared to the gleeful invention of The Final Chapter's kills twelve months earlier, this feels like a step backward in ambition even while being a step forward in volume.",
+        "Pacing is where the film bleeds out most noticeably. The first act is slow in a way that feels purposeful and then slow in a way that just feels slow. There is a lot of setup for characters who will be dead within twenty minutes, and while that is part of the slasher deal, the film lingers on them without doing the work of making you actually feel anything when they go. The middle section finds a decent rhythm when it leans into Tommy's instability and the escalating chaos at the halfway house. But the momentum keeps stalling. There are sequences that feel padded in a way that makes you conscious of runtime rather than story, and for a film that runs around ninety minutes that should not be happening.",
+        "Where A New Beginning sits in the broader franchise is genuinely interesting from a legacy perspective. It exists in a strange limbo. The ending sets up Tommy as a possible new masked killer, torch passed, new chapter beginning. But then Friday the 13th Part VI: Jason Lives essentially ignored that, brought the real Jason back, and quietly filed A New Beginning in the continuity drawer marked complicated. The film ends on a note it never got to fully explore, and that dangling thread is one of the more fascinating what ifs in slasher history. A version of the franchise that stayed with Tommy and the copycat mythology might have been genuinely distinctive. Instead this entry became the one people skip on rewatches, the odd one out that the series itself seemed embarrassed by almost immediately.",
+        "Friday the 13th: A New Beginning from 1985 is a film I find genuinely hard to dismiss even though I understand completely why people do. It has a legitimately interesting premise that it undercuts with poor execution. It has a brave central twist that it fails to earn emotionally. It has a lead performance that deserved more screen time and more script support. It is the slasher genre at its most frustrating, a film with real ideas that keeps tripping over its own franchise obligations. Compared to Wes Craven's A Nightmare on Elm Street from the previous year, which was rewriting what horror could be at the same moment this was treading water, the gap in ambition is stark. Worth watching once if you are going through the series, worth revisiting if you want to think about what a different version of this franchise could have looked like. Not much else beyond that."
+      ],
+      "images": [],
+      "verdict": "A New Beginning is a 6/10, a film with one genuinely interesting idea that it never commits to fully, wearing a dead man's mask and hoping nobody notices the difference.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/ewnIs4aCuWnKQ13Eaj8f3ybrQc8.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pQy1GaR0TLwvb3Bpqk5teovzoDY.jpg"
+      }
+    },
+    {
       "id": 1788871361189,
       "slug": "seed-of-chucky-review",
       "seoTitle": "Seed of Chucky Review (2004) | WretVision",
