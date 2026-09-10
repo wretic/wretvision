@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1789044434396,
+      "slug": "halloween-ii-review-2",
+      "seoTitle": "Halloween II Review (2009) | WretVision",
+      "seoDescription": "Rob Zombie's Halloween II gets a lot of grief it doesn't fully deserve — it's ugly, brutal, and weird, and that's exactly the point.",
+      "category": "movie",
+      "title": "Halloween II",
+      "year": 2009,
+      "director": "Rob Zombie",
+      "runtime": "105 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "Rob Zombie's Halloween II gets a lot of grief it doesn't fully deserve — it's ugly, brutal, and weird, and that's exactly the point.",
+      "body": [
+        "Rob Zombie's Halloween II from 2009 is one of the most unfairly dismissed horror sequels of the last two decades. Not because it's a great film. It isn't. But the hatred it gets is disproportionate, often coming from people who wanted a conventional slasher follow-up and got something far more abrasive and strange instead. If you walked into this expecting a clean continuation of the original timeline or even a polished retread of the Carpenter legacy, you were always going to hate it. That's a you problem. What Zombie actually delivers is a genuinely committed continuation of the vision he established in his 2007 reimagining, and taken on those terms, it holds up better than its reputation suggests.",
+        "Context matters here. Zombie's first Halloween was already divisive because it humanised Michael Myers in ways purists couldn't stomach. The 2009 sequel doubles down on that approach entirely. Rather than centre the film on Michael as an unstoppable shape, Zombie pushes Laurie Strode, played again by Scout Taylor-Compton, into a psychological spiral that borrows more from trauma drama than traditional slasher mechanics. The film is asking what surviving something like that actually does to a person. That's a valid and interesting question. It doesn't always answer it well, but the fact that it's asking it at all separates it from the bulk of the franchise sequels that just line up kills and move on.",
+        "Scout Taylor-Compton is doing genuinely hard work here and I don't think she gets enough credit for it. Laurie in this film is fractured, angry, and deeply unpleasant to be around at times, which is a bold choice. She's not the composed survivor archetype. She's someone falling apart in real time. Taylor-Compton commits to that fully. There are scenes where her performance edges into something raw that you don't often see in this subgenre. Is it always graceful? No. But it's honest to the character Zombie is building, and that counts for a lot in a film that's clearly trying to say something about aftermath and damage.",
+        "Malcolm McDowell returns as Dr. Loomis and the film makes a genuinely gutsy call with him. Instead of keeping him as the moral anchor, Zombie turns Loomis into a narcissistic opportunist who's capitalised on his connection to Myers for fame and money. McDowell leans into this with obvious relish. It's polarising. Some viewers hate that Loomis is unlikeable here. I think it's one of the more interesting character moves in the whole reboot continuity. It grounds the film in something real, the way trauma survivors get exploited, the way true crime becomes entertainment, the way even the people who were there can get corrupted by proximity to horror.",
+        "Tyler Mane as Michael Myers is a physical presence that still works. He's enormous, slow, and genuinely threatening in a way that CGI-heavy modern horror rarely achieves. The kills in this film are brutal and largely practical, which I'll always respect. Zombie isn't interested in stylised, bloodless horror. He wants you to feel the weight of every act of violence. Some viewers find that gratuitous. Fair enough. But there's craft in how the brutality is staged, it's not random, it's purposeful ugliness. It reinforces that Michael in this version is not a supernatural entity. He's a very large, very damaged man doing catastrophic things, and that's somehow more disturbing.",
+        "Where the film genuinely struggles is in its dream logic and the white horse imagery that Zombie threads throughout. The sequences involving Sheri Moon Zombie as Michael's deceased mother are visually striking but tonally inconsistent with the rest of the film. They're almost arthouse in their construction, slow and symbolic and bathed in strange light, and they sit awkwardly next to the raw, grubby realism of the rest of the runtime. I understand what Zombie was going for. He wanted a visual language for Michael's fractured inner world. It doesn't quite land. It feels like two different films occasionally occupying the same space.",
+        "Pacing is an issue in the second half. The film runs around 105 minutes in the theatrical cut and there are stretches where it meanders. The momentum that the brutal opening sequence builds gets dissipated by the middle section, which spends a lot of time with Laurie's domestic deterioration without always finding the right scene to carry the weight. It recovers toward the finale but you feel the drag. The director's cut is actually a different enough experience that it's worth noting, Zombie rearranges and adds material in ways that make the film feel more coherent, which says something about how the theatrical version was likely compromised by studio interference.",
+        "Compared to something like Halloween H20 or Halloween: Resurrection, this film is a more interesting and ambitious piece of work. That's not a high bar, I know, but it's worth saying plainly. It's also a very different beast from David Gordon Green's 2018 Halloween, which took the opposite approach and stripped everything back to a direct Carpenter legacy sequel. Both approaches have merit. Zombie's version is messier and more personal, which is either a strength or a weakness depending on your tolerance for a director stamping their entire personality onto someone else's IP. I lean toward finding it more interesting than not, even when it frustrates.",
+        "Halloween II 2009 is a 6.5 out of 10 from me. It's a film that deserved a more considered reception than it got on release, not because it's without real problems, but because those problems exist alongside genuine ambition and craft. The pacing drags, the dream sequences are uneven, and the film bites off slightly more than it can chew thematically. But the performances are better than the reputation suggests, the practical violence has weight, and Zombie is clearly making the film he wants to make rather than chasing approval. If you bounced off it in 2009, it might be worth revisiting with adjusted expectations."
+      ],
+      "images": [],
+      "verdict": "Messier than it should be and weirder than most slasher fans wanted, but Halloween II 2009 is a more honest and committed piece of horror filmmaking than its reputation gives it credit for.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/vSHPM4LQDpWdQrD5KZWK6wNqSOD.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/mGHfOrb2MDOvgeFb4pQVeWH6adg.jpg"
+      }
+    },
+    {
       "id": 1788958161322,
       "slug": "friday-the-13th-a-new-beginning-review",
       "seoTitle": "Friday the 13th: A New Beginning Review (1985) | WretVision",
