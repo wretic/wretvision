@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1789214507255,
+      "slug": "spiral-from-the-book-of-saw-review",
+      "seoTitle": "Spiral: From the Book of Saw Review (2021) | WretVision",
+      "seoDescription": "Spiral wants to be Se7en so badly it forgot it was supposed to be a Saw film.",
+      "category": "movie",
+      "title": "Spiral: From the Book of Saw",
+      "year": 2021,
+      "director": "Darren Lynn Bousman",
+      "runtime": "93 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "Spiral wants to be Se7en so badly it forgot it was supposed to be a Saw film.",
+      "body": [
+        "Here is the pitch: take the Saw franchise, strip out what made it distinctive, hand it to Chris Rock, and aim for a gritty prestige cop thriller. That is Spiral: From the Book of Saw, released in 2021 and directed by Darren Lynn Bousman, who actually made some of the better early Saw entries. On paper there is potential here. A copycat killer targeting corrupt cops, a city under pressure, a franchise trying to evolve. In practice it plays like a mid-tier network procedural that someone glued a few traps onto because the contract required it. I made it thirty minutes before I checked out, and nothing in those thirty minutes gave me a reason to stay.",
+        "Chris Rock is the engine this film is built around and he is simply not right for it. He is not bad exactly, he is just performing rather than inhabiting the role. You can see the effort, which is the problem. Samuel L. Jackson shows up and does Samuel L. Jackson things, which is fine but hardly revelatory. The dynamic between them never settles into anything with weight or texture. For a film that wants you to care about institutional corruption and a detective's fractured relationships, it does almost nothing to earn that investment. The character work is surface level, the dialogue is functional at best, and the tone keeps shifting without conviction.",
+        "The traps, when they do appear, feel like obligations rather than ideas. The original Saw films had a twisted internal logic and a genuinely unpleasant commitment to consequence. Spiral wants the cultural credibility of a crime thriller but keeps the traps around to remind you it is technically a horror film. It fails the brief on both counts. The pacing is sluggish in the first act when it should be coiling tight. The atmosphere is flat, grey, and anonymous in a way that feels like a deliberate choice to look serious but actually just looks cheap. Comparable titles like Se7en or even Prisoners understood that procedural dread needs to be textured, specific, and patient. Spiral is none of those things.",
+        "Spiral: From the Book of Saw is a 4 out of 10, and that score is not about personal taste or genre snobbery, it is about wasted potential and confused identity. If you want a sharp cop thriller, watch something else. If you want a proper Saw experience, rewatch the early entries. This sits in the middle ground and earns nothing from it. The franchise has not been in great shape for years, but this particular attempt to revitalise it by chasing a different genre entirely mostly highlights how uncertain everyone involved seemed about what kind of film they were actually making. I turned it off and did not feel like I had missed anything."
+      ],
+      "images": [],
+      "verdict": "A franchise identity crisis dressed up as a bold reinvention, Spiral is neither a good Saw film nor a good thriller, and that muddy compromise is exactly why it fails.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/cTvSDfBuXTZTdRCNduGMANd7VEP.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/g15PR8eQV9DehSWlagvdnJZqoRq.jpg"
+      }
+    },
+    {
       "id": 1789130544077,
       "slug": "freddys-dead-the-final-nightmare-review",
       "seoTitle": "Freddy's Dead: The Final Nightmare Review (1991) | WretVision",
