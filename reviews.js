@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1789305088801,
+      "slug": "the-curse-of-la-llorona-review",
+      "seoTitle": "The Curse of La Llorona Review (2019) | WretVision",
+      "seoDescription": "The Curse of La Llorona had a genuinely terrifying folk legend to work with and somehow made it boring.",
+      "category": "movie",
+      "title": "The Curse of La Llorona",
+      "year": 2019,
+      "director": "Michael Chaves",
+      "runtime": "93 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "The Curse of La Llorona had a genuinely terrifying folk legend to work with and somehow made it boring.",
+      "body": [
+        "There is a moment about twenty minutes into The Curse of La Llorona where you realise this film has absolutely no idea what it wants to be. It is not building atmosphere. It is not developing character. It is loading the barrel with jump scares and waiting for its next opportunity to fire one at you. That is the whole film. That is the entire ninety minutes. Director Michael Chaves, making his feature debut here before being handed The Conjuring: The Devil Made Me Do It, delivers something that feels less like a film and more like a theme park haunted house stretched to feature length, complete with loud bangs and figures lurching out of dark corners on cue.",
+        "The setup exists within the Conjuring cinematic universe, though loosely enough that you wonder why they bothered. Set in 1970s Los Angeles, the film follows Anna Garcis, a social worker and widow played by Linda Cardellini, who becomes entangled with La Llorona, the weeping woman of Mexican folklore, after her cases collide with something supernatural. The legend of La Llorona is centuries old and genuinely haunting in its bones. A grieving mother who drowned her own children and now wanders searching for them, stealing children from others in her grief and madness. That is a premise with psychological weight, cultural depth, and real horror potential. Chaves and writer Mikki Daughtry treat it like a haunted house backdrop.",
+        "Linda Cardellini is doing her absolute best here and that almost makes it worse to watch. She is a legitimately good actress, you only need to look back at her television work to know that, and she commits fully to a role that gives her almost nothing to commit to. Anna is a reactive character. She screams. She runs. She grabs her kids and backs against walls. There is a hollow attempt to layer her with grief over her late husband but it goes nowhere and connects to nothing in the plot. Cardellini deserves material that uses her. This wastes her completely.",
+        "The children, played by Roman Christou and Jaynee-Lynne Kinchen, fare even worse. Child characters in horror films live or die on whether you believe in their fear and their relationship with the parent. Here they feel like props. The film keeps putting them in danger and then pulling them back out safely, over and over, until you stop caring whether La Llorona actually gets them or not. That is a catastrophic failure for a horror film. If the audience stops fearing for the characters, you have lost the game entirely. The film loses it early and never gets it back.",
+        "Raymond Cruz shows up as a folk healer named Rafael Olvera and is the closest thing the film has to a pulse. He is funny, a little eccentric, and brings a grounded energy that the rest of the film desperately lacks. But even he is eventually swallowed by the formula. His solutions to the supernatural problem involve candles and eggs and folk rituals that should feel culturally specific and interesting. Instead they are used as excuses for more setups, more loud noises, more darkness with something lurking at the edge of frame. He is a good character in a film that does not know how to use good characters.",
+        "The craft is competent in the most frustrating sense of the word. The cinematography by Michael Burgess is technically clean. There are shots that almost work, compositions where the darkness feels genuinely oppressive and La Llorona herself, shrouded in white and distorted, could have been unsettling with more restraint. But every time Chaves has a moment of genuine tension brewing, he detonates a jump scare into it and kills whatever dread was forming. It becomes a pattern so predictable that you start preemptively tensing before scenes even build, not out of fear but out of anticipation of the noise. That is not horror. That is pavlovian conditioning.",
+        "The comparison to The Nun is unavoidable and not flattering. Both films take supporting characters from the Conjuring universe and hand them solo features that expose how thin those characters actually are when removed from their original context. La Llorona is not even a Conjuring character really, she is borrowed folklore, and the connection to the wider universe is so minimal it feels like a marketing decision more than a creative one. At least The Nun had a gothic European setting that gave it some visual identity. La Llorona is set in suburban Los Angeles and looks like every other 2019 mainstream horror film shot in a dark house. There is nothing here that would help you remember it in six months.",
+        "The pacing is a serious problem too. The film runs ninety three minutes and still manages to feel padded. There are sequences that exist purely to delay the climax, check-ins with side characters that add nothing, scenes of exposition delivered flatly with no dramatic momentum behind them. Horror films can afford to breathe when that breathing is building something. When it is just killing time between loud noises, it becomes a slog. The third act attempts to ramp up the stakes but by then the film has trained you not to trust it. You know the kids will be fine. You know Anna will find a way. You know exactly how the last five minutes will feel.",
+        "The Curse of La Llorona is the kind of 2019 horror release that gives mainstream studio horror a bad reputation. It takes a legend with real cultural weight and genuine psychological darkness, strips away everything interesting about it, and replaces it with a jump scare delivery system dressed up in period costume. There are people for whom this will pass an evening fine enough, and I understand that, but as a piece of craft and as an argument for why this story deserved its own film, it fails on almost every level. La Llorona belongs in the background of something better. Giving her the spotlight just revealed there was nothing there to illuminate. 4/10."
+      ],
+      "images": [],
+      "verdict": "A wasted legend, a wasted lead, and ninety minutes of jump scares pretending to be a horror film.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/hETrPpoKs6BwoilK64YJ7Z5GcRT.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/8MCCpfOe7hkG28cNmkXVrOWRIlK.jpg"
+      }
+    },
+    {
       "id": 1789214507255,
       "slug": "spiral-from-the-book-of-saw-review",
       "seoTitle": "Spiral: From the Book of Saw Review (2021) | WretVision",
