@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1789397455925,
+      "slug": "friday-the-13th-part-iii-review",
+      "seoTitle": "Friday the 13th Part III Review (1982) | WretVision",
+      "seoDescription": "Friday the 13th Part III is the same kill-cycle all over again, and somehow that's still enough to keep you watching.",
+      "category": "movie",
+      "title": "Friday the 13th Part III",
+      "year": 1982,
+      "director": "Steve Miner",
+      "runtime": "95 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Friday the 13th Part III is the same kill-cycle all over again, and somehow that's still enough to keep you watching.",
+      "body": [
+        "There is a version of Friday the 13th Part III that could have been genuinely great. You have Jason Voorhees now fully formed as a slasher icon, a new batch of teenagers heading to Crystal Lake, and a film shot in 3D at the height of that gimmick's early eighties revival. The pieces are there. What you get instead is something more comfortable than ambitious, a film that knows exactly what it is and delivers it competently without ever once surprising you. That is both its biggest weakness and, honestly, a decent chunk of its charm.",
+        "Directed by Steve Miner, who also helmed Part II, Friday the 13th Part III arrives in 1982 with a familiar playbook. A group of young people head to a lakeside property. Jason shows up. People die. If you have seen Part II, and especially if you have seen the original Sean S. Cunningham film, you already know the rhythm so well you could tap it out from memory. Miner is a competent director working within genre constraints, and he keeps things moving, but there is no real attempt here to elevate the material or push it somewhere it has not already been. It is the third entry and it feels like the third entry, for better and for worse.",
+        "What Part III does give you, and what earns it genuine credit, is Jason Voorhees in his iconic hockey mask for the very first time. That alone makes this film historically significant within the franchise. The mask arrives in almost throwaway fashion, plucked from a victim and slapped on without ceremony, and yet it transforms the character completely. Suddenly Jason has the silhouette, the presence, the image that will define him across decades of sequels, merchandise, and pop culture. That moment lands even now. It is one of those franchise pivots that feels bigger in retrospect than it probably did to audiences on opening night.",
+        "The 3D gimmick is impossible to ignore when talking about this film, even if you are watching a flat version on a streaming service or a home release. Miner and his crew leaned hard into the format, and the result is a parade of objects aimed directly at the camera. Yo-yos. Eyeballs. A pitchfork. It is shameless and ridiculous and you can tell everyone involved was having a good time with it. On a technical level the film is doing something intentional and committing to it fully, which is more than you can say for entries that coast on nothing at all. The 3D sequences look goofy flat but they have an energy to them that keeps the pacing alive.",
+        "The cast is the usual Friday the 13th arrangement, which is to say a collection of types rather than characters. You have the shy one, the funny one, the couple, the stoners. Dana Kimmell plays Chris Higgins, the final girl, and she does solid work with limited material. There is a backstory involving a prior encounter with Jason that the film gestures toward but never fully commits to developing, and that is a real missed opportunity. A final girl with an actual history with the killer could have added genuine tension and psychological weight. Instead it surfaces occasionally and then recedes, used more as exposition than as something that actually shapes her behaviour or the dynamic between them.",
+        "The kills are where Friday the 13th Part III earns its keep for genre fans. The practical effects work is largely decent, especially given the era and the budget, and a few of the set pieces have real craft behind them. The sleeping bag kill from Part II remains the franchise benchmark, but Part III lands some memorable moments of its own. The handstand kill is genuinely inventive, the kind of creative nastiness that separates a good slasher entry from a forgettable one. When the film commits to the violence it feels like genuine effort went into making it count, which is all you really ask of a Friday the 13th film at this point in the series.",
+        "Pacing is one of the things I always clock, and Part III holds up reasonably well on that front. It does not drag the way some later entries in the franchise do. Miner keeps scenes tight enough that you are rarely sitting there waiting for the film to get to the point. That said, the middle section sags slightly as the character work struggles to find anything interesting to do between kills. The comedy beats with the stoner characters feel like filler, functional enough to pass the time but adding nothing. It is not bloated, just occasionally hollow, and the difference between a 7 and an 8 often lives right in that hollow middle stretch.",
+        "Compared to what came before it in the franchise, Part III sits comfortably in the middle of the pack. The original film has genuine tension and a real twist. Part II is arguably the tightest in the series, leaner and meaner with a burlap sack Jason that had its own unsettling presence. Part III does not match either of those. Compared to what came after, entries like Part V or Jason Takes Manhattan, it looks like a masterclass. Within the broader slasher landscape of 1982, sitting alongside films like Poltergeist and The Thing dominating the genre conversation that year, Friday the 13th Part III was never going to be a prestige horror release. It was not trying to be, and there is nothing wrong with that as long as you go in knowing what you are getting.",
+        "Friday the 13th Part III (1982) is exactly what the franchise formula promised by this point, nothing more, nothing less. It is watchable, occasionally inventive, historically significant for that hockey mask alone, and completely comfortable recycling the same beats without apology. If you are working through the Friday the 13th series it belongs in your queue. If you are new to slasher horror and looking for where to start, go back to Part II or the original. But this one holds up well enough for what it is, same old same old delivered with just enough craft and commitment to stay on the right side of decent."
+      ],
+      "images": [],
+      "verdict": "7/10, Friday the 13th Part III does not reinvent anything, but it runs the formula cleanly enough, and that hockey mask debut alone earns it a permanent place in the franchise history books.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/9kukTSlgFgXnQGdpcHvHcpTDiUc.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/dtEkXmWPRwja6CtwPFcVpuMb7tW.jpg"
+      }
+    },
+    {
       "id": 1789305088801,
       "slug": "the-curse-of-la-llorona-review",
       "seoTitle": "The Curse of La Llorona Review (2019) | WretVision",
