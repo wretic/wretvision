@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "The Descent Part 2",
+    "year": 2009,
+    "decade": "2000s",
+    "status": "watched",
+    "note": "",
+    "id": 481
+  },
+  {
     "title": "Child's Play 3",
     "year": 1991,
     "decade": "1990s",

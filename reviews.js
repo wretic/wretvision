@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1789564501299,
+      "slug": "the-descent-part-2-review",
+      "seoTitle": "The Descent Part 2 Review (2009) | WretVision",
+      "seoDescription": "Nobody asked for a Descent sequel, but here's the thing — it's actually not bad.",
+      "category": "movie",
+      "title": "The Descent Part 2",
+      "year": 2009,
+      "director": "Jon Harris",
+      "runtime": "94 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Nobody asked for a Descent sequel, but here's the thing — it's actually not bad.",
+      "body": [
+        "The Descent Part 2 from 2009 had no real reason to exist. Neil Marshall's original is a near perfect piece of claustrophobic horror, a film that works on every level and ends exactly where it should. So when a sequel landed two years later directed by Jon Harris, the editor of the first film, expectations were low. Genuinely low. The setup is almost aggressively contrived: Sarah, the lone survivor, is sent back into the caves by local law enforcement despite being clearly traumatised and covered in blood. It is a stupid decision made for plot reasons and I will not pretend otherwise. But once you accept that leaps of logic and you are back underground, the film finds its footing.",
+        "What The Descent Part 2 does well is atmosphere, and that matters more than anything else in this genre. Harris knows these caves intimately from his editing work on the first film and it shows. The cinematography keeps things tight and disorientating. You lose your sense of direction quickly and that is exactly right. The crawlers still look good, practical and physical and genuinely unpleasant to look at. There is real tension in several sequences, particularly a flooded tunnel section that made me genuinely uncomfortable in a way that cheap horror rarely manages. The film understands that darkness and confinement do most of the heavy lifting so it leans into both.",
+        "Where it stumbles is in the new characters. They are broadly drawn and you are ranking them for death order within minutes of meeting them. That would be forgivable if the film subverted expectations even once, but it does not. It follows the template of the original without matching its emotional weight. Sarah's arc gets muddled too. Shauna Macdonald gives it everything she has but the script does not always give her something coherent to work with. The original had character relationships that made the horror sting personally. Here, the new cast are warm bodies in a cave and the film knows it. There is also an ending that is clearly trying to pull a dark twist but lands somewhere closer to baffling than bold.",
+        "The Descent Part 2 is a solid, watchable horror sequel that captures enough of the original's claustrophobic dread to justify its own existence, which is more than most unnecessary sequels can say. It sits comfortably alongside films like The Cave or As Above So Below as a genre piece that delivers on the basics without reaching for anything greater. It is not trying to say something. It is trying to scare you in a hole in the ground and it mostly succeeds. If you have already seen The Descent and need more of that underground tension, this scratches the itch. Just do not go in expecting the original and you will come out reasonably satisfied."
+      ],
+      "images": [],
+      "verdict": "A sequel that had no business being as watchable as it is, even if it never comes close to justifying its own existence the way the original so effortlessly did.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/dOURlcw2MO0xys0Dl2NiAcUxlWA.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/3i9UdfrkyLfQTefDmaYbEvH9HjP.jpg"
+      }
+    },
+    {
       "id": 1789478288756,
       "slug": "vhs85-review",
       "seoTitle": "V/H/S/85 Review (2023) | WretVision",
