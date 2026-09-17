@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1789650660312,
+      "slug": "childs-play-review",
+      "seoTitle": "Child's Play Review (1988) | WretVision",
+      "seoDescription": "Child's Play (1988) is one of the best creepy doll horror films ever made, and it still holds up in ways most of its imitators never managed.",
+      "category": "movie",
+      "title": "Child's Play",
+      "year": 1988,
+      "director": "Tom Holland",
+      "runtime": "87 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Child's Play (1988) is one of the best creepy doll horror films ever made, and it still holds up in ways most of its imitators never managed.",
+      "body": [
+        "Some premises sound ridiculous on paper. A serial killer transfers his soul into a Good Guy doll and terrorizes a six year old and his mum in a Chicago apartment. That should not work. Tom Holland's Child's Play from 1988 not only makes it work, it commits to the concept so completely and so confidently that by the time Chucky opens his mouth and starts talking, you are already halfway terrified. The setup earns every moment that follows.",
+        "What makes this film exceptional is the setting. A small house, a single parent household, a kid nobody believes. Karen Barclay played by Catherine Hicks gives a grounded, naturalistic performance that anchors the whole thing. You feel the exhaustion of being a working mum who just wanted to give her son a birthday present. Andy, played by Alex Vincent, is one of the better child performances in the genre. He is scared in the way real kids are scared, not in the way child actors usually perform scared. The intimacy of the location makes everything worse. There is nowhere to go. The doll is in the house.",
+        "And then there is Brad Dourif as Charles Lee Ray. The voice work alone is a masterclass. Chucky's shift from wide eyed doll to snarling, foul mouthed killer is pulled off through a combination of sharp puppetry, practical effects work that holds up brilliantly, and Dourif pouring genuine menace into every line reading. The practical effects throughout are exactly what this kind of horror needs. Nothing here reaches for CGI shortcuts. You feel the physicality of Chucky as a threat, which is what makes him scary rather than just silly.",
+        "If there is a minor criticism it is that the third act leans slightly harder into action territory than pure dread, and the pacing tightens in ways that trade some of the earlier atmosphere for momentum. It is a small trade off and the film earns it. Child's Play 1988 sits comfortably alongside classics like Dolls and Annabelle as a standout entry in the killer doll subgenre, and it arguably beats most of them. Thirty plus years on it still delivers. That is the mark of genuine craft behind the camera."
+      ],
+      "images": [],
+      "verdict": "Child's Play (1988) is tense, committed, brilliantly acted, and one of the finest horror films of its decade, 9/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/wvpgvcWNkF2HLuTEMIM7K83MvZ.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/edghRD7vw1XgWEpMLpGt1VSGB5w.jpg"
+      }
+    },
+    {
       "id": 1789564501299,
       "slug": "the-descent-part-2-review",
       "seoTitle": "The Descent Part 2 Review (2009) | WretVision",
