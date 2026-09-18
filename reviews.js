@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1789735705669,
+      "slug": "a-nightmare-on-elm-street-review",
+      "seoTitle": "A Nightmare on Elm Street Review (1984) | WretVision",
+      "seoDescription": "Wes Craven didn't just make a horror film in 1984. He rewired what fear could look like on screen.",
+      "category": "movie",
+      "title": "A Nightmare on Elm Street",
+      "year": 1984,
+      "director": "Wes Craven",
+      "runtime": "91 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Wes Craven didn't just make a horror film in 1984. He rewired what fear could look like on screen.",
+      "body": [
+        "There are films that arrive and fit neatly into what already exists, and then there are films that crack something open. A Nightmare on Elm Street is the second kind. Wes Craven released this in 1984 into a slasher landscape that was already getting comfortable with its own formula, Friday the 13th and Halloween had established the rules, and audiences mostly knew what they were getting. Craven looked at those rules and decided to set them on fire. What he built instead was something that operated on a completely different frequency, a horror film where the danger lives inside sleep itself, where the one thing every human being has to do becomes the thing that kills you. That is a genuinely brilliant and deeply unsettling premise, and the film earns every second of it.",
+        "The setup is clean and efficient. A group of teenagers in Springwood, Ohio start sharing the same nightmare, a burned man in a dirty red and green sweater with a glove made of razors. Nancy Thompson, played by Heather Langenkamp, figures out faster than anyone else that this thing is real and that falling asleep is no longer an option. What Craven does so well in the first act is root everything in mundane suburban normalcy before pulling it sideways. The houses look like your street. The parents are distracted and disbelieving in that very specific way parents often are in horror films but here it feels earned rather than lazy. The dream world bleeds into the real world slowly at first and then all at once.",
+        "Wes Craven was working with a modest budget, somewhere around one point eight million dollars, and what he achieved with that money is frankly embarrassing to a lot of films that had ten times more to spend. The practical effects throughout this film are inventive and committed and often genuinely shocking. The ceiling kill, where Johnny Depp's Glen is swallowed by his own bed and a geyser of blood erupts upward, remains one of the most startling single images in 1980s horror. They physically built an inverted set and rotated it. That is the kind of problem solving that comes from necessity meeting creativity, and the result is something that no amount of CGI could replicate with the same visceral impact because you know it was real, it was built, someone figured out how to do it.",
+        "And then there is the bathtub scene. I want to stay on this for a moment because it is the image that has stayed with me personally more than almost anything else in the genre. Nancy dozing off in the bath while her mother drinks downstairs, Freddy's glove rising slowly through the water between her legs. It is wrong in every direction at once, threatening, intimate, violating, surreal. Craven shoots it with a stillness that makes it worse. There is no thundering music cue, no jump cut. Just that hand coming up through the water like it was always there waiting. It is the kind of horror image that does not announce itself as iconic while you are watching it. It just settles into you. I did not shake it for days.",
+        "Robert Englund's Freddy Krueger is one of the great horror performances, full stop. What makes it work in this first film, before the franchise gradually turned him into a wisecracking comedian, is that Englund plays him as genuinely hateful. There is real malevolence behind those burn prosthetics. He is not funny here. He is predatory and patient and cruel, and Englund moves in that makeup with a physicality that feels wrong in exactly the right way. The character design by David Miller is extraordinary too, the burned face, the hat pulled low, the striped sweater that somehow feels both ridiculous and deeply threatening. Freddy works because Englund commits entirely to the ugliness of who this man is, and in 1984 that commitment had not yet been softened by sequels and merchandise.",
+        "Heather Langenkamp as Nancy deserves more credit than she typically gets in the broader conversation about this film. She is not a passive final girl waiting to be saved. From a certain point in the second act she is actively engineering Freddy's destruction, setting traps, pulling him into the real world, trying to weaponise her own fear against him. Langenkamp plays the exhaustion of no sleep with a physicality that feels real, the smudged eyes, the slow reactions, the moments where she catches herself drifting. John Saxon as her father and Ronee Blakley as her mother are both doing solid work in roles that could have been paper thin. Saxon in particular gives the sheriff a kind of burdened authority that grounds the whole thing.",
+        "Pacing is something Craven handles with unusual control for this kind of film. The opening sequence drops you directly into a nightmare with almost no setup, and the film never fully lets you exhale after that. He trusts the tension he has built. There is almost no dead time in the runtime, which sits at just under ninety minutes, and that discipline pays off. Every time the film risks losing momentum it introduces a new piece of nightmare logic or a new piece of the Freddy mythology. The exposition about who Krueger was and what he did to the children of Springwood is delivered economically, not laboriously, which is a lesson half of modern horror has failed to learn. Craven knew that too much explanation kills the monster.",
+        "If there is a genuine flaw in the film it is the ending, and I say this knowing full well that it is a flaw partly born of studio interference. The studio wanted a sequel hook and pushed for an ambiguous final beat that undercuts what Craven had built toward. The version Craven wanted was darker and more complete. What we got is a coda that feels tacked on and slightly incoherent, a moment that raises questions it has no interest in answering and undermines the sense of resolution Nancy earns through the film. It is not enough to significantly damage the experience but it does land like a slightly flat note at the end of an otherwise excellent piece of music. Worth knowing the history of why it landed that way.",
+        "A Nightmare on Elm Street sits alongside Halloween and The Texas Chain Saw Massacre as one of the defining American horror films of the last fifty years. What separates it from a lot of its contemporaries is that the fear it generates is not situational. It is not about being in the wrong place or making the wrong choice. It attacks something universal and inescapable. Sleep is not optional. That is where Craven found his hook, and it is a hook that does not dull with age. Watching it now in 2024 it still works, still disturbs, still produces images that outlast the viewing experience. The sequels diluted the formula almost immediately and the 2010 remake understood almost nothing about why the original functions the way it does. The 1984 original stands alone, singular and largely unrepeated. If you have not seen it you owe it to yourself. If you have seen it, you already know."
+      ],
+      "images": [],
+      "verdict": "A Nightmare on Elm Street is one of the few horror films that genuinely changed what the genre could do, and forty years later it has lost almost none of its power. 9/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/tI0RQFYevX97NSdDSYmn0Z19i3r.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/nzSjTiecdosBfwMGAdpt9CxltCI.jpg"
+      }
+    },
+    {
       "id": 1789650660312,
       "slug": "childs-play-review",
       "seoTitle": "Child's Play Review (1988) | WretVision",
