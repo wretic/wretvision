@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1789820467666,
+      "slug": "pearl-review",
+      "seoTitle": "Pearl Review (2022) | WretVision",
+      "seoDescription": "Pearl is the stranger, messier half of Ti West's X universe, and somehow that works in its favour more often than not.",
+      "category": "movie",
+      "title": "Pearl",
+      "year": 2022,
+      "director": "Ti West",
+      "runtime": "102 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Pearl is the stranger, messier half of Ti West's X universe, and somehow that works in its favour more often than not.",
+      "body": [
+        "Pearl arrived in 2022 as a prequel to Ti West's X, shot back to back with barely a breath between them, and it sits in genuinely odd territory. It's set in 1918, it's soaked in Technicolor pastels that feel more Douglas Sirk than slasher, and it asks you to spend ninety minutes inside the head of a woman who is clearly, completely unwell. That's a bold swing. West committed to it fully and Mia Goth, who co-wrote the script with him, does something here that earns real attention.",
+        "Goth carries this film on her back and she does not drop it. Pearl is not a sympathetic character but Goth makes her comprehensible, which is actually harder. You understand the loneliness, the desperation, the warped hunger for something bigger than rural Texas in wartime. The monologue sequence late in the second act is the kind of unbroken, raw performance you rewatch to check it's real. That scene alone justifies the film existing. The direction leans into the fairytale visual language without it feeling like a gimmick.",
+        "Where Pearl loses a step is in its pacing through the middle section. There's some bloat in the farm sequences that slows momentum when the film should be tightening its grip. And as an origin story it occasionally feels like it's filling in mythology that X didn't necessarily need filled in. The horror DNA is present but Pearl is more psychological tragedy than straight genre film, which will frustrate anyone who came straight from X expecting more of the same. It's a tonal left turn the franchise earns but doesn't always justify scene to scene.",
+        "Pearl in 2022 lands at a 7/10 for me. Not because it fails but because it's the stranger and less immediately satisfying half of what West was building. Compared to something like Hereditary in terms of slow psychological unravelling, it doesn't quite reach those heights, but it doesn't embarrass itself either. As a horror character study it works. As a prequel it earns its place. Mia Goth's performance is the reason to watch it and that's enough of a reason."
+      ],
+      "images": [],
+      "verdict": "An origin story that earns its place through sheer performance rather than necessity, Pearl is the odder, slower sibling in Ti West's X universe and just about gets away with it.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/z5uIG81pXyHKg7cUFIu84Wjn4NS.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/fdzpbJ0xdyjMUY4DqN6cOpESA1X.jpg"
+      }
+    },
+    {
       "id": 1789735705669,
       "slug": "a-nightmare-on-elm-street-review",
       "seoTitle": "A Nightmare on Elm Street Review (1984) | WretVision",
