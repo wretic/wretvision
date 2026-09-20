@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1789908987785,
+      "slug": "halloween-the-curse-of-michael-myers-review",
+      "seoTitle": "Halloween: The Curse of Michael Myers Review (1995) | WretVision",
+      "seoDescription": "The cult angle almost saves it. Almost.",
+      "category": "movie",
+      "title": "Halloween: The Curse of Michael Myers",
+      "year": 1995,
+      "director": "Joe Chappelle",
+      "runtime": "88 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "The cult angle almost saves it. Almost.",
+      "body": [
+        "By 1995, the Halloween franchise was in a rough place. Halloween 5 had ended on one of the most cynically cliffhanger-brained notes in horror history, literally introducing a mysterious Man in Black with zero explanation and then just rolling credits. Fans waited six years for answers. Six years. And what they got was Halloween: The Curse of Michael Myers, a film that tries to explain the unexplainable, builds an actual mythology around Michael, and then proceeds to fumble nearly every element of that mythology before the third act collapses under its own weight. It is not a disaster. But it is a deeply compromised film, and the fingerprints of studio interference are all over it.",
+        "The premise here is genuinely interesting on paper. Michael Myers is no longer just a shape in the dark. He is connected to an ancient Celtic cult called Thorn, a druidic curse that compels him to kill his entire bloodline on Samhain. It sounds like the kind of swing that could either elevate the franchise or turn it into a laughingstock. The answer, frustratingly, is somewhere in between. The cult angle adds texture that the previous two entries completely lacked. There is actual lore here, actual attempt at world-building. That is worth acknowledging. It is a different kind of Halloween film and for stretches it works in ways that surprise you.",
+        "The film stars Paul Rudd, yes that Paul Rudd, as Tommy Doyle, the little boy Laurie Strode babysat back in 1978. He is now a young man obsessed with Michael Myers, tracking the curse, living in a boarding house directly across the street from the old Myers property like the world's most committed and extremely unwise true crime enthusiast. Rudd is clearly giving it everything he has and bless him for it, because the script does not give him much to work with. His performance is earnest to the point of being slightly awkward but there is something endearing about watching him take this material completely seriously when he absolutely did not have to.",
+        "Donald Pleasence returns as Dr. Loomis and this is where the film becomes genuinely bittersweet to watch. Pleasence died shortly after filming wrapped and this was his final performance. He looks tired. He looks frail. But there are moments, particularly in his quieter scenes, where the weight of a man who has dedicated his life to stopping something incomprehensible comes through in a way that is more moving than anything in the screenplay earns. His Loomis has always been the emotional anchor of this franchise and even in diminished form he provides more gravity than almost anyone else on screen.",
+        "Marianne Hagan plays Kara Strode, a young mother living in the old Myers house with her deeply unpleasant family. She is likeable and does solid work with what she is given but the script keeps side-lining her at crucial moments in favour of mythology exposition that the film then does not fully resolve. Her young son Danny is tied into the Thorn curse in ways that feel more interesting in theory than execution. The child performance is fine. The storyline built around him is the kind of thing that sounds great in a pitch room and becomes muddled fast once you actually have to pay it off.",
+        "Joe Chappelle directed this and his work here is a mixed bag. There are sequences with genuine atmosphere, the opening is tense, the Smith's Grove scenes have a cold institutional dread that works, and Michael himself is shot with enough restraint in the first half that the threat feels real. But Chappelle loses grip in the back half. The pacing in the final act falls apart completely, scenes arrive and disappear without proper build, and the climax in the Thorn cult's underground space is borderline incoherent. The famous Producer's Cut, which circulated on bootleg for years before getting an official release, is widely considered a more coherent version of the same film. That says everything about the state of what ended up in cinemas.",
+        "The practical effects are functional rather than impressive. Michael looks good, imposing, they kept the right silhouette and the mask is one of the better versions across the franchise run. The kills are mostly quick and efficient rather than inventive. This is not a film that is trying to be gory or extreme and in some ways that restraint is appropriate given the mythology angle it is pursuing. But it also means that as a straight horror experience, as something designed to scare you rather than intrigue you, it underdelivers. The cult stuff is interesting. The horror mechanics are average at best.",
+        "Compared to Halloween 4 and Halloween 5, which both leaned heavily on Michael as a blunt force killing machine without any real thematic interest, Curse is doing something more ambitious. That ambition is exactly why its failures sting more. Halloween 4 knew what it was and delivered it cleanly. Halloween 5 knew what it was and botched it. Curse is trying to be something more substantial and gets about halfway there before the seams burst. It sits in this frustrating middle ground where you can see a better film inside the one you are watching and that is its own particular kind of disappointing. It is better than the two films before it. That is real. But the bar those films set was not high.",
+        "Halloween: The Curse of Michael Myers from 1995 is a watchable, occasionally interesting entry in the slasher genre that deserves credit for trying to do something different with a formula that was running on fumes. The cult mythology adds genuine intrigue even if it never pays off cleanly, Pleasence provides one last moment of real weight, and Rudd's commitment to the material is oddly charming. But the studio interference is visible in every ragged edit, the ending is a mess, and the film cannot fully deliver on its own ideas. It is a 6 out of 10 kind of film, decent enough to sit through, too flawed to recommend without caveats, and ultimately another example of a franchise that kept reaching for something it could not quite grab."
+      ],
+      "images": [],
+      "verdict": "A step up from the previous two entries with a cult angle that genuinely adds something different, but the interference-riddled final cut and a back half that falls apart stop it from being the reinvention this franchise desperately needed.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/noCnM8nEI2bEDSdKHh0RKbwBwbC.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/jHtuoRdP5nGyulwYoV8izEU6p8M.jpg"
+      }
+    },
+    {
       "id": 1789820467666,
       "slug": "pearl-review",
       "seoTitle": "Pearl Review (2022) | WretVision",
