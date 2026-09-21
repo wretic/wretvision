@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1790002593630,
+      "slug": "chucky-season-1-review",
+      "seoTitle": "Chucky Season 1 Review (2021) | WretVision",
+      "seoDescription": "Chucky season one has enough charm to pull you in, but the cracks are already forming beneath the plastic.",
+      "category": "movie",
+      "title": "Chucky Season 1",
+      "year": 2021,
+      "director": "",
+      "runtime": "?? min",
+      "rating": "TV-MA",
+      "genres": [
+        "Horror",
+        "Comedy"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Chucky season one has enough charm to pull you in, but the cracks are already forming beneath the plastic.",
+      "body": [
+        "Chucky the TV series arrives in 2021 carrying a lot of goodwill from Don Mancini, who created the original Child's Play back in 1988 and has been steering this franchise ever since. That loyalty to the source material shows. This is not a reboot or a cash grab repackaging, it is a genuine continuation, and Brad Dourif is still voicing Chucky with that same unhinged glee he has brought to the role for over three decades. The premise drops the killer doll into a quiet suburban town after he turns up at a yard sale, and the show leans into the coming of age drama angle with its teenage leads. It is an interesting swing, mixing Chucky's gleeful carnage with something closer to a teen soap, and for a while it actually works.",
+        "The kills in season one are where the show earns its keep. Mancini has not forgotten how to stage a Chucky murder, and there are moments here that genuinely deliver, practical work that feels consistent with the best of the film series. The humour lands more often than not, and the callbacks to the wider franchise mythology will reward longtime fans without completely alienating newcomers. Zackary Arthur as Jake carries the emotional weight of the show better than you might expect, and the show does something interesting with his character in terms of identity and outsider status. It gives the season a bit of texture beyond just body count.",
+        "But even within season one you can feel the formula starting to calcify. The pacing drags in the middle episodes, padding out a story that could have been told tighter. Some of the supporting characters exist purely as future victims, which is fine in a slasher but feels lazy when the show is also asking you to invest in its dramatic beats. The blend of teen drama and horror comedy is never quite seamless, and there are stretches where neither element is working hard enough. It is the kind of show where you are watching with half your attention because it has not earned your full focus.",
+        "Chucky season one sits at a comfortable but unspectacular five out of ten for me. It is watchable, it has its moments, and fans of the Child's Play franchise will find enough to enjoy. But it is also the beginning of a slow decline. Seasons two and three kept pulling me back through inertia more than genuine quality, and by the time the show started doing crossover mythology building and heading toward the kind of franchise sprawl that buries the thing that made it fun, I was already checked out. If you are curious, season one is the best entry point and probably the high point too. Comparable in tone to something like Ash vs Evil Dead in its horror comedy ambitions, but never quite reaching those heights."
+      ],
+      "images": [],
+      "verdict": "Season one is the version of Chucky worth watching, a fun if flawed revival that hints at both the potential and the predictable slide that follows.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/yaIPNOcC7ZRuwH3maNwP9qzIo5G.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/fLTd0VxpijUt6Hm1QM2ehLpWPeu.jpg"
+      }
+    },
+    {
       "id": 1789908987785,
       "slug": "halloween-the-curse-of-michael-myers-review",
       "seoTitle": "Halloween: The Curse of Michael Myers Review (1995) | WretVision",

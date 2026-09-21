@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "Chucky",
+    "year": 2021,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 482
+  },
+  {
     "title": "The Descent Part 2",
     "year": 2009,
     "decade": "2000s",
