@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1790082771420,
+      "slug": "childs-play-review-2",
+      "seoTitle": "Child's Play Review (2019) | WretVision",
+      "seoDescription": "Child's Play 2019 doesn't reinvent the killer doll. It just kills the original's soul and replaces it with an Alexa joke.",
+      "category": "movie",
+      "title": "Child's Play",
+      "year": 2019,
+      "director": "Lars Klevberg",
+      "runtime": "90 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Child's Play 2019 doesn't reinvent the killer doll. It just kills the original's soul and replaces it with an Alexa joke.",
+      "body": [
+        "Here's the thing about the 2019 Child's Play remake. It's not incompetent. It's not unwatchable. It's worse than that in some ways, because it occasionally shows flashes of a genuinely interesting idea before immediately reminding you that it has no interest in being that film. Director Lars Klevberg takes the Chucky concept and strips out everything that made it work, the voodoo, the serial killer soul, the twisted black comedy of a sentient doll who genuinely enjoys murder, and replaces it with a malfunctioning smart toy with no ethical limiters. That premise could work. It really could. But the moment you slap the Chucky name on it, you've invited every comparison you're going to lose.",
+        "What actually works here is frustratingly limited but real. Aubrey Plaza is doing her best with an underwritten parent role and she's watchable throughout. The Kaslan Corporation angle has some satirical potential, jabbing at tech surveillance culture and how completely we've handed our homes over to connected devices. There are two or three moments where the film leans into that unease effectively. The practical puppet work on the doll itself is solid, and the Andy and Chucky friendship in the early acts is genuinely uncomfortable in a way that almost earns something. Almost.",
+        "Then it falls apart. Mark Hamill voices this version of Chucky and while he's a talented voice actor, the script gives him nothing. The kills are inventive in a video game kind of way but they carry zero weight because this Chucky has no personality, no menace, and no wit. He's a broken algorithm. That might be the point but a broken algorithm is not a compelling villain for ninety minutes. The film also can't decide if it wants to be a horror comedy or a straight creature feature, and that indecision bleeds into every tonal choice. Compared to something like Annabelle: Creation, which understood that atmosphere was the whole game, this feels scattered and unsure of itself.",
+        "The core problem isn't the filmmaking. It's the branding. Call this something else, a knockoff smart toy gone wrong, a riff on the killer doll genre, and you've got a passable mid-budget horror film that finds its own lane. Name it Child's Play and you're standing next to Don Mancini's original 1988 film every single second, and you don't come close. The 2019 Child's Play remake wastes a decent concept on a franchise identity that exposes every weakness it has. It's not a disaster. It's just a film that should never have borrowed the name."
+      ],
+      "images": [],
+      "verdict": "5/10, a watchable but hollow retread that could have been its own thing and instead spent its entire runtime reminding you of something better.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/rpS7ROczWulqfaXG2klYapULXKm.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/vHse4QK31Vc3X7BKKU5GOQhYxv6.jpg"
+      }
+    },
+    {
       "id": 1790002593630,
       "slug": "chucky-season-1-review",
       "seoTitle": "Chucky Season 1 Review (2021) | WretVision",
