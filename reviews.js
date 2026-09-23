@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1790170032638,
+      "slug": "hellraiser-bloodline-review",
+      "seoTitle": "Hellraiser: Bloodline Review (1996) | WretVision",
+      "seoDescription": "Bloodline has the kills. It just doesn't have anything else worth showing up for.",
+      "category": "movie",
+      "title": "Hellraiser: Bloodline",
+      "year": 1996,
+      "director": "Kevin Yagher",
+      "runtime": "85 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "Bloodline has the kills. It just doesn't have anything else worth showing up for.",
+      "body": [
+        "Hellraiser: Bloodline from 1996 is one of those sequels that exists primarily to extend a franchise past its natural lifespan. Directed under the pseudonym Alan Smithee, which tells you everything you need to know about how production went, the film spans three time periods: 18th century France, the present day, and a space station in 2127. That structure sounds bold on paper. In practice it feels like three separate underdeveloped ideas stitched together and sold as ambition. The original Hellraiser worked because it was intimate, nasty, and grounded in a genuinely warped mythology. This one throws that intimacy out the window and replaces it with scale it cannot afford and story it cannot support.",
+        "Here is what actually works: the kills. The Cenobites still bring a specific kind of grotesque pageantry that holds your attention, and there are sequences in this film that are genuinely gruesome in ways that kept me from completely checking out. Pinhead remains a compelling screen presence and Doug Bradley does what he can with the material. The practical gore effects have texture and commitment. When the film leans into its horror identity and just lets the bloodshed happen, you get brief flashes of why this franchise ever mattered in the first place. But those moments are islands in a very dull ocean.",
+        "The story though, I genuinely could not invest in it. The generational curse angle connecting an architect family to the Lament Configuration is an interesting hook that the script wastes almost immediately. The characters are thin, the emotional stakes never land, and the space setting in the future timeline feels like a desperate creative swing that commits to nothing. You need something to care about between the kills or the kills stop meaning anything. Bloodline never gives you that. Compared to something like Event Horizon from the following year, which actually made deep space feel hellish and oppressive, this film looks like it gave up halfway through the planning stage.",
+        "Hellraiser: Bloodline is the point where the series started its long slide into direct to video irrelevance, and watching it now you can feel exactly why. The kills are doing all the heavy lifting and they are not enough to carry a feature film across three timelines and nearly 90 minutes. It is not painful to watch in the way that truly bad horror is painful, but it is hollow and forgettable, which might be worse for a franchise built on the promise of suffering that actually means something. Fans of the series will find just enough Cenobite carnage to stay curious. Everyone else will wonder why the puzzle box ever felt so dangerous to begin with."
+      ],
+      "images": [],
+      "verdict": "Bloodline is a franchise on life support, kept breathing by gore alone while everything that made Hellraiser worth caring about bleeds out quietly in the background. 4/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/tCQsVackQil2fl5TzOYrCAI6All.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/8HFwBR7roggdQoFNbcVzR7tMfOY.jpg"
+      }
+    },
+    {
       "id": 1790082771420,
       "slug": "childs-play-review-2",
       "seoTitle": "Child's Play Review (2019) | WretVision",
