@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1790256200412,
+      "slug": "annabelle-comes-home-review",
+      "seoTitle": "Annabelle Comes Home Review (2019) | WretVision",
+      "seoDescription": "Annabelle Comes Home turns the Warrens' artifact room into a haunted house ride and forgets to bring anything worth being scared of.",
+      "category": "movie",
+      "title": "Annabelle Comes Home",
+      "year": 2019,
+      "director": "Gary Dauberman",
+      "runtime": "106 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 4,
+      "featured": false,
+      "excerpt": "Annabelle Comes Home turns the Warrens' artifact room into a haunted house ride and forgets to bring anything worth being scared of.",
+      "body": [
+        "By 2019 the Conjuring universe had already started showing its cracks, and Annabelle Comes Home is the sound of those cracks widening. Written and directed by Gary Dauberman, this third Annabelle entry takes a genuinely promising premise, the Warrens' house full of cursed objects, and then proceeds to do almost nothing interesting with it. You have a room loaded with nightmare fuel. You have Vera Farmiga and Patrick Wilson on the poster. You have years of franchise goodwill in the bank. And somehow the film still manages to feel like filler.",
+        "To be fair, the artifact room itself looks great. Production design is doing real work here, and there are a handful of moments early on where the camera lingers on something in the background and your brain starts filling in the gaps. That is exactly the kind of quiet dread this franchise built its name on. But Dauberman cannot sustain it. The film shifts almost immediately into a babysitter horror setup with three teenage girls cycling through scares one by one, each tied to a different cursed object like an anthology episode that never commits to any single thread.",
+        "The Warrens are barely in it. That is the real problem. Farmiga and Wilson are the gravitational centre of this universe and sidelining them to focus on younger characters who have almost no depth is a genuine miscalculation. McKenna Grace tries, and there are moments where her performance almost elevates the material, but the script gives her nowhere to go. The scares are mostly jump scares with loud stings behind them, the pacing sags badly in the middle, and the Ferryman, the most visually interesting creature in the film, is completely wasted.",
+        "Annabelle Comes Home in 2019 is not offensively bad. It is something almost worse, pointless. It exists to keep the Conjuring extended universe ticking over between bigger entries rather than to tell a story that needed telling. If you want babysitter horror done right, watch When a Stranger Calls or even the original Halloween. If you want the Warrens used well, go back to Conjuring 2. This one is franchise maintenance dressed up as a movie, and you can feel that in every scene."
+      ],
+      "images": [],
+      "verdict": "4/10, a haunted house with all the lights on and nothing genuinely lurking in the dark.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/qWsHMrbg9DsBY3bCMk9jyYCRVRs.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/jB98SrdXAYSbiprjIwc7WfVCuCV.jpg"
+      }
+    },
+    {
       "id": 1790170032638,
       "slug": "hellraiser-bloodline-review",
       "seoTitle": "Hellraiser: Bloodline Review (1996) | WretVision",
