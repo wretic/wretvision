@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1790342629626,
+      "slug": "freddy-vs-jason-review",
+      "seoTitle": "Freddy vs. Jason Review (2003) | WretVision",
+      "seoDescription": "Freddy vs. Jason is dumb, campy, and absolutely delivers the one thing it promised: two icons beating the hell out of each other.",
+      "category": "movie",
+      "title": "Freddy vs. Jason",
+      "year": 2003,
+      "director": "Ronny Yu",
+      "runtime": "97 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "Freddy vs. Jason is dumb, campy, and absolutely delivers the one thing it promised: two icons beating the hell out of each other.",
+      "body": [
+        "Let's be honest about what Freddy vs. Jason (2003) actually is. It's not trying to be elevated horror. It's not trying to say anything about the world. It's a crossover event that fans had been demanding for over a decade, and director Ronny Yu showed up with one job: put Freddy Krueger and Jason Voorhees in the same film and let them fight. That's the whole pitch. Judged against that goal, this film is a genuine success. The backstory they construct to get both characters into the same story is ridiculous in the best possible way, with Freddy using Jason as a blunt instrument to resurrect his own legend in Springwood. It's exactly the kind of pulpy, trashy logic that makes horror crossovers work when they work.",
+        "The kids in this film are, to put it kindly, collateral damage. You won't remember their names. You won't care which one survives. That's fine because they're not the point. Monica Keena and Jason Ritter do what they can with underwritten roles, but nobody bought a ticket to watch teenagers emote. They're here to run, scream, and occasionally make spectacularly bad decisions, which this film delivers with commitment. What actually works is the dynamic between the two leads, and I mean Freddy and Jason as the leads. Robert Englund is clearly having the time of his life, leaning fully into the camp, and the contrast between his theatrical menace and Jason's silent brutality gives their scenes together a genuine energy that neither franchise had produced in years at that point.",
+        "Where the film stumbles is in its pacing through the middle section. There's a stretch where the film gets too interested in its own mythology and loses the momentum it built early on. The CGI is rough in places, particularly during the dreamscape sequences, and you feel the absence of the kind of practical craft that made the original Nightmare on Elm Street and Friday the 13th films so effective. The kills are entertaining but rarely inventive. The final confrontation is the centrepiece the whole film is building toward and it mostly delivers, even if it goes on a beat or two longer than it needed to. The ending sets up a sequel that never materialised, which is genuinely a shame because there was more gas in this particular tank.",
+        "Freddy vs. Jason sits comfortably alongside other crowd pleasing monster mashups like Alien vs. Predator, films that critics tend to dismiss and fans tend to defend, and both groups are a little bit right. This is not a good film by most conventional measures. The script is thin, the characters outside the two icons are forgettable, and it mistakes loudness for intensity on more than one occasion. But it's not trying to be The Conjuring. It's camp, it's gory, it's committed to its own absurdity, and on a Friday night with your brain switched off it genuinely delivers. That counts for something. 6.5 out of 10."
+      ],
+      "images": [],
+      "verdict": "Stupid, loud, and exactly as advertised, Freddy vs. Jason earns its cult status not by being a great film but by being a great time.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/f9ZASRUfl8Jlco7rgRx3ujPR0P7.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/hCAOQTMRop2fHjsl8n7yNwpkMJn.jpg"
+      }
+    },
+    {
       "id": 1790256200412,
       "slug": "annabelle-comes-home-review",
       "seoTitle": "Annabelle Comes Home Review (2019) | WretVision",
