@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1790516370112,
+      "slug": "scream-review-2",
+      "seoTitle": "Scream Review (2022) | WretVision",
+      "seoDescription": "Scream 2022 almost pulls it off — a soft reboot that's smarter than it has any right to be, even if it can't quite escape its own nostalgia trap.",
+      "category": "movie",
+      "title": "Scream",
+      "year": 2022,
+      "director": "Matt Bettinelli-Olpin, Tyler Gillett",
+      "runtime": "114 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7.2,
+      "featured": false,
+      "excerpt": "Scream 2022 almost pulls it off — a soft reboot that's smarter than it has any right to be, even if it can't quite escape its own nostalgia trap.",
+      "body": [
+        "Twenty-five years after Wes Craven's original slasher rewrote the rulebook, Radio Silence step in with a film that knows exactly what it is and mostly makes that self-awareness work in its favour. Scream 2022 is a requel, and it's honest about that. It acknowledges the formula, picks it apart in the dialogue, and then runs the formula anyway. Which sounds exhausting on paper but lands better than you'd expect. Jenna Ortega as Sam Carpenter is the anchor here, and she's genuinely good, grounded where she could easily have been shrill, carrying real weight in scenes that lesser films would have treated as connective tissue. The new Woodsboro cast around her is a mixed bag but mostly holds together. Matt Bettinelli-Olpin and Tyler Gillett shoot it cleanly, keep the tension functional, and understand that Ghostface works best in tight, domestic spaces rather than sprawling set pieces.",
+        "What the film does well it does confidently. The opening sequence sets the tone fast and hard. The kills have some genuine craft to them, a few with a nastiness that the later sequels in the original run had mostly lost. There is real dread in a couple of the home invasion scenes, the kind that makes you aware of windows and unlocked doors in a way good horror should. The script also earns some credit for trying to say something about toxic fandom and legacy IP, even if it keeps one foot safely on the marketing-friendly side of that argument. It is a film critiquing sequelitis while being a sequel, and it manages to not completely choke on that contradiction, which is no small thing.",
+        "Here is where it gets honest though. The legacy characters, Sidney Prescott, Gale Weathers, Dewey Riley, they come back and the film treats their return like a selling point. It is not. Neve Campbell, Courteney Cox, and David Arquette are all fine, but none of them are given anything meaningful to do that a well-written new character could not have done better. Dewey gets the most interesting arc of the three and even that feels like it was designed around a shock beat rather than genuine character logic. Sidney in particular shows up late, contributes little, and leaves. If you are going to bring back the legacy cast, give them a reason to exist beyond the poster and the nostalgia bump. Here it reads as a checkbox, and the new cast is good enough that the film would have stood taller without leaning on that crutch.",
+        "Scream 2022 is a solid, enjoyable horror film that works better as a guilty pleasure than as a genuine reinvention of the franchise. Compared to something like Halloween Kills, which crashed and burned trying the same legacy revival trick the same year, this one at least keeps its feet under it. It is not as sharp as it thinks it is, and the whodunit reveal lands with less impact than the original or Scream 4, but it is paced well, Ortega is a legitimate screen presence worth following, and it commits to its nastier moments without blinking. Worth a watch for horror fans, worth a rewatch for Scream fans, just do not go in expecting the legacy returns to hit the way the trailers imply they will."
+      ],
+      "images": [],
+      "verdict": "7/10, a requel that earns its place more than it deserves to, carried almost entirely by its new cast while the franchise nostalgia idles in the background doing very little.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/nD4M4Bx457ryLuKYpxFwQ2IBJ5w.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/ifUfE79O1raUwbaQRIB7XnFz5ZC.jpg"
+      }
+    },
+    {
       "id": 1790426867155,
       "slug": "curse-of-chucky-review",
       "seoTitle": "Curse of Chucky Review (2013) | WretVision",
