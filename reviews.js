@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1790613280825,
+      "slug": "saw-vi-review",
+      "seoTitle": "Saw VI Review (2009) | WretVision",
+      "seoDescription": "Saw VI finally gives Jigsaw a real target — and for one film, the franchise almost remembers what it was supposed to be about.",
+      "category": "movie",
+      "title": "Saw VI",
+      "year": 2009,
+      "director": "Kevin Greutert",
+      "runtime": "90 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Saw VI finally gives Jigsaw a real target — and for one film, the franchise almost remembers what it was supposed to be about.",
+      "body": [
+        "By 2009 the Saw franchise had become its own kind of trap, churning out sequels on autopilot with diminishing returns and increasingly convoluted mythology. Saw VI, directed by Kevin Greutert, is not a great film, but it is a slightly more honest one than the three or four entries that preceded it. The hook this time is a health insurance executive named William Easton, and the traps are built around his industry, around the cold actuarial logic of deciding who lives and who gets coverage denied. For the first time in a while, Jigsaw actually has a coherent philosophical target. That gives the film a backbone the series had been losing.",
+        "What works here is that the premise earns its nastiness rather than just delivering it. The carousel trap in the third act is genuinely effective, both mechanically and morally. It forces Easton to make the exact kind of utilitarian calculations his job demands every day, and watching him squirm under that weight lands harder than most of the franchise gore has in years. Peter Outerbridge plays Easton with enough smug corporate energy that you feel something when the tables turn. The film is angry in a way that feels pointed rather than random, and that is not a small thing for this series.",
+        "The problems are still there though. The flashback structure that the franchise has leaned on since Saw II is creaking badly at this point, and the Hoffman subplot feels like homework you have to do before the interesting stuff. Costas Mandylor is doing his best but the material gives him almost nothing that feels fresh. The traps outside the central thread vary wildly in quality, and a couple of them exist purely to fill runtime rather than say anything. The pacing drags in the middle stretch. You can feel the production machine running even when the script is trying to rise above it.",
+        "Saw VI sits in a strange position in the franchise, better than V and arguably better than III and IV, but still miles behind the original and the genuinely tight Saw II. If you are working through the series on a horror binge it is one of the more tolerable stops. The health insurance angle gives Jigsaw a real world villain to point at and the film is sharper for it. It is not a reinvention and it is not going to convert anyone who has already checked out of the series, but it is a small, honest step back upward for a franchise that badly needed one."
+      ],
+      "images": [],
+      "verdict": "Saw VI 2009 is a 6 out of 10, a decent horror thriller that finds a genuine target for once but cannot fully escape the franchise machinery grinding around it.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/jBr7bBPA4PYPaf4O6nfjYViyRWK.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/gqR59DjJGr6i8mxRD1VfOzCueTI.jpg"
+      }
+    },
+    {
       "id": 1790516370112,
       "slug": "scream-review-2",
       "seoTitle": "Scream Review (2022) | WretVision",
