@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1790692951545,
+      "slug": "hellraiser-revelations-review",
+      "seoTitle": "Hellraiser: Revelations Review (2011) | WretVision",
+      "seoDescription": "Hellraiser: Revelations exists for one reason only — to keep the copyright alive. That's it. That's the whole story.",
+      "category": "movie",
+      "title": "Hellraiser: Revelations",
+      "year": 2011,
+      "director": "Víctor García",
+      "runtime": "75 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 2,
+      "featured": false,
+      "excerpt": "Hellraiser: Revelations exists for one reason only — to keep the copyright alive. That's it. That's the whole story.",
+      "body": [
+        "Hellraiser: Revelations from 2011 is one of the most cynical pieces of filmmaking I have ever sat through. Dimension Films greenlit this thing in a matter of weeks specifically to retain the Hellraiser copyright before it lapsed back to Clive Barker. They did not pretend otherwise. They did not even try to hide it. The result is a film that was shot in eleven days on a budget that looks like it belonged to a student project, starring people who have no business being anywhere near a franchise with this kind of legacy. It is a cash grab with no cash and no grab.",
+        "Let's talk about Pinhead, because you cannot review a Hellraiser film without going there. Doug Bradley, the man who defined that role across eight films, took one look at this production and walked away. Smart man. Stephan Smith Collins steps in and he is just absolutely lost in the makeup. There is nothing behind the eyes. No weight, no menace, no presence. Pinhead is supposed to make your skin crawl before he says a word. Collins makes you feel nothing. That alone should tell you everything about where this film sits in the franchise ranking.",
+        "The production is cheap in every possible way and I mean every single dimension of that word. The acting is community theatre at best. The script recycles the first two Hellraiser films so shamelessly that it almost loops back around to being offensive. Two teenagers find the Lament Configuration in Mexico, chaos ensues, a family is drawn in, the Cenobites show up eventually. It has all the bones of a real Hellraiser story and absolutely none of the flesh. The gore effects, which should be a franchise staple, look rushed and unconvincing. Even the practical work, which I will normally defend to the death, looks like it was assembled overnight. Because it probably was.",
+        "I have seen bad horror sequels. I have sat through Hellraiser films five through eight and found things to appreciate even in the weakest of them. Revelations offers nothing. It is not campy enough to be fun like some low budget horror can be, it is not scary, it is not interesting, it has no atmosphere and no heart. If you want to understand what happens when a studio treats a beloved horror property as a legal technicality rather than a film, this is your case study. Worse than Hellraiser Hellworld and that is saying something."
+      ],
+      "images": [],
+      "verdict": "Hellraiser: Revelations is not a film, it is a contractual obligation dressed up in stolen clothes, and it is an embarrassment to everything the franchise built.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/lnCmYyYqpwXQAll5AUfNxlnvQk0.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/qv5zpQSx8naAm8C59DGVLMdZxbp.jpg"
+      }
+    },
+    {
       "id": 1790613280825,
       "slug": "saw-vi-review",
       "seoTitle": "Saw VI Review (2009) | WretVision",
