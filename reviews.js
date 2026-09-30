@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1790779480469,
+      "slug": "x-review",
+      "seoTitle": "X Review (2022) | WretVision",
+      "seoDescription": "Ti West made a slasher that actually has something to say, and somehow that makes it twice as scary.",
+      "category": "movie",
+      "title": "X",
+      "year": 2022,
+      "director": "Ti West",
+      "runtime": "105 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "Ti West made a slasher that actually has something to say, and somehow that makes it twice as scary.",
+      "body": [
+        "There is a version of X (2022) that is just another retro slasher coasting on nostalgia and gore. Ti West did not make that film. What he made instead is something genuinely surprising, a movie that earns its kills by first making you think about desire, mortality, ambition, and what happens when those things curdle. It opens with the aftermath of a massacre and then rewinds to show you exactly how it happened, which sounds like a cheap structural trick but West uses it to create something closer to tragedy than thriller. You know the destination. The horror is watching the road there.",
+        "Set in rural Texas in 1979, X follows a small film crew heading to a remote farmstead to shoot an adult film. Producer Wayne Gilroy, played with slick charm by Martin Henderson, has convinced himself he is on the edge of something legitimate, a real product with real distribution. His girlfriend Pearl, played by Mia Goth, is the talent, and she wants to be a star. Rounding out the crew are the cameraman RJ, his girlfriend Lorraine, the director Jackson Hole, and a dancer named Bobby-Lynne. The setup is lean and efficient. West does not waste your time with backstory padding. You get what you need and nothing more.",
+        "The farmstead is owned by an elderly couple, Howard and Pearl, both played by Mia Goth under remarkable makeup. Howard is hostile and unsettling from the jump, a man with a face like clenched fists. But it is Pearl who becomes the centre of the film's real emotional weight. Goth is extraordinary in this dual role. Her younger Pearl is warm and hungry, all nervous energy and genuine ambition. Her older Pearl is something altogether more disturbing, a woman consumed by grief for the body she used to have and the life she imagines she has been denied. The makeup work is impressive but it is the performance underneath it that sells every scene.",
+        "Ti West has been making interesting horror films for over a decade, The House of the Devil and The Innkeepers being the obvious touchstones, but X feels like a genuine step up in confidence. He shoots on film grain with a warm, bleached palette that feels authentically 1970s without ever becoming a parody of it. There are split screen sequences that call back to Brian De Palma without being slavishly imitative. The camera lingers where other slashers would cut away. West trusts the image. A shot of Pearl watching the younger cast through a window, lit by nothing but fading afternoon light, is genuinely beautiful and genuinely horrifying at the same time. That tension is what the whole film runs on.",
+        "The pacing in the first two acts is patient in a way that modern slashers almost never allow themselves to be. West is building something here and he knows it. The characters feel like actual people rather than archetypes waiting to be murdered in sequence. RJ's discomfort with what they are filming, Lorraine's decision to shed that discomfort, Wayne's desperate optimism, all of it gets real time to breathe. There is a conversation near a lake that manages to be both genuinely funny and quietly melancholy. It earns its emotional stakes. So when the violence arrives it lands with real weight rather than just technical spectacle.",
+        "And the violence does arrive. West does not skimp when the film shifts into full slasher mode. Several of the kills are inventive in ways I will not spoil, and the practical effects work throughout is exactly the kind of craftsmanship I want to see. There is no lazy CGI propping up the gore. These are physical, tactile deaths with weight behind them. One sequence involving a lake and an alligator is the kind of thing that makes you laugh out loud before you realise your stomach has also lurched. It is a genuinely great horror set piece, the kind you describe to someone the next day.",
+        "The film's central theme is not subtle but it is genuinely felt. Pearl, the elderly Pearl, is not a monster in the way slasher villains usually are. She is a woman who looks at these young bodies and feels a rage so profound it becomes murderous. She wants what they have. She remembers having it. The film does not ask you to sympathise exactly, but it asks you to understand, and that is a more interesting request. It gives X something to say that most slashers do not bother reaching for. It sits in the same thematic territory as something like Titane or Raw, films that use genre violence to explore desire and bodily obsession, though West keeps it more accessible than either of those.",
+        "If there are flaws, they sit mostly in the third act. Once the film moves fully into survival mode, some of the thematic richness gets traded for mechanics. A couple of character decisions in the final stretch strain credulity a little, not to the point of frustration but enough that you notice the screenplay pulling strings. The ending itself is effective, bookending the film's opening neatly, but the final moments feel slightly rushed compared to the care taken in everything that preceded them. It does not tank the film. It just means X is very good rather than exceptional. There is a difference and the third act is where you feel it.",
+        "X (2022) is one of the better slashers to come along in years, sitting comfortably alongside something like Barbarian as proof that the genre has genuine creative life left in it. Ti West clearly had a specific vision and committed to it fully, which is more than you can say for most horror releases in any given year. Mia Goth carries enormous weight across a dual performance and makes both versions of Pearl utterly watchable. It is weird in the best possible way, patient when it needs to be, brutal when it earns the right to be, and smarter than its premise has any obligation to be. Highly recommended for horror fans looking for something with a bit of actual craft behind it."
+      ],
+      "images": [],
+      "verdict": "8/10, X is a rare slasher that actually has something on its mind, and Ti West pulls it off with style, patience, and a Mia Goth performance you will not forget quickly.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/lopZSVtXzhFY603E9OqF7O1YKsh.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/o375tDNib7tihlkWdtLW1fQhNL1.jpg"
+      }
+    },
+    {
       "id": 1790692951545,
       "slug": "hellraiser-revelations-review",
       "seoTitle": "Hellraiser: Revelations Review (2011) | WretVision",
