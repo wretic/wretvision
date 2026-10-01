@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1790867609783,
+      "slug": "halloween-h20-20-years-later-review",
+      "seoTitle": "Halloween H20: 20 Years Later Review (1998) | WretVision",
+      "seoDescription": "Jamie Lee Curtis came back after 20 years and actually had something to say. That alone puts H20 ahead of most of what followed.",
+      "category": "movie",
+      "title": "Halloween H20: 20 Years Later",
+      "year": 1998,
+      "director": "Steve Miner",
+      "runtime": "86 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Jamie Lee Curtis came back after 20 years and actually had something to say. That alone puts H20 ahead of most of what followed.",
+      "body": [
+        "Twenty years is a long time to hide. Halloween H20: 20 Years Later drops us back into Laurie Strode's life and immediately you feel the weight of those two decades. She's not fine. She's drinking, she's paranoid, she's suffocating her son. Jamie Lee Curtis doesn't play this as nostalgia bait, she plays it as a woman genuinely broken by something that happened to her, and that grounded performance is the backbone the whole film hangs on. Director Steve Miner keeps things tight and Steve's work here holds up better than a lot of late nineties horror that was chasing the Scream formula at the time.",
+        "What H20 gets right is focus. The Scream influence is obvious, the self aware tone, the young cast, the Dimension Films polish, but Miner doesn't let it swallow the film whole. Michael Myers is still a shape. Still silent. Still terrifying when the film lets him breathe and move without telegraphing every beat. The boarding school setting works better than it has any right to. The final act is genuinely tense and the final confrontation between Laurie and Michael is the payoff the franchise had been building toward since 1978. Laurie stops running and that moment lands.",
+        "Where the film stumbles is in the supporting cast. LL Cool J is there, mostly comic relief, and while he's not terrible he's clearly padding. The teenage characters outside of Josh Hartnett's John Tate are thin and you won't lose sleep over any of them. The pacing in the second act drags a little as the film cycles through setups waiting for Michael to arrive properly. And the CGI assisted mask at certain points looks soft in a way that practical work wouldn't have. Small complaints against a film that mostly earns its place in the franchise, but complaints worth naming.",
+        "Halloween H20: 20 Years Later is the rare legacy sequel that actually respects what came before instead of strip mining it. It gives Laurie Strode a real arc, a real ending, and Jamie Lee Curtis something to actually do. It's not Halloween 1978, nothing is, but as a continuation it's one of the strongest entries the franchise produced. Worth tracking down for horror fans who haven't revisited it and essential viewing if you're doing a proper Halloween series watch. Just know that what comes after in the timeline quietly undoes what this film earns, which makes it sting a little in hindsight. 7/10."
+      ],
+      "images": [],
+      "verdict": "A legitimate sequel with a genuine emotional core, held back just enough by thin supporting characters and second act drift to keep it out of the top tier, but Laurie Strode's final stand here is exactly what 20 years of waiting deserved.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/lqLXUm3oK59sGJKRH2Zjj2m3iMg.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/A1LU0zDxrEhtMYpqDHbXkBJT6aP.jpg"
+      }
+    },
+    {
       "id": 1790779480469,
       "slug": "x-review",
       "seoTitle": "X Review (2022) | WretVision",
