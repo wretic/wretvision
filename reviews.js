@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1790951647147,
+      "slug": "scream-2-review",
+      "seoTitle": "Scream 2 Review (1997) | WretVision",
+      "seoDescription": "Scream 2 is a smart, entertaining follow-up that knows exactly what it is, which is also precisely its problem.",
+      "category": "movie",
+      "title": "Scream 2",
+      "year": 1997,
+      "director": "Wes Craven",
+      "runtime": "120 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Scream 2 is a smart, entertaining follow-up that knows exactly what it is, which is also precisely its problem.",
+      "body": [
+        "The first Scream did something genuinely difficult. It deconstructed slasher rules while simultaneously being a great slasher. It had teeth. It had wit. And it landed with the kind of cultural impact that makes a sequel both inevitable and immediately suspicious. Wes Craven knew this. Kevin Williamson knew this. So they leaned into it and made a film about sequels, about how sequels are supposed to work, about the rules of the follow-up. That is a clever idea. The problem is that being clever about your limitations does not actually remove them.",
+        "Scream 2 opens with one of the best sequences in the whole franchise. Jada Pinkett Smith and Omar Epps at a packed cinema screening of Stab, the in-universe film adaptation of the Woodsboro murders, surrounded by a crowd in Ghostface costumes. It is genuinely unsettling in a way that the rest of the film never quite recaptures. The chaos of a public space, the anonymity of the masks, the noise drowning out the screams. Craven understood that horror lives in the gap between what you can see clearly and what you cannot, and this sequence exploits that perfectly. It sets a bar the film spends the next ninety minutes trying to clear.",
+        "Neve Campbell returns as Sidney Prescott and she is doing more with this role than the script really demands. Sidney is now at college, trying to rebuild, and Campbell plays the fragility and the steel at the same time without ever tipping into one or the other. You believe she is haunted. You also believe she is not done fighting. That balance is harder to achieve than it looks and Campbell does it on instinct. She is the emotional anchor of this whole franchise and Scream 2 is at its best when it stays close to her face and lets the audience sit in her discomfort.",
+        "Courteney Cox and David Arquette are back as Gale Weathers and Dewey Riley respectively, and their will-they-won't-they dynamic gets more screen time here than strictly necessary. Cox is reliably sharp and Gale's arc from opportunist to something closer to a genuine ally has some real texture to it. Arquette plays Dewey with the same sweet bumbling energy as before, which works. Their banter is fun. But there are stretches of this film where the Gale and Dewey material starts to feel like padding, like the film is buying time between set pieces rather than building toward something.",
+        "Craven's direction is confident throughout. He knows how to move a camera through a tight space and he knows how to let tension breathe before he releases it. The sorority house sequence is a standout. Sidney crawling over an unconscious Ghostface in a wrecked car while he stirs is the kind of agonising slow burn that Craven built his career on. He is not relying on jump scares here, or at least not only on them. There is a commitment to atmosphere in these moments that elevates the material. The craft is undeniable even when the script lets things down.",
+        "And the script does let things down in places. Williamson's dialogue is still sharp and the meta commentary on sequels is fun, particularly the film class discussions that frame the whole story. But the mystery surrounding the new Ghostface is considerably weaker than in the original. The killer reveal here has been widely debated over the years and not in the way the Scream franchise probably hoped. It feels hurried. The motivation does not fully land and the final act, while energetic, loses some of the tightness that made the original's climax feel so satisfying. You can see the joins.",
+        "One of the things Scream 2 cannot escape is the formula problem. The original established a pattern and this film, for all its self-awareness about sequels, largely follows it. New location, expanded cast, pick off the supporting players, narrow it down. The film acknowledges this in its own dialogue but acknowledgement is not the same as subversion. There is a moment early on where Randy Meeks, played again by Jamie Kennedy, lays out the rules of a horror sequel and the film then proceeds to follow most of them. That is the joke but it is also the trap. The meta layer gives you permission to be conventional.",
+        "Compared to something like Halloween H20, which came out the following year and tried a similar legacy continuation approach, Scream 2 holds up better as a piece of filmmaking. It has more ambition and more wit than most of what surrounded it in the late nineties slasher revival it helped to ignite. But compared to the original Scream, which genuinely surprised you even when you thought you knew what was coming, the sequel feels like a very well-executed cover version. All the right notes, played by people who know what they are doing, but missing that thing you cannot manufacture which is the shock of hearing the song for the first time.",
+        "Scream 2 is a solid, enjoyable horror film that earns its place in the franchise without quite earning the same level of praise as its predecessor. The opening is brilliant. Campbell is consistently excellent. Craven brings real craft to the set pieces. But the formula is visible now, the killer reveal does not stick the landing, and the self-awareness can only carry you so far before you need the film underneath the commentary to be just as strong. It is the exact film you expect it to be, made well, and that is both its achievement and its ceiling. 7/10."
+      ],
+      "images": [],
+      "verdict": "Scream 2 is a confident, well-made sequel that does almost everything right and still cannot escape the fact that you have seen this before, because the first film made sure you would never forget it.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/dORlVasiaDkJXTqt9bdH7nFNs6C.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/lVmcX3hlJqsUGkEOEZkRFiOQdLv.jpg"
+      }
+    },
+    {
       "id": 1790867609783,
       "slug": "halloween-h20-20-years-later-review",
       "seoTitle": "Halloween H20: 20 Years Later Review (1998) | WretVision",
