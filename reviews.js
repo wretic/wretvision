@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1791032959475,
+      "slug": "the-nun-review",
+      "seoTitle": "The Nun Review (2018) | WretVision",
+      "seoDescription": "The Nun proves that some characters are scarier with less screen time, not more.",
+      "category": "movie",
+      "title": "The Nun",
+      "year": 2018,
+      "director": "Corin Hardy",
+      "runtime": "96 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "The Nun proves that some characters are scarier with less screen time, not more.",
+      "body": [
+        "There is a version of The Nun that works. A slow, suffocating gothic horror film set in a crumbling Romanian abbey, dripping with dread, where Valak appears maybe three times and destroys you each time. That film exists in your imagination. What actually got made in 2018 is a bloated origin story that mistakes quantity for terror. Director Corin Hardy has a decent eye for location, and the Carta Monastery setting genuinely looks the part. The bones of something atmospheric are here. The problem is everything built on top of those bones.",
+        "Valak, as glimpsed in The Conjuring 2, was one of the most striking horror images in recent franchise memory. A pale demonic nun standing in a doorway, barely explained, maximally unsettling. Giving her an entire film does not expand on that terror. It dissolves it. By the end of The Nun you have seen her so many times, in so many cheap gotcha moments, that she stops meaning anything. Familiarity is the enemy of horror and this film hands it every weapon.",
+        "The jump scares are genuinely horrendous. Not just frequent, but lazy in a way that feels almost contemptuous of the audience. A loud noise, a sudden face, a sting on the soundtrack. Repeat forty times. Taissa Farmiga and Demian Bichir do what they can with underwritten roles, and Jonas Bloquet provides some light relief that occasionally lands. But the script gives them nothing with real weight to carry. The lore it tries to build around Valak feels retrofitted rather than earned, and the connection to the broader Conjuring universe feels like obligation rather than storytelling.",
+        "The Nun is not a total disaster and calling it unwatchable would be unfair. It has atmosphere in patches, a strong location, and the occasional image that reminds you what this character could have been in more disciplined hands. But as a horror film it fundamentally fails at the one thing that matters most, which is making you feel something other than mild irritation at another cheap scare. Fans of the Conjuring universe and gothic horror in general will find scattered moments worth their time. Everyone else will wonder why they did not just rewatch The Conjuring 2 instead. 5/10."
+      ],
+      "images": [],
+      "verdict": "The Nun had one of horror's best recent monsters and spent ninety minutes explaining the mystery away, jump scare by jump scare, until there was nothing left to fear.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/cMnVmutb5mVgIBeiMOncAbwNjvG.jpg"
+      }
+    },
+    {
       "id": 1790951647147,
       "slug": "scream-2-review",
       "seoTitle": "Scream 2 Review (1997) | WretVision",
