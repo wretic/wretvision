@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1791121757087,
+      "slug": "halloween-resurrection-review",
+      "seoTitle": "Halloween: Resurrection Review (2002) | WretVision",
+      "seoDescription": "Halloween: Resurrection is a campy, chaotic mess that somehow still clears the bar of watchable. Barely.",
+      "category": "movie",
+      "title": "Halloween: Resurrection",
+      "year": 2002,
+      "director": "Rick Rosenthal",
+      "runtime": "94 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Halloween: Resurrection is a campy, chaotic mess that somehow still clears the bar of watchable. Barely.",
+      "body": [
+        "Halloween: Resurrection (2002) is the kind of sequel that exists because a franchise still had commercial momentum and nobody had the nerve to pump the brakes. Directed by Rick Rosenthal, who also helmed Halloween II back in 1981, this one ditches almost everything that made the series work and replaces it with an internet reality show. Yes, really. A group of college students spend Halloween night locked inside the original Myers house, livestreaming the whole thing for an online audience. That is the premise. That is the movie they made.",
+        "There are things here that technically function. The Myers house setting still carries some residual dread, and Michael himself remains a physical presence that the film does not completely waste. The early sequence involving Laurie Strode, played once again by Jamie Lee Curtis, is genuinely tense and has more craft in it than the rest of the film combined. Curtis gives it real weight. Then she is gone, the film pivots hard into its reality show gimmick, and everything she brought with her evaporates almost instantly.",
+        "Then there is Busta Rhymes. Playing a tech entrepreneur running the livestream operation, Rhymes is so wildly out of place that the film almost becomes a different genre entirely. He karate kicks Michael Myers. He tells Michael Myers to get the hell out of his face. It is campy in a way that could theoretically be fun if the film had any awareness of what it was doing, but Resurrection plays most of it straight, which makes the tonal whiplash genuinely disorienting. Tyra Banks is also here. The film seems pleased about this.",
+        "Halloween: Resurrection is not the worst horror film of its era, which is a very low bar to clear. It is watchable in the way that a bad reality show is watchable, which is fitting given the premise. Compared to something like Halloween H20, which at least had stakes and a coherent tone, this feels like a franchise running out of ideas and reaching for cultural relevance in the worst possible way. It is barely a Halloween film. It is a time capsule of early 2000s internet culture wearing a Michael Myers mask, and it does not wear it convincingly."
+      ],
+      "images": [],
+      "verdict": "Halloween: Resurrection is campy, forgettable, and a genuine misfire for the franchise, but if you go in expecting chaos rather than horror, you will get exactly what you paid for.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/1mlKwbNzJCGzqe4i0ZEJtUUL290.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/jnSB3v76tGte9lzHS1XLGu75oaT.jpg"
+      }
+    },
+    {
       "id": 1791032959475,
       "slug": "the-nun-review",
       "seoTitle": "The Nun Review (2018) | WretVision",
