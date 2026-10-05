@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1791219346672,
+      "slug": "insidious-review",
+      "seoTitle": "Insidious Review (2010) | WretVision",
+      "seoDescription": "Insidious does something most horror films forget to try: it builds a world that feels genuinely unlike anything you've seen before.",
+      "category": "movie",
+      "title": "Insidious",
+      "year": 2010,
+      "director": "James Wan",
+      "runtime": "103 min",
+      "rating": "PG-13",
+      "genres": [
+        "Horror"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "Insidious does something most horror films forget to try: it builds a world that feels genuinely unlike anything you've seen before.",
+      "body": [
+        "James Wan and Leigh Whannell had already given us Saw by 2010, so people expected blood and traps. What they got instead was something far stranger and, honestly, far more interesting. Insidious is a haunted house film that isn't really about a house. It's about a boy who can leave his body while he sleeps and wander somewhere called The Further, a dark astral plane where the dead and the malevolent are waiting. That pivot, from standard paranormal chills to full-on otherworldly mythology, is what separates this from the dozen forgettable ghost films released the same year.",
+        "What Wan gets absolutely right here is atmosphere. The Further is genuinely unsettling as a concept and he sells it visually without leaning on expensive effects. There's a slow, creeping dread to the first two acts that builds patiently. Patrick Wilson and Rose Byrne anchor the family drama with real conviction, never overplaying the fear, which keeps you invested when things escalate. The practical creature design for the red-faced demon is memorable in the way good horror imagery should be, the kind of thing that sits in your head after the credits roll.",
+        "It's not flawless. The tone wobbles in places, particularly when the ghost hunters arrive and bring a slightly comedic energy that undercuts the tension Wan has carefully constructed. A few of the jump scares feel like reflex rather than craft, which is a shame because the film clearly knows how to generate dread without them. And the final act, while committed, rushes slightly through ideas that deserved more space. You can feel the ambition slightly outpacing the runtime in the back half.",
+        "But here's the thing. Insidious earns its reputation and then some. In a genre full of films that mistake noise for horror, this one actually tries something. The astral projection concept, The Further as a location, the idea that the threat isn't in the walls but in the boy himself. That's fresh, and Wan executes it with enough confidence to make it land. If you want a comparison, this sits comfortably alongside The Conjuring as one of the better supernatural horror films of its era. Insidious from 2010 is the rare mainstream horror film that genuinely has ideas behind it."
+      ],
+      "images": [],
+      "verdict": "Insidious is smart, atmospheric, and built around a concept original enough to make you remember why you fell for horror in the first place, a clear 8 out of 10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/tmlDFIUpGRKiuWm9Ixc6CYDk4y0.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/tJvRdhlkonjBLBUpTqp0RPPujxJ.jpg"
+      }
+    },
+    {
       "id": 1791121757087,
       "slug": "halloween-resurrection-review",
       "seoTitle": "Halloween: Resurrection Review (2002) | WretVision",
