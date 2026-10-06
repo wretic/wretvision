@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1791298374334,
+      "slug": "halloween-4-the-return-of-michael-myers-review",
+      "seoTitle": "Halloween 4: The Return of Michael Myers Review (1988) | WretVision",
+      "seoDescription": "Michael Myers is back, but after Halloween 4 you might start wondering if anyone had a real reason to bring him back.",
+      "category": "movie",
+      "title": "Halloween 4: The Return of Michael Myers",
+      "year": 1988,
+      "director": "Dwight H. Little",
+      "runtime": "88 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "Michael Myers is back, but after Halloween 4 you might start wondering if anyone had a real reason to bring him back.",
+      "body": [
+        "Halloween 4: The Return of Michael Myers landed in 1988 after the divisive Halloween III tried to take the franchise somewhere new and got punished for it. So here we are, back to basics. Michael wakes up from a coma, learns his niece Jamie exists, and sets off to Haddonfield to do what he does. Dwight H. Little directs with competence, Donald Pleasence returns as Loomis in full unhinged prophet mode, and the film genuinely tries to rebuild the dread that made the original work. You can feel the intent. It just does not quite get there.",
+        "What works, when it works, is the mood. A few sequences carry real weight, particularly anything involving young Danielle Harris as Jamie Lloyd. Harris is genuinely good here, especially for a child actor in a slasher, and she anchors the film emotionally in a way that most of the adult cast does not. Pleasence is reliable as ever, chewing scenery in the best possible way. And there are moments, a rooftop chase, some of the small town atmosphere, where the film almost convinces you it belongs in the same conversation as Carpenter's original.",
+        "But here is the problem. The mask. Again. Every sequel seems to hand Michael a slightly different face and none of them have been right since 1978. Halloween 4 is no exception. The shape of it is off, the expression too flat, and it subtly deflates every scene he is in. It sounds like a small thing until you realise how much the original mask did to make Myers genuinely unsettling. Beyond that the film is structurally thin. There is a lot of moving from location to location without much tension building between kills, and the supporting characters exist entirely to be disposed of rather than to make you care.",
+        "Halloween 4: The Return of Michael Myers is a decent watch for fans of the franchise and anyone who enjoys late eighties slasher horror in the vein of A Nightmare on Elm Street's later entries, in terms of that same studio machine energy. It is not a disaster. It is just aggressively mediocre, a film that does just enough to justify existing without giving you a reason to return to it. The ending has some genuine ambition and deserves credit for trying something, but everything leading up to it feels like obligation rather than passion. If you are working through the Halloween series chronologically you will get through it fine and forget most of it by morning."
+      ],
+      "images": [],
+      "verdict": "Halloween 4 is a competent retread that mistakes familiarity for quality, kept afloat by Danielle Harris and not much else.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/eFSOkXF9n9hsfGv45MDsPixiOyx.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/zE4I9YvrrMUfwDZ3zLiN10eRZxG.jpg"
+      }
+    },
+    {
       "id": 1791219346672,
       "slug": "insidious-review",
       "seoTitle": "Insidious Review (2010) | WretVision",
