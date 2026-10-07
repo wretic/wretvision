@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1791386318092,
+      "slug": "halloween-iii-season-of-the-witch-review",
+      "seoTitle": "Halloween III: Season of the Witch Review (1982) | WretVision",
+      "seoDescription": "No Michael Myers, no Laurie Strode, no Shape — just Silver Shamrock jingles and a Halloween III that dares to be something else entirely.",
+      "category": "movie",
+      "title": "Halloween III: Season of the Witch",
+      "year": 1982,
+      "director": "Tommy Lee Wallace",
+      "runtime": "98 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 5,
+      "featured": false,
+      "excerpt": "No Michael Myers, no Laurie Strode, no Shape — just Silver Shamrock jingles and a Halloween III that dares to be something else entirely.",
+      "body": [
+        "Here is the thing about Halloween III: Season of the Witch. John Carpenter and Debra Hill had an actual vision here. They wanted Halloween to become an anthology franchise, a different horror story every October, connected only by the holiday. That is not a stupid idea. In fact on paper it is kind of a bold one. The problem is that nobody told the audience. In 1982, people sat down expecting Michael Myers and got Tom Atkins battling a druidic toy company with a plan to kill children via televised witchcraft and cursed rubber masks. Whatever reaction you expected from that crowd, warmth was not it.",
+        "Taken on its own terms, the film has genuine atmosphere in places. Tommy Lee Wallace directs with a grimy, paranoid energy that fits the era. The Silver Shamrock jingle is legitimately unsettling, the kind of thing that burrows into your skull and stays there. The practical effects during the mask sequences are grotesque and committed, exactly the kind of body horror that lands harder than any CGI ever could. Tom Atkins is reliably watchable even when the script lets him down, which it does fairly often. There are stretches of this film that genuinely work as a slow burn mystery and that counts for something.",
+        "But here is where it falls apart. The story is messy and the pacing drags badly through the second act. The romance between Atkins and Stacey Nelkin feels unearned and awkward, two people going through thriller movie motions rather than actually connecting. The villain's plan, when it is finally laid out, tips over from creepy into almost comedic, and the film never quite decides how seriously it wants to take itself. The ending is genuinely bleak and I respect the ambition there, but it arrives after so much wheel spinning that the impact is diluted. As a standalone horror film from 1982 it is watchable. As a Halloween sequel it is a baffling mismatch of expectations.",
+        "Season of the Witch sits in a strange limbo and honestly that is the most accurate way to describe it. It is not bad enough to dismiss and not good enough to fully champion. If this film had been released under a different title with no Halloween branding attached, the conversation around it would be completely different and probably kinder. But it carries that name, and that name promised a Shape in the shadows and got a Stonehenge robot factory instead. Comparable to other anthology pivots that misfired commercially before finding cult appreciation, like Psycho II trying to be something more literary than anyone wanted, it is a curiosity more than a success. 5/10."
+      ],
+      "images": [],
+      "verdict": "A genuinely strange film with flashes of real atmosphere that is impossible to fully separate from the devastating absence of the one thing its audience came to see.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/WABfdeaThFYXCySGIOvRNv2sSW.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/eyOKqtgNeEEIp7zYMHnpISpsaS3.jpg"
+      }
+    },
+    {
       "id": 1791298374334,
       "slug": "halloween-4-the-return-of-michael-myers-review",
       "seoTitle": "Halloween 4: The Return of Michael Myers Review (1988) | WretVision",
