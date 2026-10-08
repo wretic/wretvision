@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1791472937326,
+      "slug": "hellraiser-inferno-review",
+      "seoTitle": "Hellraiser: Inferno Review (2000) | WretVision",
+      "seoDescription": "Hellraiser: Inferno is the first sequel to actually try something different, and that counts for more than you'd expect.",
+      "category": "movie",
+      "title": "Hellraiser: Inferno",
+      "year": 2000,
+      "director": "Scott Derrickson",
+      "runtime": "99 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Hellraiser: Inferno is the first sequel to actually try something different, and that counts for more than you'd expect.",
+      "body": [
+        "Here is a weird thing to say about the fifth entry in a franchise that was already running on fumes: Hellraiser: Inferno from 2000 is actually attempting something. Not succeeding completely, not reinventing the wheel, but genuinely attempting a different kind of story within the Hellraiser universe. After Bloodline nearly killed the series dead and Hell on Earth before it felt like a cash grab in a leather jacket, Inferno arrives with something resembling a real premise. That alone puts it ahead of its two immediate predecessors, which is a low bar, sure, but you take what you get at this point in a franchise.",
+        "The setup borrows heavily from the detective noir playbook. Craig Sheffer plays Joseph Thorne, a corrupt Denver detective who stumbles onto a murder scene and finds a puzzle box. From there the film slides into a psychological mystery structure that feels closer to early Saw or Seven than it does to the original Hellraiser. A killer called The Engineer is leaving child fingers at crime scenes, Thorne is losing his grip on reality, and Pinhead is lurking at the edges like a judge waiting to deliver a sentence. It is a thriller wearing a horror costume, and for the most part that gamble works in the film's favour.",
+        "Director Scott Derrickson, years before Doctor Strange and Sinister would make his name, handles the material with more competence than this direct to video production had any right to expect. He understands that Inferno's low budget is best hidden through restraint and atmosphere rather than spectacle, and so he leans into the grimy, neon soaked detective world and keeps Pinhead off screen long enough that his appearances carry actual weight. There are choices here that feel like a director with genuine instincts rather than someone just executing a paycheck job, and that shows throughout.",
+        "The psychological deterioration of Thorne is where the film spends most of its energy and it is largely effective. Sheffer is not a flashy actor but he brings a believable seediness to the role, a man who has been getting away with things his whole life and knows it. The corrupt cop arc has been done to death but Inferno ties it specifically to the Hellraiser mythology of pleasure, sin, and consequence in a way that actually fits the source material. Clive Barker's original concept was always about the idea that you get exactly what you deserve, and Inferno understands that on a level the previous sequels largely ignored.",
+        "Now the hooks. There is a scene involving a cop who has been subjected to the Cenobites and the image of those hooks buried in his face, pulling the skin in every direction, is genuinely upsetting in the best possible way. Practical effects work like that is exactly what the Hellraiser series lives or dies on, and Inferno delivers it with real commitment. It is not wall to wall like the original, but when the film reaches for that kind of visceral body horror imagery it earns it. That single image stuck with me in a way that most of the franchise's later entries simply do not.",
+        "Where Inferno starts to wobble is in its pacing across the middle section. The detective investigation segments go on longer than they need to, and there is a stretch roughly forty minutes in where the film mistakes repetition for escalation. Thorne visits another crime scene, loses track of reality again, wakes up somewhere disorienting, repeat. The structure is deliberately circular given where the film ends up, but in the moment it drags. You can feel the limited budget working against the ambition because scenes that should feel unhinged and surreal just feel a bit underdone and cheap.",
+        "Pinhead himself is underused, which is either a smart creative choice or a production limitation and probably both. Doug Bradley shows up for a handful of scenes and his delivery is as precise as ever, but the character functions more as a narrative device here than a genuine presence. The final confrontation and revelation are handled well enough, the film commits to its twist and does not flinch from making Thorne pay for who he is, but you walk away wishing Pinhead had been allowed to genuinely menace the story rather than bookend it.",
+        "Compared to where the franchise was at this point, Inferno is a step up. Hell on Earth and Bloodline had reduced Pinhead to a slasher villain with cheekbones, essentially a supernatural serial killer with no thematic weight. Inferno at least remembers that the Hellraiser mythology is about desire and damnation and tries to build a story around that rather than just stringing kill scenes together. It does not reach the heights of the original or even Hellbound, but it is not trying to. It is trying to do something smaller and more sustainable within a dying franchise, and on those terms it mostly delivers.",
+        "Hellraiser: Inferno is a 6 out of 10. A genuine step above the previous two entries but not by a huge margin, and the pacing issues and thin budget hold it back from being anything more than a curiosity. If you are working through the Hellraiser franchise on streaming and your patience is already tested, this one will reward you more than the ones before it. Think of it as the direct to video equivalent of early Saw, a detective in a trap, a man being forced to reckon with who he is, and enough nasty imagery to remind you which franchise you are watching."
+      ],
+      "images": [],
+      "verdict": "Hellraiser: Inferno is the most interesting bad sequel in the franchise, which makes it worth one watch and not much more.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/yyiuRnEIDCjr0g2Fsal0isi9GcU.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/hrGk4WuDe62EtyCJIy5G35a7Grw.jpg"
+      }
+    },
+    {
       "id": 1791386318092,
       "slug": "halloween-iii-season-of-the-witch-review",
       "seoTitle": "Halloween III: Season of the Witch Review (1982) | WretVision",
