@@ -10,6 +10,36 @@
 
 const REVIEWS = [
     {
+      "id": 1791558283284,
+      "slug": "hellraiser-review-2",
+      "seoTitle": "Hellraiser Review (2022) | WretVision",
+      "seoDescription": "Hellraiser 2022 doesn't fully earn its place in the franchise, but it gets closer than it has any right to.",
+      "category": "movie",
+      "title": "Hellraiser",
+      "year": 2022,
+      "director": "David Bruckner",
+      "runtime": "121 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Hellraiser 2022 doesn't fully earn its place in the franchise, but it gets closer than it has any right to.",
+      "body": [
+        "There's a version of a Hellraiser reboot that could've been genuinely great. David Bruckner, the man behind The Night House, is not a lazy filmmaker. He has taste. He understands atmosphere. And this 2022 Hulu reimagining of Clive Barker's iconic cenobite mythology shows that understanding in flashes, enough to remind you what the franchise was always capable of, before the sequels dragged it through the gutter. The premise is faithful enough: a puzzle box, a bargain with something ancient and cruel, flesh and desire paying the toll. It's Hellraiser. You know what you're signing up for.",
+        "What genuinely surprised me was the lead. Odessa A'zion as Riley is the first woman to carry this franchise, and I didn't walk in expecting much. She won me over. There's a rawness to the performance, a real fragility underneath the toughness, and it earns the arc rather than just asserting it. The cenobite designs are striking too, a genuine visual reinvention that doesn't just photocopy Doug Bradley's Pinhead and call it a day. The new Pin Head, played by Jamie Clayton, is unsettling in a cold, almost surgical way. And the practical effects work is serious, gruesome in a way that genuinely calls back to the 1987 original.",
+        "But the film has problems and I'm not going to pretend otherwise. The pacing drags badly in the second act. There's a stretch in the middle where the film loses its nerve a little, circling its own mythology rather than driving through it. Some of the supporting characters are thin to the point of being props, and a few decisions made for plot reasons are the kind of thing that would get someone killed in real life inside thirty seconds of bad judgment. The film also pulls a punch or two near the end when I wanted it to fully commit. Think Midsommar or Hereditary in terms of commitment to a dark destination. This doesn't quite get there.",
+        "Hellraiser 2022 on Hulu is a decent horror film and a genuine attempt to restore some dignity to a franchise that had been embarrassing itself for decades. It's gruesome, it has a visual identity, and it's got a lead performance worth following. It just doesn't fully close the deal. The atmosphere is there in pieces but never quite locks in for long enough to make this something you'll be thinking about the next morning. A solid effort, not a triumphant return. 6/10, watchable and at times impressive, but it leaves too much on the table to be called the revival the franchise deserved."
+      ],
+      "images": [],
+      "verdict": "Hellraiser 2022 has the guts, literally, but not quite enough nerve to become the comeback this franchise needed.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/f9ZAIUxTTk23vo1BC9Ur1Rx5c2E.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/3r3tZgKTw1554hcFoUfydLHE38w.jpg"
+      }
+    },
+    {
       "id": 1791472937326,
       "slug": "hellraiser-inferno-review",
       "seoTitle": "Hellraiser: Inferno Review (2000) | WretVision",
