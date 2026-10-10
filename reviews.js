@@ -10,6 +10,42 @@
 
 const REVIEWS = [
     {
+      "id": 1791642013708,
+      "slug": "saw-review",
+      "seoTitle": "Saw Review (2004) | WretVision",
+      "seoDescription": "Saw (2004) shouldn't work as well as it does, but twenty years later it still hits like a freight train.",
+      "category": "movie",
+      "title": "Saw",
+      "year": 2004,
+      "director": "James Wan",
+      "runtime": "103 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Saw (2004) shouldn't work as well as it does, but twenty years later it still hits like a freight train.",
+      "body": [
+        "Let me be clear about something. Saw did not invent brutal horror. It did not invent the serial killer genre. What it did was take a micro budget, a genuinely terrifying central concept, and a pair of first time filmmakers working out of their depth in the best possible way, and it produced something that rewired what mainstream horror could look like. James Wan and Leigh Whannell made this for around one million dollars. One million. The result went on to gross nearly a hundred million worldwide and spawn one of the most relentless horror franchises in cinema history. That origin story alone deserves respect before you even press play.",
+        "The setup is deceptively simple. Two men wake up chained in a filthy bathroom. A dead body lies between them holding a gun and a tape recorder. There is a hacksaw. The saw is not for the chains. That premise, delivered in the opening minutes, does something rare. It earns your full attention and holds it like a vice. You are not waiting for the horror to arrive. You are already inside it. The confined space works for the budget because Wan understands instinctively that the imagination fills in what the camera cannot show. The bathroom becomes one of the most effective single locations in modern horror.",
+        "Cary Elwes and Leigh Whannell are the two men in the room, and they carry the bulk of the film on their backs. Elwes plays Dr. Lawrence Gordon, a surgeon with secrets, and Whannell plays Adam, a photographer who has been surveilling Gordon without his knowledge. Their dynamic is what keeps the film ticking between reveals. Elwes is not at his absolute best here, and there are moments where you can see the performance rather than the person, but Whannell as Adam brings a raw, panicked energy that feels genuinely unpolished in the right way. He wrote the script. He is acting in his own nightmare. That authenticity bleeds through.",
+        "Danny Glover as Detective Tapp is the outside thread, the obsessed cop who has been hunting Jigsaw for years. His subplot functions as exposition delivery but Glover does something interesting with it. He plays Tapp as a man already broken before the film starts, someone the case has consumed entirely. The scenes of him watching surveillance footage in a dark apartment have a texture to them that elevates what could have been throwaway procedural filler. Ken Leung as Detective Sing is less developed but the pair work well together in the brief time they share. The script knows when to cut back to the bathroom and does so with discipline.",
+        "Wan's direction is the real story here. This is a debut feature in name only. The visual language is confident, the editing is aggressive without becoming incoherent, and the decision to use desaturated, sickly green and grey tones throughout creates a persistent sense of rot. Everything looks like it smells wrong. That is not an accident. Wan and cinematographer David A. Armstrong made deliberate choices to make the world feel contaminated, to make you feel slightly unwell just from looking at it. Atmosphere in horror is everything, and this film has it in abundance even when the budget is showing at the seams.",
+        "The Jigsaw concept itself is what elevates this above the competition. John Kramer, though we do not fully know his name yet, is not a slasher. He does not chase you down a hallway. He builds elaborate moral traps and forces his victims to confront what he perceives as their own failures to value life. It is a genuinely philosophical premise wrapped in gore and tension. You can argue with the logic of it, and the sequels certainly tested its limits, but in this first film the concept feels fresh and unsettling. The tape recorder monologues are chilling not because of the voice but because of what is being said.",
+        "The pacing is tight for the most part. The film runs just under an hour and forty minutes and it rarely overstays its welcome. There is a sequence involving a reverse bear trap that is staged and lit brilliantly, and a razor wire maze setpiece that makes you wince purely through sound design and performance. These traps are executed with practical ingenuity rather than digital trickery, and that tactile quality matters enormously. You believe in the physical reality of the danger because the filmmakers clearly built the things. That commitment to practical construction is one of the film's most underrated strengths.",
+        "Where does it wobble? Honestly, some of the flashback structure is a little clunky. The film cuts between timelines in a way that occasionally pulls you out of the immediate tension rather than deepening it. A few of the supporting performances, particularly in the detective investigation scenes, lean toward TV movie territory. And there is a moment late in the second act where the editing becomes so frenetic it borders on incoherent. These are not fatal flaws. They are the fingerprints of a low budget debut. But they are there. Compared to something like Se7en, which clearly influenced this film's aesthetic and moral framework, Saw shows its limitations most visibly in its quieter dialogue scenes.",
+        "Twenty years on, Saw 2004 remains one of the most impactful horror debuts of its era. The twist ending is one of the genuine great reveals in genre cinema, executed with a simplicity that makes you feel genuinely outplayed. It does not cheat. Every piece was sitting in front of you the whole time. That kind of structural discipline is rare, especially in a first feature. The franchise it spawned became increasingly convoluted and eventually ate itself, but the original stands apart from all of it. Go back and watch it as a standalone film and it is a near perfect piece of horror craft, limited by budget but never by vision. 9/10."
+      ],
+      "images": [],
+      "verdict": "Saw is one of the best horror debuts ever made, a film that proves concept and commitment will outrun budget every single time.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/rLNSOudrayDBo1uqXjrhxcjODIC.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/ok4ot3YbfDYZcINXf91JUfq3maB.jpg"
+      }
+    },
+    {
       "id": 1791558283284,
       "slug": "hellraiser-review-2",
       "seoTitle": "Hellraiser Review (2022) | WretVision",
