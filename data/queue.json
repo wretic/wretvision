@@ -1360,6 +1360,22 @@
   "horror_vault": [],
   "games": [
     {
+      "title": "Hellraiser: Revival",
+      "year": 2026,
+      "developer": "Saber Interactive",
+      "genre": [
+        "Horror",
+        "Action",
+        "Single Player"
+      ],
+      "platform": "PC",
+      "playtime": "",
+      "steam_id": 1551980,
+      "done": true,
+      "score": 8.5,
+      "notes": "Aidan, a protagonist addicted to extreme BDSM, works perfectly for this universe and Saber didn't hold back on the 18+ content. Solid combat on normal, repair kits for melee, gun upgrades, snappy weapon switching, and the Genesis Configuration box is the best tool in the game even if its puzzles could've been harder or more frequent. Story has real multiple-ending weight, Aidan is a bad guy you end up rooting for anyway, and the callbacks to the original trilogy (the flesh-needing skeleton from 1, the statue from 2, the club from 3) are deep cuts done right, with Pinhead explaining the Labyrinth and the original Cenobites returning. Wish one more classic Cenobite got real screentime beyond Pinhead and the female Cenobite. Cons: stuttering even after dropping to medium settings and a 90fps cap on a 144hz monitor, some fights get annoying if under-equipped, and the stealth AI is almost comically bad, ten seconds of sneaking then a thrown beer bottle and a sprint to the door triggered a cutscene instead of a fail state. Hoping the ending sets up a DLC."
+    },
+    {
       "title": "Silent Hill 2",
       "year": 2001,
       "developer": "Team Silent",

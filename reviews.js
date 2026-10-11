@@ -10,6 +10,40 @@
 
 const REVIEWS = [
     {
+      "id": 1791648000000,
+      "slug": "hellraiser-revival-review",
+      "seoTitle": "Hellraiser: Revival Review (2026) | WretVision",
+      "seoDescription": "Hellraiser: Revival proves a movie license can survive the jump to a controller if the people making it actually respect the lore, and Saber Interactive clearly does.",
+      "category": "game",
+      "title": "Hellraiser: Revival",
+      "year": 2026,
+      "director": "Saber Interactive",
+      "runtime": "PC",
+      "rating": "Mature",
+      "genres": [
+        "Horror",
+        "Action"
+      ],
+      "score": 8.5,
+      "featured": false,
+      "excerpt": "Hellraiser: Revival proves a movie license can survive the jump to a controller if the people making it actually respect the lore, and Saber Interactive clearly does.",
+      "body": [
+        "Video game adaptations of horror movie franchises have a brutal track record, and Hellraiser specifically has never had a good one. So walking into Hellraiser: Revival the bar was somewhere near the floor. Saber Interactive cleared it by a mile. This is a game that understands what made Clive Barker's world disturbing in the first place and builds an entire campaign around that understanding instead of just slapping Pinhead's face on a generic action shooter and calling it a day.",
+        "You play as Aidan, a man addicted to the kind of extreme BDSM that would make most horror protagonists blush, and that choice of character works perfectly for this specific universe. Hellraiser has always been about desire taken past the point of safety, about pleasure and pain losing their boundary, and giving you a lead who is already living on that edge before the puzzle box even opens means the Cenobites aren't some random intrusion into a normal life. They're an escalation of something Aidan was already chasing. Saber did not water this down for a wider audience either. The eighteen plus content is genuinely explicit and it earns its place rather than feeling tacked on for shock value. That's rare, and it deserves credit.",
+        "Combat is handled well without reinventing anything. Enemies and boss fights are solid on normal difficulty, challenging enough to keep you alert without turning into a wall you need three attempts to climb. What elevates the moment to moment play is the weapon system. You can repair your melee weapons mid run with a kit instead of them degrading into uselessness, and the gun upgrade path gives you a real reason to engage with every weapon instead of parking yourself on one favorite for the whole campaign. Switching instantly between melee and whatever firearm you're carrying keeps the pacing snappy in a way a lot of survival horror titles fumble by forcing you through a clunky inventory wheel. The standout tool by far is the Genesis Configuration box, which functions as both a story device and a genuinely clever gameplay mechanic. The puzzles built around it are enjoyable but undercooked. I wanted them harder, and I wanted more of them. When a game gives you a puzzle box as its signature item, that's the one area where I expect it to really push me, and Revival plays it a little safe.",
+        "The story is where this game earns most of its respect. Aidan is not a good person. He's using people, chasing something selfish and destructive from the opening scene, and somehow by the back half of the campaign you catch yourself rooting for him anyway. That's a difficult needle to thread and the writing pulls it off. The multiple endings give real weight to choices made throughout, and without spoiling anything, at least one of those paths leaves the door wide open for a direct sequel or DLC, which I am hoping Saber takes them up on.",
+        "What sold me completely was how deep the references to the original trilogy run. This isn't a game that namechecks Pinhead and stops there. The reanimated skeleton that needs fresh flesh to rebuild itself is a direct pull from the first Hellraiser. The statue that serves as a gateway is lifted straight from Hellraiser II. The nightclub setting draws from Hellraiser III. These aren't easter eggs buried for superfans to screenshot, they're load bearing parts of the campaign, and it shows a level of care for the source material that most licensed games don't bother with. Pinhead gets real space to explain the mechanics and philosophy of the Labyrinth, which is something the movies themselves have always been cagey about, and seeing the original Cenobites return rather than a new roster invented for the game made the whole thing feel like canon instead of a spinoff. My one complaint here is distribution. It's mostly Pinhead and the female Cenobite carrying the screen time, and I would have loved at least one more of the classic Cenobites getting a proper moment instead of a cameo.",
+        "Now the problems, because there are some. Stuttering is a real issue even after dropping settings to medium and hard locking my frame rate to ninety on a hundred and forty four hertz monitor. It helped, but it didn't fully go away, and on a game this visually dense that's a noticeable blemish. If you go into a fight under equipped, whether that's under leveled weapons or skipped upgrades, some encounters get genuinely annoying rather than challenging, which suggests the difficulty curve leans harder on gear checks than I'd like. The stealth sections are the weakest part of the whole package, and honestly they're almost funny because of how weak they are. There's a graveyard sequence where you're meant to sneak past a pursuing enemy, and I managed about ten seconds of actual stealth before throwing a beer bottle as a distraction and just sprinting straight for the door. The game rewarded that with a cutscene instead of punishing me for blowing my cover entirely. The AI in these sections needs real work.",
+        "None of that changes the overall picture. Hellraiser: Revival is a confident, well built horror action game that respects its source material more than almost any movie licensed game has in years, performance hiccups and thin stealth design aside. It's proof that these adaptations can work when the studio actually cares about the lore and the characters instead of just renting the name. An 8.5 out of 10, and genuinely hoping this gets the DLC or sequel treatment it's clearly set up for."
+      ],
+      "images": [],
+      "verdict": "A licensed horror game that actually respects what it's adapting, Hellraiser: Revival stumbles on performance and stealth but nails everything that matters most: the lore, the characters, and the nerve to go all in on what makes this franchise disturbing.",
+      "media": {
+        "poster": "https://cdn.akamai.steamstatic.com/steam/apps/1551980/header.jpg",
+        "backdrop": "https://cdn.akamai.steamstatic.com/steam/apps/1551980/library_hero.jpg"
+      }
+    },
+    {
       "id": 1791642013708,
       "slug": "saw-review",
       "seoTitle": "Saw Review (2004) | WretVision",
