@@ -186,61 +186,35 @@
       box-shadow: 6px 0 32px rgba(0,0,0,0.65);
       overflow: hidden;
     }
+    .streams-panel-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid rgba(10,143,212,0.18);
+    }
     .streams-panel-header {
       font-family: 'Press Start 2P', monospace;
       font-size: 6px;
       color: var(--blue-light);
       letter-spacing: 2px;
-      padding-bottom: 9px;
-      border-bottom: 1px solid rgba(10,143,212,0.18);
     }
-    @keyframes tab-pulse {
-      0%, 100% {
-        box-shadow: 3px 0 14px rgba(0,0,0,0.5);
-        border-color: rgba(10,143,212,0.40);
-      }
-      50% {
-        box-shadow: 3px 0 22px rgba(59,191,255,0.65), 0 0 18px rgba(59,191,255,0.35);
-        border-color: rgba(59,191,255,0.85);
-      }
-    }
-    .streams-tab {
-      width: 24px;
-      background: rgba(4, 10, 22, 0.97);
+    .streams-close {
+      flex: 0 0 auto;
+      background: transparent;
       border: 1px solid rgba(10,143,212,0.40);
-      border-left: none;
-      padding: 18px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      cursor: pointer;
-      pointer-events: all;
-      flex-shrink: 0;
-      animation: tab-pulse 2s ease-in-out infinite;
-      transition: background 0.2s, box-shadow 0.6s ease, border-color 0.6s ease;
-    }
-    .streams-tab:hover { background: rgba(10,30,60,0.97); }
-    .streams-tab.pulse-off {
-      animation: none;
-      box-shadow: 3px 0 14px rgba(0,0,0,0.5);
-      border-color: rgba(10,143,212,0.40);
-    }
-    .streams-tab-arrow {
-      font-family: 'VT323', monospace;
-      font-size: 15px;
       color: var(--blue-light);
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      font-family: 'VT323', monospace;
+      font-size: 13px;
       line-height: 1;
+      padding: 0;
+      transition: color 0.15s, border-color 0.15s;
     }
-    .streams-tab-label {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 5px;
-      color: var(--blue);
-      letter-spacing: 1px;
-      writing-mode: vertical-rl;
-      transform: rotate(180deg);
-    }
+    .streams-close:hover { color: var(--accent); border-color: var(--border-lit); }
     .stream-block { display: flex; flex-direction: column; gap: 7px; }
     .stream-label {
       display: flex; align-items: center; gap: 7px;
@@ -490,7 +464,10 @@
 <div class="streams-panel" id="streams-panel">
   <div class="streams-drawer" id="streams-drawer">
     <div class="streams-drawer-inner">
-      <div class="streams-panel-header">◈ ON AIR</div>
+      <div class="streams-panel-header-row">
+        <div class="streams-panel-header">◈ ON AIR</div>
+        <button type="button" class="streams-close" id="streams-close" aria-label="Dismiss">✕</button>
+      </div>
       <div class="stream-block">
         <div class="stream-label"><span class="stream-dot yt-dot"></span>YOUTUBE // @WRETVISION</div>
         <div class="stream-frame-wrap" id="yt-frame-wrap"></div>
@@ -502,10 +479,6 @@
       </div>
     </div>
   </div>
-  <button class="streams-tab" id="streams-tab" aria-expanded="false" aria-label="Toggle live streams">
-    <span class="streams-tab-arrow" id="streams-tab-arrow">▶</span>
-    <span class="streams-tab-label"></span>
-  </button>
 </div>
 
 <footer class="footer">
@@ -793,9 +766,8 @@
   (function() {
     var panel  = document.getElementById('streams-panel');
     var drawer = document.getElementById('streams-drawer');
-    var tab    = document.getElementById('streams-tab');
-    var arrow  = document.getElementById('streams-tab-arrow');
-    if (!panel || !drawer || !tab) return;
+    var closeBtn = document.getElementById('streams-close');
+    if (!panel || !drawer) return;
 
     var loaded = false;
     var CHANNEL_ID = 'UCC3aFC7Gr2eYUEGc6IRga0g';
@@ -820,7 +792,7 @@
         } else {
           ytPlayer = new YT.Player(playerEl, {
             videoId: vid,
-            playerVars: { autoplay: 0, mute: 1, rel: 0 },
+            playerVars: { autoplay: 1, mute: 1, rel: 0 },
             events: {
               onError: function(e) {
                 // 100 = not found, 101/150 = embedding not allowed
@@ -888,15 +860,19 @@
       injectTwitch();
     }
 
-    tab.addEventListener('click', function() {
-      var isOpen = drawer.classList.toggle('open');
-      tab.setAttribute('aria-expanded', String(isOpen));
-      arrow.textContent = isOpen ? '◀' : '▶';
-      if (isOpen) {
-        tab.classList.add('pulse-off');
-        injectIframes();
-      }
-    });
+    // Auto-opens shortly after landing on the page and starts the video muted-autoplay —
+    // browsers block unmuted autoplay outright, so mute:1 stays even though it's automatic now.
+    setTimeout(function() {
+      drawer.classList.add('open');
+      injectIframes();
+    }, 900);
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function() {
+        drawer.classList.remove('open');
+        setTimeout(function() { panel.style.display = 'none'; }, 420);
+      });
+    }
   })();
 
 </script>
