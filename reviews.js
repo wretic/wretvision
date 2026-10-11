@@ -40,7 +40,7 @@ const REVIEWS = [
       "images": [],
       "verdict": "A licensed horror game that actually respects what it's adapting, Hellraiser: Revival stumbles on performance and stealth but nails everything that matters most: the lore, the characters, and the nerve to go all in on what makes this franchise disturbing.",
       "media": {
-        "poster": "https://cdn.akamai.steamstatic.com/steam/apps/1551980/header.jpg",
+        "poster": "https://cdn.akamai.steamstatic.com/steam/apps/1551980/library_600x900_2x.jpg",
         "backdrop": "https://cdn.akamai.steamstatic.com/steam/apps/1551980/library_hero.jpg"
       }
     },
