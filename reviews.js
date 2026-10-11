@@ -10,6 +10,38 @@
 
 const REVIEWS = [
     {
+      "id": 1791729922724,
+      "slug": "the-wicker-man-review-2",
+      "seoTitle": "The Wicker Man Review (2006) | WretVision",
+      "seoDescription": "Nicolas Cage punches a woman in a bear suit. That sentence is both the best and worst thing about this film.",
+      "category": "movie",
+      "title": "The Wicker Man",
+      "year": 2006,
+      "director": "Neil LaBute",
+      "runtime": "102 min",
+      "rating": "PG-13",
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Thriller"
+      ],
+      "score": 2.0,
+      "featured": false,
+      "excerpt": "Nicolas Cage punches a woman in a bear suit. That sentence is both the best and worst thing about this film.",
+      "body": [
+        "The Wicker Man (2006) is one of the most fascinatingly broken films ever made, and I mean that with very little affection. Neil LaBute takes Robin Hardy's 1973 folk horror masterpiece, a film dripping with dread and genuine religious menace, and turns it into something that feels like a fever dream written by someone who had the original described to them third hand. Nic Cage plays a sheriff summoned to a remote island commune run entirely by women, looking for a missing girl. That premise could work. It does not work here.",
+        "What the 1973 original understood is that horror lives in the uncanny, in communities that smile too wide and rituals that feel just slightly wrong. LaBute swaps that slow dread for Cage increasingly losing his mind at beekeepers and cyclists. There is no atmosphere here. No mood. No tension. The island looks like a pleasant Pacific Northwest holiday destination and the women are portrayed with such clumsy, heavy handed misandry that any thematic weight the film is reaching for collapses immediately. It is not a critique of cults or patriarchy or religion. It is just a mess.",
+        "And then there is Cage. To be clear, he is giving everything he has got. Absolutely everything. He is screaming, flailing, karate kicking women, stumbling around in a bear costume, howling about his legs being broken. It is the kind of performance that exists in a category entirely its own. Is it bad? Objectively yes. Is it watchable? Unquestionably. The famous scenes have become internet legend for a reason and the sheer commitment Cage brings to moments that have no business existing in a serious thriller is genuinely something. That is the only genuine something in this entire production.",
+        "Compared to the original or even something like Midsommar (2019), which understands exactly how to weaponise a sun drenched cult setting, this 2006 remake is a catastrophic failure on almost every level. The pacing is lumpy, the editing is confused, and the ending, which should land with genuine horror, instead lands like a punchline nobody set up properly. It is streaming across various platforms and it gets watched constantly, but almost entirely as a comedy. If you want folk horror, watch the 1973 film. If you want to watch Nicolas Cage suffer, this delivers. That is the only promise it keeps."
+      ],
+      "images": [],
+      "verdict": "The Wicker Man (2006) is a genre disaster that accidentally became a comedy classic, and the tragedy is that distinction does not make it a good film.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/xsHrmfgDcEk5fGhSiieKvrDuofq.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/7t1ZMaVY92KqkaxJtRO89tARg6V.jpg"
+      }
+    },
+    {
       "id": 1791734400000,
       "slug": "resident-evil-2026-review",
       "externalUrl": "re-archive/re-movies.html#f2026",
