@@ -153,90 +153,61 @@
     body, body * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
     a, button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
 
-    /* ── LIVE STREAMS SIDE PANEL ── */
-    .streams-panel {
+    /* ── FLOATING YOUTUBE VIDEO ── */
+    .yt-float {
       position: fixed;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      left: 16px;
+      bottom: 20vh;
       z-index: 500;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      pointer-events: none;
+      width: 380px;
+      box-shadow: 0 10px 34px rgba(0,0,0,0.6);
     }
-    .streams-drawer {
-      width: 0;
-      overflow: hidden;
-      transition: width 0.38s cubic-bezier(0.4, 0, 0.2, 1);
-      pointer-events: all;
-    }
-    .streams-drawer.open { width: 360px; }
-    .streams-drawer-inner {
-      width: 360px;
-      background: rgba(4, 10, 22, 0.97);
-      border-top: 1px solid rgba(10,143,212,0.40);
-      border-right: 1px solid rgba(10,143,212,0.40);
-      border-left: 3px solid var(--blue);
-      padding: 10px 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      box-sizing: border-box;
-      box-shadow: 6px 0 32px rgba(0,0,0,0.65);
-      overflow: hidden;
-    }
-    .streams-panel-header-row {
+    .yt-float-handle {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 8px;
-      padding-bottom: 9px;
-      border-bottom: 1px solid rgba(10,143,212,0.18);
+      height: 17px;
+      padding: 0 6px;
+      background: rgba(4, 10, 22, 0.95);
+      border: 1px solid rgba(10,143,212,0.40);
+      border-bottom: none;
+      cursor: grab;
+      user-select: none;
+      touch-action: none;
     }
-    .streams-panel-header {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 6px;
+    .yt-float.dragging .yt-float-handle, .yt-float-handle:active { cursor: grabbing; }
+    .yt-float-grip {
+      font-family: 'VT323', monospace;
+      font-size: 11px;
+      letter-spacing: 3px;
       color: var(--blue-light);
-      letter-spacing: 2px;
+      line-height: 1;
     }
-    .streams-close {
+    .yt-float-close {
       flex: 0 0 auto;
       background: transparent;
-      border: 1px solid rgba(10,143,212,0.40);
+      border: none;
       color: var(--blue-light);
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
       cursor: pointer;
       font-family: 'VT323', monospace;
       font-size: 13px;
       line-height: 1;
       padding: 0;
-      transition: color 0.15s, border-color 0.15s;
+      transition: color 0.15s;
     }
-    .streams-close:hover { color: var(--accent); border-color: var(--border-lit); }
-    .stream-block { display: flex; flex-direction: column; gap: 7px; }
-    .stream-label {
-      display: flex; align-items: center; gap: 7px;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 5px; color: var(--blue-light); letter-spacing: 1px;
-    }
-    .stream-dot {
-      width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
-      animation: sdot-pulse 2.2s ease-in-out infinite;
-    }
-    .yt-dot     { background: #ff4040; box-shadow: 0 0 5px rgba(255,64,64,0.7); }
-    .twitch-dot { background: #9147ff; box-shadow: 0 0 5px rgba(145,71,255,0.7); }
-    @keyframes sdot-pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-    .stream-frame-wrap {
-      position: relative; width: 100%; height: 150px;
+    .yt-float-close:hover { color: var(--accent); }
+    .yt-float-frame {
+      position: relative;
+      width: 380px;
+      height: 214px;
       background: #000;
-      border: 1px solid rgba(10,143,212,0.25);
-      border-left: 2px solid var(--blue);
+      border: 1px solid rgba(10,143,212,0.40);
+      border-top: none;
       overflow: hidden;
-      flex-shrink: 0;
     }
-    .stream-frame-wrap iframe { position:absolute;inset:0;width:100%;height:100%;border:none;scrolling:no; }
+    .yt-float-frame iframe { position:absolute;inset:0;width:100%;height:100%;border:none;scrolling:no; }
     .stream-fallback {
       position: absolute; inset: 0;
       display: flex; align-items: center; justify-content: center;
@@ -244,8 +215,7 @@
       color: var(--blue-light); text-decoration: none;
       text-align: center; line-height: 2.2; letter-spacing: 1px;
     }
-    .stream-divider { height: 1px; background: rgba(10,143,212,0.15); }
-    @media (max-width: 560px) { .streams-panel { display: none; } }
+    @media (max-width: 560px) { .yt-float { display: none; } }
 
   </style>
 </head>
@@ -460,25 +430,13 @@
   </aside>
 </div>
 
-<!-- ── LIVE STREAMS SIDE PANEL ── -->
-<div class="streams-panel" id="streams-panel">
-  <div class="streams-drawer" id="streams-drawer">
-    <div class="streams-drawer-inner">
-      <div class="streams-panel-header-row">
-        <div class="streams-panel-header">◈ ON AIR</div>
-        <button type="button" class="streams-close" id="streams-close" aria-label="Dismiss">✕</button>
-      </div>
-      <div class="stream-block">
-        <div class="stream-label"><span class="stream-dot yt-dot"></span>YOUTUBE // @WRETVISION</div>
-        <div class="stream-frame-wrap" id="yt-frame-wrap"></div>
-      </div>
-      <div class="stream-divider"></div>
-      <div class="stream-block">
-        <div class="stream-label"><span class="stream-dot twitch-dot"></span>TWITCH // WRETIC</div>
-        <div class="stream-frame-wrap" id="twitch-frame-wrap"></div>
-      </div>
-    </div>
+<!-- ── FLOATING YOUTUBE VIDEO ── -->
+<div class="yt-float" id="yt-float">
+  <div class="yt-float-handle" id="yt-float-handle">
+    <span class="yt-float-grip">⠿⠿⠿</span>
+    <button type="button" class="yt-float-close" id="yt-float-close" aria-label="Dismiss">✕</button>
   </div>
+  <div class="yt-float-frame" id="yt-frame-wrap"></div>
 </div>
 
 <footer class="footer">
@@ -762,17 +720,18 @@
     }
   })();
 
-  /* ── LIVE STREAMS SIDE PANEL ── */
+  /* ── FLOATING YOUTUBE VIDEO ── */
   (function() {
-    var panel  = document.getElementById('streams-panel');
-    var drawer = document.getElementById('streams-drawer');
-    var closeBtn = document.getElementById('streams-close');
-    if (!panel || !drawer) return;
+    var box     = document.getElementById('yt-float');
+    var handle  = document.getElementById('yt-float-handle');
+    var closeBtn = document.getElementById('yt-float-close');
+    if (!box || !handle) return;
 
-    var loaded = false;
-    var CHANNEL_ID = 'UCC3aFC7Gr2eYUEGc6IRga0g';
-    // Fallback queue of known long-form videos (tried in order, skips any with embedding disabled)
-    var FALLBACK_IDS = ['jVkLgA6GIzU','FeOw8cCpqQg','NwFHvjQfFtQ','zudhgMHtjTI','0DXg1YMJGeA'];
+    // Manually maintained, newest first. The channel RSS feed (what this used to auto-fetch
+    // from) doesn't send CORS headers, so a browser-side fetch to it can never succeed, on
+    // localhost or in production — that's why "autofetch" never actually worked. Update this
+    // list by hand when a new video goes up until/unless a server-side proxy replaces it.
+    var VIDEO_IDS = ['2ufiEDLbUCs','iCt2nmya_hY','jVkLgA6GIzU','FeOw8cCpqQg','NwFHvjQfFtQ','zudhgMHtjTI','0DXg1YMJGeA'];
 
     /* ── YouTube via IFrame API — auto-skips Error 101/150/100 ── */
     function injectYouTube(queue) {
@@ -819,60 +778,70 @@
       wrap.innerHTML = '<a class="stream-fallback" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">▶ VISIT<br>YOUTUBE</a>';
     }
 
-    function startYouTube() {
-      fetch('https://www.youtube.com/feeds/videos.xml?channel_id=' + CHANNEL_ID)
-        .then(function(r) { return r.text(); })
-        .then(function(xml) {
-          var ids    = xml.match(/<yt:videoId>([^<]+)<\/yt:videoId>/g) || [];
-          var titles = xml.match(/<title>([^<]+)<\/title>/g) || [];
-          var queue  = [];
-          for (var i = 0; i < ids.length; i++) {
-            if (!/#short/i.test(titles[i + 1] || '')) {
-              queue.push(ids[i].replace(/<\/?yt:videoId>/g, ''));
-            }
-          }
-          injectYouTube(queue.length ? queue : FALLBACK_IDS.slice());
-        })
-        .catch(function() { injectYouTube(FALLBACK_IDS.slice()); });
-    }
-
-    /* ── Twitch ── */
-    function injectTwitch() {
-      var wrap = document.getElementById('twitch-frame-wrap');
-      if (!wrap) return;
-      var host = window.location.hostname || 'wretvision.com';
-      // include both production and localhost as parents
-      var parents = host === 'localhost' || host === '127.0.0.1'
-        ? 'parent=localhost&parent=wretvision.com'
-        : 'parent=' + encodeURIComponent(host) + '&parent=localhost';
-      var tw = document.createElement('iframe');
-      tw.src = 'https://player.twitch.tv/?channel=wretic&' + parents + '&muted=true&autoplay=false';
-      tw.setAttribute('allow', 'autoplay; encrypted-media; fullscreen');
-      tw.setAttribute('scrolling', 'no');
-      tw.allowFullscreen = true;
-      wrap.appendChild(tw);
-    }
-
-    function injectIframes() {
-      if (loaded) return;
-      loaded = true;
-      startYouTube();
-      injectTwitch();
-    }
-
-    // Auto-opens shortly after landing on the page and starts the video muted-autoplay —
-    // browsers block unmuted autoplay outright, so mute:1 stays even though it's automatic now.
-    setTimeout(function() {
-      drawer.classList.add('open');
-      injectIframes();
-    }, 900);
+    setTimeout(function() { injectYouTube(VIDEO_IDS.slice()); }, 900);
 
     if (closeBtn) {
-      closeBtn.addEventListener('click', function() {
-        drawer.classList.remove('open');
-        setTimeout(function() { panel.style.display = 'none'; }, 420);
-      });
+      closeBtn.addEventListener('click', function() { box.style.display = 'none'; });
     }
+
+    /* ── Drag to reposition, grabbed by the handle bar only (keeps the video itself
+       fully clickable/controllable — an iframe swallows mouse events once the cursor
+       crosses into it, so dragging via the video surface itself isn't reliable) ── */
+    (function() {
+      try {
+        var saved = JSON.parse(localStorage.getItem('yt-float-pos') || 'null');
+        if (saved && typeof saved.left === 'number' && typeof saved.top === 'number') {
+          box.style.left = saved.left + 'px';
+          box.style.top = saved.top + 'px';
+          box.style.bottom = 'auto';
+        }
+      } catch (e) { /* ignore */ }
+
+      var dragging = false, startX, startY, startLeft, startTop;
+
+      function point(e) { return e.touches ? e.touches[0] : e; }
+
+      function onDown(e) {
+        dragging = true;
+        var pt = point(e);
+        var rect = box.getBoundingClientRect();
+        startX = pt.clientX; startY = pt.clientY;
+        startLeft = rect.left; startTop = rect.top;
+        box.style.left = startLeft + 'px';
+        box.style.top = startTop + 'px';
+        box.style.bottom = 'auto';
+        box.classList.add('dragging');
+        e.preventDefault();
+      }
+      function onMove(e) {
+        if (!dragging) return;
+        var pt = point(e);
+        var dx = pt.clientX - startX;
+        var dy = pt.clientY - startY;
+        var newLeft = Math.max(4, Math.min(window.innerWidth - box.offsetWidth - 4, startLeft + dx));
+        var newTop  = Math.max(4, Math.min(window.innerHeight - box.offsetHeight - 4, startTop + dy));
+        box.style.left = newLeft + 'px';
+        box.style.top  = newTop + 'px';
+      }
+      function onUp() {
+        if (!dragging) return;
+        dragging = false;
+        box.classList.remove('dragging');
+        try {
+          localStorage.setItem('yt-float-pos', JSON.stringify({
+            left: parseFloat(box.style.left),
+            top: parseFloat(box.style.top)
+          }));
+        } catch (e) { /* ignore */ }
+      }
+
+      handle.addEventListener('mousedown', onDown);
+      handle.addEventListener('touchstart', onDown, { passive: false });
+      document.addEventListener('mousemove', onMove);
+      document.addEventListener('touchmove', onMove, { passive: false });
+      document.addEventListener('mouseup', onUp);
+      document.addEventListener('touchend', onUp);
+    })();
   })();
 
 </script>
