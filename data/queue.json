@@ -1387,10 +1387,11 @@
       ],
       "platform": "PlayStation 2, Xbox, PC",
       "playtime": "8 hours",
-      "steam_id": 2124490,
-      "done": true,
+      "steam_id": null,
+      "done": false,
+      "skip": true,
       "score": 9,
-      "notes": "Original classic"
+      "notes": "Original classic. Review already written and approved, saved at data/pending_silent_hill_2_review.json — publish 2026-10-16. (steam_id removed, 2124490 was the 2024 Bloober remake, not this original 2001 release, which was never on Steam.)"
     },
     {
       "title": "Alien: Isolation",
