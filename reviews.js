@@ -10,6 +10,77 @@
 
 const REVIEWS = [
     {
+      "id": 1791738000000,
+      "slug": "silent-hill-2-review",
+      "seoTitle": "Silent Hill 2 Review (2001) | WretVision",
+      "seoDescription": "Silent Hill 2 doesn't scare you with monsters, it scares you with what the monsters mean, and nothing in horror gaming has matched that dread since.",
+      "category": "game",
+      "title": "Silent Hill 2",
+      "year": 2001,
+      "director": "Team Silent",
+      "runtime": "PlayStation 2, Xbox, PC",
+      "rating": "Mature",
+      "genres": [
+        "Psychological Horror",
+        "Survival Horror"
+      ],
+      "score": 9,
+      "featured": false,
+      "excerpt": "Silent Hill 2 doesn't scare you with monsters, it scares you with what the monsters mean, and twenty-plus years later nothing in horror gaming has matched that specific kind of dread.",
+      "body": [
+        "James Sunderland gets a letter from his dead wife asking him to meet her in their special place, and he drives to Silent Hill anyway, knowing full well she's been dead for three years. That's the entire premise, and Team Silent never once rushes to explain it. You spend the whole game wading through fog so thick the draw distance becomes a design choice rather than a hardware limitation, and that fog is doing exactly what it's supposed to do. You can't see what's coming. You can hear it on the radio static first, a few seconds of warning before something shuffles into view, and that gap between hearing and seeing is where most of the game's dread actually lives.",
+        "What separates Silent Hill 2 from basically every survival horror game that came before or after it is that the monsters are not obstacles, they're confessions. Pyramid Head isn't a slasher villain chasing you through hallways for the thrill of it. He's a manifestation of James's own guilt, built specifically for James, meaningless to anyone else who might walk through this town. The nurses, the mannequin creatures, all of it reads differently once you understand what actually happened to Mary and what James actually did. This is a game that trusts you to piece together a genuinely upsetting story through environmental detail and implication instead of cutscenes explaining it to you, and that restraint is rare even now.",
+        "The combat is clumsy on purpose. James swings a lead pipe like a man who has never been in a fight, and gunplay feels loose and uncertain rather than empowering. Some players bounce off that, and I understand why, but fighting back easily was never the point. You're not supposed to feel in control in this town. The puzzles lean into that same unease, some genuinely clever, a few obtuse enough that you'll be squinting at a poem for ten minutes before the solution clicks, but they reinforce the sense that Silent Hill operates on logic that doesn't belong to you.",
+        "The multiple ending system was ahead of its time and still holds up as one of the better examples of reactive storytelling in the genre. Leave, In Water, Rebirth, Maria, even the joke Dog ending, the fact that your actions and item choices quietly steer which ending you get without ever telling you the rules is the kind of design confidence most horror games still won't commit to. It respects that different players are going to read James differently, and it lets the ending reflect that instead of forcing one canonical outcome.",
+        "Akira Yamaoka's sound design deserves its own paragraph. The industrial clank and metallic screech that make up the score are doing as much heavy lifting as anything visual in this game, and the radio static cue alone has been imitated by more horror games than I can count, none of which have quite nailed why it worked here. It's not just a jump scare trigger. It's a constant low-grade anxiety generator that never lets you fully relax even in the quiet stretches.",
+        "If there's a real knock against it today, it's that the tank controls and fixed camera angles are a genuine barrier for anyone who didn't grow up with this console generation. The combat friction that worked thematically in 2001 can read as just clunky to a modern player expecting Resident Evil 4 era responsiveness. That's a fair criticism and I won't pretend the controls have aged gracefully, but judged as what it set out to be rather than against modern conveniences, Silent Hill 2 is still doing things in 2001 that most horror games released this year haven't figured out.",
+        "This is a genuine classic, not because it's comfortable or because the combat holds up, but because it understood that the scariest thing a horror game can do is make the horror personal. 9/10."
+      ],
+      "images": [],
+      "verdict": "Silent Hill 2 traded jump scares for guilt and grief, and more than two decades later it's still the game every psychological horror title gets measured against.",
+      "media": {
+        "poster": "https://cdn.thegamesdb.net/images/original/boxart/front/4793-1.jpg",
+        "backdrop": ""
+      }
+    },
+    {
+      "id": 1791734400000,
+      "slug": "resident-evil-2026-review",
+      "externalUrl": "re-archive/re-movies.html#f2026",
+      "seoTitle": "Resident Evil Review (2026) | WretVision",
+      "seoDescription": "Resident Evil 2026 finally cracks the adaptation problem by ditching the franchise's heroes entirely, delivering genuine survival horror.",
+      "category": "movie",
+      "title": "Resident Evil",
+      "year": 2026,
+      "director": "Zach Cregger",
+      "runtime": "95 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Action"
+      ],
+      "score": 7.5,
+      "featured": false,
+      "excerpt": "Resident Evil 2026 finally proves a movie adaptation of this franchise can work, and it does it by throwing out the heroes entirely and following a nobody who has no idea how to survive a zombie outbreak.",
+      "body": [
+        "Every previous attempt at bringing Resident Evil to the screen made the same mistake. They either chased the games too literally or ignored them entirely and just used the name. Zach Cregger's version finally finds the right angle, and the trick is almost insultingly simple. Don't use any of the series' established heroes. Bryan, played by Austin Abrams, is a nobody, a guy who has clearly never fired a gun in his life, dropped into the middle of an outbreak with nothing going for him except the will to not die. From the moment he's introduced, the film has a genuine survival horror vibe, the kind this franchise has chased unsuccessfully for two decades. It honestly could have worked as a standalone horror movie with the Resident Evil branding filed off, and that's a compliment. The series finally got an adaptation that understands dread has to come from vulnerability, not from a trained operative with a shotgun.",
+        "The action is fun and Bryan's arc sells it. He goes from a guy who doesn't understand how a gun works to someone who can handle himself by the end, and that growth is earned rather than rushed. He swears constantly, maybe a little too constantly, but Abrams makes him likable enough that it reads as character rather than a writing crutch. Where the film gets messier is the infection itself. This is set during the outbreak, early enough that the T-virus should still be the dominant threat, so the fast, almost feral zombies running around caught me off guard at first. Cregger apparently leans on G-virus material here, which tracks with William Birkin injecting himself with it around this same point in the timeline, and the film does seem to draw a line between that and the slower, T-virus-style undead you see later in the hospital sequence, as if the more aggressive strain is isolated to wherever Bryan starts out while the classic shamblers are what's loose deeper in the city. It's a defensible read of the lore and probably intentional, but the first time it's on screen it plays more like confusion than a deliberate contrast, and I wish the film had been clearer about what it was doing.",
+        "The game nods land well. Bryan repeatedly unloads a clip into locked doors instead of looking for a key, which is exactly the kind of petty violence the games have trained an entire generation to find funny, and there's a triangle-shaped key that's a clear pull from Resident Evil 2. Typewriters, green herbs, first aid sprays, all scattered through the environment as background texture rather than winking cameos. It's fan service done the right way, present without stopping the movie to point at itself.",
+        "The ending is bleak and I respect it for that. Bryan gets bitten, the antidote doesn't arrive in time, and he turns into something massive and monstrous right as the credits threaten to roll. It's a genuinely different outcome than I expected from a guy the film spent its whole runtime making likable, and a movie confident enough to let its protagonist lose completely deserves credit for that. My complaint is how it's handled. The film cuts the second he's standing on top of the building with helicopters circling, and that's it. No post-credits beat, no confirmation of what happens to him, nothing. A short scene of him being detained by Umbrella would have gone a long way toward making that ending feel like a choice rather than a runtime cutoff.",
+        "One more nitpick: the snow. This film is clearly set in 2026, not September 1998 where the original outbreak timeline puts it, and that's a strange choice nobody's really talked about. If Bryan's out near the Arklay Mountains that's one thing, but I'm not even sure it snows there, and visually shifting the setting forward almost thirty years for an aesthetic choice is the kind of thing that should still make sense within the world instead of just looking cool. I get wanting that chilly, isolated vibe, and Cregger clearly leaned into it for atmosphere, but it also quietly locks any future sequel into a 2026-and-beyond continuity instead of the classic 90s timeline, which is a bigger swing than it probably needed to be just for a mood board choice.",
+        "I know some people are upset there's no franchise cameo, and I land the opposite way. You don't get to deploy Chris Redfield or Jill Valentine until you've actually proven the format works, and given how many times this series has face planted on the way to a screen, earning that trust first was the right call. I don't need a live action retelling of the games either. That's what the games are for, and if someone really wants a shot for shot adaptation there are six hour fan edits on YouTube stitching cutscenes together already. Keep the movies doing their own thing.",
+        "The creatures are a mixed bag. I'm still not sold on the tentacle design tied to the G-virus material, and the Mr. X or Nemesis style pursuer stalking Bryan through the back half never quite lands the dread it's going for. It reads more as body horror, a stitched together mass of limbs, than as a genuinely haunting presence. I also wanted more of the slow, shambling undead actually filling the streets once Bryan gets into the city proper. The hospital sequence shows the film knows how to do that atmosphere well, I just wanted more of it.",
+        "The side characters are serviceable rather than memorable, and knowing some details from the leaked script makes a couple of swaps sting a little. A car sequence that reportedly had a character step outside and get killed instead shifts that fate elsewhere, and a sewer sequence that was apparently built around Bryan and a female companion getting torn apart by rats plays out differently in the final cut. Neither change breaks the movie, but the versions I'd read sounded nastier and more memorable than what made it to screen.",
+        "Resident Evil 2026 is the best entry this franchise has produced in any medium outside the games themselves, and it earns that by trusting a survival horror formula instead of trying to cram in fan service. I'd love to see this continue, Bryan recaptured and cured by Umbrella, maybe a glancing crossover with Jill Valentine fighting Nemesis somewhere in the background while a fresh group of nobodies tries to survive Raccoon City in the foreground. Keep the focus on people who have no business surviving this and this franchise finally has somewhere real to go. 7.5/10."
+      ],
+      "images": [],
+      "verdict": "Resident Evil 2026 finally cracks the adaptation problem by ditching the franchise's heroes entirely, delivering genuine survival horror dread let down only by an abrupt ending and a few underwhelming creature choices.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/3icyRAqgakNcQn6aDVz9libFmBA.jpg"
+      }
+    },
+    {
       "id": 1791648000000,
       "slug": "hellraiser-revival-review",
       "seoTitle": "Hellraiser: Revival Review (2026) | WretVision",

@@ -849,8 +849,9 @@
       ],
       "streaming": "",
       "done": false,
+      "skip": true,
       "score": 7,
-      "notes": "Rob Zombie's take actually worked for me. Loved the intro especially — the extended origin and young Michael section gave the character real weight. Not the original but a solid reimagining."
+      "notes": "Rob Zombie's take actually worked for me. Loved the intro especially — the extended origin and young Michael section gave the character real weight. Not the original but a solid reimagining. [paused until 2026-10-16 so the RE2026 + Hellraiser Revival reviews stay featured]"
     },
     {
       "title": "Halloween II",
@@ -1387,8 +1388,7 @@
       "platform": "PlayStation 2, Xbox, PC",
       "playtime": "8 hours",
       "steam_id": 2124490,
-      "done": false,
-      "skip": true,
+      "done": true,
       "score": 9,
       "notes": "Original classic"
     },

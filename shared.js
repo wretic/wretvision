@@ -39,6 +39,7 @@ function categoryIcon(category) {
 }
 
 function reviewUrl(review) {
+  if (review.externalUrl) return review.externalUrl;
   return review.slug
     ? 'review.html?slug=' + review.slug
     : 'review.html?id=' + review.id;
@@ -720,6 +721,10 @@ function renderBodyWithImages(review) {
 function openModal(id) {
   const r = REVIEWS.find(r => r.id === id);
   if (!r) return;
+
+  // Some entries (e.g. the dedicated Resident Evil archive) point off-site
+  // instead of rendering here — follow that link rather than opening a modal.
+  if (r.externalUrl) { window.location.href = r.externalUrl; return; }
 
   const genreDisplay = r.genres.join(' / ');
   const bodyHtml = renderBodyWithImages(r);

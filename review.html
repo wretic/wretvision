@@ -1529,12 +1529,14 @@
       showError('Review "' + slugParam + '" not found in the archive.');
       return;
     }
+    if (review.externalUrl) { window.location.replace(review.externalUrl); return; }
   } else if (!isNaN(idParam) && idParam) {
     review = allReviews.find(function (r) { return r.id === idParam; });
     if (!review) {
       showError('Review #' + idParam + ' not found in the archive.');
       return;
     }
+    if (review.externalUrl) { window.location.replace(review.externalUrl); return; }
     if (review.slug) {
       window.history.replaceState({}, '', 'review.html?slug=' + encodeURIComponent(review.slug));
     }
