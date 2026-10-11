@@ -16,6 +16,7 @@ const REVIEWS = [
       "seoDescription": "Hellraiser: Revival proves a movie license can survive the jump to a controller if the people making it actually respect the lore, and Saber Interactive clearly does.",
       "category": "game",
       "title": "Hellraiser: Revival",
+      "steamReviewUrl": "",
       "year": 2026,
       "director": "Saber Interactive",
       "runtime": "PC",

@@ -879,3 +879,48 @@ function initPage(category) {
     });
   }
 }
+
+// ── SITE TOAST ───────────────────────────────────────────────
+// Reusable dismissible popup, bottom-center. Pass a sessionKey so a given
+// announcement only shows once per browser session instead of on every page load.
+function showSiteToast(message, opts) {
+  opts = opts || {};
+  var sessionKey = opts.sessionKey || null;
+  var label = opts.label || 'WRETVISION';
+  var delay = opts.delay != null ? opts.delay : 900;
+  var autoHide = opts.autoHide != null ? opts.autoHide : 8000;
+
+  if (sessionKey) {
+    try {
+      if (sessionStorage.getItem(sessionKey)) return;
+    } catch (e) { /* storage unavailable, fall through and show anyway */ }
+  }
+
+  var toast = document.createElement('div');
+  toast.className = 'site-toast';
+  toast.innerHTML =
+    '<div class="site-toast-icon">' +
+      '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1L9.8 5.9L15 6.3L11 9.6L12.3 14.7L8 11.8L3.7 14.7L5 9.6L1 6.3L6.2 5.9L8 1Z" fill="currentColor"/></svg>' +
+    '</div>' +
+    '<div class="site-toast-body">' +
+      '<div class="site-toast-label">' + label + '</div>' +
+      '<div class="site-toast-msg"></div>' +
+    '</div>' +
+    '<button type="button" class="site-toast-close" aria-label="Dismiss">✕</button>';
+  toast.querySelector('.site-toast-msg').textContent = message;
+  document.body.appendChild(toast);
+
+  function hide() {
+    toast.classList.remove('show');
+    setTimeout(function () { toast.remove(); }, 450);
+  }
+
+  toast.querySelector('.site-toast-close').addEventListener('click', hide);
+
+  setTimeout(function () { toast.classList.add('show'); }, delay);
+  if (autoHide) setTimeout(hide, delay + autoHide);
+
+  if (sessionKey) {
+    try { sessionStorage.setItem(sessionKey, '1'); } catch (e) { /* ignore */ }
+  }
+}

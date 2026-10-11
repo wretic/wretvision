@@ -928,6 +928,13 @@
       </div>
     </div>
 
+    <div class="grv-steam-banner" id="grv-steam-banner" style="display:none;">
+      <div class="grv-steam-banner-icon">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M.26 9.53A7.33 7.33 0 0014.8 7.75l-2.63-1.08a2.3 2.3 0 01-.4.03 2.3 2.3 0 11.03-4.6 2.3 2.3 0 011.6 3.95l1.07 2.63A7.33 7.33 0 00.26 9.53zm6.15-1.72l1.5.62a2.1 2.1 0 11-1.03 1.6l-1.5-.62a1.5 1.5 0 101.03-1.6z" fill="currentColor"/></svg>
+      </div>
+      <span id="grv-steam-banner-text"></span>
+    </div>
+
     <div class="grv-divider"></div>
 
     <div class="grv-body" id="grv-body"></div>
@@ -1444,6 +1451,17 @@
     if (review.runtime)  chipsHTML += '<div class="grv-chip">' + CTRL_ICON + '<span class="grv-chip-label">PLAYED ON:</span> ' + esc(review.runtime) + '</div>';
     if (genres.length)   chipsHTML += '<div class="grv-chip">' + SKULL_CHIP + '<span class="grv-chip-label">GENRE:</span> ' + esc(genres[0].toUpperCase()) + '</div>';
     el('grv-chips').innerHTML = chipsHTML;
+
+    // steam review callout (only shown when the review object has a steamReviewUrl)
+    var steamBanner = el('grv-steam-banner');
+    if (review.steamReviewUrl) {
+      el('grv-steam-banner-text').innerHTML =
+        'Check out my Steam review for ' + esc(review.title) + '! <a href="' +
+        esc(review.steamReviewUrl) + '" target="_blank" rel="noopener">Read it here →</a>';
+      steamBanner.style.display = 'flex';
+    } else {
+      steamBanner.style.display = 'none';
+    }
 
     // body
     el('grv-body').innerHTML = (review.body || []).map(function (p) {

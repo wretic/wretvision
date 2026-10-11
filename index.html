@@ -538,6 +538,12 @@
   document.getElementById('count-horror').textContent = HORROR_VAULT.length + ' titles';
   initPage('all');
 
+  /* ── ANNOUNCEMENT TOAST ── */
+  showSiteToast('Anonymous comments are now available under every review!', {
+    sessionKey: 'toast-anon-comments-2026-10',
+    label: 'NEW FEATURE'
+  });
+
   /* ── BOOT SEQUENCE ANIMATION ── */
   (function() {
     var lines = [
