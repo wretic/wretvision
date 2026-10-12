@@ -10,6 +10,43 @@
 
 const REVIEWS = [
     {
+      "id": 1791826344649,
+      "slug": "lisa-frankenstein-review",
+      "seoTitle": "Lisa Frankenstein Review (2024) | WretVision",
+      "seoDescription": "Lisa Frankenstein is a love letter to 80s monster romance that gets the aesthetics right but fumbles the landing when it matters most.",
+      "category": "movie",
+      "title": "Lisa Frankenstein",
+      "year": 2024,
+      "director": "Zelda Williams",
+      "runtime": "102 min",
+      "rating": "PG-13",
+      "genres": [
+        "Horror",
+        "Comedy",
+        "Romance"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "Lisa Frankenstein is a love letter to 80s monster romance that gets the aesthetics right but fumbles the landing when it matters most.",
+      "body": [
+        "There is a version of Lisa Frankenstein that becomes a cult classic. A genuinely weird, genuinely committed piece of horror comedy that earns its monster romance premise and delivers something that lingers. The 2024 film directed by Zelda Williams and written by Diablo Cody gets you about sixty percent of the way there. It is stylish, it has a lead performance that quietly outperforms the material around her, and it clearly loves the genre it is playing in. But loving something and executing it are two different things, and Lisa Frankenstein keeps stopping short of the risks it should be taking.",
+        "The setup is simple and knowingly trashy in the best possible way. Lisa Swallows, played by Kathryn Newton, is a withdrawn and socially invisible teenager in 1989 who accidentally resurrects a Victorian era corpse through an unlikely combination of a tanning bed and a lightning strike. The Creature, played by Cole Sprouse under impressive layers of practical makeup and rotting prosthetics, then begins following her around while the two slowly develop something resembling a romance. Diablo Cody clearly has affection for this premise. Her fingerprints are all over the dialogue, which has that same sharp and slightly theatrical quality she brought to Juno and Jennifer's Body. Whether that voice fits here is a fair question.",
+        "Kathryn Newton is doing real work in this film and I want to be clear about that. She plays Lisa as genuinely odd rather than quirky in the Hollywood shorthand sense. There is a stillness to her performance in the early scenes that suggests someone who has genuinely retreated inward after trauma, not someone performing introversion for an audience. When the film asks her to shift into something darker and more morally compromised as the body count grows, she makes that transition feel earned rather than sudden. She carries scenes that could easily fall flat and makes the film's more absurd moments land with unexpected sincerity.",
+        "Cole Sprouse as the Creature is a harder thing to evaluate. He has almost no dialogue, which is either a clever constraint or a way of avoiding the problem of writing a convincing Victorian romantic lead, depending on how charitable you are feeling. His physical performance is committed and he sells the silent longing well enough. The practical effects on the Creature design deserve specific praise. The rotting face, the missing limbs that gradually get replaced throughout the film, the general texture of decay, all of it is handled with real craft. In a genre era that leans too heavily on digital augmentation, this film choosing practical work for its central monster is the right call and it pays off every time he is on screen.",
+        "Zelda Williams makes a confident debut here and the film looks genuinely great. The production design and color palette nail the candy coated suburban 1989 aesthetic without tipping into parody. There is a warmth and a pop to the visuals that sits in interesting tension with the rotting flesh and casual murder. That tension is actually where the film is most alive. When the comedy and the horror are operating simultaneously rather than alternating, Lisa Frankenstein finds its groove. A scene involving a bathtub and a very specific piece of home surgery is the film at its best, funny and grotesque and oddly tender all at once. Williams clearly has instincts. I want to see what she does with a script that gives her more to work with.",
+        "The pacing is where things start to unravel. The first act is tight and fun. The middle section loses momentum in a way that is hard to pin on any one scene but is consistently felt. There is a stretch through the second act where the film is essentially marking time, cycling through side characters who do not matter and romantic beats that are not developed enough to carry emotional weight. Liza Soberano as Lisa's stepsister Taffy is given a lot of screen time and almost nothing to do with it until the film suddenly needs her to matter in the third act. That is a structural problem. You cannot build to a character you have not bothered to build.",
+        "The comparisons to Jennifer's Body are going to follow this film everywhere and they are not entirely unfair. Both are Diablo Cody horror comedies centered on teenage girls doing monstrous things wrapped in a broadly 80s or 90s aesthetic coating. But Jennifer's Body had a mean streak that gave it genuine teeth. It was actually saying something about female friendship and exploitation and the way pretty girls get consumed by the people around them. Lisa Frankenstein is gentler and more openly romantic, which is a valid choice, but it also means the film is not quite saying anything. It is a vibe in search of a thesis. That is fine for a Friday night watch. It is not enough to make it something you recommend urgently.",
+        "The ending is where my frustration peaks. The film builds toward something that could genuinely surprise you, that could take the romance to a dark and committed place and actually follow through on its monster movie DNA. Then it blinks. The resolution it lands on is tidier and sweeter than the story has earned, and it undercuts the moral ambiguity that had been quietly accumulating throughout. I have a specific pet peeve about films that build toward a twist or a genuinely dark outcome and then pull back for something safer. Lisa Frankenstein does exactly that. It is not a dealbreaker because the film around it is enjoyable enough, but it is a missed opportunity that matters.",
+        "Lisa Frankenstein in 2024 is streaming across various platforms and it is worth a watch if you are a fan of horror comedy, monster romance, or the broader Diablo Cody school of sharp dialogue wrapped around genre material. It sits in the same neighborhood as titles like Warm Bodies and the aforementioned Jennifer's Body, though it is not quite as sharp as either at their best. There is genuine craft here and a lead performance that deserves a better movie around it. As it stands the film is a solid but slightly frustrating six and a half out of ten. It is the kind of thing that makes you want to write the version of it that could have been great."
+      ],
+      "images": [],
+      "verdict": "Lisa Frankenstein has the look, the lead, and the love for its genre, but it keeps choosing comfort over commitment right up until the credits roll.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/jAW7ZdIm4HLKB3g15uMOWYNdU8r.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/tsDoiLwZyAbYewoIUDJKk1SJzTF.jpg"
+      }
+    },
+    {
       "id": 1791729922724,
       "slug": "the-wicker-man-review-2",
       "seoTitle": "The Wicker Man Review (2006) | WretVision",
