@@ -17,15 +17,29 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v5
 
+      - name: Check publish pause
+        id: pause_check
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          if [[ "$TODAY" < "2026-10-16" ]]; then
+            echo "Publishing paused until 2026-10-16 (today: $TODAY) — skipping this run so Hellraiser: Revival and Resident Evil 2026 stay featured."
+            echo "paused=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "paused=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Set up Python
+        if: steps.pause_check.outputs.paused != 'true'
         uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
       - name: Install dependencies
+        if: steps.pause_check.outputs.paused != 'true'
         run: pip install anthropic
 
       - name: Generate and publish review
+        if: steps.pause_check.outputs.paused != 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
@@ -33,6 +47,7 @@ jobs:
         run: python scripts/review_generator.py
 
       - name: Commit new review
+        if: steps.pause_check.outputs.paused != 'true'
         run: |
           git config --global user.name "WretVision"
           git config --global user.email "wretvision@noreply.github.com"
