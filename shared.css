@@ -108,6 +108,10 @@ body::before {
 
 .nav-link .nav-icon { margin-right: 5px; }
 
+.nav-link-re { color: #ff6b6b; border-color: transparent; }
+.nav-link-re:hover { color: #ff3a3a; border-color: rgba(160,20,20,0.45); background: rgba(139,0,0,0.12); }
+.nav-link-re.active { color: #fff; border-color: rgba(160,20,20,0.6); background: rgba(139,0,0,0.18); }
+
 .yt-link {
   display: flex;
   align-items: center;
