@@ -10,6 +10,38 @@
 
 const REVIEWS = [
     {
+      "id": 1792155900947,
+      "slug": "primetime-review",
+      "seoTitle": "Primetime Review (2026) | WretVision",
+      "seoDescription": "Rob Pattinson playing Chris Hansen is a sentence I never expected to write, but here we are, and somehow it completely works.",
+      "category": "movie",
+      "title": "Primetime",
+      "year": 2026,
+      "director": "Lance Oppenheim",
+      "runtime": "110 min",
+      "rating": "R",
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Drama"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Rob Pattinson playing Chris Hansen is a sentence I never expected to write, but here we are, and somehow it completely works.",
+      "body": [
+        "Primetime (2026) is a crime thriller built around a premise that should feel gimmicky but ends up feeling genuinely unsettling. Robert Pattinson plays a fictionalised version of Chris Hansen, the face of To Catch a Predator, and the film uses that cultural baggage deliberately. Director and writers clearly understand that Hansen is already a loaded figure, someone the public has complicated feelings about, part folk hero, part spectacle merchant. The film leans into that ambiguity instead of resolving it cleanly, and that is probably its smartest move.",
+        "Pattinson is the reason to show up. The man is on a run of performances that keep making people forget he was ever in Twilight, and this is another one to add to the list. He plays Hansen with this quiet, practised charm that never quite reads as warmth, there is always something performative lurking just underneath, and that discomfort is exactly what the role needs. He does not play the character as a villain or a hero. He plays him as a man who has learned to inhabit a version of himself that the camera loves, and that is a much harder thing to pull off.",
+        "Where Primetime loses a little grip is in its structure. The middle section drags in places, spending time on procedural detail that does not deepen character or tension in any meaningful way. There are scenes that feel like they belong in a longer miniseries format rather than a feature film, and you start to feel the padding around the ninety minute mark. The supporting cast is functional but nobody else leaves a strong impression. The film is Pattinson carrying weight that the script does not always hand him elegantly.",
+        "Critics have been more enthusiastic than I am, with scores sitting comfortably in the high eighties to low nineties on Rotten Tomatoes and real awards conversation building around Pattinson specifically. That buzz is not wrong, the performance deserves it. But the film around him is solid rather than exceptional. If you liked Good Time or Resurrection for their character study energy, Primetime (2026) scratches a similar itch, just with slightly less consistency across the full runtime. Worth your time for Pattinson alone, but it is not the complete package the critical response might suggest. 7/10."
+      ],
+      "images": [],
+      "verdict": "Pattinson is magnetic and the premise is sharp, but Primetime (2026) is one of those films where the lead performance outpaces the material holding it.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg"
+      }
+    },
+    {
       "id": 1791738000000,
       "slug": "silent-hill-2-review",
       "seoTitle": "Silent Hill 2 Review (2001) | WretVision",
