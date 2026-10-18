@@ -10,6 +10,41 @@
 
 const REVIEWS = [
     {
+      "id": 1792326643702,
+      "slug": "halloween-review-3",
+      "seoTitle": "Halloween Review (2007) | WretVision",
+      "seoDescription": "Rob Zombie's Halloween 2007 shouldn't work as well as it does, and yet here we are.",
+      "category": "movie",
+      "title": "Halloween",
+      "year": 2007,
+      "director": "Rob Zombie",
+      "runtime": "109 min",
+      "rating": "R",
+      "genres": [
+        "Horror"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Rob Zombie's Halloween 2007 shouldn't work as well as it does, and yet here we are.",
+      "body": [
+        "Let me be upfront about something. When Rob Zombie announced he was remaking Halloween, I rolled my eyes so hard I nearly pulled something. The original John Carpenter film is untouchable. It invented a language that horror has been borrowing ever since. So a grungy, trashy, metal-soaked reimagining from the guy who made House of 1000 Corpses felt like exactly the kind of cash-grab desecration that gives remakes their bad name. And then I actually watched it. And I had to sit with that for a while before I could talk about it honestly.",
+        "What Zombie gets right, and gets right immediately, is the decision to expand the origin story of Michael Myers in a way that Carpenter deliberately never did. The first act of this film is essentially its own short film, and it is genuinely the strongest section of the whole thing. We meet young Michael, played by Daeg Faerch, in a white trash household that feels lived-in and ugly and real. The mother is a stripper, the stepfather is an abusive drunk, the older sister is a nightmare. It is a miserable environment, and Zombie films it without glamour. You are not supposed to enjoy this. You are supposed to understand it, at least a little, and that discomfort is the point.",
+        "Daeg Faerch is remarkable in the role. That is not a throwaway compliment. Child actors in horror usually register somewhere between wooden and actively distracting, but Faerch finds something genuinely unsettling in Michael that never feels like a kid putting on a scary face. There is a blankness behind his eyes that creeps up on you. The scene where Dr. Loomis first visits him in the institution and Michael presents his collection of dead animal photos, matter-of-fact and completely detached, is one of the quietly best horror character moments of the 2000s. It does not scream at you. It just sits there and makes you uncomfortable.",
+        "Malcolm McDowell as Dr. Sam Loomis is a divisive casting choice and I get why. Donald Pleasence cast a long shadow and his version of Loomis had a specific kind of haunted obsession that McDowell does not fully replicate. But I think criticising McDowell for not being Pleasence is the wrong frame. He brings something different, a more academic arrogance, a man who genuinely believed he could understand Michael and built a career on that belief, only to have it collapse entirely. There is a scene late in the film where Loomis is signing books at a mall and he looks like a man who knows he sold something he had no right to sell. McDowell plays that guilt quietly. I noticed it.",
+        "Tyler Mane as the adult Michael Myers is physically imposing in a way that changes the entire texture of the film. This is not the sleek, almost supernatural predator of Carpenter's original. This is something closer to a force of nature in human shape, massive and relentless and seemingly indestructible not because of mystery but because of scale. Zombie leans into the brutality of that. The kills in this film are not stylish. They are grinding and loud and uncomfortable in a way that horror often sanitises. That is a deliberate choice and it works more often than it does not. The murder sequences feel like something going terribly wrong rather than a choreographed set piece.",
+        "Scout Taylor-Compton as Laurie Strode is where the film starts to lose some ground. She does fine with what she is given, but the second half of Halloween 2007 essentially becomes a fairly conventional slasher once we shift into Haddonfield proper, and Laurie does not have the time or the material to build into a fully formed character the way the first act builds Michael. You spend so long with young Michael that by the time Laurie becomes the focus, there is a structural imbalance. The film has given its weight to one end, and the other end lifts off the ground a little. You feel it in the pacing. The middle section especially drags in spots.",
+        "The craft behind the camera is genuinely interesting. Zombie shoots this with a rawness that separates it visually from slick studio horror. The handheld work during the Strode house sequence creates a claustrophobia that static framing never would. The practical effects are strong throughout. There is very little that looks fake or processed, and in 2007 that was not guaranteed. The Myers mask, aged and dirty and slightly wrong looking, is one of those great horror design decisions that pays off every time it appears on screen. It is familiar enough to register and degraded enough to feel dangerous rather than iconic.",
+        "Where I land with Halloween 2007 is here: it is not the original. It cannot be the original. Nothing can be the original. But judging it as its own object, as a Rob Zombie film about what creates a monster rather than what the monster is, it earns more than it should. The first act alone is worth the price of admission. The mythology it builds around Michael gives the character a weight that the sequels to Carpenter's version never managed to provide. The back half is less consistent, and the ending is messier than it wants to be, but the film commits to its choices in a way that I respect even when those choices do not fully pay off. Compare it to something like the 2009 Friday the 13th remake and it is in a completely different league in terms of craft and intention.",
+        "Rob Zombie's Halloween is a 7 out of 10. That score lives almost entirely in the first act, which is exceptional, balanced against a second half that gradually trades the psychological weight it built for more familiar slasher mechanics. It is not a film I would recommend to someone who loves the original and wants to see it honoured. It is a film I would recommend to someone who wants to see a horror director with a real point of view swinging hard at a nearly impossible assignment and landing more blows than they miss. It stays with you. Not the way Carpenter's version does, but in its own uncomfortable way."
+      ],
+      "images": [],
+      "verdict": "Rob Zombie had no business making this as interesting as he did, and the fact that he pulled off the first act alone puts it well above what this kind of remake usually delivers.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/cD8JrfSEI4j7WVnKM1GdiYzMoUh.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/uEnA2AKtrpX4LCZ98hBLwVkhJEd.jpg"
+      }
+    },
+    {
       "id": 1792322048094,
       "slug": "crystal-lake-season-1-review",
       "seoTitle": "Crystal Lake Season 1 Review (2026) | WretVision",
