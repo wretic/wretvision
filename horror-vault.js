@@ -3,6 +3,14 @@
 
 const HORROR_VAULT = [
   {
+    "title": "Other Mommy",
+    "year": 2026,
+    "decade": "2020s",
+    "status": "watched",
+    "note": "",
+    "id": 483
+  },
+  {
     "title": "Chucky",
     "year": 2021,
     "decade": "2020s",

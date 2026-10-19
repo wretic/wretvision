@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1792423317255,
+      "slug": "other-mommy-review",
+      "seoTitle": "Other Mommy Review (2026) | WretVision",
+      "seoDescription": "Jessica Chastain does the work. The film around her does considerably less.",
+      "category": "movie",
+      "title": "Other Mommy",
+      "year": 2026,
+      "director": "Rob Savage",
+      "runtime": "93 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 6,
+      "featured": false,
+      "excerpt": "Jessica Chastain does the work. The film around her does considerably less.",
+      "body": [
+        "Other Mommy (2026) is one of those horror thrillers that has a genuinely solid hook underneath all its bad habits. The premise, a mother increasingly convinced the woman raising her child is not who she claims to be, or possibly not human at all, taps into a primal fear that good filmmakers have mined before. The dual role angle is the real selling point here, and credit where it is due: Jessica Chastain commits fully to both versions of this character. She is believable in ways the script does not deserve. You can see her working out the interior logic of each performance even when the material gives her nothing to work with. That is a skill not every actor has and it is the main reason this film stays afloat as long as it does.",
+        "The horror mechanics are where Other Mommy starts to lose me. The dread in the first act is actually pretty well constructed. There is a sequence in the kitchen, late at night, where the film earns genuine unease without resorting to cheap tricks. But then it keeps resorting to cheap tricks. The jump scares pile up fast and they are the lazy variety, loud noise, quick cut, nothing underneath. By the third act you are not scared, you are just slightly annoyed. The atmosphere that the early scenes build gets dismantled by a film that clearly does not trust its own slower instincts. It is a real shame because the bones of something more unsettling are visible throughout.",
+        "Max, the child at the centre of the story, is a problem the film never solves. The character exists mostly as a plot mechanism rather than a person, which undercuts the emotional stakes badly. If you cannot make the audience genuinely fear for this kid, the whole engine stops running. The supporting cast does not leave much of an impression either. Critics were brutal on this one, RT sitting around 18 to 20 percent, and while I think that is harsher than the film deserves, it is not exactly wrong. Compared to something like Barbarian or even Orphan (which this occasionally echoes), Other Mommy is working with a fraction of the conviction. It settles for competent when it could have pushed for genuinely strange.",
+        "Other Mommy (2026) is a watchable horror thriller that squanders a strong central performance on repetitive scares and an underwritten premise. Chastain is the reason to watch it and also the reason you will finish it feeling vaguely frustrated, because you can see what this could have been with a sharper script and a director willing to sit in the discomfort longer. Horror fans looking for a dual role identity thriller on a quiet night will not switch it off. They just will not think about it much the next morning. 6/10, generous but honest."
+      ],
+      "images": [],
+      "verdict": "Chastain carries it further than it has any right to go, but Other Mommy is ultimately a forgettable exercise in wasted atmosphere.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg"
+      }
+    },
+    {
       "id": 1792326643702,
       "slug": "halloween-review-3",
       "seoTitle": "Halloween Review (2007) | WretVision",
