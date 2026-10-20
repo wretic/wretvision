@@ -10,6 +10,38 @@
 
 const REVIEWS = [
     {
+      "id": 1792502704631,
+      "slug": "heart-of-the-beast-review",
+      "seoTitle": "Heart of the Beast Review (2026) | WretVision",
+      "seoDescription": "Brad Pitt and a German shepherd walk into the wilderness and somehow that's enough to break you a little.",
+      "category": "movie",
+      "title": "Heart of the Beast",
+      "year": 2026,
+      "director": "David Ayer",
+      "runtime": "101 min",
+      "rating": "PG-13",
+      "genres": [
+        "Survival",
+        "Drama",
+        "Thriller"
+      ],
+      "score": 7,
+      "featured": false,
+      "excerpt": "Brad Pitt and a German shepherd walk into the wilderness and somehow that's enough to break you a little.",
+      "body": [
+        "Heart of the Beast (2026) is a survival drama that knows exactly what it is and mostly delivers on that promise. David Ayer directs with a restraint you might not expect from him, trading the noise of his earlier work for something quieter and more earned. The film follows a former search and rescue specialist, played by Brad Pitt, who survives a remote plane crash alongside his trained German shepherd Odin and has to navigate brutal terrain while dealing with an injury that makes every step a negotiation with death. Simple premise. Deliberately so. Ayer is not trying to reinvent the wheel here, he is trying to make you feel something, and for long stretches he succeeds.",
+        "The thing that works best in Heart of the Beast is also the thing critics have been loudest about, and they are not wrong for once. Brad Pitt gives one of his most understated performances in years. No monologues, no big Oscar moments, just a man conserving energy and making small desperate calculations to stay alive. But the real emotional engine of this film is Odin, played primarily by a German shepherd named Uber, and I say this without a hint of irony: that dog acts. The relationship between Pitt and Odin is built slowly through glances and touch and the kind of wordless trust that feels genuinely earned rather than manufactured. A few scenes between the two of them hit harder than anything dialogue could have managed.",
+        "Where the film stumbles is in its pacing during the second act. There is a stretch roughly in the middle where the survival mechanics take over and the emotional core goes quiet for a bit too long. Ayer seems more comfortable in the intimate moments than in the broader set pieces, and a couple of the physical jeopardy sequences feel slightly routine compared to films like The Revenant or A Man Called Otto on the dramatic end of things. The cinematography is beautiful but occasionally tips into the kind of polished wilderness photography that reminds you this is a production rather than a place. Nothing fatal, but you feel it.",
+        "Heart of the Beast (2026) is a solid, well-acted survival drama with a genuinely touching central relationship at its core. It is David Ayer's best reviewed film for good reason, and I understand the enthusiasm, but my honest reaction is that it moved me without flooring me. It is a very good tearjerker rather than a great film. If you go in wanting to feel something real between a man and his dog against impossible odds, this delivers that cleanly and without manipulation. If you are after something that reshapes how you think about the genre, look elsewhere. 7/10."
+      ],
+      "images": [],
+      "verdict": "Heart of the Beast earns its tears honestly, and Brad Pitt and Uber the dog are genuinely wonderful together, but solid and moving is not the same as unforgettable.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/bicMU6xVD5deVyKP2azpyx7xkmH.jpg"
+      }
+    },
+    {
       "id": 1792423317255,
       "slug": "other-mommy-review",
       "seoTitle": "Other Mommy Review (2026) | WretVision",
