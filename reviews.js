@@ -10,6 +10,39 @@
 
 const REVIEWS = [
     {
+      "id": 1792589693729,
+      "slug": "underworld-blood-wars-review",
+      "seoTitle": "Underworld: Blood Wars Review (2016) | WretVision",
+      "seoDescription": "Underworld: Blood Wars exists because the franchise exists, not because anyone had a story left to tell.",
+      "category": "movie",
+      "title": "Underworld: Blood Wars",
+      "year": 2016,
+      "director": "Anna Foerster",
+      "runtime": "91 min",
+      "rating": "R",
+      "genres": [
+        "Fantasy",
+        "Action",
+        "Thriller",
+        "Horror"
+      ],
+      "score": 4.0,
+      "featured": false,
+      "excerpt": "Underworld: Blood Wars exists because the franchise exists, not because anyone had a story left to tell.",
+      "body": [
+        "By 2016, the Underworld franchise was running on fumes and Kate Beckinsale's cheekbones. Blood Wars is the fifth entry in a series that arguably peaked with its first film back in 2003, and at this point the mythology has been stretched so thin you can see right through it. Anna Foerster takes the director's chair and does a competent enough job keeping things moving, but competent is about the ceiling here. This is a film that exists because the IP exists, not because anyone sat down with a burning idea they needed to get on screen.",
+        "There are things that work, grudgingly. Beckinsale is still committed to Selene in a way that's honestly more than the script deserves. She moves through the action sequences with conviction and carries the emotional beats with more weight than the writing earns her. The Nordic coven stuff in the second half has a visual freshness to it, cooler palette, slightly different architecture to the world, and for a stretch it feels like the film might actually go somewhere interesting. It does not, but the attempt is noted.",
+        "The problems are structural and they are everywhere. The plot is a mess of competing factions, double crosses, and lore callbacks that feel designed to reward obsessives while confusing everyone else. The action is heavily reliant on CGI that looked dated even at release, which is a real issue in a genre where practical work still rules. Nothing here has the tactile grit of the original. Jump cuts cover for choreography that never quite lands, and the whole thing clocks in at under 90 minutes yet somehow still feels padded in the middle. That is a specific kind of failure.",
+        "Underworld Blood Wars is the franchise on autopilot, a film built around a formula rather than a story. It delivers exactly what you expect if you have seen the previous entries, which is both its only selling point and its biggest indictment. If you are streaming it on a lazy afternoon already bought into this world, you will survive it. If you are new, start elsewhere. Comparable to the later Resident Evil sequels in that specific way where everyone involved clearly knows they are making a product but is too professional to completely phone it in."
+      ],
+      "images": [],
+      "verdict": "A 4/10 franchise entry that mistakes motion for momentum, keeping Selene alive while slowly killing any reason to care.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/v1ciDCWMG47gdT4kMyjyQbnLQQn.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/b5QnSrjDRHUFg3hpjmwBwsJfzyP.jpg"
+      }
+    },
+    {
       "id": 1792502704631,
       "slug": "heart-of-the-beast-review",
       "seoTitle": "Heart of the Beast Review (2026) | WretVision",
