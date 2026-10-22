@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1792676191920,
+      "slug": "eden-lake-review",
+      "seoTitle": "Eden Lake Review (2008) | WretVision",
+      "seoDescription": "Eden Lake is the kind of horror film that makes you want to move somewhere with no other people. Brutal, suffocating, and genuinely upsetting.",
+      "category": "movie",
+      "title": "Eden Lake",
+      "year": 2008,
+      "director": "James Watkins",
+      "runtime": "91 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 8,
+      "featured": false,
+      "excerpt": "Eden Lake is the kind of horror film that makes you want to move somewhere with no other people. Brutal, suffocating, and genuinely upsetting.",
+      "body": [
+        "Some horror films scare you with monsters. Eden Lake scares you with teenagers and a postcode. James Watkins wrote and directed this 2008 British thriller and it is one of the most oppressive, anxiety-inducing films to come out of the UK in the last two decades. The setup is simple: a couple head to a remote lake for a romantic weekend and end up in a nightmare with a local gang of feral kids. That summary does not prepare you for how relentless this thing gets.",
+        "What works is almost everything in the first half. Watkins builds dread the way good horror directors do, slowly and quietly, letting the tension simmer through small humiliations and territorial standoffs before anything truly violent happens. You feel the social dynamics tightening like a knot. Kelly Reilly and Michael Fassbender are both excellent and crucially they feel like real people rather than slasher-film cutouts. Fassbender in particular gets the male ego and its consequences exactly right without the film having to spell it out for you.",
+        "The middle act is where Eden Lake earns its reputation and its difficulty rating. The violence is not stylised. It is not fun. It is the kind of thing that sits with you. Some viewers will tap out and that is completely fair. This is not torture porn but it does not look away either. The gang, led by Jack O'Connell in a genuinely frightening performance, feels unglamourised and depressingly real. O'Connell is terrifying precisely because he is not a cartoon villain. He is a product of something and the film knows it.",
+        "If I have a complaint it is that the social commentary, the class tension and the failed adult authority figures, is sometimes applied with a heavy hand. The film gestures at something important about broken communities and cycles of violence and then occasionally lets the imagery do the work where a bit more restraint might have cut deeper. The ending is the ending. I will not spoil it but it is exactly the kind of gut-punch conclusion I respect even when it hurts. Eden Lake is available on various streaming platforms and sits comfortably alongside comparable British thrillers like Outcast and The Descent in terms of sheer unease. If you can handle it, you should watch it."
+      ],
+      "images": [],
+      "verdict": "Eden Lake is uncomfortable, precise, and genuinely frightening in a way that most horror films released in the fifteen years since have not matched, and that ending will stay with you whether you want it to or not.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/tOg6ElTe1mJwaCFN0172U4oso22.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/34fIB4TBdYHerdbcXoMVPZiX7q0.jpg"
+      }
+    },
+    {
       "id": 1792589693729,
       "slug": "underworld-blood-wars-review",
       "seoTitle": "Underworld: Blood Wars Review (2016) | WretVision",
