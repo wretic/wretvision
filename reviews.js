@@ -10,6 +10,38 @@
 
 const REVIEWS = [
     {
+      "id": 1792761136987,
+      "slug": "underworld-review",
+      "seoTitle": "Underworld Review (2003) | WretVision",
+      "seoDescription": "Underworld (2003) is leather-clad style over substance, but damn if the style isn't occasionally worth it.",
+      "category": "movie",
+      "title": "Underworld",
+      "year": 2003,
+      "director": "Len Wiseman",
+      "runtime": "122 min",
+      "rating": "R",
+      "genres": [
+        "Fantasy",
+        "Action",
+        "Thriller"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "Underworld (2003) is leather-clad style over substance, but damn if the style isn't occasionally worth it.",
+      "body": [
+        "Underworld arrived in 2003 with a simple pitch: vampires versus werewolves, war that's been going on for centuries, and Kate Beckinsale in a latex catsuit doing parkour in slow motion. Director Len Wiseman is not subtle about what he's selling. This is a fantasy action thriller dressed up in horror clothing, and it knows exactly what it is. The lore is actually more developed than you'd expect, a secret gothic underworld buried beneath a modern city, ancient bloodlines, political betrayal inside the vampire coven. There's real world-building here if you're patient enough to sit through the exposition.",
+        "What works is the atmosphere. Wiseman shoots everything in this cold blue-grey palette that gives the film a genuinely distinct visual identity. It's almost monochromatic. Selene as a character is more interesting than she gets credit for, a soldier who starts questioning the institution she's bled for without the film turning it into a melodrama. Beckinsale commits fully and plays it completely straight, which is the right call. Michael Sheen as Lucian is the standout though. He brings actual weight to a role that could have been nothing. Every scene he's in has teeth.",
+        "But here's where it falls apart. The pacing in the second act drags badly. There are stretches where the film is clearly stalling, scenes that exist to delay the confrontation rather than build toward it. Scott Speedman as Michael is a problem too. He's supposed to be the lynchpin of the whole conflict and he barely registers. The CGI werewolf transformations have not aged gracefully either, especially sitting next to the practical texture of everything else. The film leans on action when it should be leaning on dread, and that's a fundamental misread of what makes this kind of genre blend actually land.",
+        "Underworld is watchable. More than watchable in stretches. As a 2003 fantasy action film it carved out its own corner and built a franchise from it, for better or worse. If you've seen something like Blade or Van Helsing and want more of that gothic action flavour, this delivers on the surface. Available on various streaming platforms and worth a revisit if you're curious about where the series started, just go in knowing it peaks about two thirds of the way through and coasts to the finish line."
+      ],
+      "images": [],
+      "verdict": "Underworld (2003) has style, a genuinely interesting mythology, and Sheen doing more than anyone asked, but the bloated middle and a black hole of a male lead keep it from being anything more than a solid genre curio.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/zsnQ41UZ3jo1wEeemF0eA9cAIU0.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/pvVkWJZYsUoCgnvpkd62pgnet7r.jpg"
+      }
+    },
+    {
       "id": 1792676191920,
       "slug": "eden-lake-review",
       "seoTitle": "Eden Lake Review (2008) | WretVision",
