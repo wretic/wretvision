@@ -10,6 +10,43 @@
 
 const REVIEWS = [
     {
+      "id": 1792933362181,
+      "slug": "the-long-walk-review",
+      "seoTitle": "The Long Walk Review (2025) | WretVision",
+      "seoDescription": "The Long Walk is the kind of slow-burn science fiction that demands patience and rewards it, mostly.",
+      "category": "movie",
+      "title": "The Long Walk",
+      "year": 2025,
+      "director": "Francis Lawrence",
+      "runtime": "108 min",
+      "rating": "R",
+      "genres": [
+        "Science Fiction",
+        "Thriller",
+        "Horror"
+      ],
+      "score": 7.0,
+      "featured": false,
+      "excerpt": "The Long Walk is the kind of slow-burn science fiction that demands patience and rewards it, mostly.",
+      "body": [
+        "There is a version of The Long Walk that becomes a modern cult classic. The 2025 adaptation of Stephen King's early novel, written under the pseudonym Richard Bachman, carries all the ingredients for something genuinely unsettling: a dystopian America where teenage boys compete in a government-sanctioned death march, walking until only one survives. That premise is brutal in the best possible way. It asks uncomfortable questions about spectacle, state control, and the ways society sells violence back to itself as entertainment. The film knows what it's sitting on. Whether it fully cashes in is a different conversation.",
+        "Director Francis Lawrence, who helmed several Hunger Games installments, brings a clinical efficiency to the material that is both its greatest strength and its quiet limitation. He understands how to build institutional dread. The world of The Long Walk feels lived-in and oppressive without ever over-explaining itself. The aesthetic is muted, grey-green, deliberately draining. You feel the monotony of the walk in your bones within the first thirty minutes, which is exactly the point, and also exactly where the film starts testing your patience. Lawrence trusts the premise but occasionally mistakes restraint for momentum.",
+        "The performances are the backbone of this thing. The ensemble of young actors carries enormous weight across a runtime that does not give them much room to breathe. Whoever the casting director was deserves credit, because the core group feels genuinely distinct rather than interchangeable cannon fodder. The lead brings a quiet, hollowed-out quality that works precisely because he is not performing suffering, he is enduring it. That distinction matters enormously in a film where so much of the drama is internal. When the cracks show, they feel earned rather than scripted.",
+        "King's original novel lives inside the heads of its characters. That's where the horror is. It's not in the deaths, it's in the conversations during the miles between them, the small negotiations of loyalty and survival that erode a person slowly. The film finds ways to externalise some of that, using the landscape and sound design as emotional shorthand where inner monologue cannot go. There are stretches where the direction and score work in genuine harmony, building a low-frequency dread that sits under your skin. A particular sequence around the forty-mile mark is the film at its best, wordless and deeply uncomfortable.",
+        "The pacing is where The Long Walk earns its most legitimate criticism. At around two hours and fifteen minutes, there is fat here that should have been cut. The film earns its slow burn in the first two acts, but the middle section sags in a way that feels less like deliberate oppression and more like structural uncertainty. A handful of scenes repeat emotional beats that have already landed. You feel the story marking time rather than deepening. In a story about an endless walk, that is a risky parallel to draw and not always an intentional one.",
+        "The deaths are handled with restraint that will divide audiences. There is very little gore and no glamorisation of the violence, which is the correct choice tonally, but it also means the film never quite achieves the visceral gut-punch that some of King's source material promises. Compare it to something like The Mist or even the first Hunger Games film and The Long Walk sits in a strange middle space. Too serious and austere for genre thrills, but not quite literary enough in its execution to satisfy the audience that wants it to be meditative. It is trying to serve two masters and occasionally drops both plates.",
+        "The science fiction elements are kept deliberately thin, which is smart. This is not a world-building exercise. The government apparatus exists in the background as a smear of menace rather than a detailed machine, and the film is better for it. Where it does gesture toward the political, it does so without spelling things out, which shows confidence. The Bachman books always had a sharper, meaner edge than King's mainline horror and the film captures that leanness when it is working well. It does not want to be The Hunger Games. Most of the time, it succeeds at not being that.",
+        "One area where the film genuinely excels is its sound design and score. The ambient noise of boots on road, the crowd noise at distance, the way certain silences open up like sinkholes, all of it is meticulously crafted. This is the kind of work that does not call attention to itself but removes it and the film collapses. It is doing heavy lifting in every scene. The score avoids the orchestral swells that would undercut the bleakness and instead leans into textural, almost industrial tones that suit the material perfectly. It is the clearest sign that someone behind the camera had a real vision here.",
+        "The Long Walk in 2025 is a good film that sits just shy of being a great one. It respects the source material, it trusts its audience, and it delivers a genuine sense of dread that lingers past the credits. The ending, which I will not detail, lands with a quiet finality that feels right, not triumphant, not devastating, just inevitable in the way King's darkest work tends to be. The pacing issues and tonal uncertainty in the middle act keep it from the upper tier, but there is real craft here and a willingness to make something uncomfortable rather than palatable. Worth your time, especially if slow-burn dystopian fiction is your corner of the genre."
+      ],
+      "images": [],
+      "verdict": "The Long Walk earns its dread and its restraint but lets the middle act drift when it should be tightening the noose, a near-great adaptation that settles for being a very good one.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/wobVTa99eW0ht6c1rNNzLkazPtR.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/2dlt9I2ga6hweywz9zsFUz1PVii.jpg"
+      }
+    },
+    {
       "id": 1792845052189,
       "slug": "paranormal-activity-the-ghost-dimension-review",
       "seoTitle": "Paranormal Activity: The Ghost Dimension Review (2015) | WretVision",
