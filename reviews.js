@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1793026649275,
+      "slug": "final-destination-bloodlines-review",
+      "seoTitle": "Final Destination Bloodlines Review (2025) | WretVision",
+      "seoDescription": "Death is back and this time it brought receipts. Final Destination Bloodlines is the shot in the arm this franchise genuinely needed.",
+      "category": "movie",
+      "title": "Final Destination Bloodlines",
+      "year": 2025,
+      "director": "Zach Lipovsky",
+      "runtime": "110 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "score": 7.5,
+      "featured": false,
+      "excerpt": "Death is back and this time it brought receipts. Final Destination Bloodlines is the shot in the arm this franchise genuinely needed.",
+      "body": [
+        "Final Destination Bloodlines (2025) arrives twenty years deep into a franchise that most people assumed had already wrung itself dry. The premise is the same as it always was: death has a design, you cheated it, now it wants you back. What Bloodlines does differently is anchor that premise to something generational. A young woman starts having visions tied to her grandmother, a woman who cheated death decades earlier at a collapsing rooftop restaurant, and now the whole bloodline is paying the tab. It is a genuinely clever structural choice that gives the film stakes the last two entries completely lacked. Directors Zach Lipovsky and Adam B. Stein treat the mythology with more care than it has seen since Final Destination 5, and that respect shows in the pacing.",
+        "The set pieces are where Bloodlines earns its keep. The opening disaster sequence set in that restaurant is tense, chaotic, and practically built wherever possible. You feel the weight of it. The death sequences throughout are inventive without tipping into the self parody that bogged down The Final Destination in 2009. There is real craft here in how the camera lingers on ordinary objects, a loose bolt, a cracked pipe, a swinging door, and slowly turns them into threats. That slow burn dread is what the franchise always did best and Bloodlines remembers that. Kenia Oni carries the lead with enough naturalism that you actually care whether she makes it, which matters more than you would think in a franchise where survival pools feel rigged from the poster alone.",
+        "It is not perfect. The middle act drags in a couple of spots where the film wants to do character work but has not quite built enough foundation to justify the pause. Some of the supporting cast exist purely as elaborate death delivery systems and the film knows it but does not really try to hide it either. There is also a twist in the final act that the film treats as a gut punch but genre fans will clock about thirty minutes early. And staying on that note, the survivor formula still leans predictable. Without spoiling anything, you could make a reasonable guess at who walks away based on casting alone, and that removes some of the genuine suspense this setup deserved. A franchise this deep should be willing to surprise us with who makes it.",
+        "Still, Final Destination Bloodlines (2025) is a legitimate return to form for a series that has been coasting on nostalgia and diminishing returns. Compared to something like Scream VI trying to juggle legacy and novelty at the same time, this one actually manages the balance. It knows what it is, commits to the bit, and delivers the goods without overstaying its welcome. Streaming across various platforms now, it is worth your Friday night if you have any affection for the genre. Not every franchise gets a second wind this convincing."
+      ],
+      "images": [],
+      "verdict": "Final Destination Bloodlines is the rare legacy sequel that respects the source material enough to actually build on it, flaws and all, it is the best entry in years and proof the concept still has blood left in it.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/uIpJPDNFoeX0TVml9smPrs9KUVx.jpg"
+      }
+    },
+    {
       "id": 1792933362181,
       "slug": "the-long-walk-review",
       "seoTitle": "The Long Walk Review (2025) | WretVision",
