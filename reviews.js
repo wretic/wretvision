@@ -10,6 +10,43 @@
 
 const REVIEWS = [
     {
+      "id": 1793110199511,
+      "slug": "may-review",
+      "seoTitle": "May Review (2002) | WretVision",
+      "seoDescription": "May is the kind of horror film that gets under your skin not because it scares you, but because it makes you genuinely feel for someone you probably shouldn't.",
+      "category": "movie",
+      "title": "May",
+      "year": 2002,
+      "director": "Lucky McKee",
+      "runtime": "93 min",
+      "rating": "R",
+      "genres": [
+        "Drama",
+        "Horror",
+        "Comedy"
+      ],
+      "score": 8.5,
+      "featured": false,
+      "excerpt": "May is the kind of horror film that gets under your skin not because it scares you, but because it makes you genuinely feel for someone you probably shouldn't.",
+      "body": [
+        "There is a version of May (2002) that could have been a cheap slasher with a quirky gimmick. Lucky McKee did not make that film. What he made instead is one of the most quietly devastating character studies in modern horror, a film that earns its bloodshed by making you care first. That is not a common trick. Most horror films of this era were coasting on post-Scream self-awareness or retreading Asian horror aesthetics. May arrived in 2002 with no interest in any of that. It had something to say about loneliness, about being a person who does not fit, and it said it through the language of body horror and obsession. It is a film that deserves far more recognition than it gets.",
+        "The setup is deceptively simple. May Dove Canker, played by Angela Bettis, is a socially stunted veterinary assistant who grew up isolated and strange, raised by a mother whose idea of comfort was a glass doll named Suzie kept locked in a case. May talks to the doll. The doll cannot talk back. That detail is not played for laughs, even though the film sometimes walks the line of dark comedy. It is the emotional core of everything that follows. May wants connection so badly that she has learned to fixate on individual pieces of people rather than people themselves. A boy's hands. A girl's neck. The fragmentation of human beings into parts she can love safely is not a metaphor the film hides. It is right there on the surface, and it still works.",
+        "Angela Bettis is the reason this film exists at the level it does. Without a performance this precise and this committed, May could have tipped into parody or discomfort without purpose. Bettis walks a genuinely difficult line. May is awkward in a way that reads as real rather than scripted, the kind of social wrongness you recognise from people you have actually known. There are moments where she is painful to watch not because she is doing something horrifying but because she is trying so hard and failing in ways that feel true. The scene where she approaches Adam, played by Jeremy Sisto, and fumbles through a conversation about his short film is almost unbearable in its accuracy. You have been that uncomfortable at a party. You know someone who moves through the world like May does. Bettis makes you believe every second of it.",
+        "Jeremy Sisto and Anna Faris both deserve credit for not playing their roles as simple targets or plot devices. Adam is genuinely drawn to May at first, and Sisto plays that attraction as believable rather than inexplicable. He finds her interesting before he finds her frightening, and that order of events matters enormously to the film's emotional logic. Faris, playing Polly, is doing something slightly different, a more performative kind of weirdness that exists in a different register to May's genuine strangeness. Their dynamic has an odd charge to it. Polly is the kind of person who treats oddness as aesthetic. May's oddness is not aesthetic. It is all she has. The film knows the difference and uses it.",
+        "McKee's direction is controlled in a way that belies the film's modest budget. He is not flashy but he is deliberate. The early sections of May have a look that is slightly faded and overexposed in places, suburban and flat in a way that feels accurate to the loneliness of the character rather than accidental. As the film moves toward its final act, the visual temperature shifts. The colours deepen. The editing gets slightly more jagged. It is a subtle transition but it mirrors May's internal state, and that kind of craft in a low budget horror film from 2002 is genuinely impressive. McKee also has the good sense to let scenes breathe. He is not trying to manufacture dread through cuts. He is building it through stillness and through Bettis.",
+        "The pacing is one of the film's real strengths and one of the things that might frustrate viewers expecting something more conventional. May is slow in its first two acts in exactly the right way. You are spending time with a person, watching her routines, watching her attempts at connection, watching the small humiliations that accumulate. By the time the film pivots into something darker, you have been with May long enough that her logic makes a horrible kind of sense. This is the opposite of the approach taken by most horror films, which establish character quickly and then deliver incident. McKee earns the third act by making you sit through the loneliness that precedes it. That is not a flaw. It is the whole point.",
+        "The final act is where May becomes something genuinely unforgettable. Without going into every detail, the sequence in which May begins to act on her obsessions is practically constructed in a way that elevates the horror completely. There is real craft in the effects work here, organic and unglamorous and committed. It does not look like a Hollywood film and that is entirely correct. The gore is purposeful rather than gratuitous, each moment of it carrying the weight of everything you have watched build for an hour and twenty minutes. And then the ending. The final image of May (2002) is one of the most earned and genuinely strange conclusions in modern horror. It is not a twist. It is an arrival. McKee commits to it completely and the film is better for that commitment.",
+        "Comparisons to Carrie are inevitable and not entirely wrong. Both films centre on a socially isolated young woman whose inner life eventually externalises in violent ways. But where De Palma's film is operatic and interested in spectacle, McKee's is intimate and interested in psychology. May is not trying to be Carrie. If anything the film it reminds me of most is Ginger Snaps, another early 2000s horror film that used genre mechanics to explore something genuine about female alienation and the violence of being misunderstood. Both films are better than most of what surrounded them. Both were underseen on release. May has since built a cult following, and you can find it on various streaming platforms with minimal effort, which means there is no excuse for not having watched it if horror with actual substance is what you are looking for.",
+        "May (2002) is a drama horror hybrid that works on both registers simultaneously, which is genuinely rare. The comedy elements are present but they are dark and precise, never undermining the emotional stakes. McKee made a film about loneliness that is also a film about the horror of being seen incorrectly, of being reduced to your surfaces by people who cannot or will not look deeper. That May then does exactly that to others is the kind of irony the film does not underline because it does not need to. You feel it. This is a 2002 horror film that has aged better than almost anything from that era. It is specific, strange, formally confident, and built around a performance that absolutely should have launched a major career. It is essential viewing, and if you have not seen it, fix that."
+      ],
+      "images": [],
+      "verdict": "May is a quiet masterpiece of early 2000s horror, a film that earns every drop of its finale by making you genuinely love someone falling apart, and Angela Bettis deserved every award that did not go to her.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/oFXhJYTax1cnNtgvLdKlXuYiWPV.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/nWnKu94QMMozLSgkP1F69cJZvLI.jpg"
+      }
+    },
+    {
       "id": 1793026649275,
       "slug": "final-destination-bloodlines-review",
       "seoTitle": "Final Destination Bloodlines Review (2025) | WretVision",
