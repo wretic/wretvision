@@ -10,6 +10,43 @@
 
 const REVIEWS = [
     {
+      "id": 1793286117419,
+      "slug": "abraham-lincoln-vampire-hunter-review",
+      "seoTitle": "Abraham Lincoln: Vampire Hunter Review (2012) | WretVision",
+      "seoDescription": "A genuinely insane premise that should have swung harder and weirder, but settles for being a competent, forgettable blockbuster instead.",
+      "category": "movie",
+      "title": "Abraham Lincoln: Vampire Hunter",
+      "year": 2012,
+      "director": "Timur Bekmambetov",
+      "runtime": "105 min",
+      "rating": "R",
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Horror"
+      ],
+      "score": 5.0,
+      "featured": false,
+      "excerpt": "A genuinely insane premise that should have swung harder and weirder, but settles for being a competent, forgettable blockbuster instead.",
+      "body": [
+        "There is a version of Abraham Lincoln: Vampire Hunter that is one of the most gloriously unhinged films ever committed to celluloid. A president who moonlights as a monster slayer, silvered axe in hand, carving through Confederate vampires while simultaneously writing the Emancipation Proclamation. That film sounds like a fever dream in the best possible way. The 2012 adaptation, directed by Timur Bekmambetov and produced by Tim Burton, gets about halfway there before losing its nerve and collapsing into a standard action blockbuster with a historically famous face pasted onto it. The premise is so loud and absurd that it almost demands the filmmakers go completely feral with it. They do not.",
+        "Seth Graysmith's source novel, written by Seth Grahame-Smith who also penned the screenplay here, had a pulpy, deadpan sincerity that made the whole thing work on the page. Grahame-Smith understood that the joke only lands if you play it completely straight. The film sort of understands that too, but only in fits and starts. Bekmambetov is a director with a specific visual sensibility, built on his work with Wanted, and that film's hyper-stylised action DNA is all over Abraham Lincoln: Vampire Hunter. Whether that sensibility serves this material is the central question, and the answer is mostly no.",
+        "Benjamin Walker plays Lincoln, and this is genuinely the most interesting thing about the film from a performance standpoint. Walker does not wink at the camera. He commits completely, delivering Lincoln's famous gravitas with total seriousness even when he is spinning an axe like a helicopter blade through a stampede of CGI horses. There is something almost admirable about how fully he buys into the concept. You never feel like he is embarrassed to be there, which is more than can be said for some actors in similar genre fare. Dominic Cooper plays Henry Sturges, Lincoln's vampire hunting mentor, and he brings exactly the right amount of brooding cool to the role without going over the top.",
+        "The supporting cast is where things get thinner. Mary Elizabeth Winstead plays Mary Todd Lincoln and she is largely wasted, given almost nothing to do until the film remembers she exists near the end. Rufus Sewell plays Adam, the primary vampire antagonist, and while Sewell is a reliably slick screen presence, the character is so underwritten that he barely registers as a genuine threat. A villain needs weight to make the hero's struggle feel earned. Adam gets speeches and a glower but no real menace. For a film built around confronting something monstrous, that is a significant gap.",
+        "Bekmambetov's direction is technically accomplished in moments and genuinely exhausting in others. His action choreography has energy, no question. The sequence where Lincoln fights through a horse stampede is visually inventive even if the CGI is rough in places, and the film's commitment to staging action around Lincoln's specific fighting style with an axe rather than firearms gives the set pieces a distinct flavour. But Bekmambetov cannot resist over-stylising everything. Slow motion is deployed so frequently and so liberally that it stops meaning anything. When every third moment is stretched out for visual impact, nothing actually has impact. It becomes wallpaper.",
+        "Pacing is one of this film's real problems. The first act moves well enough, establishing Lincoln's origin and motivation with reasonable economy. But the middle section, covering Lincoln's political rise alongside his vampire hunting career, feels simultaneously rushed and bloated, which is a difficult combination to achieve. The film wants to hit the historical beats, the debates, the presidency, the Civil War, without lingering on any of them long enough to give them meaning, but it also pads out action sequences far beyond their natural runtime. You end up with a film that feels both overstuffed and hollow.",
+        "The effects work is a mixed bag, and for someone who cares about this stuff, it matters. Some of the practical vampire makeup is solid and gives the creatures genuine menace up close. But the film leans heavily on CGI for its larger set pieces, and in 2012 that CGI was already looking questionable. The train sequence finale, which should be a rousing climax, is undermined by effects that feel disconnected from any physical reality. Compared to something like Priest from the previous year, another action horror hybrid with similar problems, Abraham Lincoln: Vampire Hunter at least has more visual ambition. But ambition without execution is just expensive disappointment.",
+        "What really holds this film back from being the cult classic it could have been is its fundamental unwillingness to go fully committed to its own weirdness. The premise is begging for something operatic, strange, and genuinely transgressive. What we get instead is a fairly conventional action film in a novelty suit. There is a version of this story that leans into the horror, that makes the vampire threat feel genuinely apocalyptic, that uses the slavery and Civil War context not as backdrop but as something the film actually reckons with seriously. The novel gestures at that. The film does not. It wants the cool concept but not the work that comes with it.",
+        "Abraham Lincoln: Vampire Hunter is streaming across various platforms as of now, and it has found a comfortable life as a late night watch, which is probably exactly where it belongs. It is not without pleasure. Walker is committed, some of the axe work is legitimately fun, and the premise alone gives you enough goodwill to get through the rough patches. But this is not a film that earns its ambitions. It is a film that coasts on a concept. For a story this inherently wild, coasting is a kind of failure. Compared to other action horror hybrids of its era, it sits in the middle of the pack, better than Van Helsing, worse than anything with a real directorial voice behind it. 5/10."
+      ],
+      "images": [],
+      "verdict": "A genuinely great premise that the film borrows without ever actually using, leaving you with something watchable, forgettable, and permanently a little frustrating.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/qv8deK0ZmutAuEpejruQKApIy6r.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/ei4bXNp4hBrfUEvWkp7usnQeGQP.jpg"
+      }
+    },
+    {
       "id": 1793199413606,
       "slug": "amityville-the-awakening-review",
       "seoTitle": "Amityville: The Awakening Review (2017) | WretVision",
