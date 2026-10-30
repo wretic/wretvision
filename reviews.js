@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1793372095634,
+      "slug": "thir13en-ghosts-review",
+      "seoTitle": "Thir13en Ghosts Review (2001) | WretVision",
+      "seoDescription": "Thir13en Ghosts is a haunted house film that cared more about the wallpaper than the people inside it.",
+      "category": "movie",
+      "title": "Thir13en Ghosts",
+      "year": 2001,
+      "director": "Steve Beck",
+      "runtime": "91 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 6.0,
+      "featured": false,
+      "excerpt": "Thir13en Ghosts is a haunted house film that cared more about the wallpaper than the people inside it.",
+      "body": [
+        "Thir13en Ghosts from 2001 is one of those films where the production design is doing the heavy lifting while everything else scrambles to keep up. Steve Beck directs this remake of the 1960 William Castle original, and the premise is genuinely solid. A family inherits a glass mansion from their eccentric uncle, only to discover it was built to contain twelve malevolent ghosts and use them as a supernatural engine. That is a real setup. There is something to work with there. The film knows it too, at least for the first twenty minutes.",
+        "The ghost designs are where Thir13en Ghosts earns most of its goodwill. The Jackal, The Torn Prince, The Bound Woman, each one is a practical effects achievement with genuine menace baked into the concept. The lore around them, the Black Zodiac and all that, is wild in the best possible way. Someone clearly had fun building that mythology. Matthew Lillard is doing his absolute most and I respect it. He commits to every line like his career depends on it. There are moments where the film feels like it could tip into something genuinely unnerving.",
+        "Then the script keeps getting in the way. Tony Shalhoub is a likeable presence but the family dynamics are tissue thin, and the kids exist almost entirely to be imperilled and rescued. The haunted house mechanics, glass walls, moving corridors, spinning chambers, are cool in concept but the film keeps interrupting them with exposition dumps and characters explaining the plot at each other. Pacing is a real issue. Every time the tension builds the film stops to have someone read from a book or deliver a monologue about grief. The ending fumbles what should have been a gut punch, pulling back when it should have committed.",
+        "Thir13en Ghosts is a decent watch if you go in with the right expectations. It sits comfortably alongside mid tier studio horror from the same era, think House on Haunted Hill 1999 or Ghost Ship, films where the aesthetic is the strongest argument for their existence. Streaming on various platforms in 2025, it holds up as a stylish time capsule with a genuinely inventive ghost roster that deserved a sharper film around them. 6/10, and honestly most of those points belong to whoever designed The Jackal."
+      ],
+      "images": [],
+      "verdict": "Thir13en Ghosts is a spectacular set of horror action figures trapped inside a deeply average film.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/6yrrddjIjx0ElCRZp5pTZeqrj3k.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/x30bpi16AFWrfGVhYMqujbcCAWS.jpg"
+      }
+    },
+    {
       "id": 1793286117419,
       "slug": "abraham-lincoln-vampire-hunter-review",
       "seoTitle": "Abraham Lincoln: Vampire Hunter Review (2012) | WretVision",
