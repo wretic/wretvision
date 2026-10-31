@@ -10,6 +10,42 @@
 
 const REVIEWS = [
     {
+      "id": 1793456652019,
+      "slug": "the-house-of-the-devil-review",
+      "seoTitle": "The House of the Devil Review (2009) | WretVision",
+      "seoDescription": "Ti West made a slow-burn masterpiece that most horror directors spend their whole careers trying and failing to replicate.",
+      "category": "movie",
+      "title": "The House of the Devil",
+      "year": 2009,
+      "director": "Ti West",
+      "runtime": "95 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "score": 8.5,
+      "featured": false,
+      "excerpt": "Ti West made a slow-burn masterpiece that most horror directors spend their whole careers trying and failing to replicate.",
+      "body": [
+        "There is a version of The House of the Devil that gets made by a lesser director and becomes exactly what its title suggests: cheap, loud, predictable, and forgotten inside a year. Ti West made a different film entirely. Released in 2009 and shot to look like it crawled out of 1983, this is one of the most disciplined, patient, and genuinely unsettling horror films of its decade. It does not care if you are bored in the first hour. It is betting that you will not be, and it wins that bet almost every time. West was relatively unknown when this came out, and The House of the Devil announced him as someone with a clear and specific vision for what horror could feel like when stripped back to its bones. It is not a film that shouts at you. It is a film that sits quietly in the corner of the room and watches you until you notice it.",
+        "The setup is deliberately banal, and that is exactly the point. Samantha, played by Jocelin Donahue, is a college student who needs money fast to cover a new apartment deposit. She answers a babysitting ad, gets a weird phone call, almost backs out, and then lets her friend Megan talk her into going anyway. That is it. That is your premise. West takes this threadbare setup and builds an entire architecture of dread around it before a single overtly threatening thing happens. The Ulman house is isolated. The job description changes on arrival. The client, played by Tom Noonan, is unsettling in ways you cannot immediately name. Every element is chosen carefully, and none of it is accidental.",
+        "Tom Noonan deserves a paragraph all to himself. The man is one of cinema's great underrated presences and West uses him perfectly here. Noonan has this quality where he seems entirely reasonable and completely wrong at the same time, and the scene where he meets Samantha at the door and begins explaining the adjusted terms of her evening is one of the best pieces of slow-drip menace you will find in modern horror. He is polite. He is soft-spoken. He is apologetic about the inconvenience. And every word out of his mouth makes your skin crawl a little more. Mary Woronov as his wife adds another layer of quiet wrongness. These are not cackling villains. They are something more disturbing: people who seem genuinely at ease with what they are doing.",
+        "Jocelin Donahue anchors the entire film and does it largely in silence. For the long middle stretch of the movie, she is alone in the house. She wanders. She puts on her Walkman. She dances in the hallway in one of the film's most memorable and oddly joyful moments, a choice that makes what follows hit harder because you have seen her be a person first. Donahue plays Samantha as smart and cautious but not paranoid, which makes her gradual unease feel earned rather than manufactured. She is not doing horror-movie acting. She is doing something quieter and more real, and it is exactly what the film needs. The audience needs to be in that house with her, not watching someone perform being scared.",
+        "West's direction is where this film separates itself from the crowd entirely. He shoots on 16mm to get that grainy, warm, slightly washed-out texture that immediately places you in a late-70s or early-80s horror aesthetic, and he commits to it completely. The aspect ratio, the title cards, the wardrobe, the music from Jeff Grace, all of it is calibrated to feel like a lost VHS tape you found in a bargain bin. But this is not pastiche for its own sake. The period aesthetic serves the tension because your brain is already pattern-matching to films like Halloween and Rosemary's Baby, and West knows you are doing it, and he plays with that expectation deliberately. The camera holds on empty rooms a beat longer than comfortable. Doors stay closed just long enough.",
+        "The pacing will be divisive. I want to be upfront about that. If you need a horror film to deliver scares at regular intervals, The House of the Devil is going to test your patience in ways you may not forgive. The first act is almost entirely devoted to establishing Samantha's financial desperation and getting her into the house. The second act is essentially one long, slow coil of mounting unease with almost no incident. West is building pressure, not releasing it, and he does this for longer than most audiences are used to sitting with. But here is the thing: that restraint is the craft. Every minute West delays is a minute more tension stored up. When the third act finally arrives, it arrives like a dam breaking.",
+        "The final twenty minutes are a different film, and that whiplash is entirely intentional. West pivots hard into visceral, chaotic horror with a speed and commitment that feels almost violent after the measured quiet that preceded it. Some viewers find this tonal shift jarring. I find it exhilarating. The Walman sequence, the revelation of what is happening in the house, the gore that arrives suddenly and without mercy, it all lands with force precisely because West made you wait for it. This is how slow-burn horror is supposed to work, and it so rarely does. The ending is ambiguous in a way that left me sitting with it afterward, which is exactly where a film like this should leave you.",
+        "Compared to the landscape of horror in the late 2000s, The House of the Devil is practically a provocation. This was the era of Saw sequels and Paranormal Activity found-footage imitators. West was making something that looked backward to go forward, a film that understood atmosphere and dread in a way that most of his contemporaries had either forgotten or never learned. It sits comfortably alongside something like Ti West's own The Innkeepers or Rob Zombie's The House of 1000 Corpses in terms of directors bringing a genuine love of horror history to their work, though West's restraint here is a world away from Zombie's maximalism. The House of the Devil is proof that less, executed with precision and nerve, is almost always more.",
+        "There are genuine flaws worth naming. The opening scene, which tells you upfront via text that the Satanic panic of the 1980s was very real and very dangerous, undercuts some of the ambiguity by confirming where the film is headed before it arrives. And while the middle section is mostly controlled brilliance, there are one or two beats that drift just slightly too long even by the film's own established tempo. These are not dealbreakers. They are minor cracks in an otherwise very tight construction. The House of the Devil is the rare 2009 horror film I still think about. It is patient, precise, and genuinely unsettling in ways that rely entirely on craft rather than gimmick. It is available on various streaming platforms and absolutely worth hunting down, particularly for anyone who has felt let down by what modern horror usually delivers."
+      ],
+      "images": [],
+      "verdict": "The House of the Devil is a master class in restraint and atmosphere, the kind of horror film that trusts its audience completely and rewards that trust with one of the most tightly wound slow burns in recent memory: 8.5/10.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/4abKUbc9IbsndbaY1hacN1iPM0Y.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/cHFIGss3Lx429OBZGfdF3noKTDV.jpg"
+      }
+    },
+    {
       "id": 1793372095634,
       "slug": "thir13en-ghosts-review",
       "seoTitle": "Thir13en Ghosts Review (2001) | WretVision",
