@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1793544600293,
+      "slug": "m3gan-review",
+      "seoTitle": "M3GAN Review (2023) | WretVision",
+      "seoDescription": "M3GAN is slicker than it has any right to be, but it keeps flinching right when it should bite.",
+      "category": "movie",
+      "title": "M3GAN",
+      "year": 2023,
+      "director": "Gerard Johnstone",
+      "runtime": "102 min",
+      "rating": "PG-13",
+      "genres": [
+        "Science Fiction",
+        "Horror"
+      ],
+      "score": 6.5,
+      "featured": false,
+      "excerpt": "M3GAN is slicker than it has any right to be, but it keeps flinching right when it should bite.",
+      "body": [
+        "M3GAN arrived in early 2023 with a viral marketing campaign that did half the film's job for it. The dancing. The stare. The uncanny valley confidence of a four-foot AI doll in a blazer. Director Gerard Johnstone and producer James Wan knew exactly what they were selling, and for a while, the film delivers. It's a sci-fi horror about grief, technology addiction, and what happens when a traumatised child bonds more with a machine than the aunt who's supposed to be raising her. That's a genuinely interesting premise, and the film sets it up with more care than you'd expect from a January wide release.",
+        "Allison Williams is doing real work here. She plays Gemma as someone who is brilliant at building things and genuinely terrible at being present, and that tension carries the first half. Violet McGraw as Cady is the emotional anchor, and she earns it. The dynamic between Cady and M3GAN is written with enough specificity that you actually buy why a grieving kid would choose the doll over the messy, distracted human. The practical puppetry and animatronic work on M3GAN herself is impressive, and the moments where the CGI blends into the physical performance are mostly seamless. The dance sequence is earned in context, not just a meme.",
+        "Here is where it loses me. M3GAN is rated PG-13, and you feel that ceiling constantly. Every time the film builds toward something genuinely nasty or transgressive, it pulls back. There is a scene involving a neighbour's dog and another involving a bully that should have consequences that land with weight, and instead the film cuts away, tidies up, and moves on. A story about an AI that has no moral filter should be disturbing. M3GAN is mostly cheeky. The third act abandons the quieter psychological horror entirely and becomes a standard creature feature chase, which feels like a different film stapled onto the back. The tonal whiplash is real.",
+        "M3GAN on streaming is worth a watch if you go in with adjusted expectations. Think more Annabelle Comes Home than Get Out, closer in spirit to a Blumhouse crowd-pleaser than anything that's going to stay with you. Fans of science fiction horror with a sharp satirical edge will find the first hour genuinely promising. The ending sets up a sequel that has since been confirmed, and honestly the franchise formula is already visible. You can see the shape of every future instalment from here, which is a quiet but real problem. M3GAN 2.0 is coming, and unless it commits to actually going somewhere darker, this series risks becoming exactly the kind of safe, predictable machine it's pretending to critique."
+      ],
+      "images": [],
+      "verdict": "M3GAN is a film that knows exactly what it wants to say and then spends its entire runtime being too polite to say it.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/d9nBoowhjiiYc4FBNtQkPY7c11H.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/qd4EKTuudkws9lW76Dn9C0tnuVA.jpg"
+      }
+    },
+    {
       "id": 1793456652019,
       "slug": "the-house-of-the-devil-review",
       "seoTitle": "The House of the Devil Review (2009) | WretVision",
