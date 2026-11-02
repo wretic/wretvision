@@ -10,6 +10,42 @@
 
 const REVIEWS = [
     {
+      "id": 1793642392280,
+      "slug": "the-cabin-in-the-woods-review",
+      "seoTitle": "The Cabin in the Woods Review (2011) | WretVision",
+      "seoDescription": "The Cabin in the Woods is the rare horror film that actually earns its cleverness instead of just announcing it.",
+      "category": "movie",
+      "title": "The Cabin in the Woods",
+      "year": 2011,
+      "director": "Drew Goddard",
+      "runtime": "95 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "score": 8.5,
+      "featured": false,
+      "excerpt": "The Cabin in the Woods is the rare horror film that actually earns its cleverness instead of just announcing it.",
+      "body": [
+        "There is a specific kind of horror film that thinks it is smarter than it actually is. It winks at the audience, nods at the genre, drops a few knowing references, and mistakes self-awareness for depth. The Cabin in the Woods is not that film. What Drew Goddard directed in 2011, from a script he co-wrote with Joss Whedon, is something genuinely harder to pull off: a deconstruction that also works as the thing it is deconstructing. It wants to interrogate slasher tropes while also delivering genuine tension, genuine horror, and genuine fun. And for the most part, it absolutely succeeds. That is not a small achievement. Horror comedies that try to do too much usually collapse under their own ambition. This one holds together because the filmmakers understood that the joke only works if the film underneath it is real.",
+        "The setup is familiar by design. Five college students head to a remote cabin for a weekend. There is the athlete, the scholar, the fool, the good girl, the bad girl. You have seen this before. That is the point. What Goddard layers underneath from the opening frame is a parallel story set inside a massive underground facility, run by a team of corporate bureaucrats who seem to be orchestrating the whole thing. Bradley Whitford and Richard Jenkins play these two desk workers with such casual, lived-in normalcy that they become genuinely fascinating to watch. They are not villains in any conventional sense. They are people doing a job. That mundane quality is where the film finds a lot of its best horror, and a lot of its best dark comedy.",
+        "The performances across the board are stronger than the premise demands. Kristen Connolly anchors the film as Dana, and she does something smart with the role: she does not play the final girl as a type. She plays her as a person who is scared and confused and making real decisions under impossible pressure. Chris Hemsworth, pre-Thor and still finding his range, is genuinely charming as Curt, and the script does something interesting with his character that reframes everything you think you know about him early on. Fran Kranz as Marty is the obvious standout though. He is the stoner comic relief who turns out to be the most perceptive person in the group, and Kranz plays that arc with a kind of loose, unpredictable energy that keeps every scene he is in alive.",
+        "Goddard's direction is controlled in a way that a lot of genre directors struggle with when working with this much tonal range. The cabin sequences feel genuinely creepy. The basement scene where the kids inadvertently choose their own fate is one of the best setpieces in modern horror, not because anything violent happens in it, but because of what it implies about agency and inevitability. He shoots it with real dread. The facility sequences have a completely different visual grammar, all clean lines and fluorescent lighting and bureaucratic calm, and that contrast does a lot of work. You are constantly being shifted between the world of the horror film and the world of the people running the horror film, and both feel fully realised rather than one existing just to comment on the other.",
+        "The pacing is where the film earns a lot of its goodwill. It moves. There is no bloat here, no scene that exists just to fill runtime. Every choice feels deliberate. The decision to open with the facility rather than the cabin is a bold one because it immediately tells you this is not a straightforward slasher, but it does not tip the full hand. You still do not know the rules. You still want to find out. The escalation through the second act is well-managed, and when the film breaks completely open in the third act, it has genuinely earned that chaos rather than just unleashing it for spectacle. That said, the final act is also where the film's ambitions slightly outpace its execution, and that is worth addressing honestly.",
+        "The third act involves an enormous creature showcase that is clearly designed as a payoff for genre fans, a kind of greatest hits of horror monsters given physical form all at once. And it is spectacular on a conceptual level. The practical work is impressive, the scope of it is genuinely surprising, and there is something almost giddy about watching it unfold. But it is also the moment where the film shifts most decisively into a different register, and not everyone will follow it there. The tonal whiplash is real. What started as a slow, creeping dread turns into something closer to a comedy action horror finale. It works more than it does not, but you can feel the seams a bit. It is also where the CGI, used more heavily than in the rest of the film, shows its age in ways the practical work does not.",
+        "What the film is actually about is more interesting than its plot summary suggests. At its core it is a film about audience complicity. The facility is not just running these rituals for mysterious reasons: it is doing it because the audience demands it. Because we demand it. Every time we sit down to watch a horror film and wait for the blonde to die first, every time we groan when the obvious survivor makes it out, we are participating in something. Goddard and Whedon are making an argument about the relationship between horror viewers and horror conventions, and while that argument is not exactly subtle, it is made with enough wit and craft that it does not feel like a lecture. It feels like a provocation from people who love the genre enough to interrogate it.",
+        "Compared to other meta-horror entries like Scream or even more recent entries like Wes Craven's work in the 90s cycle, The Cabin in the Woods goes further structurally. Scream names the rules. This film builds a literal infrastructure around them. That is a bigger swing. It also holds up better than many of its contemporaries from 2011 because its ideas are built into the architecture of the story rather than applied on top of it. You can stream it on various platforms right now and it does not feel dated in the ways that a lot of genre films from that period do. The ideas are still sharp. The performances still land. The creature design still impresses. What dates slightly is the CGI heavy finale, which is the one moment where the budget shows in ways that work against the film.",
+        "The Cabin in the Woods is a genuine achievement in genre filmmaking. It respects horror enough to take it seriously while dismantling it with obvious affection. It is funny without being a comedy, scary without being a straightforward horror film, and smart without being smug about it. The ending commits fully to its own logic, which is exactly what a film like this needs to do, and it does not flinch. That matters. A film this aware of genre conventions could easily have chickened out at the finish line and given you something safer. It does not. For horror fans who are exhausted by lazy jump scare factory output, this is the antidote. 8.5 out of 10."
+      ],
+      "images": [],
+      "verdict": "The Cabin in the Woods is what happens when genuinely talented filmmakers love a genre enough to tear it apart and rebuild it into something that works on every level it is attempting.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/zZZe5wn0udlhMtdlDjN4NB72R6e.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/wJffMiCnrszaNclKggGixYWB7D7.jpg"
+      }
+    },
+    {
       "id": 1793544600293,
       "slug": "m3gan-review",
       "seoTitle": "M3GAN Review (2023) | WretVision",
