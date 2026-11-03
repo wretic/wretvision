@@ -10,6 +10,43 @@
 
 const REVIEWS = [
     {
+      "id": 1793721516745,
+      "slug": "the-mummy-review",
+      "seoTitle": "The Mummy Review (1999) | WretVision",
+      "seoDescription": "The Mummy (1999) has no business being this fun, but here we are, twenty-five years later and it still absolutely slaps.",
+      "category": "movie",
+      "title": "The Mummy",
+      "year": 1999,
+      "director": "Stephen Sommers",
+      "runtime": "124 min",
+      "rating": "PG-13",
+      "genres": [
+        "Adventure",
+        "Action",
+        "Fantasy"
+      ],
+      "score": 8.0,
+      "featured": false,
+      "excerpt": "The Mummy (1999) has no business being this fun, but here we are, twenty-five years later and it still absolutely slaps.",
+      "body": [
+        "There is a version of The Mummy that is a straight horror film. Universal tried that in 1932 with Boris Karloff and it worked because Karloff was genuinely unsettling in a way that transcended the limitations of the era. Then in 2017 Universal tried again with Tom Cruise and produced one of the most joyless blockbusters of the decade. But in 1999, director Stephen Sommers did something that neither of those films managed: he figured out what the property actually wanted to be and he committed to it completely. This is not a horror film. It is a rollicking, globe-trotting adventure picture with horror dressing, enormous charm, and just enough genuine menace to keep you from dismissing it as pure fluff. It knows exactly what it is, which puts it miles ahead of most films in its weight class.",
+        "The setup is efficient and it moves. Rick O'Connell, played by Brendan Fraser, is a roguish former Foreign Legion soldier who stumbles across the lost city of Hamunaptra in 1920s Egypt. He gets tangled up with Evelyn Carnahan, a librarian and aspiring Egyptologist played by Rachel Weisz, and her bumbling brother Jonathan played by John Hannah. Together, against all better judgment, they crack open the tomb of Imhotep, a High Priest who was mummified alive for committing heresy and practising dark magic. Imhotep, brought to life by Arnold Vosloo, wakes up regenerating by consuming the bodies of the men who disturbed his rest, and he sets his sights on resurrecting his long-dead lover using Evelyn as a vessel. The premise is clean. The stakes escalate at a good clip. Sommers wastes almost no time getting you where you need to be.",
+        "Brendan Fraser is the engine this whole thing runs on and it is impossible to overstate how well-cast he is. There was a period in the late nineties and early 2000s where Fraser was one of the most naturally likeable presences in mainstream cinema, and Rick O'Connell is the role that showcases exactly why. He plays the character with a kind of effortless physicality, like he was born doing this stuff, but he also brings genuine comic timing and a warmth that stops the character from being a generic action hero. When he is scared he is actually scared. When he is funny he is genuinely funny. Fraser does not try to make Rick cool by playing it cool. He makes Rick cool by just being completely present in every scene, which is a harder trick than it sounds. This is a star turn in the old Hollywood sense of the phrase.",
+        "Rachel Weisz is equally important and arguably gets the more interesting arc. Evelyn could have been written as the helpless love interest who gets rescued. Instead she is a smart, clumsy, occasionally infuriating character who drives the plot as much as anyone else. Weisz plays her with genuine enthusiasm and you believe entirely that this woman has spent her life with her nose in books and is now absolutely delighted and terrified to find herself inside one. The chemistry between her and Fraser feels real rather than manufactured, which is essential because the film asks you to buy into the romance at speed. John Hannah as Jonathan provides broad comic relief that should feel irritating but somehow stays on the right side of the line because Hannah commits to the cowardice with such consistency that it becomes its own kind of character work.",
+        "Arnold Vosloo as Imhotep is one of the more underrated villain performances of the era. The role asks him to spend large portions of the film in various states of physical decay, which limits what he can do expressively, but Vosloo finds the intensity through his eyes and through physicality. When Imhotep is fully regenerated he carries genuine menace. There is a scene where he summons a sandstorm shaped like his own face over the desert horizon and it is a legitimately iconic image that this film does not get enough credit for. The CGI on that sandstorm is dated now, yes, but the image itself is so strong that it lands anyway. Vosloo also plays the moments of ancient grief convincingly. Imhotep is not just a monster. He is a man destroyed by loss who became something monstrous. That dimension matters.",
+        "The craft behind the camera is where this film most reveals its confidence. Sommers is not a subtle director but he is an energetic and visually inventive one, and The Mummy (1999) is his best work by a significant margin. The production design is extraordinary. Egypt feels genuinely oppressive and alive. The Cairo sequences crackle with noise and colour. The Hamunaptra sequences have a dusty, ancient weight to them. Alan Silvestri's score is tremendous, full of adventure and sweep, the kind of orchestral work that modern blockbusters have largely abandoned in favour of ambient tension. The film looks expensive because it spent its money in the right places. When the practical effects are doing the heavy lifting, which is often in the early portions of Imhotep's regeneration, the results are genuinely grotesque in the best way.",
+        "That said, the CGI has aged in ways that are sometimes hard to ignore. The fully rendered digital Imhotep during certain sequences looks like a video game cutscene from the same year, and the scarab beetle swarms are inconsistent in quality. This was the frontier of digital effects work in 1999 and some of it has held up better than others. The mummified soldiers that attack the heroes in the finale look rough. It does not sink the film because the practical work earlier in the picture is strong enough to establish a visual identity that carries through even when the digital work falters. But if you are someone who is immediately and irreparably pulled out by bad CGI, you will notice it. This is not The Thing. The effects are a tool here, not a statement.",
+        "Pacing is where Sommers earns serious credit. The Mummy runs about two hours and it does not feel it. There is almost no fat on this. Scenes establish character and advance plot simultaneously. Even the quieter moments, a conversation in a Cairo bar, a midnight theft at a dig site, a campfire standoff between rival expedition teams, are doing work. The film never mistakes atmosphere for an excuse to stop moving. It earns its action sequences by building toward them, and the action sequences themselves are staged with a clarity that modern blockbusters often sacrifice in favour of visual chaos. You always know where everyone is. You always know what the stakes are. That sounds basic but it is rarer than it should be. Sommers understood that you cannot thrill an audience if they are confused about the geography.",
+        "The Mummy (1999) holds a specific and well-deserved place in the adventure genre alongside things like Raiders of the Lost Ark and the first two Brendan Fraser Jungle Book era pictures, fun, fast, smart enough to work as more than pure spectacle, honest enough not to pretend it is something it is not. It is available across various streaming platforms depending on your region and it rewards a rewatch in a way that most blockbusters from that era simply do not. Some films age into nostalgia. This one aged into something you can still genuinely recommend to someone who has never seen it. 8/10, a near-perfect piece of mainstream adventure filmmaking that knew what it was and never once flinched."
+      ],
+      "images": [],
+      "verdict": "One of the last great old-school adventure blockbusters, The Mummy (1999) is endlessly rewatchable, impeccably cast, and still the blueprint that every film in its genre has been trying to follow ever since.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/8zLS8p1tRyWFLRFfmgQq0j5WE6z.jpg"
+      }
+    },
+    {
       "id": 1793642392280,
       "slug": "the-cabin-in-the-woods-review",
       "seoTitle": "The Cabin in the Woods Review (2011) | WretVision",
