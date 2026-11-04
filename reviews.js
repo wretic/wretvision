@@ -10,6 +10,43 @@
 
 const REVIEWS = [
     {
+      "id": 1793808166449,
+      "slug": "the-silence-of-the-lambs-review",
+      "seoTitle": "The Silence of the Lambs Review (1991) | WretVision",
+      "seoDescription": "Hannibal Lecter only has about sixteen minutes of screen time. You will not stop thinking about him for sixteen years.",
+      "category": "movie",
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "director": "Jonathan Demme",
+      "runtime": "119 min",
+      "rating": "R",
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Drama"
+      ],
+      "score": 9.5,
+      "featured": false,
+      "excerpt": "Hannibal Lecter only has about sixteen minutes of screen time. You will not stop thinking about him for sixteen years.",
+      "body": [
+        "There are films that define a genre and films that transcend it entirely. The Silence of the Lambs, released in 1991 and directed by Jonathan Demme, sits in the second category and refuses to move. It is classified as a crime thriller but it operates on a frequency closer to pure psychological horror. It won all five major Academy Awards, which almost never happens, and yet somehow that sweep undersells what Demme and screenwriter Ted Tally actually accomplished here. This is not a prestige film dressed up as a thriller. It is a genuinely terrifying piece of work that happens to have been made with extraordinary craft and intelligence. It has been streaming across various platforms for decades now, still drawing in first timers, still rattling the cages of people who think they know what they are getting into.",
+        "The setup is clean and efficient. FBI trainee Clarice Starling, played by Jodie Foster, is pulled from her studies and tasked with interviewing the imprisoned psychiatrist and serial killer Hannibal Lecter, played by Anthony Hopkins, in hopes that his insight might help catch an active killer known as Buffalo Bill. That is the structural spine. What Demme builds around it is something far more layered. Clarice is young, female, and from a working class background, surrounded at every turn by men who either underestimate her, leer at her, or use her. The film is relentlessly aware of that dynamic without ever pausing to announce it. Demme shoots the male characters looking directly into the camera when they interact with Clarice, which puts the audience in her position. It is a simple technique and it is quietly devastating.",
+        "Jodie Foster does not get enough credit for this performance, which is a strange thing to say given she won the Oscar for it. But the conversation around Silence of the Lambs has been so thoroughly dominated by Hopkins that Foster's work gets treated as the straight man to his spectacle. That is wrong. Foster carries the entire film on her back. Clarice is tough but not invincible, competent but not superhuman. There is a scene early on where she steps into an elevator after her first meeting with Lecter and you can watch the composure she has been holding crack just slightly, just for a second, before she pulls it back. That is the whole character in four seconds. Foster understands exactly who Clarice is and never overplays a single beat. It is naturalistic, controlled, and completely lived in.",
+        "And then there is Hopkins. Anthony Hopkins as Hannibal Lecter is one of the great performances in cinema history, full stop. The character barely appears and yet he dominates every frame he occupies and several he does not. Hopkins plays Lecter with almost no movement. He stands completely still. He does not blink at a normal rate. His voice is precise and musical in a way that feels wrong, too considered, too pleasurable. The scene where Lecter describes, in detail, eating a census taker with fava beans and a nice Chianti, and then makes that now iconic sound, is objectively absurd on paper. Hopkins makes it genuinely menacing. He finds the humor in the horror and the horror in the humor simultaneously, and the result is a character who feels like he exists on a slightly different plane of reality to everyone else in the film.",
+        "Jonathan Demme is not a director typically associated with horror and I think that is precisely why this film works as well as it does. He does not reach for the toolkit of genre filmmaking. There are no cheap jump scares, no sudden stings on the soundtrack, no dark corridors lit exclusively for atmosphere. Instead Demme builds dread through proximity and character. The horror in Silence of the Lambs is relational. It lives in the space between people, in what is not said, in the specific way Lecter tilts his head when he is studying something. Howard Shore's score is used sparingly, which makes it hit harder when it does arrive. The film trusts its audience to feel the tension without being pushed into it, and that restraint is the mark of a genuinely confident filmmaker working at the top of his ability.",
+        "Pacing is where a lot of films in this genre fall apart. Silence of the Lambs runs just under two hours and it uses almost every minute of that runtime with purpose. The investigation into Buffalo Bill, played by Ted Levine in a performance that is genuinely disturbing and severely underrated, moves at exactly the right speed. Levine's Bill is not played as cartoonish evil. He is pathetic and frightening in equal measure, which makes him more unsettling than a more theatrical villain would be. The final act, in which Clarice enters Buffalo Bill's house alone in the dark, is as tense as anything committed to film in the last four decades. Demme strips out almost all sound, leaves Foster essentially alone on screen, and just lets the dread accumulate until it becomes almost unbearable.",
+        "The film is not without things worth scrutinising. The portrayal of Buffalo Bill and the relationship between his violence and his gender dysphoria has been debated extensively since 1991 and those critiques are worth engaging with. The film and Thomas Harris's source novel are not straightforwardly transphobic but they are not clean either, and Demme and Tally are aware enough of the tension to include dialogue specifically addressing it, which is both a defence and an acknowledgement that the question existed. It does not meaningfully damage the film as a piece of storytelling but it is not something to wave away either. The other minor quibble is that some of the FBI procedural material in the second act slows slightly compared to the Lecter scenes, which is almost unfair given how good those scenes are, but the contrast is noticeable.",
+        "In the broader landscape of psychological crime thrillers, The Silence of the Lambs sits at the top of the pile alongside Se7en and Zodiac as films that use the serial killer premise to explore something more ambitious than the mechanics of murder. Where Se7en goes dark and nihilistic and Zodiac goes cold and obsessive, Silence of the Lambs goes inward. It is fundamentally a film about being seen and being understood, about the specific danger of a person who can read you completely and has no moral brake on what he does with that knowledge. Lecter's power over Clarice is not physical, it is psychological, and the film understands that the most frightening predator is not the one who can overpower you but the one who already knows what you need.",
+        "Silence of the Lambs is the rare film that earns every piece of its legacy. Available on various streaming platforms, it has never stopped being relevant, never started to feel dated, never lost the ability to unsettle a first time viewer. The craft is immaculate, the performances are landmark, and Demme's direction is so assured and so specific that the film feels like it could not have been made any other way. The ending is perfect. The last phone call between Clarice and Lecter is playful and horrible and exactly right. Some films you admire. Some films you remember. The Silence of the Lambs is one you carry around with you."
+      ],
+      "images": [],
+      "verdict": "9.5/10, a masterpiece that works as pure thriller, genuine horror, and character study all at once, and after thirty years it has lost exactly nothing.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/mbOx1wxMLikzwWUO9TKAcFIy6op.jpg"
+      }
+    },
+    {
       "id": 1793721516745,
       "slug": "the-mummy-review",
       "seoTitle": "The Mummy Review (1999) | WretVision",
