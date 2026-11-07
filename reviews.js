@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1794062735134,
+      "slug": "the-collector-review",
+      "seoTitle": "The Collector Review (2009) | WretVision",
+      "seoDescription": "The Collector is meaner and smarter than it has any right to be, a home invasion horror that earns its brutality.",
+      "category": "movie",
+      "title": "The Collector",
+      "year": 2009,
+      "director": "Marcus Dunstan",
+      "runtime": "90 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "score": 7.0,
+      "featured": false,
+      "excerpt": "The Collector is meaner and smarter than it has any right to be, a home invasion horror that earns its brutality.",
+      "body": [
+        "The Collector came out in 2009 and got buried under middling reviews and a limited release, which is a genuine shame because Marcus Dunstan and Patrick Melton built something nastier and more inventive than most of what was filling multiplexes at the time. The premise is tight: a thief breaks into a remote house to steal a safe, only to discover someone got there first and turned the whole property into a kill trap. It is torture porn adjacent in its marketing but it is not really that in execution. It is closer to a siege film, a cat and mouse thriller with real tension threaded through it.",
+        "What Dunstan gets right is atmosphere. The house feels genuinely dangerous from the moment the Collector starts appearing in the shadows, and the film commits to keeping him mysterious. No backstory. No monologue. Just a masked figure who is always three steps ahead and seems to operate on a logic that is never fully explained, which is the right call. Josh Stewart is a solid lead too, grounded and reactive in a way that feels lived in rather than performed. He is not a hero, he is a thief trying to survive a situation he stumbled into, and that moral ambiguity gives the film texture.",
+        "The traps are creative and mostly practical, which helps enormously. There is a sequence in a room covered in fish hooks that is genuinely unpleasant to watch in the best possible way. Where the film stumbles is in the pacing of its middle section. It repeats the same beats a few too many times: character moves, Collector appears, character retreats. It needed one more gear change somewhere in that stretch. The family at the centre of the house is also underwritten, existing mostly as stakes rather than people, which limits how much the tension actually lands emotionally.",
+        "If you like films such as Saw or Housebound and you can get past the grim surface, The Collector streaming on various platforms is worth your time. It is a 7 out of 10 horror film: not perfect, definitely flawed, but it has a clear directorial vision, real menace in its villain, and enough practical craft to separate it from the torture porn pile it gets unfairly lumped into. The sequel The Collection went bigger and messier. This one stays tight and nasty, and that restraint is what makes it work."
+      ],
+      "images": [],
+      "verdict": "Flawed but genuinely mean in the right ways, The Collector is one of the better overlooked horror films of its era and deserves a second look.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/e33HSokiAxhj8ptpAr2xAU4jnd8.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/ywsta3d1MtV0MjQXs6uu0nnMjxi.jpg"
+      }
+    },
+    {
       "id": 1793979993875,
       "slug": "the-league-of-extraordinary-gentlemen-review",
       "seoTitle": "The League of Extraordinary Gentlemen Review (2003) | WretVision",
