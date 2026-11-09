@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1794248977673,
+      "slug": "nosferatu-review",
+      "seoTitle": "Nosferatu Review (2024) | WretVision",
+      "seoDescription": "Robert Eggers finally got his vampire film, and it feels like he was born to make it.",
+      "category": "movie",
+      "title": "Nosferatu",
+      "year": 2024,
+      "director": "Robert Eggers",
+      "runtime": "133 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Fantasy"
+      ],
+      "score": 8.5,
+      "featured": false,
+      "excerpt": "Robert Eggers finally got his vampire film, and it feels like he was born to make it.",
+      "body": [
+        "Nosferatu (2024) is Robert Eggers doing what Robert Eggers does best: building a world so thick with dread and texture that you feel like you need a shower after watching it. This is the third major adaptation of the Bram Stoker adjacent story, following F.W. Murnau's 1922 silent original and Werner Herzog's 1979 reimagining, and Eggers is clearly in conversation with both. He is not remaking them. He is going deeper into the rot. The premise follows young Ellen Hutter, haunted since girlhood by a presence she cannot name, while her husband travels to Transylvania and seals a deal with something ancient and catastrophic. If you know the shape of this story, you know where it ends. Eggers makes the journey feel genuinely dangerous anyway.",
+        "What works here is almost everything in the craft department. The cinematography by Jarin Blaschke is extraordinary, all candlelight and grey mist and shadows that feel alive. Every frame looks like a painting that is slowly becoming a nightmare. Bill Skarsgard as Count Orlok is unrecognisable and genuinely unsettling in a way that CGI-heavy monster design rarely achieves. This is performance and prosthetics doing the heavy lifting, and it shows. Lily-Rose Depp surprised me. I went in skeptical and came out convinced. Her Ellen is not a passive victim, she is a woman in a kind of tormented negotiation with something she both fears and cannot fully reject. That tension carries the whole film. Willem Dafoe, as expected, is an absolute joy every moment he is on screen.",
+        "Where the film drags slightly is in its middle section, where the dread becomes so relentless it starts to feel monotonous rather than mounting. There is a version of this story where the pacing breathes a little more and you feel the creep of Orlok's approach rather than just being immersed in permanent gloom. That is a minor complaint but it is a real one. The film also leans heavily into a particular reading of Ellen's connection to Orlok that borders on seductive obsession, which some will find fascinating and others will find muddying the horror. I found it interesting but not fully committed enough to land as a genuine thematic statement. It flirts with something provocative and then does not quite go all the way with it.",
+        "Still, Nosferatu 2024 is a rare big budget horror film that takes itself seriously without disappearing up its own atmosphere. Eggers is one of the few directors working right now who can build genuine dread without a single cheap jump scare, and this sits comfortably alongside The Witch and The Lighthouse as proof of that. If you are streaming it in the dark on a cold night, it will get under your skin. Fans of gothic horror, slow burn supernatural dread, or classic vampire mythology given real weight will find a lot to love here. It is not a perfect film, but it is a serious one, and in this genre that is worth celebrating."
+      ],
+      "images": [],
+      "verdict": "Eggers delivers one of the most atmospherically committed horror films in years, and Nosferatu 2024 earns its place next to the originals it respects without trying to replace them.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/d0B8xDdqBZlzlPEzES8lu5LlNQn.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/gprjiZWY43vxSKngMha1wfb5TGG.jpg"
+      }
+    },
+    {
       "id": 1794149550774,
       "slug": "color-out-of-space-review",
       "seoTitle": "Color Out of Space Review (2019) | WretVision",
