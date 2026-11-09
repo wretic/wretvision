@@ -937,7 +937,7 @@ const REVIEWS = [
       "verdict": "Silent Hill 2 traded jump scares for guilt and grief, and more than two decades later it's still the game every psychological horror title gets measured against.",
       "media": {
         "poster": "https://cdn.thegamesdb.net/images/original/boxart/front/4793-1.jpg",
-        "backdrop": ""
+        "backdrop": "https://images6.alphacoders.com/521/thumb-1920-521735.jpg"
       }
     },
     {
@@ -4322,8 +4322,8 @@ const REVIEWS = [
       "images": [],
       "verdict": "Alien: Earth 2025 is a frustrating watch that starts as one of the more promising entries in the franchise and ends as one of the strangest things currently streaming on Hulu, 4/10.",
       "media": {
-        "poster": "https://i.ebayimg.com/images/g/Tk0AAOSw5fBoCP0K/s-l1200.jpg",
-        "backdrop": "https://assets.fxnetworks.com/fx/91d0d0f7-460d-4680-9aed-09d744f7fe0f.jpg?imwidth=1440"
+        "poster": "https://image.tmdb.org/t/p/w500/yueXS3q8BtoWekcHOATFHicLl3e.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/sVxit4vKQZnrHejeQupBYadP22g.jpg"
       }
     },     
     {
@@ -4812,7 +4812,7 @@ const REVIEWS = [
       "verdict": "9.5/10, SOMA is the rare horror experience that changes how you think about something, and that something happens to be existence itself.",
       "media": {
         "poster": "https://cdn.akamai.steamstatic.com/steam/apps/282140/library_600x900_2x.jpg",
-        "backdrop": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/282140/page_bg_raw.jpg?t=1779202021"
+        "backdrop": "https://cdn.akamai.steamstatic.com/steam/apps/282140/library_hero.jpg"
       }
     },
     {
@@ -4842,7 +4842,7 @@ const REVIEWS = [
       "images": [],
       "media": {
         "poster": "https://cdn.akamai.steamstatic.com/steam/apps/57300/library_600x900_2x.jpg",
-        "backdrop": "https://store.akamai.steamstatic.com/images/storepagebackground/app/57300"
+        "backdrop": "https://images6.alphacoders.com/304/thumb-1920-304706.jpg"
       },
       "verdict": "Amnesia: The Dark Descent is a near perfect piece of horror craft that still sets the standard fourteen years later, and I genuinely think about it the way you think about the best films you have ever seen."
     },
@@ -4885,7 +4885,7 @@ const REVIEWS = [
   "verdict": "Harold Halibut is one of the most visually distinctive indie games in recent memory, but its beautiful world can't save it from repetitive fetch quests, weak pacing, and an experience that becomes increasingly tedious the longer it goes on. 5.5/10.",
   "media": {
     "poster": "https://m.media-amazon.com/images/M/MV5BMDEyOTFlOWItNTU4NS00MTM5LTllODQtMDFiODVjNTM4ZWFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "backdrop": "https://m.media-amazon.com/images/M/MV5BMDEyOTFlOWItNTU4NS00MTM5LTllODQtMDFiODVjNTM4ZWFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    "backdrop": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/924750/ss_b87395ade1f30f93495a1b72013484f738b6a997.1920x1080.jpg?t=1757956874"
   }
 },
     {
@@ -5537,7 +5537,7 @@ const REVIEWS = [
     ],
     "media": {
       "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big/coay6e.webp",
-      "backdrop": ""
+      "backdrop": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/606160/ffb9d3685274c1ffd8b612573d4d6b14598d2956/ss_ffb9d3685274c1ffd8b612573d4d6b14598d2956.1920x1080.jpg?t=1785827823"
     },
     "verdict": "ROUTINE is a stylish, tense, and genuinely atmospheric sci-fi horror game with excellent mood and sound design, but its slow-burn approach occasionally becomes too cautious for its own good."
   },
@@ -5981,7 +5981,7 @@ const REVIEWS = [
     ],
     "media": {
       "poster": "https://cdn.thegamesdb.net/images/original/boxart/front/135715-1.jpg",
-      "backdrop": ""
+      "backdrop": "https://wallpapers.com/images/featured/death-stranding-4k-05fr3ppr0xxuf9k5.jpg"
     },
     "verdict": "A glorified expansion that earns every point of its score through sheer craft and commitment, flaws fully visible and largely irrelevant."
   },

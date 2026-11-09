@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCX90839K8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -9,7 +9,6 @@
     gtag('js', new Date());
     gtag('config', 'G-PCX90839K8');
   </script>
-  <meta charset="UTF-8" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WretVision — Movie, TV &amp; Game Reviews</title>
@@ -22,829 +21,124 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://wretvision.com/" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebSite","name":"WretVision","url":"https://wretvision.com","description":"Honest reviews of movies, TV shows, and games.","author":{"@type":"Person","name":"WretVision"}}
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "WretVision",
+    "url": "https://wretvision.com",
+    "description": "Honest reviews of movies, TV shows, and games.",
+    "author": { "@type": "Person", "name": "WretVision" }
+  }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="shared.css" />
-  <style>
-    :root {
-      --movie-gold:        #b88a1b;
-      --movie-gold-light:  #e6b84a;
-      --movie-gold-glow:   #ffd86b;
-    }
-
-
-
-    /* ── RE TERMINAL PROMPT CARD ── */
-    .re-term-card {
-      margin-top: 18px;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 20px;
-      border: 1px solid rgba(160,20,20,0.4);
-      background: rgba(10,0,0,0.7);
-      text-decoration: none;
-      transition: background 0.2s, border-color 0.2s;
-    }
-    .re-term-card:hover {
-      background: rgba(30,2,2,0.85);
-      border-color: rgba(160,20,20,0.7);
-      cursor: url("images/cursor-red.svg") 1 1, pointer;
-    }
-    .re-term-prompt {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 8px;
-      color: #c41c1c;
-    }
-    .re-term-text {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 7px;
-      color: rgba(232,213,176,0.7);
-      letter-spacing: 0.1em;
-      line-height: 1.8;
-    }
-    .re-term-sep { color: rgba(160,20,20,0.6); margin: 0 4px; }
-    .re-term-action { color: #e8d5b0; }
-    .re-term-card:hover .re-term-action { color: #fff5e0; }
-    .re-term-cursor {
-      width: 14px;
-      height: 14px;
-      flex-shrink: 0;
-      filter: drop-shadow(0 0 4px rgba(196,28,28,0.7));
-      animation: blink 1s step-end infinite;
-    }
-    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
-    .re-term-cursor { animation-duration: 2s; }
-    @media (max-width: 600px) {
-      .re-term-card {
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 90vw;
-        padding: 10px 16px;
-      }
-      .re-term-text {
-        min-width: 0;
-        white-space: normal;
-        text-align: center;
-      }
-    }
-
-
-    /* ── MOVIE CARD OVERRIDES (homepage) ── */
-    .review-card[data-category="movie"],
-    .review-card.movie {
-      border-color: rgba(184,138,27,0.35) !important;
-      border-left: 3px solid var(--movie-gold-light) !important;
-    }
-    .review-card[data-category="movie"]:hover,
-    .review-card.movie:hover {
-      border-left-color: var(--movie-gold-glow) !important;
-      box-shadow: 0 0 12px rgba(255,216,107,0.15);
-    }
-    .review-title:hover { color: var(--movie-gold-glow) !important; }
-    .score-value { color: var(--movie-gold-glow) !important; }
-    .read-more { color: var(--movie-gold-glow) !important; }
-    .read-more:hover { color: #fff !important; }
-    .review-type.movie {
-      border-color: var(--movie-gold-light) !important;
-      color: var(--movie-gold-glow) !important;
-      background: rgba(184,138,27,0.1);
-    }
-
-    /* ── TOP RATED TABS (homepage) ── */
-    .top-tabs {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 6px;
-      margin-bottom: 12px;
-    }
-    .top-tab {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 6px;
-      padding: 7px 6px;
-      border: 1px solid rgba(10,143,212,0.3);
-      background: transparent;
-      color: var(--muted);
-      cursor: pointer;
-      letter-spacing: 1px;
-      transition: all 0.15s;
-    }
-    .top-tab-game:hover, .top-tab-game.active {
-      color: #e74c3c; border-color: #c0392b; background: rgba(139,26,26,0.16);
-    }
-    .top-tab-movie:hover, .top-tab-movie.active {
-      color: var(--movie-gold-glow); border-color: var(--movie-gold-light); background: rgba(184,138,27,0.14);
-    }
-    .top-tab-tv:hover, .top-tab-tv.active {
-      color: var(--green); border-color: var(--green); background: rgba(79,255,176,0.10);
-    }
-
-    /* ── GENRE TOGGLE ── */
-    .genre-widget-title { cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
-    .genre-toggle-arrow { font-size: 9px; display: inline-block; transition: transform 0.25s ease; line-height: 1; }
-    .genre-widget-title[aria-expanded="true"] .genre-toggle-arrow { transform: rotate(180deg); }
-    .genre-tags-wrap { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-    .genre-tags-wrap.open { max-height: 600px; }
-
-    /* ── HOME PAGE CURSOR ── */
-    body, body * { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, auto !important; }
-    a, button { cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20"><path d="M1 0L1 16L5 12L7 18L9 17L7 11L12 11Z" fill="%233bbfff" stroke="%23000" stroke-width="1.5"/></svg>') 0 0, pointer !important; }
-
-    /* ── FLOATING YOUTUBE VIDEO ── */
-    .yt-float {
-      position: fixed;
-      left: 16px;
-      bottom: 20vh;
-      z-index: 500;
-      width: 380px;
-      box-shadow: 0 10px 34px rgba(0,0,0,0.6);
-    }
-    .yt-float-handle {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 17px;
-      padding: 0 6px;
-      background: rgba(4, 10, 22, 0.95);
-      border: 1px solid rgba(10,143,212,0.40);
-      border-bottom: none;
-      cursor: grab;
-      user-select: none;
-      touch-action: none;
-    }
-    .yt-float.dragging .yt-float-handle, .yt-float-handle:active { cursor: grabbing; }
-    .yt-float-grip {
-      font-family: 'VT323', monospace;
-      font-size: 11px;
-      letter-spacing: 3px;
-      color: var(--blue-light);
-      line-height: 1;
-    }
-    .yt-float-close {
-      flex: 0 0 auto;
-      background: transparent;
-      border: none;
-      color: var(--blue-light);
-      width: 16px;
-      height: 16px;
-      cursor: pointer;
-      font-family: 'VT323', monospace;
-      font-size: 13px;
-      line-height: 1;
-      padding: 0;
-      transition: color 0.15s;
-    }
-    .yt-float-close:hover { color: var(--accent); }
-    .yt-float-frame {
-      position: relative;
-      width: 380px;
-      height: 214px;
-      background: #000;
-      border: 1px solid rgba(10,143,212,0.40);
-      border-top: none;
-      overflow: hidden;
-    }
-    .yt-float-frame iframe { position:absolute;inset:0;width:100%;height:100%;border:none;scrolling:no; }
-    .stream-fallback {
-      position: absolute; inset: 0;
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Press Start 2P', monospace; font-size: 6px;
-      color: var(--blue-light); text-decoration: none;
-      text-align: center; line-height: 2.2; letter-spacing: 1px;
-    }
-    @media (max-width: 560px) { .yt-float { display: none; } }
-
-  </style>
+  <link rel="stylesheet" href="home.css" />
 </head>
-<body class="page-home">
+<body>
+  <div class="bg-ambient" aria-hidden="true"></div>
 
-<!-- ── BOTTOM STATUS TICKER (fixed) ── -->
-<div class="status-ticker-bar">
-  <span class="ticker-left">TERMINAL: WRETVISION v2.6.6 | USER: GUEST | SESSION: <span class="ticker-session-val" id="ticker-session">00:00:00</span></span>
-  <div class="ticker-scroll-wrap">
-    <span class="ticker-scroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LATEST TRANSMISSION: "THE TRUTH IS OUT THERE... BUT SO IS MEDIOCRE CONTENT." // SIGNAL QUALITY: OPTIMAL // NEXT BROADCAST: LOADING... // ARCHIVE STATUS: NOMINAL // SCANNING FOR NEW CONTENT...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-  </div>
-</div>
-
-
-<header class="topbar">
-  <div class="topbar-left">
-    <a href="index.html" class="site-logo">WRET<span>VISION</span></a>
-    <nav class="main-nav">
-      <a href="index.html"  class="nav-link active">HOME</a>
-      <a href="movies.html" class="nav-link">▶ MOVIES</a>
-      <a href="tv.html"     class="nav-link">◈ TV SHOWS</a>
-      <a href="games.html"  class="nav-link">◆ GAMES</a>
-      <a href="horror-vault.html" class="nav-link">☠ HORROR VAULT</a>
-      <a href="re-archive/resident-evil.html" class="nav-link nav-link-re">☣ RE ARCHIVE</a>
-    </nav>
-  </div>
-
-  <div class="topbar-right">
-    <div class="signal-indicator">
-      SIGNAL: <span class="signal-status">STABLE</span>&nbsp;<span class="signal-dot">●</span>
-    </div>
-
-    <a class="yt-link"
-       href="https://www.youtube.com/channel/UCC3aFC7Gr2eYUEGc6IRga0g?sub_confirmation=1"
-       target="_blank" rel="noopener"
-       style="display:flex; align-items:center; gap:8px;">
-      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
-      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-      <div class="avatar-wrap">
-        <img src="wretvision.png" alt="WretVision" />
-      </div>
-      <span class="yt-label">SUBSCRIBE ▶</span>
-    </a>
-  </div>
-</header>
-
-<!-- ── HERO: BROADCAST LAYOUT ── -->
-<section class="hero hero-broadcast">
-  <div class="hero-backdrop"></div><!-- City.png — static, no lightning baked in -->
-  <div class="hero-bg"></div>      <!-- dark gradient overlay for readability -->
-  <div class="hero-rain"></div>    <!-- soft CSS rain overlay -->
-  <div class="hero-flash" id="hero-flash"></div>  <!-- ambient light spill, JS-controlled -->
-  <canvas class="hero-lightning-canvas" id="hero-lightning-canvas"></canvas>
-
-  <div class="hero-grid">
-
-    <!-- LEFT: Broadcast Status Terminal -->
-    <div class="broadcast-panel">
-      <div class="panel-header">
-        <span>BROADCAST STATUS</span>
-        <span class="live-dot">●</span>
-      </div>
-      <div class="broadcast-log" id="broadcast-log">
-        <span class="log-line">_</span>
-      </div>
-      <div class="now-playing">
-        <div class="np-label" id="np-label">NOW TRANSMITTING</div>
-        <div class="np-title" id="np-title">—</div>
-        <div class="np-time" id="np-time">00:00:00</div>
+  <!-- Universal Header -->
+  <header class="site-header">
+    <div class="site-width site-header-inner">
+      <a href="index.html" class="site-logo">WRET<span>VISION</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="tv.html">TV</a>
+        <a href="games.html">Games</a>
+        <a href="horror-vault.html">Horror Vault</a>
+        <a href="re-archive/resident-evil.html">Resident Evil</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="search-trigger" title="Search reviews (Press /)" aria-label="Search">🔍</button>
+        <button class="icon-btn" id="wl-trigger" title="View Watchlist" aria-label="Saved reviews">
+          🔖<span id="wl-badge" class="badge hidden">0</span>
+        </button>
+        <a class="header-youtube" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">YouTube</a>
       </div>
     </div>
+  </header>
 
-    <!-- CENTER: Main Logo -->
-    <div class="hero-center">
-      <p class="hero-eyebrow">// movies · tv · games //</p>
-      <h1 class="hero-title">WRET<span>VISION</span></h1>
-      <div class="lightning-bar"></div>
-      <p class="hero-sub">Honest takes on films, shows, and games.<br>Even the forgotten ones.</p>
-      <a class="re-term-card" href="re-archive/resident-evil.html">
-        <span class="re-term-prompt">&gt;</span>
-        <span class="re-term-text">ACCESSING: RESIDENT EVIL ARCHIVE <span class="re-term-sep">//</span> STATUS: OPEN <span class="re-term-sep">//</span> <span class="re-term-action">[ENTER] ▶</span></span>
-        <svg class="re-term-cursor" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <radialGradient id="tr"><stop offset="0%" stop-color="#cc0000"/><stop offset="100%" stop-color="#aa1111"/></radialGradient>
-            <radialGradient id="tw"><stop offset="0%" stop-color="#dddddd"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#dddddd"/></radialGradient>
-          </defs>
-          <g transform="rotate(0,150,150)"><path d="m206 5s-28 14-56 14-56-14-56-14l56 135z" fill="url(#tr)"/><path d="m87 8s-10 30-30 50c-19 19-49 29-49 29l135 56z" fill="url(#tw)"/></g>
-          <g transform="rotate(90,150,150)"><path d="m206 5s-28 14-56 14-56-14-56-14l56 135z" fill="url(#tr)"/><path d="m87 8s-10 30-30 50c-19 19-49 29-49 29l135 56z" fill="url(#tw)"/></g>
-          <g transform="rotate(180,150,150)"><path d="m206 5s-28 14-56 14-56-14-56-14l56 135z" fill="url(#tr)"/><path d="m87 8s-10 30-30 50c-19 19-49 29-49 29l135 56z" fill="url(#tw)"/></g>
-          <g transform="rotate(270,150,150)"><path d="m206 5s-28 14-56 14-56-14-56-14l56 135z" fill="url(#tr)"/><path d="m87 8s-10 30-30 50c-19 19-49 29-49 29l135 56z" fill="url(#tw)"/></g>
-        </svg>
-      </a>
-    </div>
+  <main>
+    <!-- Hero Spotlight Section -->
+    <section class="hero-spotlight">
+      <div id="hero-backdrop" class="hero-backdrop" aria-hidden="true"></div>
+      <div class="hero-backdrop-overlay" aria-hidden="true"></div>
+      <div class="site-width">
+        <div class="hero-content">
+          <div id="hero-kicker" class="hero-kicker">Latest Review</div>
+          <h1 id="hero-title" class="hero-title">Loading...</h1>
+          <div id="hero-meta" class="hero-meta"></div>
+          <div class="hero-verdict-box">
+            <div id="hero-score" class="hero-score">-- <span>/ 10</span></div>
+            <p id="hero-verdict" class="hero-verdict-text"></p>
+          </div>
+          <div class="hero-actions">
+            <a id="hero-read-btn" href="#" class="btn-primary">Read Review →</a>
+            <a id="hero-video-btn" href="#" class="btn-ghost" target="_blank" rel="noopener" hidden>Watch on YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- RIGHT: System Notice -->
-    <div class="system-panel">
-      <div class="panel-header">SYSTEM NOTICE</div>
-      <p class="system-text">The archive is vast.<br>The truth is subjective.<br>You decide.</p>
-    </div>
+    <!-- Top Rated Showcase -->
+    <section class="top-rated-section">
+      <div class="site-width">
+        <div class="section-header">
+          <h2 class="section-title">Top Rated &amp; Essentials</h2>
+          <span class="section-sub">Highest scored recommendations (8.5+)</span>
+        </div>
+        <div class="top-rail-wrap">
+          <div id="top-rail" class="top-rail"></div>
+        </div>
+      </div>
+    </section>
 
-  </div>
-</section>
+    <!-- Review Feed Grid -->
+    <section id="reviews-section" style="padding-top: 1rem;">
+      <div class="site-width">
+        <div class="section-header">
+          <h2 class="section-title">All Reviews</h2>
+          <span class="section-sub">Browse by category or genre</span>
+        </div>
 
-<!-- ── CATEGORY NAV ── -->
-<div class="category-nav">
-  <a href="movies.html" class="cat-card movies">
-    <span class="cat-icon">▶</span>
-    <span class="cat-name">MOVIES</span>
-    <span class="cat-count" id="count-movies">— reviews</span>
-  </a>
-  <a href="tv.html" class="cat-card tv">
-    <span class="cat-icon">◈</span>
-    <span class="cat-name">TV SHOWS</span>
-    <span class="cat-count" id="count-tv">— reviews</span>
-  </a>
-  <a href="games.html" class="cat-card games">
-    <span class="cat-icon">◆</span>
-    <span class="cat-name">GAMES</span>
-    <span class="cat-count" id="count-games">— reviews</span>
-  </a>
-  <a href="horror-vault.html" class="cat-card horror">
-    <span class="cat-icon">☠</span>
-    <span class="cat-name">HORROR VAULT</span>
-    <span class="cat-count" id="count-horror">— titles</span>
-  </a>
-</div>
+        <div class="feed-controls">
+          <div class="pills-group">
+            <button class="pill active" data-filter="all">All</button>
+            <button class="pill" data-filter="movie"><span class="pill-dot movies"></span> Movies</button>
+            <button class="pill" data-filter="tv"><span class="pill-dot tv"></span> TV</button>
+            <button class="pill" data-filter="game"><span class="pill-dot games"></span> Games</button>
+            <button class="pill" data-filter="saved">🔖 Saved</button>
+          </div>
+          <select id="genre-select" class="genre-select" aria-label="Filter by genre">
+            <option value="">All Genres</option>
+          </select>
+        </div>
 
-
-
-
-<!-- ── STATS BAR (with outer metadata) ── -->
-<div class="stats-outer">
-  <span class="stats-meta-left">ARCHIVE UPDATED: <span class="stats-date">05.25.2024</span></span>
-  <div class="stats-bar">
-    <div class="stat-item"><span class="stat-num" id="stat-total">—</span><span class="stat-label">TOTAL REVIEWS</span></div>
-    <div class="stat-item"><span class="stat-num" id="stat-genres">—</span><span class="stat-label">GENRES</span></div>
-    <div class="stat-item"><span class="stat-num" id="stat-earliest">—</span><span class="stat-label">EARLIEST</span></div>
-    <div class="stat-item"><span class="stat-num" id="stat-avg">—</span><span class="stat-label">AVG SCORE</span></div>
-  </div>
-  <span class="stats-meta-right">DATABASE: ONLINE <span class="db-live">●</span></span>
-</div>
-
-<div class="main-layout">
-  <main class="reviews-col">
-    <div class="col-header">latest reviews</div>
-    <div id="reviews-container"></div>
-    <div class="no-results" id="no-results"><p class="no-results-text">>> NO REVIEWS FOUND YET. CHECK BACK SOON. _</p></div>
-    <div class="pagination" id="pagination"></div>
+        <div id="review-grid" class="review-grid"></div>
+        <div id="pagination-wrap" class="pagination-wrap"></div>
+      </div>
+    </section>
   </main>
-  <aside class="sidebar">
-    <div class="sidebar-widget">
-      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
-      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-      <div class="widget-title">about this site</div>
-      <p class="about-text">Movies, shows, and games I want to write about. Obscure picks, forgotten classics, guilty pleasures. If it stuck with me, it ends up here.</p>
-    </div>
-    <div class="sidebar-widget">
-      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
-      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-      <div class="widget-title genre-widget-title" id="genre-toggle" role="button" tabindex="0" aria-expanded="false">
-        browse by genre <span class="genre-toggle-arrow">▼</span>
-      </div>
-      <div class="genre-tags-wrap" id="genre-tags-wrap">
-        <div class="genre-tags" id="genre-tags"></div>
-      </div>
-    </div>
-    <div class="sidebar-widget">
-      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
-      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-      <div class="widget-title">top rated</div>
-      <div class="top-tabs" id="top-tabs">
-        <button class="top-tab active top-tab-game" data-cat="game">GAMES</button>
-        <button class="top-tab top-tab-movie" data-cat="movie">MOVIES</button>
-        <button class="top-tab top-tab-tv" data-cat="tv">TV</button>
-      </div>
-      <ul class="sidebar-list" id="top-rated-list"></ul>
-    </div>
 
-    <!-- VHS ARCHIVE TAPE MODULE -->
-    <div class="sidebar-widget vhs-widget">
-      <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
-      <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-      <div class="widget-title">archive tape</div>
-      <div class="vhs-tape-wrap" id="vhs-tape-wrap">
-        <img src="images/VHS%20tape/Wretvision_tape.png" alt="VHS Archive Tape" class="vhs-tape-img" />
-        <div class="vhs-flicker"></div>
-        <div class="vhs-hover-text">&#9654; CLICK TO PLAY</div>
+  <!-- Search Modal -->
+  <div id="search-modal" class="search-modal" aria-hidden="true">
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <span style="font-size: 1.1rem; opacity: .7;">🔍</span>
+        <input type="text" id="search-input" class="search-input" placeholder="Search reviews by title, director, or genre..." autocomplete="off">
+        <span class="search-hint">ESC</span>
       </div>
-      <div class="vhs-meta">
-        <div class="vhs-meta-row">
-          <span class="vhs-meta-key">TITLE</span>
-          <span class="vhs-meta-val" id="vhs-title">—</span>
-        </div>
-        <div class="vhs-meta-row">
-          <span class="vhs-meta-key">TYPE</span>
-          <span class="vhs-meta-val" id="vhs-cat">—</span>
-        </div>
-        <div class="vhs-meta-row">
-          <span class="vhs-meta-key">YEAR</span>
-          <span class="vhs-meta-val" id="vhs-year">—</span>
-        </div>
-      </div>
-      <div class="vhs-eq-wrap">
-        <div class="vhs-eq-label">AUDIO SIGNAL</div>
-        <div class="vhs-eq" id="vhs-eq"></div>
-        <div class="vhs-controls">
-          <input type="range" class="vhs-volume" id="vhs-volume" min="0" max="1" step="0.01" value="0.7">
-          <button class="vhs-mute" id="vhs-mute">PLAY</button>
-        </div>
-        <div class="vhs-error" id="vhs-error"></div>
-      </div>
+      <div id="search-results" class="search-results"></div>
     </div>
-  </aside>
-</div>
-
-<!-- ── FLOATING YOUTUBE VIDEO ── -->
-<div class="yt-float" id="yt-float">
-  <div class="yt-float-handle" id="yt-float-handle">
-    <span class="yt-float-grip">⠿⠿⠿</span>
-    <button type="button" class="yt-float-close" id="yt-float-close" aria-label="Dismiss">✕</button>
   </div>
-  <div class="yt-float-frame" id="yt-frame-wrap"></div>
-</div>
 
-<footer class="footer">
-  &copy; WRETVISION, JUST OPINIONS.<span class="blink"> _</span><br>
-  <span style="opacity:0.5;font-size:5px;letter-spacing:1px;">BUILT FOR THE LOVE OF FILM, TV &amp; GAMES</span>
-</footer>
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="site-width">
+      <p>© WretVision · Built for the love of film, TV &amp; games</p>
+    </div>
+  </footer>
 
-<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
-  <div class="modal-box">
-    <div class="pixel-corner pc-tl"></div><div class="pixel-corner pc-tr"></div>
-    <div class="pixel-corner pc-bl"></div><div class="pixel-corner pc-br"></div>
-    <button class="modal-close" id="modal-close">[ X ]</button>
-    <div id="modal-inner"></div>
-  </div>
-</div>
-
-<audio id="bg-audio" loop preload="auto">
-  <source src="audio/rain_and_thunder.mp3" type="audio/mpeg">
-  <source src="audio/rain_and_thunder.wav" type="audio/wav">
-</audio>
-<script src="reviews.js"></script>
-<script src="horror-vault.js"></script>
-<script src="shared.js"></script>
-<script src="hero-effects.js"></script>
-<script>
-  /* category counts */
-  document.getElementById('count-movies').textContent = REVIEWS.filter(r => r.category === 'movie').length + ' reviews';
-  document.getElementById('count-tv').textContent     = REVIEWS.filter(r => r.category === 'tv').length + ' reviews';
-  document.getElementById('count-games').textContent  = REVIEWS.filter(r => r.category === 'game').length + ' reviews';
-  document.getElementById('count-horror').textContent = HORROR_VAULT.length + ' titles';
-  initPage('all');
-
-  /* ── ANNOUNCEMENT TOAST ── */
-  showSiteToast('Anonymous comments are now available under every review!', {
-    sessionKey: 'toast-anon-comments-2026-10',
-    label: 'NEW FEATURE'
-  });
-
-  /* ── BOOT SEQUENCE ANIMATION ── */
-  (function() {
-    var lines = [
-      { text: 'BOOTING ARCHIVE...',            delay: 400  },
-      { text: 'CONNECTING TO MEDIA DATABASE...', delay: 1100 },
-      { text: 'SYNCING REVIEWS...',             delay: 1900 },
-      { text: REVIEWS.length + ' REVIEWS LOADED.', delay: 2700, done: true }
-    ];
-    var log = document.getElementById('broadcast-log');
-    if (!log) return;
-    log.innerHTML = '';
-
-    lines.forEach(function(line) {
-      setTimeout(function() {
-        var span = document.createElement('span');
-        span.className = 'log-line' + (line.done ? ' done' : ' active');
-        span.textContent = line.text;
-        log.appendChild(span);
-        if (log.children.length > 4) log.removeChild(log.children[0]);
-      }, line.delay);
-    });
-  })();
-
-  /* ── LOCAL CLOCK ── */
-  (function() {
-    var timeEl = document.getElementById('np-time');
-    if (!timeEl) return;
-    function tick() {
-      var now = new Date();
-      timeEl.textContent =
-        String(now.getHours()).padStart(2, '0') + ':' +
-        String(now.getMinutes()).padStart(2, '0') + ':' +
-        String(now.getSeconds()).padStart(2, '0');
-    }
-    tick();
-    setInterval(tick, 1000);
-  })();
-
-  /* ── NOW TRANSMITTING: rotate latest 3 reviews every 10s ── */
-  (function() {
-    var titleEl = document.getElementById('np-title');
-    if (!titleEl || !window.REVIEWS || !REVIEWS.length) return;
-    var sorted = REVIEWS.slice().sort(function(a, b) { return b.id - a.id; });
-    var picks = sorted.slice(0, 3);
-    var idx = 0;
-    function show() {
-      var r = picks[idx];
-      titleEl.textContent = r.title + ' (' + r.year + ')';
-      idx = (idx + 1) % picks.length;
-    }
-    show();
-    setInterval(show, 10000);
-  })();
-
-  /* ── SESSION TIMER ── */
-  (function() {
-    var el = document.getElementById('ticker-session');
-    if (!el) return;
-    var sec = 0;
-    setInterval(function() {
-      sec++;
-      var h = Math.floor(sec / 3600);
-      var m = Math.floor((sec % 3600) / 60);
-      var s = sec % 60;
-      el.textContent =
-        String(h).padStart(2, '0') + ':' +
-        String(m).padStart(2, '0') + ':' +
-        String(s).padStart(2, '0');
-    }, 1000);
-  })();
-
-  /* ── GENRE TOGGLE ── */
-  (function() {
-    var toggle = document.getElementById('genre-toggle');
-    var wrap   = document.getElementById('genre-tags-wrap');
-    if (!toggle || !wrap) return;
-    function handleToggle() {
-      var isOpen = wrap.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
-    }
-    toggle.addEventListener('click', handleToggle);
-    toggle.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleToggle(); }
-    });
-  })();
-
-  /* hero-effects.js handles rain + lightning (default blue colour) */
-
-  /* ── VHS META: populate from latest review ── */
-  (function() {
-    if (!window.REVIEWS || !REVIEWS.length) return;
-    var latest = REVIEWS.slice().sort(function(a, b) { return b.id - a.id; })[0];
-    var t = document.getElementById('vhs-title');
-    var c = document.getElementById('vhs-cat');
-    var y = document.getElementById('vhs-year');
-    if (t) t.textContent = latest.title;
-    if (c) c.textContent = latest.category ? latest.category.toUpperCase() : '—';
-    if (y) y.textContent = latest.year || '—';
-  })();
-
-  /* ── AUDIO + VHS EQUALIZER ── */
-  (function() {
-    var audio    = document.getElementById('bg-audio');
-    var tapeWrap = document.getElementById('vhs-tape-wrap');
-    var eq       = document.getElementById('vhs-eq');
-    var volEl    = document.getElementById('vhs-volume');
-    var muteEl   = document.getElementById('vhs-mute');
-    var errEl    = document.getElementById('vhs-error');
-    if (!audio || !eq) return;
-
-    /* diagnostic: log file state on load */
-    console.log('[AUDIO] element found. src:', audio.src);
-    audio.addEventListener('canplaythrough', function() {
-      console.log('[AUDIO] canplaythrough — file loaded OK');
-    });
-    audio.addEventListener('error', function() {
-      var code = audio.error ? audio.error.code : '?';
-      console.error('[AUDIO] load error, code:', code, 'src:', audio.src);
-      showError('AUDIO SOURCE OFFLINE');
-    });
-
-    /* build equalizer bars */
-    var NUM = 16, bars = [];
-    for (var i = 0; i < NUM; i++) {
-      var b = document.createElement('div');
-      b.className = 'vhs-bar';
-      eq.appendChild(b);
-      bars.push(b);
-    }
-
-    var vol = 0.7, muted = false, started = false;
-    audio.volume = vol;
-    audio.muted  = false;
-
-    /* random fallback animation before audio starts */
-    var env = [0.25,0.35,0.50,0.65,0.78,0.88,0.96,1.0,0.98,0.90,0.80,0.68,0.55,0.42,0.32,0.22];
-    function fallback() {
-      if (started) return;
-      bars.forEach(function(b, i) {
-        b.style.height = Math.max(2, Math.round((Math.random() * 0.7 + 0.15) * 20 * env[i])) + 'px';
-      });
-      setTimeout(fallback, 130);
-    }
-    fallback();
-
-    /* bars idle flat when paused/muted, random when playing */
-    function animateEQ() {
-      if (audio.paused || audio.muted) {
-        bars.forEach(function(b) { b.style.height = '2px'; });
-        setTimeout(animateEQ, 200);
-        return;
-      }
-      bars.forEach(function(b, i) {
-        b.style.height = Math.max(2, Math.round((Math.random() * 0.7 + 0.15) * 20 * env[i])) + 'px';
-      });
-      setTimeout(animateEQ, 130);
-    }
-
-    function updateTrack() {
-      if (!volEl) return;
-      var pct = (parseFloat(volEl.value) * 100).toFixed(1);
-      volEl.style.background =
-        'linear-gradient(to right,#4fffb0 0%,#4fffb0 ' + pct +
-        '%,rgba(75,255,176,0.18) ' + pct + '%,rgba(75,255,176,0.18) 100%)';
-    }
-
-    function setBtn(label, isMuted) {
-      if (!muteEl) return;
-      muteEl.textContent = label;
-      muteEl.classList.toggle('muted', isMuted);
-    }
-
-    function showError(msg) {
-      if (!errEl) return;
-      errEl.textContent = msg;
-      errEl.style.display = 'block';
-    }
-
-    function startAudio() {
-      if (started) return;
-      started = true;
-      console.log('[AUDIO] startAudio(). src:', audio.currentSrc || audio.src,
-                  '| volume:', audio.volume, '| muted:', audio.muted,
-                  '| readyState:', audio.readyState);
-
-      /* No Web Audio API — plain HTMLAudioElement only.
-         Get basic sound working first; visualiser uses random bars. */
-      audio.muted  = false;
-      audio.volume = vol;
-
-      var p = audio.play();
-      if (p !== undefined) {
-        p.then(function() {
-          console.log('[AUDIO] play() resolved ✓ currentSrc:', audio.currentSrc,
-                      '| volume:', audio.volume, '| muted:', audio.muted);
-          setBtn('MUTE', false);
-          if (errEl) errEl.style.display = 'none';
-          animateEQ();
-        }).catch(function(e) {
-          console.error('[AUDIO] play() rejected ✗ name:', e.name, '| msg:', e.message);
-          started = false;
-          setBtn('PLAY', false);
-          showError('PLAYBACK BLOCKED — ' + e.name);
-        });
-      }
-    }
-
-    /* volume slider */
-    if (volEl) {
-      updateTrack();
-      volEl.addEventListener('input', function() {
-        vol = parseFloat(this.value);
-        updateTrack();
-        if (!started) { startAudio(); return; }
-        audio.volume = vol;
-        if (vol > 0 && muted) {
-          muted = false;
-          audio.muted = false;
-          setBtn('MUTE', false);
-        }
-        console.log('[AUDIO] volume →', vol, '| muted:', audio.muted);
-      });
-    }
-
-    /* mute button */
-    if (muteEl) {
-      muteEl.addEventListener('click', function() {
-        if (!started) { startAudio(); return; }
-        muted = !muted;
-        audio.muted  = muted;
-        audio.volume = muted ? 0 : vol;
-        if (volEl) { volEl.value = muted ? 0 : vol; updateTrack(); }
-        setBtn(muted ? 'UNMUTE' : 'MUTE', muted);
-        console.log('[AUDIO] mute toggled →', muted, 'volume:', audio.volume);
-      });
-    }
-
-    /* clicking the tape image also starts playback */
-    if (tapeWrap) {
-      tapeWrap.addEventListener('click', function() {
-        if (!started) startAudio();
-      });
-    }
-  })();
-
-  /* ── FLOATING YOUTUBE VIDEO ── */
-  (function() {
-    var box     = document.getElementById('yt-float');
-    var handle  = document.getElementById('yt-float-handle');
-    var closeBtn = document.getElementById('yt-float-close');
-    if (!box || !handle) return;
-
-    // Manually maintained, newest first. The channel RSS feed (what this used to auto-fetch
-    // from) doesn't send CORS headers, so a browser-side fetch to it can never succeed, on
-    // localhost or in production — that's why "autofetch" never actually worked. Update this
-    // list by hand when a new video goes up until/unless a server-side proxy replaces it.
-    var VIDEO_IDS = ['2ufiEDLbUCs','iCt2nmya_hY','jVkLgA6GIzU','FeOw8cCpqQg','NwFHvjQfFtQ','zudhgMHtjTI','0DXg1YMJGeA'];
-
-    /* ── YouTube via IFrame API — auto-skips Error 101/150/100 ── */
-    function injectYouTube(queue) {
-      var ytWrap = document.getElementById('yt-frame-wrap');
-      if (!ytWrap || !queue.length) { showYTFallback(ytWrap); return; }
-
-      var playerEl = document.createElement('div');
-      playerEl.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;';
-      ytWrap.appendChild(playerEl);
-      var ytPlayer;
-
-      function tryNext() {
-        if (!queue.length) { showYTFallback(ytWrap); return; }
-        var vid = queue.shift();
-        if (ytPlayer) {
-          ytPlayer.loadVideoById(vid);
-        } else {
-          ytPlayer = new YT.Player(playerEl, {
-            videoId: vid,
-            playerVars: { autoplay: 1, mute: 1, rel: 0 },
-            events: {
-              onError: function(e) {
-                // 100 = not found, 101/150 = embedding not allowed
-                if (e.data === 100 || e.data === 101 || e.data === 150) tryNext();
-              }
-            }
-          });
-        }
-      }
-
-      if (window.YT && window.YT.Player) {
-        tryNext();
-      } else {
-        var prev = window.onYouTubeIframeAPIReady;
-        window.onYouTubeIframeAPIReady = function() { if (prev) prev(); tryNext(); };
-        var s = document.createElement('script');
-        s.src = 'https://www.youtube.com/iframe_api';
-        document.head.appendChild(s);
-      }
-    }
-
-    function showYTFallback(wrap) {
-      if (!wrap) return;
-      wrap.innerHTML = '<a class="stream-fallback" href="https://youtube.com/@WretVision" target="_blank" rel="noopener">▶ VISIT<br>YOUTUBE</a>';
-    }
-
-    setTimeout(function() { injectYouTube(VIDEO_IDS.slice()); }, 900);
-
-    if (closeBtn) {
-      closeBtn.addEventListener('click', function() { box.style.display = 'none'; });
-    }
-
-    /* ── Drag to reposition, grabbed by the handle bar only (keeps the video itself
-       fully clickable/controllable — an iframe swallows mouse events once the cursor
-       crosses into it, so dragging via the video surface itself isn't reliable) ── */
-    (function() {
-      try {
-        var saved = JSON.parse(localStorage.getItem('yt-float-pos') || 'null');
-        if (saved && typeof saved.left === 'number' && typeof saved.top === 'number') {
-          box.style.left = saved.left + 'px';
-          box.style.top = saved.top + 'px';
-          box.style.bottom = 'auto';
-        }
-      } catch (e) { /* ignore */ }
-
-      var dragging = false, startX, startY, startLeft, startTop;
-
-      function point(e) { return e.touches ? e.touches[0] : e; }
-
-      function onDown(e) {
-        dragging = true;
-        var pt = point(e);
-        var rect = box.getBoundingClientRect();
-        startX = pt.clientX; startY = pt.clientY;
-        startLeft = rect.left; startTop = rect.top;
-        box.style.left = startLeft + 'px';
-        box.style.top = startTop + 'px';
-        box.style.bottom = 'auto';
-        box.classList.add('dragging');
-        e.preventDefault();
-      }
-      function onMove(e) {
-        if (!dragging) return;
-        var pt = point(e);
-        var dx = pt.clientX - startX;
-        var dy = pt.clientY - startY;
-        var newLeft = Math.max(4, Math.min(window.innerWidth - box.offsetWidth - 4, startLeft + dx));
-        var newTop  = Math.max(4, Math.min(window.innerHeight - box.offsetHeight - 4, startTop + dy));
-        box.style.left = newLeft + 'px';
-        box.style.top  = newTop + 'px';
-      }
-      function onUp() {
-        if (!dragging) return;
-        dragging = false;
-        box.classList.remove('dragging');
-        try {
-          localStorage.setItem('yt-float-pos', JSON.stringify({
-            left: parseFloat(box.style.left),
-            top: parseFloat(box.style.top)
-          }));
-        } catch (e) { /* ignore */ }
-      }
-
-      handle.addEventListener('mousedown', onDown);
-      handle.addEventListener('touchstart', onDown, { passive: false });
-      document.addEventListener('mousemove', onMove);
-      document.addEventListener('touchmove', onMove, { passive: false });
-      document.addEventListener('mouseup', onUp);
-      document.addEventListener('touchend', onUp);
-    })();
-  })();
-
-</script>
+  <script src="reviews.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>
