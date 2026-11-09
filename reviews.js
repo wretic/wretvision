@@ -148,43 +148,6 @@ const REVIEWS = [
       }
     },
     {
-      "id": 1793895403077,
-      "slug": "resident-evil-welcome-to-raccoon-city-review",
-      "seoTitle": "Resident Evil: Welcome to Raccoon City Review (2021) | WretVision",
-      "seoDescription": "A Resident Evil reboot that forgets horror needs atmosphere, not just references.",
-      "category": "movie",
-      "title": "Resident Evil: Welcome to Raccoon City",
-      "year": 2021,
-      "director": "Johannes Roberts",
-      "runtime": "107 min",
-      "rating": "R",
-      "genres": [
-        "Action",
-        "Horror",
-        "Science Fiction"
-      ],
-      "score": 4.0,
-      "featured": false,
-      "excerpt": "A Resident Evil reboot that forgets horror needs atmosphere, not just references.",
-      "body": [
-        "There is a version of a Resident Evil film that works as genuine horror. You can almost see it in the margins of Welcome to Raccoon City, the 2021 reboot from writer and director Johannes Roberts. It is set on a dark and rainy night in a crumbling city. It has the Spencer Mansion and the Raccoon City Police Department under one roof. It has the games as source material, which are genuinely terrifying pieces of survival horror design. And then it wastes almost all of it. This film had the ingredients and still managed to serve something lukewarm.",
-        "Roberts clearly grew up with the original Capcom games and that affection is not in question. Welcome to Raccoon City is essentially an attempt to adapt Resident Evil 1 and Resident Evil 2 simultaneously, smashing both plots together into a single two hour runtime. Claire Redfield returns to Raccoon City on the night Umbrella Corporation loses control of its experiments. Her brother Chris is already there, working the RPD alongside Leon Kennedy and Jill Valentine. The bones of the story are faithful. The execution is where things fall apart in almost every direction.",
-        "The cast is a mixed bag and not in a forgivable way. Kaya Scodelario plays Claire with enough conviction to hold your attention during the quieter moments, and there is a believable stubbornness to the character that feels earned rather than performed. Hannah John Kamen as Jill Valentine is serviceable but underwritten, which is a shame because Jill is one of gaming's most iconic characters and she barely registers here as anything beyond competent. Robbie Amell as Chris Redfield is physically convincing but emotionally flat in a way that makes it hard to invest in his arc.",
-        "Then there is Avan Jogia as Leon Kennedy, and this is where the film makes its strangest creative decision. Leon in Resident Evil 2 is a rookie cop on his first day, out of his depth and terrified, and that vulnerability is what makes him compelling. Jogia plays him as a bumbling quasi comedic figure, almost farcical at points, and while I understand Roberts was going for a certain tone it fundamentally undermines any tension Leon appears in. Every time the film builds toward something unsettling, Leon stumbles into the frame and deflates it. It is not Jogia's fault entirely but the direction gave him nowhere serious to go.",
-        "Roberts has genuine visual instincts and they show up occasionally. The Spencer Mansion sequences have real atmosphere in their early stretches, particularly a sequence involving a dining room and shadows that actually recalls the dread of the original game. The Raccoon City Police Department, modelled after the game's iconic layout, is visually faithful and there are moments walking those corridors where you feel the oppressive weight of the building around you. Roberts knows how to frame a dark hallway. What he struggles with is sustaining that mood once dialogue kicks in or action takes over.",
-        "And action is where this film really loses the thread. The Resident Evil games were built on resource scarcity and slow tension, the kind of horror where every bullet counted and retreating was a valid strategy. This film does not understand that. Gunfights erupt with a kind of breezy action film logic that feels completely at odds with what survival horror actually is. Characters blast through enemies with ammunition that seems to materialise from nowhere. The threat level collapses because the film keeps rescuing its characters from situations that should feel genuinely hopeless. Compare this to something like The Thing, a film that understood how to make every encounter feel potentially fatal, and the gap in craft becomes uncomfortable.",
-        "The CGI is a persistent problem and I will not pretend otherwise. The licker creature is the worst offender, a rubbery digital creation that looks lifted from a mid budget video game cutscene rather than a creature feature with actual stakes. Practical effects would have done so much more for this film. Even something rough and handmade would have generated more genuine unease than the smooth, weightless CG monsters on display here. It is one of my biggest frustrations with modern horror and Welcome to Raccoon City is a textbook case of a film that could have leaned on physical work and chose not to. Every time one of these creatures appears you feel the temperature of the room drop, and not in the good horror way.",
-        "The pacing collapses in the second half almost completely. The film splits its time between the mansion and the RPD for most of the runtime and while the parallel structure makes sense on paper, in practice it means neither location gets enough time to fully breathe. Characters make decisions at a speed that feels driven entirely by plot necessity rather than logic or fear. A particular frustration is the treatment of Annette Birkin, a character with enormous thematic weight in the source material, reduced here to a handful of scenes that explain her motivation rather than showing it. The ending arrives without much sense of culmination and the sequel tease that closes things out felt, at the time, optimistic in a way subsequent box office performance did not reward.",
-        "Welcome to Raccoon City is not the catastrophe of the Paul W.S. Anderson Resident Evil films, but that is a low bar and clearing it is not a recommendation. Those films at least had a weird, dumb confidence that made them entertaining in a trashy way. This one wants to be taken seriously as a horror film and a game adaptation and does not fully commit to either. It sits in an awkward middle ground, too faithful to feel fresh and not faithful enough to satisfy fans of the source material. It is currently available on various streaming platforms if you want to see what a respectful but ultimately flat adaptation looks like. 4 out of 10."
-      ],
-      "images": [],
-      "verdict": "Welcome to Raccoon City respects the games enough to copy them but not enough to understand what made them terrifying in the first place.",
-      "media": {
-        "poster": "https://image.tmdb.org/t/p/w500/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg",
-        "backdrop": "https://image.tmdb.org/t/p/w1280/wYtEvBmpBRXPdwGgr1gcWiwJSI7.jpg"
-      }
-    },
-    {
       "id": 1793808166449,
       "slug": "the-silence-of-the-lambs-review",
       "seoTitle": "The Silence of the Lambs Review (1991) | WretVision",
