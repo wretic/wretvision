@@ -17,6 +17,8 @@ from pathlib import Path
 
 import anthropic
 
+from humanize import process_review_text
+
 # ── Paths ─────────────────────────────────────────────────────────────────────
 ROOT        = Path(__file__).parent.parent
 DATA        = ROOT / "data"
@@ -228,13 +230,18 @@ Output format — respond with a JSON object and nothing else, no markdown fence
 
 Rules:
 - {length_tier['paragraphs']} paragraphs, {length_tier['words']}. Tone: {length_tier['guidance']}
-- Sound like the reviewer — specific, opinionated, no filler
-- excerpt is what shows on the card before someone clicks in
-- verdict is the final line inside the full review
+- Sound like an authentic, opinionated human reviewer speaking directly to friends — raw, specific, zero filler.
+- CRITICAL ANTI-AI CADENCE RULES:
+  * ALWAYS use natural contractions (it's, didn't, wasn't, can't, don't, there's, he's, you're). Never write stiff or academic prose.
+  * HIGH BURSTINESS: Vary sentence length drastically. Mix punchy 2-5 word fragments with longer conversational thoughts.
+  * FORBIDDEN AI CRUTCHES: Never use "What works here is...", "Where the film drags/falls short is...", "In the craft department", "Still, [Title] is a rare...", "It is not a perfect X, but it is a Y...", "Fans of [genres] will find a lot to love here", "sits comfortably alongside", "serves as a testament", "delve into", "tapestry", "at its core".
+  * Start paragraphs with concrete observations or visceral impressions, never formulaic topic announcements.
+  * Never use em dashes or double hyphens; use natural punctuation (commas, periods, question marks).
+- excerpt is what shows on the card before someone clicks in (punchy, under 180 chars)
+- verdict is the final gut-punch closing sentence inside the full review
 - SEO: naturally work in the title, year, genre, streaming platform, and 1-2 comparable titles
 - score MUST match the pre-logged score if one was given
-- No markdown inside the strings, no escaped newlines, clean plain text only
-- Never use hyphens or em dashes, use commas or rewrite the sentence instead
+- No markdown inside strings, clean plain text only
 """
 
 def call_claude(prompt, max_tokens=1200):
@@ -303,9 +310,13 @@ def build_review_entry(category, item, parsed):
     existing  = get_existing_slugs()
     slug      = unique_slug(base_slug, existing)
 
+    clean_excerpt = process_review_text(parsed.get("excerpt", ""))
+    clean_body    = [process_review_text(p) for p in parsed.get("paragraphs", [])]
+    clean_verdict = process_review_text(parsed.get("verdict", ""))
+
     year_suffix  = f" ({year})" if year else ""
     seo_title    = f"{full_title} Review{year_suffix} | WretVision"
-    raw_desc     = parsed.get("excerpt") or parsed.get("verdict") or f"{full_title} review on WretVision."
+    raw_desc     = clean_excerpt or clean_verdict or f"{full_title} review on WretVision."
     seo_description = raw_desc[:157] + "..." if len(raw_desc) > 160 else raw_desc
     if len(seo_description) > 160:
         print(f"WARNING: SEO description exceeds 160 chars for '{full_title}' ({len(seo_description)} chars)")
@@ -324,10 +335,10 @@ def build_review_entry(category, item, parsed):
         "genres":         genres,
         "score":          parsed["score"],
         "featured":       False,
-        "excerpt":        parsed["excerpt"],
-        "body":           parsed["paragraphs"],
+        "excerpt":        clean_excerpt,
+        "body":           clean_body,
         "images":         [],
-        "verdict":        parsed["verdict"],
+        "verdict":        clean_verdict,
     }
     if is_game:
         steam_id = item.get("steam_id")
