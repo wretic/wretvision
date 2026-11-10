@@ -10,6 +10,43 @@
 
 const REVIEWS = [
     {
+      "id": 1794327323265,
+      "slug": "quarantine-review",
+      "seoTitle": "Quarantine Review (2008) | WretVision",
+      "seoDescription": "Quarantine (2008) is a found footage remake that actually earns its screams, even if it never quite escapes the shadow of the superior original.",
+      "category": "movie",
+      "title": "Quarantine",
+      "year": 2008,
+      "director": "John Erick Dowdle",
+      "runtime": "89 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "score": 7.0,
+      "featured": false,
+      "excerpt": "Quarantine (2008) is a found footage remake that actually earns its screams, even if it never quite escapes the shadow of the superior original.",
+      "body": [
+        "Found footage horror lives and dies by one question: do you believe it? Quarantine, the 2008 American remake of the Spanish film REC, spends its entire runtime trying to make you answer yes. Directed by John Erick Dowdle and co-written with his brother Drew, it drops a local news reporter and her cameraman into a Los Angeles apartment building that gets locked down by the CDC after a rabies-like outbreak turns residents into fast-moving, violent shells of themselves. The premise is lean, the execution is mostly confident, and the result is one of the more effective found footage films to come out of that late-2000s wave that included Cloverfield and Diary of the Dead. It is not a perfect film. But it is a genuinely frightening one more often than it has any right to be.",
+        "Context matters here because Quarantine exists entirely in the shadow of REC, Jaume Balaguero and Paco Plaza's 2007 Spanish original that is, frankly, one of the great found footage horror films ever made. Sony acquired the American rights before REC even had wide distribution outside Spain, which means a lot of North American audiences encountered Quarantine first and REC second. That is a strange order to watch them in and not a great one, because the original is tighter, scarier, and meaner. Quarantine is in many ways a shot-for-shot retelling of that film, which raises a fair question about why it needs to exist. The honest answer is commercial: American studios betting that domestic audiences would not seek out a subtitled Spanish horror film. That is a cynical calculation, but Quarantine is not a cynical film, and that distinction matters.",
+        "Jennifer Carpenter plays Angela Vidal, the news reporter at the centre of everything, and she is the film's clearest asset. Carpenter had already shown serious range in The Exorcism of Emily Rose three years earlier, and here she is doing something harder: performing fear in real time, on camera, in a character who is supposed to be a professional trying to hold herself together. She walks a genuinely difficult line. Angela cannot just collapse into screaming or she stops being a believable journalist. But she cannot stay composed either or the horror deflates. Carpenter manages both, and there are moments late in the film where you can watch her face cycle through disbelief, calculation, and raw terror inside a single uncut stretch of footage. That is not easy acting. That is living in a role.",
+        "The supporting cast is solid without being spectacular. Jay Hernandez as the firefighter Jake brings warmth and physicality to a role that easily could have been interchangeable action-man material, and the early scenes between him and Carpenter feel genuinely relaxed and natural, which matters because you need to feel the normalcy before the film strips it away. The apartment residents are well-cast in that specific found footage way where everyone feels plausibly real rather than dramatically composed. Columbus Short, Rade Serbedzija, and Greg Germann all contribute without overplaying, which is exactly the right instinct. When characters start dying, you feel the losses in a mild but real way. The film does not give you enough time to build deep attachment, but it does give you enough to register absence.",
+        "Dowdle's direction is where Quarantine earns most of its credibility. The found footage conceit is maintained with real discipline. There are no shots here that could not plausibly exist through a news camera held by one man trying to document everything and survive at the same time. That restraint sounds obvious but it is not: plenty of found footage films cheat constantly, cutting to angles that have no camera justification, letting the frame become too composed, too cinematic. Dowdle refuses that. The camera by cinematographer Ken Seng is shaky and reactive and often too slow to catch what just happened, and that incompleteness is terrifying. You are not watching horror happen to people. You are barely keeping up with horror happening around you.",
+        "The pacing in the first act is deliberately slow in a way that works in the film's favour. The opening twenty minutes in the fire station are almost mundane, Carpenter interviewing firefighters on a slow night shift, the camera catching small human moments between men killing time. It feels like actual local news footage, awkward and warm and slightly boring in the best way. When the call comes in and the film shifts location to the apartment building, Dowdle does not immediately escalate. He lets the tension build through confusion and bureaucratic obstruction first, through sealed doors and contradictory instructions from authorities outside. The horror of not being told what is happening is almost as effective as the horror itself.",
+        "The practical work in Quarantine is strong. The infected are performers in makeup and physicality rather than CGI constructions, and that choice pays off consistently. There is a sequence in the lobby involving an elderly woman who moves in a way that is immediately, viscerally wrong, and the effect is achieved through performance and practical design rather than any digital intervention. The blood is real, the injuries are staged with commitment, and the claustrophobia of the apartment building is never cheated by suddenly opening the space up. The final ten minutes in particular, shot almost entirely in night-vision green as the camera battery fails, is a technical and atmospheric achievement that lands properly hard. That closing image is one the film earns and one you will remember.",
+        "Where Quarantine falls short is precisely where most remakes fall short: it is making the same journey toward a destination it did not map out itself. The ending hits because the original ending hits. The structure works because the original structure works. Dowdle executes it all competently and sometimes brilliantly but there is a ceiling on how much credit a remake can claim for its own best moments. The film also softens the supernatural religious element that gives REC its final act its specific, disturbing weight. The American version edges toward a more grounded viral explanation, which is a commercial choice that works fine in isolation but strips away something genuinely unsettling that the Spanish original committed to fully. The result is a film that frightens without quite disturbing, and in horror those are different currencies.",
+        "Quarantine in 2008 was marketed as the scariest film of the year and that claim aged reasonably well. It sits on various streaming platforms now as a solid, often excellent piece of found footage horror that works best if you have not seen REC and works as a competent, committed adaptation if you have. Comparable to Cloverfield in its use of the handheld conceit to generate sustained dread rather than spectacle, and closer to the spirit of REC than most American remakes manage with their source material. The score is a 7 out of 10. It is a film that knows what it is doing in the dark, even if it borrowed the map from someone else."
+      ],
+      "images": [],
+      "verdict": "Quarantine (2008) is a confident, well-performed found footage horror that earns genuine scares, but it will always live one step behind the film it is retracing.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/rGfOD8IC1x4PqmnqRuA8KyCckia.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/v3yQYRScLl8WIqS1DnPub3hPuiE.jpg"
+      }
+    },
+    {
       "id": 1794248977673,
       "slug": "nosferatu-review",
       "seoTitle": "Nosferatu Review (2024) | WretVision",
