@@ -10,6 +10,37 @@
 
 const REVIEWS = [
     {
+      "id": 1794412614820,
+      "slug": "phantasm-review",
+      "seoTitle": "Phantasm Review (1979) | WretVision",
+      "seoDescription": "Don Coscarelli made something genuinely strange in 1979 and four decades later it still hasn't been fully explained. That's the point.",
+      "category": "movie",
+      "title": "Phantasm",
+      "year": 1979,
+      "director": "Don Coscarelli",
+      "runtime": "89 min",
+      "rating": "R",
+      "genres": [
+        "Horror",
+        "Science Fiction"
+      ],
+      "score": 8.0,
+      "featured": false,
+      "excerpt": "Don Coscarelli made something genuinely strange in 1979 and four decades later it still hasn't been fully explained. That's the point.",
+      "body": [
+        "Phantasm isn't a film you understand so much as experience. Don Coscarelli was 22 years old when he made it, working with a tiny budget and a crew of friends, and somehow that rawness became the film's greatest asset. It doesn't follow horror logic because Coscarelli was making it up as he went, pulling from dream imagery, grief, and pure instinct rather than genre convention. The result is something that sits closer to a nightmare you can't shake than a traditional scare machine. The Tall Man appears, silver spheres fly through corridors, and a small Oregon town hides something genuinely cosmic and wrong. You're never entirely sure what the rules are. That uncertainty is deliberate and it works.",
+        "Angus Scrimm is the whole engine. He's barely in it compared to what you remember, but every single frame he occupies feels dangerous. There's a physicality to him, that impossible height, the deliberate movement, the two words he makes iconic. The practical effects are low budget but committed, and the flying sentinel sphere remains one of the most satisfying horror props ever put to film. Practical, simple, and viscerally horrible when it connects. The funeral home set design does a lot of heavy lifting too, all cold marble and wrong angles. It's the kind of atmosphere you can't manufacture with money, only with vision.",
+        "It's not flawless. The pacing drifts in the middle act and a few of the performances from the supporting cast are rough even by 1979 standards. Michael Baldwin as Jody's younger brother Mike is genuinely good though, carrying more emotional weight than you'd expect from a teenage lead in a low budget horror film. The Reggie and Jody dynamic is warm in a way that makes the horror land harder. The film earns its emotional gut punch precisely because it roots the weirdness in genuine loss. It's a story about a kid terrified of losing his brother, and the Tall Man is basically death given a tall black suit and an attitude problem.",
+        "Phantasm is streaming across various platforms right now and it deserves a proper watch if you've never seen it. It sits in a lineage with films like Halloween and The Texas Chain Saw Massacre, low budget originals that punched so far above their weight class they accidentally invented subgenres. The ending commits fully to its own dream logic and doesn't apologise for it. Some people find that frustrating. I find it brave. Coscarelli made four sequels chasing this original and none of them quite caught the same lightning. This one has something genuinely uncanny in its DNA. 8/10."
+      ],
+      "images": [],
+      "verdict": "Raw, weird, and genuinely unsettling in ways that most big-budget horror never manages, Phantasm earns its cult status every single time the sphere flies.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/eR0uJ0Wje1lYJ4aHEpkcjgIM8d7.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/71L3VXCRqpfdrSVy3iIWmyKXLTX.jpg"
+      }
+    },
+    {
         "id": 1794327323265,
         "slug": "quarantine-review",
         "seoTitle": "Quarantine Review (2008) | WretVision",
