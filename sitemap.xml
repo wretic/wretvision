@@ -56,6 +56,21 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://wretvision.com/review.html?slug=rings-of-power-season-3-episode-1-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=underworld-endless-war-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wretvision.com/review.html?slug=phantasm-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wretvision.com/review.html?slug=quarantine-review</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
