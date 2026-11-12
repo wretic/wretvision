@@ -75,13 +75,19 @@
 
     const kickerEl = document.getElementById('hero-kicker');
     if (kickerEl) {
-      const parts = ['Latest Review', featured.year, featured.category?.toUpperCase()];
+      const now = new Date();
+      const isPinned = (featured.pinnedUntil && new Date(featured.pinnedUntil) >= now) || (featured.featured && !featured.pinnedUntil);
+      const kickerText = isPinned ? 'Featured Series' : 'Latest Review';
+      const parts = [kickerText, featured.year, featured.category?.toUpperCase()];
       if (isHorror(featured)) parts.push('HORROR');
       kickerEl.textContent = parts.filter(Boolean).join(' · ');
     }
 
     const titleEl = document.getElementById('hero-title');
-    if (titleEl) titleEl.textContent = featured.title + (featured.season ? ` Season ${featured.season}` : '');
+    if (titleEl) {
+      const hasSeason = /season\s+\d+/i.test(featured.title);
+      titleEl.textContent = featured.title + (!hasSeason && featured.season ? ` Season ${featured.season}` : '');
+    }
 
     const metaEl = document.getElementById('hero-meta');
     if (metaEl) {
@@ -118,20 +124,94 @@
     }
   }
 
+  const ROP_S3_EPISODES = [
+    { ep: 1, title: 'Marnûkh', date: 'Nov 11', slug: 'rings-of-power-season-3-episode-1-review' },
+    { ep: 2, title: 'The Gift of Men', date: 'Nov 11', slug: 'rings-of-power-season-3-episode-2-review' },
+    { ep: 3, title: 'The Secret Fire', date: 'Nov 11', slug: 'rings-of-power-season-3-episode-3-review' },
+    { ep: 4, title: 'Gundabad', date: 'Nov 11', slug: 'rings-of-power-season-3-episode-4-review' },
+    { ep: 5, title: 'Episode 5', date: 'Nov 18', slug: 'rings-of-power-season-3-episode-5-review' },
+    { ep: 6, title: 'Episode 6', date: 'Nov 18', slug: 'rings-of-power-season-3-episode-6-review' },
+    { ep: 7, title: 'Episode 7', date: 'Nov 25', slug: 'rings-of-power-season-3-episode-7-review' },
+    { ep: 8, title: 'Season Finale', date: 'Nov 25', slug: 'rings-of-power-season-3-episode-8-review' }
+  ];
+
   function updateHeroForCategory(cat) {
     let target;
     const effectiveCat = pageCat || cat;
+    const now = new Date();
+    const isPinned = (r) => {
+      if (!r) return false;
+      if (r.pinnedUntil && new Date(r.pinnedUntil) >= now) return true;
+      if (r.featured && !r.pinnedUntil) return true;
+      return false;
+    };
+
     if (effectiveCat === 'all') {
-      target = allReviews.find(r => r.media && (r.media.backdrop || r.media.poster)) || allReviews[0];
+      target = allReviews.find(r => isPinned(r) && r.media && (r.media.backdrop || r.media.poster)) ||
+               allReviews.find(isPinned) ||
+               allReviews.find(r => r.media && (r.media.backdrop || r.media.poster)) ||
+               allReviews[0];
     } else if (effectiveCat === 'saved') {
       return;
     } else {
-      target = allReviews.find(r => r.category === effectiveCat && r.media && (r.media.backdrop || r.media.poster)) ||
+      target = allReviews.find(r => r.category === effectiveCat && isPinned(r) && r.media && (r.media.backdrop || r.media.poster)) ||
+               allReviews.find(r => r.category === effectiveCat && isPinned(r)) ||
+               allReviews.find(r => r.category === effectiveCat && r.media && (r.media.backdrop || r.media.poster)) ||
                allReviews.find(r => r.category === effectiveCat);
     }
     if (target) {
       renderHero(target);
     }
+  }
+
+  function setupSeriesHub() {
+    const hubEl = document.getElementById('series-hub-section');
+    const railEl = document.getElementById('series-rail');
+    if (!hubEl || !railEl) return;
+
+    if (pageCat && pageCat !== 'tv') {
+      hubEl.hidden = true;
+      return;
+    }
+
+    if (currentCategory && currentCategory !== 'all' && currentCategory !== 'tv') {
+      hubEl.hidden = true;
+      return;
+    }
+
+    railEl.innerHTML = ROP_S3_EPISODES.map(item => {
+      const epReview = allReviews.find(r =>
+        (r.series && r.series.toLowerCase().includes('rings of power') && r.season === 3 && r.episode === item.ep) ||
+        (r.slug && r.slug === item.slug) ||
+        (r.title && r.title.toLowerCase().includes('episode ' + item.ep))
+      );
+
+      if (epReview) {
+        return `
+          <a href="${reviewUrl(epReview)}" class="series-card is-active">
+            <div class="series-card-top">
+              <span class="series-card-num">EPISODE ${item.ep}</span>
+              <span class="series-card-score">${epReview.score ?? '—'} / 10</span>
+            </div>
+            <div class="series-card-name">${item.title}</div>
+            <div class="series-card-meta">Read Review →</div>
+          </a>
+        `;
+      }
+
+      return `
+        <div class="series-card is-pending">
+          <div class="series-card-top">
+            <span class="series-card-num">EPISODE ${item.ep}</span>
+            <span class="series-card-soon">COMING SOON</span>
+          </div>
+          <div class="series-card-name">${item.title}</div>
+          <div class="series-card-meta">Airs ${item.date}</div>
+        </div>
+      `;
+    }).join('');
+
+    hubEl.hidden = false;
   }
 
   function setupHero() {
@@ -285,6 +365,7 @@
           const genreSelect = document.getElementById('genre-select');
           if (genreSelect) genreSelect.value = '';
           updateHeroForCategory(currentCategory);
+          setupSeriesHub();
         }
         applyFilter();
       });
@@ -419,6 +500,7 @@
 
   // ── Initialization ──
   setupHero();
+  setupSeriesHub();
   setupTopRated();
   setupFilters();
   setupSearch();

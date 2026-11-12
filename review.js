@@ -136,6 +136,49 @@
     byId('review-related').hidden = related.length === 0;
   }
 
+  const ROP_S3_EPISODES = [
+    { ep: 1, title: 'Marnûkh', date: 'Nov 11', slug: 'rings-of-power-season-3-episode-1-review' },
+    { ep: 2, title: 'The Gift of Men', date: 'Nov 11', slug: 'rings-of-power-season-3-episode-2-review' },
+    { ep: 3, title: 'The Secret Fire', date: 'Nov 11', slug: 'rings-of-power-season-3-episode-3-review' },
+    { ep: 4, title: 'Gundabad', date: 'Nov 11', slug: 'rings-of-power-season-3-episode-4-review' },
+    { ep: 5, title: 'Episode 5', date: 'Nov 18', slug: 'rings-of-power-season-3-episode-5-review' },
+    { ep: 6, title: 'Episode 6', date: 'Nov 18', slug: 'rings-of-power-season-3-episode-6-review' },
+    { ep: 7, title: 'Episode 7', date: 'Nov 25', slug: 'rings-of-power-season-3-episode-7-review' },
+    { ep: 8, title: 'Season Finale', date: 'Nov 25', slug: 'rings-of-power-season-3-episode-8-review' }
+  ];
+
+  function renderSeriesNav(review, allReviews) {
+    const navEl = byId('series-nav');
+    if (!navEl) return;
+    const isRop = (review.series && review.series.toLowerCase().includes('rings of power')) ||
+                  (review.title && review.title.toLowerCase().includes('rings of power'));
+    if (!isRop || review.season !== 3) {
+      navEl.hidden = true;
+      return;
+    }
+
+    const listEl = byId('series-nav-list');
+    listEl.innerHTML = ROP_S3_EPISODES.map(item => {
+      const epReview = allReviews.find(r =>
+        (r.series && r.series.toLowerCase().includes('rings of power') && r.season === 3 && r.episode === item.ep) ||
+        (r.slug && r.slug === item.slug) ||
+        (r.title && r.title.toLowerCase().includes('episode ' + item.ep))
+      );
+
+      const isCurrent = (epReview && (epReview.id === review.id || epReview.slug === review.slug)) ||
+                        (review.episode === item.ep);
+      if (isCurrent) {
+        return `<span class="series-nav-item current">Ep ${item.ep}: ${item.title} (${review.score ?? '—'}/10)</span>`;
+      }
+      if (epReview) {
+        return `<a href="${reviewUrl(epReview)}" class="series-nav-item">Ep ${item.ep}: ${item.title} (${epReview.score ?? '—'}/10)</a>`;
+      }
+      return `<span class="series-nav-item pending" title="Air date: ${item.date}">Ep ${item.ep}: ${item.title} (Soon)</span>`;
+    }).join('');
+
+    navEl.hidden = false;
+  }
+
   function renderReview(review, allReviews) {
     const category = categories[review.category];
     const archive = byId('review-back');
@@ -149,13 +192,16 @@
       (category?.label || 'Media') + ' review',
       ...(review.genres || []).slice(0, 2),
     ].join(' · ');
-    byId('review-title').textContent = review.title + (review.season ? ' Season ' + review.season : '');
+    const hasSeason = /season\s+\d+/i.test(review.title);
+    byId('review-title').textContent = review.title + (!hasSeason && review.season ? ' Season ' + review.season : '');
     byId('review-meta').textContent = [
       review.year,
       review.director && (review.category === 'game' ? 'Developed by ' : 'Directed by ') + review.director,
       review.runtime,
       review.rating,
     ].filter(Boolean).join(' · ');
+
+    renderSeriesNav(review, allReviews);
 
     byId('review-score-block').hidden = review.score == null;
     byId('review-score').textContent = review.score ?? '';

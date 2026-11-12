@@ -26,7 +26,12 @@ const REVIEWS = [
             "Drama"
         ],
         "score": 3.0,
-        "featured": false,
+        "featured": true,
+        "pinnedUntil": "2026-11-26",
+        "series": "The Lord of the Rings: The Rings of Power",
+        "season": 3,
+        "episode": 1,
+        "episodeTitle": "Marnûkh",
         "excerpt": "CGI looks expensive as always, but Amazon kicks off Season 3 with laughable dialogue, thirty minutes of snoozing, and an absurd Good Orc teaming up with elves.",
         "body": [
             "Look, credit where it is due right out of the gate. The CGI is great. As always. Amazon took their billion dollars and threw it directly at the visual effects team, and the show looks ridiculously expensive. The sweeping landscape shots look sharp, the armor shines, the lighting in the elven realms looks like a fantasy painting, and the action choreography is heavy and slick. Nobody is disputing that part. If you put this on a massive OLED screen with the volume cranked up, your eyes are going to be happy.",
