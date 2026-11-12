@@ -10,6 +10,43 @@
 
 const REVIEWS = [
     {
+      "id": 1794501606812,
+      "slug": "underworld-endless-war-review",
+      "seoTitle": "Underworld: Endless War Review (2011) | WretVision",
+      "seoDescription": "Three animated short films stitched into one release. Underworld: Endless War had a chance to do something interesting with the format. It mostly doesn't.",
+      "category": "movie",
+      "title": "Underworld: Endless War",
+      "year": 2011,
+      "director": "Juno John Lee",
+      "runtime": "18 min",
+      "rating": "NR",
+      "genres": [
+        "Action",
+        "Animation",
+        "Horror"
+      ],
+      "score": 4.0,
+      "featured": false,
+      "excerpt": "Three animated short films stitched into one release. Underworld: Endless War had a chance to do something interesting with the format. It mostly doesn't.",
+      "body": [
+        "Underworld: Endless War arrived in 2011 as an animated anthology release, three short films bundled together and sold as a bridge piece for the broader Underworld franchise. It's the kind of release that exists in the margins, a streaming curiosity you stumble across on various platforms late at night when you've already watched everything else. The premise follows Selene across three different eras, hunting a pair of ancient Lycan brothers across centuries. Paris, 1890. World War Two. Present day. Each segment gets its own chapter, its own visual style, its own slice of mythology. On paper that's genuinely interesting. A gothic action horror anthology spanning a hundred years of vampire-werewolf warfare? There's real potential buried in that pitch.",
+        "Here's the problem. Potential is about all it's got. Each chapter runs somewhere around fifteen to twenty minutes and the whole thing clocks in at roughly fifty minutes total. That's not inherently a bad thing. Short, punchy, mythologically dense. That could work. But the runtime ends up feeling simultaneously rushed and weirdly slow, which is a specific kind of failure that takes real effort to achieve. You'd think fifty minutes of action-horror animation would fly by. It doesn't. There are stretches where nothing meaningful happens, characters exchange exposition dressed up as atmosphere, and the whole thing mistakes brooding stillness for tension. It's not tension. It's just empty.",
+        "The animation itself is the first thing that hits you, and not entirely in a good way. The style sits in that uncomfortable middle ground between detailed and stiff. Characters move like they're being puppeted rather than inhabiting their own bodies. Fight sequences, which should be the centrepiece of any Underworld property, often feel mechanical. Limbs connect without weight. Impacts don't land. Compare this to something like the animated sequences in the Batman Arkham animated films from around the same era and you'll feel the gap. Those productions had kinetic energy. Endless War has choreography that looks lifted from an early 2000s game cutscene. Some of the environmental design is legitimately good. Paris in the 1890s segment has a moody texture. But characters moving through those environments break the spell constantly.",
+        "Selene is voiced here by Laura Harris rather than Kate Beckinsale, and that matters more than you'd expect. It's not that Harris does a bad job exactly. She's competent. She hits the right register of cool, controlled menace that the character requires. But there's nothing underneath it. Beckinsale always brought a physicality to Selene, a coiled tension even in stillness, that translated into the original films' best moments. Voice acting has to do that work entirely differently and Harris never quite fills the gap. The Lycan brothers Vregis and Krandrill aren't interesting enough as antagonists to compensate. They're threats defined entirely by function. Big. Dangerous. Need to be stopped. That's their character. The mythology around them is richer than they are as actual presences in the story.",
+        "The World War Two chapter is probably the strongest of the three and it's worth pausing on that because it hints at what this whole release could have been. Setting vampire-Lycan conflict against the backdrop of occupied Europe is a genuinely evocative idea. There's real horror available in that combination, the actual atrocities of the war pressing against the fictional ones, human monsters alongside supernatural ones. The segment doesn't fully explore that tension but it at least gestures toward it. The visual palette goes darker, grittier, the architecture of occupied Paris lending genuine menace to some of the chase sequences. It's the one chapter that feels like it has a reason to exist in that specific historical moment rather than being placeless action dressed in a costume.",
+        "The 1890s chapter opens the film and sets the wrong tone almost immediately. Victorian Paris should be a perfect Underworld setting. Cobblestones, gaslight, shadow-soaked alleys. The bones are there. But the segment rushes through its own setup, throwing you into a conflict without enough grounding, and the visual design doesn't fully commit to the period in the way it needs to. This is where the animation style hurts most. A Victorian horror setting demands texture, grime, atmosphere. The environments are too clean, too flat. The whole chapter feels like an excuse to establish the brothers as threats before the more interesting second chapter does the actual heavy lifting. By the time you reach the present-day conclusion you're running on fumes narratively.",
+        "One thing worth noting if you care about where this sits in the broader Underworld timeline: Endless War was clearly produced to serve a specific franchise function, filling gaps and keeping the mythology active between theatrical releases. That's a legitimate use of animation as a storytelling tool. The problem is that it treats itself as supplementary material rather than a standalone work. Everything here assumes you're already invested. The mythology is referenced rather than explained. The emotional stakes are assumed rather than earned. If you've watched the films you'll follow along fine. But Endless War never makes a case for itself as something worth watching on its own terms. It's franchise maintenance disguised as a creative project.",
+        "Horror fans looking for genuine scares won't find them here. This is action with horror aesthetics, which is true of the live-action films too, but those films had choreography and physicality that made the action sequences worth watching. The animation removes the tactile quality that made something like Underworld 2003 click when it landed. That original film had a kinetic, rain-soaked momentum that Endless War is clearly trying to channel and can't quite reach. The gory moments, and there are a few, land with less impact than they should because the animation style can't sell weight or consequence. Blood sprays. Bodies fall. It registers as imagery rather than violence. For horror to land, even in an action context, there needs to be stakes you can feel physically. This rarely achieves that.",
+        "Underworld: Endless War isn't the worst thing attached to this franchise. It's not incompetent. It's just thin and forgettable in a way that's almost more damning. You watch it, follow it without much difficulty, feel occasional flickers of interest in the World War Two chapter, and then it ends. A day later you've forgotten most of the specific beats. It's a release that exists for completionists and franchise loyalists, available across various streaming platforms for when you've run out of reasons not to watch it. For anyone else it's a curiosity at best. 4/10."
+      ],
+      "images": [],
+      "verdict": "A fifty-minute animated anthology that squanders a genuinely interesting premise on stiff animation, underdeveloped antagonists, and three chapters that feel like they're waiting for the actual film to start.",
+      "media": {
+        "poster": "https://image.tmdb.org/t/p/w500/4yNXdOfieIw4ZNdvOuHr1iuLGV.jpg",
+        "backdrop": "https://image.tmdb.org/t/p/w1280/dzx2JwCWz9FBnBbEXqpQRgA7EXt.jpg"
+      }
+    },
+    {
       "id": 1794412614820,
       "slug": "phantasm-review",
       "seoTitle": "Phantasm Review (1979) | WretVision",
