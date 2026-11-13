@@ -21,8 +21,8 @@ jobs:
         id: pause_check
         run: |
           TODAY=$(date -u +%Y-%m-%d)
-          if [[ "$TODAY" < "2026-10-16" ]]; then
-            echo "Publishing paused until 2026-10-16 (today: $TODAY) — skipping this run so Hellraiser: Revival and Resident Evil 2026 stay featured."
+          if [[ "$TODAY" < "2027-01-01" ]]; then
+            echo "Publishing paused until 2027-01-01 (today: $TODAY) — skipping this run so Rings of Power Season 3 remains top priority."
             echo "paused=true" >> "$GITHUB_OUTPUT"
           else
             echo "paused=false" >> "$GITHUB_OUTPUT"

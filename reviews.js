@@ -9,7 +9,45 @@
 // ============================================================
 
 const REVIEWS = [
-        {
+    {
+        "id": 1794504800000,
+        "slug": "rings-of-power-season-3-episode-2-review",
+        "seoTitle": "The Rings of Power Season 3 Episode 2 Review | WretVision",
+        "seoDescription": "The Lord of the Rings: The Rings of Power Season 3 Episode 2 review. Orc on a dog leash, Nazgûl helmet reveals, and unearned Númenórean melodrama.",
+        "category": "tv",
+        "title": "The Lord of the Rings: The Rings of Power (Season 3, Episode 2)",
+        "year": 2026,
+        "director": "Charlotte Brändström",
+        "runtime": "68 min",
+        "rating": "TV-14",
+        "genres": [
+            "Action & Adventure",
+            "Sci-Fi & Fantasy",
+            "Drama"
+        ],
+        "score": 3.0,
+        "featured": true,
+        "pinnedUntil": "2026-11-27",
+        "series": "The Lord of the Rings: The Rings of Power",
+        "season": 3,
+        "episode": 2,
+        "episodeTitle": "The Gift of Men",
+        "excerpt": "A shameless Frodo, Sam, and Gollum rip-off with an orc on a leash, comically jarring Nazgûl helmet reveals, and cheap Númenórean melodrama.",
+        "body": [
+            "Episode two picks up right where the premiere left off, immediately jumping into five different subplots to make sure none of them build any actual momentum. The main thrust is split between the unrest in Númenor and the lingering fallout across Middle earth. In Númenor, political tensions reach a boiling point around Ar-Pharazôn, Isildur is running around trying to rally the Faithful, and his sister Eärien (played by Ema Horvath) is secretly playing both sides. It is classic court intrigue, except the dialogue is so stiff and repetitive that it feels like people reciting cue cards in expensive robes.",
+            "Then we get to the Nazgûl, which is probably going to confuse a lot of people. If you only know the Peter Jackson movies, seeing these guys constantly taking off their helmets to reveal completely ordinary, clean-shaven human faces looks bizarre as hell. In Tolkien lore, this is actually accurate. The nine mortal lords did not just wake up as invisible ghosts on day one. They were living men who took centuries of ring use to slowly fade into wraiths, and the black cloaks were only worn later to give shape to their invisible bodies. So yes, they were still flesh-and-blood humans early on. The problem is how Amazon shoots it. Having normal blokes wearing iconic Ringwraith gear while chatting casually like they are on a lunch break looks comically jarring and strips all the menace away. Meanwhile, the dark wizard is teaming up with Sauron while Gandalf and Tom Bombadil sneak around in the background like fantasy spies keeping the plot wheels turning.",
+            "Now for the absolute funniest, most shameless part of the entire episode. Amazon literally decided to photocopy the Frodo, Sam, and Gollum dynamic beat for beat. In Lord of the Rings, you had Frodo and Sam dragging Sméagol on an elven rope through the wilderness, treating him like a sketchy dog while he leads them on a mission. What does Rings of Power give us? Guyladriel and Arondir marching through the dirt with their pet \"Good Orc\" Marnûkh on a leash. It is identical. They have an orc on a tether guiding two legendary elves through the rough country, and it looks ridiculous.",
+            "And what is this grand quest they are on? Marnûkh claims he hid an ancient elven smith, Maitalle, away in the fortress tower of Mount Gundabad. A woman of course, because Celebrimbor is dead and she is supposedly the only one left who knows how to craft rings of power. So Galadriel and the black archer are trekking out to rescue her before Sauron can extract her metallurgical secrets. The problem is, we all already know the ending. The One Ring gets forged. We know Sauron wins this step. So watching them wander around trying to save a secret ring smith feels like pure filler designed to pad the episode count.",
+            "By the time the final act rolls around, the show is juggling so many disconnected threads that whatever tension it tried to build completely evaporates. The whole Númenor subplot caps off with that botched palantír warning where Pharazôn corners Eärien and she takes her balcony swan dive, which lands with a dull thud instead of an emotional gut punch. Meanwhile, over in the shadows, Sauron is busy sinking his claws into Theo, playing on his grief to groom him into another dark pawn, and Galadriel marches onward to Gundabad with her leashed orc. It is just endless setup for future episodes with zero payoff for the hour you just sat through. When a billion dollar fantasy epic feels this hollow and disjointed, shiny CGI cannot save it. Another 3/10."
+        ],
+        "images": [],
+        "verdict": "3/10: A shameless rip-off of Frodo, Sam, and Gollum with an orc on a leash, coupled with comical Nazgûl cosplay and flat Númenórean melodrama.",
+        "media": {
+            "poster": "https://image.tmdb.org/t/p/w500/bMXWXKM9ydUmMTNvDnYo9QtCBRt.jpg",
+            "backdrop": "https://image.tmdb.org/t/p/w1280/achmETPRJZc9QVXsMPgHwYEyNar.jpg"
+        }
+    },
+    {
         "id": 1794503800000,
         "slug": "rings-of-power-season-3-episode-1-review",
         "seoTitle": "The Rings of Power Season 3 Episode 1 Review | WretVision",
