@@ -17,6 +17,21 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v5
 
+      - name: Check and publish scheduled reviews
+        id: scheduled_check
+        run: |
+          node scripts/publish_scheduled.js
+          if ! git diff --quiet reviews.js; then
+            echo "has_scheduled=true" >> "$GITHUB_OUTPUT"
+            git config --global user.name "WretVision"
+            git config --global user.email "wretvision@noreply.github.com"
+            git add reviews.js data/scheduled_reviews.json
+            git commit -m "Publish scheduled review: Rings of Power Season 3 Episode 3"
+            git push
+          else
+            echo "has_scheduled=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Check publish pause
         id: pause_check
         run: |
