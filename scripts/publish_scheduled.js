@@ -32,17 +32,20 @@ if (!Array.isArray(scheduledList) || scheduledList.length === 0) {
 console.log(`Publishing ${scheduledList.length} scheduled review(s)...`);
 
 let reviewsJs = fs.readFileSync(reviewsFile, 'utf8');
-const target = 'const REVIEWS = [\n';
+const isCrlf = reviewsJs.includes('\r\n');
+const newline = isCrlf ? '\r\n' : '\n';
+const target = `const REVIEWS = [${newline}`;
+
 if (!reviewsJs.includes(target)) {
-  console.error('Could not find "const REVIEWS = [\\n" in reviews.js');
+  console.error('Could not find "const REVIEWS = [" in reviews.js');
   process.exit(1);
 }
 
 // Convert each review object to formatted JSON with 4-space indent
 const formattedEntries = scheduledList.map(item => {
   const jsonStr = JSON.stringify(item, null, 4);
-  return jsonStr.split('\n').map(line => '    ' + line).join('\n');
-}).join(',\n') + ',\n';
+  return jsonStr.split(/\r?\n/).map(line => '    ' + line).join(newline);
+}).join(',' + newline) + ',' + newline;
 
 reviewsJs = reviewsJs.replace(target, target + formattedEntries);
 
