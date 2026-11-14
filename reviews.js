@@ -10,6 +10,45 @@
 
 const REVIEWS = [
     {
+        "id": 1794506800000,
+        "slug": "rings-of-power-season-3-episode-4-review",
+        "seoTitle": "The Rings of Power Season 3 Episode 4 Review | WretVision",
+        "seoDescription": "The Lord of the Rings: The Rings of Power Season 3 Episode 4 review. Gundabad breakout, boy Nazgûl Theo, flare gun eagles, and the death of Arondir and the Good Orc.",
+        "category": "tv",
+        "title": "The Lord of the Rings: The Rings of Power (Season 3, Episode 4)",
+        "year": 2026,
+        "director": "Sanaa Hamri",
+        "runtime": "57 min",
+        "rating": "TV-14",
+        "genres": [
+            "Action & Adventure",
+            "Sci-Fi & Fantasy",
+            "Drama"
+        ],
+        "score": 4,
+        "featured": true,
+        "pinnedUntil": "2026-11-28",
+        "series": "The Lord of the Rings: The Rings of Power",
+        "season": 3,
+        "episode": 4,
+        "episodeTitle": "Gundabad",
+        "excerpt": "An emergency red flare calls an eagle taxi, Arondir demands a resume before unlocking Celeborn, and boy Nazgûl Theo finally puts the Good Orc and Arondir out of our misery.",
+        "body": [
+            "Episode four picks up right inside Mount Gundabad, and Amazon wasted zero time delivering some of the most baffling character logic I have ever seen on screen. Arondir and Marnûkh slip into the holding cells only to find out Celebrimbor's secret smith is already dead. But right there in the adjoining cage, they stumble across Celeborn. He has never appeared on screen in any prior season of this show, only mentioned back in season one as presumed dead. According to Celeborn himself, he has been locked up in this exact fortress for years, which is why he knows the layout so well. But instead of immediately picking the lock for a fellow elf who has been rotting in an orc hole for years, Arondir actually hesitates and tells him they don't have time for this. Celeborn literally has to pitch his utility and explain that his years of captivity make him a handy tour guide just to earn his freedom. You have an elf who has survived years in an enemy dungeon, and Arondir makes him pass a job interview before swinging the door open. Absolute galaxy brain writing.",
+            "Meanwhile, Galadriel is down on the lower levels fighting solo, because of course the show refuses to let her look like she ever needs assistance. Arondir, Marnûkh, and Celeborn make their way down to regroup with her. Galadriel is brawling like an action star, turns around, sees Celeborn standing there, drops her blade, and they share a brief soap opera reunion pause that gets cut short by war horns. Then the cultists start chanting \"Hail Sauron.\" It sounds jarringly close to a 1930s rally chant rather than anything J.R.R. Tolkien ever put to paper. If they wanted sinister reverence, \"Lord Sauron\" was right there, but subtlety left this production two seasons ago.",
+            "From there, the team tries to push forward through the holding corridors thinking it is their way out, only to find themselves completely boxed in with orcs and a Ringwraith blocking both exits. That is when Marnûkh pulls his best move of the season. He acts like he was on the orcs' side the whole time, drops his blade, says he was just playing about, and then sprints over to yank the master lever. The doors slam open, human and elven captives flood the halls, and a full blown prison riot kicks off to buy them an opening to the surface.",
+            "Then we get to the escape, where the writers pull out the biggest cop out yet. Breaking out into the open, Galadriel fires a glowing red flare arrow straight into the sky. Miles away, a frozen giant eagle, apparently a Prince of the Eagles because even the birds need royalty status now, spots the red light and immediately clocks in for rescue duty. Gandalf whispered to a moth in Jackson's films; Galadriel just shoots an emergency signal flare like she is stranded on a life raft.",
+            "The real climax belongs to the Nazgûl, and specifically Theo. Having a teenager running around in Ringwraith armor is unintentionally hilarious, but I will give him credit: he did what two full seasons of storytelling failed to do. He slashes Marnûkh right after Arondir delivers the line, \"You're a good orc, you should come with us.\" Watching the Good Orc get instantly dropped killed any chance of a nauseating redemption arc, and for that I was genuinely cheering. Arondir tries talking Theo down, and Theo almost slips the ring off until Sauron steps in with mind control and orders the hit. Arondir takes a blade to the chest and lies dead on the stones staring into the camera, right across from the orc. Two birds, one Nazgûl blade.",
+            "Galadriel freezes like a deer in headlights staring at Sauron, still clinging to that weird unearned tension from season one, so Celeborn grabs her, they jump into the void, the eagle catches them mid air, and they soar off into the sunset. The CGI is stunning as always, the fight choreography has genuine energy, and the set pieces look like every cent of Amazon's budget. It gets bumped to a 4/10 strictly because it gave us actual action and permanently retired two of the most tedious characters on the show."
+        ],
+        "images": [],
+        "verdict": "4/10: Flare gun eagle rescues and a boy Nazgûl make for wild fantasy camp, but killing off the Good Orc and Arondir in one sequence earns it an extra point of grace.",
+        "media": {
+            "poster": "https://image.tmdb.org/t/p/w500/bMXWXKM9ydUmMTNvDnYo9QtCBRt.jpg",
+            "backdrop": "https://image.tmdb.org/t/p/w1280/achmETPRJZc9QVXsMPgHwYEyNar.jpg"
+        }
+    },
+    {
         "id": 1794505800000,
         "slug": "rings-of-power-season-3-episode-3-review",
         "seoTitle": "The Rings of Power Season 3 Episode 3 Review | WretVision",
