@@ -20,13 +20,14 @@ jobs:
       - name: Check and publish scheduled reviews
         id: scheduled_check
         run: |
+          TITLE=$(node -e "try { const d = JSON.parse(require('fs').readFileSync('data/scheduled_reviews.json')); console.log(d[0]?.title || 'Daily review'); } catch { console.log('Daily review'); }")
           node scripts/publish_scheduled.js
           if ! git diff --quiet reviews.js; then
             echo "has_scheduled=true" >> "$GITHUB_OUTPUT"
             git config --global user.name "WretVision"
             git config --global user.email "wretvision@noreply.github.com"
             git add reviews.js data/scheduled_reviews.json
-            git commit -m "Publish scheduled review: Rings of Power Season 3 Episode 3"
+            git commit -m "Publish scheduled review: $TITLE"
             git push
           else
             echo "has_scheduled=false" >> "$GITHUB_OUTPUT"
